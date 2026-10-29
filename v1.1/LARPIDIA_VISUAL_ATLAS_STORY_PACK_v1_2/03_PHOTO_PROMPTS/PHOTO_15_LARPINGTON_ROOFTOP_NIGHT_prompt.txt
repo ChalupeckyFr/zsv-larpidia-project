@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be written in the image): LARPINGTON ROOFTOP NIGHT. Format 9:16.
+
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+
+SCENE: A night, story-style photo from an elegant hotel rooftop terrace overlooking a small historic harbour town. Foreground: a wrought-iron and stone balustrade, softly lit stone steps and warm-toned paving, a corner of a teak lounge chair. In the distance the illuminated old town: warm yellow window lights, a floodlit brick-and-stone church tower, terracotta rooftops in shadow, harbour lights reflected in dark water; a deep navy sky with a few stars.
+
+COMPOSITION: Portrait; the balustrade and steps in the lower third, the old town a glowing band across the middle, sky above; a slight handheld tilt.
+
+LIGHT AND ATMOSPHERE: Night: warm artificial light from windows, street lamps and a floodlit church; the sky deep navy with the last faint glow in the west.
+
+PHOTO LOOK: moody Instagram look: underexposed by about one stop, warm city lights against a deep navy sky, soft bokeh, fine grain. Subtle authentic imperfections (only a few, not all at once): slight bloom around the brightest lamps, soft detail in the dark rooftops.
+
+PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+
+PLACE AND SCALE: Larpington, fictional harbour capital of Larpidie: a compact brick-and-stone old town of two to three floors with terracotta roofs and a church tower; elegant, quiet, European island mood.
+
+AVOID: no people, no skyscrapers, no neon signs, no readable text, no Dubai-style opulence, no fireworks. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+
+Aspect ratio 9:16.

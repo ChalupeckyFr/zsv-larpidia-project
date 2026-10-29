@@ -1,0 +1,15 @@
+{
+  "name": "v0.0-audit",
+  "created": "2026-10-23T17:45:54+02:00",
+  "description": "F0: audit kanonu, hashe originálů, extrakce tvrzení, rozpory a otevřené otázky.",
+  "changes": [
+    "SHA-256 14 originálů (ORIGINALS_SHA256.txt); validate_bible.py = OK",
+    "canon_extract.csv: 95 tvrzení (28 approved, 66 proposed, 1 needs_decision)",
+    "CONFLICTS_AND_DECISIONS.md: rozhodnutí R-01..R-05, rozpory C-01..C-12, otázky O1..O17",
+    "Nález: kolize ID M-01 (vrchol × plán města v MAP_PROMPT) → navrženo CP-01"
+  ],
+  "parent": "",
+  "bible_version": "1.0-draft",
+  "bible_sha256": "252f0ebd33c73a87fff9db21abf0684d34f1c7c4f24bbe7905bdb5e11fef58a2",
+  "files": 7
+}

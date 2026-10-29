@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be written in the image): OLD LARPINGTON. Format 16:9.
+
+Create a horizontal 16:9 widescreen smartphone photo. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+
+SCENE: A narrow, quiet historic lane in the old harbour town of a small island capital with English and Welsh character: two- and three-storey brick houses with slate and terracotta roofs, honey-coloured stone door frames and window sills, white sash windows, moss on the walls and roof ridges, climbing roses and flower boxes, tiny front gardens behind low stone walls, uneven granite-sett paving slightly darker from recent rain. A very small corner café with two wooden chairs and a round table outside and a folded cream awning (no lettering). At the far end of the lane the tower of a historic brick-and-stone parish church with a pitched roof rises over the rooftops in soft morning haze.
+
+COMPOSITION: Eye-level, one-point perspective down the lane (5 to 8 m wide), slightly off-centre and handheld; the church tower small but clearly readable in the distance; no cars.
+
+LIGHT AND ATMOSPHERE: Soft early-morning light after a light drizzle: gentle warm glow on the upper facades, cooler shade in the lane, damp stone reflecting the sky.
+
+PHOTO LOOK: warm Lightroom-mobile look: slightly lowered exposure, pulled highlights, subtle golden highlights and cooler blue-grey shadows, moderate grain. Subtle authentic imperfections (only a few, not all at once): mild vignetting from the phone lens, a tiny lean in the vertical lines.
+
+PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+
+PLACE AND SCALE: Old Larpington, fictional: a settlement founded by British settlers around 1600 with harbours, churches and market squares; mossy brick and stone, garden-like, houses of two to three floors, narrow lanes.
+
+AVOID: no people, no cars, no modern shop signs, no neon, no readable text, no skyscrapers, no Mediterranean or Asian architecture. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+
+Aspect ratio 16:9.

@@ -1,0 +1,131 @@
+{
+  "scene_id": "PHOTO_19",
+  "kind": "photo",
+  "title": "MANOR TERRACE SEA VIEW",
+  "format": "9:16",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Paraland",
+  "tags": [
+    "terrace",
+    "no people",
+    "old money",
+    "sea"
+  ],
+  "description_cs": "Decentní luxusní pobřežní terasa s výhledem na moře: kamenné zábradlí, květináč, část stolu nebo židle, sklenice vody nebo káva; v dálce pobřeží a jemné ranní světlo. Bez lidí.",
+  "registered_location": {
+    "registry_id": "PL-03",
+    "name_en": "South Resorts",
+    "name_cs": "Resorty jih (pracovní)",
+    "type": "settlement",
+    "island": "para",
+    "exist_status": "approved",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 24.61,
+    "y_km": 18.054,
+    "elev_m_model": 14.1,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "PL-03",
+        "name": "South Resorts",
+        "x_km": 24.61,
+        "y_km": 18.054
+      }
+    ],
+    "note": "Resorty na jihu Paralandu (existence schválena); historický hotel/vila s terasou je prvek scény."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 24.6,
+    "y_km": 18.06,
+    "eye_height_m": 1.6,
+    "basis_cs": "terasa resortního hotelu v PL-03 (14 m n. m.), výhled na jihozápadní pobřeží; bod je návrh",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 14.1,
+    "cover_at_camera": "scrub/grass",
+    "distance_to_coast_km": 0.65,
+    "bearing_deg": 212,
+    "compass": "SSW",
+    "fov_hint_deg": 46,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "scrub/grass",
+        "z_m": 10
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "scrub/grass",
+        "z_m": 4
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "sea",
+        "z_m": 0
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "sea",
+        "z_m": 0
+      }
+    ],
+    "sea_visible_km": 0.7,
+    "visible_registered": [],
+    "nearby_registered": [
+      {
+        "id": "PL-04",
+        "name": "Paraland Aquapark",
+        "dist_km": 0.51,
+        "bearing_deg": 133
+      }
+    ],
+    "target_cs": "zátoka a pobřeží na jihozápadě (SSW–SW)"
+  },
+  "conditions": {
+    "time_of_day": "early morning",
+    "season": "late summer",
+    "weather": "clear, calm sea"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "soft quiet-elegance grade: gently lifted blacks, creamy highlights, muted turquoise, fine grain",
+    "imperfections": "a slight glare on the glass, soft focus on the far headland"
+  },
+  "canon_notes_cs": [
+    "Atlas: PL-03 Resorty jih (14 m n. m., 300 obyvatel modelově), pláž B-05 a aquapark PL-04 poblíž; kánon: kapacitní rezervace, ochrana místních.",
+    "Hotel/vila jsou ilustrativní (v registru je jen oblast resortů)."
+  ],
+  "avoid": "no people, no pool parties, no gold or marble excess, no yachts in the foreground, no readable text",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_19_MANOR_TERRACE_SEA_VIEW_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_19_MANOR_TERRACE_SEA_VIEW_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_19.json",
+    "expected_photo": "01_PHOTOS/PHOTO_19.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "S-02",
+    "mpp": 5.0,
+    "window_km": [
+      23.535,
+      17.417,
+      2.0,
+      1.5
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

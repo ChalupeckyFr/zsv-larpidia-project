@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be written in the image): PARALAND MARINA. Format 16:9.
+
+Create a horizontal 16:9 widescreen smartphone photo. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+
+SCENE: A small summer marina on a resort island seen from the end of a wooden pier: white and wooden pleasure boats and small sailing yachts moored along floating pontoons on both sides, clear turquoise-green water with visible sandy bottom and seagrass; ahead a stone-and-timber promenade with a row of low whitewashed and pastel two-storey houses and restaurants with empty terrace tables and furled parasols, a small ferry terminal building, a short rock breakwater on the left; behind the village low green hills with the faint silhouette of a stone castle on a hilltop in the haze.
+
+COMPOSITION: Eye-level on the pier looking back toward the shore, the converging pier boards as a leading line, boats in the foreground, village and hills layered behind.
+
+LIGHT AND ATMOSPHERE: Bright sunny midday summer light, a few small cumulus clouds, crisp shadows, natural saturated water; slight haze over the hills.
+
+PHOTO LOOK: bright natural smartphone HDR, clean blues and teal, slightly lifted shadows, light grain, not oversaturated. Subtle authentic imperfections (only a few, not all at once): gentle sun glare on the water and a faint halo around the brightest highlights.
+
+PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+
+PLACE AND SCALE: Paraland, a small fictional tourist island of Larpidie: a leisure marina with two breakwaters and three piers, low houses, a hilltop castle in the background.
+
+AVOID: no people, no large yachts or superyachts, no signage text, no high-rise buildings. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+
+Aspect ratio 16:9.

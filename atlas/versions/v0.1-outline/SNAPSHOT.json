@@ -1,0 +1,16 @@
+{
+  "name": "v0.1-outline",
+  "created": "2026-10-23T18:00:52+02:00",
+  "description": "F1: obrys Larpidie a Paralandu ve dvou variantách (A věrná tabulce, B členitější) ke schválení týmem.",
+  "changes": [
+    "Rámec 24×16 km, plocha 175,0 km² a 14,0 km², průliv 1,50 km; plátno A2 / 1:50 000 (1 jednotka SVG = 1 m)",
+    "Varianta A: 0 odchylek od tabulky; varianta B: T-04, T-05, A-01 posunuty o <= 3 % (viz docs/CONFLICTS_AND_DECISIONS.md, sekce D)",
+    "Nález C-13: konvexní obal bodů tabulky = 135 km2, proto jen mírně členité pobřeží; navržena i volba menšího rámce (O18)",
+    "Výstupy: variants/A|B (SVG, GeoJSON v km i pseudo-WGS84, coast.json s typy pobřeží, report.json), outline_compare.html",
+    "Nástroje: geom.py, svgkit.py, shapes.py, outline_checks.py, build_outline.py, snapshot.py"
+  ],
+  "parent": "v0.0-audit",
+  "bible_version": "1.0-draft",
+  "bible_sha256": "252f0ebd33c73a87fff9db21abf0684d34f1c7c4f24bbe7905bdb5e11fef58a2",
+  "files": 22
+}

@@ -1,0 +1,719 @@
+{
+  "meta": {
+    "project": "Larpidie",
+    "version": "1.0-draft",
+    "as_of": "2026-10-23",
+    "language": "cs",
+    "genre": "fiktivní stát / alternativní historie / školní ZSV",
+    "authors": [
+      "František Chalupecký",
+      "Ondřej Kynčl",
+      "Matěj Klimeček",
+      "Štěpán Žemlička"
+    ],
+    "usage": "Vše o Larpidii je fikce. Schválené základy odpovídají odpovědím týmu; návrhové detaily čekají na odsouhlasení."
+  },
+  "identity": {
+    "official_name": {
+      "value": "Larpidie",
+      "status": "approved"
+    },
+    "meaning_of_name": {
+      "value": "Odvozeno ze slova „larp“: dělat něco výjimečného, estetického, zážitkového a radovat se ze života; ne za cenu povyšování nad ostatní.",
+      "status": "approved"
+    },
+    "unofficial_ethos": {
+      "value": "Life-maxxing se smyslem pro komunitu, dostupné příležitosti pro ty, kdo je chtějí aktivně využívat, příroda, vzdělání, práce, kultura a duševní život.",
+      "status": "approved"
+    },
+    "motto": {
+      "value": "Žij naplno, s respektem.",
+      "status": "proposed"
+    },
+    "government_form": {
+      "value": "Konstituční model se čtyřmi spoluvládci a demokraticky voleným parlamentem.",
+      "status": "approved"
+    },
+    "currency": {
+      "value": "Česká koruna (CZK) — měna užívaná v Larpidii, právní vztah k České republice bude nutné vysvětlit.",
+      "status": "approved"
+    },
+    "currency_framework": {
+      "value": "Smluvní měnové uspořádání s Českem; alternativa je odvozená larpidská koruna v pevném kurzu. Nejde o skutečnou existující dohodu.",
+      "status": "needs_decision"
+    },
+    "official_languages": {
+      "value": [
+        "čeština",
+        "angličtina"
+      ],
+      "status": "approved"
+    },
+    "widely_used_language": {
+      "value": "japonština",
+      "status": "approved"
+    },
+    "population_range": {
+      "value": {
+        "minimum": 20000,
+        "maximum": 40000,
+        "unit": "obyvatel celkem"
+      },
+      "status": "approved"
+    },
+    "population_working_model": {
+      "value": 32000,
+      "status": "proposed",
+      "note": "Pracovní počet pro ekonomické modelování, nikoliv schválené sčítání."
+    },
+    "religion": {
+      "value": {
+        "freedom_of_religion": true,
+        "state_religion": null,
+        "proposed_distribution_percent": {
+          "bez vyznání": 60,
+          "křesťané": 33,
+          "ostatní a neuvedeno": 7
+        },
+        "note": "Uvedené rozdělení je pracovní demografický model. Stát nikoho nevylučuje podle víry."
+      },
+      "status": "proposed"
+    },
+    "japanese_minority_share": {
+      "value": "cca 20 % obyvatel",
+      "status": "proposed",
+      "note": "Uživatel navrhl řádově 20 %, přesné číslo zatím není odsouhlaseno."
+    },
+    "state_symbols": {
+      "value": "vlajka, znak, státní barvy, hymna a podoba bankovek čekají na návrhy",
+      "status": "needs_decision"
+    }
+  },
+  "geography": {
+    "macro_location": {
+      "value": "Fiktivní souostroví v Tichém oceánu jižně od hlavních japonských ostrovů.",
+      "status": "approved"
+    },
+    "working_coordinates": {
+      "value": {
+        "lat": 33.9,
+        "lon": 137.6,
+        "note": "Hypotetická alternativní geografie; skutečné mapy světa v těchto souřadnicích neobsahují Larpidii."
+      },
+      "status": "proposed"
+    },
+    "main_island_area_km2": {
+      "value": {
+        "min": 150,
+        "max": 200
+      },
+      "status": "approved"
+    },
+    "working_main_area_km2": {
+      "value": 175,
+      "status": "proposed"
+    },
+    "paraland_area_km2": {
+      "value": 14,
+      "status": "proposed"
+    },
+    "islands": {
+      "value": [
+        {
+          "id": "LARPIDIA_MAIN",
+          "name": "Larpidie",
+          "role": "hlavní obydlený a ekonomický ostrov"
+        },
+        {
+          "id": "PARALAND",
+          "name": "Paraland",
+          "role": "turistický a rekreační ostrov, s památkami a přírodou"
+        }
+      ],
+      "status": "approved"
+    },
+    "paraland_etymology": {
+      "value": "Paraland z „paradise island“; hravě připomíná český název léku Paralen, neznamená zdravotnické zařízení.",
+      "status": "approved"
+    },
+    "paraland_connection": {
+      "value": "Spojení třetí železniční linkou pod mořem, s krátkým designově proskleným úsekem.",
+      "status": "approved",
+      "note": "Inženýrsky velmi náročný futuristický prvek, nikoliv běžná technologie."
+    },
+    "paraland_location_relative": {
+      "value": "Jihovýchodně od hlavního ostrova za úzkým průlivem.",
+      "status": "proposed"
+    },
+    "paraland_distance_km": {
+      "value": 1.5,
+      "status": "proposed"
+    },
+    "highest_peak_m": {
+      "value": {
+        "min": 500,
+        "max": 600
+      },
+      "status": "approved"
+    },
+    "working_peak_m": {
+      "value": 560,
+      "status": "proposed"
+    },
+    "mountains": {
+      "value": "Menší třívrcholové pohoří s jednou prudší sjezdovkovou horou a jedním zaobleným vrcholem pro turistiku a paragliding.",
+      "status": "approved"
+    },
+    "climate": {
+      "value": "Horké slunečné plážové léto, výrazná roční období, občasný sníh a možnost zimních sportů ve vyšších polohách.",
+      "status": "approved",
+      "note": "Ve zvolené šířce nepředpokládat automaticky vydatný dlouhotrvající přírodní sníh v 560 m; krátká sezona a případné zasněžování."
+    },
+    "natural_features": {
+      "value": [
+        "lesy",
+        "louky",
+        "prameny a studánky",
+        "vodopády na horských řekách",
+        "přehradní jezero doplněné podzemní a dešťovou vodou",
+        "písčité pláže",
+        "skalnaté pobřeží",
+        "přibližně desetimetrový pobřežní sráz s bezpečnou vyhlídkou",
+        "krystalová jeskyně s turistickou železnicí"
+      ],
+      "status": "approved"
+    },
+    "coast_ring_road": {
+      "value": "Dlouhá okružní pobřežní silnice s častými odbočkami na vyhlídky, k plážím, do lesů a na malá parkoviště.",
+      "status": "approved"
+    },
+    "cycling_walking": {
+      "value": "Hustá síť cyklotras, pěších tras a přístupů k pramenům.",
+      "status": "approved"
+    },
+    "spatial_zones": {
+      "value": {
+        "west_northwest": "lesy, horský reliéf, útesy a prameny",
+        "central_west": "přehrada, vodopády, jeskyně",
+        "north": "menší japonsky inspirovaná městečka",
+        "east_northeast": "udržitelné továrny, logistika, nížinná sídla, regionální letiště",
+        "south_southeast": "hlavní město, historický přístav, kulturní a luxusní obchodní centrum",
+        "southeast_offshore": "Paraland"
+      },
+      "status": "proposed"
+    },
+    "disaster_planning": {
+      "value": "Kvůli poloze v severozápadním Pacifiku počítat s tajfuny, pobřežními bouřemi, zemětřesením a bezpečným umístěním zásob vody a kritické infrastruktury.",
+      "status": "proposed"
+    }
+  },
+  "urbanism": {
+    "capital_name": {
+      "value": "Larpington",
+      "status": "proposed",
+      "note": "Pracovní název; skupina hlavní město dosud nepojmenovala."
+    },
+    "capital_four_districts": {
+      "value": [
+        "Chalupecká čtvrť",
+        "Kynčlova čtvrť",
+        "Klimečkova čtvrť",
+        "Žemličkova čtvrť"
+      ],
+      "status": "proposed",
+      "note": "Přesné názvy lze kdykoliv upravit; každá čtvrť má být odvozena z jednoho příjmení autorů."
+    },
+    "must_include_towns": {
+      "value": [
+        "Praha",
+        "Čimprlichovo Hradiště",
+        "Havlišovo Doupě",
+        "Ōru Maito / オールマイト"
+      ],
+      "status": "approved"
+    },
+    "other_towns": {
+      "value": [
+        "Aokawa / 青川",
+        "Hoshimachi / 星町"
+      ],
+      "status": "proposed"
+    },
+    "architectural_mix": {
+      "value": "Anglické a velšské cihlové a kamenné domy, mechem porostlé stěny, zahrady, kostely, romantická náměstí a zámky, kombinované s japonskými úzkými ulicemi a kompaktní dopravní infrastrukturou.",
+      "status": "approved"
+    },
+    "capital_roles": {
+      "value": [
+        "kultura",
+        "historické památky",
+        "obchody s limitovanými kolekcemi",
+        "státní instituce",
+        "přístav",
+        "obslužná městská doprava"
+      ],
+      "status": "approved"
+    },
+    "industry_style": {
+      "value": "Vzdušné průmyslové areály se zelení, stínem, otevřenými sekcemi, školami, školkami, restauracemi a dobrým pracovním prostředím.",
+      "status": "approved"
+    },
+    "tourism_island": {
+      "value": "Paraland má hotely, aquaparky, lesy, zříceniny, hrad/zámek, promenádu a malé historické sídlo, hlavní kapacitu turistického ubytování.",
+      "status": "approved"
+    },
+    "tourist_access_policy": {
+      "value": "Kapacitní rezervace ubytování a návštěv, ochrana místních obyvatel a přírody; návštěvníci Paralandu mohou navštívit i hlavní ostrov.",
+      "status": "approved"
+    },
+    "main_island_vip_lodging": {
+      "value": "Na hlavním ostrově je i menší počet prémiových hotelů, ale běžným turistům není přístup na ostrov zakázán.",
+      "status": "approved"
+    }
+  },
+  "mobility": {
+    "electric_vehicles": {
+      "value": "Vozový park je elektrifikovaný, přitom včetně přestavěných vozidel s klasickou karoserií a syntetickým zvukem motoru.",
+      "status": "approved"
+    },
+    "electric_drive_note": {
+      "value": "Realistická přestavba využívá elektromotor a pohon kol, nikoliv elektricky nahrazované spalování v pístových válcích.",
+      "status": "proposed"
+    },
+    "public_micromobility": {
+      "value": "Široce dostupné bezplatné půjčování lehkých elektrických dopravních prostředků v určených zónách.",
+      "status": "approved"
+    },
+    "rail_lines": {
+      "value": [
+        {
+          "id": "L1",
+          "name": "Skyline Experience",
+          "mode": "převážně nadzemní vyhlídková",
+          "description": "Tematizované vlaky s interiérovými zážitky; průjezd osvětlenou krystalovou jeskyní a kolem horského vodopádu."
+        },
+        {
+          "id": "L2",
+          "name": "Heritage Connect",
+          "mode": "klasická elektrická povrchová dráha",
+          "description": "Historicky stylizované elektrifikované soupravy, parní vzhled bez běžného spalování, průmyslová oblast a menší obce."
+        },
+        {
+          "id": "L3",
+          "name": "Metro Blue",
+          "mode": "převážně podzemní rychlá regionální dráha",
+          "description": "Hlavní město, přestupy na L2 ve třech stanicích, podmořské napojení Paralandu s krátkou výhledovou sekcí."
+        }
+      ],
+      "status": "proposed",
+      "note": "Názvy linek jsou pracovní, rozdělení funkcí je schválené."
+    },
+    "themed_rail_examples": {
+      "value": "Pokémon, anime a herní světy jen jako hypotetické licencované tematické projekty, žádné skutečné smlouvy.",
+      "status": "approved"
+    },
+    "rail_speed_note": {
+      "value": "Na krátkém ostrově má L3 smysl jako svižné metro/regionální vlak, ne jako dálkový vysokorychlostní systém dosahující neudržitelných rychlostí.",
+      "status": "proposed"
+    },
+    "seaports": {
+      "value": {
+        "at_least": 3,
+        "examples": [
+          "historický přístav hlavního města",
+          "průmyslový nákladní přístav",
+          "severní rybářský přístav",
+          "rekreační marina Paraland"
+        ]
+      },
+      "status": "proposed"
+    },
+    "airports": {
+      "value": "Přibližně dvě letiště: navrženo jedno hlavní regionální letiště a jedna menší přistávací plocha pro lehká letadla na Paralandu.",
+      "status": "proposed"
+    },
+    "rail_line_roles_approved": {
+      "value": [
+        "L1: převážně vyvýšený zážitkový vlak s průjezdem jeskyní a poblíž vodopádu",
+        "L2: historicky stylizované elektrické povrchové soupravy mezi městečky a průmyslem",
+        "L3: převážně podzemní rychlá městská a ostrovní doprava včetně Paralandu"
+      ],
+      "status": "approved"
+    }
+  },
+  "economy": {
+    "economic_mix": {
+      "value": [
+        "moderní státní exportní průmysl",
+        "specializované biologické suroviny a chemické polotovary",
+        "luxusní maloobchod a turistické služby",
+        "veřejná dopravní a energetická infrastruktura",
+        "menší šperkařský a designový sektor"
+      ],
+      "status": "approved"
+    },
+    "renewable_feedstock": {
+      "value": "Obnovitelné mořské mikrořasy jako základ pro bio-ropnou surovinu (biocrude), která vyžaduje další průmyslové zpracování.",
+      "status": "proposed",
+      "note": "Inspirace existující vědou. Výrobu nepředstavovat jako bezemisní nebo neomezeně ziskovou."
+    },
+    "resource_uniqueness": {
+      "value": "Vlastní výhodné místní podmínky pro pěstování a zpracování obnovitelných řas, plus specializovaná firemní technologie a exportní dohody.",
+      "status": "proposed",
+      "note": "Řasy nejsou výhradně unikátní pouze pro Larpidii."
+    },
+    "gemstone": {
+      "value": {
+        "working_name": "Larpidit",
+        "look": "vzácný opalizující modrozelený drahokam, místy fialové odlesky",
+        "use": "malosériové prsteny a šperky",
+        "abundance": "omezené naleziště, žádná masová těžba"
+      },
+      "status": "proposed"
+    },
+    "state_enterprises": {
+      "value": "Významné exportní podniky jsou vlastněny státem a jejich čisté zisky financují část veřejných služeb.",
+      "status": "approved"
+    },
+    "income_tax_philosophy": {
+      "value": "Nízká progresivní daň z příjmů v jednotkách procent; nižší příjmy mají nižší sazby.",
+      "status": "approved"
+    },
+    "tax_model": {
+      "value": {
+        "brackets_CZK_annual": [
+          {
+            "up_to": 300000,
+            "marginal_rate_percent": 0
+          },
+          {
+            "from": 300000,
+            "to": 900000,
+            "marginal_rate_percent": 3
+          },
+          {
+            "from": 900000,
+            "to": 1800000,
+            "marginal_rate_percent": 5
+          },
+          {
+            "from": 1800000,
+            "marginal_rate_percent": 7
+          }
+        ],
+        "notes": "Jen návrh sazeb pro výpočet modelu, ne odsouhlasená ústava."
+      },
+      "status": "proposed"
+    },
+    "workweek": {
+      "value": "Běžně 6 hodin denně od pondělí do čtvrtka, tedy 24 hodin týdně; provozy nutné pro celodenní služby se střídají ve směnách.",
+      "status": "approved"
+    },
+    "education_work_abroad": {
+      "value": "Dobrovolné státem zprostředkované vzdělávací, pracovní a profesní výjezdy do zahraničí.",
+      "status": "approved"
+    },
+    "brand_hypothetical_collaborations": {
+      "value": [
+        "Ferragamo",
+        "Burberry",
+        "Nike",
+        "Louis Vuitton",
+        "Broken Planet",
+        "Gucci"
+      ],
+      "status": "approved",
+      "note": "Jde výlučně o fiktivní nabídky limitovaných kolekcí, nikdo z nich není partner projektu."
+    },
+    "gdp_value": {
+      "value": null,
+      "status": "needs_decision",
+      "note": "Nevymýšlet neodůvodněné číslo; ekonomiku modelovat pomocí účetní identity, produktivity a rozpočtu."
+    },
+    "budget_model": {
+      "value": null,
+      "status": "needs_decision",
+      "note": "Budoucí rozpočet musí oddělovat HDP, obrat firmy, export, čistý zisk státních firem a daňové příjmy."
+    }
+  },
+  "governance": {
+    "co_rulers": {
+      "value": [
+        "František Chalupecký",
+        "Ondřej Kynčl",
+        "Matěj Klimeček",
+        "Štěpán Žemlička"
+      ],
+      "status": "approved"
+    },
+    "elected_parliament": {
+      "value": true,
+      "status": "approved"
+    },
+    "number_of_seats": {
+      "value": 15,
+      "status": "proposed"
+    },
+    "parliament_term_years": {
+      "value": 4,
+      "status": "proposed"
+    },
+    "veto_right": {
+      "value": "Každý ze čtyř spoluvládců má právo veta.",
+      "status": "approved"
+    },
+    "veto_detailed_mechanism": {
+      "value": "Veto pozastaví přijetí konkrétního zákona; po smírčím řízení lze rozhodnout v celostátním referendu.",
+      "status": "needs_decision",
+      "note": "Pozor: pokud má být veto absolutní a trvalé, vede k možnému zablokování systému."
+    },
+    "citizens_fifth_vote": {
+      "value": "Při rovnosti 2:2 u rozhodnutí čtyř spoluvládců rozhodují občané v referendu; veto vyžaduje zvláštní proces.",
+      "status": "proposed"
+    },
+    "right_to_stop": {
+      "value": {
+        "trigger": "Souhlas nejméně 95 % všech oprávněných občanů.",
+        "effect": "Zastaví projednávání a přijímání nových běžných zákonů na neurčito do vyřešení sporu.",
+        "leaders": "Spoluvládci se musí problému věnovat, nesmějí odcestovat mimo stát, dokud trvá mimořádný režim.",
+        "continuity": "Základní správa, soudy, zdravotnictví a řešení akutního ohrožení musí pokračovat."
+      },
+      "status": "approved",
+      "note": "Mechanické detaily ověřit s týmem; výjimka pro základní chod státu je nezbytná pro ústavní konzistenci."
+    },
+    "courts": {
+      "value": "Nezávislá soudní soustava.",
+      "status": "proposed"
+    },
+    "citizenship": {
+      "value": "Několik let pobytu, znalost jazyka a zákonů; mimořádný přínos může urychlit řízení.",
+      "status": "approved"
+    },
+    "citizenship_fitness": {
+      "value": "Fyzická zdatnost není podmínkou občanství, dobrovolný sportovní/občanský program je otevřený všem dle možností.",
+      "status": "proposed"
+    },
+    "social_services": {
+      "value": "Kombinace kvalitního dostupného veřejného školství, základní zdravotní péče a infrastruktury s osobní odpovědností a možností soukromých služeb.",
+      "status": "proposed",
+      "note": "Rozpracování z volby 13B, potvrdit rozsah."
+    }
+  },
+  "history": {
+    "founding_story": {
+      "value": "První britští osadníci připluli kolem roku 1600, vystavěli přístavy, kostely, tržiště a venkovská sídla; zemědělství bylo dlouho základem obživy.",
+      "status": "approved"
+    },
+    "agriculture": {
+      "value": "Původně hlavně obilí a omezené pěstování rýže na zavlažovaných terasách; odlehlost a chudá obchodní infrastruktura brzdily růst počtu obyvatel.",
+      "status": "approved"
+    },
+    "late_king": {
+      "value": "Poslední král se kvůli hazardním dluhům dostal do finanční krize a nevýhodně předal správu velké části státního majetku a hospodářských práv magnátovi Košťálovi.",
+      "status": "approved"
+    },
+    "villain": {
+      "value": {
+        "name": "Košťál",
+        "status": "zcela vymyšlená postava",
+        "role": "miliardář zneužívající koncese a firmy k praní peněz a vykořisťování pracovních sil"
+      },
+      "status": "approved"
+    },
+    "succession_story": {
+      "value": "Po smrti krále čtyři vzdálení dědicové vyšetřili situaci, zveřejnili video The Truth of Larpidia Island, pomohli upozornit na finanční trestnou činnost, získali podporu občanů a poté převzali ústavně potvrzenou veřejnou funkci.",
+      "status": "approved"
+    },
+    "video_title": {
+      "value": "The Truth of Larpidia Island",
+      "status": "approved"
+    },
+    "museum": {
+      "value": "Mimořádně interaktivní muzeum historie, archiv dokumentů, filmová rekonstrukce, simulace rozhodnutí návštěvníků, přiznání chyb minulých vlád, možnost komentované prohlídky čtyř spoluvládců.",
+      "status": "approved"
+    },
+    "timeline": {
+      "value": [
+        {
+          "date": "1608-06-16",
+          "event": "První doložené anglické osídlení",
+          "holiday_proposed": true
+        },
+        {
+          "date": "2019-08-08",
+          "event": "Košťál získal nevýhodné koncese na majetek a hospodářskou správu; začátek problematické éry",
+          "holiday_proposed": false
+        },
+        {
+          "date": "2023-10-28",
+          "event": "Úmrtí posledního krále",
+          "holiday_proposed": false
+        },
+        {
+          "date": "2024-05-19",
+          "event": "Premiéra dokumentárního videa The Truth of Larpidia Island",
+          "holiday_proposed": true
+        },
+        {
+          "date": "2024-09-02",
+          "event": "Zadržení Košťála a zahájení soudního řízení",
+          "holiday_proposed": true
+        },
+        {
+          "date": "2025-01-25",
+          "event": "Referendum o nové ústavě a čtyřech spoluvládcích",
+          "holiday_proposed": true
+        },
+        {
+          "date": "2025-03-14",
+          "event": "Uvedení nové vlády do úřadu",
+          "holiday_proposed": true
+        }
+      ],
+      "status": "proposed",
+      "note": "Konkrétní historické datumy nejsou potvrzené; jde o pracovní časovou osu."
+    },
+    "holidays": {
+      "value": "Vycházejí z českých svátků, doplněny lokálními dny založení, odhalení pravdy, zatčení Košťála a schválení nové ústavy.",
+      "status": "approved"
+    },
+    "fiction_disclaimer": {
+      "value": "Nejde o skutečná obvinění ani skutečné historické události. Veškerá podobnost jména Košťál s reálnými osobami je náhodná.",
+      "status": "approved"
+    }
+  },
+  "visitor_experience": {
+    "social_topics": {
+      "value": [
+        "hiking a horské výhledy",
+        "life-maxxing a slow living",
+        "historické město a trhy",
+        "japonské uličky a noční město",
+        "studánky a vodopády",
+        "horská železnice a jeskyně",
+        "cyklovýlety a roadtripy",
+        "zimní sjezdovka a chalupy",
+        "přístavy, lodě, západy slunce",
+        "Paraland a jeho rekreační život"
+      ],
+      "status": "approved"
+    },
+    "social_formats": {
+      "value": [
+        "fotky 4:5",
+        "story 9:16",
+        "reel 9:16 video",
+        "turistický průvodce",
+        "editovatelné titulky a mapové štítky"
+      ],
+      "status": "approved"
+    },
+    "mood_references": {
+      "value": "Fakemink (Night, Blooming Jasmine), Gola Gianni (2 Handys), Justin Bieber/Nicki Minaj (Beauty and a Beat) pouze jako hudební orientační referenční nálada; bez kopírování hudby/textů.",
+      "status": "approved"
+    },
+    "real_influencer_names": {
+      "value": [
+        "Togi",
+        "SteveWillDoIt",
+        "Jynxzi",
+        "Brezscales",
+        "TJR"
+      ],
+      "status": "approved",
+      "note": "Jen žánrová reference či hypotetický marketingový scénář. Nezobrazovat konkrétní skutečné osoby jako návštěvníky Larpidie."
+    },
+    "activities_safety": {
+      "value": "Vyhlídky na pobřežních útesech vybavené bezpečným přístupem; fotografování a turistika, ne návody na nebezpečné skoky.",
+      "status": "approved"
+    }
+  },
+  "output_requirements": {
+    "cartography": {
+      "value": [
+        "fiktivní satelitně stylizovaný pohled na oba ostrovy",
+        "fyzická mapa",
+        "politická mapa",
+        "historická mapa",
+        "detailní plán hlavního města s čitelným měřítkem, zastávkami, obchody, státními budovami a POI"
+      ],
+      "status": "approved"
+    },
+    "text": {
+      "value": [
+        "důsledná encyklopedie",
+        "inspirativní turistický průvodce",
+        "stručný popis země",
+        "chronologie a muzeum",
+        "ZSV právní rámec"
+      ],
+      "status": "approved"
+    },
+    "economics": {
+      "value": [
+        "srozumitelné tabulky",
+        "ekonomický model s odhady a vzorci",
+        "grafy bez vymyšlených měření"
+      ],
+      "status": "approved"
+    },
+    "visuals": {
+      "value": [
+        "fotorealistické cestovatelské fotky",
+        "IG Stories a Reels s přírodou i kulturou",
+        "video prompty",
+        "konzistentní pohledy na dopravní a průmyslovou infrastrukturu"
+      ],
+      "status": "approved"
+    },
+    "school": {
+      "value": [
+        "podklady pro prezentaci",
+        "ručně kreslitelný plakát",
+        "krátké mluvené texty"
+      ],
+      "status": "approved"
+    },
+    "order": {
+      "value": [
+        "ATLAS",
+        "LORE+ZSV",
+        "PHOTO+STORY",
+        "SLIDES"
+      ],
+      "status": "approved"
+    }
+  },
+  "open_decisions": [
+    {
+      "id": "D1",
+      "question": "Potvrdit definitivní půdorys a přibližné souřadnice obou ostrovů.",
+      "suggestion": "175 km² hlavní ostrov + 14 km² Paraland; přibližně 33.9 N, 137.6 E, svět alternativní geografie."
+    },
+    {
+      "id": "D2",
+      "question": "Potvrdit název hlavního města a jména jeho čtyř čtvrtí.",
+      "suggestion": "Larpington a čtyři české názvy podle příjmení autorů."
+    },
+    {
+      "id": "D3",
+      "question": "Potvrdit, zda je veto absolutní, nebo přehlasovatelné v referendu.",
+      "suggestion": "Jednorázové odkladné veto s občanským arbitrážním referendem."
+    },
+    {
+      "id": "D4",
+      "question": "Jak je měnově a právně možné, že samostatný ostrov používá českou korunu?",
+      "suggestion": "Fiktivní mezistátní smlouva a zásoba českých korun / platební infrastruktura."
+    },
+    {
+      "id": "D5",
+      "question": "Potvrdit konkrétní letopočty a svátky, strukturu rozpočtu, modelované HDP, přesnou rozlohu a počet obyvatel.",
+      "suggestion": "Použít navržené pracovní parametry a transparentně popsat výpočty."
+    },
+    {
+      "id": "D6",
+      "question": "Potvrdit barvy vlajky, státní symboly a přesnou podobu vzácného drahokamu.",
+      "suggestion": "Modrozelený larpidit s opalescencí jako vizuální podpis země."
+    }
+  ]
+}

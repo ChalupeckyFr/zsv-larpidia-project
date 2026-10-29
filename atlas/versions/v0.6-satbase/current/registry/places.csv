@@ -1,0 +1,160 @@
+﻿id;type;subtype;name_cs;name_en;name_ja;island;region;X_pct;Y_pct;x_km;y_km;elev_m_model;exist_status;name_status;pos_status;origin;length_km;notes
+M-01;peak;peak;Nejvyšší vrchol, pracovní 560 m;Mount Larp;ラープ山;main;west_northwest;29.0;34.0;6.96;5.44;560.0;approved;proposed;proposed;geo_ref;;lesnatý horský masiv na západě
+M-02;peak;peak;Lyžařská a paraglidingová hora;Winter Peak;冬山;main;west_northwest;38.0;33.0;9.12;5.28;510.0;approved;proposed;proposed;geo_ref;;menší přirozený spád, krátká zimní sezona
+M-03;peak;peak;Zaoblený turistický vrch;Round Hill;丸山;main;west_northwest;22.0;50.0;5.28;8.0;440.0;approved;proposed;proposed;geo_ref;;výhledy, louky a značené trasy
+N-01;nature;nature;Skalní vyhlídka nad mořem;Cliff Lookout Cape;断崖展望岬;main;west_northwest;12.0;40.0;2.88;6.4;14.6;approved;proposed;proposed;geo_ref;;bezpečný výhled, žádné pobídky ke skokům
+N-02;nature;nature;Krystalová jeskyně;Crystal Cave;水晶洞;main;west_northwest;38.0;47.0;9.12;7.52;194.1;approved;proposed;proposed;geo_ref;;průjezd zážitkové L1 po obvodu jeskyně
+N-03;nature;nature;Vodopád a horská řeka;Larp Falls;ラープの滝;main;central_west;43.0;54.0;10.32;8.64;126.7;approved;proposed;proposed;geo_ref;;nedaleko jeskyně a přehrady
+N-04;nature;nature;Přehradní jezero;Larp Reservoir;ラープ湖;main;central_west;48.0;61.0;11.52;9.76;54.6;approved;proposed;proposed;geo_ref;;vodárenské dílo a rekreační pobřeží s ochranou zdroje
+C-01;settlement;capital;Hlavní město (prac. Larpington);Larpington;ラープトン;main;south_southeast;67.0;76.0;16.08;12.16;18.2;approved;proposed;proposed;geo_ref;;historické jižní centrum
+C-02;port;port;Historický přístav hlavního města;Larpington Old Harbour;ラープトン旧港;main;south_southeast;68.0;87.0;16.32;13.92;1.2;approved;proposed;proposed;geo_ref;;nábřeží, butiky a promenády
+C-03;district;district;Chalupecká čtvrť;;;main;south_southeast;61.0;76.0;14.64;12.16;25.1;proposed;proposed;proposed;geo_ref;;část centra
+C-04;district;district;Kynčlova čtvrť;;;main;south_southeast;66.0;71.0;15.84;11.36;23.3;proposed;proposed;proposed;geo_ref;;část centra
+C-05;district;district;Klimečkova čtvrť;;;main;east_northeast;72.0;76.0;17.28;12.16;12.7;proposed;proposed;proposed;geo_ref;;část centra
+C-06;district;district;Žemličkova čtvrť;;;main;south_southeast;67.0;81.0;16.08;12.96;19.9;proposed;proposed;proposed;geo_ref;;část centra
+T-01;settlement;town;Praha;Praha;プラハ;main;central_lowland;70.0;49.0;16.8;7.84;41.1;approved;approved;proposed;geo_ref;;český toponym v obytné nížině
+T-02;settlement;town;Čimprlichovo Hradiště;Čimprlichovo Hradiště;チンプルリフ砦;main;south_southeast;48.0;72.0;11.52;11.52;56.3;approved;approved;proposed;geo_ref;;historické městečko
+T-03;settlement;town;Havlišovo Doupě;Havliš's Den;ハヴリシュの巣;main;west_northwest;17.0;60.0;4.08;9.6;192.0;approved;approved;proposed;geo_ref;;horská venkovská obec
+T-04;settlement;town;Ōru Maito (オールマイト);Ōru Maito;オールマイト;main;north;56.0;23.0;13.44;3.68;24.0;approved;approved;proposed;geo_ref;;japonizované severní městečko
+T-05;settlement;town;Aokawa (青川);Aokawa;青川;main;north;73.0;26.5;17.52;4.24;16.6;proposed;proposed;proposed;geo_ref;;další návrhové severní město
+I-01;industry;industry;Zelená průmyslová zóna;Green Industrial Zone;グリーン工業地帯;main;east_northeast;82.0;53.0;19.68;8.48;18.4;approved;proposed;proposed;geo_ref;;továrny, zahrady, školy, restaurace
+I-02;industry;industry;Závod na zpracování mořských řas;Seaweed Processing Plant;海藻処理工場;main;east_northeast;88.0;60.0;21.12;9.6;10.6;proposed;proposed;proposed;geo_ref;;exportní závod blízko nákladního přístavu
+I-03;port;port;Nákladní přístav;Cargo Port;貨物港;main;east_northeast;94.0;64.0;22.56;10.24;0.5;proposed;proposed;proposed;geo_ref;;infrastruktura pro export
+A-01;airport;airport;Hlavní regionální letiště;Larpidia Regional Airport;ラーピディア地方空港;main;east_northeast;82.0;40.0;19.68;6.4;14.9;proposed;proposed;proposed;geo_ref;;východní nížina, realistická vzletová dráha
+P-01;rail_station;rail_link;Spojení na Paraland;Paraland Link;パラランド連絡;main;south_southeast;82.0;83.0;19.68;13.28;2.0;approved;proposed;proposed;geo_ref;;třetí železniční linka pod vodou
+T-06;settlement;town;Hoshimachi;Hoshimachi;星町;main;north;80.03;24.66;19.207;3.946;2.2;proposed;proposed;proposed;atlas_new;;modelová populace, ne sčítání
+PL-01;settlement;old_town;Staré městečko Paralandu (pracovní);Paraland Old Town;パラランド旧市街;para;southeast_offshore;108.78;101.92;26.108;16.307;13.0;approved;proposed;proposed;atlas_new;;modelová populace, ne sčítání
+PL-03;settlement;resort;Resorty jih (pracovní);South Resorts;南リゾート;para;southeast_offshore;102.54;112.84;24.61;18.054;14.1;approved;proposed;proposed;atlas_new;;modelová populace, ne sčítání
+PL-05;settlement;village;Marina a přístavní vesnice (pracovní);Marina Village;マリーナ村;para;southeast_offshore;98.47;103.67;23.633;16.587;3.7;approved;proposed;proposed;atlas_new;;modelová populace, ne sčítání
+HM-01;settlement;hamlet;osada (bez názvu);;;main;central_lowland;65.13;34.81;15.632;5.569;42.8;proposed;needs_decision;proposed;atlas_new;;modelová populace, ne sčítání
+HM-02;settlement;hamlet;osada (bez názvu);;;main;central_west;45.5;60.41;10.92;9.666;97.8;proposed;needs_decision;proposed;atlas_new;;modelová populace, ne sčítání
+HM-03;settlement;hamlet;osada (bez názvu);;;main;east_northeast;80.78;42.08;19.387;6.732;15.6;proposed;needs_decision;proposed;atlas_new;;modelová populace, ne sčítání
+HM-04;settlement;hamlet;osada (bez názvu);;;main;central_lowland;58.2;40.69;13.968;6.51;71.4;proposed;needs_decision;proposed;atlas_new;;modelová populace, ne sčítání
+HM-05;settlement;hamlet;osada (bez názvu);;;main;south_southeast;55.45;68.92;13.308;11.028;51.1;proposed;needs_decision;proposed;atlas_new;;modelová populace, ne sčítání
+HM-06;settlement;hamlet;osada (bez názvu);;;main;central_lowland;56.87;58.18;13.649;9.309;63.7;proposed;needs_decision;proposed;atlas_new;;modelová populace, ne sčítání
+H-01;port;fishing_port;Severní rybářský přístav;North Fishing Port;北の漁港;main;north;57.08;19.06;13.7;3.05;5.8;proposed;proposed;proposed;atlas_new;;"malý přístav v zátoce u Ōru Maito; rybí trh"
+H-02;port;marina;Marina Paraland;Paraland Marina;パラランド・マリーナ;para;southeast_offshore;97.35;98.87;23.364;15.819;0.9;proposed;proposed;proposed;atlas_new;;rekreační marina a terminál L3 na západním pobřeží Paralandu
+A-02;airport;light_airstrip;Přistávací plocha Paraland;Paraland Airstrip;パラランド飛行場;para;southeast_offshore;100.88;109.06;24.21;17.45;12.3;proposed;proposed;proposed;atlas_new;;"jen lehká letadla, omezený provoz; žádné druhé velké letiště (kanon)"
+V-02;poi;viewpoint;Útesová vyhlídka pod M-01;;;main;west_northwest;29.04;27.81;6.97;4.45;140.7;proposed;proposed;proposed;atlas_new;;"bezpečná vyhlídka s oplocením a zábradlím; bez pobídky ke skokům do moře"
+V-03;poi;viewpoint;Vyhlídka severního mysu;;;main;north;68.79;11.56;16.51;1.85;18.6;proposed;proposed;proposed;atlas_new;;"bezpečná vyhlídka s oplocením a zábradlím; bez pobídky ke skokům do moře; maják LH-01"
+LH-01;poi;lighthouse;Maják severního mysu;North Cape Lighthouse;北岬灯台;main;north;69.21;11.31;16.61;1.81;17.2;proposed;proposed;proposed;atlas_new;;navigační maják, rozhledna
+V-04;poi;viewpoint;Vyhlídka na hrotu poloostrova;;;main;south_southeast;91.88;90.31;22.05;14.45;1.2;proposed;proposed;proposed;atlas_new;;"bezpečná vyhlídka s oplocením a zábradlím; bez pobídky ke skokům do moře; výhled na Paraland"
+V-05;poi;viewpoint;Vyhlídka na severovýchodním pobřeží;;;main;north;89.21;28.19;21.41;4.51;1.5;proposed;proposed;proposed;atlas_new;;"bezpečná vyhlídka s oplocením a zábradlím; bez pobídky ke skokům do moře"
+V-06;poi;viewpoint;Vyhlídka na jihozápadním útesu;;;main;west_northwest;19.54;66.81;4.69;10.69;72.9;proposed;proposed;proposed;atlas_new;;"bezpečná vyhlídka s oplocením a zábradlím; bez pobídky ke skokům do moře"
+V-07;poi;viewpoint;Vyhlídka na hrázi přehrady;;;main;central_west;51.29;64.56;12.31;10.33;78.9;proposed;proposed;proposed;atlas_new;;"pohled na přehradní jezero N-04; ochrana zdroje vody"
+PG-01;poi;paragliding_launch;Paraglidingový start (zaoblený vrch M-03);;;main;west_northwest;21.96;49.94;5.27;7.99;439.9;proposed;proposed;proposed;atlas_new;;"start proti převládajícímu západnímu proudění; M-03 = zaoblený vrchol pro turistiku a paragliding (bible)"
+PG-02;poi;paragliding_landing;Paraglidingové přistání (louka);;;main;west_northwest;18.88;58.06;4.53;9.29;217.6;proposed;proposed;proposed;atlas_new;;přistávací louka pod M-03
+SP-01;poi;spring;Pramen hlavní řeky;;;main;central_west;40.04;36.19;9.61;5.79;278.8;approved;proposed;proposed;atlas_new;;prameny a studánky přístupné pěšími trasami (bible approved)
+SP-02;poi;spring;Studánka u severního potoka;;;main;west_northwest;33.54;31.56;8.05;5.05;291.7;approved;proposed;proposed;atlas_new;;prameny a studánky přístupné pěšími trasami (bible approved)
+SP-03;poi;spring;Pramen Havlišova potoka;;;main;west_northwest;20.62;51.94;4.95;8.31;337.6;approved;proposed;proposed;atlas_new;;prameny a studánky přístupné pěšími trasami (bible approved)
+SP-04;poi;spring;Studánka na stezce k M-03;;;main;west_northwest;19.79;54.69;4.75;8.75;257.9;approved;proposed;proposed;atlas_new;;prameny a studánky přístupné pěšími trasami (bible approved)
+SP-05;poi;spring;Studánka na hřebenovce;;;main;west_northwest;26.29;42.81;6.31;6.85;247.4;approved;proposed;proposed;atlas_new;;prameny a studánky přístupné pěšími trasami (bible approved)
+SP-06;poi;spring;Studánka u Horské stanice;;;main;west_northwest;38.29;39.44;9.19;6.31;242.5;approved;proposed;proposed;atlas_new;;prameny a studánky přístupné pěšími trasami (bible approved)
+SP-07;poi;spring;Studánka nad vodopádem;;;main;central_west;42.46;51.56;10.19;8.25;158.8;approved;proposed;proposed;atlas_new;;prameny a studánky přístupné pěšími trasami (bible approved)
+SP-08;poi;spring;Studánka pod hradem (Paraland);;;para;southeast_offshore;104.88;99.69;25.17;15.95;30.5;proposed;proposed;proposed;atlas_new;;Paraland
+HV-01;poi;hotel_vip;Prémiový hotel – přístavní promenáda;;;main;south_southeast;68.71;84.56;16.49;13.53;7.9;proposed;proposed;proposed;atlas_new;;"kanon: menší počet prémiových hotelů na hlavním ostrově; běžní turisté mají přístup na ostrov"
+HV-02;poi;hotel_vip;Prémiový hotel – pláž Hoshimachi;;;main;north;79.29;22.69;19.03;3.63;0.4;proposed;proposed;proposed;atlas_new;;
+HV-03;poi;hotel_vip;Horská chata u lyžařské sjezdovky;;;main;central_west;39.96;41.31;9.59;6.61;233.5;proposed;proposed;proposed;atlas_new;;chalupy u sjezdovky
+PL-02;poi;castle;Hrad/zámeček (pracovní);Paraland Castle;パラランド城;para;southeast_offshore;103.12;97.94;24.75;15.67;66.8;approved;proposed;proposed;atlas_new;;kanon: hrad/zámeček na Paralandu
+PL-06;poi;ruin;Zřícenina (pracovní);Ruin above the Old Town;旧市街の廃墟;para;southeast_offshore;110.04;104.56;26.41;16.73;55.5;approved;proposed;proposed;atlas_new;;kanon: zříceniny
+PL-04;poi;aquapark;Aquapark;Paraland Aquapark;パラランド・アクアパーク;para;southeast_offshore;104.04;115.06;24.97;18.41;14.0;approved;proposed;proposed;atlas_new;;kanon: aquapark jako samostatná atrakce, rezervace
+V-08;poi;viewpoint;Vyhlídka na východním kopci Paralandu;;;para;southeast_offshore;111.88;111.44;26.85;17.83;150.4;proposed;proposed;proposed;atlas_new;;Paraland
+B-01;poi;beach;Písčitá pláž (pracovní);;;main;south_southeast;55.06;85.84;13.215;13.735;0.0;approved;proposed;proposed;atlas_new;;"kanon: písčité pláže; jen J/JV hlavního ostrova a V Paralandu"
+B-02;poi;beach;Písčitá pláž (pracovní);;;main;south_southeast;76.83;84.86;18.44;13.578;0.4;approved;proposed;proposed;atlas_new;;"kanon: písčité pláže; jen J/JV hlavního ostrova a V Paralandu"
+B-03;poi;beach;Písčitá pláž (pracovní);;;main;north;78.71;21.44;18.891;3.43;0.0;approved;proposed;proposed;atlas_new;;"kanon: písčité pláže; jen J/JV hlavního ostrova a V Paralandu"
+B-04;poi;beach;Písčitá pláž (pracovní);;;main;south_southeast;89.95;89.33;21.588;14.293;5.2;approved;proposed;proposed;atlas_new;;"kanon: písčité pláže; jen J/JV hlavního ostrova a V Paralandu"
+B-05;poi;beach;Písčitá pláž (pracovní);;;para;southeast_offshore;102.35;116.81;24.563;18.69;0.8;approved;proposed;proposed;atlas_new;;"kanon: písčité pláže; jen J/JV hlavního ostrova a V Paralandu"
+B-06;poi;beach;Písčitá pláž (pracovní);;;para;southeast_offshore;114.36;116.3;27.446;18.608;9.2;approved;proposed;proposed;atlas_new;;"kanon: písčité pláže; jen J/JV hlavního ostrova a V Paralandu"
+ST-W;rail_station;hub;Larpington Západ (Chalupecká);;;main;south_southeast;58.96;74.69;14.15;11.95;33.2;proposed;proposed;proposed;atlas_new;;uzel L1/L2/L3, přestup
+ST-L1-02;rail_station;station;Přehrada;;;main;central_west;51.62;63.06;12.39;10.09;83.8;proposed;proposed;proposed;atlas_new;;rekreační pobřeží přehrady, ochrana zdroje vody
+ST-L1-03;rail_station;station;Vodopád (fotozastávka);;;main;central_west;43.96;53.56;10.55;8.57;131.5;proposed;proposed;proposed;atlas_new;;"N-03 – fotozastávka; bezpečná vyhlídková plošina"
+ST-L1-04;rail_station;station;Krystalová jeskyně;;;main;west_northwest;39.19;48.31;9.406;7.73;195.7;proposed;proposed;proposed;atlas_new;;"N-02 – nástupiště před vstupním tunelem; vlak pokračuje jeskyní"
+ST-L1-05;rail_station;station;Horská stanice;;;main;west_northwest;39.29;40.44;9.43;6.47;242.4;proposed;proposed;proposed;atlas_new;;"konečná u pohoří M-02/M-03; návaznost na turistiku, lyžování a paragliding"
+ST-L2-01;rail_station;station;Čimprlichovo Hradiště;;;main;south_southeast;48.71;71.81;11.69;11.49;43.6;proposed;proposed;proposed;atlas_new;;historické městečko T-02
+ST-N;rail_station;hub;Larpington Sever (Kynčlova);;;main;south_southeast;66.25;68.44;15.9;10.95;28.7;proposed;proposed;proposed;atlas_new;;přestup L2↔L3
+ST-E;rail_station;hub;Larpington Východ (Klimečkova);;;main;east_northeast;73.54;75.31;17.65;12.05;10.7;proposed;proposed;proposed;atlas_new;;přestup L2↔L3
+ST-L2-05;rail_station;station;Zelená průmyslová zóna;;;main;east_northeast;81.29;55.69;19.51;8.91;16.1;proposed;proposed;proposed;atlas_new;;I-01, školy a jídelny v areálu
+ST-L2-06;rail_station;station;Závod na zpracování řas;;;main;east_northeast;87.54;58.81;21.01;9.41;9.6;proposed;proposed;proposed;atlas_new;;I-02
+ST-L2-07;rail_station;station;Nákladní přístav;;;main;east_northeast;92.04;62.44;22.09;9.99;3.8;proposed;proposed;proposed;atlas_new;;I-03 – převážně nákladní, omezeně osobní
+ST-L2-08;rail_station;station;Praha;;;main;central_lowland;69.54;50.94;16.69;8.15;37.5;proposed;proposed;proposed;atlas_new;;T-01
+ST-L2-09;rail_station;station;Odbočka Letiště (výhybna);;;main;east_northeast;70.88;41.31;17.01;6.61;41.6;proposed;proposed;proposed;atlas_new;;výhybna, bez nástupiště
+ST-L2-10;rail_station;station;Letiště;;;main;east_northeast;81.29;42.81;19.51;6.85;15.6;proposed;proposed;proposed;atlas_new;;A-01
+ST-L2-11;rail_station;station;Aokawa;;;main;north;72.71;28.44;17.45;4.55;18.5;proposed;proposed;proposed;atlas_new;;T-05, rozvětvení na Ōru Maito a Hoshimachi
+ST-L2-12;rail_station;station;Ōru Maito;;;main;north;57.04;25.06;13.69;4.01;24.5;proposed;proposed;proposed;atlas_new;;T-04
+ST-L2-13;rail_station;station;Hoshimachi;;;main;north;80.21;25.56;19.25;4.09;3.5;proposed;proposed;proposed;atlas_new;;T-06
+ST-S;rail_station;station;Larpington Střed – Přístav (Žemličkova);;;main;south_southeast;67.08;81.56;16.1;13.05;19.8;proposed;proposed;proposed;atlas_new;;stará zástavba, parlament, historický přístav C-02 (cca 0,9 km)
+ST-L3-05;rail_station;station;Východní nábřeží;;;main;south_southeast;78.33;80.62;18.8;12.9;5.2;proposed;proposed;proposed;atlas_new;;nová čtvrť na východním pobřeží
+ST-L3-06;rail_station;station;Paraland Link (P-01);;;main;south_southeast;82.0;83.0;19.68;13.28;2.0;proposed;proposed;proposed;atlas_new;;P-01 – poslední stanice na hlavním ostrově
+ST-L3-07;rail_station;station;Paraland – Marina;;;para;southeast_offshore;97.83;99.38;23.478;15.9;1.4;proposed;proposed;proposed;atlas_new;;terminál L3 na západním pobřeží Paralandu u mariny
+BAY-N1;coast_feature;bay;Zátoka Ōru Maito;Ōru Maito Bay;オールマイト湾;main;north;57.92;15.62;13.9;2.5;0.0;approved;proposed;proposed;geo_ref;;silueta z GEOGRAPHY_AND_CANON.md (PROPOSED): dvě severní zátoky, západní skalnatý mys, jižní záliv, JV poloostrov
+BAY-N2;coast_feature;bay;Zátoka Hoshimachi;Hoshimachi Bay;星町湾;main;north;80.0;21.25;19.2;3.4;0.0;approved;proposed;proposed;geo_ref;;silueta z GEOGRAPHY_AND_CANON.md (PROPOSED): dvě severní zátoky, západní skalnatý mys, jižní záliv, JV poloostrov
+BAY-S;coast_feature;bay;Záliv Larpington;Larpington Bay;ラープトン湾;main;south_southeast;72.92;88.75;17.5;14.2;0.0;approved;proposed;proposed;geo_ref;;silueta z GEOGRAPHY_AND_CANON.md (PROPOSED): dvě severní zátoky, západní skalnatý mys, jižní záliv, JV poloostrov
+BAY-E;coast_feature;bay;Zátoka nákladního přístavu;Cargo Bay;貨物湾;main;east_northeast;88.33;75.0;21.2;12.0;0.0;proposed;proposed;proposed;geo_ref;;silueta z GEOGRAPHY_AND_CANON.md (PROPOSED): dvě severní zátoky, západní skalnatý mys, jižní záliv, JV poloostrov
+CAPE-W;coast_feature;cape;Skalní mys;Rock Cape;岩岬;main;west_northwest;11.25;40.0;2.7;6.4;13.3;approved;proposed;proposed;geo_ref;;silueta z GEOGRAPHY_AND_CANON.md (PROPOSED): dvě severní zátoky, západní skalnatý mys, jižní záliv, JV poloostrov
+CAPE-N;coast_feature;cape;Severní mys;North Cape;北岬;main;north;69.17;9.38;16.6;1.5;13.1;proposed;proposed;proposed;geo_ref;;silueta z GEOGRAPHY_AND_CANON.md (PROPOSED): dvě severní zátoky, západní skalnatý mys, jižní záliv, JV poloostrov
+PEN-SE;coast_feature;peninsula;Poloostrov Paraland Link;Paraland Link Peninsula;パラランド連絡半島;main;south_southeast;90.83;88.75;21.8;14.2;3.3;approved;proposed;proposed;geo_ref;;silueta z GEOGRAPHY_AND_CANON.md (PROPOSED): dvě severní zátoky, západní skalnatý mys, jižní záliv, JV poloostrov
+DAM-N04;infrastructure;dam;Hráz přehrady N-04;Larp Dam;ラープダム;main;south_southeast;50.75;66.56;12.18;10.65;43.6;approved;proposed;proposed;bible;;"vodárenské dílo; hráz ≈ 29.0 m (model)"
+L1;rail_line;L1;Skyline Experience;;;main;central_west;46.74;55.09;11.217;8.814;114.7;approved;proposed;proposed;bible;8.6;role linky schválena, jméno a vedení návrh
+L2;rail_line;L2;Heritage Connect;;;main;central_lowland;66.5;58.51;15.96;9.362;39.2;approved;proposed;proposed;bible;29.0;role linky schválena, jméno a vedení návrh
+L3;rail_line;L3;Metro Blue;;;main+para;south_southeast;64.3;69.04;15.431;11.047;28.2;approved;proposed;proposed;bible;16.1;role linky schválena, jméno a vedení návrh
+RD-R1;road;R1;Okružní pobřežní silnice R1;;;main;west_northwest;27.93;28.44;6.704;4.551;223.1;approved;proposed;proposed;bible;53.56;"kanon: dlouhá okružní pobřežní silnice (approved); v útesovém SZ vede vnitrozemím a krátkými tunely"
+RD-01;road;R2;Larpington – Praha;;;main;central_lowland;69.95;51.16;16.789;8.186;34.1;proposed;proposed;proposed;atlas_new;2.88;
+RD-02;road;R2;Praha – Aokawa;;;main;east_northeast;72.52;39.12;17.404;6.26;32.1;proposed;proposed;proposed;atlas_new;3.74;
+RD-03;road;R2;Aokawa – Ōru Maito;;;main;north;72.51;27.24;17.403;4.359;16.1;proposed;proposed;proposed;atlas_new;4.12;
+RD-04;road;R2;Aokawa – Hoshimachi;;;main;north;76.69;27.65;18.405;4.424;10.3;proposed;proposed;proposed;atlas_new;1.8;
+RD-05;road;R2;Praha – letiště – Zelená zóna;;;main;east_northeast;79.73;45.11;19.135;7.218;17.7;proposed;proposed;proposed;atlas_new;5.16;
+RD-06;road;R2;Zelená zóna – závod – nákladní přístav;;;main;east_northeast;86.35;59.08;20.723;9.453;10.7;proposed;proposed;proposed;atlas_new;3.18;
+RD-07;road;R2;Larpington Východ – Zelená zóna;;;main;east_northeast;78.51;65.33;18.843;10.452;7.1;proposed;proposed;proposed;atlas_new;3.31;
+RD-08;road;R2;Larpington Západ – Čimprlichovo Hradiště;;;main;south_southeast;48.74;72.92;11.698;11.667;43.6;proposed;proposed;proposed;atlas_new;2.43;
+RD-09;road;R2;Čimprlichovo Hradiště – přehrada – Horská stanice;;;main;central_west;49.03;59.01;11.767;9.441;93.8;proposed;proposed;proposed;atlas_new;6.93;
+RD-10;road;R2;Čimprlichovo Hradiště – Havlišovo Doupě;;;main;west_northwest;32.49;68.94;7.798;11.031;117.3;proposed;proposed;proposed;atlas_new;7.8;
+RD-11;road;R2;Larpington – hlavní tepna západ–východ;;;main;south_southeast;66.53;76.06;15.967;12.17;17.9;proposed;proposed;proposed;atlas_new;4.2;
+RD-12;road;R2;Larpington – tepna sever–jih k přístavu;;;main;south_southeast;67.18;75.76;16.124;12.121;18.4;proposed;proposed;proposed;atlas_new;3.07;
+RD-PL1;road;R3;Okružní servisní silnice Paralandu;;;para;southeast_offshore;111.92;118.44;26.86;18.95;7.8;proposed;proposed;proposed;atlas_new;11.86;"omezený provoz (rezervace a ochrana místních); bez autopřevozu z hlavního ostrova"
+RD-PL2;road;R3;Přístup k hradu;;;para;southeast_offshore;104.95;100.63;25.188;16.101;27.3;proposed;proposed;proposed;atlas_new;0.79;
+RD-PL3;road;R3;Přístup k aquaparku;;;para;southeast_offshore;105.29;112.21;25.27;17.954;68.6;proposed;proposed;proposed;atlas_new;0.52;
+RD-PL4;road;R3;Přístup k přistávací ploše;;;para;southeast_offshore;100.96;109.19;24.23;17.47;12.5;proposed;proposed;proposed;atlas_new;0.2;
+RD-S01;road;R3;Odbočka k Útesová vyhlídka pod M-01;;;main;west_northwest;29.45;29.94;7.067;4.79;380.9;proposed;proposed;proposed;atlas_new;0.62;přístup k V-02
+RD-S02;road;R3;Odbočka k Vyhlídka severního mysu;;;main;north;68.79;11.56;16.51;1.85;18.6;proposed;proposed;proposed;atlas_new;0.33;přístup k V-03
+RD-S03;road;R3;Odbočka k Maják severního mysu;;;main;north;69.54;10.81;16.69;1.73;15.7;proposed;proposed;proposed;atlas_new;0.23;přístup k LH-01
+RD-S04;road;R3;Odbočka k Vyhlídka na hrotu poloostrova;;;main;south_southeast;86.51;84.17;20.762;13.467;6.7;proposed;proposed;proposed;atlas_new;2.83;přístup k V-04
+RD-S05;road;R3;Odbočka k Vyhlídka na severovýchodním pobřeží;;;main;north;88.6;28.21;21.265;4.513;2.4;proposed;proposed;proposed;atlas_new;0.31;přístup k V-05
+RD-S06;road;R3;Odbočka k Vyhlídka na jihozápadním útesu;;;main;west_northwest;18.38;65.38;4.412;10.46;102.3;proposed;proposed;proposed;atlas_new;0.96;přístup k V-06
+RD-S07;road;R3;Odbočka k Vyhlídka na hrázi přehrady;;;main;central_west;51.45;64.25;12.348;10.28;80.3;proposed;proposed;proposed;atlas_new;0.24;přístup k V-07
+RD-S08;road;R3;Odbočka k Prémiový hotel – pláž Hoshimachi;;;main;north;79.29;22.69;19.03;3.63;0.4;proposed;proposed;proposed;atlas_new;0.19;přístup k HV-02
+RD-S09;road;R3;Odbočka k Horská chata u lyžařské sjezdovky;;;main;central_west;39.79;41.56;9.55;6.65;235.7;proposed;proposed;proposed;atlas_new;0.13;přístup k HV-03
+RD-S10;road;R3;Odbočka k Písčitá pláž (pracovní);;;main;south_southeast;55.06;85.84;13.215;13.735;0.0;proposed;proposed;proposed;atlas_new;0.31;přístup k B-01
+RD-S11;road;R3;Odbočka k Písčitá pláž (pracovní);;;main;south_southeast;76.58;83.79;18.379;13.406;1.2;proposed;proposed;proposed;atlas_new;0.29;přístup k B-02
+RD-S12;road;R3;Odbočka k Písčitá pláž (pracovní);;;main;north;78.76;22.88;18.902;3.661;0.7;proposed;proposed;proposed;atlas_new;0.37;přístup k B-03
+RD-S13;road;R3;Odbočka k Písčitá pláž (pracovní);;;main;south_southeast;86.0;83.82;20.639;13.411;5.9;proposed;proposed;proposed;atlas_new;2.33;přístup k B-04
+RD-S14;road;R3;Místní silnice k osadě HM-01;;;main;central_lowland;65.12;34.81;15.63;5.57;42.8;proposed;proposed;proposed;atlas_new;1.61;
+RD-S15;road;R3;Místní silnice k osadě HM-02;;;main;central_west;44.9;57.29;10.776;9.166;78.2;proposed;proposed;proposed;atlas_new;1.39;
+RD-S16;road;R3;Místní silnice k osadě HM-03;;;main;east_northeast;81.25;42.72;19.5;6.835;15.6;proposed;proposed;proposed;atlas_new;0.21;
+RD-S17;road;R3;Místní silnice k osadě HM-04;;;main;north;58.26;25.99;13.982;4.158;28.5;proposed;proposed;proposed;atlas_new;2.55;
+RD-S18;road;R3;Místní silnice k osadě HM-05;;;main;south_southeast;55.46;68.94;13.31;11.03;51.1;proposed;proposed;proposed;atlas_new;0.66;
+RD-S19;road;R3;Místní silnice k osadě HM-06;;;main;central_west;53.7;62.66;12.887;10.025;69.4;proposed;proposed;proposed;atlas_new;1.5;
+TR-01;trail;hiking;Útesová stezka k vyhlídce N-01;;;main;west_northwest;13.84;49.09;3.321;7.854;190.4;proposed;proposed;proposed;atlas_new;3.33;bezpečná stezka k vyhlídce N-01 s oplocením
+TR-02;trail;hiking;Stezka na zaoblený vrch M-03;;;main;west_northwest;17.79;56.23;4.27;8.997;240.4;proposed;proposed;proposed;atlas_new;2.05;"louky, značené trasy; start paraglidingu"
+TR-03;trail;hiking;Hřebenovka M-03 – M-01;;;main;west_northwest;25.25;41.47;6.059;6.635;256.7;proposed;proposed;proposed;atlas_new;3.32;
+TR-04;trail;hiking;Hřebenovka M-01 – M-02;;;main;west_northwest;34.7;33.46;8.327;5.353;317.8;proposed;proposed;proposed;atlas_new;2.17;
+TR-05;trail;hiking;Stezka k pramenům a na M-02;;;main;central_west;39.95;37.16;9.588;5.945;263.4;proposed;proposed;proposed;atlas_new;1.36;prameny a studánky
+TR-06;trail;hiking;Vodní stezka: vodopád – přehrada;;;main;central_west;46.57;55.97;11.177;8.956;107.7;proposed;proposed;proposed;atlas_new;2.77;
+TR-07;trail;hiking;Z Horské stanice k M-03;;;main;west_northwest;31.54;45.08;7.57;7.213;238.9;proposed;proposed;proposed;atlas_new;4.65;
+TR-PL1;trail;hiking;Pěší okruh východními lesy Paralandu;;;para;southeast_offshore;110.45;114.81;26.508;18.369;122.9;proposed;proposed;proposed;atlas_new;2.85;kanon: východ Paralandu – lesy, menší kopce, pěší okruh
+TR-PL2;trail;hiking;Staré městečko – zřícenina – hrad;;;para;southeast_offshore;109.33;104.56;26.238;16.73;53.0;proposed;proposed;proposed;atlas_new;2.32;historická památková stezka
+CY-01;cycleway;cycleway;Pobřežní cyklotrasa (okruh ostrova);;;main;north;46.42;21.69;11.14;3.471;103.9;approved;proposed;proposed;bible;53.84;podél R1 (bible: hustá síť cyklotras) | síť cyklotras je approved, tato trasa je návrh
+CY-02;cycleway;cycleway;Larpington – Praha – Aokawa;;;main;central_lowland;70.76;45.53;16.983;7.285;43.7;approved;proposed;proposed;bible;6.67;síť cyklotras je approved, tato trasa je návrh
+CY-03;cycleway;cycleway;Praha – letiště – Zelená zóna – přístav;;;main;east_northeast;81.52;57.46;19.564;9.193;12.5;approved;proposed;proposed;bible;8.35;síť cyklotras je approved, tato trasa je návrh
+CY-04;cycleway;cycleway;Larpington – Čimprlichovo Hradiště – přehrada;;;main;south_southeast;52.38;66.65;12.57;10.664;63.8;approved;proposed;proposed;bible;7.14;síť cyklotras je approved, tato trasa je návrh
+CY-05;cycleway;cycleway;Aokawa – Hoshimachi / Ōru Maito;;;main;north;72.5;27.61;17.4;4.417;18.9;approved;proposed;proposed;bible;5.98;síť cyklotras je approved, tato trasa je návrh
+CY-06;cycleway;cycleway;Okruh Paralandu;;;main;southeast_offshore;111.9;118.31;26.857;18.93;9.3;approved;proposed;proposed;bible;11.74;pobřežní promenáda a okruh | síť cyklotras je approved, tato trasa je návrh
+SK-01;other_line;ski_run;Lyžařská sjezdovka M-02;;;main;west_northwest;37.96;38.62;9.11;6.18;258.3;proposed;proposed;proposed;bible;;"prudší sjezdovková hora (approved); krátká zimní sezona, zasněžování"
+SK-02;other_line;ski_lift;Lanovka/vlek;;;main;west_northwest;37.96;33.06;9.11;5.29;510.0;proposed;proposed;proposed;atlas_new;;
+FERRY-1;other_line;ferry;Lodní okruh C-02 ↔ marina Paraland;;;main;southeast_offshore;96.23;98.43;23.095;15.749;0.0;proposed;proposed;proposed;atlas_new;;"volitelné (O6); bez autopřevozu"
+W-01;river;main;Hlavní horská řeka (pracovní);Larp River;ラープ川;main;central_west;42.23;47.04;10.136;7.527;199.5;approved;proposed;proposed;atlas_new;3.88;koryto 279.3→67.6 m (model)
+W-02;river;river;Aokawa – Modrá řeka (pracovní);Aokawa (Blue River);青川;main;north;69.81;29.56;16.754;4.729;24.4;proposed;proposed;proposed;atlas_new;5.33;koryto 49.2→0.3 m (model)
+W-03;river;stream;Severní potok (pracovní);North Brook;北の小川;main;west_northwest;33.55;28.94;8.053;4.631;217.5;proposed;proposed;proposed;atlas_new;0.77;koryto 278.8→120.9 m (model)
+W-04;river;stream;Potok Havlišova Doupěte (pracovní);Havliš Brook;ハヴリシュ川;main;west_northwest;17.8;58.09;4.273;9.294;210.1;proposed;proposed;proposed;atlas_new;2.33;koryto 309.3→84.9 m (model)
+W-05;river;stream;Pražský potok (pracovní);Praha Brook;プラハ川;main;east_northeast;73.91;56.18;17.739;8.989;21.3;proposed;proposed;proposed;atlas_new;7.49;koryto 49.1→0.3 m (model)
+W-06;river;stream;Paralandský potok sever (pracovní);Paraland North Brook;パラランド北川;para;southeast_offshore;109.23;105.52;26.215;16.883;66.7;proposed;proposed;proposed;atlas_new;1.89;koryto 151.3→4.2 m (model)
+W-07;river;stream;Paralandský potok jih (pracovní);Paraland South Brook;パラランド南川;para;southeast_offshore;106.88;115.49;25.652;18.478;81.3;proposed;proposed;proposed;atlas_new;1.55;koryto 153.1→6.1 m (model)

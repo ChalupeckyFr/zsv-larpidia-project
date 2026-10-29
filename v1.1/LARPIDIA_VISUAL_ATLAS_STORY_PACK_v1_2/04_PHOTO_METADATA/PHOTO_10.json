@@ -1,0 +1,167 @@
+{
+  "scene_id": "PHOTO_10",
+  "kind": "photo",
+  "title": "SWISS-INSPIRED MOUNTAIN MEADOW",
+  "format": "9:16",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Mountains – west",
+  "tags": [
+    "mountains",
+    "no people",
+    "meadow",
+    "chalet"
+  ],
+  "description_cs": "Úzká pěšina přes horskou louku, jedna větší dřevěná chata a 2–3 menší stavby, ploty, tmavé jehličnany a skalnatý hřeben v pozadí. Bez lidí.",
+  "registered_location": {
+    "registry_id": "M-03",
+    "name_en": "Round Hill",
+    "name_cs": "Zaoblený turistický vrch",
+    "type": "peak",
+    "island": "main",
+    "exist_status": "approved",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 5.28,
+    "y_km": 8.0,
+    "elev_m_model": 440.0,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "M-03",
+        "name": "Round Hill",
+        "x_km": 5.28,
+        "y_km": 8.0
+      },
+      {
+        "id": "SP-04",
+        "name": "Studánka na stezce k M-03",
+        "x_km": 4.75,
+        "y_km": 8.75
+      }
+    ],
+    "note": "Horské louky západní Larpidie pod zaobleným vrchem M-03 (stezka TR-02). Chata je prvek scény, v registru není (HV-03 stojí v lese u M-02)."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 4.52,
+    "y_km": 8.7,
+    "eye_height_m": 1.6,
+    "basis_cs": "louka u stezky TR-02 (stezka na M-03), 250 m od studánky SP-04; bod je návrh",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 252.1,
+    "cover_at_camera": "meadow",
+    "distance_to_coast_km": 1.42,
+    "bearing_deg": 47,
+    "compass": "NE",
+    "fov_hint_deg": 46,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "meadow",
+        "z_m": 262
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "meadow",
+        "z_m": 283
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "meadow",
+        "z_m": 439
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "forest",
+        "z_m": 268
+      }
+    ],
+    "sea_visible_km": null,
+    "visible_registered": [
+      {
+        "id": "SP-03",
+        "name": "Pramen Havlišova potoka",
+        "type": "poi",
+        "bearing_deg": 48,
+        "rel_angle_deg": 1,
+        "dist_km": 0.58,
+        "side": "center"
+      }
+    ],
+    "nearby_registered": [
+      {
+        "id": "TR-02",
+        "name": "Stezka na zaoblený vrch M-03",
+        "dist_km": 0.39,
+        "bearing_deg": 220
+      },
+      {
+        "id": "SP-03",
+        "name": "Pramen Havlišova potoka",
+        "dist_km": 0.58,
+        "bearing_deg": 48
+      },
+      {
+        "id": "PG-02",
+        "name": "Paraglidingové přistání (louka)",
+        "dist_km": 0.59,
+        "bearing_deg": 179
+      }
+    ],
+    "look_at": {
+      "id": null,
+      "name": "TR-02 path climbing the meadow slope",
+      "bearing_deg": 45,
+      "rel_angle_deg": -2,
+      "dist_km": 0.75,
+      "line_of_sight": true
+    },
+    "target_cs": "hřeben vrchu M-03 (NE, ≈ 1 km)"
+  },
+  "conditions": {
+    "time_of_day": "mid-morning",
+    "season": "early summer",
+    "weather": "partly cloudy, cloud shadows on the slope"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "fresh Swiss-style Instagram look: slightly increased contrast, muted greens, warm sunlit grass, cooler shadows",
+    "imperfections": "slight haze at the ridge, a faint vignette"
+  },
+  "canon_notes_cs": [
+    "Atlas: M-03 Round Hill (zaoblený vrch, louky, značené trasy, 440 m) a stezka TR-02 vedou přes skutečné luční pokryvy (DEM/pokryv: meadow).",
+    "Chata a hospodářské stavby jsou ilustrativní prvky scény (nejsou v registru); jedinou registrovanou horskou chatou je HV-03 u sjezdovky M-02 (les)."
+  ],
+  "avoid": "no people, no cars, no animals, no readable text, no ski lifts",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_10_SWISS_INSPIRED_MOUNTAIN_MEADOW_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_10_SWISS_INSPIRED_MOUNTAIN_MEADOW_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_10.json",
+    "expected_photo": "01_PHOTOS/PHOTO_10.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "SP-W",
+    "mpp": 4.0,
+    "window_km": [
+      3.494,
+      7.304,
+      2.8,
+      2.1
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

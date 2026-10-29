@@ -1,0 +1,200 @@
+{
+  "scene_id": "PHOTO_16",
+  "kind": "photo",
+  "title": "COASTAL DAWN HAND VIEW",
+  "format": "9:16",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "South-east peninsula (view to Paraland)",
+  "tags": [
+    "coast",
+    "hand only",
+    "dawn",
+    "old money"
+  ],
+  "description_cs": "První osoba na pobřežní vyhlídce: v popředí ruka s elegantními kovovými hodinkami a šálkem kávy natažená k pobřeží; v dálce klidné moře, nízké pobřežní město a gradient svítání. Jen ruka, ne celý člověk.",
+  "registered_location": {
+    "registry_id": "V-04",
+    "name_en": "Vyhlídka na hrotu poloostrova",
+    "name_cs": "Vyhlídka na hrotu poloostrova",
+    "type": "poi",
+    "island": "main",
+    "exist_status": "proposed",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 22.05,
+    "y_km": 14.45,
+    "elev_m_model": 1.2,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "V-04",
+        "name": "Vyhlídka na hrotu poloostrova",
+        "x_km": 22.05,
+        "y_km": 14.45
+      }
+    ],
+    "note": "Vyhlídka na hrotu poloostrova (bezpečná, s oplocením) – pohled přes průliv na Paraland."
+  },
+  "camera_point": {
+    "label": "registered viewpoint V-04",
+    "in_registry": true,
+    "x_km": 22.05,
+    "y_km": 14.45,
+    "eye_height_m": 1.4,
+    "basis_cs": "registrovaná vyhlídka V-04 (kamera přímo na ní)",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 1.2,
+    "cover_at_camera": "scrub/grass",
+    "distance_to_coast_km": 0.27,
+    "bearing_deg": 122,
+    "compass": "ESE",
+    "fov_hint_deg": 46,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "scrub/grass",
+        "z_m": 1
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "scrub/grass",
+        "z_m": 0
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "sea",
+        "z_m": 0
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "scrub/grass",
+        "z_m": 38
+      }
+    ],
+    "sea_visible_km": 0.3,
+    "visible_registered": [
+      {
+        "id": "H-02",
+        "name": "Paraland Marina",
+        "type": "port",
+        "bearing_deg": 136,
+        "rel_angle_deg": 14,
+        "dist_km": 1.9,
+        "side": "right"
+      },
+      {
+        "id": "ST-L3-07",
+        "name": "Paraland – Marina",
+        "type": "rail_station",
+        "bearing_deg": 135,
+        "rel_angle_deg": 13,
+        "dist_km": 2.04,
+        "side": "right"
+      },
+      {
+        "id": "PL-05",
+        "name": "Marina Village",
+        "type": "settlement",
+        "bearing_deg": 143,
+        "rel_angle_deg": 21,
+        "dist_km": 2.66,
+        "side": "right"
+      },
+      {
+        "id": "PL-02",
+        "name": "Paraland Castle",
+        "type": "poi",
+        "bearing_deg": 114,
+        "rel_angle_deg": -8,
+        "dist_km": 2.96,
+        "side": "left"
+      },
+      {
+        "id": "A-02",
+        "name": "Paraland Airstrip",
+        "type": "airport",
+        "bearing_deg": 144,
+        "rel_angle_deg": 22,
+        "dist_km": 3.7,
+        "side": "right"
+      },
+      {
+        "id": "PL-03",
+        "name": "South Resorts",
+        "type": "settlement",
+        "bearing_deg": 145,
+        "rel_angle_deg": 23,
+        "dist_km": 4.42,
+        "side": "right"
+      }
+    ],
+    "nearby_registered": [
+      {
+        "id": "PEN-SE",
+        "name": "Paraland Link Peninsula",
+        "dist_km": 0.35,
+        "bearing_deg": 315
+      },
+      {
+        "id": "B-04",
+        "name": "Písčitá pláž (pracovní)",
+        "dist_km": 0.49,
+        "bearing_deg": 289
+      }
+    ],
+    "look_at": {
+      "id": "PL-05",
+      "name": "Marina Village",
+      "bearing_deg": 143,
+      "rel_angle_deg": 21,
+      "dist_km": 2.659,
+      "line_of_sight": true
+    },
+    "target_cs": "Paraland (marina a hrad, 2–3 km ESE)"
+  },
+  "conditions": {
+    "time_of_day": "pre-sunrise blue hour into first light",
+    "season": "winter morning",
+    "weather": "calm, cold, clear"
+  },
+  "people": {
+    "count": 0,
+    "description": "only the first-person right hand and wrist are visible (no face, no body)"
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "serene blue-hour grade: indigo to soft pink and a thin orange line at the horizon, low contrast, gentle grain",
+    "imperfections": "slightly soft focus on the far shore, a faint reflection on the cup"
+  },
+  "canon_notes_cs": [
+    "Registr: V-04 Vyhlídka na hrotu poloostrova (bezpečná, s oplocením); Paraland je vidět: PL-05 143° / 2,7 km, H-02 136° / 1,9 km, hrad PL-02 114° / 3,0 km (DEM: LOS ověřeno).",
+    "Svítání vpravo od severu (ESE) je realistické pro zimní období (slunce vychází na jihovýchodě)."
+  ],
+  "avoid": "no face, no full body, no other people, no phone visible, no brand logos or text on the watch or cup, no boats in the foreground",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_16_COASTAL_DAWN_HAND_VIEW_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_16_COASTAL_DAWN_HAND_VIEW_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_16.json",
+    "expected_photo": "01_PHOTOS/PHOTO_16.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "S-00",
+    "mpp": 10.0,
+    "window_km": [
+      20.53,
+      13.275,
+      3.6,
+      2.7
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

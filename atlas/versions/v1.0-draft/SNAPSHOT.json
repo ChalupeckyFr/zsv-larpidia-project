@@ -1,0 +1,15 @@
+{
+  "name": "v1.0-draft",
+  "created": "2026-10-24T12:08:41+02:00",
+  "description": "F8: závěrečná revize – atlas 1.0-draft ke schválení týmem (3 otevřené body), plán hlavního města, satelitní reference S-03, shrnutí a kontrolní seznam.",
+  "changes": [
+    "Nově S-03 (Larpington, 2970x2100 px @2 m, zástavba z plánu CP-01, IoU souše 0,998), prompt a popisky z plánu; S-00…S-03 a šikmé pohledy znovu vyrenderovány s verzí 1.0-draft",
+    "docs/FINAL_SUMMARY.md, TEAM_APPROVAL_CHECKLIST.md, F8_REVIEW.md, README_ATLAS.md přepsáno; nejvýše tři otevřené body (D1/D7, D8/D10-D12, D2/D5/D9)",
+    "PNG náhledy map (export_png.py), README_CAPITAL.md, matice kanonu K-021…K-074 aktualizována, rozpory C-17…C-21 a otázky O19…O25",
+    "Opakovatelnost: celý řetězec skriptů v čisté kopii dal 81 ze 101 výstupů shodných byte po bytu (zbytek jen označení verze); check_atlas.py 41 kontrol v pořádku"
+  ],
+  "parent": "v0.7-capital-base",
+  "bible_version": "1.0-draft",
+  "bible_sha256": "252f0ebd33c73a87fff9db21abf0684d34f1c7c4f24bbe7905bdb5e11fef58a2",
+  "files": 174
+}

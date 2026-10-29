@@ -1,0 +1,15 @@
+{
+  "name": "v0.1.1-outline-B",
+  "created": "2026-10-23T18:06:25+02:00",
+  "description": "Tým zvolil variantu B; geometrie obrysu zmrazena jako kanonický základ atlasu (R-06).",
+  "changes": [
+    "current/geometry/outline_coast.json = zmrazená varianta B (SHA-256 ffca09ac...), shodná se snapshotem v0.1-outline",
+    "canon.py: CHOSEN_VARIANT, ACCEPTED_DEVIATIONS (T-04, T-05, A-01), load_outline(), table_rows()",
+    "Pracovní varianty se generují do atlas/work/ (mimo snapshoty); varianta A zůstává jen v archivu v0.1-outline",
+    "Rozhodnuto: rámec zůstává 24x16 km (O18 uzavřeno)"
+  ],
+  "parent": "v0.1-outline",
+  "bible_version": "1.0-draft",
+  "bible_sha256": "252f0ebd33c73a87fff9db21abf0684d34f1c7c4f24bbe7905bdb5e11fef58a2",
+  "files": 18
+}

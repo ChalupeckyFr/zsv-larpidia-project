@@ -1,0 +1,76 @@
+{
+  "checks": {
+    "L3: okruh je uzavřený": true,
+    "L3: podmořský úsek 1,2–2,3 km (průliv 1,5 km)": true,
+    "L3: prosklená galerie 150–300 m (krátký prosklený úsek)": true,
+    "L3: koncová stanice leží na Paralandu": true,
+    "L3: stanice P-01 na hlavním ostrově u pobřeží": true,
+    "přestupy L2↔L3: právě 3 stanice": true,
+    "L1/L2/L3 uzel Larpington Západ": true,
+    "L2: síť je souvislá (1 komponenta)": true,
+    "L2: všechny stanice leží na trati (≤ 70 m)": true,
+    "L1: prochází jeskyní N-02 (střed ≤ 80 m od tratě)": true,
+    "L1: fotozastávka do 400 m od vodopádu N-03": true,
+    "L1: smyčka v jeskyni ≈ ¾ obvodu (240–290°)": true,
+    "L1: největší sklon (500 m) ≤ 6 %": true,
+    "L1: stoupá k pohoří (konečná ≥ 200 m)": true,
+    "žádná trať ani silnice nevede jezerem": true,
+    "R1: uzavřený okruh dlouhý 45–75 km": true,
+    "R1: nejvyšší bod ≤ 300 m": true,
+    "každé sídlo je do 0,9 km od silnice": true,
+    "každá stanice L1–L3 je do 1,5 km od silnice": true,
+    "přístavy (≥ 3) leží na pobřeží a hráze jsou v moři": true,
+    "A-01: dráha celá na souši, ≥ 0,7 km od moře, sklon < 1,5°": true,
+    "A-02: Paraland, malá dráha ≤ 800 m (ne druhé velké letiště)": true,
+    "A-01 je ≥ 1,5 km od průmyslové zóny I-01": true,
+    "modelová populace: sídla ≤ 32 000, roztroušení 2–15 %": true,
+    "půdorysy sídel leží na souši a mimo jezero": true,
+    "hlavní město má půdorys 4–6 km²": true,
+    "Paraland má hrad, zříceninu, aquapark, resorty, marinu a pěší okruh": true,
+    "prameny a studánky ≥ 6, vyhlídky ≥ 6, hotely VIP 3 na hlavním ostrově": true,
+    "lyžařská sjezdovka M-02: převýšení 200–320 m, krátká": true,
+    "cyklotrasy: alespoň 6 tras": true,
+    "pláže nejsou na útesovém severozápadě": true,
+    "trajekt C-02 ↔ marina nekříží souš": true
+  },
+  "all_ok": true,
+  "stats": {
+    "rail_km": {
+      "L1": 8.72,
+      "L2": 29.0,
+      "L3": 15.9
+    },
+    "L1_max_grade_pct": 4.9,
+    "L3_undersea_m": 1482,
+    "L3_glass_m": 226,
+    "roads_km": {
+      "R1": 53.9,
+      "R2": 49.0,
+      "R3": 30.4
+    },
+    "R1_km": 53.9,
+    "R1_tunnel_km": 2.23,
+    "trails_km": 24.8,
+    "cycleways_km": 93.7,
+    "ski": {
+      "vertical_m": 277,
+      "length_m": 1680
+    },
+    "poi_counts": {
+      "viewpoint": 7,
+      "lighthouse": 1,
+      "paragliding_launch": 1,
+      "paragliding_landing": 1,
+      "spring": 8,
+      "hotel_vip": 3,
+      "castle": 1,
+      "ruin": 1,
+      "aquapark": 1,
+      "beach": 6
+    },
+    "stations": 21,
+    "settlements": 18,
+    "population_in_settlements": 28900,
+    "population_scattered": 3100
+  }
+}

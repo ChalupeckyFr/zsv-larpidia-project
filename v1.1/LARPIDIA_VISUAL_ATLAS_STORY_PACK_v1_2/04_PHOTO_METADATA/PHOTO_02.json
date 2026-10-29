@@ -1,0 +1,155 @@
+{
+  "scene_id": "PHOTO_02",
+  "kind": "photo",
+  "title": "WATERFALL EXPRESS",
+  "format": "16:9",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Mountains – centre-west",
+  "tags": [
+    "mountains",
+    "no people",
+    "waterfall",
+    "railway"
+  ],
+  "description_cs": "Vodopád v horském lese: mech, kapradiny, mokré kameny a jemná mlha. U pravého okraje vjíždí do fotozastávky malý elektrický turistický vlak L1. Bez lidí.",
+  "registered_location": {
+    "registry_id": "N-03",
+    "name_en": "Larp Falls",
+    "name_cs": "Vodopád a horská řeka",
+    "type": "nature",
+    "island": "main",
+    "exist_status": "approved",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 10.32,
+    "y_km": 8.64,
+    "elev_m_model": 126.7,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "N-03",
+        "name": "Larp Falls",
+        "x_km": 10.32,
+        "y_km": 8.64
+      },
+      {
+        "id": "ST-L1-03",
+        "name": "Vodopád (fotozastávka)",
+        "x_km": 10.55,
+        "y_km": 8.57
+      }
+    ],
+    "note": "Vodopád N-03 (výška pádu ≈ 44 m, model) a fotozastávka L1 u něj."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 10.54,
+    "y_km": 8.575,
+    "eye_height_m": 1.6,
+    "basis_cs": "vyhlídková plošina fotozastávky ST-L1-03 (stanice dle atlasu), 230 m od vodopádu; bod na plošině je návrh",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 131.8,
+    "cover_at_camera": "forest",
+    "distance_to_coast_km": 3.76,
+    "bearing_deg": 250,
+    "compass": "WSW",
+    "fov_hint_deg": 62,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "forest",
+        "z_m": 130
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "forest",
+        "z_m": 126
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "forest",
+        "z_m": 124
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "forest",
+        "z_m": 159
+      }
+    ],
+    "sea_visible_km": null,
+    "visible_registered": [
+      {
+        "id": "M-03",
+        "name": "Round Hill",
+        "type": "peak",
+        "bearing_deg": 276,
+        "rel_angle_deg": 26,
+        "dist_km": 5.29,
+        "side": "right"
+      }
+    ],
+    "nearby_registered": [
+      {
+        "id": "SP-07",
+        "name": "Studánka nad vodopádem",
+        "dist_km": 0.48,
+        "bearing_deg": 313
+      }
+    ],
+    "look_at": {
+      "id": "N-03",
+      "name": "Larp Falls",
+      "bearing_deg": 254,
+      "rel_angle_deg": 4,
+      "dist_km": 0.229,
+      "line_of_sight": true
+    },
+    "target_cs": "vodopád N-03 (WSW)"
+  },
+  "conditions": {
+    "time_of_day": "late morning",
+    "season": "late spring",
+    "weather": "soft overcast, mist in the gorge"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "natural saturation, soft contrast, gently lifted shadows, cool-green tint, slow-shutter silky water like an iPhone Live Photo long exposure while the rocks stay sharp",
+    "imperfections": "a few droplets on the lens in one corner, slight softness at the frame edges"
+  },
+  "canon_notes_cs": [
+    "Atlas: N-03 Larp Falls (vodopád ≈ 44 m, horní hrana 127,6 m, model); trať L1 vede viaduktem hned u vodopádu a má zde fotozastávku ST-L1-03 (bezpečná vyhlídková plošina).",
+    "Z plošiny je vlak L1 za zády kamery (viadukt leží severovýchodně); proto vlak vjíždí do záběru zprava – hlavní roli má vodopád."
+  ],
+  "avoid": "no people, no signs with text, no dam, no tropical jungle, no rainbow, no giant waterfall scale",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_02_WATERFALL_EXPRESS_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_02_WATERFALL_EXPRESS_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_02.json",
+    "expected_photo": "01_PHOTOS/PHOTO_02.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "SP-W",
+    "mpp": 4.0,
+    "window_km": [
+      9.639,
+      8.062,
+      1.5,
+      1.125
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

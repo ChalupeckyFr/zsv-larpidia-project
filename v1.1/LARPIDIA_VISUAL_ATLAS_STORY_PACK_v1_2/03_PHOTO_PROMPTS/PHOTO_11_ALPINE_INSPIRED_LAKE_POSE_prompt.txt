@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be written in the image): ALPINE-INSPIRED LAKE POSE. Format 9:16.
+
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+
+SCENE: Exactly one young man stands on a safe pebbly shore of a calm mountain reservoir in a natural, relaxed pose (one hand in a jacket pocket, the other on a backpack strap), seen in three-quarter side view as he looks across the water. The water is clear and blue-green with soft ripples; across the lake rocky ridges, forested slopes and grassy meadows rise in layers (low mountains of a few hundred metres), hazy in the distance.
+
+COMPOSITION: Portrait; the man in the lower-left third at medium distance (about one third of the frame height), pebbles in the foreground, lake and ridges behind.
+
+LIGHT AND ATMOSPHERE: Clear early-afternoon summer light, soft haze, gentle shadows; the water shows blue-green gradients.
+
+PHOTO LOOK: alpine-lake-inspired travel look: crisp natural contrast, saturated but realistic blue-green water, slightly cooler shadows. Subtle authentic imperfections (only a few, not all at once): a very slight horizon tilt, mild edge softness.
+
+PEOPLE: Exactly one person in the frame: one young man in a dark technical jacket, grey trail trousers and a small backpack, three-quarter side view, relaxed natural pose. Natural anatomy, natural clothing, correct proportions and cast shadows. No other persons anywhere, not even tiny distant figures.
+
+PLACE AND SCALE: Larp Reservoir in Larpidie, fictional: a drinking-water reservoir with a recreational shore, surrounded by low forested hills; alpine-inspired mood but modest scale, no glaciers.
+
+AVOID: no other people, no boats, no buildings, no dam wall, no logos, no glaciers, no giant peaks. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+
+Aspect ratio 9:16.

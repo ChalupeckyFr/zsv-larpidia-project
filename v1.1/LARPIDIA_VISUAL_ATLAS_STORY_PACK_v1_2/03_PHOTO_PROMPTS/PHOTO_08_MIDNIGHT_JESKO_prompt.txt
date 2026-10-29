@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be written in the image): MIDNIGHT JESKO. Format 9:16.
+
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+
+SCENE: A black Koenigsegg Jesko hypercar with subtle gold accents (gold wheels and thin gold trim), parked, stationary and switched off, on an empty paved lay-by of a mountain viewpoint at night, seen from a low three-quarter front angle; the glossy black bodywork carries soft reflections of distant city lights. Beyond a low stone parapet the valley falls away and, about 4 km away across the plain and along the coast, the warm lights of a harbour city glitter, with a few red and white ship lights at sea under a deep navy sky.
+
+COMPOSITION: Portrait; camera low (about 1 m); the car fills the lower two thirds slightly left of centre, the city lights form a soft glittering band in the upper third; the long tail and large rear wing are visible; the licence plate is blank or not visible.
+
+LIGHT AND ATMOSPHERE: Night: only ambient city glow and a faint sky glow on the horizon, a hint of rim light on the car's edges; deep shadows are allowed.
+
+PHOTO LOOK: dark and moody, slightly underexposed, visible fine night-mode noise, bokeh on distant lights, teal-black shadows with warm gold highlights. Subtle authentic imperfections (only a few, not all at once): faint bloom around the brightest lights, soft detail in the deep shadows.
+
+PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+
+PLACE AND SCALE: Larpidie, fictional island nation: a safe viewpoint with a stone parapet in the western hills, about 80 m above the plain, looking toward the harbour city of Larpington.
+
+AVOID: no people, no driving or motion blur, no other cars, no readable text, no logos other than the car's own shape; keep authentic Jesko proportions (low wide body, huge rear wing, long tail). No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+
+Aspect ratio 9:16.

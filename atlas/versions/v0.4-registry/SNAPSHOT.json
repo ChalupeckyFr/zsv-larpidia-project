@@ -1,0 +1,17 @@
+{
+  "name": "v0.4-registry",
+  "created": "2026-10-23T18:53:01+02:00",
+  "description": "F4: jednotný registr míst a objektů (159 objektů) s foto/video vodítkem z DEM, odchylky, návrh jmen, patch bible a matice dohledatelnosti kanonu.",
+  "changes": [
+    "places.json/csv: ID, jména cs/en/ja (návrh), region, X/Y %, km, pseudo-lon/lat, výška, stavy exist/name/pos, origin; photo_guide.csv: viditelné dominanty z DEM, směr moře, blízké body, styl, vyhnout se",
+    "deviations.csv (3 odchylky ≤ 3 %: T-04, T-05, A-01), names_proposed.csv, docs/NAMES_AND_DEVIATIONS_TO_APPROVE.md",
+    "docs/bible_patch_v1.1.json: návrh změn bible (neaplikováno; originál beze změny)",
+    "canon_extract.csv: sloupec atlas_objects vyplněn (95/95; 28 approved tvrzení má odkaz nebo vysvětlení)",
+    "check_atlas.py: 22/22 kontrol (geometrie, reliéf, lidská vrstva, registr, kanon, originály, snapshoty)",
+    "Oprava: BOM v ORIGINALS_SHA256.txt (čtení utf-8-sig); stav cyklotras normalizován na approved"
+  ],
+  "parent": "v0.3-human",
+  "bible_version": "1.0-draft",
+  "bible_sha256": "252f0ebd33c73a87fff9db21abf0684d34f1c7c4f24bbe7905bdb5e11fef58a2",
+  "files": 70
+}

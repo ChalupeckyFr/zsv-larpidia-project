@@ -1,0 +1,204 @@
+{
+  "scene_id": "PHOTO_17",
+  "kind": "photo",
+  "title": "OLD MONEY CASTLE MORNING",
+  "format": "16:9",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Paraland",
+  "tags": [
+    "castle",
+    "no people",
+    "old money",
+    "morning"
+  ],
+  "description_cs": "Klidný ranní pohled na nádvoří historického zámeckého objektu: světlý kámen, staré schodiště, formální zahrada a štěrková cesta, jemné ranní světlo. Bez lidí.",
+  "registered_location": {
+    "registry_id": "PL-02",
+    "name_en": "Paraland Castle",
+    "name_cs": "Hrad/zámeček (pracovní)",
+    "type": "poi",
+    "island": "para",
+    "exist_status": "approved",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 24.75,
+    "y_km": 15.67,
+    "elev_m_model": 66.8,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "PL-02",
+        "name": "Paraland Castle",
+        "x_km": 24.75,
+        "y_km": 15.67
+      }
+    ],
+    "note": "Paraland Castle (hrad/zámeček, existence schválena)."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 24.79,
+    "y_km": 15.715,
+    "eye_height_m": 1.6,
+    "basis_cs": "předpolí hradu na konci přístupové silnice RD-PL2; bod je návrh",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 65.5,
+    "cover_at_camera": "scrub/grass",
+    "distance_to_coast_km": 0.36,
+    "bearing_deg": 315,
+    "compass": "NW",
+    "fov_hint_deg": 62,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "scrub/grass",
+        "z_m": 66
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "scrub/grass",
+        "z_m": 44
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "sea",
+        "z_m": 0
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "sea",
+        "z_m": 0
+      }
+    ],
+    "sea_visible_km": 6.5,
+    "visible_registered": [
+      {
+        "id": "PL-02",
+        "name": "Paraland Castle",
+        "type": "poi",
+        "bearing_deg": 318,
+        "rel_angle_deg": 3,
+        "dist_km": 0.06,
+        "side": "center"
+      },
+      {
+        "id": "HV-01",
+        "name": "Prémiový hotel – přístavní promenáda",
+        "type": "poi",
+        "bearing_deg": 285,
+        "rel_angle_deg": -30,
+        "dist_km": 8.58,
+        "side": "left"
+      },
+      {
+        "id": "I-01",
+        "name": "Green Industrial Zone",
+        "type": "industry",
+        "bearing_deg": 325,
+        "rel_angle_deg": 10,
+        "dist_km": 8.86,
+        "side": "center"
+      },
+      {
+        "id": "ST-S",
+        "name": "Larpington Střed – Přístav (Žemličkova)",
+        "type": "rail_station",
+        "bearing_deg": 287,
+        "rel_angle_deg": -28,
+        "dist_km": 9.09,
+        "side": "left"
+      },
+      {
+        "id": "C-01",
+        "name": "Larpington",
+        "type": "settlement",
+        "bearing_deg": 292,
+        "rel_angle_deg": -23,
+        "dist_km": 9.41,
+        "side": "left"
+      },
+      {
+        "id": "ST-N",
+        "name": "Larpington Sever (Kynčlova)",
+        "type": "rail_station",
+        "bearing_deg": 298,
+        "rel_angle_deg": -17,
+        "dist_km": 10.09,
+        "side": "left"
+      },
+      {
+        "id": "ST-L2-10",
+        "name": "Letiště",
+        "type": "rail_station",
+        "bearing_deg": 329,
+        "rel_angle_deg": 14,
+        "dist_km": 10.32,
+        "side": "right"
+      },
+      {
+        "id": "HM-03",
+        "name": "osada (bez názvu)",
+        "type": "settlement",
+        "bearing_deg": 329,
+        "rel_angle_deg": 14,
+        "dist_km": 10.48,
+        "side": "right"
+      }
+    ],
+    "nearby_registered": [
+      {
+        "id": "SP-08",
+        "name": "Studánka pod hradem (Paraland)",
+        "dist_km": 0.45,
+        "bearing_deg": 122
+      }
+    ],
+    "target_cs": "průčelí hradu/zámečku (NW)"
+  },
+  "conditions": {
+    "time_of_day": "early morning",
+    "season": "early summer",
+    "weather": "clear with light mist"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "quiet old-money look: soft contrast, warm pale highlights, slightly cool shadows, gentle grain",
+    "imperfections": "a little lens softness at the corners, a subtle warm glow near the sun side"
+  },
+  "canon_notes_cs": [
+    "Atlas: PL-02 Paraland Castle (66,8 m, kánon: hrad/zámeček); přístupová silnice RD-PL2 končí 60 m od hradu.",
+    "Vzhled je ilustrativní (atlas nemá půdorys hradu)."
+  ],
+  "avoid": "no people, no cars, no flags with text, no theme-park castle, no tourists, no scaffolding",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_17_OLD_MONEY_CASTLE_MORNING_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_17_OLD_MONEY_CASTLE_MORNING_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_17.json",
+    "expected_photo": "01_PHOTOS/PHOTO_17.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "S-02",
+    "mpp": 5.0,
+    "window_km": [
+      24.311,
+      15.347,
+      0.9,
+      0.675
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

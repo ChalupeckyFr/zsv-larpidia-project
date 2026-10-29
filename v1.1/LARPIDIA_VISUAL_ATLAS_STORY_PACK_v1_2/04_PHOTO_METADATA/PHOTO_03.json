@@ -1,0 +1,114 @@
+{
+  "scene_id": "PHOTO_03",
+  "kind": "photo",
+  "title": "OLD LARPINGTON",
+  "format": "16:9",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Larpington",
+  "tags": [
+    "city",
+    "no people",
+    "old town",
+    "church"
+  ],
+  "description_cs": "Stará britsko-velšská ulička Larpingtonu: cihlové domy, kamenný chodník, malá kavárna, mech, květiny a zahrádky. V dálce věž historického kostela. Bez lidí.",
+  "registered_location": {
+    "registry_id": "CP-SQ04",
+    "name_en": "Church Square",
+    "name_cs": "Kostelní náměstí",
+    "type": "square",
+    "island": null,
+    "exist_status": "proposed",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 15.89,
+    "y_km": 13.659,
+    "elev_m_model": null,
+    "source": "atlas/current/capital/cp_objects.json",
+    "all_pins": [
+      {
+        "id": "CP-SQ04",
+        "name": "Church Square",
+        "x_km": 15.89,
+        "y_km": 13.659
+      }
+    ],
+    "note": "Kostelní náměstí ve starém městě Larpingtonu (C-01); ulička je návrh plánu města."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 15.956,
+    "y_km": 13.671,
+    "eye_height_m": 1.6,
+    "basis_cs": "Tržní ulice (třída C, 8 m) 67 m východně od Kostelního náměstí, pohled v ose ulice; bod je návrh (ulice je z plánu CP-01)",
+    "plan_local_m": [
+      2856.0,
+      3371.0
+    ],
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 5.1,
+    "cover_at_camera": "scrub/grass",
+    "distance_to_coast_km": 0.2,
+    "bearing_deg": 278,
+    "compass": "W",
+    "fov_hint_deg": 62,
+    "sea_visible_km": null,
+    "visible_registered": [],
+    "nearby_registered": [],
+    "look_at": {
+      "id": "CP-B07",
+      "name": "Historic church (St George's – working name)",
+      "bearing_deg": 285,
+      "rel_angle_deg": 7,
+      "dist_km": 0.048,
+      "line_of_sight": true
+    },
+    "target_cs": "ulice vede na Kostelní náměstí, věž kostela CP-B07 vpravo nad střechami (W)"
+  },
+  "conditions": {
+    "time_of_day": "early morning",
+    "season": "early summer",
+    "weather": "after light drizzle, damp stones, soft haze"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "warm Lightroom-mobile look: slightly lowered exposure, pulled highlights, subtle golden highlights and cooler blue-grey shadows, moderate grain",
+    "imperfections": "mild vignetting from the phone lens, a tiny lean in the vertical lines"
+  },
+  "canon_notes_cs": [
+    "Kánon (approved): anglické a velšské cihlové a kamenné domy, mechem porostlé stěny, zahrady, kostely, romantická náměstí.",
+    "Plán CP-01: Tržní ulice (8 m) vede z východu na Kostelní náměstí; kostel CP-B07 je 67 m daleko, domy 2–3 podlaží (modelově 7–10 m).",
+    "Viditelnost kostela z bodu ověřena v modelu města (terén + výška domů)."
+  ],
+  "avoid": "no people, no cars, no modern shop signs, no neon, no readable text, no skyscrapers, no Mediterranean or Asian architecture",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_03_OLD_LARPINGTON_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_03_OLD_LARPINGTON_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_03.json",
+    "expected_photo": "01_PHOTOS/PHOTO_03.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "S-03",
+    "mpp": 2.0,
+    "window_km": [
+      15.602,
+      13.431,
+      0.62,
+      0.465
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

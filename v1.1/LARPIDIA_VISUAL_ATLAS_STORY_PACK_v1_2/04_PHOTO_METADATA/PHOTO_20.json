@@ -1,0 +1,133 @@
+{
+  "scene_id": "PHOTO_20",
+  "kind": "photo",
+  "title": "HERITAGE STREET ELEGANCE",
+  "format": "16:9",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Larpington",
+  "tags": [
+    "city",
+    "no people",
+    "old money",
+    "street",
+    "classic car"
+  ],
+  "description_cs": "Elegantní ulice u malého náměstí se zachovalými historickými fasádami, decentní obchod, kamenná budova s věží, diskrétně zaparkované klasické auto. Jemné večerní světlo. Bez lidí.",
+  "registered_location": {
+    "registry_id": "CP-B08",
+    "name_en": "Market hall",
+    "name_cs": "Tržní hala",
+    "type": "building",
+    "island": null,
+    "exist_status": "proposed",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 16.58,
+    "y_km": 13.607,
+    "elev_m_model": null,
+    "source": "atlas/current/capital/cp_objects.json",
+    "all_pins": [
+      {
+        "id": "CP-B08",
+        "name": "Market hall",
+        "x_km": 16.58,
+        "y_km": 13.607
+      },
+      {
+        "id": "CP-SQ03",
+        "name": "Market Square",
+        "x_km": 16.58,
+        "y_km": 13.621
+      }
+    ],
+    "note": "Tržní náměstí a Tržní hala ve starém městě Larpingtonu."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 16.458,
+    "y_km": 13.665,
+    "eye_height_m": 1.6,
+    "basis_cs": "Tržní ulice (třída C, 8 m) 75 m před Tržním náměstím; bod je návrh",
+    "plan_local_m": [
+      3358.0,
+      3365.0
+    ],
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 4.3,
+    "cover_at_camera": "scrub/grass",
+    "distance_to_coast_km": 0.19,
+    "bearing_deg": 70,
+    "compass": "ENE",
+    "fov_hint_deg": 62,
+    "sea_visible_km": null,
+    "visible_registered": [],
+    "nearby_registered": [
+      {
+        "id": "HV-01",
+        "name": "Prémiový hotel – přístavní promenáda",
+        "dist_km": 0.14,
+        "bearing_deg": 13
+      },
+      {
+        "id": "C-02",
+        "name": "Larpington Old Harbour",
+        "dist_km": 0.29,
+        "bearing_deg": 208
+      }
+    ],
+    "look_at": {
+      "id": "CP-B08",
+      "name": "Market hall",
+      "bearing_deg": 64,
+      "rel_angle_deg": -6,
+      "dist_km": 0.106,
+      "line_of_sight": true
+    },
+    "target_cs": "Tržní náměstí a Tržní hala (ENE)"
+  },
+  "conditions": {
+    "time_of_day": "golden hour (about an hour before sunset)",
+    "season": "autumn",
+    "weather": "clear, still air"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "old-money city-walk look: warm golden highlights, soft shadows, slightly lowered exposure, restrained saturation, fine grain",
+    "imperfections": "faint lens flare from low sun, slightly soft frame corners"
+  },
+  "canon_notes_cs": [
+    "Plán CP-01: Tržní náměstí CP-SQ03 (100 × 66 m) a Tržní hala CP-B08 (54 × 22 m, 10 m); Tržní ulice (8 m) vede z Přístavního náměstí k tržišti.",
+    "Klasické auto je jen doplněk, ne hlavní prvek."
+  ],
+  "avoid": "no people, no modern signage, no neon, no readable text, no flashy supercars, no busy traffic",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_20_HERITAGE_STREET_ELEGANCE_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_20_HERITAGE_STREET_ELEGANCE_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_20.json",
+    "expected_photo": "01_PHOTOS/PHOTO_20.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "S-03",
+    "mpp": 2.0,
+    "window_km": [
+      16.183,
+      13.371,
+      0.7,
+      0.525
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

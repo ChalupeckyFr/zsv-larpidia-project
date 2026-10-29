@@ -1,0 +1,43 @@
+﻿{
+  "id": "LAR_PH_001",
+  "title": "Snow Above the Pacific",
+  "image_status": "not_generated",
+  "location": {
+    "location_id": "M-01",
+    "name": "Mount Larp",
+    "island": "Larpidia main island",
+    "elevation_m_model": 560,
+    "atlas_status": "Peak existence approved; name and location proposed; elevation is a model value",
+    "camera_position": "Hiking trail near the summit; exact trail point is not defined by the atlas",
+    "view_direction": "West to northwest toward the forested west/northwest coast and Pacific; specific visibility is an informed estimate, not a verified viewshed"
+  },
+  "season": "Early spring after a brief cold spell; scattered residual snow is a plausible visual interpretation of the canon’s occasional snow and short highland winter season, not a documented date or weather event.",
+  "camera": "Apple iPhone 15 main 1x camera, handheld, standing eye-level perspective",
+  "format": "Vertical 9:16",
+  "references": [
+    {
+      "path": "atlas/current/renders/S-01_base.png",
+      "role": "Proposed procedural nadir atlas reference for the main island’s compact coastline and relative terrain only",
+      "limitations": "Not real satellite data; it is not a ground-level photograph, does not verify exact line of sight, and cannot establish precise geographic correctness."
+    },
+    {
+      "path": "atlas/current/registry/photo_guide.csv",
+      "role": "M-01 location guidance: forested low mountains up to 560 m, no town or port; avoid city skyline, beaches on the northwest cliffs, or higher peaks"
+    },
+    {
+      "path": "atlas/current/relief/relief_report.json",
+      "role": "Model elevation and terrain consistency for M-01"
+    }
+  ],
+  "uncertainties": [
+    "Atlas positions and elevations are proposed/modelled; the team has not approved exact coordinates.",
+    "The atlas does not define the exact trail camera position or provide a viewshed analysis. West/northwest toward the Pacific is a plausible inferred direction; coastal visibility is not guaranteed.",
+    "Patchy early-spring snow is a plausible interpretation of occasional snow at higher elevations, not a verified climatological observation."
+  ],
+  "generation": {
+    "tool": "Built-in image_gen was not exposed in this session; no image was generated.",
+    "fallback": "CLI/API fallback not used; no paid external API or user key used.",
+    "prompt_file": "atlas/photography/prompts/LAR_PH_001.md",
+    "output_path": "atlas/photography/photos/LAR_PH_001.png"
+  }
+}

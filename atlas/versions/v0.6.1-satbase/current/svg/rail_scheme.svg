@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1330" viewBox="0 0 1900 1330" font-family="Segoe UI, Noto Sans, Arial, sans-serif">
+<title>Schéma železnic Larpidie a Paralandu (návrh)</title>
+<rect width="1900" height="1330" fill="#f7f5ee"/>
+<text x="60" y="64" font-size="40" font-weight="700" fill="#25313a">Schéma železnic: L1 · L2 · L3</text>
+<text x="60" y="100" font-size="21" fill="#b4541b" font-weight="600">NÁVRH (proposed) · atlas v0.5 · schéma není v měřítku; role linek jsou schváleny, vedení a stanice jsou návrh</text>
+<polyline points="670,566 878,566 982,670 982,878 878,982 670,982 566,878 566,670 670,566" fill="none" stroke="#1f5fbf" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="30 12"/>
+<polyline points="982,774 1138,774 1294,774" fill="none" stroke="#1f5fbf" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="30 12"/>
+<polyline points="1294,774 1648,774" fill="none" stroke="#8fd3ff" stroke-width="22" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1294,774 1648,774" fill="none" stroke="#1f5fbf" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="14 10"/>
+<polyline points="566,732 670,628 774,628 878,628 982,732" fill="none" stroke="#2f7d4f" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="566,774 420,920" fill="none" stroke="#2f7d4f" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="774,566 774,441 774,296 774,171" fill="none" stroke="#2f7d4f" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="774,171 483,171" fill="none" stroke="#2f7d4f" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="774,171 1107,171" fill="none" stroke="#2f7d4f" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="774,296 940,296" fill="none" stroke="#2f7d4f" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="982,774 1107,649 1211,524 1419,524" fill="none" stroke="#2f7d4f" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="566,774 483,670 400,587 275,587 233,483 233,358" fill="none" stroke="#d9531e" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="233" cy="316" r="30" fill="none" stroke="#d9531e" stroke-width="9" stroke-dasharray="8 7"/>
+<circle cx="566" cy="774" r="21" fill="#fff" stroke="#1d2730" stroke-width="4"/>
+<text x="540" y="780" font-size="19" font-weight="600" text-anchor="end" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Larpington Západ (L1·L2·L3)</text>
+<circle cx="774" cy="566" r="17" fill="#fff" stroke="#1d2730" stroke-width="4"/>
+<text x="774" y="532" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Larpington Sever (L2·L3)</text>
+<circle cx="982" cy="774" r="17" fill="#fff" stroke="#1d2730" stroke-width="4"/>
+<text x="958" y="808" font-size="19" font-weight="600" text-anchor="end" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Larpington Východ (L2·L3)</text>
+<circle cx="774" cy="982" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="774" y="1028" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Larpington Střed – Přístav (L3)</text>
+<circle cx="1138" cy="774" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="1138" y="748" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Východní nábřeží</text>
+<circle cx="1294" cy="774" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="1294" y="814" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Paraland Link (P-01)</text>
+<circle cx="1648" cy="774" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="1674" y="780" font-size="19" font-weight="600" text-anchor="start" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Paraland – Marina</text>
+<circle cx="420" cy="920" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="420" y="958" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Čimprlichovo Hradiště</text>
+<circle cx="774" cy="441" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="798" y="447" font-size="19" font-weight="600" text-anchor="start" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Praha</text>
+<circle cx="774" cy="296" r="8" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="752" y="290" font-size="19" font-weight="600" text-anchor="end" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">výhybna Letiště</text>
+<circle cx="940" cy="296" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="964" y="302" font-size="19" font-weight="600" text-anchor="start" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Letiště</text>
+<circle cx="774" cy="171" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="774" y="145" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Aokawa</text>
+<circle cx="483" cy="171" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="483" y="145" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Ōru Maito</text>
+<circle cx="1107" cy="171" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="1107" y="145" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Hoshimachi</text>
+<circle cx="1211" cy="524" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="1211" y="498" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Zelená průmyslová zóna</text>
+<circle cx="1315" cy="524" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="1315" y="562" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Závod na řasy</text>
+<circle cx="1419" cy="524" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="1445" y="530" font-size="19" font-weight="600" text-anchor="start" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Nákladní přístav</text>
+<circle cx="400" cy="587" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="400" y="559" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Přehrada</text>
+<circle cx="275" cy="587" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="275" y="627" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Vodopád</text>
+<circle cx="233" cy="420" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="259" y="426" font-size="19" font-weight="600" text-anchor="start" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Krystalová jeskyně</text>
+<circle cx="233" cy="316" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
+<text x="277" y="322" font-size="19" font-weight="600" text-anchor="start" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Horská stanice</text>
+<text x="1492" y="826" font-size="18" text-anchor="middle" fill="#1f5fbf" font-style="italic">podmoří 1,48 km · prosklená galerie 226 m</text>
+<text x="1211" y="874" font-size="16" text-anchor="middle" fill="#5b6770">poloostrov Paraland Link</text>
+<text x="774" y="774" font-size="26" text-anchor="middle" fill="#6b2a1e" font-weight="700">LARPINGTON</text><text x="774" y="800" font-size="17" text-anchor="middle" fill="#6b2a1e">městský okruh L3 · 4 uzly</text>
+<rect x="1270" y="924" width="560" height="330" rx="12" fill="#fff" stroke="#c9c3b3"/>
+<text x="1290" y="960" font-size="24" font-weight="700" fill="#25313a">Legenda</text>
+<line x1="1290" y1="998" x2="1380" y2="998" stroke="#d9531e" stroke-width="14" stroke-linecap="round"/>
+<text x="1400" y="1004" font-size="19" fill="#25313a">L1 Skyline Experience – vyhlídková, smyčka v jeskyni</text>
+<line x1="1290" y1="1044" x2="1380" y2="1044" stroke="#2f7d4f" stroke-width="14" stroke-linecap="round"/>
+<text x="1400" y="1050" font-size="19" fill="#25313a">L2 Heritage Connect – povrchová</text>
+<line x1="1290" y1="1090" x2="1380" y2="1090" stroke="#1f5fbf" stroke-width="16" stroke-linecap="round" stroke-dasharray="30 12"/>
+<text x="1400" y="1096" font-size="19" fill="#25313a">L3 Metro Blue – podzemní (čárkovaně)</text>
+<line x1="1290" y1="1136" x2="1380" y2="1136" stroke="#8fd3ff" stroke-width="18" stroke-linecap="round"/>
+<text x="1400" y="1142" font-size="19" fill="#25313a">prosklená galerie pod průlivem</text>
+<circle cx="1334" cy="1186" r="13" fill="#fff" stroke="#1d2730" stroke-width="3"/><text x="1400" y="1192" font-size="19" fill="#25313a">přestupní uzel (L1·L2·L3)</text>
+<circle cx="1334" cy="1214" r="11" fill="#fff" stroke="#1d2730" stroke-width="3"/><text x="1400" y="1220" font-size="19" fill="#25313a">přestup L2 ↔ L3 (právě tři)</text>
+<circle cx="1334" cy="1242" r="7" fill="#fff" stroke="#1d2730" stroke-width="3"/><text x="1400" y="1248" font-size="19" fill="#25313a">stanice</text>
+</svg>

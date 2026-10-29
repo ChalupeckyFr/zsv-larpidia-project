@@ -1,0 +1,17 @@
+{
+  "name": "v0.5-atlas",
+  "created": "2026-10-23T19:14:34+02:00",
+  "description": "F5: hlavní atlas – vrstvené SVG (master, fyzická, politická, kánon×návrh), schéma železnic a interaktivní prohlížeč.",
+  "changes": [
+    "larpidia_atlas_master/physical/political/status.svg (A2, 1:50 000, 21 vrstev, popisky cs/ja/en jako textové vrstvy, data-id + stav u každého prvku) a *_embedded.svg",
+    "rail_scheme.svg: netopografické schéma L1/L2/L3 (okruh L3, přestupy, podmoří 1,48 km, galerie 226 m)",
+    "viewer/atlas.html: hledání, vrstvy, jazyky CS/JA/EN, režim kánon×návrh, záznam z registru a foto/video vodítko, souřadnice kurzoru",
+    "check_atlas.py rozšířen na 27 kontrol (vrstvy SVG, pokrytí registru v mapě, prohlížeč)",
+    "R-07: pokračovat s návrhy jmen/odchylek; dopravní koncepce potvrzena jako návrh",
+    "README_ATLAS.md přepsáno; canon.ATLAS_VERSION"
+  ],
+  "parent": "v0.4-registry",
+  "bible_version": "1.0-draft",
+  "bible_sha256": "252f0ebd33c73a87fff9db21abf0684d34f1c7c4f24bbe7905bdb5e11fef58a2",
+  "files": 82
+}

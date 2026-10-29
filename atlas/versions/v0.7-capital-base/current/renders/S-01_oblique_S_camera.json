@@ -1,0 +1,26 @@
+{
+  "id": "S-01_oblique_S",
+  "status": "proposed",
+  "type": "šikmý pohled z DEM (simulace, ne družicová data)",
+  "description": "z moře jižně od hlavního města k severu: historický přístav, město, pláže, pole a hory na severozápadě",
+  "camera": {
+    "x": 16.4,
+    "y": 21.6,
+    "h": 3000.0,
+    "heading": 1.0,
+    "horizon": 0.13,
+    "fov": 62.0,
+    "dmax": 50000.0
+  },
+  "sources": [
+    "S-02",
+    "S-00"
+  ],
+  "vertical_exaggeration": 1.35,
+  "size_px": [
+    1800,
+    1000
+  ],
+  "atlas_version": "0.6.1-satbase",
+  "camera_note": "x, y v km (x východ, y jih, počátek SZ roh rámce 24×16 km); heading ve stupních od severu po směru hodin; h = výška kamery v m n. m.; horizon = poloha obzoru jako zlomek výšky obrazu; kamera s posunutým objektivem (bez naklopení); fov = vodorovné zorné pole ve stupních; výška terénu je zvětšena 1.35× (jinak by 560 m hory vypadaly jako pahorky)"
+}

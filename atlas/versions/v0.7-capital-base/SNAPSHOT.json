@@ -1,0 +1,15 @@
+{
+  "name": "v0.7-capital-base",
+  "created": "2026-10-24T11:53:31+02:00",
+  "description": "F7: podklad plánu hlavního města Larpingtonu (CP-01): metrický model A2 1 : 10 000, uliční síť a dopravní graf, bloky, veřejné prostory, klíčové budovy, stanice, registr a prohlížeč.",
+  "changes": [
+    "Okno 5 940 × 4 200 m (1 j = 1 m), 4 čtvrtě jako výseče kolem Náměstí čtyř, staré město u přístavu C-02, zelené klíny, nová čtvrť Východní nábřeží; zastavěné území 6,31 km² (C-18)",
+    "Ulice 158 km (graf: 1 355 uzlů, 2 005 hran, souvislý), 874 bloků s využitím, 15 klíčových budov, 12 parků a zelených klínů, 9 náměstí, 3 bezbariérové trasy (max. sklon 3,6 %)",
+    "Registr plánu 968 objektů (CP-*), foto/video vodítko, GeoJSON v metrech i km atlasu, SVG vrstvy cs/en/ja, HTML prohlížeč, cp_report.json (13 kontrol)",
+    "Rozpory C-17…C-21 a otázky O19…O25; patch bible: /urbanism/capital_plan_model a D10–D12; docs/F7_CAPITAL_NOTES.md a CAPITAL_PLAN_BRIEF.md; check_atlas.py rozšířen"
+  ],
+  "parent": "v0.6.1-satbase",
+  "bible_version": "1.0-draft",
+  "bible_sha256": "252f0ebd33c73a87fff9db21abf0684d34f1c7c4f24bbe7905bdb5e11fef58a2",
+  "files": 154
+}

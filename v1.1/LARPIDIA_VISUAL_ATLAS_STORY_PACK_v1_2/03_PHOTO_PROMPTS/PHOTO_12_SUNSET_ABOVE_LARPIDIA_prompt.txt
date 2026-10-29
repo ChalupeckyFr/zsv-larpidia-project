@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be written in the image): SUNSET ABOVE LARPIDIA. Format 16:9.
+
+Create a horizontal 16:9 widescreen smartphone photo. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+
+SCENE: Exactly two young hikers sit side by side on a grassy mountain meadow with their backs to the camera, looking toward the sunset. The sky is huge and dramatic: layered dark blue-grey clouds with a narrow band of orange light at the horizon, the ocean glimmering far below; small yellow wildflowers in the grass in the foreground catch the last light. The hikers wear dark jackets and beanies, their backpacks lie beside them.
+
+COMPOSITION: Wide landscape; the two hikers small in the lower centre (about one fifth of the frame height), the sky takes two thirds of the frame; wildflowers sharp in the foreground.
+
+LIGHT AND ATMOSPHERE: Sunset after rain: the last orange light low on the horizon, cool dark clouds above; dramatic yet natural. The hikers are backlit, so they appear as dark shapes with only a faint rim light on their shoulders, hair and beanies.
+
+PHOTO LOOK: dark, moody, higher contrast, pulled highlights, cool blue-grey sky with one narrow orange band, lowered exposure. Subtle authentic imperfections (only a few, not all at once): slightly overexposed horizon band, a soft lens flare.
+
+PEOPLE: Exactly two people in the frame: two young hikers in dark jackets and beanies sitting side by side on the grass, backs to the camera, backpacks beside them. Natural anatomy, natural clothing, correct proportions and cast shadows. No other persons anywhere, not even tiny distant figures.
+
+PLACE AND SCALE: Rounded grassy mountain (about 440 m) in western Larpidie, fictional, with the Pacific visible to the west; low-mountain scale, no giant peaks.
+
+AVOID: no extra people, no faces, no logos on clothing, no tent, no fantasy colours, no Himalayan scale. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+
+Aspect ratio 16:9.

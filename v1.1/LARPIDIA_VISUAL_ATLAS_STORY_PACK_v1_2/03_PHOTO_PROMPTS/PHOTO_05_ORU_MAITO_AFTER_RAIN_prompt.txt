@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be written in the image): ŌRU MAITO AFTER RAIN. Format 9:16.
+
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+
+SCENE: A narrow evening street in a small Japanese-influenced town on a Pacific island, just after rain: wet asphalt reflecting warm shop lights and paper lanterns, small family restaurants with fabric noren curtains (blank, no lettering) and wooden sliding doors, a narrow pavement, overhead utility wires, a vending machine glowing softly (no logos), a compact Japanese hatchback parked at the kerb (generic design, no badge, no readable plate), puddles with reflections. The buildings mix compact Japanese shopfronts with a few older brick-and-stone houses with moss, a sign of the island's mixed English-Japanese heritage. A blue-hour sky fades above the rooftops.
+
+COMPOSITION: Vertical, handheld at eye level, a slightly off-centre perspective down the street with the wet road filling the lower third and reflecting the lights; the parked car in the right foreground.
+
+LIGHT AND ATMOSPHERE: Blue hour: last cool daylight overhead, warm amber shop and lantern light below, reflections on every wet surface.
+
+PHOTO LOOK: cinematic but phone-realistic: deeper contrast, teal-and-amber balance, lifted blacks, visible fine noise, slight underexposure. Subtle authentic imperfections (only a few, not all at once): slight motion blur on distant lights, a small lens flare from a lantern.
+
+PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+
+PLACE AND SCALE: Ōru Maito, fictional northern town of Larpidie with a Japanese minority and Japanese-style narrow streets, next to older English-style brick houses; small harbour town atmosphere.
+
+AVOID: no people, no readable text or kanji signs, no neon cyberpunk look, no brand logos. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+
+Aspect ratio 9:16.

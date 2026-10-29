@@ -1,0 +1,484 @@
+{
+  "variant": "B",
+  "title": "Varianta B – členitější",
+  "note": "Tři body posunuty o ≤ 3 % (T-04, T-05, A-01), proto hlubší severní zátoky, výraznější mys a delší poloostrov.",
+  "deviations": [
+    {
+      "id": "T-04",
+      "from_pct": [
+        56,
+        20
+      ],
+      "to_pct": [
+        56,
+        23.0
+      ],
+      "dev_pct": [
+        0,
+        3.0
+      ],
+      "dev_km": 0.48
+    },
+    {
+      "id": "T-05",
+      "from_pct": [
+        73,
+        24
+      ],
+      "to_pct": [
+        73,
+        26.5
+      ],
+      "dev_pct": [
+        0,
+        2.5
+      ],
+      "dev_km": 0.4
+    },
+    {
+      "id": "A-01",
+      "from_pct": [
+        83,
+        37
+      ],
+      "to_pct": [
+        82,
+        40.0
+      ],
+      "dev_pct": [
+        -1,
+        3.0
+      ],
+      "dev_km": 0.537
+    }
+  ],
+  "noise": {
+    "noise_scale": 1.0,
+    "pins": [
+      "N-01cape",
+      "H-01",
+      "I-03",
+      "P-01",
+      "C-02"
+    ],
+    "area_calibrated": true,
+    "base_offset_km": -0.146,
+    "seed": 20262034,
+    "seed_try": 10,
+    "checks_passed": true
+  },
+  "tip_se": [
+    22.25,
+    14.81
+  ],
+  "main": {
+    "area_km2": 175.0,
+    "perimeter_km": 62.5,
+    "vertices": 1521,
+    "bbox": {
+      "x_km": [
+        2.61,
+        22.56
+      ],
+      "y_km": [
+        1.15,
+        15.03
+      ],
+      "w_km": 19.96,
+      "h_km": 13.88,
+      "x_pct": [
+        10.9,
+        94.0
+      ],
+      "y_pct": [
+        7.2,
+        93.9
+      ],
+      "fill_of_bbox": 0.632
+    },
+    "centroid": [
+      13.44,
+      8.09
+    ]
+  },
+  "para": {
+    "area_km2": 13.98,
+    "perimeter_km": 14.9,
+    "vertices": 368,
+    "bbox": {
+      "x_km": [
+        22.89,
+        28.27
+      ],
+      "y_km": [
+        15.34,
+        19.26
+      ],
+      "w_km": 5.38,
+      "h_km": 3.92,
+      "x_pct": [
+        95.4,
+        117.8
+      ],
+      "y_pct": [
+        95.9,
+        120.4
+      ],
+      "fill_of_bbox": 0.662
+    },
+    "centroid": [
+      25.52,
+      17.37
+    ]
+  },
+  "strait_km": 1.5,
+  "strait_pts": [
+    [
+      22.236,
+      14.831
+    ],
+    [
+      23.364,
+      15.819
+    ]
+  ],
+  "points": [
+    {
+      "id": "M-01",
+      "inside": true,
+      "d_coast_km": 0.99,
+      "rule": "inland 0.8",
+      "ok": true,
+      "nearest_coast": [
+        6.856,
+        4.455
+      ]
+    },
+    {
+      "id": "M-02",
+      "inside": true,
+      "d_coast_km": 1.275,
+      "rule": "inland 1.2",
+      "ok": true,
+      "nearest_coast": [
+        8.924,
+        4.02
+      ]
+    },
+    {
+      "id": "M-03",
+      "inside": true,
+      "d_coast_km": 2.162,
+      "rule": "inland 1.5",
+      "ok": true,
+      "nearest_coast": [
+        3.118,
+        8.04
+      ]
+    },
+    {
+      "id": "N-01",
+      "inside": true,
+      "d_coast_km": 0.23,
+      "rule": "coast 0.4",
+      "ok": true,
+      "nearest_coast": [
+        2.651,
+        6.389
+      ]
+    },
+    {
+      "id": "N-02",
+      "inside": true,
+      "d_coast_km": 3.441,
+      "rule": "inland 2.0",
+      "ok": true,
+      "nearest_coast": [
+        8.27,
+        4.186
+      ]
+    },
+    {
+      "id": "N-03",
+      "inside": true,
+      "d_coast_km": 3.625,
+      "rule": "inland 2.0",
+      "ok": true,
+      "nearest_coast": [
+        9.217,
+        12.093
+      ]
+    },
+    {
+      "id": "N-04",
+      "inside": true,
+      "d_coast_km": 3.023,
+      "rule": "inland 2.0",
+      "ok": true,
+      "nearest_coast": [
+        10.35,
+        12.547
+      ]
+    },
+    {
+      "id": "C-01",
+      "inside": true,
+      "d_coast_km": 1.704,
+      "rule": "inland 0.8",
+      "ok": true,
+      "nearest_coast": [
+        15.966,
+        13.86
+      ]
+    },
+    {
+      "id": "C-02",
+      "inside": true,
+      "d_coast_km": 0.0,
+      "rule": "coast 0.25",
+      "ok": true,
+      "nearest_coast": [
+        16.32,
+        13.92
+      ]
+    },
+    {
+      "id": "C-03",
+      "inside": true,
+      "d_coast_km": 2.062,
+      "rule": "inland 0.4",
+      "ok": true,
+      "nearest_coast": [
+        13.54,
+        13.904
+      ]
+    },
+    {
+      "id": "C-04",
+      "inside": true,
+      "d_coast_km": 2.503,
+      "rule": "inland 0.4",
+      "ok": true,
+      "nearest_coast": [
+        15.966,
+        13.86
+      ]
+    },
+    {
+      "id": "C-05",
+      "inside": true,
+      "d_coast_km": 1.708,
+      "rule": "inland 0.4",
+      "ok": true,
+      "nearest_coast": [
+        17.22,
+        13.867
+      ]
+    },
+    {
+      "id": "C-06",
+      "inside": true,
+      "d_coast_km": 0.907,
+      "rule": "inland 0.3",
+      "ok": true,
+      "nearest_coast": [
+        15.999,
+        13.863
+      ]
+    },
+    {
+      "id": "T-01",
+      "inside": true,
+      "d_coast_km": 4.829,
+      "rule": "inland 2.0",
+      "ok": true,
+      "nearest_coast": [
+        18.859,
+        3.472
+      ]
+    },
+    {
+      "id": "T-02",
+      "inside": true,
+      "d_coast_km": 1.37,
+      "rule": "inland 1.0",
+      "ok": true,
+      "nearest_coast": [
+        11.048,
+        12.805
+      ]
+    },
+    {
+      "id": "T-03",
+      "inside": true,
+      "d_coast_km": 0.84,
+      "rule": "inland 0.55",
+      "ok": true,
+      "nearest_coast": [
+        3.245,
+        9.692
+      ]
+    },
+    {
+      "id": "T-04",
+      "inside": true,
+      "d_coast_km": 0.578,
+      "rule": "inland 0.35",
+      "ok": true,
+      "nearest_coast": [
+        13.435,
+        3.102
+      ]
+    },
+    {
+      "id": "T-05",
+      "inside": true,
+      "d_coast_km": 1.455,
+      "rule": "inland 0.6",
+      "ok": true,
+      "nearest_coast": [
+        18.565,
+        3.227
+      ]
+    },
+    {
+      "id": "I-01",
+      "inside": true,
+      "d_coast_km": 2.279,
+      "rule": "inland 1.0",
+      "ok": true,
+      "nearest_coast": [
+        21.887,
+        7.914
+      ]
+    },
+    {
+      "id": "I-02",
+      "inside": true,
+      "d_coast_km": 1.049,
+      "rule": "inland 0.35",
+      "ok": true,
+      "nearest_coast": [
+        22.103,
+        9.233
+      ]
+    },
+    {
+      "id": "I-03",
+      "inside": false,
+      "d_coast_km": 0.0,
+      "rule": "coast 0.25",
+      "ok": true,
+      "nearest_coast": [
+        22.56,
+        10.24
+      ]
+    },
+    {
+      "id": "A-01",
+      "inside": true,
+      "d_coast_km": 1.858,
+      "rule": "inland 0.6",
+      "ok": true,
+      "nearest_coast": [
+        21.517,
+        6.122
+      ]
+    },
+    {
+      "id": "P-01",
+      "inside": true,
+      "d_coast_km": 0.192,
+      "rule": "coast 0.45",
+      "ok": true,
+      "nearest_coast": [
+        19.582,
+        13.445
+      ]
+    }
+  ],
+  "points_ok": 23,
+  "silhouette": {
+    "pockets": [
+      {
+        "depth_km": 2.82,
+        "mouth_km": 4.34,
+        "centroid": [
+          21.28,
+          12.2
+        ],
+        "area_km2": 5.34
+      },
+      {
+        "depth_km": 1.51,
+        "mouth_km": 4.2,
+        "centroid": [
+          14.11,
+          2.34
+        ],
+        "area_km2": 3.54
+      },
+      {
+        "depth_km": 1.51,
+        "mouth_km": 6.92,
+        "centroid": [
+          18.27,
+          14.02
+        ],
+        "area_km2": 5.81
+      },
+      {
+        "depth_km": 1.07,
+        "mouth_km": 4.44,
+        "centroid": [
+          18.65,
+          2.76
+        ],
+        "area_km2": 2.51
+      },
+      {
+        "depth_km": 0.98,
+        "mouth_km": 9.08,
+        "centroid": [
+          7.98,
+          4.0
+        ],
+        "area_km2": 4.4
+      },
+      {
+        "depth_km": 0.47,
+        "mouth_km": 11.68,
+        "centroid": [
+          9.24,
+          12.21
+        ],
+        "area_km2": 3.87
+      }
+    ],
+    "north_bays": 3,
+    "north_bays_ok": true,
+    "south_bay_depth_km": 1.51,
+    "south_bay_ok": true,
+    "west_cape": {
+      "x": 2.61,
+      "y": 6.82,
+      "dist_to_N-01_km": 0.5,
+      "ok": true
+    },
+    "se_tip": [
+      22.25,
+      14.81
+    ],
+    "peninsula_width_km": 1.7
+  },
+  "checks": {
+    "area_main_ok": true,
+    "area_para_ok": true,
+    "strait_ok": true,
+    "simple_polygons": true,
+    "all_points_ok": true,
+    "north_bays_ok": true,
+    "south_bay_ok": true,
+    "west_cape_ok": true
+  }
+}

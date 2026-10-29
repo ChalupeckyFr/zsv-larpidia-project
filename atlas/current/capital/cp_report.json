@@ -1,0 +1,206 @@
+{
+  "plan_id": "CP-01",
+  "atlas_version": "1.0-draft",
+  "checks": {
+    "rámec: okno plánu leží uvnitř plátna atlasu a odpovídá listu A2 v měřítku 1 : 10 000": true,
+    "registr plánu: ID jsou jedinečná a každý objekt má stavy a původ": true,
+    "registr plánu: všechny polohy jsou návrh (pos_status = proposed)": true,
+    "registr plánu: schváleno je jen to, co říká bible (CP-01, parlament, muzeum, C-02, pobřežní silnice)": true,
+    "stanice plánu přesně odpovídají stanicím atlasu (poloha, linky)": true,
+    "tepny atlasu (RD-11, RD-12, RD-07, R1) mají v plánu stejnou délku (kromě okružní komunikace u středu; ±1,2 %)": true,
+    "graf: jedna souvislá síť (≥ 99 % hran ve největší komponentě)": true,
+    "bloky a budovy leží na pevnině a mimo přístavní pánev": true,
+    "čtvrtě: každá z C-03…C-06 má správní budovu, školu a park do 900 m od středu": true,
+    "plán obsahuje parlament, čtyři správní budovy, muzeum, kostel, tržiště, přístav, promenádu, park a stanice L2/L3": true,
+    "klíčové budovy neleží na uličním rastru (≤ 12 % plochy)": true,
+    "bezbariérové trasy: tři trasy, každá ≥ 400 m a největší sklon ≤ 8 %": true,
+    "SVG: povinné vrstvy a popisky cs/en/ja jsou skutečné <text> prvky": true,
+    "domy: ID jsou jedinečná a každý dům má podlaží, výšku a barvu střechy": true,
+    "domy: kapacita bydlení odpovídá modelové populaci hlavního města (±2 %) a nepřesahuje schválený strop 40 000 pro celou zemi": true,
+    "domy: leží na pevnině mimo přístavní pánev, nestojí na ulicích (≤ 1 %) ani na klíčových budovách": true,
+    "stav bloků: v rezervě rozvoje stojí jen řídké chaty, instituce a školy mají stav „civic“": true
+  },
+  "all_ok": true,
+  "stats": {
+    "footprint_km2": 6.31,
+    "districts_km2": {
+      "C-03": 1.49,
+      "C-04": 1.08,
+      "C-05": 1.85,
+      "C-06": 1.88
+    },
+    "streets_km": {
+      "A": 10.4,
+      "B": 3.8,
+      "C": 120.1,
+      "L": 15.0,
+      "P": 1.8,
+      "R1": 6.5,
+      "S": 0.5
+    },
+    "streets_km_total": 158.1,
+    "nodes": 1355,
+    "edges": 2005,
+    "intersections_deg3plus": 968,
+    "dead_ends": 357,
+    "components": 3,
+    "largest_component_share": 0.999,
+    "blocks": 874,
+    "block_area_km2": 4.53,
+    "block_median_m2": 4798,
+    "land_use_blocks": {
+      "residential_low": 118,
+      "residential_mid": 374,
+      "transit_mixed": 54,
+      "school": 4,
+      "retail_main": 47,
+      "civic_mixed": 37,
+      "new_waterfront": 39,
+      "old_town_mixed": 143,
+      "hotel_premium": 1,
+      "promenade_retail": 57
+    },
+    "objects": {
+      "plan": 1,
+      "district": 4,
+      "building": 15,
+      "pier": 1,
+      "harbor": 1,
+      "square": 9,
+      "park": 12,
+      "promenade": 1,
+      "station": 5,
+      "block": 874,
+      "cafe": 8,
+      "rental": 4,
+      "shop": 5,
+      "retail_zone": 3,
+      "street": 22,
+      "route": 3
+    },
+    "routes": [
+      {
+        "id": "CP-AR01",
+        "length_m": 1021,
+        "max_grade_pct": 3.6,
+        "share_over_5pct": 0.0,
+        "dz_m": -17.9
+      },
+      {
+        "id": "CP-AR02",
+        "length_m": 716,
+        "max_grade_pct": 1.6,
+        "share_over_5pct": 0.0,
+        "dz_m": 1.0
+      },
+      {
+        "id": "CP-AR03",
+        "length_m": 1424,
+        "max_grade_pct": 0.8,
+        "share_over_5pct": 0.0,
+        "dz_m": -2.4
+      }
+    ],
+    "houses": {
+      "target_population": 12000,
+      "capacity": 12000,
+      "ratio": 1.0,
+      "full_buildout_capacity": 48348,
+      "full_buildout_ratio": 4.03,
+      "threshold_m": 434.3,
+      "houses": 3242,
+      "houses_core": 3118,
+      "houses_fringe": 124,
+      "footprint_ha": 34.9,
+      "blocks": {
+        "built": 217,
+        "partial": 29,
+        "reserve": 586,
+        "civic": 42
+      },
+      "block_area_ha": {
+        "built": 92.5,
+        "partial": 15.4,
+        "reserve": 325.7,
+        "civic": 19.1
+      },
+      "coverage_of_built_blocks": 0.291,
+      "per_use": {
+        "residential_low": {
+          "houses": 32,
+          "footprint_ha": 0.28,
+          "capacity": 76
+        },
+        "residential_mid": {
+          "houses": 1042,
+          "footprint_ha": 7.47,
+          "capacity": 3803
+        },
+        "transit_mixed": {
+          "houses": 727,
+          "footprint_ha": 8.16,
+          "capacity": 2921
+        },
+        "retail_main": {
+          "houses": 113,
+          "footprint_ha": 2.36,
+          "capacity": 464
+        },
+        "civic_mixed": {
+          "houses": 23,
+          "footprint_ha": 2.43,
+          "capacity": 0
+        },
+        "new_waterfront": {
+          "houses": 20,
+          "footprint_ha": 1.25,
+          "capacity": 1333
+        },
+        "old_town_mixed": {
+          "houses": 1044,
+          "footprint_ha": 9.81,
+          "capacity": 2888
+        },
+        "promenade_retail": {
+          "houses": 241,
+          "footprint_ha": 3.09,
+          "capacity": 515
+        }
+      },
+      "assumptions": {
+        "person_m2": 38.0,
+        "usable_share": 0.82,
+        "floor_height_m": 3.1
+      }
+    },
+    "houses_checks": {
+      "houses_on_streets": 1,
+      "houses_on_key_buildings": 0,
+      "houses_off_land": 0
+    }
+  },
+  "atlas_road_lengths_m (atlas, plan, ring_clip)": {
+    "RD-11": [
+      4202,
+      4056,
+      144.0
+    ],
+    "RD-12": [
+      3070,
+      2925,
+      144.0
+    ],
+    "RD-07": [
+      1846,
+      1846,
+      0.0
+    ],
+    "RD-R1": [
+      6503,
+      6502,
+      0.0
+    ]
+  },
+  "buildings_on_streets": [],
+  "build_seconds": 24.1
+}

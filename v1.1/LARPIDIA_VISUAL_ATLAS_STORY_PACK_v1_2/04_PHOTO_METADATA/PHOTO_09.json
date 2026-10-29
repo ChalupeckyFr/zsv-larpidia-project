@@ -1,0 +1,155 @@
+{
+  "scene_id": "PHOTO_09",
+  "kind": "photo",
+  "title": "GOLDEN HOUR SUMMIT REST",
+  "format": "9:16",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Mountains – west",
+  "tags": [
+    "mountains",
+    "two people",
+    "sunset",
+    "hiking"
+  ],
+  "description_cs": "Dva mladí turisté v tmavém outdoor oblečení sedí na bezpečné skalnaté vyhlídce nad tmavým horským údolím; oranžové světlo na skalách. Přesně dva lidé.",
+  "registered_location": {
+    "registry_id": "SP-05",
+    "name_en": "Studánka na hřebenovce",
+    "name_cs": "Studánka na hřebenovce",
+    "type": "poi",
+    "island": "main",
+    "exist_status": "approved",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 6.31,
+    "y_km": 6.85,
+    "elev_m_model": 247.4,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "SP-05",
+        "name": "Studánka na hřebenovce",
+        "x_km": 6.31,
+        "y_km": 6.85
+      },
+      {
+        "id": "M-01",
+        "name": "Mount Larp",
+        "x_km": 6.96,
+        "y_km": 5.44
+      }
+    ],
+    "note": "Studánka na hřebenovce (SP-05) a vrchol M-01; západní horská oblast poblíž Mount Larp."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 6.0,
+    "y_km": 6.8,
+    "eye_height_m": 1.5,
+    "basis_cs": "travnatá terasa na hřebenovce TR-03 asi 300 m od studánky SP-05; skalnatý výběžek je detail scény, bod je návrh",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 252.2,
+    "cover_at_camera": "meadow",
+    "distance_to_coast_km": 2.27,
+    "bearing_deg": 64,
+    "compass": "ENE",
+    "fov_hint_deg": 46,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "meadow",
+        "z_m": 253
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "forest",
+        "z_m": 255
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "forest",
+        "z_m": 306
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "forest",
+        "z_m": 365
+      }
+    ],
+    "sea_visible_km": null,
+    "visible_registered": [
+      {
+        "id": "M-02",
+        "name": "Winter Peak",
+        "type": "peak",
+        "bearing_deg": 64,
+        "rel_angle_deg": 0,
+        "dist_km": 3.47,
+        "side": "center"
+      }
+    ],
+    "nearby_registered": [
+      {
+        "id": "TR-03",
+        "name": "Hřebenovka M-03 – M-01",
+        "dist_km": 0.18,
+        "bearing_deg": 20
+      }
+    ],
+    "look_at": {
+      "id": "M-02",
+      "name": "Winter Peak",
+      "bearing_deg": 64,
+      "rel_angle_deg": 0,
+      "dist_km": 3.471,
+      "line_of_sight": true
+    },
+    "target_cs": "tmavé horské údolí a hřeben s Winter Peak M-02 (ENE, 3,3 km)"
+  },
+  "conditions": {
+    "time_of_day": "golden hour, about 25 minutes before sunset",
+    "season": "autumn",
+    "weather": "clear with thin mist in the valley"
+  },
+  "people": {
+    "count": 2,
+    "description": "two young hikers in dark technical outdoor clothing sitting close together, seen from behind and slightly from the side"
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "intimate, darker sunset look: deep shadows, warm orange highlights, cool blue-grey valley shadows, slightly lowered exposure, mild grain",
+    "imperfections": "a trace of lens flare at the top-left edge; backlit people stay dark without perfect detail"
+  },
+  "canon_notes_cs": [
+    "Atlas: TR-03 hřebenovka M-03 – M-01; SP-05 studánka na hřebenovce (247 m); M-02 Winter Peak 3,3 km ENE (DEM: viditelný).",
+    "Přesně dva lidé; bezpečná vyhlídka = plochý skalní výběžek bez srázu."
+  ],
+  "avoid": "no extra people, no sharp faces, no logos on clothing, no dramatic Himalayan scale, no tent or camp",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_09_GOLDEN_HOUR_SUMMIT_REST_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_09_GOLDEN_HOUR_SUMMIT_REST_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_09.json",
+    "expected_photo": "01_PHOTOS/PHOTO_09.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "SP-W",
+    "mpp": 4.0,
+    "window_km": [
+      4.618,
+      5.437,
+      3.4,
+      2.55
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

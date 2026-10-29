@@ -1,0 +1,131 @@
+{
+  "scene_id": "PHOTO_05",
+  "kind": "photo",
+  "title": "ŌRU MAITO AFTER RAIN",
+  "format": "9:16",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "North coast",
+  "tags": [
+    "town",
+    "no people",
+    "night",
+    "japanese influence"
+  ],
+  "description_cs": "Večerní ulice po dešti v japonsky laděném městečku: malé restaurace, mokrá silnice, světla obchodů, zaparkované japonské auto. Bez lidí.",
+  "registered_location": {
+    "registry_id": "T-04",
+    "name_en": "Ōru Maito",
+    "name_cs": "Ōru Maito (オールマイト)",
+    "type": "settlement",
+    "island": "main",
+    "exist_status": "approved",
+    "name_status": "approved",
+    "pos_status": "proposed",
+    "x_km": 13.44,
+    "y_km": 3.68,
+    "elev_m_model": 24.0,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "T-04",
+        "name": "Ōru Maito",
+        "x_km": 13.44,
+        "y_km": 3.68
+      }
+    ],
+    "note": "Ōru Maito (T-04): japonizované severní městečko; existence i jméno schváleny, poloha návrh."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 13.552,
+    "y_km": 3.97,
+    "eye_height_m": 1.6,
+    "basis_cs": "konec hlavní silnice RD-03 na okraji centra T-04 (310 m od středu), pohled do pokračující ulice; místní ulice atlas nemodeluje, bod je návrh",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 24.2,
+    "cover_at_camera": "scrub/grass",
+    "distance_to_coast_km": 0.88,
+    "bearing_deg": 275,
+    "compass": "W",
+    "fov_hint_deg": 46,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "scrub/grass",
+        "z_m": 24
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "scrub/grass",
+        "z_m": 25
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "scrub/grass",
+        "z_m": 52
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "forest",
+        "z_m": 127
+      }
+    ],
+    "sea_visible_km": null,
+    "visible_registered": [],
+    "nearby_registered": [
+      {
+        "id": "ST-L2-12",
+        "name": "Ōru Maito",
+        "dist_km": 0.14,
+        "bearing_deg": 106
+      }
+    ],
+    "target_cs": "ulice pokračuje na západ do centra městečka (W)"
+  },
+  "conditions": {
+    "time_of_day": "blue hour (about 20 minutes after sunset)",
+    "season": "autumn",
+    "weather": "just after rain, damp air, puddles"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "cinematic but phone-realistic: deeper contrast, teal-and-amber balance, lifted blacks, visible fine noise, slight underexposure",
+    "imperfections": "slight motion blur on distant lights, a small lens flare from a lantern"
+  },
+  "canon_notes_cs": [
+    "Kánon: Ōru Maito (T-04) je schválené povinné město; japonizované severní městečko, japonské úzké ulice v mixu s anglickou architekturou.",
+    "Atlas nemodeluje místní ulice města; kamerový bod leží na konci hlavní silnice RD-03 uvnitř polygonu sídla (310 m od středu), ulice dál na západ je ilustrativní."
+  ],
+  "avoid": "no people, no readable text or kanji signs, no neon cyberpunk look, no brand logos",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_05_ORU_MAITO_AFTER_RAIN_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_05_ORU_MAITO_AFTER_RAIN_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_05.json",
+    "expected_photo": "01_PHOTOS/PHOTO_05.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "SP-N",
+    "mpp": 3.0,
+    "window_km": [
+      12.81,
+      3.381,
+      1.3,
+      0.975
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

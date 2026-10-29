@@ -1,0 +1,264 @@
+"""F6 – doplňky: textová vrstva popisků k satelitním podkladům a prompty pro externí generátor obrázků.
+
+Spuštění:  python atlas/scripts/sat_extras.py
+Výstup:    renders/S-0x_labels_overlay.svg, S-0x_with_labels.svg, S-0x_prompt.md, README_RENDERS.md
+"""
+from __future__ import annotations
+
+import base64
+import json
+import re
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import atlas_svg as A
+import canon
+import render_sat as rs
+import svgkit
+from canon import ATLAS
+
+OUT = ATLAS / "current" / "renders"
+
+DISCLAIMER = "Simulovaná satelitní vizualizace fiktivního ostrova (návrh) – ne skutečná družicová data"
+
+
+def labels_svg(name, spec, D, with_image: bool):
+    c = spec["canvas"]
+    sh = svgkit.Sheet(canvas=c)
+    Wm, Hm = round(c["w"] * 1000), round(c["h"] * 1000)
+    wpx, hpx = round(Wm / spec["mpp"]), round(Hm / spec["mpp"])
+    if with_image:
+        b64 = base64.b64encode((OUT / f"{name}_base.jpg").read_bytes()).decode("ascii")
+        sh.raw(f'<g id="satellite-base" inkscape:groupmode="layer" inkscape:label="Simulovaný satelitní podklad"><image x="0" y="0" width="{Wm}" height="{Hm}" preserveAspectRatio="none" href="data:image/jpeg;base64,{b64}"/></g>')
+    k = 1.25 * spec["mpp"] / 10.0 * 10.0 / 10.0          # velikost písma: ~12 px pro "100" z map 1:50 000
+    specs = []
+    for s in A.label_specs(D):
+        if c["x0"] + 0.15 <= s["x"] <= c["x0"] + c["w"] - 0.15 and c["y0"] + 0.15 <= s["y"] <= c["y0"] + c["h"] - 0.15:
+            s2 = dict(s)
+            s2["size"] = s["size"] / 10.0 * 1.25 * spec["mpp"] * (1.0 if name == "S-01" else 1.0)
+            specs.append(s2)
+    A.draw_labels(sh, D, specs)
+    with sh.layer("marginalia", "Měřítko a upozornění"):
+        km = 5.0 if name == "S-01" else 1.0
+        svgkit.nice_scale_bar(sh, 400, Hm - 520, km=km, label_size=int(16 * spec["mpp"] * 1.0))
+        sh.text(400, Hm - 160, DISCLAIMER, size=int(15 * spec["mpp"]), units=True, fill="#ffffff", halo=False, style='opacity="0.9"')
+        sh.text(400, 560, spec["title"], size=int(26 * spec["mpp"]), units=True, fill="#ffffff", weight="700", halo=False, style='opacity="0.95"')
+    svg = sh.render(spec["title"], f"{DISCLAIMER}. Popisky jsou textové vrstvy cs/ja/en; pixel = {spec['mpp']} m.")
+    svg = svg.replace('width="594mm" height="420mm"', f'width="{wpx}" height="{hpx}"')
+    svg = re.sub(r'viewBox="0 0 \d+ \d+"', f'viewBox="0 0 {Wm} {Hm}"', svg, count=1)
+    return svg
+
+
+PROMPT_COMMON_NEG = ("no text, no labels, no captions, no logos, no watermarks, no grid lines, no borders; do not move, smooth or reshape the coastline; "
+                     "do not add, remove or merge islands, bays, peninsulas, harbours or towns; do not add a second large airport or skyscrapers; "
+                     "no snow caps or alpine glaciers (the highest peak is only 560 m); no clouds covering the coast; no cartoon or illustration style; "
+                     "no real-world landmarks or real place names.")
+
+
+def prompt_s01(D):
+    ref = (OUT / "S-01_georef.json").read_text(encoding="utf-8")
+    return f"""# S-01 · Larpidie – prompt pro externí generátor obrázků (image-to-image)
+
+**Stav:** pracovní návrh (proposed). Výsledek je **simulovaná satelitní vizualizace fiktivního ostrova**, ne družicová data.
+**Referenční obrázek:** `S-01_base.png` (2240 × 1620 px, 10 m/px, sever nahoře). Tvar ostrova **nesmí** změnit generátor, proto vždy přikládejte referenci
+(Gemini, ChatGPT/gpt-image, Firefly, Stable Diffusion s ControlNet apod.). Samotný text bez reference tvar neudrží.
+
+## Prompt (EN)
+
+> Photorealistic top-down satellite photograph (nadir view, north up) of a fictional Pacific island nation, subtropical summer, midday sun from the south, crisp Sentinel-2 / Maxar-style imagery with natural colour grading.
+> **Use the attached reference image as an exact structural guide: keep the coastline silhouette, the position of every harbour, town, road, rail line, reservoir, airport and forest/meadow boundary, and the framing, exactly as in the reference.**
+> The main island is about 20 km across and elongated west–east: low forested mountains in the west and north-west (highest peak only 560 m, soft rounded ridges, dark mixed forest, one bright rounded meadow hill), steep rocky cliffs along the north-west coast, a small reservoir with a dam in the western interior, patchwork farmland and rice terraces in the south-west foothills, a compact historic capital on the southern coast with a harbour protected by breakwaters and red-brick/slate rooftops, compact smaller towns on the north coast and in the central lowland, a green low-rise industrial zone with light-roofed halls and a cargo port with piers in the east, a regional airport with a 1.9 km east–west runway, a narrow south-eastern peninsula, sandy beaches on the south and south-east coast, a coastal ring road, turquoise shallow water fading to deep blue open sea, subtle surf foam along the shore.
+> Realistic textures: individual tree canopies, hedgerows between irregular field parcels, scattered farmsteads along the minor roads, ragged forest edges with small copses and clearings, towns with an organic street grid and terracotta / slate / grey roofs, the capital reaching down to its harbour, thin asphalt roads, small rivers, natural shadows from relief (sun from the south, shadows fall to the north).
+> **Negative:** {PROMPT_COMMON_NEG}
+
+## Nastavení
+
+- poměr stran 1,38 : 1 (2240 × 1620 px); u image-to-image síla změny (strength / denoise) **0,30–0,45**; pokud nástroj umí, použijte referenci i jako strukturní/hranovou kontrolu (edge/depth);
+- varianty: *late-afternoon golden light* (stíny na východ), *after the rain, saturated greens*, *winter morning, thin haze* (bez sněhu v nížinách);
+- `S-01_base_clouds.jpg` je kosmetická varianta s mraky jen nad otevřeným mořem (pobřeží zůstává čisté); jako strukturní referenci vždy použijte čisté `S-01_base.png`;
+- šikmé pohledy (z moře jih / severozápad) jsou hotové jako referenční `S-01_oblique_S.jpg` a `S-01_oblique_NW.jpg` včetně kamer (`*_camera.json`); prompty viz `OBLIQUE_PROMPTS.md`.
+
+## Kontrola tvaru po generování (povinná)
+
+```
+python atlas/scripts/verify_sat.py S-01 cesta/k/vysledku.png --threshold 0.95 --overlay kontrola.png
+```
+IoU souše musí být ≥ 0,95 a „nejlepší posun“ blízko (0, 0). Pokud ne, zvyšte vazbu na referenci (nižší strength) nebo obraz upravte. Hotový obraz pak doplňte textovou vrstvou: `S-01_labels_overlay.svg` (popisky cs/ja/en, měřítko, upozornění) nebo použijte `S-01_with_labels.svg`.
+
+## Povinné označení
+
+Pod obrázek: **„{DISCLAIMER}.“** Skutečné značky a osobnosti se v obrázku neobjevují.
+
+<details><summary>Georeference</summary>
+
+```json
+{ref}
+```
+</details>
+"""
+
+
+def prompt_s02(D):
+    ref = (OUT / "S-02_georef.json").read_text(encoding="utf-8")
+    return f"""# S-02 · Paraland – prompt pro externí generátor obrázků (image-to-image)
+
+**Stav:** pracovní návrh (proposed). **Simulovaná satelitní vizualizace fiktivního ostrova**, ne družicová data.
+**Referenční obrázek:** `S-02_base.png` (1400 × 1120 px, 5 m/px, sever nahoře). V levém horním rohu je kousek jihovýchodního poloostrova hlavního ostrova (průliv 1,5 km).
+
+## Prompt (EN)
+
+> Photorealistic top-down satellite photograph (nadir view, north up) of a small fictional resort island, subtropical summer, midday sun from the south, crisp Sentinel-2 / Maxar-style imagery.
+> **Use the attached reference image as an exact structural guide: keep the island silhouette, the marina at the north-west coast, the old town on the north coast, the castle hill, the ring road, the airstrip, the resort cluster and aquapark in the south, the forested eastern hills and the sandy beaches in the sheltered eastern bays exactly as in the reference.**
+> The island is about 5.5 km long: a small historic town with tiled roofs and a harbour bay in the north, a castle on a green headland, a ruin on a wooded slope, low-rise resort hotels with pools and a turquoise aquapark in the south, a small grass airstrip in the west, a marina with floating piers and breakwaters in the north-west, dense forest and low hills in the east with a hiking loop, pale sandy beaches in protected eastern bays, turquoise lagoon-like shallows fading to deep blue sea, open meadows in the west dotted with single trees and small groves, a part of the neighbouring main island's peninsula visible in the top-left corner.
+> **Negative:** {PROMPT_COMMON_NEG}
+
+## Nastavení a kontrola
+
+- poměr stran 1,25 : 1; image-to-image strength **0,30–0,45**;
+- kontrola tvaru: `python atlas/scripts/verify_sat.py S-02 cesta/k/vysledku.png --threshold 0.95`;
+- popisky: `S-02_labels_overlay.svg` / `S-02_with_labels.svg`;
+- šikmé pohledy na Paraland (z jihozápadu a z poloostrova přes průliv): `S-02_oblique_SW.jpg`, `S-02_oblique_strait.jpg`, prompty v `OBLIQUE_PROMPTS.md`;
+- pod obrázek vždy: **„{DISCLAIMER}.“**
+
+<details><summary>Georeference</summary>
+
+```json
+{ref}
+```
+</details>
+"""
+
+
+def prompt_s03():
+    ref = (OUT / "S-03_georef.json").read_text(encoding="utf-8")
+    return f"""# S-03 · Larpington (hlavní město) – prompt pro externí generátor obrázků (image-to-image)
+
+**Stav:** pracovní návrh (proposed). **Simulovaná satelitní vizualizace fiktivního města**, ne družicová data.
+**Referenční obrázek:** `S-03_base.png` ({json.loads(ref)['px'][0]} × {json.loads(ref)['px'][1]} px, 2 m/px, sever nahoře) = okno plánu hlavního města CP-01 (A2, 1 : 10 000). Zástavba, ulice a prostory pocházejí z plánu (`current/capital/`), pobřeží je zmrazený obrys atlasu.
+
+## Prompt (EN)
+
+> Photorealistic top-down satellite photograph (nadir view, north up) of a fictional compact harbour capital of about 12,000 people on a subtropical Pacific island, midday sun from the south, crisp Maxar-style imagery.
+> **Use the attached reference image as an exact structural guide: keep the coastline, the harbour with its two breakwaters and the ferry pier, every street, block, square, park and the position of each key building exactly as in the reference.**
+> A circular civic square with an eight-armed star of avenues in the centre (a parliament building in a round garden, four administrative buildings arranged like a pinwheel around it), a compact built-up core around it and small station quarters, an old harbour town on the south coast with curving streets parallel to the shoreline, a market square, a church with a cruciform roof, a harbour promenade with boutiques and cafés, a premium hotel, parks, green wedges of meadows and orchards, surface railway lines with small stations, terracotta, slate and light-grey roofs, brick and stone houses with gardens, tree-lined avenues.
+> **Most of the planned street grid outside the core is still undeveloped reserve land: keep it as meadows, orchards and field plots with only thin dirt tracks and a few scattered cottages, exactly as in the reference. Do not add buildings there.**
+> Realistic textures: individual building roofs with soft shadows falling to the north, thin asphalt streets with pavements, tree canopies, boats in the harbour, turquoise shallows fading to deep blue.
+> **Negative:** {PROMPT_COMMON_NEG}
+
+## Nastavení a kontrola
+
+- image-to-image strength **0,25–0,40** (město je detailní; vyšší hodnoty přepíšou uliční síť);
+- kontrola tvaru: `python atlas/scripts/verify_sat.py S-03 cesta/k/vysledku.png --threshold 0.95` (hlídá pobřeží a přístav, ne jednotlivé ulice; ulice zkontrolujte překryvem s `capital_plan_base.png`);
+- šikmé pohledy na město generujte z této reference a plánu; pod obrázek vždy: **„{DISCLAIMER}.“**
+
+<details><summary>Georeference</summary>
+
+```json
+{ref}
+```
+</details>
+"""
+
+
+def prompt_obliques():
+    """Prompty pro šikmé pohledy: každý vzniká image-to-image z vlastního referenčního šikmého renderu (kamera v *_camera.json)."""
+    blocks = []
+    for cam_file in sorted(OUT.glob("*_oblique_*_camera.json")):
+        meta = json.loads(cam_file.read_text(encoding="utf-8"))
+        nm = meta["id"]
+        cam = meta["camera"]
+        island = ("Paraland, a small fictional resort island" if nm.startswith("S-02") else "Larpington, the compact fictional harbour capital of a Pacific island nation"
+                  if nm.startswith("S-03") else "Larpidie, a fictional Pacific island nation")
+        blocks.append(f"""## {nm}
+
+**Referenční obrázek:** `{nm}.jpg` ({meta['size_px'][0]} × {meta['size_px'][1]} px) · **kamera:** `{nm}_camera.json` (x {cam['x']} km, y {cam['y']} km, výška {cam['h']:.0f} m, směr {cam['heading']:.0f}° od severu, vodorovné zorné pole {cam['fov']:.0f}°)
+**Záběr:** {meta['description']}.
+
+> Photorealistic low-oblique aerial photograph of {island}, subtropical summer, clear day, natural colour grading, soft atmospheric haze toward the horizon.
+> **Use the attached reference image as an exact structural guide: keep the camera position and field of view, the horizon height, the coastline silhouette, and the position of every harbour, town, road, reservoir, forest and meadow boundary exactly as in the reference.** Relief is shown {meta['vertical_exaggeration']}× vertically exaggerated in the reference; keep the same proportions.
+> Realistic textures: tree canopies, field parcels with hedgerows, tiled and slate roofs, thin asphalt roads, turquoise shallows fading to deep blue, subtle surf along the shore, natural shadows (sun from the south-west).
+> **Negative:** {PROMPT_COMMON_NEG}
+
+Kontrola siluety: `python atlas/scripts/verify_sat.py {nm} cesta/k/vysledku.jpg --threshold 0.95`
+""")
+    return f"""# Šikmé pohledy – prompty pro externí generátor (image-to-image)
+
+**Stav:** pracovní návrh (proposed). Reference jsou **simulované šikmé pohledy** vytvořené z výškového modelu a nadir podkladů atlasu, ne družicová ani letecká data.
+Kamera má posunutý objektiv (svislice zůstávají svislé; obzor leží ve zlomku výšky obrazu `horizon`). Generátoru vždy předejte referenci a nastavte
+image-to-image strength **0,30–0,45** (nižší = věrnější tvar). Samotný text bez reference siluetu ostrova neudrží.
+
+Kontrola siluety (`verify_sat.py`) porovnává pevninu a obzor s referenčním šikmým pohledem; bílé plochy (mraky, příboj) jsou z porovnání vynechány.
+
+Pod obrázek vždy: **„{DISCLAIMER}.“**
+
+{chr(10).join(blocks)}"""
+
+
+def readme():
+    return f"""# Satelitní podklady S-01 a S-02 a šikmé pohledy (atlas {canon.ATLAS_VERSION})
+
+Obrázky jsou **simulované** a tvarově přesné: vznikly z výškového modelu, pokryvu krajiny, sídel a tras atlasu (`scripts/render_sat.py`).
+Slouží jako reference pro fotorealistický generátor a jako podklad pro popisky. **Nejsou skutečná družicová ani letecká data.**
+
+| Soubor | Obsah |
+|---|---|
+| `S-01_base.png` / `.jpg` | Larpidie, kolmý pohled, 2240 × 1620 px, 10 m/px |
+| `S-01_base_clouds.jpg` | totéž s mraky jen nad otevřeným mořem (kosmetická varianta, ne strukturní reference) |
+| `S-02_base.png` / `.jpg` | Paraland, 1400 × 1120 px, 5 m/px |
+| `S-03_base.png` / `.jpg` | Larpington (hlavní město), kolmý pohled, 2970 × 2100 px, 2 m/px; okno plánu CP-01, zástavba z plánu města |
+| `S-00_overview.png` / `.jpg` / `_clouds.jpg` | oba ostrovy a průliv společně, 2970 × 2100 px, 10 m/px (celé plátno A2) |
+| `S-0x_mask_land.png` | binární maska souše (stejné pixely jako obraz) |
+| `S-0x_mask_classes.png` | indexová maska tříd (les, louka, pole, terasy, křoviny, skála, pláž, jezero, zástavba, průmysl) |
+| `S-0x_georef.json` | převod pixel → km, měřítko, SHA obrysu |
+| `S-0x_labels_overlay.svg` | průhledná textová vrstva (cs/ja/en), měřítko, upozornění |
+| `S-0x_with_labels.svg` | totéž nad vloženým podkladem |
+| `S-0x_prompt.md` | prompt (EN), nastavení a povinná kontrola tvaru |
+| `S-01_oblique_S.jpg`, `S-01_oblique_NW.jpg` | šikmé pohledy na Larpidii (z moře jih / severozápad), 1800 × 1000 px |
+| `S-02_oblique_SW.jpg`, `S-02_oblique_strait.jpg` | šikmé pohledy na Paraland (z jihozápadu / z poloostrova přes průliv) |
+| `S-03_oblique_S.jpg`, `S-03_oblique_W.jpg` | šikmé pohledy na Larpington s hmotami budov (z moře jižně od přístavu / od západní stanice podél Hlavní třídy) |
+| `S-03_buildings_height.png` | výškový model budov okna plánu: 16bit PNG, 1 jednotka = 0,1 m nad terénem, stejné pixely jako `S-03_base.png` (zdroj hmot pro 3D nástroje) |
+| `*_oblique_*_camera.json` | kamera (poloha v km, výška, směr, zorné pole, obzor), zdroje a převýšení |
+| `OBLIQUE_PROMPTS.md` | prompty pro šikmé pohledy |
+
+Kontrola vygenerovaného obrazu: `python atlas/scripts/verify_sat.py S-01 obraz.png` (IoU souše ≥ 0,95); u šikmých pohledů
+`python atlas/scripts/verify_sat.py S-01_oblique_S obraz.jpg` (silueta pevniny a obzor).
+Převod pixelu na km: `x = x0 + (px + 0.5) · mpp / 1000`, `y = y0 + (py + 0.5) · mpp / 1000` (údaje v `S-0x_georef.json`).
+Šikmé pohledy používají svislé převýšení {str(rs.OBLIQUE_ZEXAG).replace('.', ',')}× (jinak by 560 m hory vypadaly jako pahorky); souřadnice kamery jsou v lokálních km atlasu.
+"""
+
+
+def labels_s03(with_image: bool):
+    """Popisky S-03: textové vrstvy cs/en/ja se přebírají z plánu města (stejné souřadnice a okno 5 940 × 4 200 m)."""
+    plan = (ATLAS / "current" / "capital" / "capital_plan_base.svg").read_text(encoding="utf-8")
+    layers = [m.group(0) for lid in ("labels-cs", "labels-en", "labels-ja") for m in [re.search(rf'<g id="{lid}"[^>]*>.*?</g>', plan, re.S)] if m]
+    parts = ['<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" '
+             f'width="2970" height="2100" viewBox="0 0 5940 4200"><title>{svgkit.esc(rs.CAPITAL["S-03"]["title"])}</title>']
+    if with_image:
+        b64 = base64.b64encode((OUT / "S-03_base.jpg").read_bytes()).decode("ascii")
+        parts.append(f'<g id="satellite-base" inkscape:groupmode="layer" inkscape:label="Simulovaný satelitní podklad"><image x="0" y="0" width="5940" height="4200" preserveAspectRatio="none" href="data:image/jpeg;base64,{b64}"/></g>')
+    parts += layers
+    parts.append(f'<g id="marginalia" inkscape:groupmode="layer" inkscape:label="Upozornění"><text x="110" y="4110" font-family="{svgkit.FONT}" font-size="32" fill="#ffffff" stroke="#000000" stroke-width="5" '
+                 f'paint-order="stroke">{svgkit.esc(DISCLAIMER)}</text></g></svg>\n')
+    return "\n".join(parts)
+
+
+def main():
+    D = A.Data()
+    for name, spec in rs.WINDOWS.items():
+        (OUT / f"{name}_labels_overlay.svg").write_text(labels_svg(name, spec, D, with_image=False), encoding="utf-8")
+        (OUT / f"{name}_with_labels.svg").write_text(labels_svg(name, spec, D, with_image=True), encoding="utf-8")
+    (OUT / "S-01_prompt.md").write_text(prompt_s01(D), encoding="utf-8")
+    (OUT / "S-02_prompt.md").write_text(prompt_s02(D), encoding="utf-8")
+    if (OUT / "S-03_base.png").exists():
+        (OUT / "S-03_prompt.md").write_text(prompt_s03(), encoding="utf-8")
+        (OUT / "S-03_labels_overlay.svg").write_text(labels_s03(False), encoding="utf-8")
+        (OUT / "S-03_with_labels.svg").write_text(labels_s03(True), encoding="utf-8")
+    (OUT / "OBLIQUE_PROMPTS.md").write_text(prompt_obliques(), encoding="utf-8")
+    (OUT / "README_RENDERS.md").write_text(readme(), encoding="utf-8")
+    print("renders: popisky, prompty (nadir i šikmé) a README zapsány")
+
+
+if __name__ == "__main__":
+    main()

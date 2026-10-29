@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be written in the image): OLD MONEY CASTLE MORNING. Format 16:9.
+
+Create a horizontal 16:9 widescreen smartphone photo. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+
+SCENE: A calm morning photo of the forecourt of a small historic castle-château on a hill: pale limestone facade with tall arched windows, a modest but grand stone staircase with worn steps leading to an arched oak door, a formal garden with clipped boxwood hedges and a raked gravel path in the foreground, a low stone parapet with the sea as a faint blue line beyond.
+
+COMPOSITION: Wide landscape; the gravel path leads the eye to the staircase, the facade slightly right of centre, symmetrical but handheld, a little sky; no flags with text.
+
+LIGHT AND ATMOSPHERE: Soft morning light from the left low sun, light mist in the garden, gentle long shadows.
+
+PHOTO LOOK: quiet old-money look: soft contrast, warm pale highlights, slightly cool shadows, gentle grain. Subtle authentic imperfections (only a few, not all at once): a little lens softness at the corners, a subtle warm glow near the sun side.
+
+PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+
+PLACE AND SCALE: Paraland Castle on the hill of the small island Paraland, fictional: a small château-like castle in pale stone with a formal garden; quiet European old-money mood.
+
+AVOID: no people, no cars, no flags with text, no theme-park castle, no tourists, no scaffolding. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+
+Aspect ratio 16:9.

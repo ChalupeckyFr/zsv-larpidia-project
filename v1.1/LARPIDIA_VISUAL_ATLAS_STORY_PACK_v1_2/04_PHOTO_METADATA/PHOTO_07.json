@@ -1,0 +1,147 @@
+{
+  "scene_id": "PHOTO_07",
+  "kind": "photo",
+  "title": "PARALAND CASTLE RUINS",
+  "format": "9:16",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Paraland",
+  "tags": [
+    "ruin",
+    "one person",
+    "heritage",
+    "spring"
+  ],
+  "description_cs": "Jedna osoba stojí na bezpečné cestě před starou kamennou zříceninou: mech, tráva, rozpadlá věž a staré zdi. Přesně jedna osoba.",
+  "registered_location": {
+    "registry_id": "PL-06",
+    "name_en": "Ruin above the Old Town",
+    "name_cs": "Zřícenina (pracovní)",
+    "type": "poi",
+    "island": "para",
+    "exist_status": "approved",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 26.41,
+    "y_km": 16.73,
+    "elev_m_model": 55.5,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "PL-06",
+        "name": "Ruin above the Old Town",
+        "x_km": 26.41,
+        "y_km": 16.73
+      }
+    ],
+    "note": "Zřícenina nad starým městečkem Paralandu (existence schválena); památková stezka TR-PL2."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 26.25,
+    "y_km": 16.72,
+    "eye_height_m": 1.6,
+    "basis_cs": "památková stezka TR-PL2 asi 160 m před zříceninou; bod na stezce je návrh",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 51.2,
+    "cover_at_camera": "forest",
+    "distance_to_coast_km": 0.6,
+    "bearing_deg": 90,
+    "compass": "E",
+    "fov_hint_deg": 46,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "forest",
+        "z_m": 53
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "forest",
+        "z_m": 54
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "forest",
+        "z_m": 27
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "sea",
+        "z_m": 0
+      }
+    ],
+    "sea_visible_km": 1.7,
+    "visible_registered": [
+      {
+        "id": "PL-06",
+        "name": "Ruin above the Old Town",
+        "type": "poi",
+        "bearing_deg": 94,
+        "rel_angle_deg": 4,
+        "dist_km": 0.16,
+        "side": "center"
+      }
+    ],
+    "nearby_registered": [
+      {
+        "id": "TR-PL2",
+        "name": "Staré městečko – zřícenina – hrad",
+        "dist_km": 0.02,
+        "bearing_deg": 230
+      },
+      {
+        "id": "PL-01",
+        "name": "Paraland Old Town",
+        "dist_km": 0.44,
+        "bearing_deg": 341
+      }
+    ],
+    "target_cs": "zřícenina PL-06 (východ)"
+  },
+  "conditions": {
+    "time_of_day": "midday, bright overcast",
+    "season": "spring",
+    "weather": "soft overcast with a bright break"
+  },
+  "people": {
+    "count": 1,
+    "description": "one adult in a light-coloured rain jacket, dark trousers and a small daypack, seen from behind or three-quarter back, face not visible, looking up at the ruin"
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "muted, slightly cool, soft contrast, desaturated stone against fresh green grass, light grain",
+    "imperfections": "slightly soft corners, a tiny horizon tilt"
+  },
+  "canon_notes_cs": [
+    "Atlas: PL-06 zřícenina (55 m n. m., model) nad starým městečkem PL-01; památková stezka TR-PL2 (staré městečko – zřícenina – hrad).",
+    "Přesně jedna osoba v záběru."
+  ],
+  "avoid": "no signs, no tourists, no fences, no readable text, no fantasy castle, no dragons",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_07_PARALAND_CASTLE_RUINS_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_07_PARALAND_CASTLE_RUINS_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_07.json",
+    "expected_photo": "01_PHOTOS/PHOTO_07.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "S-02",
+    "mpp": 5.0,
+    "window_km": [
+      25.655,
+      16.198,
+      1.4,
+      1.05
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

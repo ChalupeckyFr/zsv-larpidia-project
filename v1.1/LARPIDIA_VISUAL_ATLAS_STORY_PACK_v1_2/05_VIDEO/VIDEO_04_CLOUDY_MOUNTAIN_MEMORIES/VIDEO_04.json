@@ -1,0 +1,238 @@
+{
+  "scene_id": "VIDEO_04",
+  "kind": "video",
+  "title": "CLOUDY MOUNTAIN MEMORIES",
+  "format": "9:16",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Mountains – west",
+  "tags": [
+    "mountains",
+    "two people",
+    "pov",
+    "cloudy"
+  ],
+  "description_cs": "Dva turisté odpočívají na travnatém svahu v horách západní Larpidie; první osoba drží telefon, kamera se pomalu otočí z turistů přes trávu do mlhavého údolí a lehce zpět.",
+  "registered_location": {
+    "registry_id": "M-03",
+    "name_en": "Round Hill",
+    "name_cs": "Zaoblený turistický vrch",
+    "type": "peak",
+    "island": "main",
+    "exist_status": "approved",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 5.28,
+    "y_km": 8.0,
+    "elev_m_model": 440.0,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "M-03",
+        "name": "Round Hill",
+        "x_km": 5.28,
+        "y_km": 8.0
+      },
+      {
+        "id": "SP-05",
+        "name": "Studánka na hřebenovce",
+        "x_km": 6.31,
+        "y_km": 6.85
+      }
+    ],
+    "note": "Travnatý svah na hřebenovce TR-03 pod M-03 (západní hory)."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 5.65,
+    "y_km": 7.66,
+    "eye_height_m": 1.3,
+    "basis_cs": "travnatý svah na hřebenovce TR-03 (323 m n. m.); bod je návrh",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 323.2,
+    "cover_at_camera": "meadow",
+    "distance_to_coast_km": 2.56,
+    "bearing_deg": 100,
+    "compass": "E",
+    "fov_hint_deg": 62,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "meadow",
+        "z_m": 306
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "meadow",
+        "z_m": 277
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "meadow",
+        "z_m": 237
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "forest",
+        "z_m": 170
+      }
+    ],
+    "sea_visible_km": 8.5,
+    "visible_registered": [
+      {
+        "id": "N-02",
+        "name": "Crystal Cave",
+        "type": "nature",
+        "bearing_deg": 88,
+        "rel_angle_deg": -12,
+        "dist_km": 3.47,
+        "side": "left"
+      },
+      {
+        "id": "ST-L1-04",
+        "name": "Krystalová jeskyně",
+        "type": "rail_station",
+        "bearing_deg": 91,
+        "rel_angle_deg": -9,
+        "dist_km": 3.76,
+        "side": "center"
+      },
+      {
+        "id": "SP-06",
+        "name": "Studánka u Horské stanice",
+        "type": "poi",
+        "bearing_deg": 69,
+        "rel_angle_deg": -31,
+        "dist_km": 3.79,
+        "side": "left"
+      },
+      {
+        "id": "ST-L1-05",
+        "name": "Horská stanice",
+        "type": "rail_station",
+        "bearing_deg": 73,
+        "rel_angle_deg": -27,
+        "dist_km": 3.96,
+        "side": "left"
+      },
+      {
+        "id": "SP-07",
+        "name": "Studánka nad vodopádem",
+        "type": "poi",
+        "bearing_deg": 97,
+        "rel_angle_deg": -3,
+        "dist_km": 4.58,
+        "side": "center"
+      },
+      {
+        "id": "N-03",
+        "name": "Larp Falls",
+        "type": "nature",
+        "bearing_deg": 102,
+        "rel_angle_deg": 2,
+        "dist_km": 4.77,
+        "side": "center"
+      },
+      {
+        "id": "ST-L1-03",
+        "name": "Vodopád (fotozastávka)",
+        "type": "rail_station",
+        "bearing_deg": 101,
+        "rel_angle_deg": 1,
+        "dist_km": 4.98,
+        "side": "center"
+      },
+      {
+        "id": "HM-02",
+        "name": "osada (bez názvu)",
+        "type": "settlement",
+        "bearing_deg": 111,
+        "rel_angle_deg": 11,
+        "dist_km": 5.64,
+        "side": "right"
+      }
+    ],
+    "nearby_registered": [
+      {
+        "id": "PG-01",
+        "name": "Paraglidingový start (zaoblený vrch M-03)",
+        "dist_km": 0.5,
+        "bearing_deg": 229
+      }
+    ],
+    "look_at": {
+      "id": "M-02",
+      "name": "Winter Peak",
+      "bearing_deg": 56,
+      "rel_angle_deg": -44,
+      "dist_km": 4.208,
+      "line_of_sight": true
+    },
+    "target_cs": "mlhavé horské údolí východně až jihovýchodně (E)"
+  },
+  "conditions": {
+    "time_of_day": "late afternoon",
+    "season": "autumn",
+    "weather": "overcast, low drifting cloud and mist in the valley"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "authentic, slightly dark cloudy hiking-story look: muted greens, cool grey light, soft contrast, fine grain",
+    "imperfections": "natural handheld sway and exposure adaptation"
+  },
+  "canon_notes_cs": [
+    "Přesně dva lidé; první osoba drží telefon (POV).",
+    "Atlas: TR-03 (hřebenovka) a luční pokryv pod M-03; mlhavé údolí je na východě (Winter Peak M-02 v dálce)."
+  ],
+  "avoid": "no extra people, no drone look, no text or subtitles, no logos, no exaggerated cinematic grading, no selfie stick visible",
+  "files": {
+    "map": "02_MAP_PINS/VIDEO_04_CLOUDY_MOUNTAIN_MEMORIES_map.jpg",
+    "prompt": "05_VIDEO/VIDEO_04_CLOUDY_MOUNTAIN_MEMORIES/VIDEO_04_CLOUDY_MOUNTAIN_MEMORIES_prompt.txt",
+    "metadata": "05_VIDEO/VIDEO_04_CLOUDY_MOUNTAIN_MEMORIES/VIDEO_04.json",
+    "expected_photo": null,
+    "storyboard": "05_VIDEO/VIDEO_04_CLOUDY_MOUNTAIN_MEMORIES/VIDEO_04_CLOUDY_MOUNTAIN_MEMORIES_storyboard.md"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "video": {
+    "length_s": 9,
+    "first_frame_photo": "PHOTO_09",
+    "storyboard": [
+      {
+        "t": "0.0–3.0 s",
+        "shot": "Phone held at arm's length by the first hiker: both hikers (exactly two) sit close together on a grassy slope in dark outdoor jackets, one in profile, the other partly shown as the arm and hand holding the phone; light wind in the grass."
+      },
+      {
+        "t": "3.0–6.5 s",
+        "shot": "The phone slowly turns away: over the grass tips and a boot toward a misty mountain valley with drifting low cloud and layered ridges."
+      },
+      {
+        "t": "6.5–9.0 s",
+        "shot": "Hold on the valley for a moment, then a light, slow pan back toward the two hikers; the end frame shows them again, small and calm."
+      }
+    ],
+    "audio_suggestion": "optional: wind in the grass, distant faint birds, no voice or music"
+  },
+  "map": {
+    "source": "SP-W",
+    "mpp": 4.0,
+    "window_km": [
+      4.243,
+      6.687,
+      3.0,
+      2.25
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "scene_id": "PHOTO_15",
+  "kind": "photo",
+  "title": "LARPINGTON ROOFTOP NIGHT",
+  "format": "9:16",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Larpington",
+  "tags": [
+    "city",
+    "no people",
+    "night",
+    "terrace",
+    "old money"
+  ],
+  "description_cs": "Noční story fotka z elegantní terasy nad městem: zábradlí, dlažba, v dálce osvětlené historické centrum Larpingtonu. Teplá světla, tmavá obloha, lehce podexponováno. Bez lidí.",
+  "registered_location": {
+    "registry_id": "HV-01",
+    "name_en": "Prémiový hotel – přístavní promenáda",
+    "name_cs": "Prémiový hotel – přístavní promenáda",
+    "type": "poi",
+    "island": "main",
+    "exist_status": "proposed",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 16.49,
+    "y_km": 13.53,
+    "elev_m_model": 7.9,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "HV-01",
+        "name": "Prémiový hotel – přístavní promenáda",
+        "x_km": 16.49,
+        "y_km": 13.53
+      },
+      {
+        "id": "CP-B07",
+        "name": "Historic church (St George's – working name)",
+        "x_km": 15.891,
+        "y_km": 13.651
+      }
+    ],
+    "note": "Prémiový hotel nad přístavní promenádou (HV-01; v plánu CP-B09 je posunut o ≈ 240 m, rozpor C-19) a kostel CP-B07 v centru."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 16.628,
+    "y_km": 13.707,
+    "eye_height_m": 21.5,
+    "basis_cs": "střešní terasa prémiového hotelu CP-B09 (výška 20 m + oko 1,5 m); bod je návrh",
+    "plan_local_m": [
+      3528.0,
+      3407.0
+    ],
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 2.8,
+    "cover_at_camera": "scrub/grass",
+    "distance_to_coast_km": 0.1,
+    "bearing_deg": 274,
+    "compass": "W",
+    "fov_hint_deg": 46,
+    "sea_visible_km": null,
+    "visible_registered": [],
+    "nearby_registered": [],
+    "look_at": {
+      "id": "CP-B07",
+      "name": "Historic church (St George's – working name)",
+      "bearing_deg": 274,
+      "rel_angle_deg": 0,
+      "dist_km": 0.72,
+      "line_of_sight": true
+    },
+    "target_cs": "osvětlené staré město a věž kostela CP-B07 (W, ≈ 0,75 km)"
+  },
+  "conditions": {
+    "time_of_day": "night, about 1.5 hours after sunset",
+    "season": "summer",
+    "weather": "warm, clear, no wind"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "moody Instagram look: underexposed by about one stop, warm city lights against a deep navy sky, soft bokeh, fine grain",
+    "imperfections": "slight bloom around the brightest lamps, soft detail in the dark rooftops"
+  },
+  "canon_notes_cs": [
+    "Plán CP-01: hotel CP-B09 (20 m) je nejvyšší budova na promenádě; kostel CP-B07 leží ≈ 750 m západně – viditelnost přes střechy ověřena v modelu města.",
+    "Registr HV-01 (16,49; 13,53) × plán CP-B09 (16,65; 13,71): rozpor C-19 (čeká na potvrzení)."
+  ],
+  "avoid": "no people, no skyscrapers, no neon signs, no readable text, no Dubai-style opulence, no fireworks",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_15_LARPINGTON_ROOFTOP_NIGHT_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_15_LARPINGTON_ROOFTOP_NIGHT_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_15.json",
+    "expected_photo": "01_PHOTOS/PHOTO_15.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "S-03",
+    "mpp": 2.0,
+    "window_km": [
+      15.691,
+      13.042,
+      1.6,
+      1.2
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "scene_id": "PHOTO_13",
+  "kind": "photo",
+  "title": "THE HIDDEN RIDGE",
+  "format": "9:16",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Mountains – centre-west",
+  "tags": [
+    "lake",
+    "no people",
+    "ridge",
+    "moody"
+  ],
+  "description_cs": "Výhled z bezpečné vyhlídky na hřebeni dolů na tmavou hladinu přehrady obklopenou strmými zelenými a kamenitými svahy; v popředí travnatý a skalnatý hřeben. Bez lidí.",
+  "registered_location": {
+    "registry_id": "N-04",
+    "name_en": "Larp Reservoir",
+    "name_cs": "Přehradní jezero",
+    "type": "nature",
+    "island": "main",
+    "exist_status": "approved",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 11.52,
+    "y_km": 9.76,
+    "elev_m_model": 54.6,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "N-04",
+        "name": "Larp Reservoir",
+        "x_km": 11.52,
+        "y_km": 9.76
+      }
+    ],
+    "note": "Přehradní jezero N-04 viděné shora z vodní stezky TR-06."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 12.032,
+    "y_km": 9.828,
+    "eye_height_m": 1.6,
+    "basis_cs": "rovná terasa na východním břehu přehrady těsně nad skalnatou hranou svahu, 30 m od vodní stezky TR-06 (85 m n. m., ≈ 20 m nad hladinou); bod je návrh",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 85.4,
+    "cover_at_camera": "forest",
+    "distance_to_coast_km": 3.13,
+    "bearing_deg": 278,
+    "compass": "W",
+    "fov_hint_deg": 46,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "lake",
+        "z_m": 62
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "lake",
+        "z_m": 55
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "farmland",
+        "z_m": 94
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "forest",
+        "z_m": 130
+      }
+    ],
+    "sea_visible_km": null,
+    "visible_registered": [
+      {
+        "id": "N-04",
+        "name": "Larp Reservoir",
+        "type": "nature",
+        "bearing_deg": 278,
+        "rel_angle_deg": 0,
+        "dist_km": 0.52,
+        "side": "center"
+      },
+      {
+        "id": "HM-02",
+        "name": "osada (bez názvu)",
+        "type": "settlement",
+        "bearing_deg": 278,
+        "rel_angle_deg": 0,
+        "dist_km": 1.12,
+        "side": "center"
+      },
+      {
+        "id": "M-03",
+        "name": "Round Hill",
+        "type": "peak",
+        "bearing_deg": 285,
+        "rel_angle_deg": 7,
+        "dist_km": 7.0,
+        "side": "center"
+      }
+    ],
+    "nearby_registered": [
+      {
+        "id": "ST-L1-02",
+        "name": "Přehrada",
+        "dist_km": 0.44,
+        "bearing_deg": 126
+      },
+      {
+        "id": "V-07",
+        "name": "Vyhlídka na hrázi přehrady",
+        "dist_km": 0.57,
+        "bearing_deg": 151
+      }
+    ],
+    "look_at": {
+      "id": "N-04",
+      "name": "Larp Reservoir",
+      "bearing_deg": 278,
+      "rel_angle_deg": 0,
+      "dist_km": 0.516,
+      "line_of_sight": true,
+      "lake_surface_visible_fraction": 0.68
+    },
+    "target_cs": "přehradní jezero N-04 a protější lesnaté svahy (W, ≈ 0,55 km k hladině)"
+  },
+  "conditions": {
+    "time_of_day": "early morning",
+    "season": "autumn",
+    "weather": "overcast with thin mist on the water and a break of pale light"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "dark muted greens, deep blue-black water, desaturated, lifted blacks, soft grain",
+    "imperfections": "a little noise in the shadows, soft haze over the far slope"
+  },
+  "canon_notes_cs": [
+    "Atlas: jezero N-04 je údolní nádrž se strmými kamenitými břehy (sklony 30–45° u hladiny, pokryv rock, DEM); TR-06 vede východním břehem v 85 m n. m.",
+    "Stanoviště není registrovaná vyhlídka (V-07 je u hráze a hledí na jezero z jihu) → PROPOSED CAMERA POINT na stezce."
+  ],
+  "avoid": "no people, no buildings, no boats, no dam wall, no bright blue tourist water, no text",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_13_THE_HIDDEN_RIDGE_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_13_THE_HIDDEN_RIDGE_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_13.json",
+    "expected_photo": "01_PHOTOS/PHOTO_13.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "SP-W",
+    "mpp": 4.0,
+    "window_km": [
+      10.616,
+      8.96,
+      2.2,
+      1.65
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

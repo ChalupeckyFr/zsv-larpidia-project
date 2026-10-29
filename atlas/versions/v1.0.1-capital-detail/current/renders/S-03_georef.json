@@ -1,0 +1,22 @@
+{
+  "id": "S-03",
+  "title": "Larpington – simulovaná satelitní vizualizace hlavního města (návrh)",
+  "status": "proposed",
+  "px": [
+    2970,
+    2100
+  ],
+  "meters_per_pixel": 2.0,
+  "window_km": {
+    "x0": 13.1,
+    "y0": 10.3,
+    "w": 5.94,
+    "h": 4.2
+  },
+  "pixel_to_km": "x_km = x0 + (px + 0.5) * mpp/1000 ; y_km = y0 + (py + 0.5) * mpp/1000 (sever nahoře, východ vpravo)",
+  "orientation": "kolmý pohled shora (nadir), sever nahoře",
+  "land_area_km2": 21.65,
+  "disclaimer": "SIMULOVANÁ satelitní vizualizace fiktivního ostrova, ne skutečná družicová data",
+  "atlas_version": "1.0-draft",
+  "coast_sha256": "ffca09acdec9dac899c0699fd9abe6918338e5acbea6d180e42eb85ce34b3801"
+}

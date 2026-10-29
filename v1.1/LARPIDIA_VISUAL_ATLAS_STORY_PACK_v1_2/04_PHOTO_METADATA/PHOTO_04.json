@@ -1,0 +1,124 @@
+{
+  "scene_id": "PHOTO_04",
+  "kind": "photo",
+  "title": "LARPINGTON OLD HARBOUR",
+  "format": "16:9",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Larpington",
+  "tags": [
+    "city",
+    "no people",
+    "harbour",
+    "afternoon"
+  ],
+  "description_cs": "Staré sklady a celnice přeměněné na kavárny, kamenná promenáda, malé lodě v přístavní pánvi a historické město za přístavem. Odpolední světlo. Bez lidí.",
+  "registered_location": {
+    "registry_id": "C-02",
+    "name_en": "Larpington Old Harbour",
+    "name_cs": "Historický přístav hlavního města",
+    "type": "port",
+    "island": "main",
+    "exist_status": "approved",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 16.32,
+    "y_km": 13.92,
+    "elev_m_model": 1.2,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "C-02",
+        "name": "Larpington Old Harbour",
+        "x_km": 16.32,
+        "y_km": 13.92
+      }
+    ],
+    "note": "Historický přístav hlavního města (pánev a dva vlnolamy z atlasu beze změny)."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 16.235,
+    "y_km": 13.9,
+    "eye_height_m": 1.6,
+    "basis_cs": "přístavní promenáda (CP-PR01) u Přístavního náměstí; bod na promenádě je návrh",
+    "plan_local_m": [
+      3135.0,
+      3600.0
+    ],
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 1.5,
+    "cover_at_camera": "scrub/grass",
+    "distance_to_coast_km": 0.01,
+    "bearing_deg": 78,
+    "compass": "ENE",
+    "fov_hint_deg": 62,
+    "sea_visible_km": null,
+    "visible_registered": [
+      {
+        "id": "C-02",
+        "name": "Larpington Old Harbour",
+        "type": "port",
+        "bearing_deg": 103,
+        "rel_angle_deg": 25,
+        "dist_km": 0.09,
+        "side": "right"
+      },
+      {
+        "id": "BAY-S",
+        "name": "Larpington Bay",
+        "type": "coast_feature",
+        "bearing_deg": 103,
+        "rel_angle_deg": 25,
+        "dist_km": 1.3,
+        "side": "right"
+      }
+    ],
+    "nearby_registered": [],
+    "target_cs": "promenáda a přístavní pánev směrem k molu a tržní hale (ENE)"
+  },
+  "conditions": {
+    "time_of_day": "afternoon (about 3 to 4 pm)",
+    "season": "late summer",
+    "weather": "clear, light haze over the water"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "warm natural, slightly lifted shadows, gentle contrast, teal-green water, a restrained Apple Photos 'vivid warm' feel",
+    "imperfections": "a tiny lens flare from the sun side, slightly crooked horizon"
+  },
+  "canon_notes_cs": [
+    "Atlas: C-02 historický přístav (nábřeží, butiky, promenády, vlnolam proti tajfunům z jihu). Plán CP-01: Přístavní promenáda, Přístavní úřad a celnice (CP-B10), terminál lodní linky CP-B11.",
+    "Nákladní přístav je jinde (I-03); v záběru nesmí být kontejnery ani jeřáby."
+  ],
+  "avoid": "no people, no large ships, no cranes or containers (this is the historic harbour, not the cargo port), no readable text, no superyacht luxury",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_04_LARPINGTON_OLD_HARBOUR_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_04_LARPINGTON_OLD_HARBOUR_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_04.json",
+    "expected_photo": "01_PHOTOS/PHOTO_04.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "S-03",
+    "mpp": 2.0,
+    "window_km": [
+      15.851,
+      13.537,
+      0.95,
+      0.713
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

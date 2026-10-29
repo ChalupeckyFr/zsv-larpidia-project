@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be written in the image): RIVER TO THE SEA. Format 16:9.
+
+Create a horizontal 16:9 widescreen smartphone photo. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+
+SCENE: A strong rocky river enters the sea on a wild coast: dark wet boulders and cobbles in the foreground, fast braided channels of clear, slightly tea-coloured water spilling across a pebble and dark-sand shore into small breaking waves, low coastal rocks flanking the river mouth, scrub and wind-bent trees on the banks, a hazy grey horizon.
+
+COMPOSITION: Wide landscape, camera low near the water; the river leads from the lower left toward the surf in the centre, rocks in the foreground, sea and sky in the upper third.
+
+LIGHT AND ATMOSPHERE: Cold grey overcast late-autumn morning, wet sheen on the stones, fine spray in the air.
+
+PHOTO LOOK: cool desaturated blue-grey, slightly dark, crisp wet textures, fine grain. Subtle authentic imperfections (only a few, not all at once): a few droplets on the lens, slight softness at the edges.
+
+PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+
+PLACE AND SCALE: Mouth of the main river of Larpidie, fictional, on the south coast; the river is the main stream below a reservoir; rough pebble shore with boulders.
+
+AVOID: no people, no buildings, no boats, no bridges, no sunny beach vibe, no tropical palms. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+
+Aspect ratio 16:9.

@@ -1,0 +1,60 @@
+{
+  "frozen_variant": "B",
+  "frozen_at": "2026-10-23T18:06:01+02:00",
+  "decision": "R-06: tým zvolil variantu B (členitější) dne 2026-10-23",
+  "seed": 20262034,
+  "deviations": [
+    {
+      "id": "T-04",
+      "from_pct": [
+        56,
+        20
+      ],
+      "to_pct": [
+        56,
+        23.0
+      ],
+      "dev_pct": [
+        0,
+        3.0
+      ],
+      "dev_km": 0.48
+    },
+    {
+      "id": "T-05",
+      "from_pct": [
+        73,
+        24
+      ],
+      "to_pct": [
+        73,
+        26.5
+      ],
+      "dev_pct": [
+        0,
+        2.5
+      ],
+      "dev_km": 0.4
+    },
+    {
+      "id": "A-01",
+      "from_pct": [
+        83,
+        37
+      ],
+      "to_pct": [
+        82,
+        40.0
+      ],
+      "dev_pct": [
+        -1,
+        3.0
+      ],
+      "dev_km": 0.537
+    }
+  ],
+  "coast_sha256": "ffca09acdec9dac899c0699fd9abe6918338e5acbea6d180e42eb85ce34b3801",
+  "main_area_km2": 175.0,
+  "para_area_km2": 13.98,
+  "strait_km": 1.5
+}

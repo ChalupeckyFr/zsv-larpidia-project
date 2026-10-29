@@ -1,0 +1,45 @@
+# VIDEO 02 · ENTERING THE OLD CHURCH
+
+**Formát:** 9:16 · **Délka:** ≈ 8 s · **Stav:** prompt-ready (video nebylo vygenerováno)
+
+**Lokalita (registr):** CP-B07 · **Kamerový bod:** PROPOSED CAMERA POINT x 15.852 km, y 13.651 km (lokální km atlasu)
+
+**První snímek (volitelně):** fotografie PHOTO_18 (viz její prompt)
+
+## Storyboard
+
+| Čas | Záběr |
+|---|---|
+| 0.0–2.5 s | Slow push-in across the quiet church square toward the west front of the old church: brick and honey stone, moss, ivy, a pointed arched oak door standing ajar; linden leaves moving slightly. |
+| 2.5–4.0 s | The camera glides through the doorway; the exposure adapts from bright daylight to a dim interior (a soft natural flare as the door frame passes). |
+| 4.0–8.0 s | Slow forward glide along the nave at eye level: stone arcade, dark oak roof beams, wooden pews, narrow stained-glass windows throwing soft coloured light on the floor, dust motes, a few candles at the far altar. Calm, silent, empty. |
+
+**Pohyb kamery:** Steady slow dolly-like forward walk at human eye level (about 1.6 m), handheld but smooth, no zoom, a slight natural sway; exposure adapts naturally when entering the dim interior.
+
+**Kontinuita:** Architecture must stay consistent between exterior and interior: a modest English-style parish church (nave about 40 m long and 15 m wide with a shorter transept), brick and stone outside, stone arcade and dark oak timber roof inside, whitewashed plaster walls; same warm stone palette in both parts. Matches the still PHOTO 18.
+
+**Zvuk (volitelně):** optional: soft footsteps-free ambience, faint church-interior reverb, no voice
+
+## Finální anglický video prompt
+
+```
+Scene name (for reference only, never to be shown on screen): ENTERING THE OLD CHURCH. Vertical 9:16 video, about 8 seconds, one continuous take, no cuts.
+
+Create a realistic vertical 9:16 smartphone video clip of about 8 seconds (iPhone 15 main camera, 1x, natural handheld footage, not CGI, not a drone shot).
+
+SCENE: A vertical smartphone video, one continuous slow forward take. Outside: a quiet gravel-and-cobble church square with an old linden tree and an English-style parish church of brick and honey-coloured stone with moss and ivy and a pointed arched oak door standing ajar. The camera approaches the west front, passes through the doorway and glides slowly along the nave of the interior: a stone arcade, dark oak roof beams, wooden pews, narrow stained-glass windows casting soft coloured light on the flagstone floor, dust motes in the light, a few candles at the altar. Calm, silent, empty.
+
+CAMERA MOTION: Steady slow dolly-like forward walk at human eye level (about 1.6 m), handheld but smooth, no zoom, a slight natural sway; exposure adapts naturally when entering the dim interior.
+
+LIGHT AND ATMOSPHERE: Soft late-morning daylight outside; inside only the window light and a few candle flames.
+
+LOOK: quiet, slightly warm, soft contrast, gentle grain; interior exposure adapts from bright outside to dim inside.
+
+STORYBOARD: [0.0–2.5 s] Slow push-in across the quiet church square toward the west front of the old church: brick and honey stone, moss, ivy, a pointed arched oak door standing ajar; linden leaves moving slightly. [2.5–4.0 s] The camera glides through the doorway; the exposure adapts from bright daylight to a dim interior (a soft natural flare as the door frame passes). [4.0–8.0 s] Slow forward glide along the nave at eye level: stone arcade, dark oak roof beams, wooden pews, narrow stained-glass windows throwing soft coloured light on the floor, dust motes, a few candles at the far altar. Calm, silent, empty.
+
+CONTINUITY: Architecture must stay consistent between exterior and interior: a modest English-style parish church (nave about 40 m long and 15 m wide with a shorter transept), brick and stone outside, stone arcade and dark oak timber roof inside, whitewashed plaster walls; same warm stone palette in both parts. Matches the still PHOTO 18.
+
+AVOID: no people, no priest, no text, no inscriptions, no modern lighting, no cuts or teleporting, no gothic cathedral scale, no fantasy elements. No on-screen text, subtitles, logos or watermarks.
+
+Image-to-video option: use the finished still PHOTO_18 (see its prompt file) as the first frame so that place, light and grade match. Format 9:16, 8 s.
+```

@@ -1,0 +1,152 @@
+{
+  "scene_id": "VIDEO_01",
+  "kind": "video",
+  "title": "MOUNTAIN 180° TURN",
+  "format": "9:16",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Mountains – west",
+  "tags": [
+    "mountains",
+    "no people",
+    "winter",
+    "turn"
+  ],
+  "description_cs": "Plynulá 180° otočka z bezpečné vyhlídky u Mount Larp: sníh, stezka, lesnaté svahy a vzdálené moře na začátku, na konci východní hřeben s Winter Peak.",
+  "registered_location": {
+    "registry_id": "M-01",
+    "name_en": "Mount Larp",
+    "name_cs": "Nejvyšší vrchol, pracovní 560 m",
+    "type": "peak",
+    "island": "main",
+    "exist_status": "approved",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 6.96,
+    "y_km": 5.44,
+    "elev_m_model": 560.0,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "M-01",
+        "name": "Mount Larp",
+        "x_km": 6.96,
+        "y_km": 5.44
+      }
+    ],
+    "note": "Stejná lokalita jako PHOTO 01 (vrchol M-01); kamera je 120 m od bodu PHOTO 01, přímo u vrcholu."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 6.972,
+    "y_km": 5.446,
+    "eye_height_m": 1.6,
+    "basis_cs": "vrcholová mýtina u stezky TR-04, 12 m od vrcholu M-01 (jediné místo s výhledem na obě strany – na západ k moři i na východ k M-02); bod je návrh",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 560.0,
+    "cover_at_camera": "forest",
+    "distance_to_coast_km": 1.0,
+    "bearing_deg": 285,
+    "compass": "WNW",
+    "fov_hint_deg": 46,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "forest",
+        "z_m": 552
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "forest",
+        "z_m": 513
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "forest",
+        "z_m": 420
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "sea",
+        "z_m": 0
+      }
+    ],
+    "sea_visible_km": 7.2,
+    "visible_registered": [],
+    "nearby_registered": [],
+    "look_at": {
+      "id": "M-02",
+      "name": "Winter Peak",
+      "bearing_deg": 86,
+      "rel_angle_deg": 161,
+      "dist_km": 2.154,
+      "line_of_sight": true
+    },
+    "target_cs": "otočka ze WNW (moře) přes JJV na VSV (Winter Peak M-02, 2,2 km)"
+  },
+  "conditions": {
+    "time_of_day": "late afternoon",
+    "season": "late winter / early spring",
+    "weather": "thin high overcast, low cloud in the valleys"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "cool, slightly underexposed, muted greens, cold blue-grey shadows, fine grain (same grade as PHOTO 01)",
+    "imperfections": "natural handheld sway and exposure adaptation"
+  },
+  "canon_notes_cs": [
+    "Kánon: klima s občasným sněhem; v 560 m jen krátká sezona a zbytky sněhu.",
+    "Moře je vidět na západ (≈ 3,7 km); na východě Winter Peak M-02 (510 m) 2,2 km."
+  ],
+  "avoid": "no people, no animals, no drone look, no cuts, no text, no music-video effects, no fog machine, no sunset colours",
+  "files": {
+    "map": "02_MAP_PINS/VIDEO_01_MOUNTAIN_180_TURN_map.jpg",
+    "prompt": "05_VIDEO/VIDEO_01_MOUNTAIN_180_TURN/VIDEO_01_MOUNTAIN_180_TURN_prompt.txt",
+    "metadata": "05_VIDEO/VIDEO_01_MOUNTAIN_180_TURN/VIDEO_01.json",
+    "expected_photo": null,
+    "storyboard": "05_VIDEO/VIDEO_01_MOUNTAIN_180_TURN/VIDEO_01_MOUNTAIN_180_TURN_storyboard.md"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "video": {
+    "length_s": 8,
+    "first_frame_photo": "PHOTO_01",
+    "storyboard": [
+      {
+        "t": "0.0–1.5 s",
+        "shot": "Start: hold facing west-north-west. Foreground trail, grey rocks and patches of old snow; below them green forested slopes, low clouds and, far away, the grey-blue ocean."
+      },
+      {
+        "t": "1.5–6.5 s",
+        "shot": "A smooth, continuous clockwise turn of about 180° at an even pace (about 36° per second), handheld and steady. Rocks and snow patches sweep past the lens; the forested slopes and cloud banks slide through the frame."
+      },
+      {
+        "t": "6.5–8.0 s",
+        "shot": "Settle and hold facing east-south-east: the ridge trail descending along a forested ridge, a rounded forested peak about 2 km away with low cloud banks, thin mist in the valley. Tiny natural hand shake at the end."
+      }
+    ],
+    "audio_suggestion": "optional: soft wind only, no voice or music"
+  },
+  "map": {
+    "source": "SP-W",
+    "mpp": 4.0,
+    "window_km": [
+      4.973,
+      4.042,
+      3.6,
+      2.7
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

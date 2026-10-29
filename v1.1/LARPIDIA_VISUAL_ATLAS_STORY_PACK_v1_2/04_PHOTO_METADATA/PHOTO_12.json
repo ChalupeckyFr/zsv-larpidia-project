@@ -1,0 +1,137 @@
+{
+  "scene_id": "PHOTO_12",
+  "kind": "photo",
+  "title": "SUNSET ABOVE LARPIDIA",
+  "format": "16:9",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Mountains – west",
+  "tags": [
+    "mountains",
+    "two people",
+    "sunset",
+    "sky"
+  ],
+  "description_cs": "Dva mladí turisté sedí na louce zády ke kameře pod obrovskou dramatickou oblohou: tmavé modro-šedé mraky, úzký oranžový pruh u horizontu a žlutá kvítka v trávě. Přesně dva lidé.",
+  "registered_location": {
+    "registry_id": "M-03",
+    "name_en": "Round Hill",
+    "name_cs": "Zaoblený turistický vrch",
+    "type": "peak",
+    "island": "main",
+    "exist_status": "approved",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 5.28,
+    "y_km": 8.0,
+    "elev_m_model": 440.0,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "M-03",
+        "name": "Round Hill",
+        "x_km": 5.28,
+        "y_km": 8.0
+      },
+      {
+        "id": "PG-01",
+        "name": "Paraglidingový start (zaoblený vrch M-03)",
+        "x_km": 5.27,
+        "y_km": 7.99
+      }
+    ],
+    "note": "Travnatá vyhlídka na zaobleném vrchu M-03 (paraglidingový start PG-01), 3 km jihozápadně od Mount Larp."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 5.3,
+    "y_km": 8.01,
+    "eye_height_m": 1.4,
+    "basis_cs": "travnatý vrchol M-03 u paraglidingového startu PG-01; bod je návrh",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 439.6,
+    "cover_at_camera": "meadow",
+    "distance_to_coast_km": 2.19,
+    "bearing_deg": 265,
+    "compass": "W",
+    "fov_hint_deg": 62,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "meadow",
+        "z_m": 435
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "meadow",
+        "z_m": 389
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "meadow",
+        "z_m": 248
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "sea",
+        "z_m": 0
+      }
+    ],
+    "sea_visible_km": 6.5,
+    "visible_registered": [],
+    "nearby_registered": [
+      {
+        "id": "SP-03",
+        "name": "Pramen Havlišova potoka",
+        "dist_km": 0.46,
+        "bearing_deg": 229
+      }
+    ],
+    "target_cs": "západ: moře za svahy (≈ 4,6 km) a západ slunce"
+  },
+  "conditions": {
+    "time_of_day": "sunset",
+    "season": "late spring",
+    "weather": "after rain, broken heavy cloud with a narrow clear band at the horizon"
+  },
+  "people": {
+    "count": 2,
+    "description": "two young hikers in dark jackets and beanies sitting side by side on the grass, backs to the camera, backpacks beside them"
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "dark, moody, higher contrast, pulled highlights, cool blue-grey sky with one narrow orange band, lowered exposure",
+    "imperfections": "slightly overexposed horizon band, a soft lens flare"
+  },
+  "canon_notes_cs": [
+    "Atlas: M-03 Round Hill (louky, výhledy), PG-01 paraglidingový start (439,9 m), moře 4,6 km západně (DEM: viditelné).",
+    "Přesně dva lidé; žlutá kvítka = louka (pokryv meadow)."
+  ],
+  "avoid": "no extra people, no faces, no logos on clothing, no tent, no fantasy colours, no Himalayan scale",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_12_SUNSET_ABOVE_LARPIDIA_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_12_SUNSET_ABOVE_LARPIDIA_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_12.json",
+    "expected_photo": "01_PHOTOS/PHOTO_12.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "SP-W",
+    "mpp": 4.0,
+    "window_km": [
+      3.556,
+      6.902,
+      3.0,
+      2.25
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

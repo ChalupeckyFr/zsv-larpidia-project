@@ -1,0 +1,45 @@
+# VIDEO 04 · CLOUDY MOUNTAIN MEMORIES
+
+**Formát:** 9:16 · **Délka:** ≈ 9 s · **Stav:** prompt-ready (video nebylo vygenerováno)
+
+**Lokalita (registr):** M-03, SP-05 · **Kamerový bod:** PROPOSED CAMERA POINT x 5.650 km, y 7.660 km (lokální km atlasu)
+
+**První snímek (volitelně):** fotografie PHOTO_09 (viz její prompt)
+
+## Storyboard
+
+| Čas | Záběr |
+|---|---|
+| 0.0–3.0 s | Phone held at arm's length by the first hiker: both hikers (exactly two) sit close together on a grassy slope in dark outdoor jackets, one in profile, the other partly shown as the arm and hand holding the phone; light wind in the grass. |
+| 3.0–6.5 s | The phone slowly turns away: over the grass tips and a boot toward a misty mountain valley with drifting low cloud and layered ridges. |
+| 6.5–9.0 s | Hold on the valley for a moment, then a light, slow pan back toward the two hikers; the end frame shows them again, small and calm. |
+
+**Pohyb kamery:** Slow handheld pan to the right (about 40 degrees) then a small slow pan back; natural arm-length phone sway, no zoom, no cuts, a slight focus shift from the people to the valley and back.
+
+**Kontinuita:** Exactly two people throughout, the same dark jackets and beanies in every frame; faces are not the focus (profile or turned away); same slope and valley in all shots; low-mountain scale (hills of 300 to 500 m), no glaciers, no giant peaks; matches the clothing of PHOTO 09 and PHOTO 12.
+
+**Zvuk (volitelně):** optional: wind in the grass, distant faint birds, no voice or music
+
+## Finální anglický video prompt
+
+```
+Scene name (for reference only, never to be shown on screen): CLOUDY MOUNTAIN MEMORIES. Vertical 9:16 video, about 9 seconds, one continuous take, no cuts.
+
+Create a realistic vertical 9:16 smartphone video clip of about 9 seconds (iPhone 15 main camera, 1x, natural handheld footage, not CGI, not a drone shot).
+
+SCENE: A vertical smartphone video in a first-person style: exactly two young hikers in dark outdoor clothing rest on a grassy mountain slope in the low mountains of a Pacific island; the first hiker holds the phone at arm's length. The camera starts on the two hikers sitting close together, then slowly turns away across the grass tips toward a misty mountain valley with drifting low cloud and layered green ridges, holds there, and then drifts slightly back toward the hikers.
+
+CAMERA MOTION: Slow handheld pan to the right (about 40 degrees) then a small slow pan back; natural arm-length phone sway, no zoom, no cuts, a slight focus shift from the people to the valley and back.
+
+LIGHT AND ATMOSPHERE: Overcast late-afternoon light with drifting cloud and mist; muted, slightly dark, cool.
+
+LOOK: authentic, slightly dark cloudy hiking-story look: muted greens, cool grey light, soft contrast, fine grain.
+
+STORYBOARD: [0.0–3.0 s] Phone held at arm's length by the first hiker: both hikers (exactly two) sit close together on a grassy slope in dark outdoor jackets, one in profile, the other partly shown as the arm and hand holding the phone; light wind in the grass. [3.0–6.5 s] The phone slowly turns away: over the grass tips and a boot toward a misty mountain valley with drifting low cloud and layered ridges. [6.5–9.0 s] Hold on the valley for a moment, then a light, slow pan back toward the two hikers; the end frame shows them again, small and calm.
+
+CONTINUITY: Exactly two people throughout, the same dark jackets and beanies in every frame; faces are not the focus (profile or turned away); same slope and valley in all shots; low-mountain scale (hills of 300 to 500 m), no glaciers, no giant peaks; matches the clothing of PHOTO 09 and PHOTO 12.
+
+AVOID: no extra people, no drone look, no text or subtitles, no logos, no exaggerated cinematic grading, no selfie stick visible. No on-screen text, subtitles, logos or watermarks.
+
+Image-to-video option: use the finished still PHOTO_09 (see its prompt file) as the first frame so that place, light and grade match. Format 9:16, 9 s.
+```

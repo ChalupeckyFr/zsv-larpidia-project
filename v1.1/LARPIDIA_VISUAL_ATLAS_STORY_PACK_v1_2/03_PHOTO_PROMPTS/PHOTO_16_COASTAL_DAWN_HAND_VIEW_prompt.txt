@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be written in the image): COASTAL DAWN HAND VIEW. Format 9:16.
+
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+
+SCENE: A first-person view from a coastal lookout: only the photographer's right hand and wrist are visible, extended naturally toward the coast, holding a small white ceramic cup of coffee with a wisp of steam; an elegant stainless-steel wristwatch with a plain dark dial (no brand, no text) sits on the wrist. Beyond a simple lookout railing: calm sea, a low coastal town with a few lights still on and a green hill with a small stone castle silhouette on the far shore; the sky shows a blue-hour to sunrise gradient from indigo to soft pink with a thin orange line at the horizon.
+
+COMPOSITION: Portrait; hand and cup sharp in the lower foreground (about a third of the frame), the horizon on the upper third line, the far shore soft; a very personal, calm composition.
+
+LIGHT AND ATMOSPHERE: Pre-sunrise blue hour turning to first light in the east-south-east; the sea reflects the pastel sky.
+
+PHOTO LOOK: serene blue-hour grade: indigo to soft pink and a thin orange line at the horizon, low contrast, gentle grain. Subtle authentic imperfections (only a few, not all at once): slightly soft focus on the far shore, a faint reflection on the cup.
+
+PEOPLE: No person is visible except only the first-person right hand and wrist are visible (no face, no body). No faces, no other people anywhere, not even tiny distant figures.
+
+PLACE AND SCALE: Tip of the south-eastern peninsula of Larpidie, fictional, looking across a 2-km strait toward the low coast of the small island Paraland with its hilltop castle.
+
+AVOID: no face, no full body, no other people, no phone visible, no brand logos or text on the watch or cup, no boats in the foreground. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+
+Aspect ratio 9:16.

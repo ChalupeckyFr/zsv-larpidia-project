@@ -1,0 +1,26 @@
+{
+  "id": "S-03_oblique_S",
+  "status": "proposed",
+  "type": "šikmý pohled z DEM (simulace, ne družicová data)",
+  "description": "z moře jižně od přístavu k severu: historický přístav, staré město, Přístavní třída a Náměstí čtyř s hmotami budov",
+  "camera": {
+    "x": 16.3,
+    "y": 15.0,
+    "h": 300.0,
+    "heading": 0.0,
+    "horizon": 0.3,
+    "fov": 54.0,
+    "dmax": 30000.0
+  },
+  "sources": [
+    "S-03",
+    "S-00"
+  ],
+  "vertical_exaggeration": 1.35,
+  "size_px": [
+    1800,
+    1000
+  ],
+  "atlas_version": "1.0-draft",
+  "camera_note": "x, y v km (x východ, y jih, počátek SZ roh rámce 24×16 km); heading ve stupních od severu po směru hodin; h = výška kamery v m n. m.; horizon = poloha obzoru jako zlomek výšky obrazu; kamera s posunutým objektivem (bez naklopení); fov = vodorovné zorné pole ve stupních; výška terénu (a u S-03 i budov) je zvětšena 1.35× (jinak by 560 m hory vypadaly jako pahorky)"
+}

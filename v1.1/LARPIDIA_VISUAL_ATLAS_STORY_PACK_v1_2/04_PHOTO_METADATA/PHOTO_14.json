@@ -1,0 +1,124 @@
+{
+  "scene_id": "PHOTO_14",
+  "kind": "photo",
+  "title": "RIVER TO THE SEA",
+  "format": "16:9",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "South coast",
+  "tags": [
+    "coast",
+    "no people",
+    "river",
+    "autumn"
+  ],
+  "description_cs": "Drsná pobřežní scéna: silný tok hlavní řeky vstupuje do moře. Tmavé mokré kameny, proud vody, pobřežní skalky, chladná atmosféra. Bez lidí.",
+  "registered_location": {
+    "registry_id": "W-01",
+    "name_en": "Larp River mouth",
+    "name_cs": "Hlavní horská řeka (pracovní)",
+    "type": "river",
+    "island": "main",
+    "exist_status": "approved",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 11.59,
+    "y_km": 13.01,
+    "elev_m_model": 199.5,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "W-01",
+        "name": "Larp River mouth",
+        "x_km": 11.59,
+        "y_km": 13.01
+      }
+    ],
+    "note": "Skutečné ústí hlavní řeky W-01 na jižním pobřeží, ≈ 4,5 km západně od Larpingtonu (ústí je z hydrografie atlasu, není samostatným objektem registru)."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 11.6,
+    "y_km": 12.955,
+    "eye_height_m": 1.2,
+    "basis_cs": "břeh řeky asi 55 m nad ústím; bod je návrh",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 2.8,
+    "cover_at_camera": "scrub/grass",
+    "distance_to_coast_km": 0.06,
+    "bearing_deg": 175,
+    "compass": "S",
+    "fov_hint_deg": 62,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "sea",
+        "z_m": 0
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "sea",
+        "z_m": 0
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "sea",
+        "z_m": 0
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "sea",
+        "z_m": 0
+      }
+    ],
+    "sea_visible_km": 0.2,
+    "visible_registered": [],
+    "nearby_registered": [],
+    "target_cs": "ústí řeky do moře (jih)"
+  },
+  "conditions": {
+    "time_of_day": "morning",
+    "season": "late autumn",
+    "weather": "cold grey overcast, fine spray in the air"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "cool desaturated blue-grey, slightly dark, crisp wet textures, fine grain",
+    "imperfections": "a few droplets on the lens, slight softness at the edges"
+  },
+  "canon_notes_cs": [
+    "Atlas: W-01 dolní tok (2,5 km pod hrází, 43,6 → 2,1 m n. m.) ústí na jižním pobřeží u souřadnice (11,59; 13,01); pobřeží je zde v atlasu písčité (class beach) → kameny a balvany jsou detail ústí.",
+    "Drsnější útesová ústí (potoky W-03, W-04 padají přes okraj útesu SZ) nejsou bezpečně přístupná a mají malý průtok."
+  ],
+  "avoid": "no people, no buildings, no boats, no bridges, no sunny beach vibe, no tropical palms",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_14_RIVER_TO_THE_SEA_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_14_RIVER_TO_THE_SEA_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_14.json",
+    "expected_photo": "01_PHOTOS/PHOTO_14.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "SP-SW",
+    "mpp": 4.0,
+    "window_km": [
+      10.951,
+      12.531,
+      1.3,
+      0.975
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

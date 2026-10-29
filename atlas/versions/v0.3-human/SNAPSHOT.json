@@ -1,0 +1,17 @@
+{
+  "name": "v0.3-human",
+  "created": "2026-10-23T18:47:12+02:00",
+  "description": "F3: lidská vrstva – sídla, silnice (R1 okruh 54 km), stezky a cyklotrasy, železnice L1/L2/L3, přístavy, letiště, body zájmu, Paraland.",
+  "changes": [
+    "Železnice: L1 8,7 km (smyčka v jeskyni ~262°, sklon max 4,9 %), L2 29 km / 13 stanic, L3 15,9 km (podmoří 1 482 m, galerie 226 m); právě 3 přestupy L2↔L3",
+    "Silnice R1 53,9 km uzavřená (útesy až 293 m, 3 tunely), R2 49 km, R3 30 km; stezky 24,8 km; cyklotrasy 93,7 km; sjezdovka M-02 (277 m)",
+    "Přístavy C-02, I-03, H-01, H-02; letiště A-01 (1 900 m) a A-02 (700 m); POI: vyhlídky, prameny, hotely, hrad, zřícenina, aquapark",
+    "Sídla s modelovou populací 32 000; hlavní město 4,8 km2; 31/31 kontrol (human_report.json)",
+    "Relief doladěn pro sídla (nižší severní pahorkatina, ploché zóny Ōru Maito a Hoshimachi)",
+    "Dokumentace: docs/F3_HUMAN_NOTES.md; rozpory C-05, C-06, C-08 implementovány, nové C-14..C-16"
+  ],
+  "parent": "v0.2-relief",
+  "bible_version": "1.0-draft",
+  "bible_sha256": "252f0ebd33c73a87fff9db21abf0684d34f1c7c4f24bbe7905bdb5e11fef58a2",
+  "files": 57
+}

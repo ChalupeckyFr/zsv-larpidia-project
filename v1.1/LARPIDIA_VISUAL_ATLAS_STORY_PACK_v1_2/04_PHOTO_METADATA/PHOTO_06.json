@@ -1,0 +1,137 @@
+{
+  "scene_id": "PHOTO_06",
+  "kind": "photo",
+  "title": "PARALAND MARINA",
+  "format": "16:9",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Paraland",
+  "tags": [
+    "coast",
+    "no people",
+    "marina",
+    "summer"
+  ],
+  "description_cs": "Letní marina: malé lodě u pontonů, promenáda, restaurace, nízké domy a čisté moře; v pozadí zelené kopce a silueta zámku. Bez lidí.",
+  "registered_location": {
+    "registry_id": "H-02",
+    "name_en": "Paraland Marina",
+    "name_cs": "Marina Paraland",
+    "type": "port",
+    "island": "para",
+    "exist_status": "proposed",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 23.364,
+    "y_km": 15.819,
+    "elev_m_model": 0.9,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "H-02",
+        "name": "Paraland Marina",
+        "x_km": 23.364,
+        "y_km": 15.819
+      },
+      {
+        "id": "PL-05",
+        "name": "Marina Village",
+        "x_km": 23.633,
+        "y_km": 16.587
+      }
+    ],
+    "note": "Marina Paraland (H-02) a přístavní vesnice (PL-05); mezi nimi terminál lodní linky L3 (ST-L3-07)."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 23.255,
+    "y_km": 15.742,
+    "eye_height_m": 1.6,
+    "basis_cs": "vnější konec prostředního mola mariny H-02 (molo dle atlasu, bod na něm je návrh)",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 0.0,
+    "cover_at_camera": "sea",
+    "distance_to_coast_km": 0.14,
+    "bearing_deg": 62,
+    "compass": "ENE",
+    "fov_hint_deg": 62,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "sea",
+        "z_m": 0
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "sea",
+        "z_m": 0
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "sea",
+        "z_m": 0
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "sea",
+        "z_m": 0
+      }
+    ],
+    "sea_visible_km": 0.2,
+    "visible_registered": [],
+    "nearby_registered": [
+      {
+        "id": "ST-L3-07",
+        "name": "Paraland – Marina",
+        "dist_km": 0.27,
+        "bearing_deg": 125
+      }
+    ],
+    "target_cs": "promenáda, nízké domy a pahorky Paralandu (ENE)"
+  },
+  "conditions": {
+    "time_of_day": "midday",
+    "season": "midsummer",
+    "weather": "sunny, a few small cumulus clouds"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "bright natural smartphone HDR, clean blues and teal, slightly lifted shadows, light grain, not oversaturated",
+    "imperfections": "gentle sun glare on the water and a faint halo around the brightest highlights"
+  },
+  "canon_notes_cs": [
+    "Atlas: H-02 Marina Paraland (3 mola a 2 vlnolamy), PL-05 přístavní vesnice, ST-L3-07 terminál L3; hrad PL-02 stojí na kopci ≈ 1,4 km východně.",
+    "Lodní linka C-02 ↔ Paraland (FERRY-1) je volitelná, bez autopřevozu."
+  ],
+  "avoid": "no people, no large yachts or superyachts, no signage text, no high-rise buildings",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_06_PARALAND_MARINA_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_06_PARALAND_MARINA_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_06.json",
+    "expected_photo": "01_PHOTOS/PHOTO_06.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "S-02",
+    "mpp": 5.0,
+    "window_km": [
+      22.614,
+      15.166,
+      1.5,
+      1.125
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

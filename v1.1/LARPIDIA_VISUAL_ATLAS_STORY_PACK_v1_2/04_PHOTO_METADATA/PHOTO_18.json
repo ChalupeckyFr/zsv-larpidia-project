@@ -1,0 +1,113 @@
+{
+  "scene_id": "PHOTO_18",
+  "kind": "photo",
+  "title": "OLD MONEY CHURCH COURTYARD",
+  "format": "9:16",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Larpington",
+  "tags": [
+    "church",
+    "no people",
+    "old money",
+    "quiet"
+  ],
+  "description_cs": "Klidný dvůr u kostela s bočním vstupem: staré kamenné zdi, břečťan, jemné světlo, železná branka a staré schody. Luxusní tichý evropský vibe, bez lidí.",
+  "registered_location": {
+    "registry_id": "CP-B07",
+    "name_en": "Historic church (St George's – working name)",
+    "name_cs": "Historický kostel (Kostel sv. Jiří – pracovně)",
+    "type": "building",
+    "island": null,
+    "exist_status": "proposed",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 15.891,
+    "y_km": 13.651,
+    "elev_m_model": null,
+    "source": "atlas/current/capital/cp_objects.json",
+    "all_pins": [
+      {
+        "id": "CP-B07",
+        "name": "Historic church (St George's – working name)",
+        "x_km": 15.891,
+        "y_km": 13.651
+      }
+    ],
+    "note": "Historický kostel (Kostel sv. Jiří – pracovně) na Kostelním náměstí starého Larpingtonu."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 15.857,
+    "y_km": 13.673,
+    "eye_height_m": 1.6,
+    "basis_cs": "jihozápadní roh Kostelního náměstí 35 m od bočního vstupu; „dvůr“ je fotografická interpretace předprostoru kostela, bod je návrh",
+    "plan_local_m": [
+      2757.0,
+      3373.0
+    ],
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 5.3,
+    "cover_at_camera": "scrub/grass",
+    "distance_to_coast_km": 0.21,
+    "bearing_deg": 70,
+    "compass": "ENE",
+    "fov_hint_deg": 46,
+    "sea_visible_km": null,
+    "visible_registered": [],
+    "nearby_registered": [],
+    "look_at": {
+      "id": null,
+      "name": "side door in the south wall of CP-B07",
+      "bearing_deg": 63,
+      "rel_angle_deg": -7,
+      "dist_km": 0.031,
+      "line_of_sight": true
+    },
+    "target_cs": "boční vstup na jižní straně lodi kostela (ENE)"
+  },
+  "conditions": {
+    "time_of_day": "mid-afternoon",
+    "season": "late spring",
+    "weather": "soft diffuse sunlight filtered through leaves"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "quiet luxurious look: soft contrast, gently lifted shadows, restrained warm tones, fine grain",
+    "imperfections": "very slight lens softness, faint dappled flare spots through the leaves"
+  },
+  "canon_notes_cs": [
+    "Plán CP-01: kostel CP-B07 (cihla a kámen, mechem porostlý; loď 40 × 15 m s příčnou lodí 14 × 28 m) stojí na Kostelním náměstí CP-SQ04 (74 × 60 m); lipové aleje podél ulic.",
+    "„Dvůr“ není v plánu zakreslen – je to předprostor u jižní strany lodi, fotografická interpretace."
+  ],
+  "avoid": "no people, no cars, no text on plaques or gates, no modern lighting, no flashy luxury",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_18_OLD_MONEY_CHURCH_COURTYARD_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_18_OLD_MONEY_CHURCH_COURTYARD_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_18.json",
+    "expected_photo": "01_PHOTOS/PHOTO_18.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "S-03",
+    "mpp": 2.0,
+    "window_km": [
+      15.656,
+      13.493,
+      0.45,
+      0.338
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

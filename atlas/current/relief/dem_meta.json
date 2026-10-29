@@ -1,0 +1,13 @@
+{
+  "atlas_version": "0.2-relief",
+  "status": "proposed",
+  "origin_xy_km": [
+    -0.2,
+    -1.0
+  ],
+  "cell_km": 0.02,
+  "ncols": 1485,
+  "nrows": 1050,
+  "value": "výška v m × 100 (uint16), řádky na jih, sloupce na východ; počátek = levý horní roh plátna A2 (km od SZ rohu rámce)",
+  "max_m": 560.0
+}

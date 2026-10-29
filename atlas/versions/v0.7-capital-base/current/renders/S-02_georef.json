@@ -1,0 +1,22 @@
+{
+  "id": "S-02",
+  "title": "Paraland – simulovaná satelitní vizualizace (návrh)",
+  "status": "proposed",
+  "px": [
+    1400,
+    1120
+  ],
+  "meters_per_pixel": 5.0,
+  "window_km": {
+    "x0": 22.1,
+    "y0": 14.4,
+    "w": 7.0,
+    "h": 5.6
+  },
+  "pixel_to_km": "x_km = x0 + (px + 0.5) * mpp/1000 ; y_km = y0 + (py + 0.5) * mpp/1000 (sever nahoře, východ vpravo)",
+  "orientation": "kolmý pohled shora (nadir), sever nahoře",
+  "land_area_km2": 14.1,
+  "disclaimer": "SIMULOVANÁ satelitní vizualizace fiktivního ostrova, ne skutečná družicová data",
+  "atlas_version": "0.6.1-satbase",
+  "coast_sha256": "ffca09acdec9dac899c0699fd9abe6918338e5acbea6d180e42eb85ce34b3801"
+}

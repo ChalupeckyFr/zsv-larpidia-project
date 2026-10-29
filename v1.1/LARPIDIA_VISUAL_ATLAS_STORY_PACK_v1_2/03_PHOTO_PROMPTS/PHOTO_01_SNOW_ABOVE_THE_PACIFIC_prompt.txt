@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be written in the image): SNOW ABOVE THE PACIFIC. Format 9:16.
+
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+
+SCENE: A vertical smartphone photo taken from a hiking trail just below the summit of a low forested coastal mountain on a Pacific island. In the foreground: a narrow dirt-and-gravel path bending to the left, grey weathered rocks and small boulders, flattened dry winter grass, and thin leftover patches of old dirty-white snow melting between the stones (only a few square metres, not a snow field). Below the ridge: steep green forested slopes (evergreen with some bare winter branches), low clouds drifting through the valleys, and far away to the west a calm grey-blue ocean under a hazy horizon.
+
+COMPOSITION: Eye-level and handheld; the trail leads the eye diagonally from the bottom-right toward the distant sea; foreground rocks sharp, mid-slopes slightly soft, far horizon hazy.
+
+LIGHT AND ATMOSPHERE: Cold, slightly dark late-afternoon light under a thin high overcast; soft diffuse shadows, a faint pale glow low in the west, damp air.
+
+PHOTO LOOK: cool, slightly underexposed, lifted contrast, muted desaturated greens, cold blue-grey shadows, no warm tint, fine grain. Subtle authentic imperfections (only a few, not all at once): slightly tilted horizon (about 1°), soft atmospheric haze, a hint of noise in the shadows.
+
+PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+
+PLACE AND SCALE: Fictional island nation Larpidie, south of Japan: a low forested coastal mountain (summit only about 560 m) with occasional short winter snow. It is not an alpine peak: no glaciers, no jagged snow-capped giants.
+
+AVOID: no people, no buildings, no signposts, no deep alpine snowpack, no dramatic sunset colours. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+
+Aspect ratio 9:16.

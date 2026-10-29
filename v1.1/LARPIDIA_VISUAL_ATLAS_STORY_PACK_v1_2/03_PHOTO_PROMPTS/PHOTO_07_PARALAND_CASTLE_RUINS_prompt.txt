@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be written in the image): PARALAND CASTLE RUINS. Format 9:16.
+
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+
+SCENE: A vertical photo of exactly one person standing on a safe, stone-edged gravel path in front of an old ruined medieval stone castle on a hillside: a broken round tower missing the top third, crumbling curtain walls with empty arched window openings, moss and ivy on the stones, long grass with small white and yellow wildflowers, a few wind-bent pines. The person is small in the frame (about one tenth of the image height).
+
+COMPOSITION: Portrait; the path leads from the bottom edge into the middle distance, the person on the left third, the ruined tower dominating the upper right, a patch of sky above; no fences or barriers in view.
+
+LIGHT AND ATMOSPHERE: Soft spring overcast with a bright break in the clouds, gentle shadows; quiet, slightly melancholic mood.
+
+PHOTO LOOK: muted, slightly cool, soft contrast, desaturated stone against fresh green grass, light grain. Subtle authentic imperfections (only a few, not all at once): slightly soft corners, a tiny horizon tilt.
+
+PEOPLE: Exactly one person in the frame: one adult in a light-coloured rain jacket, dark trousers and a small daypack, seen from behind or three-quarter back, face not visible, looking up at the ruin. Natural anatomy, natural clothing, correct proportions and cast shadows. No other persons anywhere, not even tiny distant figures.
+
+PLACE AND SCALE: Paraland, a small fictional island: the ruin of an old stone castle above the historic old town; low hills, scrub and pines (the hill is only about 55 m high).
+
+AVOID: no signs, no tourists, no fences, no readable text, no fantasy castle, no dragons. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+
+Aspect ratio 9:16.

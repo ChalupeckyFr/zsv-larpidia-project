@@ -1,0 +1,16 @@
+{
+  "name": "v0.6.1-satbase",
+  "created": "2026-10-24T11:15:47+02:00",
+  "description": "F6, 2. kolo (Doladit vzhled): realističtější satelitní podklady S-01/S-02, přehled S-00, čtyři šikmé pohledy a kosmetické varianty s mraky.",
+  "changes": [
+    "Sídla po blocích (ulice, parcely, střechy, stíny; 5 stylů), nepravidelné půdorysy, stuhová zástavba, hlavní město dosahuje k přístavu (C-17 – jen vzhled, půdorysy sídel beze změny)",
+    "Pole po parcelách s živými ploty (tlumená paleta), zubaté okraje lesů, remízky, samoty podél silnic, rozptýlené stromy v jemných oknech, šelf moře podle typu pobřeží",
+    "S-00_overview (oba ostrovy, 2970x2100 px @10 m) a čtyři šikmé pohledy (voxelový render z DEM, kamera s posunutým objektivem, převýšení 1,35x, *_camera.json)",
+    "Varianty s mraky jen nad otevřeným mořem; verify_sat.py umí šikmé pohledy a vynechává bílé plochy; OBLIQUE_PROMPTS.md; check_atlas.py rozšířen (33 kontrol)",
+    "IoU souše vlastních renderů 0,999 (S-01) / 0,998 (S-02); canon.ATLAS_VERSION = 0.6.1-satbase; docs/F6_SAT_NOTES.md přepsáno; rozpor C-17"
+  ],
+  "parent": "v0.6-satbase",
+  "bible_version": "1.0-draft",
+  "bible_sha256": "252f0ebd33c73a87fff9db21abf0684d34f1c7c4f24bbe7905bdb5e11fef58a2",
+  "files": 119
+}

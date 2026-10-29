@@ -1,0 +1,26 @@
+{
+  "id": "S-02_oblique_SW",
+  "status": "proposed",
+  "type": "šikmý pohled z DEM (simulace, ne družicová data)",
+  "description": "z moře jihozápadně od Paralandu: resorty a aquapark na jihu, východní les a pláže",
+  "camera": {
+    "x": 21.8,
+    "y": 20.3,
+    "h": 1000.0,
+    "heading": 47.0,
+    "horizon": 0.16,
+    "fov": 60.0,
+    "dmax": 40000.0
+  },
+  "sources": [
+    "S-02",
+    "S-00"
+  ],
+  "vertical_exaggeration": 1.35,
+  "size_px": [
+    1800,
+    1000
+  ],
+  "atlas_version": "1.0-draft",
+  "camera_note": "x, y v km (x východ, y jih, počátek SZ roh rámce 24×16 km); heading ve stupních od severu po směru hodin; h = výška kamery v m n. m.; horizon = poloha obzoru jako zlomek výšky obrazu; kamera s posunutým objektivem (bez naklopení); fov = vodorovné zorné pole ve stupních; výška terénu je zvětšena 1.35× (jinak by 560 m hory vypadaly jako pahorky)"
+}

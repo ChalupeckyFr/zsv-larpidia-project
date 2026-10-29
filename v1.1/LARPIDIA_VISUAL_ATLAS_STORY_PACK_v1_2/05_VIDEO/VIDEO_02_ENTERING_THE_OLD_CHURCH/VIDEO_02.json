@@ -1,0 +1,125 @@
+{
+  "scene_id": "VIDEO_02",
+  "kind": "video",
+  "title": "ENTERING THE OLD CHURCH",
+  "format": "9:16",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Larpington",
+  "tags": [
+    "church",
+    "no people",
+    "interior",
+    "old money"
+  ],
+  "description_cs": "Přiblížení ke starému kostelu v Larpingtonu přes Kostelní náměstí, vstup otevřenými dveřmi a pomalý průjezd klidným interiérem se stálou architekturou.",
+  "registered_location": {
+    "registry_id": "CP-B07",
+    "name_en": "Historic church (St George's – working name)",
+    "name_cs": "Historický kostel (Kostel sv. Jiří – pracovně)",
+    "type": "building",
+    "island": null,
+    "exist_status": "proposed",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 15.891,
+    "y_km": 13.651,
+    "elev_m_model": null,
+    "source": "atlas/current/capital/cp_objects.json",
+    "all_pins": [
+      {
+        "id": "CP-B07",
+        "name": "Historic church (St George's – working name)",
+        "x_km": 15.891,
+        "y_km": 13.651
+      }
+    ],
+    "note": "Kostel CP-B07 (Kostel sv. Jiří – pracovně), Kostelní náměstí CP-SQ04."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 15.852,
+    "y_km": 13.651,
+    "eye_height_m": 1.6,
+    "basis_cs": "západní okraj Kostelního náměstí 18 m před západním portálem lodi; bod je návrh",
+    "plan_local_m": [
+      2752.0,
+      3351.0
+    ],
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 5.8,
+    "cover_at_camera": "scrub/grass",
+    "distance_to_coast_km": 0.22,
+    "bearing_deg": 90,
+    "compass": "E",
+    "fov_hint_deg": 62,
+    "sea_visible_km": null,
+    "visible_registered": [],
+    "nearby_registered": [],
+    "target_cs": "západní průčelí a portál kostela (E), poté loď"
+  },
+  "conditions": {
+    "time_of_day": "late morning",
+    "season": "late spring",
+    "weather": "soft daylight outside, dim interior with coloured light from side windows"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "quiet, slightly warm, soft contrast, gentle grain; interior exposure adapts from bright outside to dim inside",
+    "imperfections": "natural handheld sway and exposure adaptation"
+  },
+  "canon_notes_cs": [
+    "Plán CP-01: kostel CP-B07 (loď 40 × 15 m, příčná loď 14 × 28 m; cihla a kámen, mechem porostlý) na Kostelním náměstí.",
+    "Interiér je ilustrativní (atlas ho neřeší); držíme konzistenci s anglickým farním kostelem z kánonu."
+  ],
+  "avoid": "no people, no priest, no text, no inscriptions, no modern lighting, no cuts or teleporting, no gothic cathedral scale, no fantasy elements",
+  "files": {
+    "map": "02_MAP_PINS/VIDEO_02_ENTERING_THE_OLD_CHURCH_map.jpg",
+    "prompt": "05_VIDEO/VIDEO_02_ENTERING_THE_OLD_CHURCH/VIDEO_02_ENTERING_THE_OLD_CHURCH_prompt.txt",
+    "metadata": "05_VIDEO/VIDEO_02_ENTERING_THE_OLD_CHURCH/VIDEO_02.json",
+    "expected_photo": null,
+    "storyboard": "05_VIDEO/VIDEO_02_ENTERING_THE_OLD_CHURCH/VIDEO_02_ENTERING_THE_OLD_CHURCH_storyboard.md"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "video": {
+    "length_s": 8,
+    "first_frame_photo": "PHOTO_18",
+    "storyboard": [
+      {
+        "t": "0.0–2.5 s",
+        "shot": "Slow push-in across the quiet church square toward the west front of the old church: brick and honey stone, moss, ivy, a pointed arched oak door standing ajar; linden leaves moving slightly."
+      },
+      {
+        "t": "2.5–4.0 s",
+        "shot": "The camera glides through the doorway; the exposure adapts from bright daylight to a dim interior (a soft natural flare as the door frame passes)."
+      },
+      {
+        "t": "4.0–8.0 s",
+        "shot": "Slow forward glide along the nave at eye level: stone arcade, dark oak roof beams, wooden pews, narrow stained-glass windows throwing soft coloured light on the floor, dust motes, a few candles at the far altar. Calm, silent, empty."
+      }
+    ],
+    "audio_suggestion": "optional: soft footsteps-free ambience, faint church-interior reverb, no voice"
+  },
+  "map": {
+    "source": "S-03",
+    "mpp": 2.0,
+    "window_km": [
+      15.68,
+      13.501,
+      0.4,
+      0.3
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

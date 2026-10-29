@@ -1,0 +1,230 @@
+{
+  "scene_id": "PHOTO_08",
+  "kind": "photo",
+  "title": "MIDNIGHT JESKO",
+  "format": "9:16",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "West hills (view of Larpington)",
+  "tags": [
+    "night",
+    "no people",
+    "car",
+    "city lights"
+  ],
+  "description_cs": "Černo-zlatý Koenigsegg Jesko stojí v noci na bezpečné vyhlídce, v dálce světla Larpingtonu. Auto stojí, bez lidí.",
+  "registered_location": {
+    "registry_id": "V-07",
+    "name_en": "Vyhlídka na hrázi přehrady",
+    "name_cs": "Vyhlídka na hrázi přehrady",
+    "type": "poi",
+    "island": "main",
+    "exist_status": "proposed",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 12.31,
+    "y_km": 10.33,
+    "elev_m_model": 78.9,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "V-07",
+        "name": "Vyhlídka na hrázi přehrady",
+        "x_km": 12.31,
+        "y_km": 10.33
+      },
+      {
+        "id": "C-01",
+        "name": "Larpington",
+        "x_km": 16.08,
+        "y_km": 12.16
+      }
+    ],
+    "note": "V-07 = nejbližší registrovaná bezpečná vyhlídka (hráz přehrady); C-01 Larpington je předmět pohledu. Konkrétní stanoviště je návrh."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 12.37,
+    "y_km": 10.36,
+    "eye_height_m": 1.0,
+    "basis_cs": "odstavné místo asi 70 m severovýchodně od vyhlídky V-07 u hráze (odtud je přímý výhled na Larpington; přímo ve V-07 ho brání terén); bod je návrh",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 84.0,
+    "cover_at_camera": "farmland",
+    "distance_to_coast_km": 2.75,
+    "bearing_deg": 116,
+    "compass": "ESE",
+    "fov_hint_deg": 46,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "farmland",
+        "z_m": 69
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "farmland",
+        "z_m": 66
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "farmland",
+        "z_m": 55
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "scrub/grass",
+        "z_m": 24
+      }
+    ],
+    "sea_visible_km": 5.1,
+    "visible_registered": [
+      {
+        "id": "HM-05",
+        "name": "osada (bez názvu)",
+        "type": "settlement",
+        "bearing_deg": 125,
+        "rel_angle_deg": 9,
+        "dist_km": 1.15,
+        "side": "right"
+      },
+      {
+        "id": "ST-W",
+        "name": "Larpington Západ (Chalupecká)",
+        "type": "rail_station",
+        "bearing_deg": 132,
+        "rel_angle_deg": 16,
+        "dist_km": 2.39,
+        "side": "right"
+      },
+      {
+        "id": "ST-N",
+        "name": "Larpington Sever (Kynčlova)",
+        "type": "rail_station",
+        "bearing_deg": 99,
+        "rel_angle_deg": -17,
+        "dist_km": 3.58,
+        "side": "left"
+      },
+      {
+        "id": "C-01",
+        "name": "Larpington",
+        "type": "settlement",
+        "bearing_deg": 116,
+        "rel_angle_deg": 0,
+        "dist_km": 4.12,
+        "side": "center"
+      },
+      {
+        "id": "ST-S",
+        "name": "Larpington Střed – Přístav (Žemličkova)",
+        "type": "rail_station",
+        "bearing_deg": 126,
+        "rel_angle_deg": 10,
+        "dist_km": 4.6,
+        "side": "right"
+      },
+      {
+        "id": "C-02",
+        "name": "Larpington Old Harbour",
+        "type": "port",
+        "bearing_deg": 132,
+        "rel_angle_deg": 16,
+        "dist_km": 5.32,
+        "side": "right"
+      },
+      {
+        "id": "ST-E",
+        "name": "Larpington Východ (Klimečkova)",
+        "type": "rail_station",
+        "bearing_deg": 108,
+        "rel_angle_deg": -8,
+        "dist_km": 5.54,
+        "side": "left"
+      },
+      {
+        "id": "BAY-S",
+        "name": "Larpington Bay",
+        "type": "coast_feature",
+        "bearing_deg": 127,
+        "rel_angle_deg": 11,
+        "dist_km": 6.41,
+        "side": "right"
+      }
+    ],
+    "nearby_registered": [
+      {
+        "id": "ST-L1-02",
+        "name": "Přehrada",
+        "dist_km": 0.27,
+        "bearing_deg": 4
+      },
+      {
+        "id": "DAM-N04",
+        "name": "Larp Dam",
+        "dist_km": 0.35,
+        "bearing_deg": 213
+      },
+      {
+        "id": "CY-04",
+        "name": "Larpington – Čimprlichovo Hradiště – přehrada",
+        "dist_km": 0.36,
+        "bearing_deg": 147
+      }
+    ],
+    "look_at": {
+      "id": "C-01",
+      "name": "Larpington",
+      "bearing_deg": 116,
+      "rel_angle_deg": 0,
+      "dist_km": 4.124,
+      "line_of_sight": true
+    },
+    "target_cs": "Larpington (C-01), vzdálenost ≈ 4,2 km (ESE)"
+  },
+  "conditions": {
+    "time_of_day": "night, about 2 hours after sunset",
+    "season": "late summer",
+    "weather": "clear, dry, light haze near the horizon"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "dark and moody, slightly underexposed, visible fine night-mode noise, bokeh on distant lights, teal-black shadows with warm gold highlights",
+    "imperfections": "faint bloom around the brightest lights, soft detail in the deep shadows"
+  },
+  "canon_notes_cs": [
+    "Registr: V-07 Vyhlídka na hrázi přehrady (78,9 m, bezpečná, s oplocením); přímý výhled na Larpington je až z bodu ≈ 70 m severovýchodně (DEM: LOS ověřeno).",
+    "Vozidlo je skutečný model zadaný v zadání; v promptu držíme jeho autentické proporce."
+  ],
+  "avoid": "no people, no driving or motion blur, no other cars, no readable text, no logos other than the car's own shape; keep authentic Jesko proportions (low wide body, huge rear wing, long tail)",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_08_MIDNIGHT_JESKO_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_08_MIDNIGHT_JESKO_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_08.json",
+    "expected_photo": "01_PHOTOS/PHOTO_08.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "S-01",
+    "mpp": 10.0,
+    "window_km": [
+      10.914,
+      9.204,
+      3.4,
+      2.55
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

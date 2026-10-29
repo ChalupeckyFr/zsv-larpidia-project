@@ -1,0 +1,48 @@
+{
+  "atlas_version": "0.4-registry",
+  "checks": {
+    "geometrie: SHA-256 obrysu odpovídá zmrazené variantě": true,
+    "plocha hlavního ostrova 175.00 km² = 175 ± 3": true,
+    "plocha Paralandu 13.98 km² = 14 ± 0,5": true,
+    "průliv 1.500 km = 1,5 ± 0,05": true,
+    "ostrovy jsou jednoduché polygony (bez samoprotnutí)": true,
+    "všech 23 bodů tabulky leží správně vůči pobřeží": true,
+    "odchylky od tabulky ≤ 3 % a jen přijaté (T-04, T-05, A-01)": true,
+    "reliéf: všech 13 kontrol v pořádku (max 560.0 m)": true,
+    "lidská vrstva: všech 32 kontrol v pořádku": true,
+    "registr: ID jsou jedinečná": true,
+    "registr: každý objekt má exist/name/pos status a origin": true,
+    "registr: všechny polohy jsou návrh (pos_status = proposed)": true,
+    "registr: obsahuje všech 23 bodů tabulky": true,
+    "registr: 20 bodů přesně podle tabulky, 3 s odchylkou": true,
+    "registr: bodové objekty leží na souši nebo na pobřeží": true,
+    "registr: foto vodítko u všech bodových objektů": true,
+    "kanon: všech 28 schválených tvrzení má odkaz na objekt atlasu nebo vysvětlení": true,
+    "kanon: stavy `approved` v extrakci shodné s bible (validate_bible.py)": true,
+    "originály projektu beze změny (14 souborů, SHA-256)": true,
+    "všechna SVG jsou validní XML": true,
+    "všechna GeoJSON jsou validní a neprázdná": true,
+    "snapshoty (5): manifesty sedí, nic se nezměnilo": true
+  },
+  "all_ok": true,
+  "info": {
+    "area_main_km2": 175.0,
+    "area_para_km2": 13.98,
+    "strait_km": 1.5,
+    "relief_checks": 13,
+    "human_checks": 32,
+    "registry_count": 159,
+    "registry_off_land": [],
+    "originals_changed": [],
+    "bad_svg": [],
+    "bad_geojson": [],
+    "snapshots": [
+      "v0.0-audit",
+      "v0.1-outline",
+      "v0.1.1-outline-B",
+      "v0.2-relief",
+      "v0.3-human"
+    ],
+    "snapshot_problems": []
+  }
+}

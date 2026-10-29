@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be shown on screen): MIDNIGHT JESKO WALKAROUND. Vertical 9:16 video, about 8 seconds, one continuous take, no cuts.
+
+Create a realistic vertical 9:16 smartphone video clip of about 8 seconds (iPhone 15 main camera, 1x, natural handheld footage, not CGI, not a drone shot).
+
+SCENE: A vertical smartphone video at night: a black Koenigsegg Jesko hypercar with subtle gold accents (gold wheels and thin gold trim) stands parked, stationary and switched off, on an empty paved lay-by of a mountain viewpoint with a low stone parapet. The camera slowly walks around the car at about four metres distance, at low height; beyond the parapet, about 4 km away on the plain and along the coast, the warm lights of a harbour city glitter under a deep navy sky.
+
+CAMERA MOTION: A slow, steady clockwise orbit around the parked car at human walking pace, camera about 1.2 to 1.4 m high, always keeping the car in frame, tiny handheld sway, no zoom; the car does not move at all.
+
+LIGHT AND ATMOSPHERE: Night: only ambient city glow and faint sky glow; soft reflections on the paint; deep shadows allowed.
+
+LOOK: dark and moody, fine night-mode noise, bokeh on distant lights, teal-black shadows with warm gold highlights (same grade as PHOTO 08).
+
+STORYBOARD: [0.0–2.0 s] Low three-quarter front view of the stationary black-and-gold hypercar; city lights glitter far behind the parapet. [2.0–6.0 s] Slow clockwise walkaround at about 4 m distance: side profile with soft reflections of city lights on the black bodywork, gold wheels, then the long tail and large rear wing. [6.0–8.0 s] Continue around to the opposite three-quarter front view; the city lights pass behind the car as a soft glittering band; hold.
+
+CONTINUITY: The car must keep authentic Koenigsegg Jesko proportions (low wide body, huge rear wing, long tail) and the same black body with gold accents in every frame; the same viewpoint, parapet and city lights as the still PHOTO 08; the licence plate stays blank or hidden.
+
+AVOID: no people, no driving, no engine start, no smoke or exhaust flames, no other cars, no text, no logos other than the car's own shape, no cuts. No on-screen text, subtitles, logos or watermarks.
+
+Image-to-video option: use the finished still PHOTO_08 (see its prompt file) as the first frame so that place, light and grade match. Format 9:16, 8 s.

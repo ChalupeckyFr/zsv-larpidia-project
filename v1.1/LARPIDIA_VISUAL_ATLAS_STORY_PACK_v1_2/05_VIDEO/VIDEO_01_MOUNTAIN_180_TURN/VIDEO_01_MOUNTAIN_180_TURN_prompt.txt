@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be shown on screen): MOUNTAIN 180° TURN. Vertical 9:16 video, about 8 seconds, one continuous take, no cuts.
+
+Create a realistic vertical 9:16 smartphone video clip of about 8 seconds (iPhone 15 main camera, 1x, natural handheld footage, not CGI, not a drone shot).
+
+SCENE: A vertical smartphone video, one continuous handheld take, taken on a ridge hiking trail just below the summit of a low forested coastal mountain on a Pacific island. Start: foreground grey rocks, a narrow dirt path and thin patches of old melting snow, steep green forested slopes below, drifting low clouds and a distant calm grey-blue ocean to the west. The camera performs one smooth clockwise 180-degree turn on the spot and ends on the opposite side: a forested ridge descending to the east, a rounded forested peak in the distance with low cloud banks, thin mist in the valley.
+
+CAMERA MOTION: Pure rotation on the spot (like a person turning slowly with a phone held at chest height), even speed, no zoom, no dolly, tiny natural hand shake, slight exposure adaptation as the lens turns away from the brighter western sky.
+
+LIGHT AND ATMOSPHERE: Cold, slightly dark late-afternoon light under a thin high overcast, soft shadows, damp air.
+
+LOOK: cool, slightly underexposed, muted greens, cold blue-grey shadows, fine grain (same grade as PHOTO 01).
+
+STORYBOARD: [0.0–1.5 s] Start: hold facing west-north-west. Foreground trail, grey rocks and patches of old snow; below them green forested slopes, low clouds and, far away, the grey-blue ocean. [1.5–6.5 s] A smooth, continuous clockwise turn of about 180° at an even pace (about 36° per second), handheld and steady. Rocks and snow patches sweep past the lens; the forested slopes and cloud banks slide through the frame. [6.5–8.0 s] Settle and hold facing east-south-east: the ridge trail descending along a forested ridge, a rounded forested peak about 2 km away with low cloud banks, thin mist in the valley. Tiny natural hand shake at the end.
+
+CONTINUITY: Same place, light and colour grade as the matching still photograph (PHOTO 01); keep the low-mountain scale (summit about 560 m), no glaciers, no jagged snow-capped peaks; the snow is only a few thin leftover patches. Scene geometry: west-north-west first, east-south-east last.
+
+AVOID: no people, no animals, no drone look, no cuts, no text, no music-video effects, no fog machine, no sunset colours. No on-screen text, subtitles, logos or watermarks.
+
+Image-to-video option: use the finished still PHOTO_01 (see its prompt file) as the first frame so that place, light and grade match. Format 9:16, 8 s.

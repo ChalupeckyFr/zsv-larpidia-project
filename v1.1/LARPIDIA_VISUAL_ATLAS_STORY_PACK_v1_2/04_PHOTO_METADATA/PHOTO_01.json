@@ -1,0 +1,125 @@
+{
+  "scene_id": "PHOTO_01",
+  "kind": "photo",
+  "title": "SNOW ABOVE THE PACIFIC",
+  "format": "9:16",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Mountains – west",
+  "tags": [
+    "mountains",
+    "no people",
+    "winter",
+    "coast view"
+  ],
+  "description_cs": "Hřebenová stezka kousek pod nejvyšším vrcholem: v popředí kameny, tráva a zbytky sněhu, níže zalesněné svahy, nízké mraky a v dálce moře. Chladné, tmavší odpoledne. Bez lidí.",
+  "registered_location": {
+    "registry_id": "M-01",
+    "name_en": "Mount Larp",
+    "name_cs": "Nejvyšší vrchol, pracovní 560 m",
+    "type": "peak",
+    "island": "main",
+    "exist_status": "approved",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 6.96,
+    "y_km": 5.44,
+    "elev_m_model": 560.0,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "M-01",
+        "name": "Mount Larp",
+        "x_km": 6.96,
+        "y_km": 5.44
+      }
+    ],
+    "note": "Nejvyšší vrchol (modelových 560 m); existence schválena, poloha a jméno návrh."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 6.85,
+    "y_km": 5.45,
+    "eye_height_m": 1.6,
+    "basis_cs": "hřebenová stezka TR-03 asi 110 m západně od vrcholu M-01 (stezka dle atlasu, bod na ní je návrh)",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 549.1,
+    "cover_at_camera": "forest",
+    "distance_to_coast_km": 0.99,
+    "bearing_deg": 285,
+    "compass": "WNW",
+    "fov_hint_deg": 46,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "forest",
+        "z_m": 528
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "forest",
+        "z_m": 491
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "forest",
+        "z_m": 397
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "sea",
+        "z_m": 0
+      }
+    ],
+    "sea_visible_km": 3.8,
+    "visible_registered": [],
+    "nearby_registered": [],
+    "target_cs": "západoseverozápad: lesnaté svahy a moře u západního pobřeží"
+  },
+  "conditions": {
+    "time_of_day": "late afternoon",
+    "season": "late winter / early spring (a rare cold spell)",
+    "weather": "thin high overcast, low cloud in the valleys"
+  },
+  "people": {
+    "count": 0,
+    "description": ""
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "cool, slightly underexposed, lifted contrast, muted desaturated greens, cold blue-grey shadows, no warm tint, fine grain",
+    "imperfections": "slightly tilted horizon (about 1°), soft atmospheric haze, a hint of noise in the shadows"
+  },
+  "canon_notes_cs": [
+    "Kánon: klima = výrazná roční období a občasný sníh; v 560 m se nepředpokládá vydatný dlouhodobý sníh (krátká sezona, zasněžování) → scéna je zimní/předjarní s drobnými zbytky sněhu.",
+    "Atlas: vrchol M-01 je v pokryvu veden jako les; skalnatá/travnatá mýtina u stezky je detail scény, ne rozpor s kánonem („lesnatý horský masiv“).",
+    "Moře je z bodu vidět na západ (≈ 3,7 km, pobřeží u Rock Cape) – ověřeno z DEM."
+  ],
+  "avoid": "no people, no buildings, no signposts, no deep alpine snowpack, no dramatic sunset colours",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_01_SNOW_ABOVE_THE_PACIFIC_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_01_SNOW_ABOVE_THE_PACIFIC_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_01.json",
+    "expected_photo": "01_PHOTOS/PHOTO_01.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "SP-W",
+    "mpp": 4.0,
+    "window_km": [
+      4.892,
+      4.044,
+      3.6,
+      2.7
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

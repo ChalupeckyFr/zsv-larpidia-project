@@ -1,0 +1,15 @@
+{
+  "name": "v1.0.1-capital-detail",
+  "created": "2026-10-24T12:35:20+02:00",
+  "description": "F9: ilustrativní domy v plánu hlavního města ve stavu zástavby podle modelové populace, S-03 z těchto domů a dva šikmé pohledy na Larpington s hmotami budov.",
+  "changes": [
+    "Domy: 3 242 ilustrativních půdorysů (cp_houses.geojson, CP-H), kapacita bydlení 12 000 = populace Larpingtonu; 586 bloků je rezerva rozvoje, plánované ulice čárkovaně; vrstva v SVG a prohlížeči",
+    "S-03 znovu z domů plánu, výškový model budov S-03_buildings_height.png a šikmé pohledy S-03_oblique_S a S-03_oblique_W (celkem 6 pohledů)",
+    "Nález C-22: plné zastavění bloků by dalo ≈ 48 000 obyvatel (víc než schválený strop 40 000 pro zemi); D11 rozšířeno; docs/F9_CAPITAL_DETAIL_NOTES.md, FINAL_SUMMARY a checklist aktualizovány",
+    "export_png.py používá vlastní profil prohlížeče; check_atlas.py rozšířen (domy × populace, výškový model, 6 šikmých pohledů)"
+  ],
+  "parent": "v1.0-draft",
+  "bible_version": "1.0-draft",
+  "bible_sha256": "252f0ebd33c73a87fff9db21abf0684d34f1c7c4f24bbe7905bdb5e11fef58a2",
+  "files": 183
+}

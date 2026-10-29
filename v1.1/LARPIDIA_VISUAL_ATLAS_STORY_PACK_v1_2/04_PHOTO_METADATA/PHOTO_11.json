@@ -1,0 +1,216 @@
+{
+  "scene_id": "PHOTO_11",
+  "kind": "photo",
+  "title": "ALPINE-INSPIRED LAKE POSE",
+  "format": "9:16",
+  "status": "prompt-ready",
+  "generated_image": null,
+  "region": "Mountains – centre-west",
+  "tags": [
+    "lake",
+    "one person",
+    "mountains",
+    "summer"
+  ],
+  "description_cs": "Jeden mladý muž stojí na bezpečném břehu jezera v přirozené póze, sportovní oblečení a malý batoh; modrozelená hladina a hřebeny s loukami v pozadí. Přesně jedna osoba.",
+  "registered_location": {
+    "registry_id": "N-04",
+    "name_en": "Larp Reservoir",
+    "name_cs": "Přehradní jezero",
+    "type": "nature",
+    "island": "main",
+    "exist_status": "approved",
+    "name_status": "proposed",
+    "pos_status": "proposed",
+    "x_km": 11.52,
+    "y_km": 9.76,
+    "elev_m_model": 54.6,
+    "source": "atlas/current/registry/places.json",
+    "all_pins": [
+      {
+        "id": "N-04",
+        "name": "Larp Reservoir",
+        "x_km": 11.52,
+        "y_km": 9.76
+      },
+      {
+        "id": "ST-L1-02",
+        "name": "Přehrada",
+        "x_km": 12.39,
+        "y_km": 10.09
+      }
+    ],
+    "note": "Přehradní jezero N-04 (hladina 67,6 m, model) a zastávka L1 Přehrada s rekreačním břehem."
+  },
+  "camera_point": {
+    "label": "PROPOSED CAMERA POINT",
+    "in_registry": false,
+    "x_km": 12.205,
+    "y_km": 10.17,
+    "eye_height_m": 1.6,
+    "basis_cs": "plochý rekreační břeh na východním konci přehrady, 200 m od zastávky ST-L1-02; bod je návrh",
+    "plan_local_m": null,
+    "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+  },
+  "view": {
+    "ground_elev_m": 77.8,
+    "cover_at_camera": "scrub/grass",
+    "distance_to_coast_km": 2.88,
+    "bearing_deg": 300,
+    "compass": "WNW",
+    "fov_hint_deg": 46,
+    "terrain_profile": [
+      {
+        "dist_km": 0.1,
+        "cover": "lake",
+        "z_m": 63
+      },
+      {
+        "dist_km": 0.3,
+        "cover": "lake",
+        "z_m": 55
+      },
+      {
+        "dist_km": 1.0,
+        "cover": "lake",
+        "z_m": 55
+      },
+      {
+        "dist_km": 3.0,
+        "cover": "forest",
+        "z_m": 134
+      }
+    ],
+    "sea_visible_km": null,
+    "visible_registered": [
+      {
+        "id": "N-04",
+        "name": "Larp Reservoir",
+        "type": "nature",
+        "bearing_deg": 301,
+        "rel_angle_deg": 1,
+        "dist_km": 0.8,
+        "side": "center"
+      },
+      {
+        "id": "HM-02",
+        "name": "osada (bez názvu)",
+        "type": "settlement",
+        "bearing_deg": 291,
+        "rel_angle_deg": -9,
+        "dist_km": 1.38,
+        "side": "left"
+      },
+      {
+        "id": "ST-L1-03",
+        "name": "Vodopád (fotozastávka)",
+        "type": "rail_station",
+        "bearing_deg": 314,
+        "rel_angle_deg": 14,
+        "dist_km": 2.3,
+        "side": "right"
+      },
+      {
+        "id": "N-03",
+        "name": "Larp Falls",
+        "type": "nature",
+        "bearing_deg": 309,
+        "rel_angle_deg": 9,
+        "dist_km": 2.43,
+        "side": "right"
+      },
+      {
+        "id": "SP-07",
+        "name": "Studánka nad vodopádem",
+        "type": "poi",
+        "bearing_deg": 314,
+        "rel_angle_deg": 14,
+        "dist_km": 2.78,
+        "side": "right"
+      },
+      {
+        "id": "ST-L1-04",
+        "name": "Krystalová jeskyně",
+        "type": "rail_station",
+        "bearing_deg": 311,
+        "rel_angle_deg": 11,
+        "dist_km": 3.71,
+        "side": "right"
+      },
+      {
+        "id": "M-01",
+        "name": "Mount Larp",
+        "type": "peak",
+        "bearing_deg": 312,
+        "rel_angle_deg": 12,
+        "dist_km": 7.06,
+        "side": "right"
+      },
+      {
+        "id": "M-03",
+        "name": "Round Hill",
+        "type": "peak",
+        "bearing_deg": 287,
+        "rel_angle_deg": -13,
+        "dist_km": 7.26,
+        "side": "left"
+      }
+    ],
+    "nearby_registered": [
+      {
+        "id": "V-07",
+        "name": "Vyhlídka na hrázi přehrady",
+        "dist_km": 0.19,
+        "bearing_deg": 147
+      },
+      {
+        "id": "DAM-N04",
+        "name": "Larp Dam",
+        "dist_km": 0.48,
+        "bearing_deg": 183
+      }
+    ],
+    "target_cs": "přes jezero k západním lesnatým svahům (WNW)"
+  },
+  "conditions": {
+    "time_of_day": "early afternoon",
+    "season": "summer",
+    "weather": "clear, light haze on the far ridges"
+  },
+  "people": {
+    "count": 1,
+    "description": "one young man in a dark technical jacket, grey trail trousers and a small backpack, three-quarter side view, relaxed natural pose"
+  },
+  "photo_style": {
+    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+    "grade": "alpine-lake-inspired travel look: crisp natural contrast, saturated but realistic blue-green water, slightly cooler shadows",
+    "imperfections": "a very slight horizon tilt, mild edge softness"
+  },
+  "canon_notes_cs": [
+    "Atlas: N-04 Larp Reservoir (0,6 km², vodárenské dílo a rekreační pobřeží s ochranou zdroje vody); zastávka L1 ST-L1-02 Přehrada.",
+    "„Skalní hřebeny“ v pozadí jsou stylizace – okolní terén je nízký (110–200 m), horský masiv M-01/M-02 je 6–8 km daleko (v dálce v mlze)."
+  ],
+  "avoid": "no other people, no boats, no buildings, no dam wall, no logos, no glaciers, no giant peaks",
+  "files": {
+    "map": "02_MAP_PINS/PHOTO_11_ALPINE_INSPIRED_LAKE_POSE_map.jpg",
+    "prompt": "03_PHOTO_PROMPTS/PHOTO_11_ALPINE_INSPIRED_LAKE_POSE_prompt.txt",
+    "metadata": "04_PHOTO_METADATA/PHOTO_11.json",
+    "expected_photo": "01_PHOTOS/PHOTO_11.jpg"
+  },
+  "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+  "map": {
+    "source": "SP-W",
+    "mpp": 4.0,
+    "window_km": [
+      10.534,
+      8.976,
+      2.6,
+      1.95
+    ],
+    "size_px": [
+      1400,
+      1050
+    ],
+    "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+  }
+}

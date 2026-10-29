@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be written in the image): MANOR TERRACE SEA VIEW. Format 9:16.
+
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+
+SCENE: A terrace of a historic seaside manor hotel in the soft morning light: in the foreground a stone balustrade with a large terracotta pot of lavender, a corner of a small white-linen table with a glass of water and a cup of coffee, a rattan chair; beyond the balustrade a coastline with a small curving bay, a soft turquoise sea and a distant headland in haze.
+
+COMPOSITION: Portrait; balustrade and table in the lower third, the bay and headland in the middle, sky above; shallow but natural phone depth, no heavy blur.
+
+LIGHT AND ATMOSPHERE: Soft early-morning sunlight, a gentle glow on the stone, a thin haze over the sea.
+
+PHOTO LOOK: soft quiet-elegance grade: gently lifted blacks, creamy highlights, muted turquoise, fine grain. Subtle authentic imperfections (only a few, not all at once): a slight glare on the glass, soft focus on the far headland.
+
+PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+
+PLACE AND SCALE: South coast of Paraland, a small fictional tourist island of Larpidie: low resort hotels and villas above a sandy bay; understated European island luxury, not flashy.
+
+AVOID: no people, no pool parties, no gold or marble excess, no yachts in the foreground, no readable text. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+
+Aspect ratio 9:16.

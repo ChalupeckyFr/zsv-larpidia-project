@@ -1,0 +1,3039 @@
+[
+  {
+    "scene_id": "PHOTO_01",
+    "kind": "photo",
+    "title": "SNOW ABOVE THE PACIFIC",
+    "format": "9:16",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Mountains – west",
+    "tags": [
+      "mountains",
+      "no people",
+      "winter",
+      "coast view"
+    ],
+    "description_cs": "Hřebenová stezka kousek pod nejvyšším vrcholem: v popředí kameny, tráva a zbytky sněhu, níže zalesněné svahy, nízké mraky a v dálce moře. Chladné, tmavší odpoledne. Bez lidí.",
+    "registered_location": {
+      "registry_id": "M-01",
+      "name_en": "Mount Larp",
+      "name_cs": "Nejvyšší vrchol, pracovní 560 m",
+      "type": "peak",
+      "island": "main",
+      "exist_status": "approved",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 6.96,
+      "y_km": 5.44,
+      "elev_m_model": 560.0,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "M-01",
+          "name": "Mount Larp",
+          "x_km": 6.96,
+          "y_km": 5.44
+        }
+      ],
+      "note": "Nejvyšší vrchol (modelových 560 m); existence schválena, poloha a jméno návrh."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 6.85,
+      "y_km": 5.45,
+      "eye_height_m": 1.6,
+      "basis_cs": "hřebenová stezka TR-03 asi 110 m západně od vrcholu M-01 (stezka dle atlasu, bod na ní je návrh)",
+      "plan_local_m": null,
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 549.1,
+      "cover_at_camera": "forest",
+      "distance_to_coast_km": 0.99,
+      "bearing_deg": 285,
+      "compass": "WNW",
+      "fov_hint_deg": 46,
+      "terrain_profile": [
+        {
+          "dist_km": 0.1,
+          "cover": "forest",
+          "z_m": 528
+        },
+        {
+          "dist_km": 0.3,
+          "cover": "forest",
+          "z_m": 491
+        },
+        {
+          "dist_km": 1.0,
+          "cover": "forest",
+          "z_m": 397
+        },
+        {
+          "dist_km": 3.0,
+          "cover": "sea",
+          "z_m": 0
+        }
+      ],
+      "sea_visible_km": 3.8,
+      "visible_registered": [],
+      "nearby_registered": [],
+      "target_cs": "západoseverozápad: lesnaté svahy a moře u západního pobřeží"
+    },
+    "conditions": {
+      "time_of_day": "late afternoon",
+      "season": "late winter / early spring (a rare cold spell)",
+      "weather": "thin high overcast, low cloud in the valleys"
+    },
+    "people": {
+      "count": 0,
+      "description": ""
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "cool, slightly underexposed, lifted contrast, muted desaturated greens, cold blue-grey shadows, no warm tint, fine grain",
+      "imperfections": "slightly tilted horizon (about 1°), soft atmospheric haze, a hint of noise in the shadows"
+    },
+    "canon_notes_cs": [
+      "Kánon: klima = výrazná roční období a občasný sníh; v 560 m se nepředpokládá vydatný dlouhodobý sníh (krátká sezona, zasněžování) → scéna je zimní/předjarní s drobnými zbytky sněhu.",
+      "Atlas: vrchol M-01 je v pokryvu veden jako les; skalnatá/travnatá mýtina u stezky je detail scény, ne rozpor s kánonem („lesnatý horský masiv“).",
+      "Moře je z bodu vidět na západ (≈ 3,7 km, pobřeží u Rock Cape) – ověřeno z DEM."
+    ],
+    "avoid": "no people, no buildings, no signposts, no deep alpine snowpack, no dramatic sunset colours",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_01_SNOW_ABOVE_THE_PACIFIC_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_01_SNOW_ABOVE_THE_PACIFIC_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_01.json",
+      "expected_photo": "01_PHOTOS/PHOTO_01.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "SP-W",
+      "mpp": 4.0,
+      "window_km": [
+        4.892,
+        4.044,
+        3.6,
+        2.7
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_02",
+    "kind": "photo",
+    "title": "WATERFALL EXPRESS",
+    "format": "16:9",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Mountains – centre-west",
+    "tags": [
+      "mountains",
+      "no people",
+      "waterfall",
+      "railway"
+    ],
+    "description_cs": "Vodopád v horském lese: mech, kapradiny, mokré kameny a jemná mlha. U pravého okraje vjíždí do fotozastávky malý elektrický turistický vlak L1. Bez lidí.",
+    "registered_location": {
+      "registry_id": "N-03",
+      "name_en": "Larp Falls",
+      "name_cs": "Vodopád a horská řeka",
+      "type": "nature",
+      "island": "main",
+      "exist_status": "approved",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 10.32,
+      "y_km": 8.64,
+      "elev_m_model": 126.7,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "N-03",
+          "name": "Larp Falls",
+          "x_km": 10.32,
+          "y_km": 8.64
+        },
+        {
+          "id": "ST-L1-03",
+          "name": "Vodopád (fotozastávka)",
+          "x_km": 10.55,
+          "y_km": 8.57
+        }
+      ],
+      "note": "Vodopád N-03 (výška pádu ≈ 44 m, model) a fotozastávka L1 u něj."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 10.54,
+      "y_km": 8.575,
+      "eye_height_m": 1.6,
+      "basis_cs": "vyhlídková plošina fotozastávky ST-L1-03 (stanice dle atlasu), 230 m od vodopádu; bod na plošině je návrh",
+      "plan_local_m": null,
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 131.8,
+      "cover_at_camera": "forest",
+      "distance_to_coast_km": 3.76,
+      "bearing_deg": 250,
+      "compass": "WSW",
+      "fov_hint_deg": 62,
+      "terrain_profile": [
+        {
+          "dist_km": 0.1,
+          "cover": "forest",
+          "z_m": 130
+        },
+        {
+          "dist_km": 0.3,
+          "cover": "forest",
+          "z_m": 126
+        },
+        {
+          "dist_km": 1.0,
+          "cover": "forest",
+          "z_m": 124
+        },
+        {
+          "dist_km": 3.0,
+          "cover": "forest",
+          "z_m": 159
+        }
+      ],
+      "sea_visible_km": null,
+      "visible_registered": [
+        {
+          "id": "M-03",
+          "name": "Round Hill",
+          "type": "peak",
+          "bearing_deg": 276,
+          "rel_angle_deg": 26,
+          "dist_km": 5.29,
+          "side": "right"
+        }
+      ],
+      "nearby_registered": [
+        {
+          "id": "SP-07",
+          "name": "Studánka nad vodopádem",
+          "dist_km": 0.48,
+          "bearing_deg": 313
+        }
+      ],
+      "look_at": {
+        "id": "N-03",
+        "name": "Larp Falls",
+        "bearing_deg": 254,
+        "rel_angle_deg": 4,
+        "dist_km": 0.229,
+        "line_of_sight": true
+      },
+      "target_cs": "vodopád N-03 (WSW)"
+    },
+    "conditions": {
+      "time_of_day": "late morning",
+      "season": "late spring",
+      "weather": "soft overcast, mist in the gorge"
+    },
+    "people": {
+      "count": 0,
+      "description": ""
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "natural saturation, soft contrast, gently lifted shadows, cool-green tint, slow-shutter silky water like an iPhone Live Photo long exposure while the rocks stay sharp",
+      "imperfections": "a few droplets on the lens in one corner, slight softness at the frame edges"
+    },
+    "canon_notes_cs": [
+      "Atlas: N-03 Larp Falls (vodopád ≈ 44 m, horní hrana 127,6 m, model); trať L1 vede viaduktem hned u vodopádu a má zde fotozastávku ST-L1-03 (bezpečná vyhlídková plošina).",
+      "Z plošiny je vlak L1 za zády kamery (viadukt leží severovýchodně); proto vlak vjíždí do záběru zprava – hlavní roli má vodopád."
+    ],
+    "avoid": "no people, no signs with text, no dam, no tropical jungle, no rainbow, no giant waterfall scale",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_02_WATERFALL_EXPRESS_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_02_WATERFALL_EXPRESS_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_02.json",
+      "expected_photo": "01_PHOTOS/PHOTO_02.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "SP-W",
+      "mpp": 4.0,
+      "window_km": [
+        9.639,
+        8.062,
+        1.5,
+        1.125
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_03",
+    "kind": "photo",
+    "title": "OLD LARPINGTON",
+    "format": "16:9",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Larpington",
+    "tags": [
+      "city",
+      "no people",
+      "old town",
+      "church"
+    ],
+    "description_cs": "Stará britsko-velšská ulička Larpingtonu: cihlové domy, kamenný chodník, malá kavárna, mech, květiny a zahrádky. V dálce věž historického kostela. Bez lidí.",
+    "registered_location": {
+      "registry_id": "CP-SQ04",
+      "name_en": "Church Square",
+      "name_cs": "Kostelní náměstí",
+      "type": "square",
+      "island": null,
+      "exist_status": "proposed",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 15.89,
+      "y_km": 13.659,
+      "elev_m_model": null,
+      "source": "atlas/current/capital/cp_objects.json",
+      "all_pins": [
+        {
+          "id": "CP-SQ04",
+          "name": "Church Square",
+          "x_km": 15.89,
+          "y_km": 13.659
+        }
+      ],
+      "note": "Kostelní náměstí ve starém městě Larpingtonu (C-01); ulička je návrh plánu města."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 15.956,
+      "y_km": 13.671,
+      "eye_height_m": 1.6,
+      "basis_cs": "Tržní ulice (třída C, 8 m) 67 m východně od Kostelního náměstí, pohled v ose ulice; bod je návrh (ulice je z plánu CP-01)",
+      "plan_local_m": [
+        2856.0,
+        3371.0
+      ],
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 5.1,
+      "cover_at_camera": "scrub/grass",
+      "distance_to_coast_km": 0.2,
+      "bearing_deg": 278,
+      "compass": "W",
+      "fov_hint_deg": 62,
+      "sea_visible_km": null,
+      "visible_registered": [],
+      "nearby_registered": [],
+      "look_at": {
+        "id": "CP-B07",
+        "name": "Historic church (St George's – working name)",
+        "bearing_deg": 285,
+        "rel_angle_deg": 7,
+        "dist_km": 0.048,
+        "line_of_sight": true
+      },
+      "target_cs": "ulice vede na Kostelní náměstí, věž kostela CP-B07 vpravo nad střechami (W)"
+    },
+    "conditions": {
+      "time_of_day": "early morning",
+      "season": "early summer",
+      "weather": "after light drizzle, damp stones, soft haze"
+    },
+    "people": {
+      "count": 0,
+      "description": ""
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "warm Lightroom-mobile look: slightly lowered exposure, pulled highlights, subtle golden highlights and cooler blue-grey shadows, moderate grain",
+      "imperfections": "mild vignetting from the phone lens, a tiny lean in the vertical lines"
+    },
+    "canon_notes_cs": [
+      "Kánon (approved): anglické a velšské cihlové a kamenné domy, mechem porostlé stěny, zahrady, kostely, romantická náměstí.",
+      "Plán CP-01: Tržní ulice (8 m) vede z východu na Kostelní náměstí; kostel CP-B07 je 67 m daleko, domy 2–3 podlaží (modelově 7–10 m).",
+      "Viditelnost kostela z bodu ověřena v modelu města (terén + výška domů)."
+    ],
+    "avoid": "no people, no cars, no modern shop signs, no neon, no readable text, no skyscrapers, no Mediterranean or Asian architecture",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_03_OLD_LARPINGTON_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_03_OLD_LARPINGTON_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_03.json",
+      "expected_photo": "01_PHOTOS/PHOTO_03.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "S-03",
+      "mpp": 2.0,
+      "window_km": [
+        15.602,
+        13.431,
+        0.62,
+        0.465
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_04",
+    "kind": "photo",
+    "title": "LARPINGTON OLD HARBOUR",
+    "format": "16:9",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Larpington",
+    "tags": [
+      "city",
+      "no people",
+      "harbour",
+      "afternoon"
+    ],
+    "description_cs": "Staré sklady a celnice přeměněné na kavárny, kamenná promenáda, malé lodě v přístavní pánvi a historické město za přístavem. Odpolední světlo. Bez lidí.",
+    "registered_location": {
+      "registry_id": "C-02",
+      "name_en": "Larpington Old Harbour",
+      "name_cs": "Historický přístav hlavního města",
+      "type": "port",
+      "island": "main",
+      "exist_status": "approved",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 16.32,
+      "y_km": 13.92,
+      "elev_m_model": 1.2,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "C-02",
+          "name": "Larpington Old Harbour",
+          "x_km": 16.32,
+          "y_km": 13.92
+        }
+      ],
+      "note": "Historický přístav hlavního města (pánev a dva vlnolamy z atlasu beze změny)."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 16.235,
+      "y_km": 13.9,
+      "eye_height_m": 1.6,
+      "basis_cs": "přístavní promenáda (CP-PR01) u Přístavního náměstí; bod na promenádě je návrh",
+      "plan_local_m": [
+        3135.0,
+        3600.0
+      ],
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 1.5,
+      "cover_at_camera": "scrub/grass",
+      "distance_to_coast_km": 0.01,
+      "bearing_deg": 78,
+      "compass": "ENE",
+      "fov_hint_deg": 62,
+      "sea_visible_km": null,
+      "visible_registered": [
+        {
+          "id": "C-02",
+          "name": "Larpington Old Harbour",
+          "type": "port",
+          "bearing_deg": 103,
+          "rel_angle_deg": 25,
+          "dist_km": 0.09,
+          "side": "right"
+        },
+        {
+          "id": "BAY-S",
+          "name": "Larpington Bay",
+          "type": "coast_feature",
+          "bearing_deg": 103,
+          "rel_angle_deg": 25,
+          "dist_km": 1.3,
+          "side": "right"
+        }
+      ],
+      "nearby_registered": [],
+      "target_cs": "promenáda a přístavní pánev směrem k molu a tržní hale (ENE)"
+    },
+    "conditions": {
+      "time_of_day": "afternoon (about 3 to 4 pm)",
+      "season": "late summer",
+      "weather": "clear, light haze over the water"
+    },
+    "people": {
+      "count": 0,
+      "description": ""
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "warm natural, slightly lifted shadows, gentle contrast, teal-green water, a restrained Apple Photos 'vivid warm' feel",
+      "imperfections": "a tiny lens flare from the sun side, slightly crooked horizon"
+    },
+    "canon_notes_cs": [
+      "Atlas: C-02 historický přístav (nábřeží, butiky, promenády, vlnolam proti tajfunům z jihu). Plán CP-01: Přístavní promenáda, Přístavní úřad a celnice (CP-B10), terminál lodní linky CP-B11.",
+      "Nákladní přístav je jinde (I-03); v záběru nesmí být kontejnery ani jeřáby."
+    ],
+    "avoid": "no people, no large ships, no cranes or containers (this is the historic harbour, not the cargo port), no readable text, no superyacht luxury",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_04_LARPINGTON_OLD_HARBOUR_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_04_LARPINGTON_OLD_HARBOUR_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_04.json",
+      "expected_photo": "01_PHOTOS/PHOTO_04.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "S-03",
+      "mpp": 2.0,
+      "window_km": [
+        15.851,
+        13.537,
+        0.95,
+        0.713
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_05",
+    "kind": "photo",
+    "title": "ŌRU MAITO AFTER RAIN",
+    "format": "9:16",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "North coast",
+    "tags": [
+      "town",
+      "no people",
+      "night",
+      "japanese influence"
+    ],
+    "description_cs": "Večerní ulice po dešti v japonsky laděném městečku: malé restaurace, mokrá silnice, světla obchodů, zaparkované japonské auto. Bez lidí.",
+    "registered_location": {
+      "registry_id": "T-04",
+      "name_en": "Ōru Maito",
+      "name_cs": "Ōru Maito (オールマイト)",
+      "type": "settlement",
+      "island": "main",
+      "exist_status": "approved",
+      "name_status": "approved",
+      "pos_status": "proposed",
+      "x_km": 13.44,
+      "y_km": 3.68,
+      "elev_m_model": 24.0,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "T-04",
+          "name": "Ōru Maito",
+          "x_km": 13.44,
+          "y_km": 3.68
+        }
+      ],
+      "note": "Ōru Maito (T-04): japonizované severní městečko; existence i jméno schváleny, poloha návrh."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 13.552,
+      "y_km": 3.97,
+      "eye_height_m": 1.6,
+      "basis_cs": "konec hlavní silnice RD-03 na okraji centra T-04 (310 m od středu), pohled do pokračující ulice; místní ulice atlas nemodeluje, bod je návrh",
+      "plan_local_m": null,
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 24.2,
+      "cover_at_camera": "scrub/grass",
+      "distance_to_coast_km": 0.88,
+      "bearing_deg": 275,
+      "compass": "W",
+      "fov_hint_deg": 46,
+      "terrain_profile": [
+        {
+          "dist_km": 0.1,
+          "cover": "scrub/grass",
+          "z_m": 24
+        },
+        {
+          "dist_km": 0.3,
+          "cover": "scrub/grass",
+          "z_m": 25
+        },
+        {
+          "dist_km": 1.0,
+          "cover": "scrub/grass",
+          "z_m": 52
+        },
+        {
+          "dist_km": 3.0,
+          "cover": "forest",
+          "z_m": 127
+        }
+      ],
+      "sea_visible_km": null,
+      "visible_registered": [],
+      "nearby_registered": [
+        {
+          "id": "ST-L2-12",
+          "name": "Ōru Maito",
+          "dist_km": 0.14,
+          "bearing_deg": 106
+        }
+      ],
+      "target_cs": "ulice pokračuje na západ do centra městečka (W)"
+    },
+    "conditions": {
+      "time_of_day": "blue hour (about 20 minutes after sunset)",
+      "season": "autumn",
+      "weather": "just after rain, damp air, puddles"
+    },
+    "people": {
+      "count": 0,
+      "description": ""
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "cinematic but phone-realistic: deeper contrast, teal-and-amber balance, lifted blacks, visible fine noise, slight underexposure",
+      "imperfections": "slight motion blur on distant lights, a small lens flare from a lantern"
+    },
+    "canon_notes_cs": [
+      "Kánon: Ōru Maito (T-04) je schválené povinné město; japonizované severní městečko, japonské úzké ulice v mixu s anglickou architekturou.",
+      "Atlas nemodeluje místní ulice města; kamerový bod leží na konci hlavní silnice RD-03 uvnitř polygonu sídla (310 m od středu), ulice dál na západ je ilustrativní."
+    ],
+    "avoid": "no people, no readable text or kanji signs, no neon cyberpunk look, no brand logos",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_05_ORU_MAITO_AFTER_RAIN_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_05_ORU_MAITO_AFTER_RAIN_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_05.json",
+      "expected_photo": "01_PHOTOS/PHOTO_05.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "SP-N",
+      "mpp": 3.0,
+      "window_km": [
+        12.81,
+        3.381,
+        1.3,
+        0.975
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_06",
+    "kind": "photo",
+    "title": "PARALAND MARINA",
+    "format": "16:9",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Paraland",
+    "tags": [
+      "coast",
+      "no people",
+      "marina",
+      "summer"
+    ],
+    "description_cs": "Letní marina: malé lodě u pontonů, promenáda, restaurace, nízké domy a čisté moře; v pozadí zelené kopce a silueta zámku. Bez lidí.",
+    "registered_location": {
+      "registry_id": "H-02",
+      "name_en": "Paraland Marina",
+      "name_cs": "Marina Paraland",
+      "type": "port",
+      "island": "para",
+      "exist_status": "proposed",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 23.364,
+      "y_km": 15.819,
+      "elev_m_model": 0.9,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "H-02",
+          "name": "Paraland Marina",
+          "x_km": 23.364,
+          "y_km": 15.819
+        },
+        {
+          "id": "PL-05",
+          "name": "Marina Village",
+          "x_km": 23.633,
+          "y_km": 16.587
+        }
+      ],
+      "note": "Marina Paraland (H-02) a přístavní vesnice (PL-05); mezi nimi terminál lodní linky L3 (ST-L3-07)."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 23.255,
+      "y_km": 15.742,
+      "eye_height_m": 1.6,
+      "basis_cs": "vnější konec prostředního mola mariny H-02 (molo dle atlasu, bod na něm je návrh)",
+      "plan_local_m": null,
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 0.0,
+      "cover_at_camera": "sea",
+      "distance_to_coast_km": 0.14,
+      "bearing_deg": 62,
+      "compass": "ENE",
+      "fov_hint_deg": 62,
+      "terrain_profile": [
+        {
+          "dist_km": 0.1,
+          "cover": "sea",
+          "z_m": 0
+        },
+        {
+          "dist_km": 0.3,
+          "cover": "sea",
+          "z_m": 0
+        },
+        {
+          "dist_km": 1.0,
+          "cover": "sea",
+          "z_m": 0
+        },
+        {
+          "dist_km": 3.0,
+          "cover": "sea",
+          "z_m": 0
+        }
+      ],
+      "sea_visible_km": 0.2,
+      "visible_registered": [],
+      "nearby_registered": [
+        {
+          "id": "ST-L3-07",
+          "name": "Paraland – Marina",
+          "dist_km": 0.27,
+          "bearing_deg": 125
+        }
+      ],
+      "target_cs": "promenáda, nízké domy a pahorky Paralandu (ENE)"
+    },
+    "conditions": {
+      "time_of_day": "midday",
+      "season": "midsummer",
+      "weather": "sunny, a few small cumulus clouds"
+    },
+    "people": {
+      "count": 0,
+      "description": ""
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "bright natural smartphone HDR, clean blues and teal, slightly lifted shadows, light grain, not oversaturated",
+      "imperfections": "gentle sun glare on the water and a faint halo around the brightest highlights"
+    },
+    "canon_notes_cs": [
+      "Atlas: H-02 Marina Paraland (3 mola a 2 vlnolamy), PL-05 přístavní vesnice, ST-L3-07 terminál L3; hrad PL-02 stojí na kopci ≈ 1,4 km východně.",
+      "Lodní linka C-02 ↔ Paraland (FERRY-1) je volitelná, bez autopřevozu."
+    ],
+    "avoid": "no people, no large yachts or superyachts, no signage text, no high-rise buildings",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_06_PARALAND_MARINA_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_06_PARALAND_MARINA_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_06.json",
+      "expected_photo": "01_PHOTOS/PHOTO_06.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "S-02",
+      "mpp": 5.0,
+      "window_km": [
+        22.614,
+        15.166,
+        1.5,
+        1.125
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_07",
+    "kind": "photo",
+    "title": "PARALAND CASTLE RUINS",
+    "format": "9:16",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Paraland",
+    "tags": [
+      "ruin",
+      "one person",
+      "heritage",
+      "spring"
+    ],
+    "description_cs": "Jedna osoba stojí na bezpečné cestě před starou kamennou zříceninou: mech, tráva, rozpadlá věž a staré zdi. Přesně jedna osoba.",
+    "registered_location": {
+      "registry_id": "PL-06",
+      "name_en": "Ruin above the Old Town",
+      "name_cs": "Zřícenina (pracovní)",
+      "type": "poi",
+      "island": "para",
+      "exist_status": "approved",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 26.41,
+      "y_km": 16.73,
+      "elev_m_model": 55.5,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "PL-06",
+          "name": "Ruin above the Old Town",
+          "x_km": 26.41,
+          "y_km": 16.73
+        }
+      ],
+      "note": "Zřícenina nad starým městečkem Paralandu (existence schválena); památková stezka TR-PL2."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 26.25,
+      "y_km": 16.72,
+      "eye_height_m": 1.6,
+      "basis_cs": "památková stezka TR-PL2 asi 160 m před zříceninou; bod na stezce je návrh",
+      "plan_local_m": null,
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 51.2,
+      "cover_at_camera": "forest",
+      "distance_to_coast_km": 0.6,
+      "bearing_deg": 90,
+      "compass": "E",
+      "fov_hint_deg": 46,
+      "terrain_profile": [
+        {
+          "dist_km": 0.1,
+          "cover": "forest",
+          "z_m": 53
+        },
+        {
+          "dist_km": 0.3,
+          "cover": "forest",
+          "z_m": 54
+        },
+        {
+          "dist_km": 1.0,
+          "cover": "forest",
+          "z_m": 27
+        },
+        {
+          "dist_km": 3.0,
+          "cover": "sea",
+          "z_m": 0
+        }
+      ],
+      "sea_visible_km": 1.7,
+      "visible_registered": [
+        {
+          "id": "PL-06",
+          "name": "Ruin above the Old Town",
+          "type": "poi",
+          "bearing_deg": 94,
+          "rel_angle_deg": 4,
+          "dist_km": 0.16,
+          "side": "center"
+        }
+      ],
+      "nearby_registered": [
+        {
+          "id": "TR-PL2",
+          "name": "Staré městečko – zřícenina – hrad",
+          "dist_km": 0.02,
+          "bearing_deg": 230
+        },
+        {
+          "id": "PL-01",
+          "name": "Paraland Old Town",
+          "dist_km": 0.44,
+          "bearing_deg": 341
+        }
+      ],
+      "target_cs": "zřícenina PL-06 (východ)"
+    },
+    "conditions": {
+      "time_of_day": "midday, bright overcast",
+      "season": "spring",
+      "weather": "soft overcast with a bright break"
+    },
+    "people": {
+      "count": 1,
+      "description": "one adult in a light-coloured rain jacket, dark trousers and a small daypack, seen from behind or three-quarter back, face not visible, looking up at the ruin"
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "muted, slightly cool, soft contrast, desaturated stone against fresh green grass, light grain",
+      "imperfections": "slightly soft corners, a tiny horizon tilt"
+    },
+    "canon_notes_cs": [
+      "Atlas: PL-06 zřícenina (55 m n. m., model) nad starým městečkem PL-01; památková stezka TR-PL2 (staré městečko – zřícenina – hrad).",
+      "Přesně jedna osoba v záběru."
+    ],
+    "avoid": "no signs, no tourists, no fences, no readable text, no fantasy castle, no dragons",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_07_PARALAND_CASTLE_RUINS_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_07_PARALAND_CASTLE_RUINS_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_07.json",
+      "expected_photo": "01_PHOTOS/PHOTO_07.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "S-02",
+      "mpp": 5.0,
+      "window_km": [
+        25.655,
+        16.198,
+        1.4,
+        1.05
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_08",
+    "kind": "photo",
+    "title": "MIDNIGHT JESKO",
+    "format": "9:16",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "West hills (view of Larpington)",
+    "tags": [
+      "night",
+      "no people",
+      "car",
+      "city lights"
+    ],
+    "description_cs": "Černo-zlatý Koenigsegg Jesko stojí v noci na bezpečné vyhlídce, v dálce světla Larpingtonu. Auto stojí, bez lidí.",
+    "registered_location": {
+      "registry_id": "V-07",
+      "name_en": "Vyhlídka na hrázi přehrady",
+      "name_cs": "Vyhlídka na hrázi přehrady",
+      "type": "poi",
+      "island": "main",
+      "exist_status": "proposed",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 12.31,
+      "y_km": 10.33,
+      "elev_m_model": 78.9,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "V-07",
+          "name": "Vyhlídka na hrázi přehrady",
+          "x_km": 12.31,
+          "y_km": 10.33
+        },
+        {
+          "id": "C-01",
+          "name": "Larpington",
+          "x_km": 16.08,
+          "y_km": 12.16
+        }
+      ],
+      "note": "V-07 = nejbližší registrovaná bezpečná vyhlídka (hráz přehrady); C-01 Larpington je předmět pohledu. Konkrétní stanoviště je návrh."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 12.37,
+      "y_km": 10.36,
+      "eye_height_m": 1.0,
+      "basis_cs": "odstavné místo asi 70 m severovýchodně od vyhlídky V-07 u hráze (odtud je přímý výhled na Larpington; přímo ve V-07 ho brání terén); bod je návrh",
+      "plan_local_m": null,
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 84.0,
+      "cover_at_camera": "farmland",
+      "distance_to_coast_km": 2.75,
+      "bearing_deg": 116,
+      "compass": "ESE",
+      "fov_hint_deg": 46,
+      "terrain_profile": [
+        {
+          "dist_km": 0.1,
+          "cover": "farmland",
+          "z_m": 69
+        },
+        {
+          "dist_km": 0.3,
+          "cover": "farmland",
+          "z_m": 66
+        },
+        {
+          "dist_km": 1.0,
+          "cover": "farmland",
+          "z_m": 55
+        },
+        {
+          "dist_km": 3.0,
+          "cover": "scrub/grass",
+          "z_m": 24
+        }
+      ],
+      "sea_visible_km": 5.1,
+      "visible_registered": [
+        {
+          "id": "HM-05",
+          "name": "osada (bez názvu)",
+          "type": "settlement",
+          "bearing_deg": 125,
+          "rel_angle_deg": 9,
+          "dist_km": 1.15,
+          "side": "right"
+        },
+        {
+          "id": "ST-W",
+          "name": "Larpington Západ (Chalupecká)",
+          "type": "rail_station",
+          "bearing_deg": 132,
+          "rel_angle_deg": 16,
+          "dist_km": 2.39,
+          "side": "right"
+        },
+        {
+          "id": "ST-N",
+          "name": "Larpington Sever (Kynčlova)",
+          "type": "rail_station",
+          "bearing_deg": 99,
+          "rel_angle_deg": -17,
+          "dist_km": 3.58,
+          "side": "left"
+        },
+        {
+          "id": "C-01",
+          "name": "Larpington",
+          "type": "settlement",
+          "bearing_deg": 116,
+          "rel_angle_deg": 0,
+          "dist_km": 4.12,
+          "side": "center"
+        },
+        {
+          "id": "ST-S",
+          "name": "Larpington Střed – Přístav (Žemličkova)",
+          "type": "rail_station",
+          "bearing_deg": 126,
+          "rel_angle_deg": 10,
+          "dist_km": 4.6,
+          "side": "right"
+        },
+        {
+          "id": "C-02",
+          "name": "Larpington Old Harbour",
+          "type": "port",
+          "bearing_deg": 132,
+          "rel_angle_deg": 16,
+          "dist_km": 5.32,
+          "side": "right"
+        },
+        {
+          "id": "ST-E",
+          "name": "Larpington Východ (Klimečkova)",
+          "type": "rail_station",
+          "bearing_deg": 108,
+          "rel_angle_deg": -8,
+          "dist_km": 5.54,
+          "side": "left"
+        },
+        {
+          "id": "BAY-S",
+          "name": "Larpington Bay",
+          "type": "coast_feature",
+          "bearing_deg": 127,
+          "rel_angle_deg": 11,
+          "dist_km": 6.41,
+          "side": "right"
+        }
+      ],
+      "nearby_registered": [
+        {
+          "id": "ST-L1-02",
+          "name": "Přehrada",
+          "dist_km": 0.27,
+          "bearing_deg": 4
+        },
+        {
+          "id": "DAM-N04",
+          "name": "Larp Dam",
+          "dist_km": 0.35,
+          "bearing_deg": 213
+        },
+        {
+          "id": "CY-04",
+          "name": "Larpington – Čimprlichovo Hradiště – přehrada",
+          "dist_km": 0.36,
+          "bearing_deg": 147
+        }
+      ],
+      "look_at": {
+        "id": "C-01",
+        "name": "Larpington",
+        "bearing_deg": 116,
+        "rel_angle_deg": 0,
+        "dist_km": 4.124,
+        "line_of_sight": true
+      },
+      "target_cs": "Larpington (C-01), vzdálenost ≈ 4,2 km (ESE)"
+    },
+    "conditions": {
+      "time_of_day": "night, about 2 hours after sunset",
+      "season": "late summer",
+      "weather": "clear, dry, light haze near the horizon"
+    },
+    "people": {
+      "count": 0,
+      "description": ""
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "dark and moody, slightly underexposed, visible fine night-mode noise, bokeh on distant lights, teal-black shadows with warm gold highlights",
+      "imperfections": "faint bloom around the brightest lights, soft detail in the deep shadows"
+    },
+    "canon_notes_cs": [
+      "Registr: V-07 Vyhlídka na hrázi přehrady (78,9 m, bezpečná, s oplocením); přímý výhled na Larpington je až z bodu ≈ 70 m severovýchodně (DEM: LOS ověřeno).",
+      "Vozidlo je skutečný model zadaný v zadání; v promptu držíme jeho autentické proporce."
+    ],
+    "avoid": "no people, no driving or motion blur, no other cars, no readable text, no logos other than the car's own shape; keep authentic Jesko proportions (low wide body, huge rear wing, long tail)",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_08_MIDNIGHT_JESKO_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_08_MIDNIGHT_JESKO_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_08.json",
+      "expected_photo": "01_PHOTOS/PHOTO_08.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "S-01",
+      "mpp": 10.0,
+      "window_km": [
+        10.914,
+        9.204,
+        3.4,
+        2.55
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_09",
+    "kind": "photo",
+    "title": "GOLDEN HOUR SUMMIT REST",
+    "format": "9:16",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Mountains – west",
+    "tags": [
+      "mountains",
+      "two people",
+      "sunset",
+      "hiking"
+    ],
+    "description_cs": "Dva mladí turisté v tmavém outdoor oblečení sedí na bezpečné skalnaté vyhlídce nad tmavým horským údolím; oranžové světlo na skalách. Přesně dva lidé.",
+    "registered_location": {
+      "registry_id": "SP-05",
+      "name_en": "Studánka na hřebenovce",
+      "name_cs": "Studánka na hřebenovce",
+      "type": "poi",
+      "island": "main",
+      "exist_status": "approved",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 6.31,
+      "y_km": 6.85,
+      "elev_m_model": 247.4,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "SP-05",
+          "name": "Studánka na hřebenovce",
+          "x_km": 6.31,
+          "y_km": 6.85
+        },
+        {
+          "id": "M-01",
+          "name": "Mount Larp",
+          "x_km": 6.96,
+          "y_km": 5.44
+        }
+      ],
+      "note": "Studánka na hřebenovce (SP-05) a vrchol M-01; západní horská oblast poblíž Mount Larp."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 6.0,
+      "y_km": 6.8,
+      "eye_height_m": 1.5,
+      "basis_cs": "travnatá terasa na hřebenovce TR-03 asi 300 m od studánky SP-05; skalnatý výběžek je detail scény, bod je návrh",
+      "plan_local_m": null,
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 252.2,
+      "cover_at_camera": "meadow",
+      "distance_to_coast_km": 2.27,
+      "bearing_deg": 64,
+      "compass": "ENE",
+      "fov_hint_deg": 46,
+      "terrain_profile": [
+        {
+          "dist_km": 0.1,
+          "cover": "meadow",
+          "z_m": 253
+        },
+        {
+          "dist_km": 0.3,
+          "cover": "forest",
+          "z_m": 255
+        },
+        {
+          "dist_km": 1.0,
+          "cover": "forest",
+          "z_m": 306
+        },
+        {
+          "dist_km": 3.0,
+          "cover": "forest",
+          "z_m": 365
+        }
+      ],
+      "sea_visible_km": null,
+      "visible_registered": [
+        {
+          "id": "M-02",
+          "name": "Winter Peak",
+          "type": "peak",
+          "bearing_deg": 64,
+          "rel_angle_deg": 0,
+          "dist_km": 3.47,
+          "side": "center"
+        }
+      ],
+      "nearby_registered": [
+        {
+          "id": "TR-03",
+          "name": "Hřebenovka M-03 – M-01",
+          "dist_km": 0.18,
+          "bearing_deg": 20
+        }
+      ],
+      "look_at": {
+        "id": "M-02",
+        "name": "Winter Peak",
+        "bearing_deg": 64,
+        "rel_angle_deg": 0,
+        "dist_km": 3.471,
+        "line_of_sight": true
+      },
+      "target_cs": "tmavé horské údolí a hřeben s Winter Peak M-02 (ENE, 3,3 km)"
+    },
+    "conditions": {
+      "time_of_day": "golden hour, about 25 minutes before sunset",
+      "season": "autumn",
+      "weather": "clear with thin mist in the valley"
+    },
+    "people": {
+      "count": 2,
+      "description": "two young hikers in dark technical outdoor clothing sitting close together, seen from behind and slightly from the side"
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "intimate, darker sunset look: deep shadows, warm orange highlights, cool blue-grey valley shadows, slightly lowered exposure, mild grain",
+      "imperfections": "a trace of lens flare at the top-left edge; backlit people stay dark without perfect detail"
+    },
+    "canon_notes_cs": [
+      "Atlas: TR-03 hřebenovka M-03 – M-01; SP-05 studánka na hřebenovce (247 m); M-02 Winter Peak 3,3 km ENE (DEM: viditelný).",
+      "Přesně dva lidé; bezpečná vyhlídka = plochý skalní výběžek bez srázu."
+    ],
+    "avoid": "no extra people, no sharp faces, no logos on clothing, no dramatic Himalayan scale, no tent or camp",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_09_GOLDEN_HOUR_SUMMIT_REST_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_09_GOLDEN_HOUR_SUMMIT_REST_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_09.json",
+      "expected_photo": "01_PHOTOS/PHOTO_09.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "SP-W",
+      "mpp": 4.0,
+      "window_km": [
+        4.618,
+        5.437,
+        3.4,
+        2.55
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_10",
+    "kind": "photo",
+    "title": "SWISS-INSPIRED MOUNTAIN MEADOW",
+    "format": "9:16",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Mountains – west",
+    "tags": [
+      "mountains",
+      "no people",
+      "meadow",
+      "chalet"
+    ],
+    "description_cs": "Úzká pěšina přes horskou louku, jedna větší dřevěná chata a 2–3 menší stavby, ploty, tmavé jehličnany a skalnatý hřeben v pozadí. Bez lidí.",
+    "registered_location": {
+      "registry_id": "M-03",
+      "name_en": "Round Hill",
+      "name_cs": "Zaoblený turistický vrch",
+      "type": "peak",
+      "island": "main",
+      "exist_status": "approved",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 5.28,
+      "y_km": 8.0,
+      "elev_m_model": 440.0,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "M-03",
+          "name": "Round Hill",
+          "x_km": 5.28,
+          "y_km": 8.0
+        },
+        {
+          "id": "SP-04",
+          "name": "Studánka na stezce k M-03",
+          "x_km": 4.75,
+          "y_km": 8.75
+        }
+      ],
+      "note": "Horské louky západní Larpidie pod zaobleným vrchem M-03 (stezka TR-02). Chata je prvek scény, v registru není (HV-03 stojí v lese u M-02)."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 4.52,
+      "y_km": 8.7,
+      "eye_height_m": 1.6,
+      "basis_cs": "louka u stezky TR-02 (stezka na M-03), 250 m od studánky SP-04; bod je návrh",
+      "plan_local_m": null,
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 252.1,
+      "cover_at_camera": "meadow",
+      "distance_to_coast_km": 1.42,
+      "bearing_deg": 47,
+      "compass": "NE",
+      "fov_hint_deg": 46,
+      "terrain_profile": [
+        {
+          "dist_km": 0.1,
+          "cover": "meadow",
+          "z_m": 262
+        },
+        {
+          "dist_km": 0.3,
+          "cover": "meadow",
+          "z_m": 283
+        },
+        {
+          "dist_km": 1.0,
+          "cover": "meadow",
+          "z_m": 439
+        },
+        {
+          "dist_km": 3.0,
+          "cover": "forest",
+          "z_m": 268
+        }
+      ],
+      "sea_visible_km": null,
+      "visible_registered": [
+        {
+          "id": "SP-03",
+          "name": "Pramen Havlišova potoka",
+          "type": "poi",
+          "bearing_deg": 48,
+          "rel_angle_deg": 1,
+          "dist_km": 0.58,
+          "side": "center"
+        }
+      ],
+      "nearby_registered": [
+        {
+          "id": "TR-02",
+          "name": "Stezka na zaoblený vrch M-03",
+          "dist_km": 0.39,
+          "bearing_deg": 220
+        },
+        {
+          "id": "SP-03",
+          "name": "Pramen Havlišova potoka",
+          "dist_km": 0.58,
+          "bearing_deg": 48
+        },
+        {
+          "id": "PG-02",
+          "name": "Paraglidingové přistání (louka)",
+          "dist_km": 0.59,
+          "bearing_deg": 179
+        }
+      ],
+      "look_at": {
+        "id": null,
+        "name": "TR-02 path climbing the meadow slope",
+        "bearing_deg": 45,
+        "rel_angle_deg": -2,
+        "dist_km": 0.75,
+        "line_of_sight": true
+      },
+      "target_cs": "hřeben vrchu M-03 (NE, ≈ 1 km)"
+    },
+    "conditions": {
+      "time_of_day": "mid-morning",
+      "season": "early summer",
+      "weather": "partly cloudy, cloud shadows on the slope"
+    },
+    "people": {
+      "count": 0,
+      "description": ""
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "fresh Swiss-style Instagram look: slightly increased contrast, muted greens, warm sunlit grass, cooler shadows",
+      "imperfections": "slight haze at the ridge, a faint vignette"
+    },
+    "canon_notes_cs": [
+      "Atlas: M-03 Round Hill (zaoblený vrch, louky, značené trasy, 440 m) a stezka TR-02 vedou přes skutečné luční pokryvy (DEM/pokryv: meadow).",
+      "Chata a hospodářské stavby jsou ilustrativní prvky scény (nejsou v registru); jedinou registrovanou horskou chatou je HV-03 u sjezdovky M-02 (les)."
+    ],
+    "avoid": "no people, no cars, no animals, no readable text, no ski lifts",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_10_SWISS_INSPIRED_MOUNTAIN_MEADOW_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_10_SWISS_INSPIRED_MOUNTAIN_MEADOW_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_10.json",
+      "expected_photo": "01_PHOTOS/PHOTO_10.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "SP-W",
+      "mpp": 4.0,
+      "window_km": [
+        3.494,
+        7.304,
+        2.8,
+        2.1
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_11",
+    "kind": "photo",
+    "title": "ALPINE-INSPIRED LAKE POSE",
+    "format": "9:16",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Mountains – centre-west",
+    "tags": [
+      "lake",
+      "one person",
+      "mountains",
+      "summer"
+    ],
+    "description_cs": "Jeden mladý muž stojí na bezpečném břehu jezera v přirozené póze, sportovní oblečení a malý batoh; modrozelená hladina a hřebeny s loukami v pozadí. Přesně jedna osoba.",
+    "registered_location": {
+      "registry_id": "N-04",
+      "name_en": "Larp Reservoir",
+      "name_cs": "Přehradní jezero",
+      "type": "nature",
+      "island": "main",
+      "exist_status": "approved",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 11.52,
+      "y_km": 9.76,
+      "elev_m_model": 54.6,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "N-04",
+          "name": "Larp Reservoir",
+          "x_km": 11.52,
+          "y_km": 9.76
+        },
+        {
+          "id": "ST-L1-02",
+          "name": "Přehrada",
+          "x_km": 12.39,
+          "y_km": 10.09
+        }
+      ],
+      "note": "Přehradní jezero N-04 (hladina 67,6 m, model) a zastávka L1 Přehrada s rekreačním břehem."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 12.205,
+      "y_km": 10.17,
+      "eye_height_m": 1.6,
+      "basis_cs": "plochý rekreační břeh na východním konci přehrady, 200 m od zastávky ST-L1-02; bod je návrh",
+      "plan_local_m": null,
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 77.8,
+      "cover_at_camera": "scrub/grass",
+      "distance_to_coast_km": 2.88,
+      "bearing_deg": 300,
+      "compass": "WNW",
+      "fov_hint_deg": 46,
+      "terrain_profile": [
+        {
+          "dist_km": 0.1,
+          "cover": "lake",
+          "z_m": 63
+        },
+        {
+          "dist_km": 0.3,
+          "cover": "lake",
+          "z_m": 55
+        },
+        {
+          "dist_km": 1.0,
+          "cover": "lake",
+          "z_m": 55
+        },
+        {
+          "dist_km": 3.0,
+          "cover": "forest",
+          "z_m": 134
+        }
+      ],
+      "sea_visible_km": null,
+      "visible_registered": [
+        {
+          "id": "N-04",
+          "name": "Larp Reservoir",
+          "type": "nature",
+          "bearing_deg": 301,
+          "rel_angle_deg": 1,
+          "dist_km": 0.8,
+          "side": "center"
+        },
+        {
+          "id": "HM-02",
+          "name": "osada (bez názvu)",
+          "type": "settlement",
+          "bearing_deg": 291,
+          "rel_angle_deg": -9,
+          "dist_km": 1.38,
+          "side": "left"
+        },
+        {
+          "id": "ST-L1-03",
+          "name": "Vodopád (fotozastávka)",
+          "type": "rail_station",
+          "bearing_deg": 314,
+          "rel_angle_deg": 14,
+          "dist_km": 2.3,
+          "side": "right"
+        },
+        {
+          "id": "N-03",
+          "name": "Larp Falls",
+          "type": "nature",
+          "bearing_deg": 309,
+          "rel_angle_deg": 9,
+          "dist_km": 2.43,
+          "side": "right"
+        },
+        {
+          "id": "SP-07",
+          "name": "Studánka nad vodopádem",
+          "type": "poi",
+          "bearing_deg": 314,
+          "rel_angle_deg": 14,
+          "dist_km": 2.78,
+          "side": "right"
+        },
+        {
+          "id": "ST-L1-04",
+          "name": "Krystalová jeskyně",
+          "type": "rail_station",
+          "bearing_deg": 311,
+          "rel_angle_deg": 11,
+          "dist_km": 3.71,
+          "side": "right"
+        },
+        {
+          "id": "M-01",
+          "name": "Mount Larp",
+          "type": "peak",
+          "bearing_deg": 312,
+          "rel_angle_deg": 12,
+          "dist_km": 7.06,
+          "side": "right"
+        },
+        {
+          "id": "M-03",
+          "name": "Round Hill",
+          "type": "peak",
+          "bearing_deg": 287,
+          "rel_angle_deg": -13,
+          "dist_km": 7.26,
+          "side": "left"
+        }
+      ],
+      "nearby_registered": [
+        {
+          "id": "V-07",
+          "name": "Vyhlídka na hrázi přehrady",
+          "dist_km": 0.19,
+          "bearing_deg": 147
+        },
+        {
+          "id": "DAM-N04",
+          "name": "Larp Dam",
+          "dist_km": 0.48,
+          "bearing_deg": 183
+        }
+      ],
+      "target_cs": "přes jezero k západním lesnatým svahům (WNW)"
+    },
+    "conditions": {
+      "time_of_day": "early afternoon",
+      "season": "summer",
+      "weather": "clear, light haze on the far ridges"
+    },
+    "people": {
+      "count": 1,
+      "description": "one young man in a dark technical jacket, grey trail trousers and a small backpack, three-quarter side view, relaxed natural pose"
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "alpine-lake-inspired travel look: crisp natural contrast, saturated but realistic blue-green water, slightly cooler shadows",
+      "imperfections": "a very slight horizon tilt, mild edge softness"
+    },
+    "canon_notes_cs": [
+      "Atlas: N-04 Larp Reservoir (0,6 km², vodárenské dílo a rekreační pobřeží s ochranou zdroje vody); zastávka L1 ST-L1-02 Přehrada.",
+      "„Skalní hřebeny“ v pozadí jsou stylizace – okolní terén je nízký (110–200 m), horský masiv M-01/M-02 je 6–8 km daleko (v dálce v mlze)."
+    ],
+    "avoid": "no other people, no boats, no buildings, no dam wall, no logos, no glaciers, no giant peaks",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_11_ALPINE_INSPIRED_LAKE_POSE_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_11_ALPINE_INSPIRED_LAKE_POSE_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_11.json",
+      "expected_photo": "01_PHOTOS/PHOTO_11.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "SP-W",
+      "mpp": 4.0,
+      "window_km": [
+        10.534,
+        8.976,
+        2.6,
+        1.95
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_12",
+    "kind": "photo",
+    "title": "SUNSET ABOVE LARPIDIA",
+    "format": "16:9",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Mountains – west",
+    "tags": [
+      "mountains",
+      "two people",
+      "sunset",
+      "sky"
+    ],
+    "description_cs": "Dva mladí turisté sedí na louce zády ke kameře pod obrovskou dramatickou oblohou: tmavé modro-šedé mraky, úzký oranžový pruh u horizontu a žlutá kvítka v trávě. Přesně dva lidé.",
+    "registered_location": {
+      "registry_id": "M-03",
+      "name_en": "Round Hill",
+      "name_cs": "Zaoblený turistický vrch",
+      "type": "peak",
+      "island": "main",
+      "exist_status": "approved",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 5.28,
+      "y_km": 8.0,
+      "elev_m_model": 440.0,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "M-03",
+          "name": "Round Hill",
+          "x_km": 5.28,
+          "y_km": 8.0
+        },
+        {
+          "id": "PG-01",
+          "name": "Paraglidingový start (zaoblený vrch M-03)",
+          "x_km": 5.27,
+          "y_km": 7.99
+        }
+      ],
+      "note": "Travnatá vyhlídka na zaobleném vrchu M-03 (paraglidingový start PG-01), 3 km jihozápadně od Mount Larp."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 5.3,
+      "y_km": 8.01,
+      "eye_height_m": 1.4,
+      "basis_cs": "travnatý vrchol M-03 u paraglidingového startu PG-01; bod je návrh",
+      "plan_local_m": null,
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 439.6,
+      "cover_at_camera": "meadow",
+      "distance_to_coast_km": 2.19,
+      "bearing_deg": 265,
+      "compass": "W",
+      "fov_hint_deg": 62,
+      "terrain_profile": [
+        {
+          "dist_km": 0.1,
+          "cover": "meadow",
+          "z_m": 435
+        },
+        {
+          "dist_km": 0.3,
+          "cover": "meadow",
+          "z_m": 389
+        },
+        {
+          "dist_km": 1.0,
+          "cover": "meadow",
+          "z_m": 248
+        },
+        {
+          "dist_km": 3.0,
+          "cover": "sea",
+          "z_m": 0
+        }
+      ],
+      "sea_visible_km": 6.5,
+      "visible_registered": [],
+      "nearby_registered": [
+        {
+          "id": "SP-03",
+          "name": "Pramen Havlišova potoka",
+          "dist_km": 0.46,
+          "bearing_deg": 229
+        }
+      ],
+      "target_cs": "západ: moře za svahy (≈ 4,6 km) a západ slunce"
+    },
+    "conditions": {
+      "time_of_day": "sunset",
+      "season": "late spring",
+      "weather": "after rain, broken heavy cloud with a narrow clear band at the horizon"
+    },
+    "people": {
+      "count": 2,
+      "description": "two young hikers in dark jackets and beanies sitting side by side on the grass, backs to the camera, backpacks beside them"
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "dark, moody, higher contrast, pulled highlights, cool blue-grey sky with one narrow orange band, lowered exposure",
+      "imperfections": "slightly overexposed horizon band, a soft lens flare"
+    },
+    "canon_notes_cs": [
+      "Atlas: M-03 Round Hill (louky, výhledy), PG-01 paraglidingový start (439,9 m), moře 4,6 km západně (DEM: viditelné).",
+      "Přesně dva lidé; žlutá kvítka = louka (pokryv meadow)."
+    ],
+    "avoid": "no extra people, no faces, no logos on clothing, no tent, no fantasy colours, no Himalayan scale",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_12_SUNSET_ABOVE_LARPIDIA_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_12_SUNSET_ABOVE_LARPIDIA_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_12.json",
+      "expected_photo": "01_PHOTOS/PHOTO_12.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "SP-W",
+      "mpp": 4.0,
+      "window_km": [
+        3.556,
+        6.902,
+        3.0,
+        2.25
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_13",
+    "kind": "photo",
+    "title": "THE HIDDEN RIDGE",
+    "format": "9:16",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Mountains – centre-west",
+    "tags": [
+      "lake",
+      "no people",
+      "ridge",
+      "moody"
+    ],
+    "description_cs": "Výhled z bezpečné vyhlídky na hřebeni dolů na tmavou hladinu přehrady obklopenou strmými zelenými a kamenitými svahy; v popředí travnatý a skalnatý hřeben. Bez lidí.",
+    "registered_location": {
+      "registry_id": "N-04",
+      "name_en": "Larp Reservoir",
+      "name_cs": "Přehradní jezero",
+      "type": "nature",
+      "island": "main",
+      "exist_status": "approved",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 11.52,
+      "y_km": 9.76,
+      "elev_m_model": 54.6,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "N-04",
+          "name": "Larp Reservoir",
+          "x_km": 11.52,
+          "y_km": 9.76
+        }
+      ],
+      "note": "Přehradní jezero N-04 viděné shora z vodní stezky TR-06."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 12.032,
+      "y_km": 9.828,
+      "eye_height_m": 1.6,
+      "basis_cs": "rovná terasa na východním břehu přehrady těsně nad skalnatou hranou svahu, 30 m od vodní stezky TR-06 (85 m n. m., ≈ 20 m nad hladinou); bod je návrh",
+      "plan_local_m": null,
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 85.4,
+      "cover_at_camera": "forest",
+      "distance_to_coast_km": 3.13,
+      "bearing_deg": 278,
+      "compass": "W",
+      "fov_hint_deg": 46,
+      "terrain_profile": [
+        {
+          "dist_km": 0.1,
+          "cover": "lake",
+          "z_m": 62
+        },
+        {
+          "dist_km": 0.3,
+          "cover": "lake",
+          "z_m": 55
+        },
+        {
+          "dist_km": 1.0,
+          "cover": "farmland",
+          "z_m": 94
+        },
+        {
+          "dist_km": 3.0,
+          "cover": "forest",
+          "z_m": 130
+        }
+      ],
+      "sea_visible_km": null,
+      "visible_registered": [
+        {
+          "id": "N-04",
+          "name": "Larp Reservoir",
+          "type": "nature",
+          "bearing_deg": 278,
+          "rel_angle_deg": 0,
+          "dist_km": 0.52,
+          "side": "center"
+        },
+        {
+          "id": "HM-02",
+          "name": "osada (bez názvu)",
+          "type": "settlement",
+          "bearing_deg": 278,
+          "rel_angle_deg": 0,
+          "dist_km": 1.12,
+          "side": "center"
+        },
+        {
+          "id": "M-03",
+          "name": "Round Hill",
+          "type": "peak",
+          "bearing_deg": 285,
+          "rel_angle_deg": 7,
+          "dist_km": 7.0,
+          "side": "center"
+        }
+      ],
+      "nearby_registered": [
+        {
+          "id": "ST-L1-02",
+          "name": "Přehrada",
+          "dist_km": 0.44,
+          "bearing_deg": 126
+        },
+        {
+          "id": "V-07",
+          "name": "Vyhlídka na hrázi přehrady",
+          "dist_km": 0.57,
+          "bearing_deg": 151
+        }
+      ],
+      "look_at": {
+        "id": "N-04",
+        "name": "Larp Reservoir",
+        "bearing_deg": 278,
+        "rel_angle_deg": 0,
+        "dist_km": 0.516,
+        "line_of_sight": true,
+        "lake_surface_visible_fraction": 0.68
+      },
+      "target_cs": "přehradní jezero N-04 a protější lesnaté svahy (W, ≈ 0,55 km k hladině)"
+    },
+    "conditions": {
+      "time_of_day": "early morning",
+      "season": "autumn",
+      "weather": "overcast with thin mist on the water and a break of pale light"
+    },
+    "people": {
+      "count": 0,
+      "description": ""
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "dark muted greens, deep blue-black water, desaturated, lifted blacks, soft grain",
+      "imperfections": "a little noise in the shadows, soft haze over the far slope"
+    },
+    "canon_notes_cs": [
+      "Atlas: jezero N-04 je údolní nádrž se strmými kamenitými břehy (sklony 30–45° u hladiny, pokryv rock, DEM); TR-06 vede východním břehem v 85 m n. m.",
+      "Stanoviště není registrovaná vyhlídka (V-07 je u hráze a hledí na jezero z jihu) → PROPOSED CAMERA POINT na stezce."
+    ],
+    "avoid": "no people, no buildings, no boats, no dam wall, no bright blue tourist water, no text",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_13_THE_HIDDEN_RIDGE_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_13_THE_HIDDEN_RIDGE_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_13.json",
+      "expected_photo": "01_PHOTOS/PHOTO_13.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "SP-W",
+      "mpp": 4.0,
+      "window_km": [
+        10.616,
+        8.96,
+        2.2,
+        1.65
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_14",
+    "kind": "photo",
+    "title": "RIVER TO THE SEA",
+    "format": "16:9",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "South coast",
+    "tags": [
+      "coast",
+      "no people",
+      "river",
+      "autumn"
+    ],
+    "description_cs": "Drsná pobřežní scéna: silný tok hlavní řeky vstupuje do moře. Tmavé mokré kameny, proud vody, pobřežní skalky, chladná atmosféra. Bez lidí.",
+    "registered_location": {
+      "registry_id": "W-01",
+      "name_en": "Larp River mouth",
+      "name_cs": "Hlavní horská řeka (pracovní)",
+      "type": "river",
+      "island": "main",
+      "exist_status": "approved",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 11.59,
+      "y_km": 13.01,
+      "elev_m_model": 199.5,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "W-01",
+          "name": "Larp River mouth",
+          "x_km": 11.59,
+          "y_km": 13.01
+        }
+      ],
+      "note": "Skutečné ústí hlavní řeky W-01 na jižním pobřeží, ≈ 4,5 km západně od Larpingtonu (ústí je z hydrografie atlasu, není samostatným objektem registru)."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 11.6,
+      "y_km": 12.955,
+      "eye_height_m": 1.2,
+      "basis_cs": "břeh řeky asi 55 m nad ústím; bod je návrh",
+      "plan_local_m": null,
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 2.8,
+      "cover_at_camera": "scrub/grass",
+      "distance_to_coast_km": 0.06,
+      "bearing_deg": 175,
+      "compass": "S",
+      "fov_hint_deg": 62,
+      "terrain_profile": [
+        {
+          "dist_km": 0.1,
+          "cover": "sea",
+          "z_m": 0
+        },
+        {
+          "dist_km": 0.3,
+          "cover": "sea",
+          "z_m": 0
+        },
+        {
+          "dist_km": 1.0,
+          "cover": "sea",
+          "z_m": 0
+        },
+        {
+          "dist_km": 3.0,
+          "cover": "sea",
+          "z_m": 0
+        }
+      ],
+      "sea_visible_km": 0.2,
+      "visible_registered": [],
+      "nearby_registered": [],
+      "target_cs": "ústí řeky do moře (jih)"
+    },
+    "conditions": {
+      "time_of_day": "morning",
+      "season": "late autumn",
+      "weather": "cold grey overcast, fine spray in the air"
+    },
+    "people": {
+      "count": 0,
+      "description": ""
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "cool desaturated blue-grey, slightly dark, crisp wet textures, fine grain",
+      "imperfections": "a few droplets on the lens, slight softness at the edges"
+    },
+    "canon_notes_cs": [
+      "Atlas: W-01 dolní tok (2,5 km pod hrází, 43,6 → 2,1 m n. m.) ústí na jižním pobřeží u souřadnice (11,59; 13,01); pobřeží je zde v atlasu písčité (class beach) → kameny a balvany jsou detail ústí.",
+      "Drsnější útesová ústí (potoky W-03, W-04 padají přes okraj útesu SZ) nejsou bezpečně přístupná a mají malý průtok."
+    ],
+    "avoid": "no people, no buildings, no boats, no bridges, no sunny beach vibe, no tropical palms",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_14_RIVER_TO_THE_SEA_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_14_RIVER_TO_THE_SEA_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_14.json",
+      "expected_photo": "01_PHOTOS/PHOTO_14.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "SP-SW",
+      "mpp": 4.0,
+      "window_km": [
+        10.951,
+        12.531,
+        1.3,
+        0.975
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_15",
+    "kind": "photo",
+    "title": "LARPINGTON ROOFTOP NIGHT",
+    "format": "9:16",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Larpington",
+    "tags": [
+      "city",
+      "no people",
+      "night",
+      "terrace",
+      "old money"
+    ],
+    "description_cs": "Noční story fotka z elegantní terasy nad městem: zábradlí, dlažba, v dálce osvětlené historické centrum Larpingtonu. Teplá světla, tmavá obloha, lehce podexponováno. Bez lidí.",
+    "registered_location": {
+      "registry_id": "HV-01",
+      "name_en": "Prémiový hotel – přístavní promenáda",
+      "name_cs": "Prémiový hotel – přístavní promenáda",
+      "type": "poi",
+      "island": "main",
+      "exist_status": "proposed",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 16.49,
+      "y_km": 13.53,
+      "elev_m_model": 7.9,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "HV-01",
+          "name": "Prémiový hotel – přístavní promenáda",
+          "x_km": 16.49,
+          "y_km": 13.53
+        },
+        {
+          "id": "CP-B07",
+          "name": "Historic church (St George's – working name)",
+          "x_km": 15.891,
+          "y_km": 13.651
+        }
+      ],
+      "note": "Prémiový hotel nad přístavní promenádou (HV-01; v plánu CP-B09 je posunut o ≈ 240 m, rozpor C-19) a kostel CP-B07 v centru."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 16.628,
+      "y_km": 13.707,
+      "eye_height_m": 21.5,
+      "basis_cs": "střešní terasa prémiového hotelu CP-B09 (výška 20 m + oko 1,5 m); bod je návrh",
+      "plan_local_m": [
+        3528.0,
+        3407.0
+      ],
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 2.8,
+      "cover_at_camera": "scrub/grass",
+      "distance_to_coast_km": 0.1,
+      "bearing_deg": 274,
+      "compass": "W",
+      "fov_hint_deg": 46,
+      "sea_visible_km": null,
+      "visible_registered": [],
+      "nearby_registered": [],
+      "look_at": {
+        "id": "CP-B07",
+        "name": "Historic church (St George's – working name)",
+        "bearing_deg": 274,
+        "rel_angle_deg": 0,
+        "dist_km": 0.72,
+        "line_of_sight": true
+      },
+      "target_cs": "osvětlené staré město a věž kostela CP-B07 (W, ≈ 0,75 km)"
+    },
+    "conditions": {
+      "time_of_day": "night, about 1.5 hours after sunset",
+      "season": "summer",
+      "weather": "warm, clear, no wind"
+    },
+    "people": {
+      "count": 0,
+      "description": ""
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "moody Instagram look: underexposed by about one stop, warm city lights against a deep navy sky, soft bokeh, fine grain",
+      "imperfections": "slight bloom around the brightest lamps, soft detail in the dark rooftops"
+    },
+    "canon_notes_cs": [
+      "Plán CP-01: hotel CP-B09 (20 m) je nejvyšší budova na promenádě; kostel CP-B07 leží ≈ 750 m západně – viditelnost přes střechy ověřena v modelu města.",
+      "Registr HV-01 (16,49; 13,53) × plán CP-B09 (16,65; 13,71): rozpor C-19 (čeká na potvrzení)."
+    ],
+    "avoid": "no people, no skyscrapers, no neon signs, no readable text, no Dubai-style opulence, no fireworks",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_15_LARPINGTON_ROOFTOP_NIGHT_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_15_LARPINGTON_ROOFTOP_NIGHT_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_15.json",
+      "expected_photo": "01_PHOTOS/PHOTO_15.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "S-03",
+      "mpp": 2.0,
+      "window_km": [
+        15.691,
+        13.042,
+        1.6,
+        1.2
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_16",
+    "kind": "photo",
+    "title": "COASTAL DAWN HAND VIEW",
+    "format": "9:16",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "South-east peninsula (view to Paraland)",
+    "tags": [
+      "coast",
+      "hand only",
+      "dawn",
+      "old money"
+    ],
+    "description_cs": "První osoba na pobřežní vyhlídce: v popředí ruka s elegantními kovovými hodinkami a šálkem kávy natažená k pobřeží; v dálce klidné moře, nízké pobřežní město a gradient svítání. Jen ruka, ne celý člověk.",
+    "registered_location": {
+      "registry_id": "V-04",
+      "name_en": "Vyhlídka na hrotu poloostrova",
+      "name_cs": "Vyhlídka na hrotu poloostrova",
+      "type": "poi",
+      "island": "main",
+      "exist_status": "proposed",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 22.05,
+      "y_km": 14.45,
+      "elev_m_model": 1.2,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "V-04",
+          "name": "Vyhlídka na hrotu poloostrova",
+          "x_km": 22.05,
+          "y_km": 14.45
+        }
+      ],
+      "note": "Vyhlídka na hrotu poloostrova (bezpečná, s oplocením) – pohled přes průliv na Paraland."
+    },
+    "camera_point": {
+      "label": "registered viewpoint V-04",
+      "in_registry": true,
+      "x_km": 22.05,
+      "y_km": 14.45,
+      "eye_height_m": 1.4,
+      "basis_cs": "registrovaná vyhlídka V-04 (kamera přímo na ní)",
+      "plan_local_m": null,
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 1.2,
+      "cover_at_camera": "scrub/grass",
+      "distance_to_coast_km": 0.27,
+      "bearing_deg": 122,
+      "compass": "ESE",
+      "fov_hint_deg": 46,
+      "terrain_profile": [
+        {
+          "dist_km": 0.1,
+          "cover": "scrub/grass",
+          "z_m": 1
+        },
+        {
+          "dist_km": 0.3,
+          "cover": "scrub/grass",
+          "z_m": 0
+        },
+        {
+          "dist_km": 1.0,
+          "cover": "sea",
+          "z_m": 0
+        },
+        {
+          "dist_km": 3.0,
+          "cover": "scrub/grass",
+          "z_m": 38
+        }
+      ],
+      "sea_visible_km": 0.3,
+      "visible_registered": [
+        {
+          "id": "H-02",
+          "name": "Paraland Marina",
+          "type": "port",
+          "bearing_deg": 136,
+          "rel_angle_deg": 14,
+          "dist_km": 1.9,
+          "side": "right"
+        },
+        {
+          "id": "ST-L3-07",
+          "name": "Paraland – Marina",
+          "type": "rail_station",
+          "bearing_deg": 135,
+          "rel_angle_deg": 13,
+          "dist_km": 2.04,
+          "side": "right"
+        },
+        {
+          "id": "PL-05",
+          "name": "Marina Village",
+          "type": "settlement",
+          "bearing_deg": 143,
+          "rel_angle_deg": 21,
+          "dist_km": 2.66,
+          "side": "right"
+        },
+        {
+          "id": "PL-02",
+          "name": "Paraland Castle",
+          "type": "poi",
+          "bearing_deg": 114,
+          "rel_angle_deg": -8,
+          "dist_km": 2.96,
+          "side": "left"
+        },
+        {
+          "id": "A-02",
+          "name": "Paraland Airstrip",
+          "type": "airport",
+          "bearing_deg": 144,
+          "rel_angle_deg": 22,
+          "dist_km": 3.7,
+          "side": "right"
+        },
+        {
+          "id": "PL-03",
+          "name": "South Resorts",
+          "type": "settlement",
+          "bearing_deg": 145,
+          "rel_angle_deg": 23,
+          "dist_km": 4.42,
+          "side": "right"
+        }
+      ],
+      "nearby_registered": [
+        {
+          "id": "PEN-SE",
+          "name": "Paraland Link Peninsula",
+          "dist_km": 0.35,
+          "bearing_deg": 315
+        },
+        {
+          "id": "B-04",
+          "name": "Písčitá pláž (pracovní)",
+          "dist_km": 0.49,
+          "bearing_deg": 289
+        }
+      ],
+      "look_at": {
+        "id": "PL-05",
+        "name": "Marina Village",
+        "bearing_deg": 143,
+        "rel_angle_deg": 21,
+        "dist_km": 2.659,
+        "line_of_sight": true
+      },
+      "target_cs": "Paraland (marina a hrad, 2–3 km ESE)"
+    },
+    "conditions": {
+      "time_of_day": "pre-sunrise blue hour into first light",
+      "season": "winter morning",
+      "weather": "calm, cold, clear"
+    },
+    "people": {
+      "count": 0,
+      "description": "only the first-person right hand and wrist are visible (no face, no body)"
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "serene blue-hour grade: indigo to soft pink and a thin orange line at the horizon, low contrast, gentle grain",
+      "imperfections": "slightly soft focus on the far shore, a faint reflection on the cup"
+    },
+    "canon_notes_cs": [
+      "Registr: V-04 Vyhlídka na hrotu poloostrova (bezpečná, s oplocením); Paraland je vidět: PL-05 143° / 2,7 km, H-02 136° / 1,9 km, hrad PL-02 114° / 3,0 km (DEM: LOS ověřeno).",
+      "Svítání vpravo od severu (ESE) je realistické pro zimní období (slunce vychází na jihovýchodě)."
+    ],
+    "avoid": "no face, no full body, no other people, no phone visible, no brand logos or text on the watch or cup, no boats in the foreground",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_16_COASTAL_DAWN_HAND_VIEW_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_16_COASTAL_DAWN_HAND_VIEW_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_16.json",
+      "expected_photo": "01_PHOTOS/PHOTO_16.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "S-00",
+      "mpp": 10.0,
+      "window_km": [
+        20.53,
+        13.275,
+        3.6,
+        2.7
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_17",
+    "kind": "photo",
+    "title": "OLD MONEY CASTLE MORNING",
+    "format": "16:9",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Paraland",
+    "tags": [
+      "castle",
+      "no people",
+      "old money",
+      "morning"
+    ],
+    "description_cs": "Klidný ranní pohled na nádvoří historického zámeckého objektu: světlý kámen, staré schodiště, formální zahrada a štěrková cesta, jemné ranní světlo. Bez lidí.",
+    "registered_location": {
+      "registry_id": "PL-02",
+      "name_en": "Paraland Castle",
+      "name_cs": "Hrad/zámeček (pracovní)",
+      "type": "poi",
+      "island": "para",
+      "exist_status": "approved",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 24.75,
+      "y_km": 15.67,
+      "elev_m_model": 66.8,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "PL-02",
+          "name": "Paraland Castle",
+          "x_km": 24.75,
+          "y_km": 15.67
+        }
+      ],
+      "note": "Paraland Castle (hrad/zámeček, existence schválena)."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 24.79,
+      "y_km": 15.715,
+      "eye_height_m": 1.6,
+      "basis_cs": "předpolí hradu na konci přístupové silnice RD-PL2; bod je návrh",
+      "plan_local_m": null,
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 65.5,
+      "cover_at_camera": "scrub/grass",
+      "distance_to_coast_km": 0.36,
+      "bearing_deg": 315,
+      "compass": "NW",
+      "fov_hint_deg": 62,
+      "terrain_profile": [
+        {
+          "dist_km": 0.1,
+          "cover": "scrub/grass",
+          "z_m": 66
+        },
+        {
+          "dist_km": 0.3,
+          "cover": "scrub/grass",
+          "z_m": 44
+        },
+        {
+          "dist_km": 1.0,
+          "cover": "sea",
+          "z_m": 0
+        },
+        {
+          "dist_km": 3.0,
+          "cover": "sea",
+          "z_m": 0
+        }
+      ],
+      "sea_visible_km": 6.5,
+      "visible_registered": [
+        {
+          "id": "PL-02",
+          "name": "Paraland Castle",
+          "type": "poi",
+          "bearing_deg": 318,
+          "rel_angle_deg": 3,
+          "dist_km": 0.06,
+          "side": "center"
+        },
+        {
+          "id": "HV-01",
+          "name": "Prémiový hotel – přístavní promenáda",
+          "type": "poi",
+          "bearing_deg": 285,
+          "rel_angle_deg": -30,
+          "dist_km": 8.58,
+          "side": "left"
+        },
+        {
+          "id": "I-01",
+          "name": "Green Industrial Zone",
+          "type": "industry",
+          "bearing_deg": 325,
+          "rel_angle_deg": 10,
+          "dist_km": 8.86,
+          "side": "center"
+        },
+        {
+          "id": "ST-S",
+          "name": "Larpington Střed – Přístav (Žemličkova)",
+          "type": "rail_station",
+          "bearing_deg": 287,
+          "rel_angle_deg": -28,
+          "dist_km": 9.09,
+          "side": "left"
+        },
+        {
+          "id": "C-01",
+          "name": "Larpington",
+          "type": "settlement",
+          "bearing_deg": 292,
+          "rel_angle_deg": -23,
+          "dist_km": 9.41,
+          "side": "left"
+        },
+        {
+          "id": "ST-N",
+          "name": "Larpington Sever (Kynčlova)",
+          "type": "rail_station",
+          "bearing_deg": 298,
+          "rel_angle_deg": -17,
+          "dist_km": 10.09,
+          "side": "left"
+        },
+        {
+          "id": "ST-L2-10",
+          "name": "Letiště",
+          "type": "rail_station",
+          "bearing_deg": 329,
+          "rel_angle_deg": 14,
+          "dist_km": 10.32,
+          "side": "right"
+        },
+        {
+          "id": "HM-03",
+          "name": "osada (bez názvu)",
+          "type": "settlement",
+          "bearing_deg": 329,
+          "rel_angle_deg": 14,
+          "dist_km": 10.48,
+          "side": "right"
+        }
+      ],
+      "nearby_registered": [
+        {
+          "id": "SP-08",
+          "name": "Studánka pod hradem (Paraland)",
+          "dist_km": 0.45,
+          "bearing_deg": 122
+        }
+      ],
+      "target_cs": "průčelí hradu/zámečku (NW)"
+    },
+    "conditions": {
+      "time_of_day": "early morning",
+      "season": "early summer",
+      "weather": "clear with light mist"
+    },
+    "people": {
+      "count": 0,
+      "description": ""
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "quiet old-money look: soft contrast, warm pale highlights, slightly cool shadows, gentle grain",
+      "imperfections": "a little lens softness at the corners, a subtle warm glow near the sun side"
+    },
+    "canon_notes_cs": [
+      "Atlas: PL-02 Paraland Castle (66,8 m, kánon: hrad/zámeček); přístupová silnice RD-PL2 končí 60 m od hradu.",
+      "Vzhled je ilustrativní (atlas nemá půdorys hradu)."
+    ],
+    "avoid": "no people, no cars, no flags with text, no theme-park castle, no tourists, no scaffolding",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_17_OLD_MONEY_CASTLE_MORNING_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_17_OLD_MONEY_CASTLE_MORNING_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_17.json",
+      "expected_photo": "01_PHOTOS/PHOTO_17.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "S-02",
+      "mpp": 5.0,
+      "window_km": [
+        24.311,
+        15.347,
+        0.9,
+        0.675
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_18",
+    "kind": "photo",
+    "title": "OLD MONEY CHURCH COURTYARD",
+    "format": "9:16",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Larpington",
+    "tags": [
+      "church",
+      "no people",
+      "old money",
+      "quiet"
+    ],
+    "description_cs": "Klidný dvůr u kostela s bočním vstupem: staré kamenné zdi, břečťan, jemné světlo, železná branka a staré schody. Luxusní tichý evropský vibe, bez lidí.",
+    "registered_location": {
+      "registry_id": "CP-B07",
+      "name_en": "Historic church (St George's – working name)",
+      "name_cs": "Historický kostel (Kostel sv. Jiří – pracovně)",
+      "type": "building",
+      "island": null,
+      "exist_status": "proposed",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 15.891,
+      "y_km": 13.651,
+      "elev_m_model": null,
+      "source": "atlas/current/capital/cp_objects.json",
+      "all_pins": [
+        {
+          "id": "CP-B07",
+          "name": "Historic church (St George's – working name)",
+          "x_km": 15.891,
+          "y_km": 13.651
+        }
+      ],
+      "note": "Historický kostel (Kostel sv. Jiří – pracovně) na Kostelním náměstí starého Larpingtonu."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 15.857,
+      "y_km": 13.673,
+      "eye_height_m": 1.6,
+      "basis_cs": "jihozápadní roh Kostelního náměstí 35 m od bočního vstupu; „dvůr“ je fotografická interpretace předprostoru kostela, bod je návrh",
+      "plan_local_m": [
+        2757.0,
+        3373.0
+      ],
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 5.3,
+      "cover_at_camera": "scrub/grass",
+      "distance_to_coast_km": 0.21,
+      "bearing_deg": 70,
+      "compass": "ENE",
+      "fov_hint_deg": 46,
+      "sea_visible_km": null,
+      "visible_registered": [],
+      "nearby_registered": [],
+      "look_at": {
+        "id": null,
+        "name": "side door in the south wall of CP-B07",
+        "bearing_deg": 63,
+        "rel_angle_deg": -7,
+        "dist_km": 0.031,
+        "line_of_sight": true
+      },
+      "target_cs": "boční vstup na jižní straně lodi kostela (ENE)"
+    },
+    "conditions": {
+      "time_of_day": "mid-afternoon",
+      "season": "late spring",
+      "weather": "soft diffuse sunlight filtered through leaves"
+    },
+    "people": {
+      "count": 0,
+      "description": ""
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "quiet luxurious look: soft contrast, gently lifted shadows, restrained warm tones, fine grain",
+      "imperfections": "very slight lens softness, faint dappled flare spots through the leaves"
+    },
+    "canon_notes_cs": [
+      "Plán CP-01: kostel CP-B07 (cihla a kámen, mechem porostlý; loď 40 × 15 m s příčnou lodí 14 × 28 m) stojí na Kostelním náměstí CP-SQ04 (74 × 60 m); lipové aleje podél ulic.",
+      "„Dvůr“ není v plánu zakreslen – je to předprostor u jižní strany lodi, fotografická interpretace."
+    ],
+    "avoid": "no people, no cars, no text on plaques or gates, no modern lighting, no flashy luxury",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_18_OLD_MONEY_CHURCH_COURTYARD_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_18_OLD_MONEY_CHURCH_COURTYARD_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_18.json",
+      "expected_photo": "01_PHOTOS/PHOTO_18.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "S-03",
+      "mpp": 2.0,
+      "window_km": [
+        15.656,
+        13.493,
+        0.45,
+        0.338
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_19",
+    "kind": "photo",
+    "title": "MANOR TERRACE SEA VIEW",
+    "format": "9:16",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Paraland",
+    "tags": [
+      "terrace",
+      "no people",
+      "old money",
+      "sea"
+    ],
+    "description_cs": "Decentní luxusní pobřežní terasa s výhledem na moře: kamenné zábradlí, květináč, část stolu nebo židle, sklenice vody nebo káva; v dálce pobřeží a jemné ranní světlo. Bez lidí.",
+    "registered_location": {
+      "registry_id": "PL-03",
+      "name_en": "South Resorts",
+      "name_cs": "Resorty jih (pracovní)",
+      "type": "settlement",
+      "island": "para",
+      "exist_status": "approved",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 24.61,
+      "y_km": 18.054,
+      "elev_m_model": 14.1,
+      "source": "atlas/current/registry/places.json",
+      "all_pins": [
+        {
+          "id": "PL-03",
+          "name": "South Resorts",
+          "x_km": 24.61,
+          "y_km": 18.054
+        }
+      ],
+      "note": "Resorty na jihu Paralandu (existence schválena); historický hotel/vila s terasou je prvek scény."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 24.6,
+      "y_km": 18.06,
+      "eye_height_m": 1.6,
+      "basis_cs": "terasa resortního hotelu v PL-03 (14 m n. m.), výhled na jihozápadní pobřeží; bod je návrh",
+      "plan_local_m": null,
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 14.1,
+      "cover_at_camera": "scrub/grass",
+      "distance_to_coast_km": 0.65,
+      "bearing_deg": 212,
+      "compass": "SSW",
+      "fov_hint_deg": 46,
+      "terrain_profile": [
+        {
+          "dist_km": 0.1,
+          "cover": "scrub/grass",
+          "z_m": 10
+        },
+        {
+          "dist_km": 0.3,
+          "cover": "scrub/grass",
+          "z_m": 4
+        },
+        {
+          "dist_km": 1.0,
+          "cover": "sea",
+          "z_m": 0
+        },
+        {
+          "dist_km": 3.0,
+          "cover": "sea",
+          "z_m": 0
+        }
+      ],
+      "sea_visible_km": 0.7,
+      "visible_registered": [],
+      "nearby_registered": [
+        {
+          "id": "PL-04",
+          "name": "Paraland Aquapark",
+          "dist_km": 0.51,
+          "bearing_deg": 133
+        }
+      ],
+      "target_cs": "zátoka a pobřeží na jihozápadě (SSW–SW)"
+    },
+    "conditions": {
+      "time_of_day": "early morning",
+      "season": "late summer",
+      "weather": "clear, calm sea"
+    },
+    "people": {
+      "count": 0,
+      "description": ""
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "soft quiet-elegance grade: gently lifted blacks, creamy highlights, muted turquoise, fine grain",
+      "imperfections": "a slight glare on the glass, soft focus on the far headland"
+    },
+    "canon_notes_cs": [
+      "Atlas: PL-03 Resorty jih (14 m n. m., 300 obyvatel modelově), pláž B-05 a aquapark PL-04 poblíž; kánon: kapacitní rezervace, ochrana místních.",
+      "Hotel/vila jsou ilustrativní (v registru je jen oblast resortů)."
+    ],
+    "avoid": "no people, no pool parties, no gold or marble excess, no yachts in the foreground, no readable text",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_19_MANOR_TERRACE_SEA_VIEW_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_19_MANOR_TERRACE_SEA_VIEW_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_19.json",
+      "expected_photo": "01_PHOTOS/PHOTO_19.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "S-02",
+      "mpp": 5.0,
+      "window_km": [
+        23.535,
+        17.417,
+        2.0,
+        1.5
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  },
+  {
+    "scene_id": "PHOTO_20",
+    "kind": "photo",
+    "title": "HERITAGE STREET ELEGANCE",
+    "format": "16:9",
+    "status": "prompt-ready",
+    "generated_image": null,
+    "region": "Larpington",
+    "tags": [
+      "city",
+      "no people",
+      "old money",
+      "street",
+      "classic car"
+    ],
+    "description_cs": "Elegantní ulice u malého náměstí se zachovalými historickými fasádami, decentní obchod, kamenná budova s věží, diskrétně zaparkované klasické auto. Jemné večerní světlo. Bez lidí.",
+    "registered_location": {
+      "registry_id": "CP-B08",
+      "name_en": "Market hall",
+      "name_cs": "Tržní hala",
+      "type": "building",
+      "island": null,
+      "exist_status": "proposed",
+      "name_status": "proposed",
+      "pos_status": "proposed",
+      "x_km": 16.58,
+      "y_km": 13.607,
+      "elev_m_model": null,
+      "source": "atlas/current/capital/cp_objects.json",
+      "all_pins": [
+        {
+          "id": "CP-B08",
+          "name": "Market hall",
+          "x_km": 16.58,
+          "y_km": 13.607
+        },
+        {
+          "id": "CP-SQ03",
+          "name": "Market Square",
+          "x_km": 16.58,
+          "y_km": 13.621
+        }
+      ],
+      "note": "Tržní náměstí a Tržní hala ve starém městě Larpingtonu."
+    },
+    "camera_point": {
+      "label": "PROPOSED CAMERA POINT",
+      "in_registry": false,
+      "x_km": 16.458,
+      "y_km": 13.665,
+      "eye_height_m": 1.6,
+      "basis_cs": "Tržní ulice (třída C, 8 m) 75 m před Tržním náměstím; bod je návrh",
+      "plan_local_m": [
+        3358.0,
+        3365.0
+      ],
+      "note": "souřadnice jsou lokální km atlasu (x východ, y jih, počátek v SZ rohu rámce 24 × 16 km); nejde o GPS"
+    },
+    "view": {
+      "ground_elev_m": 4.3,
+      "cover_at_camera": "scrub/grass",
+      "distance_to_coast_km": 0.19,
+      "bearing_deg": 70,
+      "compass": "ENE",
+      "fov_hint_deg": 62,
+      "sea_visible_km": null,
+      "visible_registered": [],
+      "nearby_registered": [
+        {
+          "id": "HV-01",
+          "name": "Prémiový hotel – přístavní promenáda",
+          "dist_km": 0.14,
+          "bearing_deg": 13
+        },
+        {
+          "id": "C-02",
+          "name": "Larpington Old Harbour",
+          "dist_km": 0.29,
+          "bearing_deg": 208
+        }
+      ],
+      "look_at": {
+        "id": "CP-B08",
+        "name": "Market hall",
+        "bearing_deg": 64,
+        "rel_angle_deg": -6,
+        "dist_km": 0.106,
+        "line_of_sight": true
+      },
+      "target_cs": "Tržní náměstí a Tržní hala (ENE)"
+    },
+    "conditions": {
+      "time_of_day": "golden hour (about an hour before sunset)",
+      "season": "autumn",
+      "weather": "clear, still air"
+    },
+    "people": {
+      "count": 0,
+      "description": ""
+    },
+    "photo_style": {
+      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
+      "grade": "old-money city-walk look: warm golden highlights, soft shadows, slightly lowered exposure, restrained saturation, fine grain",
+      "imperfections": "faint lens flare from low sun, slightly soft frame corners"
+    },
+    "canon_notes_cs": [
+      "Plán CP-01: Tržní náměstí CP-SQ03 (100 × 66 m) a Tržní hala CP-B08 (54 × 22 m, 10 m); Tržní ulice (8 m) vede z Přístavního náměstí k tržišti.",
+      "Klasické auto je jen doplněk, ne hlavní prvek."
+    ],
+    "avoid": "no people, no modern signage, no neon, no readable text, no flashy supercars, no busy traffic",
+    "files": {
+      "map": "02_MAP_PINS/PHOTO_20_HERITAGE_STREET_ELEGANCE_map.jpg",
+      "prompt": "03_PHOTO_PROMPTS/PHOTO_20_HERITAGE_STREET_ELEGANCE_prompt.txt",
+      "metadata": "04_PHOTO_METADATA/PHOTO_20.json",
+      "expected_photo": "01_PHOTOS/PHOTO_20.jpg"
+    },
+    "disclaimer_cs": "Fiktivní svět Larpidie. Mapové podklady jsou simulované satelitní vizualizace atlasu; polohy jsou pracovní návrh (proposed).",
+    "map": {
+      "source": "S-03",
+      "mpp": 2.0,
+      "window_km": [
+        16.183,
+        13.371,
+        0.7,
+        0.525
+      ],
+      "size_px": [
+        1400,
+        1050
+      ],
+      "note": "simulovaný satelitní podklad atlasu + vektorové vrstvy; PROPOSED CAMERA POINT odlišen od registrované lokality"
+    }
+  }
+]

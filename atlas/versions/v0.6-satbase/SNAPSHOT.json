@@ -1,0 +1,16 @@
+{
+  "name": "v0.6-satbase",
+  "created": "2026-10-23T19:21:58+02:00",
+  "description": "F6: simulované satelitní podklady S-01 (Larpidie) a S-02 (Paraland), masky, georeference, popisky, prompty a kontrola tvaru.",
+  "changes": [
+    "S-01_base 2240x1620 px @10 m, S-02_base 1400x1120 px @5 m (kolmý pohled, sever nahoře); IoU souše vlastních renderů 0,999 / 0,997",
+    "Masky souše a tříd, georeference (S-0x_georef.json se SHA obrysu), popisky cs/ja/en jako SVG textové vrstvy, upozornění na simulaci",
+    "Prompty (EN) + negativní omezení pro externí generátor s referenčním obrázkem; verify_sat.py (IoU >= 0,95)",
+    "Bez placené AI (R-05); fotorealismus se řeší externě z této reference",
+    "check_atlas.py rozšířen o kontroly satelitních podkladů; docs/F6_SAT_NOTES.md"
+  ],
+  "parent": "v0.5-atlas",
+  "bible_version": "1.0-draft",
+  "bible_sha256": "252f0ebd33c73a87fff9db21abf0684d34f1c7c4f24bbe7905bdb5e11fef58a2",
+  "files": 103
+}

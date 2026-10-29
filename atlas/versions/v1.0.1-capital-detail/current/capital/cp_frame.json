@@ -1,0 +1,18 @@
+{
+  "id": "CP-01",
+  "title": "Larpington – podklad plánu hlavního města (návrh)",
+  "status": "proposed",
+  "local_system": "u = východ (m), v = jih (m); počátek v SZ rohu okna",
+  "origin_atlas_km": {
+    "x": 13.1,
+    "y": 10.3
+  },
+  "size_m": {
+    "w": 5940.0,
+    "h": 4200.0
+  },
+  "sheet": "A2 594 × 420 mm, měřítko 1 : 10 000 (1 jednotka SVG = 1 m)",
+  "convert": "x_km = 13.10 + u/1000 ; y_km = 10.30 + v/1000",
+  "work_raster_cell_m": 2.0,
+  "atlas_version": "1.0-draft"
+}

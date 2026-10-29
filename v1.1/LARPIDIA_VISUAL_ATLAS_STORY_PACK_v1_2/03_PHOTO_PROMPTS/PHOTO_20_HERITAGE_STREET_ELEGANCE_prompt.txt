@@ -1,0 +1,19 @@
+Scene name (for reference only, never to be written in the image): HERITAGE STREET ELEGANCE. Format 16:9.
+
+Create a horizontal 16:9 widescreen smartphone photo. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+
+SCENE: An elegant street opening onto a small square in a historic island town at golden hour: well-kept historic facades of brick and honey stone with white sash windows and dark green shutters, a discreet boutique with a quiet window display (no readable lettering), an old stone market hall with a clock-less gable in the background, a classic cream saloon car parked discreetly at the side of the street (not the focus, no readable plate), cast-iron lamp posts, planters, granite setts.
+
+COMPOSITION: Wide landscape; the street curves gently toward the square, the car small at the left edge, the stone hall as the visual anchor in the background.
+
+LIGHT AND ATMOSPHERE: Warm low sun along the street, long soft shadows, golden glow on the upper facades, quiet shade below.
+
+PHOTO LOOK: old-money city-walk look: warm golden highlights, soft shadows, slightly lowered exposure, restrained saturation, fine grain. Subtle authentic imperfections (only a few, not all at once): faint lens flare from low sun, slightly soft frame corners.
+
+PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+
+PLACE AND SCALE: Larpington old town, fictional: a market street near the market square and a stone market hall, English-style brick and stone of two to three floors.
+
+AVOID: no people, no modern signage, no neon, no readable text, no flashy supercars, no busy traffic. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+
+Aspect ratio 16:9.

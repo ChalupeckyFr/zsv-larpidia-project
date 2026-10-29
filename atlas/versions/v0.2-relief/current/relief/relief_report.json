@@ -1,0 +1,66 @@
+{
+  "atlas_version": "0.2-relief",
+  "status": "proposed",
+  "max_elev_m": 560.0,
+  "max_at_km": [
+    6.97,
+    5.45
+  ],
+  "lake": {
+    "level_m_model": 67.7,
+    "area_km2": 0.605,
+    "dam_foot_m_model": 43.7,
+    "dam_height_m_model": 29.0,
+    "volume_Mm3_model": 4.24,
+    "note": "objem = plocha × průměrná hloubka 7 m (modelový odhad)"
+  },
+  "waterfall": {
+    "x": 10.332,
+    "y": 8.644,
+    "top_m": 127.935,
+    "bottom_m": 83.906,
+    "drop_m": 36.0
+  },
+  "land_slope_over_35deg_pct": 0.44,
+  "elevations_m_model": {
+    "M-01": 560.0,
+    "M-02": 510.0,
+    "M-03": 440.0,
+    "N-01": 14.6,
+    "N-02": 195.0,
+    "N-03": 127.1,
+    "N-04": 54.7,
+    "C-01": 18.2,
+    "C-02": 1.2,
+    "C-03": 25.1,
+    "C-04": 23.3,
+    "C-05": 12.7,
+    "C-06": 19.9,
+    "T-01": 41.2,
+    "T-02": 56.3,
+    "T-03": 192.0,
+    "T-04": 96.8,
+    "T-05": 21.2,
+    "I-01": 18.4,
+    "I-02": 10.6,
+    "I-03": 0.5,
+    "A-01": 15.0,
+    "P-01": 2.0
+  },
+  "checks": {
+    "nejvyšší bod = M-01 (±0,5 km)": true,
+    "maximum 555–565 m (nejvyšší vrchol 560 m)": true,
+    "výšky vrcholů M-01/M-02/M-03 = 560/510/440 ± 3 m": true,
+    "žádná záporná výška na souši": true,
+    "všechny toky klesají (monotónní koryto)": true,
+    "hladina přehrady je plochá a pod vodopádem": true,
+    "výška vodopádu N-03 ≥ 30 m": true,
+    "jeskyně N-02 je výš než vodopád N-03": true,
+    "vyhlídka N-01 ve výšce 8–18 m (cca 10m sráz)": true,
+    "centrum hlavního města 5–30 m, přístav ≤ 2 m": true,
+    "dráha letiště A-01 má sklon < 1,5°": true,
+    "žádná pláž na útesovém severozápadě": true,
+    "přehrada má plochu 0,3–1,0 km²": true
+  },
+  "all_ok": true
+}

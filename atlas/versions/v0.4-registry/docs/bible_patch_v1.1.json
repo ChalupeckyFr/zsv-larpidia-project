@@ -1,0 +1,372 @@
+{
+  "patch_meta": {
+    "target_file": "data/larpidia_world_bible.json",
+    "base_version": "1.0-draft",
+    "base_sha256": "252f0ebd33c73a87fff9db21abf0684d34f1c7c4f24bbe7905bdb5e11fef58a2",
+    "proposed_version": "1.1-draft",
+    "format": "JSON Patch (RFC 6902) – NEAPLIKOVAT automaticky; sloučit až po schválení týmem",
+    "atlas_version": "0.4-registry",
+    "rule": "originál bible se nemění (R-03); všechny položky mají status proposed"
+  },
+  "patch": [
+    {
+      "op": "add",
+      "path": "/geography/atlas_frame",
+      "value": {
+        "value": {
+          "frame_km": [
+            24,
+            16
+          ],
+          "canvas_a2_scale": "1:50000 (594×420 mm)",
+          "variant": "B",
+          "coast_sha256": "ffca09acdec9dac899c0699fd9abe6918338e5acbea6d180e42eb85ce34b3801"
+        },
+        "status": "proposed",
+        "note": "R-01, R-06: rámec 24×16 km, varianta B obrysu; geometrie v atlas/current/geometry/outline_coast.json"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/geography/main_island_area_model_km2",
+      "value": {
+        "value": 175.0,
+        "status": "proposed",
+        "note": "modelová plocha z vektorového obrysu (cíl 175)"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/geography/paraland_area_model_km2",
+      "value": {
+        "value": 13.98,
+        "status": "proposed",
+        "note": "cíl 14"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/geography/strait_model_km",
+      "value": {
+        "value": 1.5,
+        "status": "proposed",
+        "note": "nejmenší vzdálenost hlavní ostrov – Paraland"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/geography/coordinates_table_v1_1",
+      "value": {
+        "value": {
+          "M-01": {
+            "X_pct": 29.0,
+            "Y_pct": 34.0,
+            "x_km": 6.96,
+            "y_km": 5.44
+          },
+          "M-02": {
+            "X_pct": 38.0,
+            "Y_pct": 33.0,
+            "x_km": 9.12,
+            "y_km": 5.28
+          },
+          "M-03": {
+            "X_pct": 22.0,
+            "Y_pct": 50.0,
+            "x_km": 5.28,
+            "y_km": 8.0
+          },
+          "N-01": {
+            "X_pct": 12.0,
+            "Y_pct": 40.0,
+            "x_km": 2.88,
+            "y_km": 6.4
+          },
+          "N-02": {
+            "X_pct": 38.0,
+            "Y_pct": 47.0,
+            "x_km": 9.12,
+            "y_km": 7.52
+          },
+          "N-03": {
+            "X_pct": 43.0,
+            "Y_pct": 54.0,
+            "x_km": 10.32,
+            "y_km": 8.64
+          },
+          "N-04": {
+            "X_pct": 48.0,
+            "Y_pct": 61.0,
+            "x_km": 11.52,
+            "y_km": 9.76
+          },
+          "C-01": {
+            "X_pct": 67.0,
+            "Y_pct": 76.0,
+            "x_km": 16.08,
+            "y_km": 12.16
+          },
+          "C-02": {
+            "X_pct": 68.0,
+            "Y_pct": 87.0,
+            "x_km": 16.32,
+            "y_km": 13.92
+          },
+          "C-03": {
+            "X_pct": 61.0,
+            "Y_pct": 76.0,
+            "x_km": 14.64,
+            "y_km": 12.16
+          },
+          "C-04": {
+            "X_pct": 66.0,
+            "Y_pct": 71.0,
+            "x_km": 15.84,
+            "y_km": 11.36
+          },
+          "C-05": {
+            "X_pct": 72.0,
+            "Y_pct": 76.0,
+            "x_km": 17.28,
+            "y_km": 12.16
+          },
+          "C-06": {
+            "X_pct": 67.0,
+            "Y_pct": 81.0,
+            "x_km": 16.08,
+            "y_km": 12.96
+          },
+          "T-01": {
+            "X_pct": 70.0,
+            "Y_pct": 49.0,
+            "x_km": 16.8,
+            "y_km": 7.84
+          },
+          "T-02": {
+            "X_pct": 48.0,
+            "Y_pct": 72.0,
+            "x_km": 11.52,
+            "y_km": 11.52
+          },
+          "T-03": {
+            "X_pct": 17.0,
+            "Y_pct": 60.0,
+            "x_km": 4.08,
+            "y_km": 9.6
+          },
+          "T-04": {
+            "X_pct": 56.0,
+            "Y_pct": 23.0,
+            "x_km": 13.44,
+            "y_km": 3.68
+          },
+          "T-05": {
+            "X_pct": 73.0,
+            "Y_pct": 26.5,
+            "x_km": 17.52,
+            "y_km": 4.24
+          },
+          "I-01": {
+            "X_pct": 82.0,
+            "Y_pct": 53.0,
+            "x_km": 19.68,
+            "y_km": 8.48
+          },
+          "I-02": {
+            "X_pct": 88.0,
+            "Y_pct": 60.0,
+            "x_km": 21.12,
+            "y_km": 9.6
+          },
+          "I-03": {
+            "X_pct": 94.0,
+            "Y_pct": 64.0,
+            "x_km": 22.56,
+            "y_km": 10.24
+          },
+          "A-01": {
+            "X_pct": 82.0,
+            "Y_pct": 40.0,
+            "x_km": 19.68,
+            "y_km": 6.4
+          },
+          "P-01": {
+            "X_pct": 82.0,
+            "Y_pct": 83.0,
+            "x_km": 19.68,
+            "y_km": 13.28
+          }
+        },
+        "status": "proposed",
+        "note": "polohy z tabulky GEOGRAPHY po přijetí 3 odchylek ≤ 3 % (T-04, T-05, A-01)"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/geography/peaks_model_m",
+      "value": {
+        "value": {
+          "M-01": 560.0,
+          "M-02": 510.0,
+          "M-03": 440.0
+        },
+        "status": "proposed",
+        "note": "M-01 = working_peak_m 560; M-02, M-03 modelové"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/geography/hydrology_model",
+      "value": {
+        "value": {
+          "lake_level_m": 67.6,
+          "lake_area_km2": 0.605,
+          "dam_height_m": 29.0,
+          "waterfall_drop_m": 43.9,
+          "cave_elev_m": 194.1
+        },
+        "status": "proposed",
+        "note": "modelové hodnoty pro vodárenské dílo, vodopád a jeskyni"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/urbanism/town_ids",
+      "value": {
+        "value": {
+          "Hoshimachi": "T-06",
+          "Aokawa": "T-05"
+        },
+        "status": "proposed",
+        "note": "ID pro města z other_towns"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/urbanism/population_distribution_model",
+      "value": {
+        "value": {
+          "Larpington": 12000,
+          "Praha": 4500,
+          "Aokawa": 2600,
+          "Ōru Maito": 2300,
+          "Čimprlichovo Hradiště": 2000,
+          "Hoshimachi": 1600,
+          "Havlišovo Doupě": 700,
+          "Zelená průmyslová zóna": 600,
+          "Paraland": 1400,
+          "osady (6×200)": 1200,
+          "roztroušeně": 3100
+        },
+        "status": "proposed",
+        "note": "součet 32 000; modelové, ne sčítání"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/mobility/rail_network_model",
+      "value": {
+        "value": {
+          "L1": {
+            "km": 8.72,
+            "max_grade_pct": 4.9,
+            "stations": [
+              "Larpington Západ",
+              "Přehrada",
+              "Vodopád",
+              "Krystalová jeskyně",
+              "Horská stanice"
+            ]
+          },
+          "L2": {
+            "km": 29.0,
+            "stations": 13
+          },
+          "L3": {
+            "km": 15.9,
+            "undersea_m": 1482,
+            "glass_m": 226,
+            "transfers_to_L2": 3
+          }
+        },
+        "status": "proposed",
+        "note": "vedení a stanice návrh; role linek schváleny"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/mobility/seaports_ids",
+      "value": {
+        "value": {
+          "C-02": "historický",
+          "I-03": "nákladní",
+          "H-01": "severní rybářský",
+          "H-02": "marina Paraland"
+        },
+        "status": "proposed",
+        "note": "≥ 3 přístavy (approved), ID návrh"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/mobility/airports_detail",
+      "value": {
+        "value": {
+          "A-01": {
+            "runway": "09/27",
+            "length_m": 1900
+          },
+          "A-02": {
+            "runway": "04/22 travnatá",
+            "length_m": 700
+          }
+        },
+        "status": "proposed",
+        "note": "dvě letiště (návrh), Paraland jen malá plocha"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/mobility/road_network_model",
+      "value": {
+        "value": {
+          "R1_km": 53.9,
+          "R1_tunnels_km": 2.23,
+          "R2_km": 49.0,
+          "R3_km": 30.4,
+          "trails_km": 24.8,
+          "cycleways_km": 93.7
+        },
+        "status": "proposed",
+        "note": "R1 v SZ po útesech do 293 m a v 3 tunelech"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/open_decisions/-",
+      "value": {
+        "id": "D7",
+        "question": "Potvrdit obrys (varianta B) a tři odchylky ≤ 3 % (T-04, T-05, A-01).",
+        "suggestion": "Viz atlas/current/registry/deviations.csv"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/open_decisions/-",
+      "value": {
+        "id": "D8",
+        "question": "Potvrdit vedení L1/L2/L3, stanice a okružní silnici R1 (útesy + 3 tunely).",
+        "suggestion": "Viz atlas/docs/F3_HUMAN_NOTES.md"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/open_decisions/-",
+      "value": {
+        "id": "D9",
+        "question": "Potvrdit pracovní jména vrcholů, řek, zátok a míst na Paralandu.",
+        "suggestion": "Viz atlas/docs/NAMES_AND_DEVIATIONS_TO_APPROVE.md"
+      }
+    }
+  ]
+}
