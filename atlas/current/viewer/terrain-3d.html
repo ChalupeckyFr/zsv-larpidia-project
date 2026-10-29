@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>3D reliéf Larpidie</title>
+  <style>
+    :root{--paper:#edf0eb;--card:#fafbf7;--ink:#25362f;--muted:#69796f;--line:#d4ddd4;--accent:#9b583d;--green:#516f52;--sea:#1e5265}
+    *{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden}body{display:grid;grid-template-rows:auto 1fr;background:var(--paper);color:var(--ink);font:15px/1.45 'Segoe UI',system-ui,sans-serif}
+    header{display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:54px;padding:8px 15px;border-bottom:1px solid var(--line);background:var(--card)}header strong{font:650 17px/1.2 Georgia,serif}header small{display:block;margin-top:3px;color:var(--muted);font-size:13px;font-weight:600}.header-tools{display:flex;align-items:center;gap:13px}.model-badge{padding:5px 9px;border:1px solid #c9d6c7;border-radius:20px;color:#476548;font-size:12px;font-weight:750;white-space:nowrap}
+    button{font:inherit;cursor:pointer}button:focus-visible,input:focus-visible{outline:3px solid #d29b4c;outline-offset:2px}
+    .reset{padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);font-size:12px;font-weight:650}
+    main{display:grid;grid-template-columns:260px minmax(0,1fr);min-height:0}
+    aside{overflow:auto;padding:14px;background:var(--card);border-right:1px solid var(--line)}
+    h2{margin:12px 0 7px;color:var(--muted);font-size:13px;letter-spacing:.7px;text-transform:uppercase;font-weight:750}h2:first-child{margin-top:0}
+    .mode-select{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:3px;border:1px solid var(--line);border-radius:7px;background:var(--paper)}.mode-select button{padding:7px 5px;border:0;border-radius:5px;background:transparent;color:#607165;font-size:13px;font-weight:750}.mode-select button[aria-pressed=true]{background:#fff;color:var(--ink);box-shadow:0 1px 5px #26352e20}
+    .legend{display:grid;gap:7px;padding:3px 0 10px}.legend-item{display:flex;align-items:center;gap:9px;color:#506258;font-size:13px;font-weight:650}.swatch{width:13px;height:13px;border-radius:3px;box-shadow:inset 0 0 0 1px #20302018}
+    .height-legend{margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}.height-ramp{height:12px;margin:8px 0 4px;border:1px solid #69775c4d;border-radius:10px;background:linear-gradient(90deg,#709168,#b2bd7e,#c9b783,#9a9685,#e4e0ce)}.ramp-labels{display:flex;justify-content:space-between;color:var(--muted);font-size:10px;font-weight:650}
+    .range-label{display:flex;justify-content:space-between;margin:14px 0 4px;color:#53645a;font-size:13px;font-weight:750}.range-label output{color:var(--green)}input[type=range]{width:100%;accent-color:var(--green)}
+    .howto{margin-top:14px;padding:10px 11px;border-left:3px solid var(--green);background:#edf2e9;color:#5b6d60;font-size:12px;font-weight:600;line-height:1.65}.howto b{color:#344b3a}
+    .source-note{margin:13px 0 0;color:#68776d;font-size:11px;font-weight:550;line-height:1.65}
+    .scene{position:relative;min-width:0;min-height:0;background:linear-gradient(180deg,#f8fdff 0%,#eaf7fc 42%,#b6e0ed 58%,#1689b4 100%)}canvas{width:100%;height:100%;display:block;touch-action:none;cursor:grab}canvas.drag{cursor:grabbing}
+    .compass{position:absolute;top:13px;left:15px;width:38px;height:47px;display:grid;align-content:center;justify-items:center;border:1px solid #bfcbbf;border-radius:20px;background:#fbfcf8dd;color:#465c4b;font-size:11px;font-weight:800;line-height:1.1;pointer-events:none}.compass span{font-size:17px}.scene-label{position:absolute;right:13px;bottom:12px;padding:7px 10px;border:1px solid #c7d1c6;border-radius:5px;background:#fbfcf8e8;color:#526256;font-size:12px;font-weight:750;pointer-events:none}.error{display:none;position:absolute;inset:20px;place-content:center;padding:20px;border:1px solid #d9c2ad;background:#fff8f1;color:#75492e;text-align:center;font-weight:700}
+    @media(max-width:760px){body{grid-template-rows:auto 1fr}header{min-height:48px;padding:7px 10px}header strong{font-size:15px}header small{font-size:10px}.model-badge{display:none}.header-tools{gap:6px}.reset{font-size:10px;padding:6px 8px}main{grid-template-columns:1fr;grid-template-rows:minmax(230px,1fr) minmax(125px,31vh)}aside{grid-row:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px;padding:10px 12px;border-top:1px solid var(--line);border-right:0;max-height:31vh}aside section:nth-child(3),aside .howto,aside .source-note{grid-column:1/-1}h2{font-size:11px}.legend-item{font-size:11px}.scene{grid-row:1;min-height:230px}.source-note{margin-bottom:2px}}
+    @media(max-width:410px){main{grid-template-rows:minmax(190px,1fr) minmax(110px,35vh)}aside{grid-template-columns:1fr;max-height:35vh}.scene{min-height:190px}aside .howto,aside .source-note{grid-column:auto}}
+  </style>
+  <script src="terrain-3d-data.js"></script>
+</head>
+<body>
+  <header>
+    <div><strong>3D reliéf Larpidie a Paralandu</strong><small>Digitální model terénu · interaktivní pohled</small></div>
+    <div class="header-tools"><span class="model-badge">NÁVRH · modelové výšky</span><button class="reset" id="reset">Výchozí pohled</button></div>
+  </header>
+  <main>
+    <aside aria-label="Nastavení a legenda 3D mapy">
+      <section><h2>Barvy mapy</h2><div class="mode-select" role="group" aria-label="Barevné zobrazení terénu"><button type="button" data-style="relief" aria-pressed="true">Reliéf</button><button type="button" data-style="nature" aria-pressed="false">Příroda</button></div><div class="legend" id="legend"></div></section>
+      <section class="height-legend"><h2>Nadmořská výška</h2><div class="height-ramp"></div><div class="ramp-labels"><span>nížina</span><span>hory · 560 m</span></div><label class="range-label" for="exaggeration">Zvýraznění výšek <output id="exaggeration-value">7×</output></label><input id="exaggeration" type="range" min="3" max="11" step="1" value="7" /></section>
+      <section class="howto"><b>Otáčení:</b> táhněte mapu myší nebo prstem.<br /><b>Přiblížení:</b> kolečko myši nebo gesto dvěma prsty.<br /><b>Pohyb:</b> zkuste terén otočit ze severu i z jihu.</section>
+      <p class="source-note">Model vychází z výškového rastru 20 m, pro plynulé vykreslení zobrazeného jako síť bodů po 100 m. Výšky jsou pro čitelnost zvýrazněné; nejde o skutečně zaměřený terén. Barvy přírody zobrazují návrhový pokryv krajiny.</p>
+    </aside>
+    <section class="scene" aria-label="Otočný 3D model ostrovů">
+      <canvas id="terrain" aria-label="3D model reliéfu Larpidie a Paralandu; tažením otáčejte pohledem"></canvas>
+      <div class="compass">S<span>↑</span></div>
+      <div class="scene-label">Hlavní ostrov + Paraland · výšky modelové</div>
+      <div class="error" id="error"></div>
+    </section>
+  </main>
+  <script>
+  (()=>{
+    const data=window.LARPIDIA_TERRAIN_DATA;
+    const canvas=document.getElementById('terrain'), error=document.getElementById('error');
+    const gl=canvas.getContext('webgl',{antialias:true,alpha:true,powerPreference:'high-performance'});
+    if(!data||!gl){error.style.display='grid';error.textContent=!data?'Nepodařilo se načíst data výškového modelu.':'Prohlížeč nepodporuje WebGL; otevřete atlas v aktuálním prohlížeči.';return}
+    const raw=Uint8Array.from(atob(data.packed),c=>c.charCodeAt(0));
+    const count=data.width*data.height, heights=new Float32Array(count), cover=new Uint8Array(count);
+    for(let i=0;i<count;i++){heights[i]=raw[i*2]/255*data.max_elevation_m;cover[i]=raw[i*2+1]}
+    const natureColors=['#1689b4','#47664b','#b4c98d','#d6c38a','#b6a16b','#879a78','#999382','#e8d5a5','#62c7eb','#00a8ee'];
+    const reliefStops=[[0,'#6d8d66'],[25,'#9bb27d'],[100,'#b5bd86'],[220,'#c8b989'],[380,'#a9a28d'],[560,'#e4e0ce']];
+    const toRgb=h=>{const x=h.replace('#','');return[parseInt(x.slice(0,2),16)/255,parseInt(x.slice(2,4),16)/255,parseInt(x.slice(4,6),16)/255]};
+    const rgbStops=reliefStops.map(([v,c])=>[v,toRgb(c)]);
+    const shadeForHeight=h=>{for(let i=1;i<rgbStops.length;i++){if(h<=rgbStops[i][0]){const[a,ca]=rgbStops[i-1],[b,cb]=rgbStops[i],t=Math.max(0,Math.min(1,(h-a)/(b-a)));return ca.map((x,k)=>x+(cb[k]-x)*t)}}return rgbStops.at(-1)[1]};
+    let style='relief',exag=7,yaw=.42,tilt=.82,distance=38,indexBuffer,indexCount=0;
+    const legend=document.getElementById('legend');
+    const reliefLegend=[['#1689b4','Moře a hlubší voda'],['#9bb27d','Nízká krajina'],['#c8b989','Vyšší svahy'],['#e4e0ce','Horské vrcholy']];
+    const natureLegend=[['#1689b4','Moře'],['#47664b','Les'],['#b4c98d','Louka'],['#d6c38a','Pole a terasy'],['#879a78','Křoviny'],['#999382','Skály'],['#62c7eb','Jezera'],['#00a8ee','Řeky a potoky']];
+    function renderLegend(){const items=style==='relief'?reliefLegend:natureLegend;legend.innerHTML=items.map(([color,name])=>`<span class="legend-item"><i class="swatch" style="background:${color}"></i>${name}</span>`).join('')}
+    const vertexShader=`attribute vec3 aPosition;attribute vec3 aColor;attribute vec3 aNormal;uniform mat4 uMvp;varying vec3 vColor;varying vec3 vNormal;void main(){gl_Position=uMvp*vec4(aPosition,1.0);vColor=aColor;vNormal=aNormal;}`;
+    const fragmentShader=`precision mediump float;varying vec3 vColor;varying vec3 vNormal;void main(){vec3 light=normalize(vec3(-0.45,0.85,0.45));float diffuse=max(dot(normalize(vNormal),light),0.0);float shade=0.5+0.5*diffuse;gl_FragColor=vec4(vColor*shade,1.0);}`;
+    function compile(type,source){const shader=gl.createShader(type);gl.shaderSource(shader,source);gl.compileShader(shader);if(!gl.getShaderParameter(shader,gl.COMPILE_STATUS))throw new Error(gl.getShaderInfoLog(shader)||'Chyba shaderu');return shader}
+    const program=gl.createProgram();gl.attachShader(program,compile(gl.VERTEX_SHADER,vertexShader));gl.attachShader(program,compile(gl.FRAGMENT_SHADER,fragmentShader));gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS)){error.style.display='grid';error.textContent='Nepodařilo se připravit 3D vykreslení.';return}gl.useProgram(program);
+    const loc={position:gl.getAttribLocation(program,'aPosition'),color:gl.getAttribLocation(program,'aColor'),normal:gl.getAttribLocation(program,'aNormal'),mvp:gl.getUniformLocation(program,'uMvp')};
+    const vertexBuffer=gl.createBuffer(),indexBuf=gl.createBuffer();
+    function colorForVertex(i){if(style==='nature')return toRgb(natureColors[Math.min(9,cover[i])]);if(cover[i]===0&&heights[i]<2)return toRgb('#1689b4');return shadeForHeight(heights[i])}
+    function createMesh(){
+      const w=data.width,h=data.height,packedVertices=new Float32Array(count*9),vertical=exag/1000,dx=29.7/(w-1),dz=21/(h-1);
+      for(let row=0;row<h;row++)for(let col=0;col<w;col++){
+        const i=row*w+col,base=i*9,left=heights[row*w+Math.max(0,col-1)],right=heights[row*w+Math.min(w-1,col+1)],north=heights[Math.max(0,row-1)*w+col],south=heights[Math.min(h-1,row+1)*w+col];
+        const sx=(right-left)*vertical/(Math.max(1,Math.min(w-1,col+1)-Math.max(0,col-1))*dx),sz=(north-south)*vertical/(Math.max(1,Math.min(h-1,row+1)-Math.max(0,row-1))*dz);
+        let nx=-sx,ny=1,nz=-sz,nl=Math.hypot(nx,ny,nz)||1;nx/=nl;ny/=nl;nz/=nl;
+        const rgb=colorForVertex(i);packedVertices[base]=(col/(w-1)-.5)*29.7;packedVertices[base+1]=heights[i]*vertical;packedVertices[base+2]=(.5-row/(h-1))*21;packedVertices[base+3]=rgb[0];packedVertices[base+4]=rgb[1];packedVertices[base+5]=rgb[2];packedVertices[base+6]=nx;packedVertices[base+7]=ny;packedVertices[base+8]=nz;
+      }
+      const indices=new Uint16Array((w-1)*(h-1)*6);let k=0;
+      for(let row=0;row<h-1;row++)for(let col=0;col<w-1;col++){const tl=row*w+col,tr=tl+1,bl=tl+w,br=bl+1;indices[k++]=tl;indices[k++]=tr;indices[k++]=bl;indices[k++]=tr;indices[k++]=br;indices[k++]=bl}
+      gl.bindBuffer(gl.ARRAY_BUFFER,vertexBuffer);gl.bufferData(gl.ARRAY_BUFFER,packedVertices,gl.STATIC_DRAW);gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,indexBuf);gl.bufferData(gl.ELEMENT_ARRAY_BUFFER,indices,gl.STATIC_DRAW);indexCount=indices.length;
+    }
+    function normalize(v){const n=Math.hypot(...v)||1;return v.map(x=>x/n)}
+    function cross(a,b){return[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]]}
+    function dot(a,b){return a[0]*b[0]+a[1]*b[1]+a[2]*b[2]}
+    function perspective(fov,aspect,near,far){const f=1/Math.tan(fov/2),nf=1/(near-far),o=new Float32Array(16);o[0]=f/aspect;o[5]=f;o[10]=(far+near)*nf;o[11]=-1;o[14]=2*far*near*nf;return o}
+    function lookAt(eye,center,up){const z=normalize(eye.map((v,i)=>v-center[i])),x=normalize(cross(up,z)),y=cross(z,x);return new Float32Array([x[0],y[0],z[0],0,x[1],y[1],z[1],0,x[2],y[2],z[2],0,-dot(x,eye),-dot(y,eye),-dot(z,eye),1])}
+    function multiply(a,b){const o=new Float32Array(16);for(let c=0;c<4;c++)for(let r=0;r<4;r++)o[c*4+r]=a[r]*b[c*4]+a[4+r]*b[c*4+1]+a[8+r]*b[c*4+2]+a[12+r]*b[c*4+3];return o}
+    function rotationY(a){const c=Math.cos(a),s=Math.sin(a);return new Float32Array([c,0,-s,0,0,1,0,0,s,0,c,0,0,0,0,1])}
+    function resize(){const rect=canvas.getBoundingClientRect(),dpr=Math.min(2,window.devicePixelRatio||1),w=Math.max(1,Math.round(rect.width*dpr)),h=Math.max(1,Math.round(rect.height*dpr));if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h}draw()}
+    function draw(){if(!canvas.width||!canvas.height)return;gl.viewport(0,0,canvas.width,canvas.height);gl.enable(gl.DEPTH_TEST);gl.enable(gl.CULL_FACE);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);document.querySelector('.compass span').style.transform=`rotate(${-yaw*180/Math.PI}deg)`;
+      const horizontal=Math.cos(tilt)*distance,eye=[Math.sin(yaw)*horizontal,Math.sin(tilt)*distance,Math.cos(yaw)*horizontal],view=lookAt(eye,[0,0,0],[0,1,0]),projection=perspective(Math.PI/4,canvas.width/canvas.height,.1,160),mvp=multiply(projection,multiply(view,rotationY(.12)));
+      gl.useProgram(program);gl.uniformMatrix4fv(loc.mvp,false,mvp);gl.bindBuffer(gl.ARRAY_BUFFER,vertexBuffer);gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,indexBuf);const stride=9*4;gl.enableVertexAttribArray(loc.position);gl.vertexAttribPointer(loc.position,3,gl.FLOAT,false,stride,0);gl.enableVertexAttribArray(loc.color);gl.vertexAttribPointer(loc.color,3,gl.FLOAT,false,stride,12);gl.enableVertexAttribArray(loc.normal);gl.vertexAttribPointer(loc.normal,3,gl.FLOAT,false,stride,24);gl.drawElements(gl.TRIANGLES,indexCount,gl.UNSIGNED_SHORT,0);
+    }
+    createMesh();renderLegend();
+    let drag=null;canvas.addEventListener('pointerdown',e=>{drag={x:e.clientX,y:e.clientY,yaw,tilt};canvas.setPointerCapture(e.pointerId);canvas.classList.add('drag')});canvas.addEventListener('pointermove',e=>{if(!drag)return;yaw=drag.yaw-(e.clientX-drag.x)*.008;tilt=Math.max(.25,Math.min(1.38,drag.tilt-(e.clientY-drag.y)*.006));draw()});canvas.addEventListener('pointerup',()=>{drag=null;canvas.classList.remove('drag')});canvas.addEventListener('pointercancel',()=>{drag=null;canvas.classList.remove('drag')});canvas.addEventListener('wheel',e=>{e.preventDefault();distance=Math.max(25,Math.min(90,distance*(e.deltaY>0?1.08:.92)));draw()},{passive:false});
+    document.querySelectorAll('[data-style]').forEach(button=>button.addEventListener('click',()=>{style=button.dataset.style;document.querySelectorAll('[data-style]').forEach(x=>x.setAttribute('aria-pressed',String(x===button)));createMesh();renderLegend();draw()}));
+    document.getElementById('exaggeration').addEventListener('input',e=>{exag=Number(e.target.value);document.getElementById('exaggeration-value').textContent=exag+'×';createMesh();draw()});
+    document.getElementById('reset').addEventListener('click',()=>{yaw=.42;tilt=.82;distance=38;draw()});new ResizeObserver(resize).observe(canvas);resize();
+  })();
+  </script>
+</body>
+</html>
