@@ -89,7 +89,8 @@
             <div class="atlas-switch" role="tablist" aria-label="Zobrazení atlasu">
               <button class="atlas-mode selected" type="button" role="tab" aria-selected="true" data-atlas-mode="country">Interaktivní atlas <span>01</span></button>
               <button class="atlas-mode" type="button" role="tab" aria-selected="false" data-atlas-mode="capital">Detail Larpingtonu <span>02</span></button>
-              <button class="atlas-mode" type="button" role="tab" aria-selected="false" data-atlas-mode="terrain3d">3D terén <span>03</span></button>
+              <button class="atlas-mode" type="button" role="tab" aria-selected="false" data-atlas-mode="capital3d">3D Larpington <span>03</span></button>
+              <button class="atlas-mode" type="button" role="tab" aria-selected="false" data-atlas-mode="terrain3d">3D terén <span>04</span></button>
             </div>
             <a class="atlas-open" id="open-map-link" href="atlas/current/viewer/atlas.html" target="_blank" rel="noopener">Otevřít atlas v novém okně ↗</a>
           </div>
@@ -99,10 +100,13 @@
           <div class="map-frame-wrap" data-map-panel="capital" hidden>
             <iframe title="Detailní interaktivní plán hlavního města Larpingtonu" data-src="atlas/current/capital/capital_plan_viewer.html" loading="lazy" allowfullscreen></iframe>
           </div>
+          <div class="map-frame-wrap" data-map-panel="capital3d" hidden>
+            <iframe title="Otočný 3D model Larpingtonu s okolním mořem" data-src="atlas/current/capital/capital-3d.html" loading="lazy" allowfullscreen></iframe>
+          </div>
           <div class="map-frame-wrap" data-map-panel="terrain3d" hidden>
             <iframe title="Interaktivní 3D model reliéfu Larpidie a Paralandu" data-src="atlas/current/viewer/terrain-3d.html" loading="lazy"></iframe>
           </div>
-          <div class="atlas-hint"><span class="hint-icon">ⓘ</span><span><b>Jak ovládat mapu</b> Tažením se posunete, kolečkem myši přiblížíte. V atlasu vyhledejte místo podle názvu nebo ID a otevřete jeho kartu. Pro detail města přepněte na plán Larpingtonu.</span></div>
+          <div class="atlas-hint"><span class="hint-icon">ⓘ</span><span><b>Jak ovládat mapu</b> Tažením se posunete, kolečkem myši přiblížíte. V atlasu vyhledejte místo podle názvu nebo ID a otevřete jeho kartu. Larpington má samostatný plán i otočný 3D model.</span></div>
         </div>
         <section class="map-catalog wrap section-pad">
           <div class="explore-head"><div><p class="eyebrow">Mapová knihovna</p><h2>Jedno souostroví,<br />mnoho pohledů.</h2></div><p>Všechny mapy a pohledy z projektu na jednom místě. Vyberte mapu pro zobrazení ve větším formátu.</p></div>

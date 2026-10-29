@@ -14,6 +14,8 @@
 |---|---|
 | `capital_plan_base.svg` | vrstvené editovatelné SVG (Inkscape): moře, pevnina, vrstevnice, pláže, zelené klíny, čtvrtě, bloky, prostory, přístav, ulice, koleje, stanice, budovy, POI, trasy, mřížka, popisky cs/en/ja, okraje |
 | `capital_plan_viewer.html` | prohlížeč s hledáním, vrstvami, jazyky a záznamem objektu |
+| `capital-3d.html`, `capital-3d-data.js` | otočný 3D pohled na Larpington, budovy, okolní terén a širé moře |
+| `../../scripts/build_capital_3d_data.mjs` | obnoví 3D data z bloků, domů, ulic a budov plánu |
 | `cp_graph.json` | dopravní graf: uzly (stupeň) a hrany (třída, šířka, délka, název, odkaz na silnici atlasu) |
 | `cp_streets/blocks/districts/buildings/spaces/points/routes/houses.geojson` | vrstvy plánu (`houses` = ilustrativní půdorysy domů, F9) |
 | `cp_objects.json`, `cp_objects.csv`, `cp_photo_guide.csv` | registr 968 objektů plánu a foto/video vodítko |
@@ -44,6 +46,8 @@
 Bloky mají `build_state`: `built` (zastavěno), `partial` (zastavěno z části – hranice růstu města), `reserve` (**rezerva rozvoje**, jen řídké chaty) a `civic` (instituce a školy); ulice mají `state` `built` / `planned` (plánovaná ulice v rezervě).
 
 Zastavěno je jádro, jehož kapacita bydlení odpovídá modelové populaci Larpingtonu (**12000**, `population_model` v atlasu): 217 bloků zastavěno, 29 z části, 586 v rezervě. Plné zastavění všech bloků podle jejich využití by dalo ≈ 48348 obyvatel (čtyřnásobek), tedy víc než schválený strop 40 000 obyvatel pro celou zemi; proto plán rozlišuje *vymezené území* (6,3 km²) a *stav zástavby* (rozhodnutí C-22). Předpoklady modelu: 38 m² podlahové plochy na obyvatele, užitná plocha 82%.
+
+Interaktivní 2D plán a 3D pohled mají samostatnou vypínatelnou vrstvu **Budoucí návrh v rezervě**. Ta doplňuje schematické budovy do volných bloků, aby bylo možné vidět budoucí podobu celého města. Budovy jsou označené jako návrh a **nepočítají se** do současné kapacity 12 000 obyvatel ani do registru skutečné zástavby. Popisky v 2D prohlížeči se při změně jazyka znovu rozmístí podle kolizí.
 
 ## Prefixy ID
 

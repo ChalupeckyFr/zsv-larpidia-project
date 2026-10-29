@@ -55,12 +55,15 @@
     const link = document.getElementById("open-map-link");
     if (link) {
       const isTerrain = mode === "terrain3d";
+      const isCapital3d = mode === "capital3d";
       link.href = isTerrain
         ? "atlas/current/viewer/terrain-3d.html"
-        : mode === "capital"
+        : isCapital3d
+          ? "atlas/current/capital/capital-3d.html"
+          : mode === "capital"
           ? "atlas/current/capital/capital_plan_viewer.html"
           : "atlas/current/viewer/atlas.html";
-      link.textContent = isTerrain ? "Otevřít 3D model zvlášť ↗" : "Otevřít atlas v novém okně ↗";
+      link.textContent = isTerrain ? "Otevřít 3D model zvlášť ↗" : isCapital3d ? "Otevřít 3D město zvlášť ↗" : "Otevřít atlas v novém okně ↗";
     }
   }
 

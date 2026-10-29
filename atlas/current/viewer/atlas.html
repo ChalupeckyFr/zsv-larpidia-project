@@ -875,19 +875,4 @@ function search(){const t=q.value.trim().toLowerCase();if(!t){res.innerHTML='';r
  res.innerHTML=hits.map(o=>`<div data-id="${esc(o.id)}"><span>${esc(o.id)} · ${esc(((o.name_proposed||{}).cs)||o.name_cs)}</span><span class="st ${esc(o.exist_status)}">${esc(statusText(o.exist_status))}</span></div>`).join('')}
 q.addEventListener('input',search);res.addEventListener('click',e=>{const d=e.target.closest('[data-id]');if(d){const o=BYID[d.dataset.id];zoomTo(o);show(o.id)}});
 document.getElementById('count').textContent=REG.objects.length+' objektů v registru';
-</script></body>'),'gi'),to);out=out.replace(/\s*\(pracovní\)/gi,lang==='en'?' (proposed)':lang==='ja'?' (案)':'');return out}
-const sourceLabels=[...svg.querySelectorAll('#labels-cs text[data-id]')];
-for(const lang of ['en','ja']){const layer=svg.getElementById('labels-'+lang);if(!layer)continue;const targets=new Map([...layer.querySelectorAll('text[data-id]')].map(el=>[el.getAttribute('data-id'),el]));for(const source of sourceLabels){const id=source.getAttribute('data-id'),translated=translateMapLabel(source.textContent,lang,id);let target=targets.get(id);if(!target){target=source.cloneNode(true);layer.appendChild(target)}target.textContent=translated;target.classList.add('interactive');const size=parseFloat(target.getAttribute('font-size'));if(Number.isFinite(size))target.setAttribute('font-size',String(Math.round(size*1.14)));target.setAttribute('font-weight','600')}}
-const areaNames={cs:['LARPIDIE','PARALAND','TICHÝ OCEÁN','průliv 1,5 km'],en:['LARPIDIA','PARALAND','PACIFIC OCEAN','strait 1.5 km'],ja:['ラルピディア','パラランド','太平洋','海峡 1.5 km']};
-function setLanguage(lang){document.querySelectorAll('[data-lang]').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.lang===lang)));['cs','ja','en'].forEach(l=>{const el=svg.getElementById('labels-'+l);if(el)el.style.display=l===lang?'':'none';const cb=lp.querySelector(`[data-l="labels-${l}"]`);if(cb)cb.checked=l===lang});svg.querySelectorAll('#labels-areas text').forEach((el,i)=>{if(areaNames[lang][i])el.textContent=areaNames[lang][i]})}
-document.querySelectorAll('[data-lang]').forEach(b=>b.onclick=()=>setLanguage(b.dataset.lang));
-document.getElementById('status').onchange=e=>svg.classList.toggle('status-mode',e.target.checked);
-document.getElementById('reset').onclick=()=>{vb=[...FULL];setVB()};
-// hledání
-const q=document.getElementById('q'),res=document.getElementById('results');
-function search(){const t=q.value.trim().toLowerCase();if(!t){res.innerHTML='';return}
- const hits=REG.objects.filter(o=>o.x_km!=null&&((o.id+' '+o.name_cs+' '+(o.name_en||'')+' '+(o.name_ja||'')+' '+((o.name_proposed||{}).cs||'')).toLowerCase().includes(t))).slice(0,40);
- res.innerHTML=hits.map(o=>`<div data-id="${esc(o.id)}"><span>${esc(o.id)} · ${esc(((o.name_proposed||{}).cs)||o.name_cs)}</span><span class="st ${esc(o.exist_status)}">${esc(statusText(o.exist_status))}</span></div>`).join('')}
-q.addEventListener('input',search);res.addEventListener('click',e=>{const d=e.target.closest('[data-id]');if(d){const o=BYID[d.dataset.id];zoomTo(o);show(o.id)}});
-document.getElementById('count').textContent=REG.objects.length+' objektů v registru';
 </script></body></html>
