@@ -22,11 +22,23 @@ from cp_graph import StreetGraph
 
 ROW = {"R1": 22.0, "A": 22.0, "B": 20.0, "S": 14.0, "P": 18.0, "C": 10.0, "L": 5.0}
 DISTRICT_LATTICE = {
-    # čtvrť: (natočení°, rozteč „a“ (m), rozteč „b“ (m))
-    "C-03": (6.0, 118.0, 72.0),
-    "C-04": (-4.0, 96.0, 84.0),
-    "C-05": (12.0, 108.0, 70.0),
-    "C-06": (0.0, 84.0, 58.0),
+    # Čtvrti mají odlišné měřítko i natočení; rozteč se navíc lokálně vlní.
+    "C-03": (9.0, 132.0, 82.0),
+    "C-04": (-7.0, 144.0, 104.0),
+    "C-05": (17.0, 122.0, 76.0),
+    "C-06": (-2.0, 92.0, 68.0),
+}
+DISTRICT_GRID_STYLE = {
+    "C-03": (0.30, 0.20, 3),
+    "C-04": (0.34, 0.28, 4),
+    "C-05": (0.32, 0.24, 3),
+    "C-06": (0.27, 0.17, 3),
+}
+DISTRICT_STREET_NAMES = {
+    "C-03": ("Javorová ulice", "Západní alej"),
+    "C-04": ("Školní třída", "Severní sadová"),
+    "C-05": ("Klimečkova třída", "Skleněná ulice"),
+    "C-06": ("Muzejní třída", "Parková ulice"),
 }
 OLD_TOWN_DQ = 650.0                    # hloubka starého města od pobřeží (m)
 
@@ -131,9 +143,15 @@ def generate(ctx, L, seed=20261024):
     for did, (theta, su, sv) in DISTRICT_LATTICE.items():
         ix = DID_INDEX[did]
         allowed = base_ok & (ctx.did == ix) & ~old
-        runs = lattice_runs(ctx, ix, theta, su, sv, rng, allowed)
-        for pts in runs:
-            g.add(pts, cls="C", atlas_id=None, name=None, district=did, section="surface")
+        jitter, skip, cross_every = DISTRICT_GRID_STYLE[did]
+        runs = lattice_runs(ctx, ix, theta, su, sv, rng, allowed, jitter=jitter, skip=skip, cross_every=cross_every, origin=O)
+        named_runs = sorted(range(len(runs)), key=lambda i: G.length(runs[i]), reverse=True)[:2]
+        run_names = {ri: name for ri, name in zip(named_runs, DISTRICT_STREET_NAMES[did])}
+        for ri, pts in enumerate(runs):
+            mid = G.point_at(pts, G.length(pts) / 2)[0]
+            # Klidné obytné ulice se střídají s užšími místními cestami.
+            width = 7.0 + 2.1 * (1.0 + math.sin(mid[0] / 310.0 + mid[1] / 470.0)) + rng.uniform(-0.7, 0.7)
+            g.add(pts, cls="C", atlas_id=None, name=run_names.get(ri), district=did, section="surface", row=max(6.0, min(11.0, width)))
         n_lat += len(runs)
     ctx.n_lattice = n_lat
     # ---- staré město: uličky podél pobřeží (vrstevnice vzdálenosti) a kolmé průchody
@@ -168,7 +186,7 @@ def generate(ctx, L, seed=20261024):
     return g
 
 
-def lattice_runs(ctx, ix, theta_deg, su, sv, rng, allowed, step=4.0, jitter=0.16, skip=0.10, cross_every=3):
+def lattice_runs(ctx, ix, theta_deg, su, sv, rng, allowed, step=4.0, jitter=0.16, skip=0.10, cross_every=3, origin=None):
     th = math.radians(theta_deg)
     e1 = (math.cos(th), math.sin(th))
     e2 = (-math.sin(th), math.cos(th))
@@ -201,7 +219,18 @@ def lattice_runs(ctx, ix, theta_deg, su, sv, rng, allowed, step=4.0, jitter=0.16
         for s, e in zip(np.nonzero(d == 1)[0], np.nonzero(d == -1)[0]):
             if (e - s) * step < 30.0:
                 continue
-            out.append([(float(u[s]), float(v[s])), (float(u[e - 1]), float(v[e - 1]))])
+            # Společné hladké přemístění ulic zachová křižovatky, ale rozbije pravítkový vzhled.
+            pts = [(float(u[k]), float(v[k])) for k in range(s, e)]
+            if origin:
+                ox, oy = origin
+                bent = []
+                for x, y in pts:
+                    dx, dy = x - ox, y - oy
+                    wx = 18.0 * math.sin(dy / 245.0 + dx / 810.0) + 8.0 * math.sin(dy / 108.0 - dx / 530.0)
+                    wy = 20.0 * math.sin(dx / 275.0 - dy / 760.0) + 7.0 * math.sin(dx / 122.0 + dy / 610.0)
+                    bent.append((x + wx, y + wy))
+                pts = bent
+            out.append(raster.simplify(pts, 6.0))
     return out
 
 

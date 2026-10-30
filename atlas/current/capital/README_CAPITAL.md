@@ -14,11 +14,9 @@
 |---|---|
 | `capital_plan_base.svg` | vrstvené editovatelné SVG (Inkscape): moře, pevnina, vrstevnice, pláže, zelené klíny, čtvrtě, bloky, prostory, přístav, ulice, koleje, stanice, budovy, POI, trasy, mřížka, popisky cs/en/ja, okraje |
 | `capital_plan_viewer.html` | prohlížeč s hledáním, vrstvami, jazyky a záznamem objektu |
-| `capital-3d.html`, `capital-3d-data.js` | otočný 3D pohled na Larpington, budovy, okolní terén a širé moře |
-| `../../scripts/build_capital_3d_data.mjs` | obnoví 3D data z bloků, domů, ulic a budov plánu |
 | `cp_graph.json` | dopravní graf: uzly (stupeň) a hrany (třída, šířka, délka, název, odkaz na silnici atlasu) |
 | `cp_streets/blocks/districts/buildings/spaces/points/routes/houses.geojson` | vrstvy plánu (`houses` = ilustrativní půdorysy domů, F9) |
-| `cp_objects.json`, `cp_objects.csv`, `cp_photo_guide.csv` | registr 968 objektů plánu a foto/video vodítko |
+| `cp_objects.json`, `cp_objects.csv`, `cp_photo_guide.csv` | registr 662 objektů plánu a foto/video vodítko |
 | `cp_frame.json`, `cp_report.json` | rámec a výsledky kontrol |
 
 ## Třídy ulic (`cls`) a šířky
@@ -29,25 +27,23 @@
 
 | Kód | Význam | Počet bloků |
 |---|---|---|
-| `old_town_mixed` | Staré město – smíšená zástavba | 143 |
-| `promenade_retail` | Přístavní promenáda – obchody s limitovanými kolekcemi, kavárny, půjčovny | 57 |
-| `civic_mixed` | Státní čtvrť – instituce a služby | 37 |
-| `transit_mixed` | Okolí stanice – služby a bydlení | 54 |
-| `retail_main` | Hlavní třída – obchody a kavárny | 47 |
-| `residential_mid` | Bydlení – středně husté | 374 |
-| `residential_low` | Bydlení – zahrádkové | 118 |
+| `old_town_mixed` | Staré město – smíšená zástavba | 141 |
+| `promenade_retail` | Přístavní promenáda – obchody s limitovanými kolekcemi, kavárny, půjčovny | 60 |
+| `civic_mixed` | Státní čtvrť – instituce a služby | 23 |
+| `transit_mixed` | Okolí stanice – služby a bydlení | 28 |
+| `retail_main` | Hlavní třída – obchody a kavárny | 25 |
+| `residential_mid` | Bydlení – středně husté | 190 |
+| `residential_low` | Bydlení – zahrádkové | 61 |
 | `school` | Škola a školní areál | 4 |
-| `new_waterfront` | Východní nábřeží – nová smíšená čtvrť | 39 |
+| `new_waterfront` | Východní nábřeží – nová smíšená čtvrť | 23 |
 | `hotel_premium` | Prémiový hotel | 1 |
 
 ## Stav zástavby a domy (F9)
 
-`cp_houses.geojson` (lokální metry) a `cp_houses_atlas_km.geojson` obsahují **3242 ilustrativních půdorysů domů** (`CP-H-xxxxx`: využití, podlaží, výška okapu a hřebene, barva střechy, modelová kapacita bydlení). Domy nejsou skutečné budovy a nejsou v registru objektů.
+`cp_houses.geojson` (lokální metry) a `cp_houses_atlas_km.geojson` obsahují **3822 ilustrativních půdorysů domů** (`CP-H-xxxxx`: využití, podlaží, výška okapu a hřebene, barva střechy, modelová kapacita bydlení). Domy nejsou skutečné budovy a nejsou v registru objektů.
 Bloky mají `build_state`: `built` (zastavěno), `partial` (zastavěno z části – hranice růstu města), `reserve` (**rezerva rozvoje**, jen řídké chaty) a `civic` (instituce a školy); ulice mají `state` `built` / `planned` (plánovaná ulice v rezervě).
 
-Zastavěno je jádro, jehož kapacita bydlení odpovídá modelové populaci Larpingtonu (**12000**, `population_model` v atlasu): 217 bloků zastavěno, 29 z části, 586 v rezervě. Plné zastavění všech bloků podle jejich využití by dalo ≈ 48348 obyvatel (čtyřnásobek), tedy víc než schválený strop 40 000 obyvatel pro celou zemi; proto plán rozlišuje *vymezené území* (6,3 km²) a *stav zástavby* (rozhodnutí C-22). Předpoklady modelu: 38 m² podlahové plochy na obyvatele, užitná plocha 82%.
-
-Interaktivní 2D plán a 3D pohled mají samostatnou vypínatelnou vrstvu **Budoucí návrh v rezervě**. Ta doplňuje schematické budovy do volných bloků, aby bylo možné vidět budoucí podobu celého města. Budovy jsou označené jako návrh a **nepočítají se** do současné kapacity 12 000 obyvatel ani do registru skutečné zástavby. Popisky v 2D prohlížeči se při změně jazyka znovu rozmístí podle kolizí.
+Zastavěno je jádro, jehož kapacita bydlení odpovídá modelové populaci Larpingtonu (**12000**, `population_model` v atlasu): 234 bloků zastavěno, 22 z části, 272 v rezervě. Plné zastavění všech bloků podle jejich využití by dalo ≈ 33159 obyvatel (čtyřnásobek), tedy víc než schválený strop 40 000 obyvatel pro celou zemi; proto plán rozlišuje *vymezené území* (6,3 km²) a *stav zástavby* (rozhodnutí C-22). Předpoklady modelu: 38 m² podlahové plochy na obyvatele, užitná plocha 82%.
 
 ## Prefixy ID
 

@@ -98,7 +98,7 @@ _TABLE = [
      "district", "proposed", "proposed", "urbanism.capital_four_districts (proposed, D2)"),
     ("T-01", "Praha", 70, 49, "český toponym v obytné nížině",
      "town", "approved", "approved", "urbanism.must_include_towns"),
-    ("T-02", "Čimprlichovo Hradiště", 48, 72, "historické městečko",
+    ("T-02", "Cimprlichovo Hradiště", 48, 72, "historické městečko",
      "town", "approved", "approved", "urbanism.must_include_towns"),
     ("T-03", "Havlišovo Doupě", 17, 60, "horská venkovská obec",
      "town", "approved", "approved", "urbanism.must_include_towns"),

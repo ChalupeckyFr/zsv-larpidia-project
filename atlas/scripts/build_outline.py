@@ -126,7 +126,7 @@ LABELS = {  # id: (text, dx_km, dy_km, anchor)
     "C-02": ("C-02 Hist. přístav", -0.22, 0.42, "end"), "C-03": ("C-03 Chalupecká", -0.18, 0.05, "end"),
     "C-04": ("C-04 Kynčlova", -0.12, -0.20, "end"), "C-05": ("C-05 Klimečkova", 0.18, 0.05, "start"),
     "C-06": ("C-06 Žemličkova", 0.14, 0.04, "start"), "T-01": ("T-01 Praha", 0.20, 0.06, "start"),
-    "T-02": ("T-02 Čimprlichovo Hradiště", -0.22, 0.12, "end"), "T-03": ("T-03 Havlišovo Doupě", 0.22, 0.08, "start"),
+    "T-02": ("T-02 Cimprlichovo Hradiště", -0.22, 0.12, "end"), "T-03": ("T-03 Havlišovo Doupě", 0.22, 0.08, "start"),
     "T-04": ("T-04 Ōru Maito オールマイト", 0.0, 0.40, "middle"), "T-05": ("T-05 Aokawa 青川", 0.2, 0.34, "start"),
     "I-01": ("I-01 Zelená průmyslová zóna", -0.20, 0.0, "end"), "I-02": ("I-02 Závod na řasy", -0.20, 0.06, "end"),
     "I-03": ("I-03 Nákladní přístav", -0.24, 0.40, "end"), "A-01": ("A-01 Letiště", 0.22, -0.02, "start"),

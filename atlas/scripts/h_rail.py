@@ -271,7 +271,7 @@ def build_l2(world, rcost):
     def rt(points, it=3):
         return pathfind.route(env, rcost, points, smooth_iters=it)
 
-    branches.append(("L2-A1", "Čimprlichovo Hradiště – Larpington Západ", rt([st["T02"], HUB_W])))
+    branches.append(("L2-A1", "Cimprlichovo Hradiště – Larpington Západ", rt([st["T02"], HUB_W])))
     branches.append(("L2-A2", "městský oblouk Západ – Sever – Východ", arc))
     branches.append(("L2-A3", "Larpington Východ – Zelená průmyslová zóna", rt([HUB_E, st["I01"]])))
     branches.append(("L2-A4", "Zelená zóna – závod na řasy – nákladní přístav", rt([st["I01"], st["I02"], st["I03"]])))
@@ -289,7 +289,7 @@ def build_l2(world, rcost):
         segs.append(seg)
         total += float(s[-1])
     stn = [
-        {"id": "ST-L2-01", "name": "Čimprlichovo Hradiště", "pt": st["T02"], "lines": ["L2"], "note": "historické městečko T-02"},
+        {"id": "ST-L2-01", "name": "Cimprlichovo Hradiště", "pt": st["T02"], "lines": ["L2"], "note": "historické městečko T-02"},
         {"id": "ST-L2-02", "name": "Larpington Západ", "pt": HUB_W, "lines": ["L1", "L2", "L3"], "hub": "W", "note": "uzel L1/L2/L3"},
         {"id": "ST-L2-03", "name": "Larpington Sever (Kynčlova)", "pt": HUB_N, "lines": ["L2", "L3"], "hub": "N", "note": "přestup L2↔L3"},
         {"id": "ST-L2-04", "name": "Larpington Východ (Klimečkova)", "pt": HUB_E, "lines": ["L2", "L3"], "hub": "E", "note": "přestup L2↔L3"},

@@ -37,7 +37,7 @@ NAMES = {
     "N-01": ("Mys Skalní vyhlídky", "Cliff Lookout Cape", "断崖展望岬"), "N-02": ("Krystalová jeskyně", "Crystal Cave", "水晶洞"),
     "N-03": ("Larpský vodopád", "Larp Falls", "ラープの滝"), "N-04": ("Přehradní jezero Larp", "Larp Reservoir", "ラープ湖"),
     "C-01": ("Larpington", "Larpington", "ラープトン"), "C-02": ("Historický přístav Larpington", "Larpington Old Harbour", "ラープトン旧港"),
-    "T-01": ("Praha", "Praha", "プラハ"), "T-02": ("Čimprlichovo Hradiště", "Čimprlichovo Hradiště", "チンプルリフ砦"), "T-03": ("Havlišovo Doupě", "Havliš's Den", "ハヴリシュの巣"),
+    "T-01": ("Praha", "Praha", "プラハ"), "T-02": ("Cimprlichovo Hradiště", "Cimprlichovo Hradiště", "チンプルリフ砦"), "T-03": ("Havlišovo Doupě", "Havliš's Den", "ハヴリシュの巣"),
     "T-04": ("Ōru Maito", "Ōru Maito", "オールマイト"), "T-05": ("Aokawa", "Aokawa", "青川"), "T-06": ("Hoshimachi", "Hoshimachi", "星町"),
     "I-01": ("Zelená průmyslová zóna", "Green Industrial Zone", "グリーン工業地帯"), "I-02": ("Závod na zpracování mořských řas", "Seaweed Processing Plant", "海藻処理工場"),
     "I-03": ("Nákladní přístav", "Cargo Port", "貨物港"), "A-01": ("Regionální letiště Larpidie", "Larpidia Regional Airport", "ラーピディア地方空港"),

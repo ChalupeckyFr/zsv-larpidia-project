@@ -26,7 +26,7 @@ Důvod: stáhnout severní obal bodů a uvolnit místo pro hlubší severní zá
 | C-01 | Larpington | Larpington | ラープトン | ☐ |
 | C-02 | Historický přístav Larpington | Larpington Old Harbour | ラープトン旧港 | ☐ |
 | T-01 | Praha | Praha | プラハ | ☐ |
-| T-02 | Čimprlichovo Hradiště | Čimprlichovo Hradiště | チンプルリフ砦 | ☐ |
+| T-02 | Cimprlichovo Hradiště | Cimprlichovo Hradiště | チンプルリフ砦 | ☐ |
 | T-03 | Havlišovo Doupě | Havliš's Den | ハヴリシュの巣 | ☐ |
 | T-04 | Ōru Maito | Ōru Maito | オールマイト | ☐ |
 | T-05 | Aokawa | Aokawa | 青川 | ☐ |
@@ -61,7 +61,7 @@ Důvod: stáhnout severní obal bodů a uvolnit místo pro hlubší severní zá
 | CAPE-N | Severní mys | North Cape | 北岬 | ☐ |
 | PEN-SE | Poloostrov Paraland Link | Paraland Link Peninsula | パラランド連絡半島 | ☐ |
 
-Jména povinných měst (Praha, Čimprlichovo Hradiště, Havlišovo Doupě, Ōru Maito) jsou **schválená**; ostatní jsou návrh. Japonské zápisy jsou orientační a před tiskem je má zkontrolovat rodilý mluvčí.
+Jména povinných měst (Praha, Cimprlichovo Hradiště, Havlišovo Doupě, Ōru Maito) jsou **schválená**; ostatní jsou návrh. Japonské zápisy jsou orientační a před tiskem je má zkontrolovat rodilý mluvčí.
 
 ## 3. Další body k potvrzení
 

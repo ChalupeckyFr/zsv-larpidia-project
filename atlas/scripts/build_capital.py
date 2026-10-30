@@ -36,7 +36,8 @@ OUT = ATLAS / "current" / "capital"
 
 def build_graph(ctx, L):
     g = ST.generate(ctx, L)
-    g.snap_ends(16.0)
+    # Zakřivené místní ulice končí dál od původních tepen než přímá mřížka.
+    g.snap_ends(42.0)
     g.build()
     g.dedupe()
     g.prune(min_comp_len=600.0)

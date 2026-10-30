@@ -145,8 +145,8 @@ def compose(D, variant):
     return svg, (placed, total)
 
 
-# ------------------------------------------------------------------ schéma železnic (netopografické)
-def rail_scheme(D):
+# ------------------------------------------------------------------ původní schéma železnic (nahrazené číslovaným přehledem níže)
+def _rail_scheme_legacy(D):
     # schematické souřadnice (mřížka 120 px); sever nahoře, topologie jako ve skutečnosti
     U = 104
     ox, oy = 150, 150
@@ -185,7 +185,7 @@ def rail_scheme(D):
         ("Larpington Západ (L1·L2·L3)", hubW, "end", -26, 6, 3), ("Larpington Sever (L2·L3)", hubN, "middle", 0, -34, 2), ("Larpington Východ (L2·L3)", hubE, "end", -24, 34, 2),
         ("Larpington Střed – Přístav (L3)", hubS, "middle", 0, 46, 1), ("Východní nábřeží", (9.5, 6), "middle", 0, -26, 1), ("Paraland Link (P-01)", (11, 6), "middle", 0, 40, 1),
         ("Paraland – Marina", (14.4, 6), "start", 26, 6, 1),
-        ("Čimprlichovo Hradiště", (2.6, 7.4), "middle", 0, 38, 1), ("Praha", (6, 2.8), "start", 24, 6, 1), ("výhybna Letiště", (6, 1.4), "end", -22, -6, 0), ("Letiště", (7.6, 1.4), "start", 24, 6, 1),
+        ("Cimprlichovo Hradiště", (2.6, 7.4), "middle", 0, 38, 1), ("Praha", (6, 2.8), "start", 24, 6, 1), ("výhybna Letiště", (6, 1.4), "end", -22, -6, 0), ("Letiště", (7.6, 1.4), "start", 24, 6, 1),
         ("Aokawa", (6, 0.2), "middle", 0, -26, 1), ("Ōru Maito", (3.2, 0.2), "middle", 0, -26, 1), ("Hoshimachi", (9.2, 0.2), "middle", 0, -26, 1),
         ("Zelená průmyslová zóna", (10.2, 3.6), "middle", 0, -26, 1), ("Závod na řasy", (11.2, 3.6), "middle", 0, 38, 1), ("Nákladní přístav", (12.2, 3.6), "start", 26, 6, 1),
         ("Přehrada", (2.4, 4.2), "middle", 0, -28, 1), ("Vodopád", (1.2, 4.2), "middle", 0, 40, 1), ("Krystalová jeskyně", (0.8, 2.6), "start", 26, 6, 1), ("Horská stanice", (0.8, 1.6), "start", 44, 6, 1),
@@ -297,6 +297,88 @@ function search(){const t=q.value.trim().toLowerCase();if(!t){res.innerHTML='';r
 q.addEventListener('input',search);res.addEventListener('click',e=>{const d=e.target.closest('[data-id]');if(d){const o=BYID[d.dataset.id];zoomTo(o);show(o.id)}});
 document.getElementById('count').textContent=REG.objects.length+' objektů v registru';
 """
+
+
+def rail_scheme(D):
+    """Schéma linek s číslovanými uzly; názvy jsou v samostatném registru bez kolizí."""
+    U, ox, oy = 62, 100, 255
+    S = lambda p: (ox + p[0] * U, oy + p[1] * U)
+    hubW, hubN, hubE, hubS = (4, 6), (6, 4), (8, 6), (6, 8)
+    ring = [(5, 4), (7, 4), (8, 5), (8, 7), (7, 8), (5, 8), (4, 7), (4, 5)]
+    c = {k: v["color"] for k, v in hr.LINE_STYLE.items()}
+    out = ['<?xml version="1.0" encoding="UTF-8"?>',
+           '<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1330" viewBox="0 0 1900 1330" font-family="Segoe UI, Noto Sans, Arial, sans-serif">',
+           '<title>Schéma železnic Larpidie a Paralandu — číslované stanice</title>',
+           '<rect width="1900" height="1330" fill="#f5f4ef"/>',
+           '<text x="54" y="60" font-size="38" font-weight="750" fill="#25313a">Železnice Larpidie</text>',
+           '<text x="54" y="98" font-size="19" fill="#56636c">Přehled linek a stanic · schematické vedení, mimo měřítko · pracovní návrh</text>',
+           '<rect x="38" y="132" width="1086" height="1092" rx="18" fill="#fffefa" stroke="#d7d4ca"/>',
+           '<rect x="1142" y="132" width="720" height="1092" rx="18" fill="#fffefa" stroke="#d7d4ca"/>']
+    def poly(pts, col, w=13, dash=""):
+        points = " ".join(f"{S(p)[0]:.0f},{S(p)[1]:.0f}" for p in pts)
+        da = f' stroke-dasharray="{dash}"' if dash else ""
+        return f'<polyline points="{points}" fill="none" stroke="{col}" stroke-width="{w}" stroke-linejoin="round" stroke-linecap="round"{da}/>'
+    # Tunel L3 (okruh města a podmořské pokračování).
+    out.append(poly(ring + [ring[0]], c["L3"], 15, "24 10"))
+    out.append(poly([hubE, (9.5, 6), (11, 6)], c["L3"], 15, "24 10"))
+    out.append(poly([(11, 6), (14.4, 6)], "#83cde4", 23))
+    out.append(poly([(11, 6), (14.4, 6)], c["L3"], 6, "12 9"))
+    # L2: hlavní povrchová osa, severní a průmyslová větev.
+    out.extend([poly([(4, 5.6), (5, 4.6), (6, 4.6), (7, 4.6), (8, 5.6)], c["L2"], 13),
+                poly([hubW, (2.6, 7.4)], c["L2"], 13),
+                poly([hubN, (6, 2.8), (6, 1.4), (6, .2)], c["L2"], 13),
+                poly([(6, .2), (3.2, .2)], c["L2"], 13), poly([(6, .2), (9.2, .2)], c["L2"], 13),
+                poly([(6, 1.4), (7.6, 1.4)], c["L2"], 13),
+                poly([hubE, (9.2, 4.8), (10.2, 3.6), (12.2, 3.6)], c["L2"], 13)])
+    # L1: západní horská větev.
+    out.append(poly([hubW, (3.2, 5), (2.4, 4.2), (1.2, 4.2), (.8, 3.2), (.8, 2.6), (.8, 1.6)], c["L1"], 13))
+    stations = [
+        (1, "Larpington Západ", hubW, 3, "L1 · L2 · L3"), (2, "Larpington Sever", hubN, 2, "L2 · L3"),
+        (3, "Larpington Východ", hubE, 2, "L2 · L3"), (4, "Larpington Střed – Přístav", hubS, 1, "L3"),
+        (5, "Východní nábřeží", (9.5, 6), 1, "L3"), (6, "Paraland Link", (11, 6), 1, "L3"),
+        (7, "Paraland – Marina", (14.4, 6), 1, "L3"), (8, "Cimprlichovo Hradiště", (2.6, 7.4), 1, "L2"),
+        (9, "Přehrada", (2.4, 4.2), 1, "L1"), (10, "Vodopád", (1.2, 4.2), 1, "L1"),
+        (11, "Krystalová jeskyně", (.8, 2.6), 1, "L1"), (12, "Horská stanice", (.8, 1.6), 1, "L1"),
+        (13, "Praha", (6, 2.8), 1, "L2"), (14, "Výhybna Letiště", (6, 1.4), 0, "L2"),
+        (15, "Letiště", (7.6, 1.4), 1, "L2"), (16, "Aokawa", (6, .2), 1, "L2"),
+        (17, "Ōru Maito", (3.2, .2), 1, "L2"), (18, "Hoshimachi", (9.2, .2), 1, "L2"),
+        (19, "Zelená průmyslová zóna", (10.2, 3.6), 1, "L2"), (20, "Závod na řasy", (11.2, 3.6), 1, "L2"),
+        (21, "Nákladní přístav", (12.2, 3.6), 1, "L2"),
+    ]
+    offsets = {1:(-27,-23),2:(0,-33),3:(28,-22),4:(0,34),5:(0,-28),6:(0,34),7:(24,0),8:(-23,33),
+               9:(0,-26),10:(-24,22),11:(24,0),12:(28,-5),13:(25,0),14:(-34,-6),15:(30,10),16:(0,-26),
+               17:(0,-26),18:(0,-26),19:(-28,-18),20:(0,28),21:(28,-3)}
+    for number, name, p, level, lines in stations:
+        x, y = S(p); dx, dy = offsets[number]; r = {0:7,1:10,2:14,3:17}[level]
+        stroke = c["L3"] if "L3" in lines else c["L2"] if "L2" in lines else c["L1"]
+        out.append(f'<circle cx="{x}" cy="{y}" r="{r}" fill="#fff" stroke="{stroke}" stroke-width="4"/>')
+        bx, by = x + dx, y + dy
+        out.append(f'<circle cx="{bx}" cy="{by}" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>')
+        out.append(f'<text x="{bx}" y="{by+5}" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">{number:02d}</text>')
+    out.append('<text x="330" y="732" font-size="21" font-weight="750" fill="#6b2a1e">LARPINGTON · MĚSTSKÝ OKRUH</text>')
+    out.append('<text x="820" y="680" font-size="15" fill="#315d70">Podmořský tunel a prosklená galerie</text>')
+    out.append('<text x="820" y="704" font-size="14" fill="#56636c">1,48 km podmoří · galerie 226 m</text>')
+    # Stanice mají pevná pořadová čísla v mapě; celý název je vždy v seznamu vpravo.
+    out.append('<text x="1172" y="176" font-size="23" font-weight="750" fill="#25313a">Stanice</text>')
+    out.append('<text x="1172" y="202" font-size="14" fill="#68747b">Čísla v seznamu odpovídají číselným značkám v mapě.</text>')
+    columns = [(stations[:11], 1172), (stations[11:], 1510)]
+    for col, x0 in enumerate((1172, 1510)):
+        out.append(f'<text x="{x0}" y="244" font-size="15" font-weight="700" fill="#8a563f">{"MĚSTO A ZÁPAD" if col == 0 else "SEVER A VÝCHOD"}</text>')
+    for items, x0 in columns:
+        for row, (number, name, _, _, lines) in enumerate(items):
+            y = 286 + row * 76
+            out.append(f'<circle cx="{x0+13}" cy="{y-5}" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>')
+            out.append(f'<text x="{x0+13}" y="{y-1}" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">{number:02d}</text>')
+            out.append(f'<text x="{x0+34}" y="{y}" font-size="14.5" font-weight="650" fill="#25313a">{name}</text>')
+            out.append(f'<text x="{x0+34}" y="{y+21}" font-size="12" fill="#66737b">{lines}</text>')
+    # Legenda linek v samostatném pruhu pod mapou.
+    out.append('<line x1="64" y1="1150" x2="128" y2="1150" stroke="'+c["L1"]+'" stroke-width="11" stroke-linecap="round"/><text x="142" y="1156" font-size="14" fill="#25313a">L1 · horská vyhlídková</text>')
+    out.append('<line x1="360" y1="1150" x2="424" y2="1150" stroke="'+c["L2"]+'" stroke-width="11" stroke-linecap="round"/><text x="438" y="1156" font-size="14" fill="#25313a">L2 · povrchová</text>')
+    out.append('<line x1="610" y1="1150" x2="674" y2="1150" stroke="'+c["L3"]+'" stroke-width="13" stroke-dasharray="18 8" stroke-linecap="round"/><text x="688" y="1156" font-size="14" fill="#25313a">L3 · podzemní</text>')
+    out.append('<line x1="870" y1="1150" x2="934" y2="1150" stroke="#83cde4" stroke-width="17" stroke-linecap="round"/><text x="948" y="1156" font-size="14" fill="#25313a">podmořské spojení</text>')
+    out.append('<text x="1172" y="1124" font-size="13" fill="#69757c">Schválené jsou role linek; trasy a stanice jsou návrhem.</text>')
+    out.append('</svg>')
+    return "\n".join(out)
 
 
 def viewer(D, svg_embedded: str):

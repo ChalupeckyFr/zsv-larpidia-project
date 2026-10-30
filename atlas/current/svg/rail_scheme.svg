@@ -1,78 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1330" viewBox="0 0 1900 1330" font-family="Segoe UI, Noto Sans, Arial, sans-serif">
-<title>Schéma železnic Larpidie a Paralandu (návrh)</title>
-<rect width="1900" height="1330" fill="#f7f5ee"/>
-<text x="60" y="64" font-size="40" font-weight="700" fill="#25313a">Schéma železnic: L1 · L2 · L3</text>
-<text x="60" y="100" font-size="21" fill="#b4541b" font-weight="600">NÁVRH (proposed) · atlas v0.5 · schéma není v měřítku; role linek jsou schváleny, vedení a stanice jsou návrh</text>
-<polyline points="670,566 878,566 982,670 982,878 878,982 670,982 566,878 566,670 670,566" fill="none" stroke="#1f5fbf" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="30 12"/>
-<polyline points="982,774 1138,774 1294,774" fill="none" stroke="#1f5fbf" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="30 12"/>
-<polyline points="1294,774 1648,774" fill="none" stroke="#8fd3ff" stroke-width="22" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="1294,774 1648,774" fill="none" stroke="#1f5fbf" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="14 10"/>
-<polyline points="566,732 670,628 774,628 878,628 982,732" fill="none" stroke="#2f7d4f" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="566,774 420,920" fill="none" stroke="#2f7d4f" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="774,566 774,441 774,296 774,171" fill="none" stroke="#2f7d4f" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="774,171 483,171" fill="none" stroke="#2f7d4f" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="774,171 1107,171" fill="none" stroke="#2f7d4f" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="774,296 940,296" fill="none" stroke="#2f7d4f" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="982,774 1107,649 1211,524 1419,524" fill="none" stroke="#2f7d4f" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="566,774 483,670 400,587 275,587 233,483 233,358" fill="none" stroke="#d9531e" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="233" cy="316" r="30" fill="none" stroke="#d9531e" stroke-width="9" stroke-dasharray="8 7"/>
-<circle cx="566" cy="774" r="21" fill="#fff" stroke="#1d2730" stroke-width="4"/>
-<text x="540" y="780" font-size="19" font-weight="600" text-anchor="end" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Larpington Západ (L1·L2·L3)</text>
-<circle cx="774" cy="566" r="17" fill="#fff" stroke="#1d2730" stroke-width="4"/>
-<text x="774" y="532" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Larpington Sever (L2·L3)</text>
-<circle cx="982" cy="774" r="17" fill="#fff" stroke="#1d2730" stroke-width="4"/>
-<text x="958" y="808" font-size="19" font-weight="600" text-anchor="end" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Larpington Východ (L2·L3)</text>
-<circle cx="774" cy="982" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="774" y="1028" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Larpington Střed – Přístav (L3)</text>
-<circle cx="1138" cy="774" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="1138" y="748" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Východní nábřeží</text>
-<circle cx="1294" cy="774" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="1294" y="814" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Paraland Link (P-01)</text>
-<circle cx="1648" cy="774" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="1674" y="780" font-size="19" font-weight="600" text-anchor="start" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Paraland – Marina</text>
-<circle cx="420" cy="920" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="420" y="958" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Čimprlichovo Hradiště</text>
-<circle cx="774" cy="441" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="798" y="447" font-size="19" font-weight="600" text-anchor="start" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Praha</text>
-<circle cx="774" cy="296" r="8" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="752" y="290" font-size="19" font-weight="600" text-anchor="end" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">výhybna Letiště</text>
-<circle cx="940" cy="296" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="964" y="302" font-size="19" font-weight="600" text-anchor="start" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Letiště</text>
-<circle cx="774" cy="171" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="774" y="145" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Aokawa</text>
-<circle cx="483" cy="171" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="483" y="145" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Ōru Maito</text>
-<circle cx="1107" cy="171" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="1107" y="145" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Hoshimachi</text>
-<circle cx="1211" cy="524" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="1211" y="498" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Zelená průmyslová zóna</text>
-<circle cx="1315" cy="524" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="1315" y="562" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Závod na řasy</text>
-<circle cx="1419" cy="524" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="1445" y="530" font-size="19" font-weight="600" text-anchor="start" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Nákladní přístav</text>
-<circle cx="400" cy="587" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="400" y="559" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Přehrada</text>
-<circle cx="275" cy="587" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="275" y="627" font-size="19" font-weight="600" text-anchor="middle" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Vodopád</text>
-<circle cx="233" cy="420" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="259" y="426" font-size="19" font-weight="600" text-anchor="start" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Krystalová jeskyně</text>
-<circle cx="233" cy="316" r="12" fill="#fff" stroke="#1d2730" stroke-width="3"/>
-<text x="277" y="322" font-size="19" font-weight="600" text-anchor="start" fill="#1d2730" stroke="#f7f5ee" stroke-width="5" paint-order="stroke">Horská stanice</text>
-<text x="1492" y="826" font-size="18" text-anchor="middle" fill="#1f5fbf" font-style="italic">podmoří 1,48 km · prosklená galerie 226 m</text>
-<text x="1211" y="874" font-size="16" text-anchor="middle" fill="#5b6770">poloostrov Paraland Link</text>
-<text x="774" y="774" font-size="26" text-anchor="middle" fill="#6b2a1e" font-weight="700">LARPINGTON</text><text x="774" y="800" font-size="17" text-anchor="middle" fill="#6b2a1e">městský okruh L3 · 4 uzly</text>
-<rect x="1270" y="924" width="560" height="330" rx="12" fill="#fff" stroke="#c9c3b3"/>
-<text x="1290" y="960" font-size="24" font-weight="700" fill="#25313a">Legenda</text>
-<line x1="1290" y1="998" x2="1380" y2="998" stroke="#d9531e" stroke-width="14" stroke-linecap="round"/>
-<text x="1400" y="1004" font-size="19" fill="#25313a">L1 Skyline Experience – vyhlídková, smyčka v jeskyni</text>
-<line x1="1290" y1="1044" x2="1380" y2="1044" stroke="#2f7d4f" stroke-width="14" stroke-linecap="round"/>
-<text x="1400" y="1050" font-size="19" fill="#25313a">L2 Heritage Connect – povrchová</text>
-<line x1="1290" y1="1090" x2="1380" y2="1090" stroke="#1f5fbf" stroke-width="16" stroke-linecap="round" stroke-dasharray="30 12"/>
-<text x="1400" y="1096" font-size="19" fill="#25313a">L3 Metro Blue – podzemní (čárkovaně)</text>
-<line x1="1290" y1="1136" x2="1380" y2="1136" stroke="#8fd3ff" stroke-width="18" stroke-linecap="round"/>
-<text x="1400" y="1142" font-size="19" fill="#25313a">prosklená galerie pod průlivem</text>
-<circle cx="1334" cy="1186" r="13" fill="#fff" stroke="#1d2730" stroke-width="3"/><text x="1400" y="1192" font-size="19" fill="#25313a">přestupní uzel (L1·L2·L3)</text>
-<circle cx="1334" cy="1214" r="11" fill="#fff" stroke="#1d2730" stroke-width="3"/><text x="1400" y="1220" font-size="19" fill="#25313a">přestup L2 ↔ L3 (právě tři)</text>
-<circle cx="1334" cy="1242" r="7" fill="#fff" stroke="#1d2730" stroke-width="3"/><text x="1400" y="1248" font-size="19" fill="#25313a">stanice</text>
+<title>Schéma železnic Larpidie a Paralandu — číslované stanice</title>
+<rect width="1900" height="1330" fill="#f5f4ef"/>
+<text x="54" y="60" font-size="38" font-weight="750" fill="#25313a">Železnice Larpidie</text>
+<text x="54" y="98" font-size="19" fill="#56636c">Přehled linek a stanic · schematické vedení, mimo měřítko · pracovní návrh</text>
+<rect x="38" y="132" width="1086" height="1092" rx="18" fill="#fffefa" stroke="#d7d4ca"/>
+<rect x="1142" y="132" width="720" height="1092" rx="18" fill="#fffefa" stroke="#d7d4ca"/>
+<polyline points="410,503 534,503 596,565 596,689 534,751 410,751 348,689 348,565 410,503" fill="none" stroke="#1f5fbf" stroke-width="15" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="24 10"/>
+<polyline points="596,627 689,627 782,627" fill="none" stroke="#1f5fbf" stroke-width="15" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="24 10"/>
+<polyline points="782,627 993,627" fill="none" stroke="#83cde4" stroke-width="23" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="782,627 993,627" fill="none" stroke="#1f5fbf" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="12 9"/>
+<polyline points="348,602 410,540 472,540 534,540 596,602" fill="none" stroke="#2f7d4f" stroke-width="13" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="348,627 261,714" fill="none" stroke="#2f7d4f" stroke-width="13" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="472,503 472,429 472,342 472,267" fill="none" stroke="#2f7d4f" stroke-width="13" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="472,267 298,267" fill="none" stroke="#2f7d4f" stroke-width="13" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="472,267 670,267" fill="none" stroke="#2f7d4f" stroke-width="13" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="472,342 571,342" fill="none" stroke="#2f7d4f" stroke-width="13" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="596,627 670,553 732,478 856,478" fill="none" stroke="#2f7d4f" stroke-width="13" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="348,627 298,565 249,515 174,515 150,453 150,416 150,354" fill="none" stroke="#d9531e" stroke-width="13" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="348" cy="627" r="17" fill="#fff" stroke="#1f5fbf" stroke-width="4"/>
+<circle cx="321" cy="604" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="321" y="609" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">01</text>
+<circle cx="472" cy="503" r="14" fill="#fff" stroke="#1f5fbf" stroke-width="4"/>
+<circle cx="472" cy="470" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="472" y="475" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">02</text>
+<circle cx="596" cy="627" r="14" fill="#fff" stroke="#1f5fbf" stroke-width="4"/>
+<circle cx="624" cy="605" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="624" y="610" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">03</text>
+<circle cx="472" cy="751" r="10" fill="#fff" stroke="#1f5fbf" stroke-width="4"/>
+<circle cx="472" cy="785" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="472" y="790" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">04</text>
+<circle cx="689.0" cy="627" r="10" fill="#fff" stroke="#1f5fbf" stroke-width="4"/>
+<circle cx="689.0" cy="599" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="689.0" y="604" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">05</text>
+<circle cx="782" cy="627" r="10" fill="#fff" stroke="#1f5fbf" stroke-width="4"/>
+<circle cx="782" cy="661" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="782" y="666" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">06</text>
+<circle cx="992.8000000000001" cy="627" r="10" fill="#fff" stroke="#1f5fbf" stroke-width="4"/>
+<circle cx="1016.8000000000001" cy="627" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="1016.8000000000001" y="632" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">07</text>
+<circle cx="261.20000000000005" cy="713.8" r="10" fill="#fff" stroke="#2f7d4f" stroke-width="4"/>
+<circle cx="238.20000000000005" cy="746.8" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="238.20000000000005" y="751.8" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">08</text>
+<circle cx="248.79999999999998" cy="515.4000000000001" r="10" fill="#fff" stroke="#d9531e" stroke-width="4"/>
+<circle cx="248.79999999999998" cy="489.4000000000001" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="248.79999999999998" y="494.4000000000001" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">09</text>
+<circle cx="174.39999999999998" cy="515.4000000000001" r="10" fill="#fff" stroke="#d9531e" stroke-width="4"/>
+<circle cx="150.39999999999998" cy="537.4000000000001" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="150.39999999999998" y="542.4000000000001" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">10</text>
+<circle cx="149.6" cy="416.20000000000005" r="10" fill="#fff" stroke="#d9531e" stroke-width="4"/>
+<circle cx="173.6" cy="416.20000000000005" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="173.6" y="421.20000000000005" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">11</text>
+<circle cx="149.6" cy="354.2" r="10" fill="#fff" stroke="#d9531e" stroke-width="4"/>
+<circle cx="177.6" cy="349.2" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="177.6" y="354.2" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">12</text>
+<circle cx="472" cy="428.6" r="10" fill="#fff" stroke="#2f7d4f" stroke-width="4"/>
+<circle cx="497" cy="428.6" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="497" y="433.6" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">13</text>
+<circle cx="472" cy="341.8" r="7" fill="#fff" stroke="#2f7d4f" stroke-width="4"/>
+<circle cx="438" cy="335.8" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="438" y="340.8" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">14</text>
+<circle cx="571.2" cy="341.8" r="10" fill="#fff" stroke="#2f7d4f" stroke-width="4"/>
+<circle cx="601.2" cy="351.8" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="601.2" y="356.8" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">15</text>
+<circle cx="472" cy="267.4" r="10" fill="#fff" stroke="#2f7d4f" stroke-width="4"/>
+<circle cx="472" cy="241.39999999999998" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="472" y="246.39999999999998" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">16</text>
+<circle cx="298.4" cy="267.4" r="10" fill="#fff" stroke="#2f7d4f" stroke-width="4"/>
+<circle cx="298.4" cy="241.39999999999998" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="298.4" y="246.39999999999998" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">17</text>
+<circle cx="670.4" cy="267.4" r="10" fill="#fff" stroke="#2f7d4f" stroke-width="4"/>
+<circle cx="670.4" cy="241.39999999999998" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="670.4" y="246.39999999999998" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">18</text>
+<circle cx="732.4" cy="478.20000000000005" r="10" fill="#fff" stroke="#2f7d4f" stroke-width="4"/>
+<circle cx="704.4" cy="460.20000000000005" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="704.4" y="465.20000000000005" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">19</text>
+<circle cx="794.4" cy="478.20000000000005" r="10" fill="#fff" stroke="#2f7d4f" stroke-width="4"/>
+<circle cx="794.4" cy="506.20000000000005" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="794.4" y="511.20000000000005" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">20</text>
+<circle cx="856.4" cy="478.20000000000005" r="10" fill="#fff" stroke="#2f7d4f" stroke-width="4"/>
+<circle cx="884.4" cy="475.20000000000005" r="15" fill="#fffefa" stroke="#495860" stroke-width="1.5"/>
+<text x="884.4" y="480.20000000000005" text-anchor="middle" font-size="12" font-weight="750" fill="#25313a">21</text>
+<text x="330" y="732" font-size="21" font-weight="750" fill="#6b2a1e">LARPINGTON · MĚSTSKÝ OKRUH</text>
+<text x="820" y="680" font-size="15" fill="#315d70">Podmořský tunel a prosklená galerie</text>
+<text x="820" y="704" font-size="14" fill="#56636c">1,48 km podmoří · galerie 226 m</text>
+<text x="1172" y="176" font-size="23" font-weight="750" fill="#25313a">Stanice</text>
+<text x="1172" y="202" font-size="14" fill="#68747b">Čísla v seznamu odpovídají číselným značkám v mapě.</text>
+<text x="1172" y="244" font-size="15" font-weight="700" fill="#8a563f">MĚSTO A ZÁPAD</text>
+<text x="1510" y="244" font-size="15" font-weight="700" fill="#8a563f">SEVER A VÝCHOD</text>
+<circle cx="1185" cy="281" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1185" y="285" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">01</text>
+<text x="1206" y="286" font-size="14.5" font-weight="650" fill="#25313a">Larpington Západ</text>
+<text x="1206" y="307" font-size="12" fill="#66737b">L1 · L2 · L3</text>
+<circle cx="1185" cy="357" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1185" y="361" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">02</text>
+<text x="1206" y="362" font-size="14.5" font-weight="650" fill="#25313a">Larpington Sever</text>
+<text x="1206" y="383" font-size="12" fill="#66737b">L2 · L3</text>
+<circle cx="1185" cy="433" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1185" y="437" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">03</text>
+<text x="1206" y="438" font-size="14.5" font-weight="650" fill="#25313a">Larpington Východ</text>
+<text x="1206" y="459" font-size="12" fill="#66737b">L2 · L3</text>
+<circle cx="1185" cy="509" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1185" y="513" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">04</text>
+<text x="1206" y="514" font-size="14.5" font-weight="650" fill="#25313a">Larpington Střed – Přístav</text>
+<text x="1206" y="535" font-size="12" fill="#66737b">L3</text>
+<circle cx="1185" cy="585" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1185" y="589" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">05</text>
+<text x="1206" y="590" font-size="14.5" font-weight="650" fill="#25313a">Východní nábřeží</text>
+<text x="1206" y="611" font-size="12" fill="#66737b">L3</text>
+<circle cx="1185" cy="661" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1185" y="665" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">06</text>
+<text x="1206" y="666" font-size="14.5" font-weight="650" fill="#25313a">Paraland Link</text>
+<text x="1206" y="687" font-size="12" fill="#66737b">L3</text>
+<circle cx="1185" cy="737" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1185" y="741" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">07</text>
+<text x="1206" y="742" font-size="14.5" font-weight="650" fill="#25313a">Paraland – Marina</text>
+<text x="1206" y="763" font-size="12" fill="#66737b">L3</text>
+<circle cx="1185" cy="813" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1185" y="817" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">08</text>
+<text x="1206" y="818" font-size="14.5" font-weight="650" fill="#25313a">Cimprlichovo Hradiště</text>
+<text x="1206" y="839" font-size="12" fill="#66737b">L2</text>
+<circle cx="1185" cy="889" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1185" y="893" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">09</text>
+<text x="1206" y="894" font-size="14.5" font-weight="650" fill="#25313a">Přehrada</text>
+<text x="1206" y="915" font-size="12" fill="#66737b">L1</text>
+<circle cx="1185" cy="965" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1185" y="969" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">10</text>
+<text x="1206" y="970" font-size="14.5" font-weight="650" fill="#25313a">Vodopád</text>
+<text x="1206" y="991" font-size="12" fill="#66737b">L1</text>
+<circle cx="1185" cy="1041" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1185" y="1045" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">11</text>
+<text x="1206" y="1046" font-size="14.5" font-weight="650" fill="#25313a">Krystalová jeskyně</text>
+<text x="1206" y="1067" font-size="12" fill="#66737b">L1</text>
+<circle cx="1523" cy="281" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1523" y="285" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">12</text>
+<text x="1544" y="286" font-size="14.5" font-weight="650" fill="#25313a">Horská stanice</text>
+<text x="1544" y="307" font-size="12" fill="#66737b">L1</text>
+<circle cx="1523" cy="357" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1523" y="361" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">13</text>
+<text x="1544" y="362" font-size="14.5" font-weight="650" fill="#25313a">Praha</text>
+<text x="1544" y="383" font-size="12" fill="#66737b">L2</text>
+<circle cx="1523" cy="433" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1523" y="437" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">14</text>
+<text x="1544" y="438" font-size="14.5" font-weight="650" fill="#25313a">Výhybna Letiště</text>
+<text x="1544" y="459" font-size="12" fill="#66737b">L2</text>
+<circle cx="1523" cy="509" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1523" y="513" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">15</text>
+<text x="1544" y="514" font-size="14.5" font-weight="650" fill="#25313a">Letiště</text>
+<text x="1544" y="535" font-size="12" fill="#66737b">L2</text>
+<circle cx="1523" cy="585" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1523" y="589" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">16</text>
+<text x="1544" y="590" font-size="14.5" font-weight="650" fill="#25313a">Aokawa</text>
+<text x="1544" y="611" font-size="12" fill="#66737b">L2</text>
+<circle cx="1523" cy="661" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1523" y="665" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">17</text>
+<text x="1544" y="666" font-size="14.5" font-weight="650" fill="#25313a">Ōru Maito</text>
+<text x="1544" y="687" font-size="12" fill="#66737b">L2</text>
+<circle cx="1523" cy="737" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1523" y="741" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">18</text>
+<text x="1544" y="742" font-size="14.5" font-weight="650" fill="#25313a">Hoshimachi</text>
+<text x="1544" y="763" font-size="12" fill="#66737b">L2</text>
+<circle cx="1523" cy="813" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1523" y="817" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">19</text>
+<text x="1544" y="818" font-size="14.5" font-weight="650" fill="#25313a">Zelená průmyslová zóna</text>
+<text x="1544" y="839" font-size="12" fill="#66737b">L2</text>
+<circle cx="1523" cy="889" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1523" y="893" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">20</text>
+<text x="1544" y="894" font-size="14.5" font-weight="650" fill="#25313a">Závod na řasy</text>
+<text x="1544" y="915" font-size="12" fill="#66737b">L2</text>
+<circle cx="1523" cy="965" r="13" fill="#f7f2e9" stroke="#59656d" stroke-width="1.3"/>
+<text x="1523" y="969" text-anchor="middle" font-size="10.5" font-weight="750" fill="#25313a">21</text>
+<text x="1544" y="970" font-size="14.5" font-weight="650" fill="#25313a">Nákladní přístav</text>
+<text x="1544" y="991" font-size="12" fill="#66737b">L2</text>
+<line x1="64" y1="1150" x2="128" y2="1150" stroke="#d9531e" stroke-width="11" stroke-linecap="round"/><text x="142" y="1156" font-size="14" fill="#25313a">L1 · horská vyhlídková</text>
+<line x1="360" y1="1150" x2="424" y2="1150" stroke="#2f7d4f" stroke-width="11" stroke-linecap="round"/><text x="438" y="1156" font-size="14" fill="#25313a">L2 · povrchová</text>
+<line x1="610" y1="1150" x2="674" y2="1150" stroke="#1f5fbf" stroke-width="13" stroke-dasharray="18 8" stroke-linecap="round"/><text x="688" y="1156" font-size="14" fill="#25313a">L3 · podzemní</text>
+<line x1="870" y1="1150" x2="934" y2="1150" stroke="#83cde4" stroke-width="17" stroke-linecap="round"/><text x="948" y="1156" font-size="14" fill="#25313a">podmořské spojení</text>
+<text x="1172" y="1124" font-size="13" fill="#69757c">Schválené jsou role linek; trasy a stanice jsou návrhem.</text>
 </svg>

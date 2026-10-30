@@ -13,7 +13,7 @@ C-04;district;district;Kynčlova čtvrť;;;main;south_southeast;66.0;71.0;15.84;
 C-05;district;district;Klimečkova čtvrť;;;main;east_northeast;72.0;76.0;17.28;12.16;12.7;proposed;proposed;proposed;geo_ref;;část centra
 C-06;district;district;Žemličkova čtvrť;;;main;south_southeast;67.0;81.0;16.08;12.96;19.9;proposed;proposed;proposed;geo_ref;;část centra
 T-01;settlement;town;Praha;Praha;プラハ;main;central_lowland;70.0;49.0;16.8;7.84;41.1;approved;approved;proposed;geo_ref;;český toponym v obytné nížině
-T-02;settlement;town;Čimprlichovo Hradiště;Čimprlichovo Hradiště;チンプルリフ砦;main;south_southeast;48.0;72.0;11.52;11.52;56.3;approved;approved;proposed;geo_ref;;historické městečko
+T-02;settlement;town;Cimprlichovo Hradiště;Cimprlichovo Hradiště;チンプルリフ砦;main;south_southeast;48.0;72.0;11.52;11.52;56.3;approved;approved;proposed;geo_ref;;historické městečko
 T-03;settlement;town;Havlišovo Doupě;Havliš's Den;ハヴリシュの巣;main;west_northwest;17.0;60.0;4.08;9.6;192.0;approved;approved;proposed;geo_ref;;horská venkovská obec
 T-04;settlement;town;Ōru Maito (オールマイト);Ōru Maito;オールマイト;main;north;56.0;23.0;13.44;3.68;24.0;approved;approved;proposed;geo_ref;;japonizované severní městečko
 T-05;settlement;town;Aokawa (青川);Aokawa;青川;main;north;73.0;26.5;17.52;4.24;16.6;proposed;proposed;proposed;geo_ref;;další návrhové severní město
@@ -70,7 +70,7 @@ ST-L1-02;rail_station;station;Přehrada;;;main;central_west;51.62;63.06;12.39;10
 ST-L1-03;rail_station;station;Vodopád (fotozastávka);;;main;central_west;43.96;53.56;10.55;8.57;131.5;proposed;proposed;proposed;atlas_new;;"N-03 – fotozastávka; bezpečná vyhlídková plošina"
 ST-L1-04;rail_station;station;Krystalová jeskyně;;;main;west_northwest;39.19;48.31;9.406;7.73;195.7;proposed;proposed;proposed;atlas_new;;"N-02 – nástupiště před vstupním tunelem; vlak pokračuje jeskyní"
 ST-L1-05;rail_station;station;Horská stanice;;;main;west_northwest;39.29;40.44;9.43;6.47;242.4;proposed;proposed;proposed;atlas_new;;"konečná u pohoří M-02/M-03; návaznost na turistiku, lyžování a paragliding"
-ST-L2-01;rail_station;station;Čimprlichovo Hradiště;;;main;south_southeast;48.71;71.81;11.69;11.49;43.6;proposed;proposed;proposed;atlas_new;;historické městečko T-02
+ST-L2-01;rail_station;station;Cimprlichovo Hradiště;;;main;south_southeast;48.71;71.81;11.69;11.49;43.6;proposed;proposed;proposed;atlas_new;;historické městečko T-02
 ST-N;rail_station;hub;Larpington Sever (Kynčlova);;;main;south_southeast;66.25;68.44;15.9;10.95;28.7;proposed;proposed;proposed;atlas_new;;přestup L2↔L3
 ST-E;rail_station;hub;Larpington Východ (Klimečkova);;;main;east_northeast;73.54;75.31;17.65;12.05;10.7;proposed;proposed;proposed;atlas_new;;přestup L2↔L3
 ST-L2-05;rail_station;station;Zelená průmyslová zóna;;;main;east_northeast;81.29;55.69;19.51;8.91;16.1;proposed;proposed;proposed;atlas_new;;I-01, školy a jídelny v areálu
@@ -105,9 +105,9 @@ RD-04;road;R2;Aokawa – Hoshimachi;;;main;north;76.69;27.65;18.405;4.424;10.3;p
 RD-05;road;R2;Praha – letiště – Zelená zóna;;;main;east_northeast;79.73;45.11;19.135;7.218;17.7;proposed;proposed;proposed;atlas_new;5.16;
 RD-06;road;R2;Zelená zóna – závod – nákladní přístav;;;main;east_northeast;86.35;59.08;20.723;9.453;10.7;proposed;proposed;proposed;atlas_new;3.18;
 RD-07;road;R2;Larpington Východ – Zelená zóna;;;main;east_northeast;78.51;65.33;18.843;10.452;7.1;proposed;proposed;proposed;atlas_new;3.31;
-RD-08;road;R2;Larpington Západ – Čimprlichovo Hradiště;;;main;south_southeast;48.74;72.92;11.698;11.667;43.6;proposed;proposed;proposed;atlas_new;2.43;
-RD-09;road;R2;Čimprlichovo Hradiště – přehrada – Horská stanice;;;main;central_west;49.03;59.01;11.767;9.441;93.8;proposed;proposed;proposed;atlas_new;6.93;
-RD-10;road;R2;Čimprlichovo Hradiště – Havlišovo Doupě;;;main;west_northwest;32.49;68.94;7.798;11.031;117.3;proposed;proposed;proposed;atlas_new;7.8;
+RD-08;road;R2;Larpington Západ – Cimprlichovo Hradiště;;;main;south_southeast;48.74;72.92;11.698;11.667;43.6;proposed;proposed;proposed;atlas_new;2.43;
+RD-09;road;R2;Cimprlichovo Hradiště – přehrada – Horská stanice;;;main;central_west;49.03;59.01;11.767;9.441;93.8;proposed;proposed;proposed;atlas_new;6.93;
+RD-10;road;R2;Cimprlichovo Hradiště – Havlišovo Doupě;;;main;west_northwest;32.49;68.94;7.798;11.031;117.3;proposed;proposed;proposed;atlas_new;7.8;
 RD-11;road;R2;Larpington – hlavní tepna západ–východ;;;main;south_southeast;66.53;76.06;15.967;12.17;17.9;proposed;proposed;proposed;atlas_new;4.2;
 RD-12;road;R2;Larpington – tepna sever–jih k přístavu;;;main;south_southeast;67.18;75.76;16.124;12.121;18.4;proposed;proposed;proposed;atlas_new;3.07;
 RD-PL1;road;R3;Okružní servisní silnice Paralandu;;;para;southeast_offshore;111.92;118.44;26.86;18.95;7.8;proposed;proposed;proposed;atlas_new;11.86;"omezený provoz (rezervace a ochrana místních); bez autopřevozu z hlavního ostrova"
@@ -145,7 +145,7 @@ TR-PL2;trail;hiking;Staré městečko – zřícenina – hrad;;;para;southeast_
 CY-01;cycleway;cycleway;Pobřežní cyklotrasa (okruh ostrova);;;main;north;46.42;21.69;11.14;3.471;103.9;approved;proposed;proposed;bible;53.84;podél R1 (bible: hustá síť cyklotras) | síť cyklotras je approved, tato trasa je návrh
 CY-02;cycleway;cycleway;Larpington – Praha – Aokawa;;;main;central_lowland;70.76;45.53;16.983;7.285;43.7;approved;proposed;proposed;bible;6.67;síť cyklotras je approved, tato trasa je návrh
 CY-03;cycleway;cycleway;Praha – letiště – Zelená zóna – přístav;;;main;east_northeast;81.52;57.46;19.564;9.193;12.5;approved;proposed;proposed;bible;8.35;síť cyklotras je approved, tato trasa je návrh
-CY-04;cycleway;cycleway;Larpington – Čimprlichovo Hradiště – přehrada;;;main;south_southeast;52.38;66.65;12.57;10.664;63.8;approved;proposed;proposed;bible;7.14;síť cyklotras je approved, tato trasa je návrh
+CY-04;cycleway;cycleway;Larpington – Cimprlichovo Hradiště – přehrada;;;main;south_southeast;52.38;66.65;12.57;10.664;63.8;approved;proposed;proposed;bible;7.14;síť cyklotras je approved, tato trasa je návrh
 CY-05;cycleway;cycleway;Aokawa – Hoshimachi / Ōru Maito;;;main;north;72.5;27.61;17.4;4.417;18.9;approved;proposed;proposed;bible;5.98;síť cyklotras je approved, tato trasa je návrh
 CY-06;cycleway;cycleway;Okruh Paralandu;;;main;southeast_offshore;111.9;118.31;26.857;18.93;9.3;approved;proposed;proposed;bible;11.74;pobřežní promenáda a okruh | síť cyklotras je approved, tato trasa je návrh
 SK-01;other_line;ski_run;Lyžařská sjezdovka M-02;;;main;west_northwest;37.96;38.62;9.11;6.18;258.3;proposed;proposed;proposed;bible;;"prudší sjezdovková hora (approved); krátká zimní sezona, zasněžování"

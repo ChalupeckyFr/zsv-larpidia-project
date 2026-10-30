@@ -73,7 +73,7 @@ def write_patch(objs, meta, docs: Path, atlas: Path, human: Path):
                                                                            "waterfall_drop_m": round(rel["waterfall"]["top_m"] - rel["waterfall"]["bottom_m"], 1), "cave_elev_m": rel["elevations_m_model"]["N-02"]},
                                                                           "modelové hodnoty pro vodárenské dílo, vodopád a jeskyni")},
         {"op": "add", "path": "/urbanism/town_ids", "value": node({"Hoshimachi": "T-06", "Aokawa": "T-05"}, "ID pro města z other_towns")},
-        {"op": "add", "path": "/urbanism/population_distribution_model", "value": node({"Larpington": 12000, "Praha": 4500, "Aokawa": 2600, "Ōru Maito": 2300, "Čimprlichovo Hradiště": 2000,
+        {"op": "add", "path": "/urbanism/population_distribution_model", "value": node({"Larpington": 12000, "Praha": 4500, "Aokawa": 2600, "Ōru Maito": 2300, "Cimprlichovo Hradiště": 2000,
                                                                                        "Hoshimachi": 1600, "Havlišovo Doupě": 700, "Zelená průmyslová zóna": 600, "Paraland": 1400,
                                                                                        "osady (6×200)": 1200, "roztroušeně": 3100}, "součet 32 000; modelové, ne sčítání")},
         {"op": "add", "path": "/mobility/rail_network_model", "value": node({"L1": {"km": st["rail_km"]["L1"], "max_grade_pct": st["L1_max_grade_pct"], "stations": ["Larpington Západ", "Přehrada", "Vodopád", "Krystalová jeskyně", "Horská stanice"]},
@@ -113,7 +113,7 @@ def write_names_doc(objs, docs: Path, reg: Path, names: dict, bays: list):
           "## 2. Navržená jména (česky / anglicky / japonsky)", "", "| ID | Česky | Anglicky | Japonsky | Schválit |", "|---|---|---|---|---|"]
     for n in rows:
         L.append(f"| {n[0]} | {n[1]} | {n[2]} | {n[3]} | ☐ |")
-    L += ["", "Jména povinných měst (Praha, Čimprlichovo Hradiště, Havlišovo Doupě, Ōru Maito) jsou **schválená**; ostatní jsou návrh. Japonské zápisy jsou orientační a před tiskem je má zkontrolovat rodilý mluvčí.", "",
+    L += ["", "Jména povinných měst (Praha, Cimprlichovo Hradiště, Havlišovo Doupě, Ōru Maito) jsou **schválená**; ostatní jsou návrh. Japonské zápisy jsou orientační a před tiskem je má zkontrolovat rodilý mluvčí.", "",
           "## 3. Další body k potvrzení", "",
           "- **R1 na severozápadě** vede po útesech až do 293 m a ve 3 tunelech (2,2 km), protože pod M-01 není pobřežní pás.",
           "- **L3** je jedna linka: městský okruh (Západ, Sever, Východ, Střed–Přístav) + větev na Paraland; přestupy na L2 jsou právě 3.",

@@ -25,8 +25,9 @@ button.small{font:inherit;padding:3px 10px;border:1px solid var(--line);border-r
 JS = r"""
 const svg=document.querySelector('#map svg');const REG=JSON.parse(document.getElementById('reg').textContent);const BYID=Object.fromEntries(REG.objects.map(o=>[o.id,o]));
 const vb0=svg.viewBox.baseVal;const FULL=[vb0.x,vb0.y,vb0.width,vb0.height];let vb=[...FULL];svg.removeAttribute('width');svg.removeAttribute('height');
-const X0=REG.meta.origin_atlas_km.x,Y0=REG.meta.origin_atlas_km.y;function setVB(){svg.setAttribute('viewBox',vb.join(' '))}
+const X0=REG.meta.origin_atlas_km.x,Y0=REG.meta.origin_atlas_km.y;let numberFrame=0;function setVB(){svg.setAttribute('viewBox',vb.join(' '));if(numberFrame)return;numberFrame=requestAnimationFrame(updateHouseNumbers)}
 const map=document.getElementById('map');
+function updateHouseNumbers(){numberFrame=0;const layer=svg.getElementById('house-numbers'),toggle=document.getElementById('house-numbers-toggle');if(!layer)return;const enabled=!!toggle?.checked&&vb[2]<=1100;layer.style.display=enabled?'':'none';if(!enabled)return;const rect=svg.getBoundingClientRect(),matrix=svg.getScreenCTM(),labels=[...layer.querySelectorAll('text')],font=Math.max(5,Math.min(18,vb[2]/Math.max(1,rect.width)*11));const occupied=new Set(),cell=24;for(const el of labels){el.style.fontSize=font+'px';const x=Number(el.getAttribute('x')),y=Number(el.getAttribute('y'));if(x<vb[0]||x>vb[0]+vb[2]||y<vb[1]||y>vb[1]+vb[3]){el.style.display='none';continue}const pt=svg.createSVGPoint();pt.x=x;pt.y=y;const p=pt.matrixTransform(matrix),key=Math.floor(p.x/cell)+','+Math.floor(p.y/cell);if(occupied.has(key)){el.style.display='none';continue}occupied.add(key);el.style.display=''} }
 function clientToSvg(ev){const r=svg.getBoundingClientRect();const k=Math.max(vb[2]/r.width,vb[3]/r.height);const cx=r.left+r.width/2,cy=r.top+r.height/2;return [vb[0]+vb[2]/2+(ev.clientX-cx)*k,vb[1]+vb[3]/2+(ev.clientY-cy)*k]}
 map.addEventListener('wheel',e=>{e.preventDefault();const [sx,sy]=clientToSvg(e);const f=e.deltaY<0?0.8:1.25;const nw=Math.min(FULL[2],vb[2]*f),nh=nw*vb[3]/vb[2];vb=[sx-(sx-vb[0])*nw/vb[2],sy-(sy-vb[1])*nh/vb[3],nw,nh];setVB()},{passive:false});
 let drag=null;map.addEventListener('pointerdown',e=>{drag={x:e.clientX,y:e.clientY,vb:[...vb],moved:false};map.setPointerCapture(e.pointerId)});
@@ -60,6 +61,7 @@ lp.addEventListener('change',e=>{const i=e.target.dataset.l;if(i)svg.getElementB
 document.querySelectorAll('[data-lang]').forEach(b=>b.onclick=()=>{activeLang=b.dataset.lang;document.querySelectorAll('[data-lang]').forEach(x=>x.setAttribute('aria-pressed',x===b));['cs','ja','en'].forEach(l=>{const el=svg.getElementById('labels-'+l);if(el)el.style.display=(l===activeLang)?'':'none';const cb=lp.querySelector(`[data-l="labels-${l}"]`);if(cb)cb.checked=(l===activeLang)});requestAnimationFrame(()=>requestAnimationFrame(declutterLabels))});
 requestAnimationFrame(()=>requestAnimationFrame(declutterLabels));
 document.getElementById('status').onchange=e=>svg.classList.toggle('status-mode',e.target.checked);
+document.getElementById('house-numbers-toggle').onchange=()=>{if(numberFrame)cancelAnimationFrame(numberFrame);numberFrame=requestAnimationFrame(updateHouseNumbers)};
 document.getElementById('reset').onclick=()=>{vb=[...FULL];setVB()};
 const q=document.getElementById('q'),res=document.getElementById('results');
 function search(){const t=q.value.trim().toLowerCase();if(!t){res.innerHTML='';return}
@@ -82,7 +84,7 @@ def viewer_html(svg_text: str, objs: list, meta: dict) -> str:
 <header><h1>Larpington – podklad plánu hlavního města (CP-01)</h1><span class="badge">NÁVRH · v{meta['atlas_version']}</span><span style="color:var(--soft)">A2 · 1 : 10 000 · kolečko = přiblížení, tažení = posun, klik = záznam</span><a class="city3d-link" href="capital-3d.html" target="_blank" rel="noopener">Otevřít 3D Larpington ↗</a></header>
 <aside><h2>Hledání</h2><input id="q" type="search" placeholder="ID nebo název (např. CP-B01, parlament, tržnice)"><div id="results"></div>
 <h2>Jazyk popisků</h2><div class="seg"><button data-lang="cs" aria-pressed="true">CS</button><button data-lang="ja" aria-pressed="false">JA</button><button data-lang="en" aria-pressed="false">EN</button></div>
-<h2>Režim</h2><label class="row"><input type="checkbox" id="status"> Obrysy podle stavu (schváleno × návrh)</label><button class="small" id="reset">Celý plán</button>
+<h2>Režim</h2><label class="row"><input type="checkbox" id="status"> Obrysy podle stavu (schváleno × návrh)</label><label class="row"><input type="checkbox" id="house-numbers-toggle"> Čísla domů při přiblížení</label><button class="small" id="reset">Celý plán</button>
 <div id="layers"></div></aside>
 <div id="map">{svg_inline}</div>
 <aside class="r"><h2>Záznam</h2><div id="info"><p style="color:var(--soft)">Klikněte na objekt v plánu nebo ho vyhledejte. Zobrazí se stav, poloha v metrech plánu i v km atlasu a foto/video vodítko.</p></div></aside>

@@ -24,7 +24,7 @@ Paraland je samostatný menší ostrov s rekreační funkcí. Jeho přesná ploc
 
 ## Města a kultura
 
-Mezi sídla, která mají být součástí Larpidie, patří Praha, Čimprlichovo Hradiště, Havlišovo Doupě a Ōru Maito / オールマイト. Aokawa / 青川 a Hoshimachi / 星町 jsou další návrhová jména. Hlavní město se v pracovních mapách označuje jako Larpington; skupina jeho jméno dosud neschválila.
+Mezi sídla, která mají být součástí Larpidie, patří Praha, Cimprlichovo Hradiště, Havlišovo Doupě a Ōru Maito / オールマイト. Aokawa / 青川 a Hoshimachi / 星町 jsou další návrhová jména. Hlavní město se v pracovních mapách označuje jako Larpington; skupina jeho jméno dosud neschválila.
 
 Architektura kombinuje anglické a velšské cihlové či kamenné domy, kostely, zahrady, tržiště a romantická náměstí s japonsky inspirovanými úzkými ulicemi a kompaktní dopravou. Čeština a angličtina jsou oficiální jazyky a japonština je široce užívaná. Svoboda vyznání je součástí konceptu, žádné státní náboženství ani potvrzené demografické rozdělení náboženství stanoveno není.
 

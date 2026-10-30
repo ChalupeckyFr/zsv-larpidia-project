@@ -39,7 +39,7 @@ Souřadnice X/Y níže jsou **normalizované procentní pozice uvnitř referenč
 | C-05 | Klimečkova čtvrť | 72 | 76 | část centra |
 | C-06 | Žemličkova čtvrť | 67 | 81 | část centra |
 | T-01 | Praha | 70 | 49 | český toponym v obytné nížině |
-| T-02 | Čimprlichovo Hradiště | 48 | 72 | historické městečko |
+| T-02 | Cimprlichovo Hradiště | 48 | 72 | historické městečko |
 | T-03 | Havlišovo Doupě | 17 | 60 | horská venkovská obec |
 | T-04 | Ōru Maito (オールマイト) | 56 | 20 | japonizované severní městečko |
 | T-05 | Aokawa (青川) | 73 | 24 | další návrhové severní město |

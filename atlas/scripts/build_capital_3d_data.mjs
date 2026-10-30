@@ -56,11 +56,7 @@ for (const feature of houseFeatures) {
   addUsedBox(box);
 }
 
-const futureColors = {
-  residential_low: '#b6a38b', residential_mid: '#b88368', old_town_mixed: '#bd8168',
-  promenade_retail: '#c28b69', retail_main: '#c49a70', transit_mixed: '#ad856d',
-  new_waterfront: '#aaa9b4',
-};
+const futureColors = Object.fromEntries(['residential_low', 'residential_mid', 'old_town_mixed', 'promenade_retail', 'retail_main', 'transit_mixed', 'new_waterfront'].map((use) => [use, '#b87558']));
 const futureTargets = {
   residential_low: 2, residential_mid: 6, old_town_mixed: 7, promenade_retail: 5,
   retail_main: 5, transit_mixed: 6, new_waterfront: 4,
@@ -109,7 +105,7 @@ for (const feature of blockFeatures) {
 
 const data = {
   blocks: blockFeatures.flatMap((f) => { const p = ring(f); return p ? [{ id: f.properties.id, use: f.properties.land_use, state: f.properties.build_state, points: p }] : []; }),
-  houses: houseFeatures.flatMap((f) => { const p = ring(f); return p ? [{ points: p, height: Number(f.properties.height_m || 4), color: f.properties.roof_color || '#a86248' }] : []; }),
+  houses: houseFeatures.flatMap((f) => { const p = ring(f); return p ? [{ id: f.properties.id, use: f.properties.subtype || 'residential_mid', kind: f.properties.kind || 'core', points: p, height: Number(f.properties.height_m || 4), floors: Number(f.properties.floors || 1), style: f.properties.architectural_style || 'residential', color: f.properties.roof_color || '#b87558' }] : []; }),
   future,
   buildings: read('cp_buildings.geojson').features.flatMap((f) => {
     const p = ring(f); return p ? [{ id: f.properties.id, subtype: f.properties.subtype, name: f.properties.name_en || f.properties.name_cs, points: p }] : [];

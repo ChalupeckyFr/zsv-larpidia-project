@@ -30,27 +30,22 @@ BAND = 0.07                   # šířka měkké hranice zastavění (podíl pra
 
 # typologie: druh, rozměry (m), podlaží, podíl bydlení, podíl obsazených parcel (zbytek = proluky a zahrady), střecha, váha růstu (menší = zastavuje se dřív)
 SPEC = {
-    "old_town_mixed": dict(kind="perimeter", depth=11.5, w=(7.0, 12.0), setback=1.2, gap=1.0, floors=(2, 3, 0.45), resi=0.55, fill=0.90, roof="gable", growth=0.80),
-    "promenade_retail": dict(kind="perimeter", depth=13.0, w=(9.0, 14.0), setback=1.2, gap=1.0, floors=(2, 3, 0.55), resi=0.30, fill=0.92, roof="gable", growth=0.85),
-    "retail_main": dict(kind="perimeter", depth=14.0, w=(12.0, 20.0), setback=1.5, gap=1.0, floors=(2, 3, 0.60), resi=0.35, fill=0.88, roof="gable", growth=0.90),
-    "transit_mixed": dict(kind="perimeter", depth=12.0, w=(8.0, 14.0), setback=1.5, gap=1.2, floors=(3, 4, 0.30), resi=0.50, fill=0.85, roof="gable", growth=0.95),
-    "residential_mid": dict(kind="perimeter", depth=10.5, w=(7.0, 10.0), setback=3.0, gap=1.6, floors=(2, 3, 0.45), resi=1.0, fill=0.80, roof="gable", growth=1.00),
+    "old_town_mixed": dict(kind="perimeter", depth=9.5, w=(6.5, 9.5), setback=1.2, gap=0.0, floors=(2, 3, 0.45), resi=0.55, fill=0.90, roof="gable", growth=0.80),
+    "promenade_retail": dict(kind="perimeter", depth=10.5, w=(8.0, 12.0), setback=1.2, gap=0.0, floors=(2, 3, 0.55), resi=0.30, fill=0.92, roof="gable", growth=0.85),
+    "retail_main": dict(kind="perimeter", depth=14.0, w=(12.0, 18.0), setback=1.0, gap=0.0, floors=(3, 4, 0.35), resi=0.30, fill=0.90, roof="flat", growth=0.90),
+    "transit_mixed": dict(kind="perimeter", depth=10.5, w=(7.5, 11.5), setback=1.5, gap=0.0, floors=(2, 3, 0.30), resi=0.50, fill=0.85, roof="gable", growth=0.95),
+    "residential_mid": dict(kind="perimeter", depth=9.0, w=(6.0, 8.5), setback=3.0, gap=0.0, floors=(2, 3, 0.45), resi=1.0, fill=0.80, roof="gable", growth=1.00),
     "residential_low": dict(kind="detached", plot=(24.0, 28.0), floors=(1, 2, 0.40), resi=1.0, fill=0.75, roof="gable", growth=1.30),
     "civic_mixed": dict(kind="civic", floors=(3, 4, 0.40), resi=0.0, fill=1.0, roof="flat", growth=1.0, max_n=5),
     "school": dict(kind="none", floors=(2, 3, 0.5), resi=0.0, fill=0.0, roof="gable", growth=1.0),
-    "new_waterfront": dict(kind="slabs", floors=(4, 6, 0.50), resi=0.90, fill=0.90, roof="flat", growth=1.25),
+    "new_waterfront": dict(kind="slabs", floors=(3, 5, 0.50), resi=0.90, fill=0.90, roof="flat", growth=1.25),
     "hotel_premium": dict(kind="none", floors=(3, 3, 0.0), resi=0.0, fill=0.0, roof="gable", growth=1.0),
 }
-ROOF_PAL = {
-    "old_town_mixed": ["#ac6046", "#a05440", "#ba7052", "#7e5646", "#c48c68", "#68686e"],
-    "promenade_retail": ["#ba7052", "#c89670", "#ac6046", "#d6cebe", "#96546a"],
-    "retail_main": ["#a86248", "#96543e", "#c4baaa", "#78767a", "#b0785c"],
-    "transit_mixed": ["#a86248", "#70707a", "#bab2a6", "#5c5e64"],
-    "residential_mid": ["#a86248", "#96543e", "#70707a", "#bab2a6", "#5c5e64", "#b0785c"],
-    "residential_low": ["#a86248", "#96543e", "#70707a", "#beb6aa", "#5c5e64"],
-    "civic_mixed": ["#968c96", "#b0a4a0", "#787682", "#c4bab0"],
-    "new_waterfront": ["#cecece", "#aab0ba", "#e4e0da", "#96a0aa", "#be9682"],
-}
+# Jednotná terakotová střecha udržuje půdorys i 3D pohled barevně čitelné.
+ROOF_PAL = {use: ["#b87558"] for use in (
+    "old_town_mixed", "promenade_retail", "retail_main", "transit_mixed",
+    "residential_mid", "residential_low", "civic_mixed", "new_waterfront",
+)}
 # klíčové budovy (cp_buildings): výška okapu a tvar střechy
 KEY_H = {"parliament": 22.0, "admin": 18.0, "museum": 16.0, "church": 20.0, "market_hall": 10.0, "hotel_premium": 20.0, "school": 10.0, "harbour_office": 9.0, "ferry_terminal": 7.0}
 
@@ -150,7 +145,8 @@ def detached(poly, spec, rng, occ):
     while x < max(xs):
         y = min(ys) + plot[1] / 2
         while y < max(ys):
-            w, d = rng.uniform(9, 13), rng.uniform(8, 11)
+            # Běžný rodinný dům má užší průčelí a hlubší půdorys (zhruba 60–70 m²), ne téměř čtverec.
+            w, d = rng.uniform(6.0, 7.5), rng.uniform(8.0, 9.5)
             ux, uy = x + rng.uniform(-3, 3), y + rng.uniform(-3, 3)
             cx, cy = c[0] + ux * ca - uy * sa, c[1] + ux * sa + uy * ca
             r = G.oriented_rect(cx, cy, w, d, ang)
@@ -400,7 +396,8 @@ def features(houses, blocks_ids, to_km=None):
         pts = [to_km(p) if to_km else p for p in h["poly"]]
         nd = 4 if to_km else 2
         pts = [[round(p[0], nd), round(p[1], nd)] for p in pts]
-        props = {"id": h["id"], "type": "house", "subtype": h["use"], "kind": h["kind"], "block": blocks_ids[h["block"]], "floors": h["floors"], "height_m": h["height_m"], "ridge_m": h["ridge_m"],
+        style = "glass_shopfront" if h["use"] in ("retail_main", "promenade_retail", "new_waterfront") else "old_rowhouse" if h["use"] == "old_town_mixed" else "residential"
+        props = {"id": h["id"], "type": "house", "subtype": h["use"], "architectural_style": style, "kind": h["kind"], "block": blocks_ids[h["block"]], "floors": h["floors"], "height_m": h["height_m"], "ridge_m": h["ridge_m"],
                  "roof": h["roof"], "roof_color": h["roof_col"], "footprint_m2": round(h["area"], 1), "capacity_model": h["capacity"], "exist_status": "proposed", "pos_status": "proposed",
                  "origin": "plan_new", "illustrative": True}
         fs.append({"type": "Feature", "properties": props, "geometry": {"type": "Polygon", "coordinates": [pts + [pts[0]]]}})

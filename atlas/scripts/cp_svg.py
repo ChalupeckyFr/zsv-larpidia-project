@@ -209,8 +209,54 @@ def build_svg(ctx, L, graph, blocks, spaces, stations, objs, routes, meta):
     if hs:
         pl.raw('<g id="houses-all" stroke="#5b4a40" stroke-width="0.35" stroke-linejoin="round">')
         for h in hs:
-            pl.raw(f'<path d="{pl.d(h["poly"], True)}" fill="{h["roof_col"]}"/>')
+            pl.raw(f'<path id="roof-{h["id"]}" data-house-number="{h["id"].rsplit("-", 1)[-1]}" d="{pl.d(h["poly"], True)}" fill="{h["roof_col"]}"/>')
         pl.raw("</g>")
+    pl.end()
+    pl.layer("house-numbers", "Čísla domů (pouze při přiblížení)", extra='style="display:none" pointer-events="none"')
+    for h in hs:
+        cx, cy = G.centroid(h["poly"])
+        pl.text(cx, cy, h["id"].rsplit("-", 1)[-1], size=12, fill="#2b211d", weight="700", extra=f'data-house-number="{h["id"].rsplit("-", 1)[-1]}"')
+    pl.end()
+    # Budoucí zástavba doplní rezervní části města i ve statickém plánu; zůstává jasně označená jako návrh.
+    pl.layer("future-development", "Budoucí zástavba v rezervě (návrh)", extra='pointer-events="none"')
+    future_boxes = []
+    for h in hs:
+        xs, ys = [p[0] for p in h["poly"]], [p[1] for p in h["poly"]]
+        future_boxes.append((min(xs), min(ys), max(xs), max(ys)))
+    future_targets = {"residential_low": 2, "residential_mid": 6, "old_town_mixed": 7, "promenade_retail": 5,
+                      "retail_main": 5, "transit_mixed": 6, "new_waterfront": 4}
+    for bi, (b, info) in enumerate(zip(blocks, meta.get("block_info") or []), 1):
+        if info.get("state") not in ("reserve", "partial"):
+            continue
+        poly = b["poly"]
+        xs, ys = [p[0] for p in poly], [p[1] for p in poly]
+        x0, x1, y0, y1 = min(xs), max(xs), min(ys), max(ys)
+        use = b.get("use", "residential_mid")
+        target = 2 if info["state"] == "partial" else future_targets.get(use, 3)
+        count = max(0, target - int(info.get("houses", 0)))
+        if not count or x1 - x0 < 16 or y1 - y0 < 14:
+            continue
+        cols = max(1, math.ceil(math.sqrt(target * (x1 - x0) / (y1 - y0))))
+        rows = max(1, math.ceil(target / cols))
+        w, h = min(13, (x1 - x0) / (cols + 1) * .46), min(9, (y1 - y0) / (rows + 1) * .46)
+        seed = sum((i + 1) * ord(ch) for i, ch in enumerate(f"CP-BL-{bi:04d}"))
+        placed = 0
+        for n in range(cols * rows):
+            if placed >= count:
+                break
+            slot = (n + seed) % (cols * rows)
+            col, row = slot % cols, slot // cols
+            cx, cy = x0 + (col + 1) * (x1 - x0) / (cols + 1), y0 + (row + 1) * (y1 - y0) / (rows + 1)
+            candidate = [(cx - w / 2, cy - h / 2), (cx + w / 2, cy - h / 2), (cx + w / 2, cy + h / 2), (cx - w / 2, cy + h / 2)]
+            if not all(G.point_in_poly(p, poly) for p in candidate):
+                continue
+            box = (cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2)
+            if any(not (box[2] < q[0] or box[0] > q[2] or box[3] < q[1] or box[1] > q[3]) for q in future_boxes):
+                continue
+            future_boxes.append(box)
+            pl.poly(candidate, fill="#b87558", stroke="#8a6655", sw=1.1,
+                    extra='fill-opacity="0.52" stroke-dasharray="3 2" data-proposed="true"')
+            placed += 1
     pl.end()
     # ---------------- koleje
     pl.layer("rail-surface", "Železnice L1 / L2 – povrch (z atlasu)")

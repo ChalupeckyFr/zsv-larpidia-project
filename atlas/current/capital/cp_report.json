@@ -31,34 +31,34 @@
     },
     "streets_km": {
       "A": 10.4,
-      "B": 3.8,
-      "C": 120.1,
-      "L": 15.0,
+      "B": 3.7,
+      "C": 92.1,
+      "L": 15.3,
       "P": 1.8,
       "R1": 6.5,
       "S": 0.5
     },
-    "streets_km_total": 158.1,
-    "nodes": 1355,
-    "edges": 2005,
-    "intersections_deg3plus": 968,
-    "dead_ends": 357,
+    "streets_km_total": 130.2,
+    "nodes": 1044,
+    "edges": 1523,
+    "intersections_deg3plus": 764,
+    "dead_ends": 262,
     "components": 3,
     "largest_component_share": 0.999,
-    "blocks": 874,
-    "block_area_km2": 4.53,
-    "block_median_m2": 4798,
+    "blocks": 556,
+    "block_area_km2": 4.9,
+    "block_median_m2": 5600,
     "land_use_blocks": {
-      "residential_low": 118,
-      "residential_mid": 374,
-      "transit_mixed": 54,
+      "residential_low": 61,
+      "residential_mid": 190,
+      "transit_mixed": 28,
       "school": 4,
-      "retail_main": 47,
-      "civic_mixed": 37,
-      "new_waterfront": 39,
-      "old_town_mixed": 143,
+      "retail_main": 25,
+      "civic_mixed": 23,
+      "new_waterfront": 23,
+      "old_town_mixed": 141,
       "hotel_premium": 1,
-      "promenade_retail": 57
+      "promenade_retail": 60
     },
     "objects": {
       "plan": 1,
@@ -70,32 +70,32 @@
       "park": 12,
       "promenade": 1,
       "station": 5,
-      "block": 874,
+      "block": 556,
       "cafe": 8,
       "rental": 4,
-      "shop": 5,
+      "shop": 9,
       "retail_zone": 3,
-      "street": 22,
+      "street": 30,
       "route": 3
     },
     "routes": [
       {
         "id": "CP-AR01",
-        "length_m": 1021,
+        "length_m": 1295,
         "max_grade_pct": 3.6,
         "share_over_5pct": 0.0,
         "dz_m": -17.9
       },
       {
         "id": "CP-AR02",
-        "length_m": 716,
-        "max_grade_pct": 1.6,
+        "length_m": 897,
+        "max_grade_pct": 1.5,
         "share_over_5pct": 0.0,
         "dz_m": 1.0
       },
       {
         "id": "CP-AR03",
-        "length_m": 1424,
+        "length_m": 1393,
         "max_grade_pct": 0.8,
         "share_over_5pct": 0.0,
         "dz_m": -2.4
@@ -103,68 +103,68 @@
     ],
     "houses": {
       "target_population": 12000,
-      "capacity": 12000,
-      "ratio": 1.0,
-      "full_buildout_capacity": 48348,
-      "full_buildout_ratio": 4.03,
-      "threshold_m": 434.3,
-      "houses": 3242,
-      "houses_core": 3118,
-      "houses_fringe": 124,
-      "footprint_ha": 34.9,
+      "capacity": 11992,
+      "ratio": 0.999,
+      "full_buildout_capacity": 33159,
+      "full_buildout_ratio": 2.76,
+      "threshold_m": 511.9,
+      "houses": 3822,
+      "houses_core": 3769,
+      "houses_fringe": 53,
+      "footprint_ha": 35.9,
       "blocks": {
-        "built": 217,
-        "partial": 29,
-        "reserve": 586,
-        "civic": 42
+        "built": 234,
+        "partial": 22,
+        "reserve": 272,
+        "civic": 28
       },
       "block_area_ha": {
-        "built": 92.5,
-        "partial": 15.4,
-        "reserve": 325.7,
-        "civic": 19.1
+        "built": 145.3,
+        "partial": 17.9,
+        "reserve": 299.8,
+        "civic": 27.1
       },
-      "coverage_of_built_blocks": 0.291,
+      "coverage_of_built_blocks": 0.202,
       "per_use": {
-        "residential_low": {
-          "houses": 32,
-          "footprint_ha": 0.28,
-          "capacity": 76
+        "transit_mixed": {
+          "houses": 514,
+          "footprint_ha": 5.06,
+          "capacity": 1251
         },
         "residential_mid": {
-          "houses": 1042,
-          "footprint_ha": 7.47,
-          "capacity": 3803
+          "houses": 1210,
+          "footprint_ha": 7.72,
+          "capacity": 4008
         },
-        "transit_mixed": {
-          "houses": 727,
-          "footprint_ha": 8.16,
-          "capacity": 2921
+        "residential_low": {
+          "houses": 56,
+          "footprint_ha": 0.37,
+          "capacity": 108
         },
         "retail_main": {
-          "houses": 113,
-          "footprint_ha": 2.36,
-          "capacity": 464
+          "houses": 136,
+          "footprint_ha": 2.76,
+          "capacity": 598
         },
         "civic_mixed": {
-          "houses": 23,
-          "footprint_ha": 2.43,
+          "houses": 24,
+          "footprint_ha": 2.48,
           "capacity": 0
         },
         "new_waterfront": {
-          "houses": 20,
-          "footprint_ha": 1.25,
-          "capacity": 1333
+          "houses": 46,
+          "footprint_ha": 2.9,
+          "capacity": 2252
         },
         "old_town_mixed": {
-          "houses": 1044,
-          "footprint_ha": 9.81,
-          "capacity": 2888
+          "houses": 1482,
+          "footprint_ha": 10.98,
+          "capacity": 3185
         },
         "promenade_retail": {
-          "houses": 241,
-          "footprint_ha": 3.09,
-          "capacity": 515
+          "houses": 354,
+          "footprint_ha": 3.62,
+          "capacity": 591
         }
       },
       "assumptions": {
@@ -174,7 +174,7 @@
       }
     },
     "houses_checks": {
-      "houses_on_streets": 1,
+      "houses_on_streets": 0,
       "houses_on_key_buildings": 0,
       "houses_off_land": 0
     }
@@ -182,12 +182,12 @@
   "atlas_road_lengths_m (atlas, plan, ring_clip)": {
     "RD-11": [
       4202,
-      4056,
+      4048,
       144.0
     ],
     "RD-12": [
       3070,
-      2925,
+      2917,
       144.0
     ],
     "RD-07": [
@@ -202,5 +202,5 @@
     ]
   },
   "buildings_on_streets": [],
-  "build_seconds": 24.1
+  "build_seconds": 16.7
 }

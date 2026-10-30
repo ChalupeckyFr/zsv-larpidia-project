@@ -1,6 +1,6 @@
 """Sídla a jejich půdorysy (F3). Půdorysy vznikají z hladkých „bloků“ (blobs), terénu a pobřeží, ne z čtverců.
 
-NÁVRH (proposed): kanon určuje jen povinná města (Praha, Čimprlichovo Hradiště, Havlišovo Doupě, Ōru Maito), roli hlavního města,
+NÁVRH (proposed): kanon určuje jen povinná města (Praha, Cimprlichovo Hradiště, Havlišovo Doupě, Ōru Maito), roli hlavního města,
 průmyslovou zónu a Paraland (historické městečko, hrad/zámeček, zřícenina, resorty, aquapark, marina). Velikosti jsou modelové:
 rozdělení 32 000 obyvatel je pracovní model, ne sčítání.
 """
@@ -21,7 +21,7 @@ SETTLEMENTS = [
      "exist": "approved", "name_status": "proposed", "ref": "C-01 + C-03..C-06"},
     {"id": "T-01", "name": "Praha", "kind": "town", "pop": 4500, "area": 1.7,
      "blobs": [(16.80, 7.84, 0.95, 0.75, 15), (16.15, 8.20, 0.55, 0.40, 0)], "exist": "approved", "name_status": "approved", "ref": "T-01"},
-    {"id": "T-02", "name": "Čimprlichovo Hradiště", "kind": "town", "pop": 2000, "area": 0.9,
+    {"id": "T-02", "name": "Cimprlichovo Hradiště", "kind": "town", "pop": 2000, "area": 0.9,
      "blobs": [(11.52, 11.52, 0.75, 0.55, -20), (11.95, 11.15, 0.40, 0.30, 0)], "exist": "approved", "name_status": "approved", "ref": "T-02"},
     {"id": "T-03", "name": "Havlišovo Doupě", "kind": "village", "pop": 700, "area": 0.30,
      "blobs": [(4.08, 9.60, 0.42, 0.20, 55), (4.40, 9.25, 0.28, 0.16, 40)], "exist": "approved", "name_status": "approved", "ref": "T-03"},

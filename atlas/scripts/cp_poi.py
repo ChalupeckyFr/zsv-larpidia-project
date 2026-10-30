@@ -21,10 +21,12 @@ OLD_STREETS = {
 EN_NAMES = {
     "Okružní třída Náměstí čtyř": "Square of the Four Ring", "Jihovýchodní bulvár": "South-East Boulevard", "Jihozápadní bulvár": "South-West Boulevard",
     "Severozápadní bulvár": "North-West Boulevard", "Severovýchodní bulvár": "North-East Boulevard", "Nábřeží 16. června": "Quay of 16 June",
-    "Třída Východního nábřeží": "East Waterfront Avenue",
+    "Třída Východního nábřeží": "East Waterfront Avenue", "Javorová ulice": "Maple Street", "Západní alej": "West Avenue",
+    "Školní třída": "School Avenue", "Severní sadová": "North Garden Road", "Klimečkova třída": "Klimeček Avenue",
+    "Skleněná ulice": "Glass Street", "Muzejní třída": "Museum Avenue", "Parková ulice": "Park Street",
 }
 KEY_DISTRICT = {"W": "C-03", "N": "C-04", "E": "C-05", "S": "C-06"}
-STYLE_CAPITAL = "cihlové anglicko-velšské domy, kamenné zdi s mechem, kostel, uličky; diskrétní japonské prvky infrastruktury; historický přístav a butiky"
+STYLE_CAPITAL = "staré cihlové řadové domy, úzké křivé uličky, několikapatrové prosklené obchody na Hlavní třídě, kostely, státní budovy, parky a historický přístav; bez mrakodrapů"
 AVOID_CAPITAL = "přístav není vedle nejvyšší hory; hory jen v dálce na západě; žádné mrakodrapy"
 SEASON = "horké léto, 4 výrazná roční období; tajfunové období srpen–říjen"
 
@@ -225,7 +227,11 @@ def add_points(ctx, L, blocks, objs):
              ("Butiky s limitovanými kolekcemi – střed", "Limited-edition boutiques – centre", (q[0] + 40.0, v_at_dq(ctx, q[0] + 40.0, 95.0))),
              ("Butiky s limitovanými kolekcemi – východ", "Limited-edition boutiques – east", (q[0] + 250.0, v_at_dq(ctx, q[0] + 250.0, 80.0))),
              ("Obchodní pasáž Hlavní třídy", "Main Avenue arcade", (ctx.O[0] + 330.0, ctx.O[1] - 14.0)),
-             ("Obchody u Tržního náměstí", "Market Square shops", (ms[0] + 10.0, ms[1] - 62.0))]
+             ("Obchody u Tržního náměstí", "Market Square shops", (ms[0] + 10.0, ms[1] - 62.0)),
+             ("Vlajkový obchod Aster & Tide", "Aster & Tide flagship", (ctx.O[0] + 120.0, ctx.O[1] - 48.0)),
+             ("Obchodní dům Northlight", "Northlight department store", (ctx.O[0] + 300.0, ctx.O[1] - 48.0)),
+             ("Mizu Design House", "Mizu Design House", (ctx.O[0] + 520.0, ctx.O[1] - 48.0)),
+             ("Galerie Juniper", "Juniper Gallery", (ctx.O[0] + 730.0, ctx.O[1] - 48.0))]
     for k, (cz, en, (u, v)) in enumerate(shops, 1):
         add(id=f"CP-SH{k:02d}", type="shop", subtype="retail", name_cs=cz, name_en=en, u=u, v=v, bible_ref="GEOGRAPHY C-02 / capital_roles: obchody s limitovanými kolekcemi")
     # ---- školy: budova uvnitř bloku, který určila klasifikace

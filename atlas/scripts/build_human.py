@@ -153,7 +153,7 @@ def build():
         {"id": "CY-01", "name": "Pobřežní cyklotrasa (okruh ostrova)", "pts": offset_polyline(rd["RD-R1"]["pts"], 0.022), "note": "podél R1 (bible: hustá síť cyklotras)"},
         {"id": "CY-02", "name": "Larpington – Praha – Aokawa", "pts": offset_polyline(rd["RD-01"]["pts"] + rd["RD-02"]["pts"][1:], 0.020), "note": ""},
         {"id": "CY-03", "name": "Praha – letiště – Zelená zóna – přístav", "pts": offset_polyline(rd["RD-05"]["pts"] + rd["RD-06"]["pts"][1:], 0.020), "note": ""},
-        {"id": "CY-04", "name": "Larpington – Čimprlichovo Hradiště – přehrada", "pts": offset_polyline(rd["RD-08"]["pts"] + rd["RD-09"]["pts"][1:len(rd["RD-09"]["pts"]) * 2 // 3], 0.020), "note": ""},
+        {"id": "CY-04", "name": "Larpington – Cimprlichovo Hradiště – přehrada", "pts": offset_polyline(rd["RD-08"]["pts"] + rd["RD-09"]["pts"][1:len(rd["RD-09"]["pts"]) * 2 // 3], 0.020), "note": ""},
         {"id": "CY-05", "name": "Aokawa – Hoshimachi / Ōru Maito", "pts": offset_polyline(rd["RD-03"]["pts"][::-1] + rd["RD-04"]["pts"][1:], 0.020), "note": ""},
         {"id": "CY-06", "name": "Okruh Paralandu", "pts": offset_polyline(rd["RD-PL1"]["pts"], 0.020), "note": "pobřežní promenáda a okruh"},
     ]

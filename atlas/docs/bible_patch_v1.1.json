@@ -2,7 +2,7 @@
   "patch_meta": {
     "target_file": "data/larpidia_world_bible.json",
     "base_version": "1.0-draft",
-    "base_sha256": "252f0ebd33c73a87fff9db21abf0684d34f1c7c4f24bbe7905bdb5e11fef58a2",
+    "base_sha256": "b95b0451a0bc8620daf2078ea21885af8b8a3c87d958a5ed2ccc0e809cd44fe0",
     "proposed_version": "1.1-draft",
     "format": "JSON Patch (RFC 6902) – NEAPLIKOVAT automaticky; sloučit až po schválení týmem",
     "atlas_version": "1.0-draft",
@@ -250,7 +250,7 @@
           "Praha": 4500,
           "Aokawa": 2600,
           "Ōru Maito": 2300,
-          "Čimprlichovo Hradiště": 2000,
+          "Cimprlichovo Hradiště": 2000,
           "Hoshimachi": 1600,
           "Havlišovo Doupě": 700,
           "Zelená průmyslová zóna": 600,
@@ -382,8 +382,8 @@
             "C-05": 1.85,
             "C-06": 1.88
           },
-          "streets_km": 158.1,
-          "blocks": 874,
+          "streets_km": 130.2,
+          "blocks": 556,
           "composition": "Náměstí čtyř (parlament v Parlamentní zahradě, čtyři správní budovy ve větrníkovém uspořádání), čtyři čtvrtě jako výseče kolem centra, staré město u přístavu s tržištěm a kostelem, zelené klíny uvnitř okruhu L3",
           "key_objects": {
             "CP-B01": {
@@ -430,15 +430,15 @@
           "files": "atlas/current/capital/",
           "build_state": {
             "population_model": 12000,
-            "capacity_model": 12000,
-            "houses_illustrative": 3242,
+            "capacity_model": 11992,
+            "houses_illustrative": 3822,
             "blocks": {
-              "built": 217,
-              "partial": 29,
-              "reserve": 586,
-              "civic": 42
+              "built": 234,
+              "partial": 22,
+              "reserve": 272,
+              "civic": 28
             },
-            "full_buildout_capacity": 48348,
+            "full_buildout_capacity": 33159,
             "note": "zastavěno je jádro odpovídající modelové populaci; ostatní bloky jsou rezerva rozvoje (C-22); plné zastavění by přesáhlo schválený strop 40 000 obyvatel země"
           }
         },

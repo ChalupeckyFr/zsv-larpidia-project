@@ -40,7 +40,7 @@ ROWS = [
     # ---- World Bible: urbanism
     ("K-020", "města", "Pracovní název hlavního města: Larpington", "bible:urbanism.capital_name", "F4", "", "D2"),
     ("K-021", "města", "Čtyři čtvrti hlavního města podle příjmení autorů", "bible:urbanism.capital_four_districts", "F7", "", "D2"),
-    ("K-022", "města", "Povinná města: Praha, Čimprlichovo Hradiště, Havlišovo Doupě, Ōru Maito", "bible:urbanism.must_include_towns", "F3", "", ""),
+    ("K-022", "města", "Povinná města: Praha, Cimprlichovo Hradiště, Havlišovo Doupě, Ōru Maito", "bible:urbanism.must_include_towns", "F3", "", ""),
     ("K-023", "města", "Další návrhová města: Aokawa, Hoshimachi", "bible:urbanism.other_towns", "F3", "", "Hoshimachi nemá souřadnice"),
     ("K-024", "architektura", "Směs anglicko-velšské a japonské architektury", "bible:urbanism.architectural_mix", "F4", "", "pro foto/video vazby"),
     ("K-025", "města", "Role hlavního města: kultura, památky, obchody, státní instituce, přístav, MHD", "bible:urbanism.capital_roles", "F7", "", ""),

@@ -47,7 +47,7 @@ Priorita při sporu (README): výslovné nové schválení týmem > schválené 
 
 | # | Otázka | Výchozí volba | Nutné před |
 |---|---|---|---|
-| O1 | L1: okruh, nebo linka? | Linka z Chalupecké čtvrti přes Čimprlichovo Hradiště a přehradu k vodopádu a jeskyni; jeskyně = koncová smyčka na ¾ obvodu s jedním portálem; horská stanice | F3 |
+| O1 | L1: okruh, nebo linka? | Linka z Chalupecké čtvrti přes Cimprlichovo Hradiště a přehradu k vodopádu a jeskyni; jeskyně = koncová smyčka na ¾ obvodu s jedním portálem; horská stanice | F3 |
 | O2 | Který vrchol je lyžařský a který paraglidingový? | M-01 nejvyšší (560 m), M-02 prudší sjezdovka (~510 m), M-03 zaoblený – turistika + paragliding (~440 m); výšky `proposed` | F2 |
 | O3 | Trasa L2 | Hlavní město → Praha → (odbočka k A-01) → Aokawa → Ōru Maito; druhá větev k I-01/I-02/I-03; Havlišovo Doupě bez železnice; Hoshimachi na lince | F3 |
 | O4 | L3 a tři přestupy na L2 | ~8 stanic; L2 obchází město obloukem (sever + východ) | F3 |

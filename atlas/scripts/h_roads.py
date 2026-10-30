@@ -105,9 +105,9 @@ def build_roads(world, forest_mask):
         ("RD-05", "Praha – letiště – Zelená zóna", [praha, airport, i01]),
         ("RD-06", "Zelená zóna – závod – nákladní přístav", [i01, i02, i03]),
         ("RD-07", "Larpington Východ – Zelená zóna", [capE, i01]),
-        ("RD-08", "Larpington Západ – Čimprlichovo Hradiště", [capW, t02]),
-        ("RD-09", "Čimprlichovo Hradiště – přehrada – Horská stanice", [t02, spots(world, 12.55, 10.35, 0.3, 5.0), spots(world, 10.9, 8.9, 0.4, 7.0), horska]),
-        ("RD-10", "Čimprlichovo Hradiště – Havlišovo Doupě", [t02, t03]),
+        ("RD-08", "Larpington Západ – Cimprlichovo Hradiště", [capW, t02]),
+        ("RD-09", "Cimprlichovo Hradiště – přehrada – Horská stanice", [t02, spots(world, 12.55, 10.35, 0.3, 5.0), spots(world, 10.9, 8.9, 0.4, 7.0), horska]),
+        ("RD-10", "Cimprlichovo Hradiště – Havlišovo Doupě", [t02, t03]),
         ("RD-11", "Larpington – hlavní tepna západ–východ", [capW, spots(world, 16.08, 12.16, 0.3, 4.0), capE]),
         ("RD-12", "Larpington – tepna sever–jih k přístavu", [capN, spots(world, 16.08, 12.16, 0.3, 4.0), spots(world, 16.30, 13.65, 0.3, 4.0)]),
     ]

@@ -1,6 +1,6 @@
 # LAR_PH_002 — location brief
 
-**Canon location:** RD-R1 (approved coastal ring road) at the eastern edge of T-02 Čimprlichovo Hradiště, looking toward C-01 Larpington.  
+**Canon location:** RD-R1 (approved coastal ring road) at the eastern edge of T-02 Cimprlichovo Hradiště, looking toward C-01 Larpington.  
 **There is no registered V- viewpoint “above Larpington”.** This shot uses a proposed roadside pull-off on the existing R1, not a new named POI.
 
 **Camera station (proposed):** x ≈ 12.40 km, y ≈ 11.70 km, elev_model ~50–70 m (T-02 is 56.3 m).  
