@@ -78,13 +78,14 @@ window.createLarpidiaCityNatureLayer = function ({ gl, city, toWorld, ground, fa
       const visibleFacade = style === 'glass_shopfront' || i === seed % base.length;
       if (!detailFacade || !visibleFacade || edge < 0.001 || floors < 1) continue;
       const mx = (a[0] + b[0]) / 2 - centerX, mz = (a[2] + b[2]) / 2 - centerZ, ml = Math.hypot(mx, mz) || 1;
-      const nx = mx / ml * 0.000045, nz = mz / ml * 0.000045;
+      const outwardX = mx / ml, outwardZ = mz / ml, nx = outwardX * 0.000045, nz = outwardZ * 0.000045;
       const pointAt = (t, level) => [a[0] + dx * t + nx, a[1] + (b[1] - a[1]) * t + rise * level, a[2] + dz * t + nz];
+      const windowPointAt = (t, level) => { const p = pointAt(t, level); p[0] += outwardX * 0.00008; p[2] += outwardZ * 0.00008; return p; };
       const panes = Math.max(1, Math.min(style === 'glass_shopfront' ? 3 : 2, Math.floor(edge * 1000 / (style === 'glass_shopfront' ? 4.0 : 3.6))));
       for (let floor = 0; floor < floors; floor++) {
         for (let n = 0; n < panes; n++) {
           const width = Math.min(style === 'glass_shopfront' ? 2.3 : 1.05, edge * 1000 / panes * 0.62);
-          addWindow(out, pointAt, (n + 0.5) / panes, width, edge, floor, floors, style === 'glass_shopfront' ? '#a9c9ca' : '#879fa5');
+          addWindow(out, windowPointAt, (n + 0.5) / panes, width, edge, floor, floors, style === 'glass_shopfront' ? '#a9c9ca' : '#879fa5');
         }
       }
     }
@@ -248,6 +249,9 @@ window.createLarpidiaCityNatureLayer = function ({ gl, city, toWorld, ground, fa
     }
   }
 
+  const pavedSpaceTypes = new Set(['civic_plaza', 'square', 'station_plaza']);
+  const insidePavedSpace = (u, v) => city.parks.some((park) => pavedSpaceTypes.has(park.type) && park.points && pointInPolygon(u, v, park.points));
+
   function addStreetTrees(out) {
     for (const road of city.streets) {
       if (road.state !== 'built' || !['A', 'B', 'C', 'S'].includes(road.cls)) continue;
@@ -257,6 +261,7 @@ window.createLarpidiaCityNatureLayer = function ({ gl, city, toWorld, ground, fa
         const spacing = road.cls === 'C' ? 54 : 38, nx = -dy / len, ny = dx / len, offset = road.width / 2 + 2.0;
         for (let d = spacing * 0.5; d < len - 8; d += spacing) for (const side of [-1, 1]) {
           const t = d / len, u = a[0] + dx * t + nx * offset * side, v = a[1] + dy * t + ny * offset * side, seed = hash(`${i}:${d}:${road.cls}:${road.points[0][0]}`);
+          if (insidePavedSpace(u, v)) continue;
           addTree(out, u, v, 2.1 + random01(seed) * 1.1, seed, seed % 4 === 0);
         }
       }
@@ -268,7 +273,7 @@ window.createLarpidiaCityNatureLayer = function ({ gl, city, toWorld, ground, fa
       if (!park.points || park.points.length < 3) continue;
       const xs = park.points.map((p) => p[0]), ys = park.points.map((p) => p[1]);
       const minX = Math.min(...xs), maxX = Math.max(...xs), minY = Math.min(...ys), maxY = Math.max(...ys);
-      if (park.type === 'historic_harbor' || park.type === 'promenade') continue;
+      if (!['park', 'green_wedge'].includes(park.type)) continue;
       const open = ['park', 'green_wedge'].includes(park.type), spacing = park.type === 'green_wedge' ? 42 : park.type === 'park' ? 24 : 48;
       for (let row = 0, y = minY + spacing / 2; y < maxY; row++, y += spacing) for (let col = 0, x = minX + spacing / 2; x < maxX; col++, x += spacing) {
         const seed = hash(`${park.id}:${row}:${col}`), u = x + (random01(seed) - 0.5) * spacing * 0.48, v = y + (random01(seed + 1) - 0.5) * spacing * 0.48;
@@ -319,15 +324,15 @@ window.createLarpidiaCityNatureLayer = function ({ gl, city, toWorld, ground, fa
       for (const tri of triangulate(block.points)) flatFace(blocks, p[tri[0]], p[tri[1]], p[tri[2]], blockColors[block.use] || '#81916d');
     }
     for (const park of city.parks) {
-      if (!park.points || park.points.length < 3 || park.type === 'historic_harbor' || park.type === 'promenade') continue;
+      if (!park.points || park.points.length < 3 || park.id === 'CP-SQ10' || park.type === 'historic_harbor' || park.type === 'promenade') continue;
       const p = park.points.map(([u, v]) => meterPoint([u, v], 0.03));
       for (const tri of triangulate(park.points)) flatFace(parks, p[tri[0]], p[tri[1]], p[tri[2]], parkColors[park.type] || '#7f9669');
     }
     addRoads(roads);
     for (const home of city.houses) addHouse(houses, home.points, home.height, home.style, home.floors, home.id, null);
     for (const home of city.future) addHouse(future, home.points, home.height, ['retail_main', 'promenade_retail', 'new_waterfront'].includes(home.use) ? 'glass_shopfront' : 'residential', 3, home.id, '#b88b6d');
-    const heights = { parliament: 22, admin: 18, museum: 16, church: 20, market_hall: 10, hotel_premium: 20, school: 10, harbour_office: 9, ferry_terminal: 7 };
-    for (const building of city.buildings) addHouse(buildings, building.points, heights[building.subtype] || 10, 'civic', 2, building.id, null);
+    const heights = { parliament: 22, admin: 18, museum: 16, church: 20, market_hall: 10, hotel_premium: 20, school: 10, harbour_office: 9 };
+    for (const building of city.buildings) if (building.subtype !== 'town_hall') addHouse(buildings, building.points, heights[building.subtype] || 10, 'civic', 2, building.id, null);
     addStreetTrees(greenery); addParkTrees(greenery); addGardens(lawns, greenery);
     upload('blocks', blocks); upload('parks', parks); upload('lawns', lawns); upload('roads', roads); upload('houses', houses); upload('future', future); upload('buildings', buildings); upload('greenery', greenery);
     built = true;

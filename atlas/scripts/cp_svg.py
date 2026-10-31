@@ -19,8 +19,8 @@ USE_FILL = {
     "civic_mixed": "#d9c9de", "transit_mixed": "#e6d3b0", "school": "#cfe0f0", "new_waterfront": "#dcd2ec", "hotel_premium": "#f0a8a0",
 }
 RESERVE_FILL = "#eef0dc"
-BUILDING_FILL = {"parliament": "#6b4f7a", "admin": "#7a5c5c", "museum": "#5c6b7a", "church": "#8b6f5a", "market_hall": "#a0793a", "hotel_premium": "#9a5b4a",
-                 "school": "#3f78b5", "harbour_office": "#6a6a6a", "ferry_terminal": "#6a6a6a"}
+BUILDING_FILL = {"town_hall": "#8b7155", "admin": "#7a5c5c", "museum": "#5c6b7a", "church": "#8b6f5a", "market_hall": "#a0793a", "hotel_premium": "#9a5b4a",
+                 "school": "#3f78b5", "harbour_office": "#6a6a6a"}
 LINE_COL = {"L1": "#2a8a4a", "L2": "#b0307a", "L3": "#1f5fae"}
 ROW_STYLE = {"L": (5.0, "#fbf9f3", "#cdc6b4"), "C": (10.0, "#ffffff", "#bdb7a8"), "P": (18.0, "#fbf3e0", "#c8b98f"), "S": (14.0, "#ffffff", "#a9a395"),
              "B": (20.0, "#ffffff", "#a9a395"), "A": (22.0, "#ffffff", "#9d978a"), "R1": (22.0, "#fff6e6", "#9d978a")}
@@ -349,13 +349,12 @@ def build_svg(ctx, L, graph, blocks, spaces, stations, objs, routes, meta):
             if o["type"] == "building" and o["subtype"] != "school":
                 pl_place.place(pl, o["u"], o["v"], nm, size=19, weight="600", fill="#33222e")
             elif o["id"] == "CP-PK01":
-                for k, part in enumerate(nm.split(" ", 1)):
-                    pl.text(o["u"], o["v"] + 30 + 15 * k, part, size=13, fill="#3e5a3e", weight="600", italic=True)
+                pl.text(o["u"], o["v"] + 46, nm, size=13, fill="#5a4a32", weight="600")
             elif o["id"] == "CP-SQ01":
                 pl.text(o["u"], o["v"] - 146, nm, size=17, fill="#5a4a32", weight="600")
             elif o.get("subtype") == "green_wedge":
                 pl.text(o["u"], o["v"], nm, size=30, fill="#6b8a55", weight="600", italic=True, halo=False)
-            elif o["type"] == "park" or o["id"] in ("CP-SQ02", "CP-SQ03", "CP-SQ04"):
+            elif o["type"] == "park" or o["id"] in ("CP-SQ02", "CP-SQ03", "CP-SQ04", "CP-SQ10"):
                 pl.text(o["u"], o["v"] + 6, nm, size=22 if o["type"] == "park" else 18, fill="#3e5a3e" if o["type"] == "park" else "#5a4a32", weight="600", italic=o["type"] == "park")
             elif o["type"] == "station":
                 txt = nm.split("(")[0].strip()

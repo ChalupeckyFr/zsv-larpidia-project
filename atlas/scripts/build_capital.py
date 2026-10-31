@@ -370,7 +370,7 @@ def run_checks(ctx, L, graph, blocks, objs, routes, stations, svg_text, hs=None)
     street = ctx.street_mask_b
     bad = []
     for o in objs:
-        if o["type"] == "building" and o.get("poly") and o["subtype"] not in ("ferry_terminal",):
+        if o["type"] == "building" and o.get("poly"):
             poly = o["poly"]
             xs = [p[0] for p in poly]
             ys = [p[1] for p in poly]

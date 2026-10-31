@@ -13,6 +13,8 @@ Jeden masivní prompt má tendenci vymýšlet při každé generaci jinou podobu
 - `LARPIDIA_MASTER_PROMPT.md` – zkopírovatelný hlavní prompt pro běžný chat s LLM.
 - `SKILL.md` – návod pro agenta se schopností načítat skilly a soubory (formát Agent Skills).
 - `data/larpidia_world_bible.json` – strojově čitelný kanonický model světa, se stavem jednotlivých tvrzení.
+- `CANON_EDITING_GUIDE.md` – úpravy veřejné encyklopedie, kategorií, centrálních faktů a médií.
+- `ENCYCLOPEDIA_MIGRATION_REPORT.md` – přehled nového systému a oprav zastaralých veřejných tvrzení.
 - `references/GEOGRAPHY_AND_CANON.md` – přesné prostorové vztahy a pravidla kontinuity.
 - `references/REALISM_AND_ZSV.md` – věrohodnost, ekonomika, právo, klimatické kompromisy a návrhy alternativ.
 - `templates/IMAGE_PROMPT.md` – tvorba realistických fotografií včetně sociálních sítí.
@@ -43,6 +45,8 @@ Jeden masivní prompt má tendenci vymýšlet při každé generaci jinou podobu
 
 ## Úpravy a verzování
 
-Každá změna pravidel se zapíše do JSON a zvýší se `meta.version`. Při sporu platí pořadí: výslovné nové schválení skupiny > schválené údaje ve World Bible > návrhy v souborech > stylistické preference generátoru.
+Každá změna pravidel se zapíše do JSON a zvýší se `meta.version`. Pro **veřejnou encyklopedii** platí pořadí: nejnovější výslovné potvrzení autora a závazné novější kapitoly ústavního kánonu > starší potvrzené podklady > World Bible a pracovní návrhy. World Bible může zaostávat a sama se změnou webových dat automaticky neaktualizuje.
 
 `approved` = sděleno autory, `proposed` = pracovní návrh AI, `needs_decision` = doplnit či potvrdit. Číselné hodnoty od AI musejí být jasně označené jako modelové.
+
+Veřejné články upravujte v `content/larpidia/`, opakovaná čísla v `content/larpidia/facts.json` a při změně médií v `content/larpidia/media/assets.json`. Postup je v `CANON_EDITING_GUIDE.md`; veřejný web čte tyto soubory a nepoužívá World Bible jako živou databázi.

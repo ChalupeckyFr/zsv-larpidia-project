@@ -127,8 +127,8 @@ def build_objects(ctx, L, graph, blocks, spaces, stations):
         add(id=did, type="district", subtype="district", name_cs=DISTRICT_NAMES[did], name_en=DISTRICT_NAMES[did].replace("čtvrť", "District"), poly=big,
             origin="geo_ref", atlas_ref=did, bible_ref="urbanism.capital_four_districts", notes="v plánu výseč kolem Náměstí čtyř; jména z příjmení autorů (návrh)", area_m2=round(sum(G.area(p) for p in polys), 1))
     # ---- budovy
-    add(id="CP-B01", type="building", subtype="parliament", name_cs="Budova parlamentu", name_en="Parliament House", name_ja="議事堂", poly=LY.rect_poly(L["parliament"]),
-        exist_status="approved", origin="bible", bible_ref="politics.elected_parliament (approved); capital_roles: státní instituce", notes="uprostřed Parlamentní zahrady; poloha je otevřené rozhodnutí O19")
+    add(id="CP-B01", type="building", subtype="town_hall", name_cs="Radnice a parlament Larpingtonu", name_en="Larpington Town Hall and Parliament House", name_ja="ラーピントン市庁舎・議事堂", poly=LY.rect_poly(L["town_hall"]),
+        exist_status="approved", origin="bible", bible_ref="politics.elected_parliament (approved); capital_roles: státní instituce", notes="ústřední radnice a reprezentační sídlo parlamentu na Náměstí čtyř; navržená neorenesanční fasáda, vysoká věž a strmé střechy volně inspirované libereckou radnicí")
     for k, a in enumerate(L["admin"]):
         did = KEY_DISTRICT[a["district_key"]]
         add(id=f"CP-B0{2 + k}", type="building", subtype="admin", name_cs=f"Správní budova – {DISTRICT_NAMES[did]}", name_en=f"Administrative building – {DISTRICT_NAMES[did].replace('čtvrť', 'District')}",
@@ -149,8 +149,6 @@ def build_objects(ctx, L, graph, blocks, spaces, stations):
     add(id="CP-B10", type="building", subtype="harbour_office", name_cs="Přístavní úřad a celnice (historická budova)", name_en="Harbour office and customs house", poly=LY.rect_poly(L["harbor_office"]),
         notes="u Přístavního náměstí; sídlo správy přístavu C-02")
     pf = L["ferry_pier"]
-    add(id="CP-B11", type="building", subtype="ferry_terminal", name_cs="Terminál lodní linky na Paraland", name_en="Paraland ferry terminal", poly=LY.rect_poly(L["ferry_terminal"]),
-        atlas_ref="FERRY-1", origin="atlas", notes="volitelný lodní okruh C-02 ↔ H-02 (bez autopřevozu)")
     add(id="CP-PI01", type="pier", subtype="ferry_pier", name_cs="Molo lodní linky", name_en="Ferry pier", poly=LY.rect_poly(pf), atlas_ref="FERRY-1", origin="atlas")
     # ---- přístav C-02 (z atlasu)
     add(id="C-02", type="harbor", subtype="historic_harbor", name_cs="Historický přístav Larpington", name_en="Larpington Old Harbour", name_ja="ラープトン旧港", poly=city.basin, origin="geo_ref", atlas_ref="C-02",
@@ -159,9 +157,9 @@ def build_objects(ctx, L, graph, blocks, spaces, stations):
     for sid, typ, nm, poly in spaces:
         sub = {"plaza": "civic_plaza", "park": "park", "square": "square", "promenade": "promenade"}[typ]
         ex = "approved" if sid == "CP-PR01" else "proposed"
-        en = {"CP-SQ01": "Square of the Four", "CP-PK01": "Parliament Garden", "CP-PK02": "Central Park", "CP-PK03": "North Park", "CP-PK04": "West Park",
+        en = {"CP-SQ01": "Square of the Four", "CP-PK01": "Town Hall Square", "CP-PK02": "Central Park", "CP-PK03": "North Park", "CP-PK04": "West Park",
               "CP-PK05": "East Park", "CP-PK06": "Klimeček District Park", "CP-SQ02": "Harbour Square", "CP-SQ03": "Market Square", "CP-SQ04": "Church Square",
-              "CP-PR01": "Harbour Promenade"}[sid]
+              "CP-SQ10": "Ferry Pier Forecourt", "CP-PR01": "Harbour Promenade"}[sid]
         add(id=sid, type="park" if typ == "park" else ("promenade" if typ == "promenade" else "square"), subtype=sub, name_cs=nm, name_en=en, poly=poly, exist_status=ex,
             bible_ref="GEOGRAPHY C-02: nábřeží, butiky a promenády" if sid == "CP-PR01" else ("MAP_PROMPT M-01: park" if typ == "park" else ""))
     # ---- zelené klíny mezi čtvrtěmi (uvnitř okruhu L3)

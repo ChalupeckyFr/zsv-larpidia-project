@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "title": "Centrální fakta Larpidie",
+    "description": "Jediný zdroj opakovaných čísel a stavových údajů veřejné encyklopedie.",
+    "fictionalProject": true
+  },
+  "country": {
+    "population": 32000,
+    "mainIslandAreaKm2": 175,
+    "paralandAreaKm2": 14,
+    "capital": "Larpington",
+    "currencyCode": "CZK",
+    "currencyName": "česká koruna",
+    "currencyArrangement": "Ve fikčním světě ji Larpidie používá podle fiktivní mezistátní smlouvy s Českou republikou.",
+    "officialLanguages": ["čeština", "angličtina"],
+    "motto": "Life is meant to be lived."
+  },
+  "constitution": {
+    "coRulers": 4,
+    "votingAge": 15,
+    "ordinaryLawYesPercent": 50,
+    "ordinaryLawTurnoutMinimumPercent": 0,
+    "stopMechanismEligiblePercent": 95,
+    "coRulerRecallPetitionPercent": 10,
+    "coRulerRecallTurnoutPercent": 30,
+    "coRulerRecallYesPercent": 50,
+    "publicOfficeTermYears": 4,
+    "auditorTermYears": 7,
+    "ordinaryBudgetApprovalsRequired": 3,
+    "provisionalMonthlySpendingFraction": 12
+  },
+  "economy": {
+    "corporateTaxPercent": 5,
+    "vat": {
+      "standardPercent": 12,
+      "reducedPercent": 5
+    },
+    "personalIncomeTaxBrackets": [
+      {"ratePercent": 0, "upToAnnualCzk": 300000},
+      {"ratePercent": 3, "upToAnnualCzk": 900000},
+      {"ratePercent": 5, "upToAnnualCzk": 1800000},
+      {"ratePercent": 7, "upToAnnualCzk": null}
+    ],
+    "workingDaysPerWeek": 4,
+    "workingHoursPerDay": 6,
+    "modelAverageGrossSalaryCzkMonthly": 36000,
+    "healthEducationAnnualFrameworkCzk": 1600000000,
+    "foreignPublicUniversityTuitionCapCzkPerStudentYear": 100000,
+    "personalSavingsStateMatchPercent": 10,
+    "personalSavingsStateMatchMaximumCzkMonthly": 200,
+    "stateEnterprises": {
+      "modelDistributableProfitCzk": 2400000000,
+      "transferToStatePercent": 50,
+      "stabilizationFundPercentOfTransfer": 20
+    },
+    "tourism": {
+      "modelAnnualVisits": 40000,
+      "modelAverageSpendCzkPerVisit": 15000
+    }
+  },
+  "pensions": {
+    "basicMonthlyCzk": 12000,
+    "ageYears": 65,
+    "modelPopulation65PlusPercent": 16
+  },
+  "history": {
+    "firstDocumentedSettlement": "16. června 1608",
+    "independenceYear": 1921,
+    "kostalConcessionDate": "8. srpna 2019",
+    "kingDeathDate": "28. října 2023",
+    "documentPremiereDate": "19. května 2024",
+    "kostalDetentionDate": "2. září 2024",
+    "constitutionReferendumDate": "25. ledna 2025",
+    "coRulersTookOfficeDate": "14. března 2025"
+  },
+  "transport": {
+    "L1": {"status": "Stav celé linky není v potvrzeném kánonu upřesněn."},
+    "L2": {"status": "Stav celé linky není v potvrzeném kánonu upřesněn."},
+    "L3": {
+      "cityStatus": "Městský úsek je v provozu.",
+      "underseaStatus": "Podmořský úsek na Paraland se dokončuje a není v běžném provozu.",
+      "interIslandCurrentService": "Pravidelné spojení mezi ostrovy zajišťují lodě a trajekty."
+    }
+  },
+  "derived": {
+    "weeklyWorkingHours": {"operation": "multiply", "inputs": ["economy.workingDaysPerWeek", "economy.workingHoursPerDay"]},
+    "tourismTurnoverCzk": {"operation": "multiply", "inputs": ["economy.tourism.modelAnnualVisits", "economy.tourism.modelAverageSpendCzkPerVisit"]},
+    "enterpriseStateTransferCzk": {"operation": "percentOf", "inputs": ["economy.stateEnterprises.modelDistributableProfitCzk", "economy.stateEnterprises.transferToStatePercent"]},
+    "stabilizationFundCzk": {"operation": "percentOf", "inputs": ["calc.economy.enterpriseStateTransferCzk", "economy.stateEnterprises.stabilizationFundPercentOfTransfer"]},
+    "enterpriseTransferAfterFundCzk": {"operation": "subtract", "inputs": ["calc.economy.enterpriseStateTransferCzk", "calc.economy.stabilizationFundCzk"]},
+    "modelResidents65Plus": {"operation": "percentOf", "inputs": ["country.population", "pensions.modelPopulation65PlusPercent"]},
+    "maximumIllustrativeAnnualBasicPensionCzk": {"operation": "multiply", "inputs": ["calc.economy.modelResidents65Plus", "pensions.basicMonthlyCzk", "12"]},
+    "partialAdditionalFundingNeedCzk": {"operation": "sumThenSubtract", "inputs": ["economy.healthEducationAnnualFrameworkCzk", "calc.economy.maximumIllustrativeAnnualBasicPensionCzk", "calc.economy.enterpriseTransferAfterFundCzk"]}
+  }
+}

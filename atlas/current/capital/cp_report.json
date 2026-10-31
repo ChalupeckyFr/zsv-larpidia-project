@@ -18,9 +18,10 @@
     "domy: ID jsou jedinečná a každý dům má podlaží, výšku a barvu střechy": true,
     "domy: kapacita bydlení odpovídá modelové populaci hlavního města (±2 %) a nepřesahuje schválený strop 40 000 pro celou zemi": true,
     "domy: leží na pevnině mimo přístavní pánev, nestojí na ulicích (≤ 1 %) ani na klíčových budovách": true,
-    "stav bloků: v rezervě rozvoje stojí jen řídké chaty, instituce a školy mají stav „civic“": true
+    "stav bloků: v rezervě rozvoje stojí jen řídké chaty, instituce a školy mají stav „civic“": true,
+    "Python generator completed against the updated sources": false
   },
-  "all_ok": true,
+  "all_ok": false,
   "stats": {
     "footprint_km2": 6.31,
     "districts_km2": {
@@ -63,11 +64,11 @@
     "objects": {
       "plan": 1,
       "district": 4,
-      "building": 15,
+      "building": 14,
       "pier": 1,
       "harbor": 1,
-      "square": 9,
-      "park": 12,
+      "square": 11,
+      "park": 11,
       "promenade": 1,
       "station": 5,
       "block": 556,
@@ -83,21 +84,21 @@
         "id": "CP-AR01",
         "length_m": 1295,
         "max_grade_pct": 3.6,
-        "share_over_5pct": 0.0,
+        "share_over_5pct": 0,
         "dz_m": -17.9
       },
       {
         "id": "CP-AR02",
         "length_m": 897,
         "max_grade_pct": 1.5,
-        "share_over_5pct": 0.0,
-        "dz_m": 1.0
+        "share_over_5pct": 0,
+        "dz_m": 1
       },
       {
         "id": "CP-AR03",
         "length_m": 1393,
         "max_grade_pct": 0.8,
-        "share_over_5pct": 0.0,
+        "share_over_5pct": 0,
         "dz_m": -2.4
       }
     ],
@@ -168,7 +169,7 @@
         }
       },
       "assumptions": {
-        "person_m2": 38.0,
+        "person_m2": 38,
         "usable_share": 0.82,
         "floor_height_m": 3.1
       }
@@ -183,24 +184,25 @@
     "RD-11": [
       4202,
       4048,
-      144.0
+      144
     ],
     "RD-12": [
       3070,
       2917,
-      144.0
+      144
     ],
     "RD-07": [
       1846,
       1846,
-      0.0
+      0
     ],
     "RD-R1": [
       6503,
       6502,
-      0.0
+      0
     ]
   },
   "buildings_on_streets": [],
-  "build_seconds": 16.7
+  "build_seconds": 16.7,
+  "build_note": "Current visible assets were synchronized manually; the full capital generator could not run because NumPy is missing from the available Python environment."
 }

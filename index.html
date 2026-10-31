@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="site.css" />
     <script src="site.js" defer></script>
+    <script src="encyclopedia.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -50,10 +51,10 @@
         </div>
 
         <section class="facts-strip wrap" aria-label="Základní údaje o Larpidii">
-          <div class="fact"><span class="fact-number">20–40 <small>tis.</small></span><span class="fact-label">obyvatel · schválený rozsah</span></div>
-          <div class="fact"><span class="fact-number">150–200 <small>km²</small></span><span class="fact-label">hlavní ostrov · přibližná rozloha</span></div>
-          <div class="fact"><span class="fact-number">02</span><span class="fact-label">ostrovy · Larpidie a Paraland</span></div>
-          <div class="fact"><span class="fact-number">04</span><span class="fact-label">spoluvládci a volený parlament</span></div>
+          <div class="fact"><span class="fact-number" data-fact="country.population" data-format="number">32 000</span><span class="fact-label">obyvatel · fikční model</span></div>
+          <div class="fact"><span class="fact-number" data-fact="country.mainIslandAreaKm2" data-format="area">175 km²</span><span class="fact-label">hlavní ostrov</span></div>
+          <div class="fact"><span class="fact-number" data-fact="country.islandsTotal" data-format="number">2</span><span class="fact-label">ostrovy · Larpidie a Paraland</span></div>
+          <div class="fact"><span class="fact-number" data-fact="constitution.coRulers" data-format="number">4</span><span class="fact-label">rovnocenní spoluvládci · bez parlamentu</span></div>
         </section>
 
         <section class="intro-grid wrap section-pad">
@@ -116,7 +117,7 @@
             <article class="map-card"><button data-map-image="atlas/current/svg/png/larpidia_atlas_political.png" data-map-title="Politická mapa" aria-label="Zvětšit mapu: Politická mapa"><img src="atlas/current/svg/png/larpidia_atlas_political.png" alt="Politická mapa Larpidie" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">03 · SÍDLA</span><h3>Politická mapa</h3><p>Města, sídla a správní členění.</p></div></article>
             <article class="map-card"><button data-map-image="atlas/current/svg/png/larpidia_atlas_status.png" data-map-title="Mapa stavu údajů" aria-label="Zvětšit mapu: Stav údajů"><img src="atlas/current/svg/png/larpidia_atlas_status.png" alt="Mapa míst rozlišených podle stavu schválení" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">04 · KÁNON</span><h3>Stav údajů</h3><p>Schválená místa, návrhy a otevřená rozhodnutí.</p></div></article>
             <article class="map-card"><button data-map-image="atlas/current/svg/transport_preview_embedded.svg" data-map-title="Dopravní síť" aria-label="Zvětšit mapu: Dopravní síť"><img src="atlas/current/svg/transport_preview_embedded.svg" alt="Náhled dopravní sítě Larpidie" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">05 · DOPRAVA</span><h3>Dopravní síť</h3><p>Železnice, cesty a propojení ostrovů.</p></div></article>
-            <article class="map-card"><button data-map-image="atlas/current/svg/rail_scheme.svg" data-map-title="Schéma železnic" aria-label="Zvětšit mapu: Schéma železnic"><img src="atlas/current/svg/rail_scheme.svg" alt="Schéma železničních linek L1, L2 a L3" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">06 · ŽELEZNICE</span><h3>Železniční linky</h3><p>Tři návrhové linky včetně spojení s Paralandem.</p></div></article>
+            <article class="map-card"><button data-map-image="atlas/current/svg/rail_scheme.svg" data-map-title="Schéma železnic" aria-label="Zvětšit mapu: Schéma železnic"><img src="atlas/current/svg/rail_scheme.svg" alt="Schéma železničních linek L1, L2 a L3" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">06 · ŽELEZNICE</span><h3>Železniční linky</h3><p><span data-fact="transport.L3.cityStatus">Městský úsek je v provozu.</span> <span data-fact="transport.L3.underseaStatus">Podmořské spojení se dokončuje.</span> Stav L1 a L2 není upřesněn.</p></div></article>
             <article class="map-card"><button data-map-image="atlas/current/svg/landcover_preview.svg" data-map-title="Využití krajiny" aria-label="Zvětšit mapu: Využití krajiny"><img src="atlas/current/svg/landcover_preview.svg" alt="Mapa využití krajiny Larpidie" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">07 · KRAJINA</span><h3>Využití krajiny</h3><p>Lesy, zemědělská půda a zastavěná území.</p></div></article>
             <article class="map-card"><button data-map-image="atlas/current/renders/S-00_overview_clouds.jpg" data-map-title="Satelitně stylizovaný přehled" aria-label="Zvětšit mapu: Satelitně stylizovaný přehled"><img src="atlas/current/renders/S-00_overview_clouds.jpg" alt="Satelitně stylizovaný přehled obou ostrovů" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">08 · PŘEHLED OSTROVŮ</span><h3>Pohled z výšky</h3><p>Simulovaná satelitní vizualizace Larpidie a Paralandu.</p></div></article>
             <article class="map-card"><button data-map-image="atlas/current/renders/S-01_base_clouds.jpg" data-map-title="Západní horská oblast" aria-label="Zvětšit mapu: Západní horská oblast"><img src="atlas/current/renders/S-01_base_clouds.jpg" alt="Pohled na západní horskou oblast" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">09 · RELIÉF</span><h3>Západní hory</h3><p>Lesnaté pohoří, jezero a horské údolí.</p></div></article>
@@ -145,66 +146,11 @@
       <section class="view page-view" id="view-encyklopedie" data-view="encyklopedie" hidden>
         <div class="page-hero wrap page-hero-split wiki-hero">
           <div><p class="eyebrow"><span class="eyebrow-line"></span> Encyklopedie Larpidie</p><h1>Průvodce<br /><em>pro každou prezentaci.</em></h1></div>
-          <div><p>Uspořádaný přehled historie, geografie, politiky a života v Larpidii. U každého údaje je rozlišené, co je součástí schváleného základu a co zůstává návrhem.</p><a class="button button-dark" href="larpidia-encyklopedie.md" download>Stáhnout textový dokument <span>↓</span></a></div>
+          <div><p>Přehledný průvodce fiktivním ostrovním státem. Otevřete kategorii, vyhledejte téma a pokračujte do podrobného článku. Opakované údaje se načítají ze společných projektových dat.</p><a class="button button-dark" href="CANON_EDITING_GUIDE.md" target="_blank" rel="noopener">Jak upravit obsah <span>↗</span></a></div>
         </div>
-        <div class="wiki-layout wrap">
-          <aside class="wiki-toc"><span class="toc-title">OBSAH</span><a href="#wiki-prehled">01 &nbsp; Stručně</a><a href="#wiki-jmeno">02 &nbsp; Jméno a hodnoty</a><a href="#wiki-geografie">03 &nbsp; Geografie</a><a href="#wiki-spolecnost">04 &nbsp; Města a společnost</a><a href="#wiki-politika">05 &nbsp; Politika</a><a href="#wiki-ekonomika">06 &nbsp; Ekonomika</a><a href="#wiki-historie">07 &nbsp; Historie</a><a href="#wiki-turismus">08 &nbsp; Turismus a doprava</a><a href="#wiki-prezentace">09 &nbsp; Do prezentace</a><a href="#wiki-stavy">10 &nbsp; Stav a zdroje</a></aside>
-          <article class="wiki-article">
-            <div class="article-top"><span class="article-tag">ENCYKLOPEDICKÝ PŘEHLED</span><span class="article-date">Pracovní verze · 23. 10. 2026</span></div>
-            <h2 id="wiki-prehled">Larpidie</h2>
-            <p class="article-lead">Larpidie je fiktivní ostrovní stát v severozápadním Tichém oceánu, jižně od hlavních japonských ostrovů. Tvoří ji větší hlavní ostrov a menší turistický ostrov Paraland. Projekt spojuje alternativní historii, ostrovní geografii a témata ze základů společenských věd.</p>
-            <div class="article-facts"><div><span>Oficiální jazyky</span><b>Čeština a angličtina</b></div><div><span>Počet obyvatel</span><b>20–40 tisíc</b></div><div><span>Forma vlády</span><b>Konstituční model</b></div><div><span>Měna</span><b>Česká koruna · CZK</b></div></div>
-
-            <h3 id="wiki-jmeno">Jméno a hodnoty</h3>
-            <p>Název Larpidie vychází ze slova „larp“ a představuje radost z výjimečných, estetických a zážitkových věcí bez povyšování nad ostatní. Neoficiální hodnoty země zdůrazňují aktivní život, komunitu, dostupné příležitosti, přírodu, vzdělávání, práci, kulturu a duševní život. Motto „Žij naplno, s respektem“ je zatím návrh. Vlajka, státní znak, hymna a státní barvy dosud čekají na vytvoření.</p>
-
-            <h3 id="wiki-geografie">Geografie a příroda</h3>
-            <p>Hlavní ostrov má podle schváleného zadání rozlohu přibližně 150 až 200 km². Na severozápadě se zvedá menší pohoří s nejvyššími vrcholy mezi 500 a 600 metry. Západ ostrova pokrývají lesy, horské řeky a skalnaté pobřeží; ve vnitrozemí leží vodopády, přehradní jezero a návštěvnická krystalová jeskyně. Východní část tvoří nižší krajina vhodná pro sídla, zemědělství a průmysl. Na jihu se pobřeží otevírá k městu a historickému přístavu.</p>
-            <p>Klima nabízí horká léta, výrazná roční období a občasný sníh ve vyšších polohách. Zimní sporty mají krátkou sezónu; stálou sněhovou pokrývku nelze při této nadmořské výšce předpokládat. Vzhledem k poloze v Pacifiku musí model země počítat s tajfuny, pobřežními bouřemi a zemětřesením.</p>
-            <div class="fact-callout"><span class="status-label approved">SCHVÁLENÝ ZÁKLAD</span><p>Hlavní ostrov, jeho orientační rozloha a přírodní rysy. Přesné souřadnice a podrobné rozložení míst jsou pracovní návrh; souřadnice nepředstavují skutečnou polohu.</p></div>
-
-            <h3 id="wiki-spolecnost">Města, jazyk a společnost</h3>
-            <p>Oficiálními jazyky jsou čeština a angličtina, rozšířené postavení má také japonština. Mezi města, která mají být součástí podoby země, patří Praha, Cimprlichovo Hradiště, Havlišovo Doupě a Ōru Maito. Další sídla — například Aokawa a Hoshimachi — jsou návrhy. Hlavní město se v mapách a plánech pracovně jmenuje Larpington; jeho název dosud není skupinou potvrzen.</p>
-            <p>Architektura kombinuje anglické a velšské cihlové či kamenné domy, kostely, zahrady a historická náměstí s kompaktními japonsky inspirovanými uličkami. Svoboda náboženství je součástí zadání; žádné konkrétní náboženské rozložení obyvatel zatím schváleno není.</p>
-            <p>Návrh občanství počítá s několikaletým pobytem a znalostí jazyka a zákonů; mimořádný přínos může některé kroky urychlit. Zdravotní stav ani fyzická zdatnost nemají být podmínkou. Podoba veřejných služeb má spojit dostupné školství, základní zdravotní péči a infrastrukturu s osobní volbou a možností soukromých služeb; konkrétní rozsah těchto programů zůstává návrhem.</p>
-
-            <h3 id="wiki-politika">Politický systém</h3>
-            <p>Navržené ústavní uspořádání stojí na čtyřech spoluvládcích a demokraticky voleném parlamentu. Každý spoluvládce má podle schváleného základu právo veta. Při rovnosti hlasů se počítá s občany jako s dalším hlasem, konkrétní procedura však čeká na dopracování. Návrh obsahuje také mimořádné „právo zastavení“: přijetí nových běžných zákonů by zastavil souhlas nejméně 95 % všech oprávněných občanů, zatímco základní služby musí pokračovat.</p>
-            <p>Počet patnácti poslanců a čtyřleté volební období jsou pracovní návrhy. Ústava, soudní systém i řešení případného veta vyžadují další podrobnosti, aby se předešlo dlouhodobému zablokování státu.</p>
-            <div class="fact-callout proposal"><span class="status-label proposed">K DOPRACOVÁNÍ</span><p>Podoba veta, role referenda, složení parlamentu a měnový vztah k České republice potřebují přesné právní vysvětlení.</p></div>
-
-            <h3 id="wiki-ekonomika">Ekonomika a pracovní život</h3>
-            <p>Ekonomika kombinuje exportní průmysl vlastněný státem, specializované biologické suroviny, chemické polotovary, turistické služby a luxusní maloobchod. Čisté zisky státních podniků mají přispívat k financování veřejných služeb. Pracovní týden je v zadání běžně čtyřdenní: šest hodin denně od pondělí do čtvrtka, celkem 24 hodin týdně. Pro nepřetržité služby se předpokládá směnný provoz.</p>
-            <p>Mořské mikrořasy jako obnovitelný zdroj pro výrobu biocrude a vzácný modrozelený drahokam zvaný larpidit jsou zatím návrhy. Daňové sazby a pracovní ekonomické propočty jsou modelové; nesmějí se prezentovat jako skutečně naměřené statistiky. HDP země navíc není totožné s příjmy státního rozpočtu.</p>
-
-            <h3 id="wiki-historie">Stručná historie</h3>
-            <p>Podle příběhu dorazili první britští osadníci kolem roku 1600. Založili přístavy, kostely, tržiště a venkovská sídla; významnou roli mělo obilnářství a omezené pěstování rýže na zavlažovaných terasách. Izolace a nedostatečná obchodní infrastruktura brzdily růst populace.</p>
-            <p>V novější části příběhu se poslední král zadlužil a předal rozsáhlé hospodářské koncese fiktivnímu magnátovi Košťálovi. Po jeho smrti čtyři vzdálení dědicové zveřejnili dokumentární video a pomohli odhalit zneužívání koncesí. Následovalo vyšetřování, referendum o ústavě a vznik systému čtyř spoluvládců. Události, případ i postava Košťála jsou zcela smyšlené a nepředstavují tvrzení o skutečných osobách.</p>
-            <div class="timeline"><span class="status-label proposed">PRACOVNÍ CHRONOLOGIE · NÁVRH</span><div><b>kolem 1600</b><span>Začátek britského osidlování v příběhu</span></div><div><b>2019–2024</b><span>Košťálovy koncese, vyšetřování a zveřejnění dokumentu</span></div><div><b>2025</b><span>Referendum o ústavě a vznik nového uspořádání</span></div><p>Konkrétní dny uvedené v hlavní projektové časové ose jsou dosud návrhové, nikoli potvrzená historie.</p></div>
-
-            <h3 id="wiki-turismus">Doprava a návštěvnický ruch</h3>
-            <p>Hlavní ostrov počítá s elektrifikovanými auty, sdílenými lehkými elektrickými dopravními prostředky a sítí pěších a cyklistických tras. Návrh železnice tvoří tři linky: zážitková trasa L1 vede do horské oblasti kolem vodopádu a jeskyně, L2 propojuje městečka a průmyslovou nížinu a L3 obsluhuje hlavní město a pokračuje podmořským tunelem na Paraland. Prosklený úsek tunelu je mimořádně náročný inženýrský návrh, ne běžná technologie.</p>
-            <p>Paraland je menší ostrov určený zejména rekreaci a cestovnímu ruchu. Nabízí hotely, aquapark, lesy, pláže, promenádu a historické památky. Rezervace kapacit má chránit přírodu a každodenní život místních obyvatel; návštěva hlavního ostrova není turistům zakázána.</p>
-
-            <section class="presentation-box" id="wiki-prezentace">
-              <div class="presentation-heading"><div><span class="article-tag">HOTOVÝ TEXT · 1 MINUTA</span><h3>Úvod do prezentace</h3></div><button class="button button-light copy-text" type="button" data-copy="presentation-copy">Kopírovat text <span>▣</span></button></div>
-              <p class="presentation-copy" id="presentation-copy">Larpidie je fiktivní ostrovní stát v Tichém oceánu jižně od Japonska. Tvoří ji hlavní ostrov o rozloze přibližně 150 až 200 kilometrů čtverečních a menší turistický ostrov Paraland. Žije zde podle návrhu 20 až 40 tisíc obyvatel a úředními jazyky jsou čeština a angličtina. Vládu tvoří čtyři spoluvládci s právem veta a demokraticky volený parlament. Ekonomika staví na státním exportním průmyslu, dopravě a cestovním ruchu. Zajímavostí je běžný čtyřdenní pracovní týden a návrh železničního spojení pod mořem na Paraland. Celý stát, jeho dějiny i mapy jsou součástí školního fiktivního projektu.</p>
-              <div class="presentation-tags"><span>Upravitelný text</span><span>Údaje označené podle stavu</span><span>Vhodné pro slidy</span></div>
-            </section>
-
-            <h3>Rychlé body na slidy</h3>
-            <ul class="slide-points"><li><b>Poloha:</b> fiktivní souostroví v Tichém oceánu, jižně od Japonska.</li><li><b>Geografie:</b> dva ostrovy, lesnaté hory, pobřeží a přehrada.</li><li><b>Vláda:</b> čtyři spoluvládci, parlament a mimořádná pojistka s občanskou účastí.</li><li><b>Ekonomika:</b> exportní podniky, průmysl a regulovaný cestovní ruch.</li><li><b>Zajímavost:</b> čtyřdenní pracovní týden a návrhové podmořské spojení s Paralandem.</li></ul>
-
-            <h3 id="wiki-stavy">Jak číst údaje a odkud pocházejí</h3>
-            <p>Encyklopedie vychází z projektové bible Larpidie a souvisejících geografických a společenských podkladů. Zelené označení znamená schválený základ příběhu. Oranžové označuje návrh, který autoři mohou ještě změnit. Některé právní a číselné detaily čekají na rozhodnutí. Konkrétní stavové poznámky najdete také u mapových objektů a v původních souborech projektu.</p>
-            <div class="status-legend"><span><i class="legend-dot approved-dot"></i> Schválený základ</span><span><i class="legend-dot proposed-dot"></i> Pracovní návrh</span><span><i class="legend-dot decision-dot"></i> Čeká na rozhodnutí</span></div>
-            <div class="source-links"><a href="data/larpidia_world_bible.json" target="_blank" rel="noopener">Otevřít hlavní zdroj dat ↗</a><a href="references/GEOGRAPHY_AND_CANON.md" target="_blank" rel="noopener">Geografie a návaznost ↗</a><a href="references/REALISM_AND_ZSV.md" target="_blank" rel="noopener">Realismus a ZSV ↗</a></div>
-            <div class="fiction-note"><b>Upozornění k fikci</b><p>Larpidie, její historie, instituce, lidé, mapy i hospodářské údaje jsou součástí fiktivního školního projektu. Názvy skutečných značek uvedené v projektových podkladech neznamenají skutečnou spolupráci. Košťál je fiktivní postava.</p></div>
-          </article>
-        </div>
-        <footer class="site-footer wrap"><a class="brand brand-small" href="#domu"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">Larpidie</span></a><span>Obsah vychází z projektové bible · v1.0-draft</span><a href="larpidia-encyklopedie.md" download>Stáhnout celý text ↓</a></footer>
-      </section>
-    </main>
+        <div class="ency-app wrap" data-encyclopedia-app aria-live="polite"><div class="ency-loading"><span></span>Načítám články a ověřená projektová data…</div></div>
+        <footer class="site-footer wrap"><a class="brand brand-small" href="#domu"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">Larpidie</span></a><span>Školní projekt ZSV · Larpidie je fikce.</span><a href="ENCYCLOPEDIA_MIGRATION_REPORT.md" target="_blank" rel="noopener">Migrační přehled ↗</a></footer>
+      </section>    </main>
 
     <dialog class="map-dialog" aria-label="Zvětšená mapa">
       <div class="dialog-top"><span id="dialog-map-title">Mapa</span><button type="button" class="dialog-close" aria-label="Zavřít mapu">✕</button></div>

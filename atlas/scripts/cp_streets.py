@@ -92,7 +92,7 @@ def generate(ctx, L, seed=20261024):
     res_polys = [LY.circle(O, LY.CIVIC_R, 64), LY.rect_poly(L["park_central"]), LY.rect_poly(L["park_north"]), LY.rect_poly(L["park_east"]),
                  LY.rect_poly(L["park_west"]), LY.rect_poly(L["park_c05"]), LY.rect_poly(L["harbor_sq"]), LY.rect_poly(L["market_sq"]), LY.rect_poly(L["church_sq"]),
                  LY.rect_poly(L["museum"])]
-    for k in ("hotel", "harbor_office", "ferry_terminal"):                   # budovy u přístavu: ulice se jim vyhnou (rezerva 10 m)
+    for k in ("hotel", "harbor_office", "ferry_forecourt"):                  # nástupní plocha u přístavu zůstane volná od ulic
         s = dict(L[k])
         s["w"] += 20.0
         s["h"] += 20.0

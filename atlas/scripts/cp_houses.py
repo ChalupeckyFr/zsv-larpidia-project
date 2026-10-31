@@ -47,7 +47,7 @@ ROOF_PAL = {use: ["#b87558"] for use in (
     "residential_mid", "residential_low", "civic_mixed", "new_waterfront",
 )}
 # klíčové budovy (cp_buildings): výška okapu a tvar střechy
-KEY_H = {"parliament": 22.0, "admin": 18.0, "museum": 16.0, "church": 20.0, "market_hall": 10.0, "hotel_premium": 20.0, "school": 10.0, "harbour_office": 9.0, "ferry_terminal": 7.0}
+KEY_H = {"town_hall": 28.0, "admin": 18.0, "museum": 16.0, "church": 20.0, "market_hall": 10.0, "hotel_premium": 20.0, "school": 10.0, "harbour_office": 9.0}
 
 
 def hex_rgb(h):

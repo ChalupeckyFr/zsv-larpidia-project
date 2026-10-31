@@ -108,10 +108,16 @@ const data = {
   houses: houseFeatures.flatMap((f) => { const p = ring(f); return p ? [{ id: f.properties.id, use: f.properties.subtype || 'residential_mid', kind: f.properties.kind || 'core', points: p, height: Number(f.properties.height_m || 4), floors: Number(f.properties.floors || 1), style: f.properties.architectural_style || 'residential', color: f.properties.roof_color || '#b87558' }] : []; }),
   future,
   buildings: read('cp_buildings.geojson').features.flatMap((f) => {
+    if (f.properties.type !== 'building') return [];
     const p = ring(f); return p ? [{ id: f.properties.id, subtype: f.properties.subtype, name: f.properties.name_en || f.properties.name_cs, points: p }] : [];
+  }),
+  piers: read('cp_buildings.geojson').features.flatMap((f) => {
+    if (f.properties.type !== 'pier') return [];
+    const p = ring(f); return p ? [{ id: f.properties.id, subtype: f.properties.subtype, points: p }] : [];
   }),
   streets: read('cp_streets.geojson').features.flatMap((f) => line(f).map((points) => ({
     width: Number(f.properties.row_m || 10), state: f.properties.state || 'built', cls: f.properties.cls || 'C',
+    name: f.properties.name_cs || '', nameEn: f.properties.name_en || '',
     points: points.map(([x, y]) => [Math.round(x * 10) / 10, Math.round(y * 10) / 10]),
   }))),
   parks: read('cp_spaces.geojson').features.flatMap((f) => {

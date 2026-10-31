@@ -1,0 +1,11 @@
+{
+  "assets": [
+    {"id":"overview","src":"atlas/current/renders/S-00_overview.jpg","alt":"Modelová přehledová vizualizace Larpidie a Paralandu","caption":"Přehled obou ostrovů v atlasovém modelu.","article":"zakladni-informace/prehled","kind":"map"},
+    {"id":"western-highlands","src":"atlas/current/renders/S-01_base.jpg","alt":"Modelová mapa západních hor hlavního ostrova","caption":"Západní horská oblast podle prostorového modelu.","article":"geografie/priroda","kind":"map"},
+    {"id":"paraland","src":"atlas/current/renders/S-02_base.jpg","alt":"Modelová mapa Paralandu a průlivu","caption":"Paraland a průliv v atlasovém modelu.","article":"geografie/ostrovy","kind":"map"},
+    {"id":"capital-plan","src":"atlas/current/capital/capital_plan_base.png","alt":"Plán ulic a čtvrtí Larpingtonu","caption":"Detailní plán hlavního města.","article":"mesta-a-doprava/larpington","kind":"map"},
+    {"id":"capital-view","src":"atlas/current/renders/S-03_base.jpg","alt":"Modelový pohled na Larpington z výšky","caption":"Larpington v prostorovém modelu atlasu.","article":"mesta-a-doprava/larpington","kind":"render"},
+    {"id":"rail-map","src":"atlas/current/svg/rail_scheme.svg","alt":"Schéma železničních linek L1, L2 a L3","caption":"Atlasové schéma dopravních koridorů; zobrazení trasy samo o sobě nepotvrzuje její provoz.","article":"mesta-a-doprava/zeleznice","kind":"map"},
+    {"id":"photo-001","src":"atlas/photography/photos/LAR_PH_001.jpg","alt":"Ilustrační pohled na zalesněnou horskou stezku a pobřeží v zimním období","caption":"Ilustrační vizuál ke konceptu Larpidie; přesný výhled ani poloha záběru nejsou geodeticky ověřeny.","article":"geografie/priroda","kind":"illustration","status":"reviewed-as-illustration"}
+  ]
+}

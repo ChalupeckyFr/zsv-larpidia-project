@@ -74,9 +74,9 @@ def build_layout(ctx):
     # ---- Náměstí čtyř
     ring = circle(O, RING_R, 64)
     L["ring"] = ring + [ring[0]]
-    L["garden"] = circle(O, GARDEN_R, 48)
+    L["town_hall_square"] = circle(O, GARDEN_R, 48)
     L["civic_zone"] = circle(O, CIVIC_R, 64)
-    L["parliament"] = {"c": O, "w": 56.0, "h": 34.0, "ang": 0.0}
+    L["town_hall"] = {"c": O, "w": 70.0, "h": 42.0, "ang": 0.0}
     admin = []
     for key, a_k in (("W", 180.0), ("N", 270.0), ("E", 0.0), ("S", 90.0)):
         a = math.radians(a_k + ADMIN_OFFSET_DEG)
@@ -102,8 +102,9 @@ def build_layout(ctx):
     u_h = q[0] + 360.0
     L["hotel"] = {"c": (u_h, CX.v_at_dq(ctx, u_h, 92.0)), "w": 64.0, "h": 36.0, "ang": 0.0}      # HV-01 – prémiový hotel nad promenádou
     u_f = q[0] + 105.0
-    L["ferry_pier"] = {"c": (u_f, CX.v_at_dq(ctx, u_f, -34.0)), "w": 22.0, "h": 68.0, "ang": 0.0}   # přístaviště lodní linky FERRY-1 (do vody)
-    L["ferry_terminal"] = {"c": (u_f, L["ferry_pier"]["c"][1] - 58.0), "w": 38.0, "h": 16.0, "ang": 0.0}
+    coast_v = CX.v_at_dq(ctx, u_f, 0.0)
+    L["ferry_pier"] = {"c": (u_f, coast_v + 115.0), "w": 8.0, "h": 230.0, "ang": 0.0}   # 230m molo od břehu směrem do moře
+    L["ferry_forecourt"] = {"c": (u_f, coast_v - 12.0), "w": 38.0, "h": 24.0, "ang": 0.0}  # vydlážděné náměstí navazuje na vstup mola
     L["harbor_office"] = {"c": (q[0] - 118.0, q[1] - 46.0), "w": 46.0, "h": 22.0, "ang": 0.0}
     # ---- parky u stanic a mezi východním lalokem a novou čtvrtí
     st = ctx.city.station

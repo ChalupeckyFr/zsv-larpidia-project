@@ -48,7 +48,7 @@ def space_polys(ctx, L):
     """Veřejné prostory jako polygony (id, typ, název, polygon)."""
     sp = [
         ("CP-SQ01", "plaza", "Náměstí čtyř", L["civic_zone"]),
-        ("CP-PK01", "park", "Parlamentní zahrada", L["garden"]),
+        ("CP-PK01", "square", "Radniční náměstí", L["town_hall_square"]),
         ("CP-PK02", "park", "Centrální park", LY.rect_poly(L["park_central"])),
         ("CP-PK03", "park", "Severní park", LY.rect_poly(L["park_north"])),
         ("CP-PK04", "park", "Západní park", LY.rect_poly(L["park_west"])),
@@ -57,6 +57,7 @@ def space_polys(ctx, L):
         ("CP-SQ02", "square", "Přístavní náměstí", LY.rect_poly(L["harbor_sq"])),
         ("CP-SQ03", "square", "Tržní náměstí", LY.rect_poly(L["market_sq"])),
         ("CP-SQ04", "square", "Kostelní náměstí", LY.rect_poly(L["church_sq"])),
+        ("CP-SQ10", "square", "Nástupní plocha k molu", LY.rect_poly(L["ferry_forecourt"])),
         ("CP-PR01", "promenade", "Přístavní promenáda", G.buffer_polyline_poly([p for p in ctx.quay_in if 2450 <= p[0] <= 4150], 9.5)),
     ]
     return sp

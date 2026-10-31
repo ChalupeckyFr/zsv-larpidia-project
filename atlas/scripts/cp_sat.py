@@ -24,8 +24,8 @@ STREET_COL = {"R1": ((116, 114, 116), (182, 178, 170)), "A": ((112, 112, 116), (
 TRACK_COL = (170, 152, 122)                                   # plánovaná ulice v rezervě: polní cesta
 GROUND = {"old_town_mixed": (152, 142, 126), "promenade_retail": (160, 150, 136), "retail_main": (150, 146, 138), "civic_mixed": (170, 160, 146), "transit_mixed": (146, 142, 130),
           "residential_mid": (120, 140, 94), "residential_low": (112, 144, 86), "school": (126, 152, 102), "new_waterfront": (136, 142, 124), "hotel_premium": (150, 140, 126)}
-KEY_ROOF = {"parliament": (92, 102, 128), "admin": (150, 122, 112), "museum": (100, 114, 130), "church": (98, 84, 78), "market_hall": (164, 124, 74), "hotel_premium": (176, 104, 84),
-            "school": (80, 118, 164), "harbour_office": (130, 130, 128), "ferry_terminal": (120, 120, 124)}
+KEY_ROOF = {"town_hall": (92, 76, 59), "admin": (150, 122, 112), "museum": (100, 114, 130), "church": (98, 84, 78), "market_hall": (164, 124, 74), "hotel_premium": (176, 104, 84),
+            "school": (80, 118, 164), "harbour_office": (130, 130, 128)}
 
 
 def load_plan():

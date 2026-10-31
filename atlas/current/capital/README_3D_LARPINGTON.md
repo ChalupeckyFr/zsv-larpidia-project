@@ -1,30 +1,28 @@
-# 3D Larpington – poznámky k přírodnímu režimu
+# 3D Larpington
 
-## Změněné soubory
+## Zdroj a generování
 
-- `capital-3d.html` – srovnání výšek městských objektů s terénem, tlumenější barvy atlasového režimu, vzdálené siluety pobřeží a ovládání klávesnicí i dvěma prsty.
-- `capital-3d-nature.js` – lehčí kreslení oken, rozdílné povrchy hlavních ulic a pěších uliček, zahradní trávníky, nízké keře a opravené rozměry stromů v metrech místo kilometrech.
+- `capital-3d.html` vykresluje město v atlasovém i přírodním režimu.
+- `capital-3d-nature.js` přidává materiály, okna, zahrady, ploty a vegetaci.
+- `capital-3d-data.js` se generuje z aktuálních `cp_*.geojson` skriptem `atlas/scripts/build_capital_3d_data.mjs`.
+- Geometrii města vytváří `atlas/scripts/build_capital.py` z modulů `cp_*.py`.
 
 ## Ovládání
 
-- **Šipky nebo WASD:** posun pohledu po scéně; směr odpovídá orientaci kamery.
-- **Tažení myší nebo jedním prstem:** otáčení pohledu.
-- **Kolečko nebo gesto dvěma prsty:** přiblížení a oddálení.
-- **Home** nebo tlačítko **Výchozí pohled:** návrat na začátek.
+- **Pravé tlačítko + tažení myší:** otáčení pohledu. Na dotykové obrazovce otáčejte jedním prstem.
+- **W/A/S/D nebo šipky:** pohyb vpřed, vlevo, vzad a vpravo.
+- **Ctrl:** pohyb kamery nahoru. **Shift:** pohyb dolů.
+- **Kolečko nebo posuvník rychlosti:** nastavení pohybu od 0,25× do 5×; kolečko nemění přiblížení.
+- **Home** nebo tlačítko **Výchozí pohled:** návrat k výchozí pozici.
 
-## Co se změnilo
+## Radnice a veřejná prostranství
 
-Přírodní režim používá terénní barvy, asfalt na hlavních silnicích, světlejší místní uličky, tlumené fasády a střechy. Rozlehlejší obytné parcely dostaly jednoduchý trávník, plot nebo živý plot a občasný strom či keř. Stromy a keře jsou záměrně nízkopolygonové; plán ulic a rozmístění domů zůstávají převzaté z aktuálních dat města.
+Radnice a sídlo parlamentu stojí uprostřed Radničního náměstí a Náměstí čtyř. Její světlá neorenesanční fasáda, strmá střecha, věž s hodinami a menší nárožní věžičky jsou volně inspirované libereckou radnicí. Jde o návrh pro Larpington, ne kopii skutečné stavby. Obě náměstí mají dlážděný povrch a procedurální stromy ani uliční stromořadí do jejich hranic nezasahují.
 
-V atlasovém režimu jsou barvy budov méně syté. Oba režimy sdílejí opravené výškové napojení na terén, takže silnice, trávníky ani domy nemají působit, jako by nad povrchem levitovaly. Při větším oddálení se zobrazí tlumené obrysy japonských ostrovů, Tchaj-wanu a pobřeží Číny.
+## Přístav
+
+Molo je dlouhé 230 m a navazuje na dlážděný předprostor. Jeho tvar se bere z objektu `CP-PI01`, takže data plánu a 3D model sdílejí stejnou geometrii. Samostatný trajektový terminál byl odstraněn. Hladina vnějšího moře navazuje na pobřežní vodní buňky terénu; přístavní voda, molo, vlnolamy a vybrané pláže zůstávají součástí obou 3D režimů.
 
 ## Omezení
 
-Vzdálená pobřeží jsou pouze atmosférická orientační kulisa, označená názvy Japonsko, Čína a Tchaj-wan. Nejsou přesná podle měřítka, projekce ani geologie a nemají se používat jako geografická mapa. Vegetace a zahrady jsou procedurální ilustrace; hustota detailů se může lišit podle výkonu zařízení.
-
-
-## Pobřeží a přístav
-
-Vybrané úseky pláží, přístavní voda, promenáda, kamenné vlnolamy a dřevěné molo s loděmi jsou společné atlasovému i přírodnímu 3D režimu. Ulice se vykreslují spojitě přes křižovatky a nad zelenými plochami. Nejbližší přiblížení je zvětšené pro detailnější pohled na domy i přístav.
-
-Silnice v obou režimech se vykreslují po kratších terénně vzorkovaných úsecích, aby zůstaly spojité i nad zelenými plochami. Ovládání má nastavitelnou rychlost a menší minimální odstup kamery.
+Město, budovy, zeleň i výšky jsou vizualizační návrh. Nejde o geodetický plán ani skutečné stavby. Přírodní detaily jsou procedurální a jejich hustota se může lišit podle výkonu zařízení.

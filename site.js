@@ -30,6 +30,7 @@
   }
 
   function routeForHash(hash) {
+    if (hash === "#encyklopedie" || hash.startsWith("#encyklopedie/")) return "encyklopedie";
     if (hash.startsWith("#wiki-")) return "encyklopedie";
     const route = hash.replace(/^#/, "").split("-")[0];
     return views.some((view) => view.dataset.view === route) ? route : "domu";
@@ -91,7 +92,8 @@
   function showFromHash() {
     const hash = window.location.hash;
     const route = routeForHash(hash);
-    activateView(route, { scroll: !hash.startsWith("#wiki-") });
+    const isEncyclopediaRoute = hash.startsWith("#encyklopedie/");
+    activateView(route, { scroll: !hash.startsWith("#wiki-") && !isEncyclopediaRoute });
     if (hash.startsWith("#wiki-")) {
       window.setTimeout(() => document.getElementById(hash.slice(1))?.scrollIntoView({ block: "start" }), 40);
     }
