@@ -1,6 +1,6 @@
 {
   "title": "Encyklopedie Larpidie",
-  "description": "Veřejný průvodce fiktivním školním projektem Larpidie. Články vycházejí z aktuálně potvrzeného kánonu.",
+  "description": "Objevte ostrovy, historii, města, kulturu a každodenní život Larpidie.",
   "categories": [
     {"id":"zakladni-informace","title":"O Larpidii","eyebrow":"ZÁKLADNÍ INFORMACE","description":"Rychlá orientace v ostrovním státě, obyvatelích a každodenním životě.","icon":"01","articles":[
       {"id":"prehled","title":"Larpidie v kostce","summary":"Poloha, ostrovy, obyvatelstvo, hlavní město a základní podoba projektu.","keywords":["poloha","fiktivní stát","rozloha","obyvatelé"],"media":["overview"]},

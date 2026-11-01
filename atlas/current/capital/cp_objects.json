@@ -13,7 +13,7 @@
    "h": 4200
   },
   "count": 662,
-  "status_note": "pos_status = proposed pro všechny polohy; exist_status approved jen pro to, co říká bible (parlament, muzeum, historický přístav C-02, pobřežní silnice)"
+  "status_note": "exist_status approved jen pro schválená místa a prvky hlavní infrastruktury"
  },
  "objects": [
   {
@@ -159,13 +159,13 @@
    "id": "CP-B01",
    "type": "building",
    "subtype": "town_hall",
-   "name_cs": "Radnice a parlament Larpingtonu",
-   "name_en": "Larpington Town Hall and Parliament House",
+   "name_cs": "Radnice Larpingtonu",
+   "name_en": "Larpington Town Hall",
    "name_ja": "ラーピントン市庁舎・議事堂",
    "exist_status": "approved",
    "origin": "bible",
-   "bible_ref": "politics.elected_parliament (approved); capital_roles: státní instituce",
-   "notes": "Radnice a sídlo parlamentu na Náměstí čtyř; fasáda a věž volně inspirované libereckou radnicí.",
+   "bible_ref": "capital_roles: státní instituce",
+   "notes": "Radnice na Náměstí čtyř; fasáda a věž volně inspirované libereckou radnicí.",
    "region": "south_southeast",
    "name_status": "proposed",
    "pos_status": "proposed",
@@ -2163,7 +2163,7 @@
     "L3"
    ],
    "transfer": false,
-   "notes": "stará zástavba, parlament, historický přístav C-02 (cca 0,9 km)",
+   "notes": "stará zástavba, historický přístav C-02 (cca 0,9 km)",
    "plan_geometry": "underground, two entrance pavilions",
    "region": "south_southeast",
    "name_status": "proposed",

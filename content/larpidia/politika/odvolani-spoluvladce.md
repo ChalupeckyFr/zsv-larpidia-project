@@ -12,4 +12,4 @@ Podmínky platí současně. Pokud účast nedosáhne minima, samotný poměr AN
 
 Závažné porušení ústavy podléhá nezávislé soudní odpovědnosti podle zákona. Soudní řízení není nástrojem k odvolání za pouhý politický nesouhlas. Pokud se místo uvolní, ostatní tři spoluvládci navrhnou nástupce a občané jej potvrzují.
 
-Pravidla opakovaných petic, přesná lhůta kampaně a některé kroky po neúspěšném referendu zatím nejsou stanovené.
+Po neúspěšném referendu lze další pokus zahájit nejdříve za 12 měsíců. Soud může posoudit výjimku, pokud nastanou nové závažné okolnosti.

@@ -1,0 +1,63 @@
+{
+  "title": "Encyklopedie Larpidie",
+  "description": "Objevte ostrovy, historii, města, kulturu a každodenní život Larpidie.",
+  "categories": [
+    {"id":"zakladni-informace","title":"O Larpidii","eyebrow":"ZÁKLADNÍ INFORMACE","description":"Rychlá orientace v ostrovním státě, obyvatelích a každodenním životě.","icon":"01","articles":[
+      {"id":"prehled","title":"Larpidie v kostce","summary":"Poloha, ostrovy, obyvatelstvo, hlavní město a základní podoba projektu.","keywords":["poloha","fiktivní stát","rozloha","obyvatelé"],"media":["overview"]},
+      {"id":"obyvatelstvo-a-jazyky","title":"Obyvatelé a jazyky","summary":"Model populace, úřední jazyky a kulturní prostředí.","keywords":["čeština","angličtina","japonština","populace"]}
+    ]},
+    {"id":"geografie","title":"Geografie a příroda","eyebrow":"KRAJINA","description":"Dva ostrovy, horský západ, nížiny, voda a chráněná místa.","icon":"02","articles":[
+      {"id":"ostrovy","title":"Hlavní ostrov a Paraland","summary":"Poloha, charakter a vzájemný vztah obou ostrovů.","keywords":["ostrov","Paraland","Pacifik","pobřeží"],"media":["overview","paraland"]},
+      {"id":"priroda","title":"Reliéf, voda a krajina","summary":"Hory, lesy, řeky, vodopád, přehrada a osídlená nížina.","keywords":["hory","lesy","vodopád","řeka","přehrada"],"media":["western-highlands"]},
+      {"id":"ochrana-prirody","title":"Ochrana přírody","summary":"Mořská rezervace, chráněná území a ohleduplná návštěvnost.","keywords":["rezervace","krystalová jeskyně","stezky","moře"]}
+    ]},
+    {"id":"historie","title":"Historie","eyebrow":"PAMĚŤ OSTROVA","description":"Od prvního doloženého osídlení přes Košťálovu ekonomickou nadvládu k obnově institucí.","icon":"03","articles":[
+      {"id":"casova-osa","title":"Časová osa","summary":"Potvrzená chronologie hlavních událostí fikční historie.","keywords":["1608","1921","2024","2025"],"media":[]},
+      {"id":"kostalova-era","title":"Košťálovo období","summary":"Nevýhodné koncese, ekonomická moc a dopady na společnost.","keywords":["Košťál","koncese","ekonomická moc"],"media":[]},
+      {"id":"obnova-a-muzea","title":"Odhalení a obnova institucí","summary":"Video, policejní zásah, zjištění královského původu a nová ústava.","keywords":["video","policie","muzeum","referendum"],"media":[]}
+    ]},
+    {"id":"politika","title":"Politický systém a ústava","eyebrow":"ÚSTAVNÍ USPOŘÁDÁNÍ","description":"Přímé občanské zákonodárství, výkonné vedení spoluvládců a nezávislé kontrolní instituce.","icon":"04","articles":[
+      {"id":"ustavni-system","title":"Jak funguje ústavní systém","summary":"Rozdělení zákonodárné, výkonné, soudní a kontrolní moci.","keywords":["ústava","bez parlamentu","přímá demokracie"]},
+      {"id":"spoluvladci","title":"Spoluvládci","summary":"Rovnocenné vedení státu, resorty a hranice výkonné pravomoci.","keywords":["vláda","resort","pravomoci"]},
+      {"id":"navrhovani-zakonu","title":"Jak občané navrhují zákony","summary":"Podání návrhu a nestranná kontrola jeho formální a právní způsobilosti.","keywords":["návrh zákona","občanská iniciativa"]},
+      {"id":"schvalovani-zakonu","title":"Hlasování a schválení zákona","summary":"Veřejné hlasování občanů od stanoveného věku a pravidlo většiny bez kvóra.","keywords":["referendum","hlasování","kvórum"]},
+      {"id":"veto-a-spory","title":"Veto, pat a občanské rozhodnutí","summary":"Odkladné veto, smír a občanské rozhodnutí ve výkonných sporech.","keywords":["veto","pat","95 procent"]},
+      {"id":"volby-uradu","title":"Volby vedoucích veřejných úřadů","summary":"Nominace občanů i spoluvládců, dvoukolová volba a mandáty.","keywords":["volby","úřad","druhé kolo"]},
+      {"id":"odvolani-spoluvladce","title":"Odvolání spoluvládce","summary":"Peticí vyvolané referendum s odlišnými, přísnějšími podmínkami.","keywords":["odvolání","petice","účast"]},
+      {"id":"prava-a-soudy","title":"Základní práva a soudy","summary":"Ochrana práv a role nezávislého ústavního soudu.","keywords":["práva","ústavní soud","nezávislost"]},
+      {"id":"volebni-urad","title":"Nezávislý volební úřad","summary":"Správa voleb, referend, podpisových řízení a ověřování výsledků.","keywords":["volební úřad","kontrola voleb"]},
+      {"id":"financni-kontrola","title":"Finanční kontrola státu","summary":"NKÚL kontroluje veřejné výdaje, majetek i státem ovládané firmy.","keywords":["NKÚL","audit","kontrola"]},
+      {"id":"statni-rozpocet","title":"Schvalování státního rozpočtu","summary":"Samostatný rozpočtový postup, řešení patu a rozpočtové provizorium.","keywords":["rozpočet","většina spoluvládců","provizorium"]}
+    ]},
+    {"id":"ekonomika","title":"Ekonomika","eyebrow":"PRÁCE A VEŘEJNÉ FINANCE","description":"Exportní podniky, daně, turistický model a veřejné výdajové rámce.","icon":"05","articles":[
+      {"id":"dane","title":"Daně a daňový systém","summary":"Daň ze zisku firem, DPH a modelové sazby daně z příjmu.","keywords":["daň","DPH","5 procent","12 procent"]},
+      {"id":"statni-podniky","title":"Státní podniky a řasový průmysl","summary":"Produkce, export a oddělení firemního zisku od státního rozpočtu.","keywords":["řasy","biopaliva","státní podnik"]},
+      {"id":"obchod-a-export","title":"Obchod a export","summary":"Vývoz řasových produktů a obchodní vztahy s Japonskem a Koreou.","keywords":["export","Japonsko","Jižní Korea"]},
+      {"id":"ekonomicky-model","title":"Ekonomický model a veřejné finance","summary":"Modelové propočty s jasným rozlišením obratu, zisku a rozpočtových příjmů.","keywords":["rozpočet","turismus","model","tržby"]},
+      {"id":"prace-a-mzdy","title":"Práce, pracovní doba a mzdy","summary":"Obvyklý pracovní režim a modelová průměrná mzda.","keywords":["práce","mzda","pracovní doba"]}
+    ]},
+    {"id":"spolecnost","title":"Obyvatelé a život","eyebrow":"KAŽDODENNOST","description":"Zdravotnictví, školy, sociální pomoc, důchody, kultura a svátky.","icon":"06","articles":[
+      {"id":"zdravotnictvi","title":"Zdravotnictví","summary":"Veřejně hrazený základní rozsah péče a možné specializované léčení.","keywords":["zdraví","péče","zahraniční léčba"]},
+      {"id":"skolstvi-a-univerzity","title":"Školství a univerzity","summary":"Bezplatné veřejné vzdělávání a specializované kampusové město.","keywords":["škola","univerzita","kampus","studium"]},
+      {"id":"socialni-podpora-a-duchody","title":"Sociální pomoc a důchody","summary":"Cílená pomoc v nouzi, základní modelový důchod a dobrovolné spoření.","keywords":["důchod","sociální pomoc"]},
+      {"id":"kultura-a-svatky","title":"Kultura, jazyky a svátky","summary":"Jazyková pestrost, připomínkové dny, festival a místní tradice.","keywords":["Den larpu","Mog Day","festival","svátky"]}
+    ]},
+    {"id":"mesta-a-doprava","title":"Města a doprava","eyebrow":"SÍDLA A SPOJENÍ","description":"Larpington, blízké kampusové město, městské čtvrti a dopravní síť.","icon":"07","articles":[
+      {"id":"larpington","title":"Larpington","summary":"Hlavní město, jeho pobřeží, historické jádro a městská struktura.","keywords":["hlavní město","radnice","přístav"],"media":["capital-plan","capital-view"]},
+      {"id":"ctvrti-larpingtonu","title":"Čtvrti Larpingtonu","summary":"Čtyři pojmenované tradiční čtvrti a pátá funkční zóna.","keywords":["Chalupecká","Kynčlova","Klimečkova","Žemličkova"]},
+      {"id":"kampusove-mesto","title":"Kampusové město a studijní obory","summary":"Samostatné blízké sídlo, koleje a specializované vzdělávání.","keywords":["kampus","koleje","móda","film","finance"]},
+      {"id":"zeleznice","title":"Železnice L1–L3","summary":"Základní role linek a ověřený stupeň provozu a výstavby.","keywords":["L1","L2","L3","podmořské spojení"],"media":["rail-map"]},
+      {"id":"dalsi-doprava","title":"Městská a meziměstská doprava","summary":"Pěší doprava, veřejná doprava, lodě a sdílené prostředky.","keywords":["trajekt","kolo","koloběžka","doprava"]}
+    ]},
+    {"id":"paraland","title":"Paraland a památky","eyebrow":"JIHOVÝCHODNÍ OSTROV","description":"Luxusnější cestovní ruch v rovnováze s historickým dědictvím a ochranou moře.","icon":"08","articles":[
+      {"id":"turistika-a-rezervace","title":"Turistika a návštěvnická pravidla","summary":"Rezervace, povolenky a kapacitní ochrana turisticky využívaných lokalit.","keywords":["turismus","povolenka","rezervace","resort"]},
+      {"id":"pamatky","title":"Historické památky","summary":"Muzejní expozice a citlivá obnova vybraných historických objektů.","keywords":["hrad","zřícenina","muzeum","památka"]},
+      {"id":"morska-rezervace","title":"Mořská rezervace","summary":"Rozsáhlé chráněné moře a pravidla šetrného využívání pobřeží.","keywords":["moře","rezervace","pobřeží","příroda"]}
+    ]},
+    {"id":"zahranici-a-bezpecnost","title":"Zahraniční vztahy a bezpečnost","eyebrow":"VZTAHY A OCHRANA","description":"Fikční zahraniční partnerství, národní garda a připravenost na krizové situace.","icon":"09","articles":[
+      {"id":"zahranicni-vztahy","title":"Zahraniční vztahy","summary":"Obchodní, vědecká a vzdělávací vazba na Japonsko a Jižní Koreu.","keywords":["Japonsko","Jižní Korea","aliance","zahraničí"]},
+      {"id":"narodni-garda","title":"Národní garda a bezpečnostní složky","summary":"Menší obranná složka vedle policie, pobřežní stráže a záchranných služeb.","keywords":["garda","policie","pobřežní stráž"]},
+      {"id":"krizove-rizeni","title":"Krizové řízení","summary":"Celostátní koordinace, varování, evakuace a cvičení na obou ostrovech.","keywords":["krize","evakuace","záchrana","varování"]}
+    ]}
+  ]
+}

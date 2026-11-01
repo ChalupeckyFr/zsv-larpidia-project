@@ -1,6 +1,6 @@
-Mezinárodní obchod Larpidie je v kánonu spojen zejména s Japonskem a Jižní Koreou. Mezi hlavní fikční směry spolupráce patří řasová paliva a další produkty z mořských surovin, věda, vzdělávání a technologie.
+Fikční mezinárodní obchod Larpidie zahrnuje Japonsko a Jižní Koreu. Státní exportní podniky vyrábějí řasová paliva a další produkty z mořských surovin a vyvážejí je do obou zemí. Spolupráce zahrnuje také vědu, vzdělávání a technologie.
 
-Zahraniční vztahy jsou součástí fikčního světa. Zmínka o skutečných zemích neznamená, že jejich reálné vlády uzavřely smlouvu s Larpidií. Přesné smluvní texty, signatáři a mechanismy obranných závazků nejsou určeny.
+Tato obchodní a partnerská vazba patří do fikčního světa Larpidie; nepopisuje skutečnou dohodu vlád Japonska nebo Jižní Koreje.
 
 ## Průmyslové zázemí
 

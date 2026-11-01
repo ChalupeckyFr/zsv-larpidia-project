@@ -4,7 +4,7 @@ Každý oprávněný občan Larpidie může předložit návrh zákona bez před
 
 Návrh nejprve prochází kontrolou nezávislé legislativní kanceláře. Ta posuzuje, zda je text dostatečně úplný a srozumitelný, zda se neduplikuje s platnou úpravou a zda může být v souladu s ústavou. Kontrola neslouží k potlačení názoru, který se úřadu politicky nelíbí.
 
-Pokud návrhu chybí forma nebo srozumitelnost, potřebují být určeny postupy pro vysvětlení či doplnění. Podání **neznamená automatické vyhlášení okamžitého referenda**. Přesné lhůty, zveřejňování odůvodnění a opravné prostředky nejsou zatím úplně stanovené.
+Po kontrole způsobilosti návrh pokračuje do hlasovacího řízení. Podání samo o sobě neznamená okamžité referendum.
 
 ## Přímá zákonodárná pravomoc
 

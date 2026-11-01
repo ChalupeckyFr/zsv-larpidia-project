@@ -2,12 +2,12 @@ Veřejné vzdělávání je bez školného od základních škol až po domácí
 
 ## Kampusové město
 
-V blízkosti Larpingtonu existuje samostatné kampusové město s kolejemi. Je to vlastní sídlo, nikoli administrativní čtvrť hlavního města. Přesný název, obvod a umístění nejsou veřejně určeny; encyklopedie ani atlas je proto nevymýšlejí.
+V blízkosti Larpingtonu leží samostatné kampusové město s kolejemi. Jeho vzdělávací pracoviště navazují na univerzitní a kreativní zónu hlavního města.
 
 Potvrzená odborná zaměření zahrnují textilnictví a materiálové technologie, módní design, filmovou tvorbu a pokročilý střih či postprodukci, počítačové inženýrství, finance a marketing. Neznamená to automaticky existenci sedmi samostatných velkých univerzit.
 
 ## Školní rozvrh
 
-V běžných základních a středních školách nesmí výuka začínat před 9. hodinou více než dvakrát během týdne. Délka školního týdne — čtyři, nebo pět dní — rozhodnutá není. Čtyřdenní pracovní režim dospělých nelze automaticky přenést na žáky a školy.
+Školy běžně vyučují od pondělí do pátku. Výuka smí začínat před 9. hodinou nejvýše dvakrát týdně.
 
-Historická výuka může zahrnovat projektové dny, práci se zdroji a návštěvy hlavního muzea v Larpingtonu i menší expozice na Paralandu. Cílem je kritické myšlení, ne povinná politická oslava.
+Historická výuka může zahrnovat projektové dny, práci se zdroji a návštěvy hlavního muzea v Larpingtonu i menší expozice na Paralandu.

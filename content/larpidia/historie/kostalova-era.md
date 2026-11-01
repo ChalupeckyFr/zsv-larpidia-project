@@ -1,4 +1,4 @@
-Košťálovo postavení vyrůstalo především z **ekonomického vlivu**. Dne **{{fact.history.kostalConcessionDate}}** získal od krále nevýhodné hospodářské koncese, které mu pomohly soustředit významnou kontrolu nad podniky a majetkem. Kánon jej nepotvrzuje jako krále ani jako předsedu vlády a neříká, že ovládal každou státní instituci.
+Košťál získal **hospodářský a společenský vliv** prostřednictvím nevýhodných koncesí. Dne **{{fact.history.kostalConcessionDate}}** mu král udělil podmínky, které mu pomohly soustředit kontrolu nad podniky a majetkem.
 
 ## Dopady na společnost
 
@@ -8,4 +8,4 @@ Po králově smrti **{{fact.history.kingDeathDate}}** zůstaly koncese a nahroma
 
 ## Právní náprava
 
-Fikční příběh počítá se soudním projednáváním podezřelých činů, vracením neoprávněně získaného majetku a náhradou poškozeným. Košťál je v aktuálním ději ve vězení. Přesný rozsudek ani právní titul tohoto stavu nejsou doložené, proto je zde neurčujeme. Možné budoucí podplácení nebo politický návrat jsou obavy či hypotézy, nikoli prokázané události.
+V současném ději je Košťál ve vězení. Jeho budoucí politický návrat nebo podplácení představují pouze možné scénáře, nikoli uskutečněné události.

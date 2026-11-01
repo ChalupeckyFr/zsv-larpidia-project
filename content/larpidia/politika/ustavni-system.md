@@ -17,6 +17,4 @@ Podání návrhu samo o sobě nevyvolá okamžité referendum. Návrh kontroluje
 
 Spoluvládci společně rozhodují o zásadních výkonných otázkách. Roční rozpočet má vlastní proceduru: běžně potřebuje podporu nejméně **{{fact.constitution.ordinaryBudgetApprovalsRequired|number}} z {{fact.constitution.coRulers|number}} spoluvládců**, mimořádné významné závazky všech **{{fact.constitution.coRulers|number}}**. Podrobnosti najdete v článcích o [spoluvládcích](#encyklopedie/politika/spoluvladci), [zákonech](#encyklopedie/politika/schvalovani-zakonu) a [rozpočtu](#encyklopedie/politika/statni-rozpocet).
 
-## Hranice známého
-
-Potvrzené jsou základní principy, nikoli každý procesní detail. Přesné lhůty, technické provedení hlasování, některé opravné prostředky a konkrétní organizace kanceláří potřebují další právní rozpracování. Encyklopedie tyto mezery nevydává za hotovou právní úpravu.
+Čtyři resortní oblasti a společné rozhodování o jejich rozdělení popisuje článek o [spoluvládcích](#encyklopedie/politika/spoluvladci). Občanská zákonodárná pravomoc, soudní ochrana a nezávislá kontrola společně vyvažují výkonnou správu.

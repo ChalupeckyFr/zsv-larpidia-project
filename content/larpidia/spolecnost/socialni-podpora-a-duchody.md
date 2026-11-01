@@ -1,11 +1,11 @@
-Veřejná sociální pomoc je zaměřená na lidi v obtížné životní situaci. Kánon nepotvrzuje univerzální základní příjem, který by dostával každý bez ohledu na potřebu.
+Veřejná sociální pomoc je cílená na lidi v obtížné životní situaci. Její podoba vychází z potřebnosti a konkrétní životní situace.
 
 ## Základní státní důchod
 
-Modelový základní státní důchod činí **{{fact.pensions.basicMonthlyCzk|czk}} měsíčně od věku {{fact.pensions.ageYears|number}} let**. Jde o modelovou hodnotu, nikoli o úplnou prováděcí úpravu všech nároků. Přesné podmínky pobytu či občanství potřebují dopracování.
+Larpidští občané mají od věku **{{fact.pensions.ageYears|number}} let** nárok na základní státní důchod **{{fact.pensions.basicMonthlyCzk|czk}} měsíčně**. Odpracované roky nejsou podmínkou.
 
 Člověk může skončit s prací dříve, pokud má jiné prostředky, a po dosažení důchodového věku může nadále pracovat. Osobní spoření je dobrovolné; stát modelově přispívá **{{fact.economy.personalSavingsStateMatchPercent|percent}} způsobilého příspěvku, maximálně {{fact.economy.personalSavingsStateMatchMaximumCzkMonthly|czk}} za měsíc**. Účastník může nabídnutý státní příspěvek odmítnout.
 
 ## Jak číst penzijní propočty
 
-Kombinace modelového podílu obyvatel od {{fact.pensions.ageYears|number}} let a důchodu dává pouze ilustrativní výdajový scénář. Neznamená, že všichni obyvatelé dané věkové skupiny automaticky splní nárok. Přepočítávané částky a předpoklady jsou uvedeny v [ekonomickém modelu](#encyklopedie/ekonomika/ekonomicky-model).
+Výdajový scénář závisí na počtu oprávněných občanů, nikoli na celkovém počtu všech obyvatel ve věkové skupině. Další propočty uvádí [ekonomický model](#encyklopedie/ekonomika/ekonomicky-model).

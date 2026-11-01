@@ -11,12 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="site.css" />
     <script src="site.js" defer></script>
+    <script src="project-meta.js" defer></script>
     <script src="encyclopedia.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#domu" aria-label="Larpidie — úvodní stránka">
-        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <img class="logo" src="Larpidie logo.png" alt="Larpidie logo">
         <span class="brand-name">Larpidie<span class="brand-sub">ostrovní atlas</span></span>
       </a>
       <nav class="main-nav" aria-label="Hlavní navigace">
@@ -46,7 +47,7 @@
             <img src="atlas/current/renders/S-00_overview.jpg" alt="Simulovaný atlasový pohled na hlavní ostrov Larpidie a Paraland" />
             <span class="map-caption"><span class="map-caption-dot"></span> Larpidie &amp; Paraland <span class="map-caption-rule"></span> 01° · Tichý oceán</span>
             <span class="map-north" aria-hidden="true">N<br />↑</span>
-            <span class="map-stamp">ATLAS<br /><b>v1.0</b></span>
+            <span class="map-stamp">ATLAS<br /><b>Larpidie</b></span>
           </a>
         </div>
 
@@ -64,8 +65,8 @@
 
         <section class="feature-band">
           <div class="wrap feature-grid">
-            <div class="feature-image"><img src="atlas/current/renders/S-01_base_clouds.jpg" alt="Simulovaná reliéfní mapa horské a nížinné části Larpidie" loading="lazy" /><span class="image-index">33° 54′ N &nbsp; / &nbsp; 137° 36′ E*</span></div>
-            <div class="feature-copy"><p class="eyebrow">Krajina protikladů</p><h2>Od horských<br />pramenů k přístavu.</h2><p>Na západě ostrova se zvedají lesnaté hory, vodopády a pěší stezky. Východní nížina hostí sídla a udržitelné továrny; na jihu leží pracovní návrh hlavního města Larpingtonu.</p><p class="small-note">*Souřadnice jsou pouze pracovní model. Larpidie neexistuje na skutečné mapě.</p><a class="button button-outline" href="#atlas">Otevřít atlas <span>↗</span></a></div>
+            <div class="feature-image"><img src="atlas/current/renders/S-01_base_clouds.jpg" alt="Vizualizace horské a nížinné krajiny Larpidie" loading="lazy" /><span class="image-index">JIŽNÍ POBŘEŽÍ · LARPINGTON</span></div>
+            <div class="feature-copy"><p class="eyebrow">Krajina protikladů</p><h2>Od horských<br />pramenů k přístavu.</h2><p>Na západě ostrova se zvedají lesnaté hory, vodopády a pěší stezky. Východní nížina hostí sídla a průmyslové zázemí; na jihu leží Larpington, hlavní město s historickým přístavem.</p><a class="button button-outline" href="#atlas">Otevřít atlas <span>↗</span></a></div>
           </div>
         </section>
 
@@ -77,7 +78,7 @@
             <a class="explore-card card-wiki" href="#encyklopedie"><span class="card-index">03 / PŘÍBĚH</span><span class="card-icon" aria-hidden="true">¶</span><h3>Encyklopedie</h3><p>Srozumitelný přehled státu a texty připravené do prezentace.</p><span class="card-arrow">↗</span></a>
           </div>
         </section>
-        <footer class="site-footer wrap"><a class="brand brand-small" href="#domu"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">Larpidie</span></a><span>Školní projekt ZSV · Všechna místa a události jsou fiktivní.</span><a href="#encyklopedie">Zdroje a stav údajů ↗</a></footer>
+        <footer class="site-footer wrap"><a class="brand brand-small" href="#domu"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">Larpidie</span></a><span data-project-footer></span><a href="#encyklopedie">O encyklopedii ↗</a></footer>
       </section>
 
       <section class="view page-view" id="view-atlas" data-view="atlas" hidden>
@@ -112,44 +113,43 @@
         <section class="map-catalog wrap section-pad">
           <div class="explore-head"><div><p class="eyebrow">Mapová knihovna</p><h2>Jedno souostroví,<br />mnoho pohledů.</h2></div><p>Všechny mapy a pohledy z projektu na jednom místě. Vyberte mapu pro zobrazení ve větším formátu.</p></div>
           <div class="map-grid">
-            <article class="map-card"><button data-map-image="atlas/current/svg/png/larpidia_atlas_master.png" data-map-title="Hlavní atlas" aria-label="Zvětšit mapu: Hlavní atlas"><img src="atlas/current/svg/png/larpidia_atlas_master.png" alt="Hlavní atlas Larpidie" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">01 · PŘEHLED</span><h3>Hlavní atlas</h3><p>Reliéf, příroda, sídla a doprava.</p></div></article>
-            <article class="map-card"><button data-map-image="atlas/current/svg/png/larpidia_atlas_physical.png" data-map-title="Fyzická mapa" aria-label="Zvětšit mapu: Fyzická mapa"><img src="atlas/current/svg/png/larpidia_atlas_physical.png" alt="Fyzická mapa Larpidie" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">02 · KRAJINA</span><h3>Fyzická mapa</h3><p>Pobřeží, výšky, vodstvo a povrch.</p></div></article>
-            <article class="map-card"><button data-map-image="atlas/current/svg/png/larpidia_atlas_political.png" data-map-title="Politická mapa" aria-label="Zvětšit mapu: Politická mapa"><img src="atlas/current/svg/png/larpidia_atlas_political.png" alt="Politická mapa Larpidie" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">03 · SÍDLA</span><h3>Politická mapa</h3><p>Města, sídla a správní členění.</p></div></article>
-            <article class="map-card"><button data-map-image="atlas/current/svg/png/larpidia_atlas_status.png" data-map-title="Mapa stavu údajů" aria-label="Zvětšit mapu: Stav údajů"><img src="atlas/current/svg/png/larpidia_atlas_status.png" alt="Mapa míst rozlišených podle stavu schválení" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">04 · KÁNON</span><h3>Stav údajů</h3><p>Schválená místa, návrhy a otevřená rozhodnutí.</p></div></article>
+            <article class="map-card"><button data-map-image="atlas/current/renders/S-00_overview.jpg" data-map-title="Hlavní ostrovy Larpidie" aria-label="Zvětšit mapu: Hlavní ostrovy Larpidie"><img src="atlas/current/renders/S-00_overview.jpg" alt="Přehledová vizualizace Larpidie a Paralandu" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">01 · PŘEHLED</span><h3>Hlavní ostrovy</h3><p>Orientační přehled Larpidie a Paralandu.</p></div></article>
+            <article class="map-card"><button data-map-image="atlas/current/renders/S-01_base.jpg" data-map-title="Západní horská oblast" aria-label="Zvětšit mapu: Západní horská oblast"><img src="atlas/current/renders/S-01_base.jpg" alt="Vizualizace západní horské oblasti" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">02 · KRAJINA</span><h3>Západní hory</h3><p>Lesnaté pohoří a horské údolí.</p></div></article>
+            <article class="map-card"><button data-map-image="atlas/current/renders/S-02_base.jpg" data-map-title="Paraland a průliv" aria-label="Zvětšit mapu: Paraland a průliv"><img src="atlas/current/renders/S-02_base.jpg" alt="Vizualizace Paralandu a průlivu" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">03 · OSTROVY</span><h3>Paraland</h3><p>Menší ostrov a jeho okolí.</p></div></article>
+            <article class="map-card"><button data-map-image="atlas/current/renders/S-00_overview.jpg" data-map-title="Orientační mapa Larpidie" aria-label="Zvětšit mapu: Orientační mapa Larpidie"><img src="atlas/current/renders/S-00_overview.jpg" alt="Orientační mapa Larpidie" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">04 · MÍSTA</span><h3>Místa Larpidie</h3><p>Všechna místa v orientačním mapovém registru.</p></div></article>
             <article class="map-card"><button data-map-image="atlas/current/svg/transport_preview_embedded.svg" data-map-title="Dopravní síť" aria-label="Zvětšit mapu: Dopravní síť"><img src="atlas/current/svg/transport_preview_embedded.svg" alt="Náhled dopravní sítě Larpidie" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">05 · DOPRAVA</span><h3>Dopravní síť</h3><p>Železnice, cesty a propojení ostrovů.</p></div></article>
             <article class="map-card"><button data-map-image="atlas/current/svg/rail_scheme.svg" data-map-title="Schéma železnic" aria-label="Zvětšit mapu: Schéma železnic"><img src="atlas/current/svg/rail_scheme.svg" alt="Schéma železničních linek L1, L2 a L3" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">06 · ŽELEZNICE</span><h3>Železniční linky</h3><p><span data-fact="transport.L3.cityStatus">Městský úsek je v provozu.</span> <span data-fact="transport.L3.underseaStatus">Podmořské spojení se dokončuje.</span> Stav L1 a L2 není upřesněn.</p></div></article>
             <article class="map-card"><button data-map-image="atlas/current/svg/landcover_preview.svg" data-map-title="Využití krajiny" aria-label="Zvětšit mapu: Využití krajiny"><img src="atlas/current/svg/landcover_preview.svg" alt="Mapa využití krajiny Larpidie" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">07 · KRAJINA</span><h3>Využití krajiny</h3><p>Lesy, zemědělská půda a zastavěná území.</p></div></article>
             <article class="map-card"><button data-map-image="atlas/current/renders/S-00_overview_clouds.jpg" data-map-title="Satelitně stylizovaný přehled" aria-label="Zvětšit mapu: Satelitně stylizovaný přehled"><img src="atlas/current/renders/S-00_overview_clouds.jpg" alt="Satelitně stylizovaný přehled obou ostrovů" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">08 · PŘEHLED OSTROVŮ</span><h3>Pohled z výšky</h3><p>Simulovaná satelitní vizualizace Larpidie a Paralandu.</p></div></article>
             <article class="map-card"><button data-map-image="atlas/current/renders/S-01_base_clouds.jpg" data-map-title="Západní horská oblast" aria-label="Zvětšit mapu: Západní horská oblast"><img src="atlas/current/renders/S-01_base_clouds.jpg" alt="Pohled na západní horskou oblast" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">09 · RELIÉF</span><h3>Západní hory</h3><p>Lesnaté pohoří, jezero a horské údolí.</p></div></article>
             <article class="map-card"><button data-map-image="atlas/current/renders/S-02_base.jpg" data-map-title="Paraland a průliv" aria-label="Zvětšit mapu: Paraland a průliv"><img src="atlas/current/renders/S-02_base.jpg" alt="Pohled na Paraland a průliv" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">10 · PARALAND</span><h3>Paraland &amp; průliv</h3><p>Menší turistický ostrov a jeho okolí.</p></div></article>
-            <article class="map-card"><button data-map-image="atlas/current/capital/capital_plan_base.png" data-map-title="Plán hlavního města" aria-label="Zvětšit mapu: Plán hlavního města"><img src="atlas/current/capital/capital_plan_base.png" alt="Detailní plán ulic, bloků a čtvrtí Larpingtonu" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">11 · MĚSTO</span><h3>Plán Larpingtonu</h3><p>Čtvrti, bloky, ulice, veřejné budovy a doprava.</p></div></article>
-            <article class="map-card"><button data-map-image="atlas/current/renders/S-03_base.jpg" data-map-title="Larpington z výšky" aria-label="Zvětšit mapu: Larpington z výšky"><img src="atlas/current/renders/S-03_base.jpg" alt="Letecký pohled na pracovní návrh Larpingtonu" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">12 · DETAIL MĚSTA</span><h3>Larpington z výšky</h3><p>Simulovaný detail hlavního města a jeho pobřeží.</p></div></article>
+            <article class="map-card"><button data-map-image="atlas/current/renders/S-03_base.jpg" data-map-title="Orientační vizualizace Larpingtonu" aria-label="Zvětšit vizualizaci Larpingtonu"><img src="atlas/current/renders/S-03_base.jpg" alt="Orientační vizualizace Larpingtonu" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">11 · MĚSTO</span><h3>Larpington</h3><p>Město a jeho pobřeží v atlasovém pohledu.</p></div></article>
+            <article class="map-card"><button data-map-image="atlas/current/renders/S-03_base.jpg" data-map-title="Orientační vizualizace Larpingtonu z výšky" aria-label="Zvětšit mapu: Larpington z výšky"><img src="atlas/current/renders/S-03_base.jpg" alt="Orientační vizualizace Larpingtonu z výšky" loading="lazy" /><span class="map-card-zoom">Zvětšit ↗</span></button><div><span class="map-kind">12 · DETAIL MĚSTA</span><h3>Larpington z výšky</h3><p>Orientační vizualizace města a pobřeží.</p></div></article>
           </div>
-          <p class="map-disclaimer">Mapy a letecké pohledy představují návrhová data a simulované vizualizace fiktivního světa. Nejde o skutečné družicové snímky ani GPS.</p>
+          <p class="map-disclaimer">Mapy zachycují fiktivní svět orientačně. Nejde o skutečné družicové snímky ani GPS.</p>
         </section>
-        <footer class="site-footer wrap"><a class="brand brand-small" href="#domu"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">Larpidie</span></a><span>Atlas v1.0-draft · prostorová data jsou pracovní návrh.</span><a href="#encyklopedie">Přečíst o zeměpisu ↗</a></footer>
+        <footer class="site-footer wrap"><a class="brand brand-small" href="#domu"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">Larpidie</span></a><span data-project-footer></span><a href="#encyklopedie">Přečíst o zeměpisu ↗</a></footer>
       </section>
 
       <section class="view page-view" id="view-galerie" data-view="galerie" hidden>
         <div class="page-hero wrap page-hero-split">
           <div><p class="eyebrow"><span class="eyebrow-line"></span> Obrazový příběh</p><h1>Okamžiky<br /><em>z Larpidie.</em></h1></div>
-          <div><p>Dvacet fotografických scén, čtyři krátká videa a mapa každého záběru. Galerie propojuje atmosféru míst s atlasem a nabízí prompty i metadata scén.</p><p class="gallery-state"><span class="state-dot"></span> Galerie připravena · fotografie a videa zatím nebyly vygenerovány</p></div>
+          <div><p>Vybrané fotografie zachycují horskou krajinu a pobřežní život na ostrovech Larpidie.</p></div>
         </div>
-        <div class="gallery-frame-shell wrap">
-          <div class="gallery-frame-head"><span>GALERIE LARPIDIE <span class="frame-divider">/</span> STORY PACK V1.2</span><a href="v1.1/LARPIDIA_VISUAL_ATLAS_STORY_PACK_v1_2/06_GALLERY/index.html" target="_blank" rel="noopener">Otevřít samostatně ↗</a></div>
-          <iframe title="Galerie scén Larpidie: fotografie, videa, mapy a prompty" data-src="v1.1/LARPIDIA_VISUAL_ATLAS_STORY_PACK_v1_2/06_GALLERY/index.html" loading="lazy"></iframe>
+        <div class="gallery-public-grid wrap">
+          <figure><img src="gallery/assets/mountain.png" alt="Zimní horská krajina Larpidie" loading="lazy"><figcaption>Zimní horská krajina Larpidie</figcaption></figure>
+          <figure><img src="gallery/assets/paraland.png" alt="Marina na Paralandu" loading="lazy"><figcaption>Pobřežní marina na Paralandu</figcaption></figure>
         </div>
-        <p class="wrap gallery-note">Obrázky v galerii jsou připravené scény a mapové podklady. Skutečné fotografie a videa se v balíčku zatím nevygenerovaly; jejich stav je uveden přímo u scén.</p>
-        <footer class="site-footer wrap"><a class="brand brand-small" href="#domu"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">Larpidie</span></a><span>20 fotografických scén · 4 videa · offline galerie</span><a href="#atlas">Prohlédnout atlas ↗</a></footer>
+        <footer class="site-footer wrap"><a class="brand brand-small" href="#domu"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">Larpidie</span></a><span data-project-footer></span><a href="#atlas">Prohlédnout atlas ↗</a></footer>
       </section>
 
       <section class="view page-view" id="view-encyklopedie" data-view="encyklopedie" hidden>
         <div class="page-hero wrap page-hero-split wiki-hero">
-          <div><p class="eyebrow"><span class="eyebrow-line"></span> Encyklopedie Larpidie</p><h1>Průvodce<br /><em>pro každou prezentaci.</em></h1></div>
-          <div><p>Přehledný průvodce fiktivním ostrovním státem. Otevřete kategorii, vyhledejte téma a pokračujte do podrobného článku. Opakované údaje se načítají ze společných projektových dat.</p><a class="button button-dark" href="CANON_EDITING_GUIDE.md" target="_blank" rel="noopener">Jak upravit obsah <span>↗</span></a></div>
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> Encyklopedie Larpidie</p><h1>Objevte Larpidii.<br /><em>Ostrovní svět plný příběhů.</em></h1></div>
+          <div><p>Poznejte její historii, přírodu, města, kulturu i to, jak stát funguje. Začněte rychlým přehledem a pokračujte k tématům, která vás zaujmou.</p></div>
         </div>
         <div class="ency-app wrap" data-encyclopedia-app aria-live="polite"><div class="ency-loading"><span></span>Načítám články a ověřená projektová data…</div></div>
-        <footer class="site-footer wrap"><a class="brand brand-small" href="#domu"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">Larpidie</span></a><span>Školní projekt ZSV · Larpidie je fikce.</span><a href="ENCYCLOPEDIA_MIGRATION_REPORT.md" target="_blank" rel="noopener">Migrační přehled ↗</a></footer>
+        <footer class="site-footer wrap"><a class="brand brand-small" href="#domu"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">Larpidie</span></a><span data-project-footer></span><a href="#atlas">Prohlédnout atlas ↗</a></footer>
       </section>    </main>
 
     <dialog class="map-dialog" aria-label="Zvětšená mapa">

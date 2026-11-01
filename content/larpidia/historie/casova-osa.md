@@ -5,7 +5,7 @@ Následující data patří do fikční historie Larpidie. Nejde o události ze 
 | Datum | Událost |
 |---|---|
 | {{fact.history.firstDocumentedSettlement}} | První doložené anglické osídlení ostrova. |
-| {{fact.history.independenceYear}} | Konec britské správy a vznik samostatného larpidského království. Přesný den vyhlášení není určen. |
+| {{fact.history.independenceYear}} | Konec britské správy a vznik samostatného larpidského království. |
 | {{fact.history.kostalConcessionDate}} | Král udělil Košťálovi nevýhodné ekonomické koncese. |
 | {{fact.history.kingDeathDate}} | Zemřel poslední král. |
 | {{fact.history.documentPremiereDate}} | Premiéra odhalujícího dokumentu *The Truth of Larpidia Island*. |

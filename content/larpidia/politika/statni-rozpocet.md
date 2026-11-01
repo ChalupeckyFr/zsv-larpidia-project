@@ -2,7 +2,7 @@ Státní rozpočet má vlastní ústavní postup a není automaticky předklád�
 
 ## Schválení běžného rozpočtu
 
-Běžný rozpočet potřebuje nejméně **{{fact.constitution.ordinaryBudgetApprovalsRequired|number}} hlasy z kolegia spoluvládců**. Mimořádné zadlužení nebo velké dlouhodobé závazky vyžadují jednomyslnost všech **{{fact.constitution.coRulers|number}} spoluvládců**. Přesná procentní hranice, podle níž se závazek označí za mimořádný, dosud není stanovená.
+Běžný rozpočet potřebuje nejméně **{{fact.constitution.ordinaryBudgetApprovalsRequired|number}} hlasy z kolegia spoluvládců**. Velké nebo dlouhodobé závazky se posuzují v poměru k příjmům státu a vyžadují jednomyslnost všech **{{fact.constitution.coRulers|number}} spoluvládců**.
 
 ## Co když nastane pat
 

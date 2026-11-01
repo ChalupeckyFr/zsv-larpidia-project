@@ -7,7 +7,7 @@ Výkonnou moc vykonávají **{{fact.constitution.coRulers|number}} rovnocenní s
 - školství, zdravotnictví a sociální služby;
 - doprava, energetika, infrastruktura a životní prostředí.
 
-Konkrétní osobní rozdělení resortů se určuje vzájemnou dohodou. Veřejně doložené zdroje neurčují, který spoluvládce vede který blok.
+Konkrétní osobní rozdělení resortů se určuje vzájemnou dohodou.
 
 ## Co mohou dělat
 

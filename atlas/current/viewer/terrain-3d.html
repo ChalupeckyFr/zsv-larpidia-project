@@ -7,7 +7,7 @@
   <title>3D reliéf Larpidie</title>
   <style>
     :root{--paper:#edf0eb;--card:#fafbf7;--ink:#25362f;--muted:#69796f;--line:#d4ddd4;--accent:#9b583d;--green:#516f52;--sea:#1e5265}
-    *{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden}body{display:grid;grid-template-rows:auto 1fr;background:var(--paper);color:var(--ink);font:15px/1.45 'Segoe UI',system-ui,sans-serif}
+    *{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden}body{display:grid;grid-template-rows:auto minmax(0,1fr) auto;background:var(--paper);color:var(--ink);font:15px/1.45 'Segoe UI',system-ui,sans-serif}
     header{display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:54px;padding:8px 15px;border-bottom:1px solid var(--line);background:var(--card)}header strong{font:650 17px/1.2 Georgia,serif}header small{display:block;margin-top:3px;color:var(--muted);font-size:13px;font-weight:600}.header-tools{display:flex;align-items:center;gap:13px}.model-badge{padding:5px 9px;border:1px solid #c9d6c7;border-radius:20px;color:#476548;font-size:12px;font-weight:750;white-space:nowrap}
     button{font:inherit;cursor:pointer}button:focus-visible,input:focus-visible{outline:3px solid #d29b4c;outline-offset:2px}
     .reset{padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);font-size:12px;font-weight:650}
@@ -23,7 +23,8 @@
     .source-note{margin:13px 0 0;color:#68776d;font-size:11px;font-weight:550;line-height:1.65}
     .scene{position:relative;min-width:0;min-height:0;background:#1689b4}canvas{width:100%;height:100%;display:block;touch-action:none;cursor:grab}canvas.drag{cursor:grabbing}canvas:focus-visible{outline:3px solid #d29b4c;outline-offset:-3px}
     .weather-overlay{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}.compass,.scene-label{z-index:2}.error{z-index:3}.compass{position:absolute;top:13px;left:15px;width:38px;height:47px;display:grid;align-content:center;justify-items:center;border:1px solid #bfcbbf;border-radius:20px;background:#fbfcf8dd;color:#465c4b;font-size:11px;font-weight:800;line-height:1.1;pointer-events:none}.compass span{font-size:17px}.scene-label{position:absolute;right:13px;bottom:12px;padding:7px 10px;border:1px solid #c7d1c6;border-radius:5px;background:#fbfcf8e8;color:#526256;font-size:12px;font-weight:750;pointer-events:none}.error{display:none;position:absolute;inset:20px;place-content:center;padding:20px;border:1px solid #d9c2ad;background:#fff8f1;color:#75492e;text-align:center;font-weight:700}
-    @media(max-width:760px){body{grid-template-rows:auto 1fr}header{min-height:48px;padding:7px 10px}header strong{font-size:15px}header small{font-size:10px}.model-badge{display:none}.header-tools{gap:6px}.reset{font-size:10px;padding:6px 8px}main{grid-template-columns:1fr;grid-template-rows:minmax(230px,1fr) minmax(125px,31vh)}aside{grid-row:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px;padding:10px 12px;border-top:1px solid var(--line);border-right:0;max-height:31vh}aside section:nth-child(3),aside .howto,aside .source-note{grid-column:1/-1}h2{font-size:11px}.legend-item{font-size:11px}.scene{grid-row:1;min-height:230px}.source-note{margin-bottom:2px}}
+    .project-footer{padding:3px 12px;background:var(--card);color:var(--muted);font-size:10px;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    @media(max-width:760px){body{grid-template-rows:auto minmax(0,1fr) auto}header{min-height:48px;padding:7px 10px}header strong{font-size:15px}header small{font-size:10px}.model-badge{display:none}.header-tools{gap:6px}.reset{font-size:10px;padding:6px 8px}main{grid-template-columns:1fr;grid-template-rows:minmax(230px,1fr) minmax(125px,31vh)}aside{grid-row:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px;padding:10px 12px;border-top:1px solid var(--line);border-right:0;max-height:31vh}aside section:nth-child(3),aside .howto,aside .source-note{grid-column:1/-1}h2{font-size:11px}.legend-item{font-size:11px}.scene{grid-row:1;min-height:230px}.source-note{margin-bottom:2px}}
     @media(max-width:410px){main{grid-template-rows:minmax(190px,1fr) minmax(110px,35vh)}aside{grid-template-columns:1fr;max-height:35vh}.scene{min-height:190px}aside .howto,aside .source-note{grid-column:auto}}
   </style>
   <script src="terrain-3d-data.js"></script>
@@ -31,25 +32,27 @@
 </head>
 <body>
   <header>
-    <div><strong>3D reliéf Larpidie a Paralandu</strong><small>Digitální model terénu · interaktivní pohled</small></div>
-    <div class="header-tools"><span class="model-badge">NÁVRH · modelové výšky</span><button class="reset" id="reset">Výchozí pohled</button></div>
+    <div><strong>3D reliéf Larpidie</strong><small>Orientační zobrazení terénu Larpidie a Paralandu</small></div>
+    <div class="header-tools"><button class="reset" id="reset">Výchozí pohled</button></div>
   </header>
   <main>
     <aside aria-label="Nastavení a legenda 3D mapy">
       <section><h2>Barvy mapy</h2><div class="mode-select" role="group" aria-label="Barevné zobrazení terénu"><button type="button" data-style="relief" aria-pressed="true">Reliéf</button><button type="button" data-style="nature" aria-pressed="false">Příroda</button></div><div class="legend" id="legend"></div></section>
       <section class="transport-control"><h2>Doprava</h2><label class="road-option"><input type="checkbox" id="ring-road" /><span>Okružní dálnice R1<small>6 pruhů · max. sklon 30° · tunely · 53,9 km</small></span></label><label class="range-label" for="movement-speed">Rychlost pohybu <output id="movement-speed-value">1×</output></label><input id="movement-speed" type="range" min="0.25" max="5" step="0.25" value="1" /></section>
-      <section class="height-legend"><h2>Nadmořská výška</h2><div class="height-ramp"></div><div class="ramp-labels"><span>nížina</span><span>hory · 560 m</span></div><label class="range-label" for="exaggeration">Zvýraznění výšek <output id="exaggeration-value">6×</output></label><input id="exaggeration" type="range" min="3" max="11" step="1" value="6" /><h2>Roční období</h2><label class="range-label" for="season">Počasí <output id="season-value">Léto · jasno</output></label><input id="season" type="range" min="0" max="3" step="1" value="2" /><div class="season-ticks" aria-hidden="true"><span>Zima</span><span>Jaro</span><span>L&eacute;to</span><span>Podzim</span></div></section>
+      <section class="height-legend"><h2>Nadmořská výška</h2><div class="height-ramp"></div><div class="ramp-labels"><span>nížina</span><span>vrchol · přibližně 560 m</span></div><label class="range-label" for="exaggeration">Zvýraznění výšek <output id="exaggeration-value">6×</output></label><input id="exaggeration" type="range" min="3" max="11" step="1" value="6" /><h2>Roční období</h2><label class="range-label" for="season">Počasí <output id="season-value">Léto · jasno</output></label><input id="season" type="range" min="0" max="3" step="1" value="2" /><div class="season-ticks" aria-hidden="true"><span>Zima</span><span>Jaro</span><span>L&eacute;to</span><span>Podzim</span></div></section>
       <section class="howto"><b>Otočení pohledu:</b> podržte pravé tlačítko myši a táhněte; dotykem pohybujte jedním prstem.<br /><b>Pohyb kamery:</b> W/A/S/D nebo šipky; Ctrl nahoru, Shift dolů.<br /><b>Rychlost:</b> kolečko nebo posuvník, až 5×.</section>
-      <p class="source-note">Výškový rastr 100 m je pro hladší vykreslení interpolovaný do sítě 50 m. Výšky jsou modelové, nikoli zaměřené. Roční období mění barvy krajiny, sníh i počasí.</p>
+      <p class="source-note">Reliéf je orientační; výšky modelu se mohou lišit od přesných nadmořských kót. Uvedený nejvyšší vrchol měří přibližně 560 m n. m. Roční období mění barvy krajiny, sníh i počasí.</p>
     </aside>
     <section class="scene" aria-label="Otočný 3D model ostrovů">
       <canvas id="terrain" tabindex="0" aria-label="3D model reliéfu Larpidie a Paralandu; tažením otáčejte pohledem"></canvas>
       <canvas class="weather-overlay" id="weather-overlay" aria-hidden="true"></canvas>
       <div class="compass">S<span>↑</span></div>
-      <div class="scene-label">Hlavní ostrov + Paraland · výšky modelové</div>
+      <div class="scene-label">Terén · přibližné výšky</div>
       <div class="error" id="error"></div>
     </section>
   </main>
+  <footer class="project-footer"><span data-project-footer></span></footer>
+  <script src="../../../project-meta.js" defer></script>
   <script>
   (()=>{
     const data=window.LARPIDIA_TERRAIN_DATA;

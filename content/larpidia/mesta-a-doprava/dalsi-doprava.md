@@ -1,7 +1,7 @@
 Larpidská mobilita kombinuje veřejnou dopravu, pěší trasy a lehčí sdílené prostředky. Historické jádro Larpingtonu je dopravně zklidněné: pěší pohyb má přednost, zatímco zásobování, místní obsluha a nezbytný provoz se řídí určenými pravidly. Parkování se soustřeďuje převážně na okrajích.
 
-Ve městě fungují bezplatné půjčovny standardních i elektrických kol a koloběžek a skateboardů. Výdejní a vratná místa patří k přestupním bodům a obytným částem. Konkrétní podmínky půjčení, časové limity, zálohy a financování servisu nebyly stanoveny, proto je zde nedoplňujeme.
+Ve městě fungují bezplatné půjčovny standardních i elektrických kol, koloběžek, elektrokoloběžek a skateboardů. Výdejní a vratná místa jsou u přestupních bodů a v obytných částech.
 
-V horách fungují půjčovny také, ale se zálohou. Ta je koncipována jako vratná jistina, ne automatická cena pronájmu; přesná pravidla nejsou určena.
+V horských oblastech půjčovny nabízejí vybavení se zálohou, která se po vrácení vypůjčené věci vrací.
 
 Pravidelnou dopravu mezi hlavním ostrovem a Paralandem zajišťují lodě a trajekty. Městská L3 je funkční, ale podmořský úsek se stále dokončuje. [Stav železnic](#encyklopedie/mesta-a-doprava/zeleznice).

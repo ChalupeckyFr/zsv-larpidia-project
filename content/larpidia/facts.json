@@ -43,6 +43,7 @@
     ],
     "workingDaysPerWeek": 4,
     "workingHoursPerDay": 6,
+    "modelWorkers": 14000,
     "modelAverageGrossSalaryCzkMonthly": 36000,
     "healthEducationAnnualFrameworkCzk": 1600000000,
     "foreignPublicUniversityTuitionCapCzkPerStudentYear": 100000,
@@ -61,7 +62,20 @@
   "pensions": {
     "basicMonthlyCzk": 12000,
     "ageYears": 65,
-    "modelPopulation65PlusPercent": 16
+    "modelPopulation65PlusPercent": 16,
+    "eligibility": "Všichni larpidští občané od 65 let; odpracované roky nejsou podmínkou."
+  },
+  "education": {
+    "schoolDaysPerWeek": 5,
+    "schoolDayStartBeforeNineMaximumDays": 2
+  },
+  "museums": {
+    "larpington": "Hlavní interaktivní muzeum je otevřené.",
+    "paraland": "Menší historická expozice se dokončuje."
+  },
+  "geography": {
+    "highestPeakElevationApproxM": 560,
+    "mapAccuracyNote": "Mapa je orientační; poloha a některé názvy jsou na schematickém zobrazení přibližné."
   },
   "history": {
     "firstDocumentedSettlement": "16. června 1608",
@@ -74,8 +88,8 @@
     "coRulersTookOfficeDate": "14. března 2025"
   },
   "transport": {
-    "L1": {"status": "Stav celé linky není v potvrzeném kánonu upřesněn."},
-    "L2": {"status": "Stav celé linky není v potvrzeném kánonu upřesněn."},
+    "L1": {"status": "Horská zážitková železnice je v provozu."},
+    "L2": {"status": "Elektrická dráha v historickém stylu je v provozu."},
     "L3": {
       "cityStatus": "Městský úsek je v provozu.",
       "underseaStatus": "Podmořský úsek na Paraland se dokončuje a není v běžném provozu.",

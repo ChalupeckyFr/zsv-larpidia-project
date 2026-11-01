@@ -2,6 +2,6 @@ Vedoucí veřejných úřadů se vybírají přímou volbou občanů. Kandidáty
 
 Volba počítá se dvěma koly. Pokud v prvním kole nikdo nezíská více než polovinu hlasů, postupuje se k novému hlasování mezi dvěma nejúspěšnějšími kandidáty. Ve druhém kole mohou hlasovat všichni oprávnění voliči znovu. Zvolený vedoucí má mandát **{{fact.constitution.publicOfficeTermYears|number}} roky** a může být zvolen opakovaně.
 
-Požadovaná odbornost se má přizpůsobit typu úřadu. Volební proceduru spravuje nezávislý volební úřad. Zvolený vedoucí odborně řídí chod instituce v mezích zákona; příslušný resortní spoluvládce odpovídá za strategii, zákonnost a rozpočet, nikoli za svévolné rušení zákonných provozních rozhodnutí.
+U technických úřadů se odbornost kandidátů přizpůsobuje jejich působnosti. Volební proceduru spravuje nezávislý volební úřad. Zvolený vedoucí řídí instituci v mezích zákona; resortní spoluvládce odpovídá za strategii, zákonnost a rozpočet.
 
-Konkrétní kvalifikační pravidla, přesné nominační lhůty a podrobné pojistky nestrannosti některých institucí vyžadují další rozpracování.
+Vedení volebního úřadu se volí přímo z odborně způsobilých kandidátů.

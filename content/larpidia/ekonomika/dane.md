@@ -6,11 +6,11 @@ Daňový systém Larpidie kombinuje daň ze zdanitelného zisku firem, daň z p�
 - Základní sazba DPH: **{{fact.economy.vat.standardPercent|percent}}**.
 - Snížená sazba DPH: **{{fact.economy.vat.reducedPercent|percent}}**.
 
-Seznam výrobků a služeb pro sníženou sazbu zatím není přesně určen. Daň ze zisku se počítá ze zdanitelného zisku, ne z celého obratu. U státních podniků se navíc mohou odděleně rozdělovat dividendy a zisk ponechaný ve firmě; nejde o tutéž platbu jako firemní daň.
+Snížená sazba se vztahuje na vybrané základní potřeby. Daň ze zisku se počítá ze zdanitelného zisku, ne z celého obratu. U státních podniků se navíc mohou odděleně rozdělovat dividendy a zisk ponechaný ve firmě; nejde o tutéž platbu jako firemní daň.
 
 ## Modelová daň z příjmů fyzických osob
 
-Kánon uvádí modelová pásma s mezními sazbami:
+Daň z příjmů využívá progresivní pásma s následujícími mezními sazbami:
 
 | Roční zdanitelný příjem | Mezní sazba |
 |---|---:|
@@ -21,4 +21,4 @@ Kánon uvádí modelová pásma s mezními sazbami:
 
 Jde o sazbu vztahovanou na příslušnou část základu v progresivním modelu, nikoli o tvrzení, že nejvyšší sazba platí na celý příjem každého poplatníka. Podrobnosti odpočtů, výjimek a technického výpočtu nejsou dokončené.
 
-Opakované číselné hodnoty jsou načítané z [centrálních faktů](#encyklopedie/ekonomika/ekonomicky-model); změna sazby se proto propíše i na dalších místech webu.
+Číselné hodnoty jsou součástí veřejného ekonomického modelu.

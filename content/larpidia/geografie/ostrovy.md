@@ -1,4 +1,4 @@
-Souostroví tvoří dva hlavní ostrovy. Hlavní ostrov leží jižně od Japonska ve fikčním severozápadním Pacifiku. Menší **Paraland leží jihovýchodně od něj**. Přesné zeměpisné souřadnice v některých starších mapových podkladech jsou pracovní, nikoli potvrzená poloha na skutečné mapě.
+Souostroví tvoří dva ostrovy ve **fikčním severozápadním Pacifiku**. Paraland leží jihovýchodně od hlavního ostrova. Jejich vzájemná poloha je zobrazena schematicky.
 
 ## Hlavní ostrov
 
@@ -6,7 +6,7 @@ Hlavní ostrov má v modelu rozlohu **{{fact.country.mainIslandAreaKm2|number}} 
 
 ## Paraland
 
-Paraland má rozlohu **{{fact.country.paralandAreaKm2|number}} km²**. Je zamýšlen jako luxusnější turistická destinace s hotely a rekreačními atrakcemi, ale také s rozsáhlými chráněnými plochami a mořskou rezervací. Celý ostrov proto není určen k zastavění. Vstup do turisticky vytížených míst se má řídit kapacitou a předběžnými rezervacemi; každodenní pohyb obyvatel se tím nemá automaticky zpoplatňovat.
+Paraland má rozlohu **{{fact.country.paralandAreaKm2|number}} km²**. Nabízí turistická a rekreační místa spolu s rozsáhlými chráněnými plochami a mořskou rezervací. Citlivé a vytížené lokality podléhají návštěvnickým pravidlům.
 
 ## Spojení ostrovů
 

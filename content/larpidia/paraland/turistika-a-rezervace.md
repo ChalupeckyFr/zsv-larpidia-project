@@ -2,9 +2,9 @@ Paraland je menší ostrov o rozloze **{{fact.country.paralandAreaKm2|number}} k
 
 ## Vstup do turistických lokalit
 
-Pro větší část turisticky využívaných míst se počítá se systémem předběžných rezervací, povolenek nebo kapacitních kvót a případně poplatků. Konkrétní cena, limity, zóny a přesný správní postup stanovené nejsou. Nelze tvrdit, že už funguje konkrétní rezervační aplikace nebo ceník.
+V turisticky vytížených místech se používají předběžné rezervace, povolenky a kapacitní limity, které chrání přírodní prostředí i kvalitu návštěvy.
 
-Pravidla mají řídit nápor návštěvníků, nikoli automaticky zpoplatnit běžnou cestu obyvatel do školy, práce, k lékaři nebo domů.
+Pravidla chrání vytížené turistické lokality bez omezení běžných cest obyvatel do školy, práce, k lékaři nebo domů.
 
 Model ekonomiky počítá s **{{fact.economy.tourism.modelAnnualVisits|number}} návštěvami ročně v celé Larpidii**, nikoli jen na Paralandu. Při modelové útratě **{{fact.economy.tourism.modelAverageSpendCzkPerVisit|czk}} za návštěvu** vzniká obrat **{{calc.economy.tourismTurnoverCzk|czk}}**. Tato částka není příjmem státního rozpočtu ani automaticky vypočteným HDP.
 

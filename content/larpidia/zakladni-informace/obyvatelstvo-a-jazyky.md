@@ -8,6 +8,6 @@ Japonština má místní kulturní a turistické využití, **není však třet�
 
 ## Každodenní život
 
-Veřejná představa Larpidie kombinuje ostrovní prostředí, přístavy, kavárenskou a tržní kulturu a studijní i tvůrčí komunitu kolem kampusového města. Potvrzené kulinářské vlivy zahrnují ryby, mořské produkty včetně řas, rýži, britské a české pečivo, kavárny a čaj. Konkrétní národní jídlo určeno není.
+Veřejná představa Larpidie kombinuje ostrovní prostředí, přístavy, kavárenskou a tržní kulturu a studijní i tvůrčí komunitu kolem kampusového města. Místní kuchyně využívá ryby, mořské produkty včetně řas, rýži, britské a české pečivo, kavárny a čaj.
 
 O pracovním týdnu, škole a kulturním kalendáři čtěte v článcích [Práce a mzdy](#encyklopedie/ekonomika/prace-a-mzdy), [Školství](#encyklopedie/spolecnost/skolstvi-a-univerzity) a [Kultura a svátky](#encyklopedie/spolecnost/kultura-a-svatky).

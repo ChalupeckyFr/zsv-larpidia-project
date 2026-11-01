@@ -50,3 +50,15 @@ Každá změna pravidel se zapíše do JSON a zvýší se `meta.version`. Pro **
 `approved` = sděleno autory, `proposed` = pracovní návrh AI, `needs_decision` = doplnit či potvrdit. Číselné hodnoty od AI musejí být jasně označené jako modelové.
 
 Veřejné články upravujte v `content/larpidia/`, opakovaná čísla v `content/larpidia/facts.json` a při změně médií v `content/larpidia/media/assets.json`. Postup je v `CANON_EDITING_GUIDE.md`; veřejný web čte tyto soubory a nepoužívá World Bible jako živou databázi.
+
+## Veřejný web a lokální náhled
+
+Statický web se sestavuje do samostatné složky `public/`. Sestavení kopíruje jen soubory určené návštěvníkům; pracovní dokumenty, starší kánon, zdrojové registry a prompty do výstupu nezařazuje.
+
+```powershell
+node scripts/build_public_site.mjs
+node scripts/check_public_export.mjs
+node scripts/serve_static.mjs
+```
+
+Náhledový server zpřístupňuje výhradně `public/` (výchozí port 4173; vlastní port lze zadat jako argument). Pro kontrolu HTTP cest a nepřístupnosti interních souborů spusťte také `node scripts/check_encyclopedia_http.mjs`. Nasazujte sestavenou složku `public/`, nikdy kořen pracovního projektu. V repozitáři není nastavení hostingu, proto samotný veřejný hosting těmito lokálními kontrolami ověřen není.

@@ -1,10 +1,10 @@
-**Larpington je hlavní město Larpidie.** Jeho plán spojuje pobřežní přístup, přístav, městské čtvrti, historické jádro, obytné oblasti a veřejná prostranství. Podle urbanistického kánonu převládají kompaktní nízké až středně vysoké domy, nepravidelné bloky a ulice různé šířky; celé město netvoří pravidelná pravoúhlá síť.
+**Larpington je hlavní město Larpidie.** Jeho plán spojuje pobřežní přístup, přístav, městské čtvrti, historické jádro, obytné oblasti a veřejná prostranství. Převládají kompaktní nízké až středně vysoké domy, nepravidelné bloky a ulice různé šířky; celé město netvoří pravidelná pravoúhlá síť.
 
 ## Městské prostředí
 
-Historické jádro je klidnější, s pěšími a zklidněnými ulicemi. Zásobování a obsluha se řídí místními pravidly, parkování se soustřeďuje převážně na okraje. Ve městě se kombinují starší řadové domy, moderní několikapatrové prosklené budovy, parky, veřejné instituce, kostely a obchodní ulice. Výška zástavby zůstává přiměřená pobřežnímu městu; potvrzené mrakodrapové centrum neexistuje.
+Historické jádro je klidnější, s pěšími a zklidněnými ulicemi. Zásobování a obsluha se řídí místními pravidly, parkování se soustřeďuje převážně na okraje. Ve městě se kombinují starší řadové domy, moderní několikapatrové prosklené budovy, parky, veřejné instituce, kostely a obchodní ulice. Výšková hladina zástavby odpovídá měřítku pobřežního města.
 
-Pátá univerzitní a kreativní funkční zóna propojuje město s nedalekým samostatným kampusovým městem, ale kampusové město není administrativně součástí Larpingtonu. Přesná hranice zóny není zanesena jako definitivní geografický údaj.
+Pátá univerzitní a kreativní funkční zóna propojuje město s nedalekým samostatným kampusovým městem.
 
 ## Atlas a městské služby
 

@@ -1,4 +1,4 @@
-Ve fikční ekonomice mají význam státem kontrolované podniky, které zpracovávají řasy a další mořské suroviny na paliva a hodnotnější produkty. Část produkce míří na export, mimo jiné do Japonska a Jižní Koreje. Přesné názvy jednotlivých společností, výrobních kapacity a položkové tržby nejsou v tomto veřejném kánonu určené.
+Státem kontrolované podniky zpracovávají řasy a další mořské suroviny na paliva a průmyslové produkty. Část výroby se vyváží do Japonska a Jižní Koreje.
 
 ## Zisk, odvod a firemní daň
 

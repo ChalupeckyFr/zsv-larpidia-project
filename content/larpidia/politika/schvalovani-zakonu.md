@@ -10,6 +10,6 @@ Zjednodušený příklad: při 800 platných hlasech by 450 hlasů ANO návrh sc
 
 Každé hlasování o zákonu má vlastní hlasovací okno. Záměr počítá s elektronickým i osobním hlasováním a s nejvýše jedním započítaným hlasem každého oprávněného občana. Identita voliče má být oddělena od obsahu hlasu. Během otevřeného hlasování mají být veřejně viditelná průběžná souhrnná procenta ANO a NE. Výsledek a průběh spravuje nezávislý volební úřad.
 
-Konkrétní bezpečnostní návrh a způsob, jak současně ochránit tajnost a audit hlasu při zveřejňování průběžných souhrnů, nejsou technicky doložené. Encyklopedie proto netvrdí, že už existuje hotová hlasovací aplikace.
+Nezávislý volební úřad odpovídá za průběh hlasování, ochranu tajnosti a ověřování výsledků. Elektronické i osobní hlasování se řídí principem nejvýše jednoho započítaného hlasu na oprávněnou osobu. Průběžné souhrny ANO a NE se zveřejňují dvakrát denně.
 
 Od běžných zákonů je potřeba odlišit **odvolání spoluvládce** s přísnějším kvórem i peticí a **schvalování rozpočtu**, které má vlastní ústavní postup.

@@ -2,11 +2,11 @@
 
 ## Odkladné veto zákona
 
-Každý spoluvládce může uplatnit odkladné veto k návrhu zákona. Návrh se pozastaví a následuje smírčí jednání. Pokud rozpor přetrvá, může se konečné rozhodnutí předložit občanům v referendu. Veto tak návrh zdržuje a otevírá cestu k novému rozhodnutí; není to absolutní zákaz. Přesný termín veta a délka smíru nejsou stanovené.
+Každý spoluvládce může uplatnit odkladné veto k návrhu zákona. Návrh se pozastaví a následuje smírčí jednání. Pokud rozpor přetrvá, mohou o něm rozhodnout občané v referendu. Veto tak otevírá cestu k novému rozhodnutí; není to absolutní zákaz.
 
 ## Pat ve výkonné správě
 
-Jde o jinou věc než zákon. Pokud se spoluvládci v zásadním výkonném rozhodnutí rozdělí rovným počtem hlasů, nejdřív hledají kompromis. Při neúspěchu může o otázce hlasovat občanstvo jako „pátý hlas“. Přesné procedurální lhůty a některé krizové výjimky zůstávají neupřesněné.
+Jde o jinou věc než zákon. Pokud se spoluvládci v zásadním výkonném rozhodnutí rozdělí rovným počtem hlasů, nejdřív hledají kompromis. Při neúspěchu může o otázce hlasovat občanstvo jako „pátý hlas“.
 
 ## Mimořádné právo zastavení
 

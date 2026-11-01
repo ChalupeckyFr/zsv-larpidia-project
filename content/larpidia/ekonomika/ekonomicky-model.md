@@ -12,13 +12,13 @@
 
 Při modelovém rozdělitelném zisku státních podniků **{{fact.economy.stateEnterprises.modelDistributableProfitCzk|czk}}** a odvodech **{{fact.economy.stateEnterprises.transferToStatePercent|percent}}** vychází převod státu na **{{calc.economy.enterpriseStateTransferCzk|czk}}**. Do stabilizačního fondu jde **{{fact.economy.stateEnterprises.stabilizationFundPercentOfTransfer|percent}}** tohoto převodu, tedy **{{calc.economy.stabilizationFundCzk|czk}}**; z tohoto zdroje pak zbývá **{{calc.economy.enterpriseTransferAfterFundCzk|czk}}**.
 
-Společný modelový rámec pro zdravotnictví a školství činí **{{fact.economy.healthEducationAnnualFrameworkCzk|czk}} ročně**. Nejde o samostatný rozpočet pro každý z těchto resortů a nebylo prokázáno, že částka pokryje potvrzený rozsah služeb.
+Společný modelový rámec pro zdravotnictví a školství činí **{{fact.economy.healthEducationAnnualFrameworkCzk|czk}} ročně**. Jde o jednu společnou částku pro oba resorty.
 
 ## Ilustrační penzijní scénář
 
-Modelový podíl obyvatel od {{fact.pensions.ageYears|number}} let je **{{fact.pensions.modelPopulation65PlusPercent|percent}}**, tedy **{{calc.economy.modelResidents65Plus|number}} lidí** z populace. Pokud by každý z nich splňoval nárok na základní důchod, činil by součet **{{calc.economy.maximumIllustrativeAnnualBasicPensionCzk|czk}} ročně**. Jde o zjednodušený maximální ilustrační scénář; skutečný počet oprávněných příjemců není určen.
+Modelový podíl obyvatel od {{fact.pensions.ageYears|number}} let je **{{fact.pensions.modelPopulation65PlusPercent|percent}}**, tedy **{{calc.economy.modelResidents65Plus|number}} lidí** z populace. Pokud by každý z nich byl larpidským občanem s nárokem na základní důchod, činil by součet nejvýše **{{calc.economy.maximumIllustrativeAnnualBasicPensionCzk|czk}} ročně**. Jde o maximální ilustrativní scénář, nikoli skutečný rozpočtový výdaj.
 
-Po sečtení tohoto scénáře s rámcem zdravotnictví a školství a odečtení dostupného zisku podniků vychází **{{calc.economy.partialAdditionalFundingNeedCzk|czk}} částečné potřeby dalších prostředků**. **Není to konečný schodek rozpočtu.** Chybí mnoho příjmů, nákladů a financování jiných služeb. Při změně vstupních hodnot se tento výpočet přepočítá automaticky.
+V omezeném bilančním scénáři se tento maximální penzijní odhad porovnává se společným rámcem zdravotnictví a školství a s běžnou částí modelovaného převodu podniků po rezervě. Potřeba dalších modelových příjmů v tomto srovnání činí **{{calc.economy.partialAdditionalFundingNeedCzk|czk}}**. Nejde o konečný schodek ani skutečně změřenou bilanci: odhad věkové skupiny neurčuje počet oprávněných občanů a výpočet nezahrnuje jiné příjmy a výdaje státu.
 
 ## Co nesčítat ani nezaměňovat
 
