@@ -19,6 +19,7 @@
   <script src="../viewer/terrain-3d-data.js"></script>
   <script src="capital-3d-data.js"></script>
   <script src="capital-3d-nature.js"></script>
+<link rel="stylesheet" href="../../../site-brand.css">
 </head>
 <body>
   <header><div><strong>3D Larpington</strong><small>Orientační zobrazení města, pobřeží a okolních ostrovů</small></div><button class="reset" id="reset">Výchozí pohled</button></header>
@@ -211,5 +212,6 @@
     renderLegend();document.querySelectorAll('[data-city-style]').forEach(button=>button.addEventListener('click',()=>{natureMode=button.dataset.cityStyle==='nature';document.querySelectorAll('[data-city-style]').forEach(x=>x.setAttribute('aria-pressed',String(x===button)));if(natureMode&&!cityNatureLayer.isBuilt())cityNatureLayer.rebuild();terrainMesh();seaMesh();createCoastalFeatures();renderLegend();draw()}));
   })();
   </script>
+<script src="../../../site-brand.js" defer></script>
 </body>
 </html>

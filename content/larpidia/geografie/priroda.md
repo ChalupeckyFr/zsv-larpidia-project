@@ -10,4 +10,4 @@ V horských oblastech jsou značené trasy a přístupné vyhlídky. Citlivé č
 
 Mapy a 3D modely jsou orientační vizualizace fikčního ostrova. Prohlédnout lze [fyzický atlas](#atlas) a [galerii](#galerie).
 
-![Ilustrační zimní pohled na zalesněnou horskou stezku](asset:photo-001)
+![Ilustrační fotografie zimní horské stezky nad pobřežím Larpidie](asset:story-photo-01)

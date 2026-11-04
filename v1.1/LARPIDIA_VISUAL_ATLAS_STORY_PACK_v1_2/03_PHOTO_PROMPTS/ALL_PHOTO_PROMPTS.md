@@ -2,6 +2,37 @@
 
 Každý prompt je samostatný blok k vložení do generátoru obrázků. Stav: prompt-ready.
 
+## Interní vazba na mediální manifest
+
+Soubor `content/larpidia/media/assets.json` je společný registr článkových médií, fotografií i plánovaných scén. Následující stabilní ID odpovídají položkám `scenes[].manifest_id`; pouze scény s dostupným ověřeným souborem jsou zařazeny do veřejné galerie.
+
+| Scéna | Stabilní ID | Lokalita v atlasu | Fotografie | Pohled kamery | Prompt | Stav |
+|---|---|---|---|---|---|---|
+| PHOTO_01 · Zimní hory nad Tichým oceánem | `story-photo-01` | `M-01` · Larpova hora | [PHOTO_01.png](../01_PHOTOS/PHOTO_01.png) | [mapový bod](../02_MAP_PINS/PHOTO_01_SNOW_ABOVE_THE_PACIFIC_map.jpg) | [prompt](PHOTO_01_SNOW_ABOVE_THE_PACIFIC_prompt.txt) | ověřená fotografie |
+| PHOTO_02 · Vodopád u horské železnice | `story-photo-02` | `N-03` · Vodopád na horském toku | chybí: `PHOTO_02.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_02_WATERFALL_EXPRESS_map.jpg) | [prompt](PHOTO_02_WATERFALL_EXPRESS_prompt.txt) | fotografie chybí |
+| PHOTO_03 · Staré centrum Larpingtonu | `story-photo-03` | `CP-SQ04` · Kostelní náměstí | chybí: `PHOTO_03.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_03_OLD_LARPINGTON_map.jpg) | [prompt](PHOTO_03_OLD_LARPINGTON_prompt.txt) | fotografie chybí |
+| PHOTO_04 · Starý přístav Larpingtonu | `story-photo-04` | `C-02` · Historický přístav Larpingtonu | chybí: `PHOTO_04.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_04_LARPINGTON_OLD_HARBOUR_map.jpg) | [prompt](PHOTO_04_LARPINGTON_OLD_HARBOUR_prompt.txt) | fotografie chybí |
+| PHOTO_05 · Ōru Maito po dešti | `story-photo-05` | `T-04` · Ōru Maito | chybí: `PHOTO_05.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_05_ORU_MAITO_AFTER_RAIN_map.jpg) | [prompt](PHOTO_05_ORU_MAITO_AFTER_RAIN_prompt.txt) | fotografie chybí |
+| PHOTO_06 · Marina na Paralandu | `story-photo-06` | `H-02` · Marina Paraland | [PHOTO_06.png](../01_PHOTOS/PHOTO_06.png) | [mapový bod](../02_MAP_PINS/PHOTO_06_PARALAND_MARINA_map.jpg) | [prompt](PHOTO_06_PARALAND_MARINA_prompt.txt) | ověřená fotografie |
+| PHOTO_07 · Zřícenina hradu na Paralandu | `story-photo-07` | `PL-06` · Zřícenina na Paralandu | chybí: `PHOTO_07.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_07_PARALAND_CASTLE_RUINS_map.jpg) | [prompt](PHOTO_07_PARALAND_CASTLE_RUINS_prompt.txt) | fotografie chybí |
+| PHOTO_08 · Noční cesta Jeskem | `story-photo-08` | `V-07` · Vyhlídka na hrázi přehrady | chybí: `PHOTO_08.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_08_MIDNIGHT_JESKO_map.jpg) | [prompt](PHOTO_08_MIDNIGHT_JESKO_prompt.txt) | fotografie chybí |
+| PHOTO_09 · Odpočinek na vrcholu při zlaté hodince | `story-photo-09` | `SP-05` · Studánka na hřebenovce | chybí: `PHOTO_09.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_09_GOLDEN_HOUR_SUMMIT_REST_map.jpg) | [prompt](PHOTO_09_GOLDEN_HOUR_SUMMIT_REST_prompt.txt) | fotografie chybí |
+| PHOTO_10 · Horská louka | `story-photo-10` | `M-03` · Kulatý vrch | chybí: `PHOTO_10.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_10_SWISS_INSPIRED_MOUNTAIN_MEADOW_map.jpg) | [prompt](PHOTO_10_SWISS_INSPIRED_MOUNTAIN_MEADOW_prompt.txt) | fotografie chybí |
+| PHOTO_11 · Horské jezero | `story-photo-11` | `N-04` · Přehradní jezero | chybí: `PHOTO_11.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_11_ALPINE_INSPIRED_LAKE_POSE_map.jpg) | [prompt](PHOTO_11_ALPINE_INSPIRED_LAKE_POSE_prompt.txt) | fotografie chybí |
+| PHOTO_12 · Západ slunce nad Larpidií | `story-photo-12` | `M-03` · Kulatý vrch | chybí: `PHOTO_12.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_12_SUNSET_ABOVE_LARPIDIA_map.jpg) | [prompt](PHOTO_12_SUNSET_ABOVE_LARPIDIA_prompt.txt) | fotografie chybí |
+| PHOTO_13 · Skrytý horský hřeben | `story-photo-13` | `N-04` · Přehradní jezero | chybí: `PHOTO_13.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_13_THE_HIDDEN_RIDGE_map.jpg) | [prompt](PHOTO_13_THE_HIDDEN_RIDGE_prompt.txt) | fotografie chybí |
+| PHOTO_14 · Řeka ústící do moře | `story-photo-14` | `W-01` · Řeka Larp | chybí: `PHOTO_14.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_14_RIVER_TO_THE_SEA_map.jpg) | [prompt](PHOTO_14_RIVER_TO_THE_SEA_prompt.txt) | fotografie chybí |
+| PHOTO_15 · Noční panorama Larpingtonu | `story-photo-15` | `HV-01` · Prémiový hotel – přístavní promenáda | chybí: `PHOTO_15.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_15_LARPINGTON_ROOFTOP_NIGHT_map.jpg) | [prompt](PHOTO_15_LARPINGTON_ROOFTOP_NIGHT_prompt.txt) | fotografie chybí |
+| PHOTO_16 · Pobřeží za úvitu | `story-photo-16` | `V-04` · Vyhlídka na hrotu poloostrova | chybí: `PHOTO_16.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_16_COASTAL_DAWN_HAND_VIEW_map.jpg) | [prompt](PHOTO_16_COASTAL_DAWN_HAND_VIEW_prompt.txt) | fotografie chybí |
+| PHOTO_17 · Hrad za ranního světla | `story-photo-17` | `PL-02` · Hrad Paralandu | chybí: `PHOTO_17.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_17_OLD_MONEY_CASTLE_MORNING_map.jpg) | [prompt](PHOTO_17_OLD_MONEY_CASTLE_MORNING_prompt.txt) | fotografie chybí |
+| PHOTO_18 · Nádvoří starého kostela | `story-photo-18` | `CP-B07` · Historický kostel na Kostelním náměstí | chybí: `PHOTO_18.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_18_OLD_MONEY_CHURCH_COURTYARD_map.jpg) | [prompt](PHOTO_18_OLD_MONEY_CHURCH_COURTYARD_prompt.txt) | fotografie chybí |
+| PHOTO_19 · Terasa s výhledem na moře | `story-photo-19` | `PL-03` · Jižní letovisko Paralandu | chybí: `PHOTO_19.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_19_MANOR_TERRACE_SEA_VIEW_map.jpg) | [prompt](PHOTO_19_MANOR_TERRACE_SEA_VIEW_prompt.txt) | fotografie chybí |
+| PHOTO_20 · Historická ulice za zlaté hodinky | `story-photo-20` | `CP-B08` · Tržní hala | chybí: `PHOTO_20.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_20_HERITAGE_STREET_ELEGANCE_map.jpg) | [prompt](PHOTO_20_HERITAGE_STREET_ELEGANCE_prompt.txt) | fotografie chybí |
+
+Mapový náhled každé scény vede na evidovaný bod kamery; původní prompt zachovává směr záběru, viditelné orientační body, roční dobu a prostorové měřítko podle podkladů. Soubory mapových bodů a pracovní souřadnice jsou neveřejné produkční podklady. Fotografie se považuje za hotovou jen tehdy, když existuje soubor na ověřené cestě v manifestu.
+
+Mapové náhledy scén jsou rovněž evidované v `viewpoint_path`. Jejich zdrojové obrázky obsahují pracovní ID, navržené body kamery a interní souřadnice, proto se do veřejné galerie nekopírují. Původní prompty a metadata níže zůstávají beze změny.
+
 - [PHOTO 01 · SNOW ABOVE THE PACIFIC](#photo_01) (9:16; M-01)
 - [PHOTO 02 · WATERFALL EXPRESS](#photo_02) (16:9; N-03, ST-L1-03)
 - [PHOTO 03 · OLD LARPINGTON](#photo_03) (16:9; CP-SQ04)

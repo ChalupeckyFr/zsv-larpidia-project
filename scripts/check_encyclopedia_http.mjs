@@ -27,7 +27,7 @@ const base = await new Promise((resolve, reject) => {
 
 try {
   const paths = [
-    "", "index.html", "site.js", "site.css", "encyclopedia.js", "project-meta.js", "project-metadata.json",
+    "", "index.html", "site.js", "site.css", "site-brand.css", "site-brand.js", "gallery.js", "encyclopedia.js", "project-meta.js", "project-metadata.json",
     "atlas/current/viewer/atlas.html", "atlas/current/viewer/terrain-3d.html", "atlas/current/capital/capital_plan_viewer.html",
     "atlas/current/capital/capital-3d.html", "atlas/current/viewer/terrain-3d-data.js", "atlas/current/viewer/island-r1-3d-data.js",
     "atlas/current/capital/capital-3d-data.js", "atlas/current/capital/capital-3d-nature.js",
@@ -36,12 +36,11 @@ try {
     "atlas/current/svg/rail_scheme.svg", "atlas/current/svg/landcover_preview.svg",
     "atlas/current/renders/S-00_overview.jpg", "atlas/current/renders/S-00_overview_clouds.jpg",
     "atlas/current/renders/S-01_base.jpg", "atlas/current/renders/S-01_base_clouds.jpg",
-    "atlas/current/renders/S-02_base.jpg", "atlas/current/renders/S-03_base.jpg", "atlas/photography/photos/LAR_PH_001.jpg",
-    "gallery/assets/mountain.png", "gallery/assets/paraland.png",
+    "atlas/current/renders/S-02_base.jpg", "atlas/current/renders/S-03_base.jpg",
     "content/larpidia/index.json", "content/larpidia/facts.json", "content/larpidia/media/assets.json",
   ];
   for (const category of catalog.categories) for (const article of category.articles) paths.push(`content/larpidia/${category.id}/${article.id}.md`);
-  for (const item of media.assets) paths.push(item.src);
+  for (const item of media.assets.filter((asset) => asset.public && asset.exists)) paths.push(item.publicSrc || item.src);
   const responses = await Promise.all(paths.map((file) => fetch(`${base}/${file}`)));
   const failures = responses.map((response, index) => response.ok ? null : `${paths[index]} → HTTP ${response.status}`).filter(Boolean);
   assert.deepEqual(failures, [], "Every public page, content file, script, style, model, and registered media asset must be served.");
@@ -52,6 +51,11 @@ try {
     "docs/LARPIDIA_PUBLIC_CONTENT_AUDIT.md", "docs/LARPIDIA_ATLAS_SEARCH_REVIEW.md", "data/larpidia_world_bible.json",
     "atlas/current/registry/places.json", "atlas/current/capital/cp_objects.json", "scripts/build_public_site.mjs",
     "v1.1/LARPIDIA_VISUAL_ATLAS_STORY_PACK_v1_2/README_START_HERE.md",
+    "v1.1/LARPIDIA_VISUAL_ATLAS_STORY_PACK_v1_2/03_PHOTO_PROMPTS/ALL_PHOTO_PROMPTS.md",
+    "v1.1/LARPIDIA_VISUAL_ATLAS_STORY_PACK_v1_2/02_MAP_PINS/PHOTO_01_SNOW_ABOVE_THE_PACIFIC_map.jpg",
+    "atlas/photography/prompts/LAR_PH_002.txt", "atlas/photography/photos/LAR_PH_001.jpg",
+    "atlas/photography/photos/LAR_PH_002.jpg", "atlas/photography/photos/LAR_PH_002_v1_rejected_bay.jpg",
+    "gallery/assets/night-road.jpg", "scripts/dev_media_status.js",
   ];
   for (const file of blocked) {
     const response = await fetch(`${base}/${file}`);
@@ -62,7 +66,8 @@ try {
 
   const html = await (await fetch(`${base}/index.html`)).text();
   assert.match(html, /href="#encyklopedie" data-nav="encyklopedie"/, "The existing encyclopedia menu remains present.");
-  assert.match(html, /gallery\/assets\/mountain\.png/, "The public gallery uses its available mountain image.");
+  assert.match(html, /gallery\.js/, "The public gallery initializes from its safe media manifest.");
+  assert.match(html, /data-gallery-mode="public"/, "The public gallery uses the production manifest projection.");
   console.log(`Static HTTP smoke check passed: ${paths.length} public paths served; ${blocked.length} internal paths returned 404.`);
 } finally {
   if (child.exitCode === null) {
