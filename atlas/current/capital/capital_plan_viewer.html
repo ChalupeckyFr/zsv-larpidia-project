@@ -113,6 +113,21 @@
       #map svg [data-id]:hover {
         filter: drop-shadow(0 0 7px rgba(255, 177, 71, 0.95));
       }
+      #map svg #blocks path {
+        fill: #cbb997 !important;
+        fill-opacity: 0.62;
+        stroke: #dfd1b8;
+        stroke-width: 1.15;
+      }
+      #map svg #houses-all {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.18s ease;
+      }
+      #map svg #houses-all.detail-visible {
+        opacity: 1;
+        pointer-events: auto;
+      }
       label.row {
         display: flex;
         gap: 10px;
@@ -105769,6 +105784,8 @@ const svg = document.querySelector("#map svg");
       let numberFrame = 0;
       function setVB() {
         svg.setAttribute("viewBox", vb.join(" "));
+        const houseDetail = svg.getElementById("houses-all");
+        if (houseDetail) houseDetail.classList.toggle("detail-visible", vb[2] <= 1200);
         if (numberFrame) return;
         numberFrame = requestAnimationFrame(updateHouseNumbers);
       }

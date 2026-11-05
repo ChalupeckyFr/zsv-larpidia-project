@@ -6,7 +6,9 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const current = path.join(root, "atlas/current");
 const relief = path.join(current, "relief");
-const every = 2;
+// Bilinear 30 m sampling keeps the short ridges and coastal folds much clearer
+// than the old 40 m mesh while keeping the interactive tile count modest.
+const every = 1.5;
 
 function readPng(file) {
   const bytes = fs.readFileSync(file);
@@ -97,12 +99,17 @@ if (dem.colorType !== 0 || dem.depth !== 16 || landcover.colorType !== 3 || land
 }
 const width = Math.ceil(dem.width / every), height = Math.ceil(dem.height / every), sampleM = cell * every * 1000, meshCell = cell * every;
 const heights = new Float64Array(width * height), cover = new Uint8Array(width * height);
+const sampleElevation = (sourceRowIndex, sourceColIndex) => {
+  const pixel = (sourceRowIndex * dem.width + sourceColIndex) * 2;
+  return (dem.pixels[pixel] * 256 + dem.pixels[pixel + 1]) / 100;
+};
 for (let row = 0; row < height; row++) {
-  const sourceRow = row * every;
+  const sourceRow = row * every, row0 = Math.floor(sourceRow), row1 = Math.min(dem.height - 1, row0 + 1), ty = sourceRow - row0;
   for (let col = 0; col < width; col++) {
-    const sourceCol = col * every, sourceIndex = sourceRow * dem.width + sourceCol, index = row * width + col;
-    heights[index] = (dem.pixels[sourceIndex * 2] * 256 + dem.pixels[sourceIndex * 2 + 1]) / 100;
-    cover[index] = landcover.pixels[sourceIndex];
+    const sourceCol = col * every, col0 = Math.floor(sourceCol), col1 = Math.min(dem.width - 1, col0 + 1), tx = sourceCol - col0, index = row * width + col;
+    const a = sampleElevation(row0, col0), b = sampleElevation(row0, col1), c = sampleElevation(row1, col0), d = sampleElevation(row1, col1);
+    heights[index] = a * (1 - tx) * (1 - ty) + b * tx * (1 - ty) + c * (1 - tx) * ty + d * tx * ty;
+    cover[index] = landcover.pixels[Math.round(sourceRow) * dem.width + Math.round(sourceCol)];
   }
 }
 const gridSample = (values, x, y) => {
@@ -132,7 +139,7 @@ for (const feature of hydro.features) {
   }
 }
 
-const widthByWaterKind = { main: 18, river: 11, stream: 5.5 };
+const widthByWaterKind = { main: 64, river: 42, stream: 13 };
 const waterFeatures = [];
 let lakePolygon = null;
 for (const feature of hydro.features) {
@@ -170,7 +177,7 @@ for (const feature of waterFeatures) {
     const mapped = feature.bed_start_m + (feature.bed_end_m - feature.bed_start_m) * lengths[i] / total;
     return Math.max(gridSample(heights, ...point) - 20, Math.min(mapped, gridSample(heights, ...point) - 1.5));
   });
-  const radius = 0.1, minCol = Math.max(0, Math.floor((Math.min(...points.map((p) => p[0])) - radius - origin[0]) / meshCell));
+  const radius = Math.max(0.022, feature.width_m / 1000 * 1.15), minCol = Math.max(0, Math.floor((Math.min(...points.map((p) => p[0])) - radius - origin[0]) / meshCell));
   const maxCol = Math.min(width - 1, Math.floor((Math.max(...points.map((p) => p[0])) + radius - origin[0]) / meshCell) + 1);
   const minRow = Math.max(0, Math.floor((Math.min(...points.map((p) => p[1])) - radius - origin[1]) / meshCell));
   const maxRow = Math.min(height - 1, Math.floor((Math.max(...points.map((p) => p[1])) + radius - origin[1]) / meshCell) + 1);
@@ -186,7 +193,37 @@ for (const feature of waterFeatures) {
       }
     }
   }
-  feature.surface_m = points.map((point) => gridSample(heights, ...point) + 1.5);
+  feature.surface_m = reference.map((bed) => bed + 0.15);
+}
+
+function settlementLights(file) {
+  const collection = JSON.parse(fs.readFileSync(file, "utf8")), lights = [], seen = new Set(), spacing = 0.075;
+  const hashPoint = (x, y) => {
+    let value = (Math.round(x * 1000) * 73856093) ^ (Math.round(y * 1000) * 19349663);
+    value = Math.imul(value ^ (value >>> 13), 1274126177);
+    return (value ^ (value >>> 16)) >>> 0;
+  };
+  for (const feature of collection.features || []) {
+    const geometry = feature.geometry || {}, polygons = geometry.type === "Polygon" ? [geometry.coordinates] : geometry.type === "MultiPolygon" ? geometry.coordinates : [];
+    for (const rings of polygons) {
+      const outer = rings[0] || [];
+      if (outer.length < 4) continue;
+      const minX = Math.min(...outer.map((p) => p[0])), maxX = Math.max(...outer.map((p) => p[0]));
+      const minY = Math.min(...outer.map((p) => p[1])), maxY = Math.max(...outer.map((p) => p[1]));
+      for (let y = Math.ceil(minY / spacing) * spacing; y <= maxY; y += spacing) {
+        for (let x = Math.ceil(minX / spacing) * spacing; x <= maxX; x += spacing) {
+          if (!insidePolygon(x, y, outer) || rings.slice(1).some((hole) => insidePolygon(x, y, hole))) continue;
+          const hash = hashPoint(x, y);
+          if (hash % 100 >= 34) continue;
+          const key = `${x.toFixed(3)},${y.toFixed(3)}`;
+          if (seen.has(key)) continue;
+          seen.add(key);
+          lights.push([Number(x.toFixed(3)), Number(y.toFixed(3)), hash % 5 === 0 ? 1 : 0]);
+        }
+      }
+    }
+  }
+  return lights;
 }
 
 const packed = new Uint8Array(width * height * 3);
@@ -201,7 +238,8 @@ const payload = {
   height_encoding: "u16be-normalized-to-max-elevation", cover_encoding: "u8",
   max_elevation_m: maxElevation, packed: Buffer.from(packed).toString("base64"), water_features: waterFeatures,
   roads: transportPaths(path.join(current, "human/roads.geojson")), railways: transportPaths(path.join(current, "human/rail_lines.geojson"), true),
+  settlement_lights: settlementLights(path.join(current, "human/settlements.geojson")),
 };
 const output = path.join(current, "viewer/terrain-3d-data.js");
 fs.writeFileSync(output, `/* Generated from atlas/current/relief; run scripts/build_terrain_3d_payload.mjs. */\nwindow.LARPIDIA_TERRAIN_DATA = ${JSON.stringify(payload)};\n`, "utf8");
-console.log(JSON.stringify({ output: path.relative(root, output), width, height, sample_m: sampleM, max_elevation_m: maxElevation, bytes: packed.byteLength, roads: payload.roads.length, railways: payload.railways.length }));
+console.log(JSON.stringify({ output: path.relative(root, output), width, height, sample_m: sampleM, max_elevation_m: maxElevation, bytes: packed.byteLength, roads: payload.roads.length, railways: payload.railways.length, settlement_lights: payload.settlement_lights.length }));
