@@ -668,10 +668,11 @@ h1 em {
   line-height: 1.95;
 }
 .atlas-shell {
-  padding: 16px;
-  border: 1px solid #ded9cd;
-  background: #e9e6dd;
-  box-shadow: 0 14px 34px rgba(50, 58, 47, 0.07);
+  width: min(1760px, calc(100% - 48px));
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }
 .atlas-toolbar {
   min-height: 47px;
@@ -679,7 +680,7 @@ h1 em {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 0 1px 13px;
+  padding: 0 4px 13px;
 }
 .atlas-switch {
   display: flex;
@@ -710,10 +711,12 @@ h1 em {
   font-weight: 700;
 }
 .map-frame-wrap {
-  height: min(72vh, 770px);
-  min-height: 510px;
+  height: min(76svh, 880px);
+  min-height: 620px;
   overflow: hidden;
+  border: 1px solid rgba(64, 78, 61, 0.16);
   background: #d7e6eb;
+  box-shadow: 0 18px 44px rgba(50, 58, 47, 0.1);
 }
 .map-frame-wrap iframe,
 .gallery-frame-shell iframe {
@@ -1448,9 +1451,7 @@ h1 em {
   }
   .atlas-shell {
     width: 100%;
-    padding: 8px;
-    border-right: 0;
-    border-left: 0;
+    padding: 0;
   }
   .atlas-toolbar {
     align-items: flex-start;
@@ -1472,8 +1473,8 @@ h1 em {
     padding-right: 3px;
   }
   .map-frame-wrap {
-    height: 70vh;
-    min-height: 440px;
+    height: min(76svh, 760px);
+    min-height: 500px;
   }
   .atlas-hint {
     padding: 10px 2px 2px;

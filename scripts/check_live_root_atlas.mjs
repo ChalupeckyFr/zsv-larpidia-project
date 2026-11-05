@@ -120,7 +120,7 @@ async function openBrowser(base) {
   await command("Page.enable");
   await command("Runtime.enable");
   await command("Network.enable");
-  await command("Emulation.setDeviceMetricsOverride", { width: 1600, height: 1000, deviceScaleFactor: 1, mobile: false });
+  await command("Emulation.setDeviceMetricsOverride", { width: 1800, height: 1180, deviceScaleFactor: 1, mobile: false });
   await command("Page.navigate", { url: `${base}/index.html` });
   for (let i = 0; i < 200; i++) {
     const state = await evaluate("({href:location.href,ready:document.readyState})").catch(() => null);
@@ -141,8 +141,11 @@ async function waitFor(expression, description, attempts = 200) {
 }
 
 const evidenceDirectory = path.join(root, "docs/debug-screenshots");
-async function captureEvidence(name) {
-  const image = await command("Page.captureScreenshot", { format: "png", captureBeyondViewport: false, fromSurface: true });
+async function captureEvidence(name, clip = null) {
+  const image = await command("Page.captureScreenshot", {
+    format: "png", captureBeyondViewport: false, fromSurface: true,
+    ...(clip ? { clip: { ...clip, scale: 1 } } : {}),
+  });
   fs.mkdirSync(evidenceDirectory, { recursive: true });
   const target = path.join(evidenceDirectory, name);
   fs.writeFileSync(target, Buffer.from(image.data, "base64"));
@@ -160,6 +163,9 @@ try {
   assert.equal(route.hidden, false);
 
   await evaluate(`document.querySelector('#view-atlas iframe').scrollIntoView({block:'center'})`);
+  await captureEvidence("atlas-ui-polish-root-desktop.png");
+  const layerControlsClip = { x: 1460, y: 436, width: 306, height: 720 };
+  await captureEvidence("atlas-ui-polish-layer-controls.png", layerControlsClip);
   const searchResult = await evaluate(`(()=>{const d=document.querySelector('#view-atlas iframe').contentDocument,q=d.querySelector('#q');q.value='T-02';q.dispatchEvent(new Event('input',{bubbles:true}));const result=d.querySelector('#results [data-id="T-02"]');return {found:!!result,text:result?.innerText||'',id:result?.dataset.id||''}})()`);
   assert.equal(searchResult.found, true, "Hidden internal ID T-02 must still find the place.");
   assert.equal(searchResult.id, "T-02");

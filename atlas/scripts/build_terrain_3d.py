@@ -3,8 +3,8 @@
 Run from the project root with the existing atlas Python dependencies:
     python atlas/scripts/build_terrain_3d.py
 
-The 20 m model is sampled every 5 cells (100 m mesh spacing) to keep WebGL
-smooth on ordinary computers. Heights are model values, not surveyed data.
+The 20 m model is sampled every 2 cells (40 m source spacing). Heights are
+model values, not surveyed data.
 """
 from __future__ import annotations
 
@@ -19,7 +19,8 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[2]
 RELIEF = ROOT / "atlas" / "current" / "relief"
 OUT = ROOT / "atlas" / "current" / "viewer" / "terrain-3d-data.js"
-SAMPLE_EVERY = 5
+HUMAN = ROOT / "atlas" / "current" / "human"
+SAMPLE_EVERY = 2
 
 
 def point_segment_distance(px: float, py: float, ax: float, ay: float, bx: float, by: float) -> tuple[float, float]:
@@ -58,6 +59,46 @@ def sample_grid(values: np.ndarray, x: float, y: float, origin_x: float, origin_
     return a * (1 - tx - ty) + b * tx + c * ty if ty <= 1 - tx else b * (1 - ty) + d * (tx + ty - 1) + c * (1 - tx)
 
 
+def r3(point: list[float]) -> list[float]:
+    return [round(float(point[0]), 3), round(float(point[1]), 3)]
+
+
+def transport_paths(path: Path, *, rail: bool = False) -> list[dict]:
+    """Keep source line geometry in atlas kilometres; the browser applies the shared transform."""
+    collection = json.loads(path.read_text(encoding="utf-8"))
+    out: list[dict] = []
+    for feature in collection.get("features", []):
+        props = feature.get("properties") or {}
+        geometry = feature.get("geometry") or {}
+        lines = geometry.get("coordinates", [])
+        if geometry.get("type") == "LineString":
+            lines = [lines]
+        elif geometry.get("type") != "MultiLineString":
+            continue
+        for part, points in enumerate(lines, 1):
+            if len(points) < 2:
+                continue
+            if rail:
+                out.append({
+                    "id": str(props.get("id") or f"{props.get('line', 'rail')}-{part}"),
+                    "line": str(props.get("line") or ""),
+                    "name": str(props.get("name_cs") or props.get("line") or "Železnice"),
+                    "section": str(props.get("section") or "surface"),
+                    "length_m": float(props.get("length_m") or 0),
+                    "points": [r3(p) for p in points],
+                })
+            else:
+                out.append({
+                    "id": str(props.get("id") or f"road-{part}"),
+                    "class": str(props.get("class") or "R3"),
+                    "section": str(props.get("section") or "surface"),
+                    "name": str(props.get("name_cs") or props.get("id") or "Silnice"),
+                    "length_m": float(props.get("length_m") or 0),
+                    "points": [r3(p) for p in points],
+                })
+    return out
+
+
 def main() -> None:
     meta = json.loads((RELIEF / "dem_meta.json").read_text(encoding="utf-8"))
     max_m = float(meta["max_m"])
@@ -68,7 +109,7 @@ def main() -> None:
     height_sample = heights_m[::SAMPLE_EVERY, ::SAMPLE_EVERY]
     cover_sample = landcover[::SAMPLE_EVERY, ::SAMPLE_EVERY].copy()
     # The landcover raster has no river class, so rasterize the atlas waterway
-    # vectors onto the coarser mesh. Sampling each segment at half a mesh cell
+    # vectors onto the terrain mesh. Sampling each segment at half a mesh cell
     # keeps narrow streams visible after the 20 m terrain is reduced to 100 m.
     hydro = json.loads((RELIEF / "hydrography.geojson").read_text(encoding="utf-8"))
     origin_x, origin_y = map(float, meta["origin_xy_km"])
@@ -138,7 +179,7 @@ def main() -> None:
                     continue
                 height_sample[row, col] = min(height_sample[row, col], target)
 
-    # Cut shallow, model-scale river channels into the 100 m mesh. River beds
+    # Cut shallow, model-scale river channels into the 40 m mesh. River beds
     # follow the lower of the mapped bed grade and the local DEM, capped at a
     # 20 m cut so imperfect source elevations cannot create impossible ravines.
     for feature in water_features:
@@ -178,18 +219,26 @@ def main() -> None:
         feature["surface_m"] = [sample_grid(height_sample, x, y, origin_x, origin_y, mesh_cell_km) + 1.5 for x, y in points]
         feature.pop("_reference_m", None)
 
-    heights_u8 = np.clip(np.rint(height_sample / max_m * 255.0), 0, 255).astype(np.uint8)
-    packed = np.empty((*heights_u8.shape, 2), dtype=np.uint8)
-    packed[..., 0] = heights_u8
-    packed[..., 1] = cover_sample
+    # Preserve slope detail in a 16-bit height channel. A single 8-bit channel
+    # quantizes 560 m terrain in 2.2 m steps and creates visible terrace bands.
+    heights_u16 = np.clip(np.rint(height_sample / max_m * 65535.0), 0, 65535).astype(np.uint16)
+    packed = np.empty((*heights_u16.shape, 3), dtype=np.uint8)
+    packed[..., 0] = (heights_u16 >> 8).astype(np.uint8)
+    packed[..., 1] = (heights_u16 & 255).astype(np.uint8)
+    packed[..., 2] = cover_sample
 
     payload = {
-        "width": int(heights_u8.shape[1]),
-        "height": int(heights_u8.shape[0]),
+        "width": int(heights_u16.shape[1]),
+        "height": int(heights_u16.shape[0]),
         "sample_m": int(round(float(meta["cell_km"]) * 1000 * SAMPLE_EVERY)),
+        "origin_xy_km": [float(v) for v in meta["origin_xy_km"]],
+        "height_encoding": "u16be-normalized-to-max-elevation",
+        "cover_encoding": "u8",
         "max_elevation_m": max_m,
         "packed": base64.b64encode(packed.tobytes()).decode("ascii"),
         "water_features": water_features,
+        "roads": transport_paths(HUMAN / "roads.geojson"),
+        "railways": transport_paths(HUMAN / "rail_lines.geojson", rail=True),
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(

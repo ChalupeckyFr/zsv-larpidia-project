@@ -42,7 +42,7 @@
           system-ui,
           sans-serif;
         display: grid;
-        grid-template-columns: 300px minmax(0, 1fr) 350px;
+        grid-template-columns: minmax(232px, 252px) minmax(0, 1fr) minmax(264px, 296px);
         grid-template-rows: auto 1fr auto;
       }
       header {
@@ -115,10 +115,56 @@
       }
       label.row {
         display: flex;
-        gap: 8px;
+        gap: 10px;
         align-items: center;
-        padding: 2px 0;
+        min-height: 33px;
+        margin: 1px 0;
+        padding: 5px 8px;
+        border: 1px solid transparent;
+        border-radius: 8px;
         cursor: pointer;
+        font-size: 0.86rem;
+        transition: background-color 0.14s ease, border-color 0.14s ease;
+      }
+      label.row:hover {
+        border-color: color-mix(in srgb, var(--acc) 16%, transparent);
+        background: color-mix(in srgb, var(--acc) 7%, var(--card));
+      }
+      label.row input[type="checkbox"] {
+        appearance: none;
+        accent-color: var(--acc);
+        display: grid;
+        flex: 0 0 18px;
+        place-content: center;
+        width: 18px;
+        height: 18px;
+        margin: 0;
+        border: 1px solid #a9a99e;
+        border-radius: 5px;
+        background: var(--card);
+        cursor: pointer;
+        transition: background-color 0.14s ease, border-color 0.14s ease;
+      }
+      label.row input[type="checkbox"]::before {
+        content: "";
+        width: 8px;
+        height: 4px;
+        border: 2px solid #fff;
+        border-top: 0;
+        border-right: 0;
+        transform: translateY(-1px) rotate(-45deg) scale(0);
+        transition: transform 0.12s ease;
+      }
+      label.row input[type="checkbox"]:checked {
+        border-color: var(--acc);
+        background: var(--acc);
+      }
+      label.row input[type="checkbox"]:checked::before {
+        transform: translateY(-1px) rotate(-45deg) scale(1);
+      }
+      label.row input[type="checkbox"]:focus-visible {
+        outline: 3px solid color-mix(in srgb, var(--acc) 34%, transparent);
+        outline-offset: 2px;
       }
       input[type="search"] {
         width: 100%;
@@ -213,7 +259,7 @@
         color: var(--ink);
         cursor: pointer;
       }
-      @media (max-width: 980px) {
+      @media (max-width: 1080px) {
         body {
           grid-template-columns: 1fr;
           grid-template-rows: auto 62vh auto auto auto;
@@ -102641,6 +102687,7 @@
             fill="#6a4f46"
             letter-spacing="8"
             opacity="0.30"
+            data-id="C-03"
           >
             Chalupecká čtvrť
           </text>
@@ -102654,6 +102701,7 @@
             fill="#6a4f46"
             letter-spacing="8"
             opacity="0.30"
+            data-id="C-04"
           >
             Kynčlova čtvrť
           </text>
@@ -102667,6 +102715,7 @@
             fill="#6a4f46"
             letter-spacing="8"
             opacity="0.30"
+            data-id="C-05"
           >
             Klimečkova čtvrť
           </text>
@@ -102680,6 +102729,7 @@
             fill="#6a4f46"
             letter-spacing="8"
             opacity="0.30"
+            data-id="C-06"
           >
             Žemličkova čtvrť
           </text>
@@ -124743,6 +124793,13 @@
       const svg = document.querySelector("#map svg");
       const REG = JSON.parse(document.getElementById("reg").textContent);
       const BYID = Object.fromEntries(REG.objects.map((o) => [o.id, o]));
+      svg.querySelectorAll("[data-id]").forEach((el) => {
+        const record = BYID[el.getAttribute("data-id")];
+        if (!record) return;
+        el.setAttribute("tabindex", "0");
+        el.setAttribute("role", "button");
+        el.setAttribute("aria-label", record.name_cs);
+      });
       const vb0 = svg.viewBox.baseVal;
       const FULL = [vb0.x, vb0.y, vb0.width, vb0.height];
       let vb = [...FULL];
@@ -124865,7 +124922,7 @@
         const was = done && done.moved;
         drag = null;
         map.classList.remove("drag");
-        if (!was && done?.target) show(done.target);
+        if (!was && done?.target) selectObject(done.target);
       });
       function zoomTo(o, w = 700) {
         const r = svg.getBoundingClientRect();
@@ -124873,12 +124930,16 @@
         vb = [o.u - w / 2, o.v - h / 2, w, h];
         setVB();
       }
+      function selectObject(id) {
+        const o = BYID[id];
+        if (!o) return;
+        zoomTo(o);
+        show(id);
+      }
       let hlEl = [];
       function highlight(id) {
         hlEl.forEach((e) => e.classList.remove("hl"));
-        hlEl = [
-          ...svg.querySelectorAll(`[data-id="${CSS.escape(id)}"]`),
-        ].filter((e) => !e.closest("#labels-cs,#labels-ja,#labels-en"));
+        hlEl = [...svg.querySelectorAll(`[data-id="${CSS.escape(id)}"]`)];
         hlEl.forEach((e) => e.classList.add("hl"));
       }
       function esc(s) {
@@ -125240,10 +125301,13 @@
       q.addEventListener("input", search);
       res.addEventListener("click", (e) => {
         const d = e.target.closest("[data-id]");
-        if (d) {
-          const o = BYID[d.dataset.id];
-          zoomTo(o);
-          show(o.id);
+        if (d) selectObject(d.dataset.id);
+      });
+      map.addEventListener("keydown", (e) => {
+        const feature = e.target.closest?.("[data-id].interactive");
+        if (feature && BYID[feature.dataset.id] && (e.key === "Enter" || e.key === " ")) {
+          e.preventDefault();
+          selectObject(feature.dataset.id);
         }
       });
       document.getElementById("count").textContent =

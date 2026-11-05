@@ -237,6 +237,25 @@ try {
     await screenshot("atlas-desktop-selected"); screenshotsForReport.push(path.join(screenshots, "atlas-desktop-selected.png"));
   });
 
+  await check("atlas feature and label selection share one detail pipeline", async () => {
+    for (const [id, name] of [["C-01", "Larpington"], ["T-01", "Praha"], ["T-06", "Hoshimachi"], ["T-02", "Cimprlichovo Hradiště"], ["V-02", "Útesová vyhlídka"]]) {
+      await setSearch(id); await selectFirstResult();
+      const feature = await pointFor(`#map svg [data-id="${id}"].interactive:not(text)`);
+      const label = await pointFor(`#labels-cs text[data-id="${id}"]`);
+      assert.ok(feature, `${name} map symbol was not visible after search selection.`);
+      assert.ok(label, `${name} Czech label was not visible after search selection.`);
+      await mouseClick(feature);
+      const featureDetails = await evaluate(`document.querySelector('#info').innerText`);
+      assert.match(featureDetails, new RegExp(name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+      const featureView = await evaluate(`document.querySelector('#map svg').getAttribute('viewBox')`);
+      await mouseClick(label);
+      const labelState = await evaluate(`({details:document.querySelector('#info').innerText,view:document.querySelector('#map svg').getAttribute('viewBox'),selected:[...document.querySelectorAll('#map svg .hl')].map(el=>el.getAttribute('data-id'))})`);
+      assert.equal(labelState.details, featureDetails, `${name} label and symbol must show identical details.`);
+      assert.equal(labelState.view, featureView, `${name} label and symbol must keep the same map focus.`);
+      assert.ok(labelState.selected.includes(id), `${name} label selection must highlight the canonical feature.`);
+    }
+  });
+
   await check("atlas pan, zoom, language layers and navigation remain available", async () => {
     const before = await evaluate(`document.querySelector('#map svg').getAttribute('viewBox')`);
     const mapCenter = await evaluate(`(()=>{const r=document.querySelector('#map').getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2}})()`);
@@ -254,10 +273,22 @@ try {
     assert.match(await evaluate(`document.querySelector('a.head-link').getAttribute('href')`), /terrain-3d\.html/);
   });
 
+  await check("atlas custom layer controls stay accessible and the full row toggles", async () => {
+    const layerControl = await evaluate(`(()=>{document.querySelector('#layer-settings').open=true;const input=document.querySelector('#layers input[data-l]'),row=input?.closest('label'),before=input?.checked,style=input&&getComputedStyle(input);row?.click();const after=input?.checked;row?.click();return {before,after,restored:input?.checked,appearance:style?.appearance,width:style?.width,height:style?.height,tag:row?.tagName}})()`);
+    assert.equal(layerControl.tag, "LABEL", "Each layer checkbox must remain inside a clickable label.");
+    assert.equal(layerControl.after, !layerControl.before, "Clicking the full layer label must toggle its checkbox.");
+    assert.equal(layerControl.restored, layerControl.before, "The layer label must toggle back on a second click.");
+    assert.equal(layerControl.appearance, "none", "Atlas layer checkboxes must use the custom palette control.");
+    assert.equal(layerControl.width, "18px"); assert.equal(layerControl.height, "18px");
+  });
+
   await check("Larpington loads 662 records and CP-B01 search stays hidden in results and details", async () => {
     await navigate(`${base}/atlas/current/capital/capital_plan_viewer.html`);
     const state = await evaluate(`(async()=>{const records=await fetch('cp_objects.public.json').then(r=>r.json());return {count:document.querySelector('#count').textContent,recordCount:records.objects.length,layerCount:document.querySelectorAll('#layers input[data-l]').length,searchCount:!!document.querySelector('#search-count'),map:!!document.querySelector('#map svg')}})()`);
     assert.equal(state.recordCount, 662); assert.match(state.count, /662/); assert.ok(state.layerCount >= 10); assert.ok(state.searchCount && state.map);
+    const layerControl = await evaluate(`(()=>{const input=document.querySelector('#layers input[type="checkbox"]'),row=input?.closest('label'),before=input?.checked,appearance=input&&getComputedStyle(input).appearance;row?.click();const after=input?.checked;row?.click();return {tag:row?.tagName,before,after,restored:input?.checked,appearance}})()`);
+    assert.equal(layerControl.tag, "LABEL"); assert.equal(layerControl.after, !layerControl.before); assert.equal(layerControl.restored, layerControl.before);
+    assert.equal(layerControl.appearance, "none", "Larpington layer controls should match the atlas checkboxes.");
     await setSearch("CP-B01");
     let result = await evaluate(`({text:document.querySelector('#results').innerText,id:document.querySelector('#results button')?.dataset.id})`);
     assert.equal(result.id, "CP-B01"); assert.match(result.text, /Radnice Larpingtonu/); assert.doesNotMatch(result.text, /CP-B01|approved|proposed/i);
@@ -280,6 +311,24 @@ try {
     details = await evaluate(`document.querySelector('#info').innerText`);
     assert.doesNotMatch(details, /CP-B02/);
     await screenshot("capital-desktop-selected"); screenshotsForReport.push(path.join(screenshots, "capital-desktop-selected.png"));
+  });
+
+  await check("Larpington object and label selection share one detail pipeline", async () => {
+    await setSearch("C-03"); await selectFirstResult();
+    const feature = await pointFor('#map svg [data-id="C-03"]:not(text)');
+    const label = await pointFor('#labels-cs text[data-id="C-03"]');
+    assert.ok(feature, "The selected Larpington district shape must remain visible.");
+    assert.ok(label, "The selected Larpington district label must remain visible.");
+    await mouseClick(feature);
+    const featureDetails = await evaluate(`document.querySelector('#info').innerText`);
+    const featureView = await evaluate(`document.querySelector('#map svg').getAttribute('viewBox')`);
+    await mouseClick(label);
+    const labelState = await evaluate(`({details:document.querySelector('#info').innerText,view:document.querySelector('#map svg').getAttribute('viewBox'),selected:[...document.querySelectorAll('#map svg .hl')].map(el=>el.getAttribute('data-id'))})`);
+    assert.equal(labelState.details, featureDetails, "A Larpington district label and its shape must show identical details.");
+    assert.equal(labelState.view, featureView, "A Larpington district label and its shape must keep the same map focus.");
+    assert.ok(labelState.selected.includes("C-03"), "The district label must highlight the canonical city object.");
+    await evaluate(`(()=>{const label=document.querySelector('#labels-cs text[data-id="C-03"]');label.focus();label.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true}));})()`);
+    assert.equal(await evaluate(`document.querySelector('#info').innerText`), featureDetails, "Keyboard selection of the label must use the same detail pipeline.");
   });
 
   await check("gallery visibly loads all local media, with no broken image cards", async () => {

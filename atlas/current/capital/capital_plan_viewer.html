@@ -42,7 +42,7 @@
           system-ui,
           sans-serif;
         display: grid;
-        grid-template-columns: 300px minmax(0, 1fr) 350px;
+        grid-template-columns: minmax(232px, 252px) minmax(0, 1fr) minmax(264px, 296px);
         grid-template-rows: auto 1fr auto;
       }
       header {
@@ -115,10 +115,56 @@
       }
       label.row {
         display: flex;
-        gap: 8px;
+        gap: 10px;
         align-items: center;
-        padding: 2px 0;
+        min-height: 33px;
+        margin: 1px 0;
+        padding: 5px 8px;
+        border: 1px solid transparent;
+        border-radius: 8px;
         cursor: pointer;
+        font-size: 0.86rem;
+        transition: background-color 0.14s ease, border-color 0.14s ease;
+      }
+      label.row:hover {
+        border-color: color-mix(in srgb, var(--acc) 16%, transparent);
+        background: color-mix(in srgb, var(--acc) 7%, var(--card));
+      }
+      label.row input[type="checkbox"] {
+        appearance: none;
+        accent-color: var(--acc);
+        display: grid;
+        flex: 0 0 18px;
+        place-content: center;
+        width: 18px;
+        height: 18px;
+        margin: 0;
+        border: 1px solid #a9a99e;
+        border-radius: 5px;
+        background: var(--card);
+        cursor: pointer;
+        transition: background-color 0.14s ease, border-color 0.14s ease;
+      }
+      label.row input[type="checkbox"]::before {
+        content: "";
+        width: 8px;
+        height: 4px;
+        border: 2px solid #fff;
+        border-top: 0;
+        border-right: 0;
+        transform: translateY(-1px) rotate(-45deg) scale(0);
+        transition: transform 0.12s ease;
+      }
+      label.row input[type="checkbox"]:checked {
+        border-color: var(--acc);
+        background: var(--acc);
+      }
+      label.row input[type="checkbox"]:checked::before {
+        transform: translateY(-1px) rotate(-45deg) scale(1);
+      }
+      label.row input[type="checkbox"]:focus-visible {
+        outline: 3px solid color-mix(in srgb, var(--acc) 34%, transparent);
+        outline-offset: 2px;
       }
       input[type="search"] {
         width: 100%;
@@ -207,7 +253,7 @@
         color: var(--ink);
         cursor: pointer;
       }
-      @media (max-width: 980px) {
+      @media (max-width: 1080px) {
         body {
           grid-template-columns: 1fr;
           grid-template-rows: auto 62vh auto auto auto;
@@ -102600,6 +102646,7 @@
             fill="#6a4f46"
             letter-spacing="8"
             opacity="0.30"
+            data-id="C-03"
           >
             Chalupecká čtvrť
           </text>
@@ -102613,6 +102660,7 @@
             fill="#6a4f46"
             letter-spacing="8"
             opacity="0.30"
+            data-id="C-04"
           >
             Kynčlova čtvrť
           </text>
@@ -102626,6 +102674,7 @@
             fill="#6a4f46"
             letter-spacing="8"
             opacity="0.30"
+            data-id="C-05"
           >
             Klimečkova čtvrť
           </text>
@@ -102639,6 +102688,7 @@
             fill="#6a4f46"
             letter-spacing="8"
             opacity="0.30"
+            data-id="C-06"
           >
             Žemličkova čtvrť
           </text>
@@ -105702,6 +105752,13 @@
 const svg = document.querySelector("#map svg");
       const REG = await (await fetch('cp_objects.public.json')).json();
       const BYID = Object.fromEntries(REG.objects.map((o) => [o.id, o]));
+      svg.querySelectorAll("[data-id]").forEach((el) => {
+        const record = BYID[el.getAttribute("data-id")];
+        if (!record) return;
+        el.setAttribute("tabindex", "0");
+        el.setAttribute("role", "button");
+        el.setAttribute("aria-label", record.name_cs);
+      });
       const vb0 = svg.viewBox.baseVal;
       const FULL = [vb0.x, vb0.y, vb0.width, vb0.height];
       let vb = [...FULL];
@@ -105823,7 +105880,7 @@ const svg = document.querySelector("#map svg");
         const was = done && done.moved;
         drag = null;
         map.classList.remove("drag");
-        if (!was && done?.target) show(done.target);
+        if (!was && done?.target) selectObject(done.target);
       });
       function zoomTo(o, w = 700) {
         const r = svg.getBoundingClientRect();
@@ -105831,12 +105888,16 @@ const svg = document.querySelector("#map svg");
         vb = [o.u - w / 2, o.v - h / 2, w, h];
         setVB();
       }
+      function selectObject(id) {
+        const o = BYID[id];
+        if (!o) return;
+        zoomTo(o);
+        show(id);
+      }
       let hlEl = [];
       function highlight(id) {
         hlEl.forEach((e) => e.classList.remove("hl"));
-        hlEl = [
-          ...svg.querySelectorAll(`[data-id="${CSS.escape(id)}"]`),
-        ].filter((e) => !e.closest("#labels-cs,#labels-ja,#labels-en"));
+        hlEl = [...svg.querySelectorAll(`[data-id="${CSS.escape(id)}"]`)];
         hlEl.forEach((e) => e.classList.add("hl"));
       }
       function esc(s) {
@@ -105846,7 +105907,7 @@ const svg = document.querySelector("#map svg");
         );
       }
       function show(id){const o=BYID[id],box=document.getElementById('info');if(!o){box.textContent='Objekt se nepodařilo najít.';return}highlight(id);document.getElementById('layer-settings').open=false;svg.querySelectorAll('text[data-id="'+CSS.escape(o.id)+'"]').forEach(el=>el.textContent=o.name_cs);let h='<p class="place-kicker">'+esc(o.subheading)+'</p><h3>'+esc(o.name_cs)+'</h3>';const translations=[o.name_en?'Anglicky: '+o.name_en:'',o.name_ja?'Japonsky: '+o.name_ja:''].filter(Boolean);if(translations.length)h+='<p class="place-translations">'+esc(translations.join(' · '))+'</p>';h+='<p class="place-lead">'+esc(o.description)+'</p>';if(o.highlights?.length)h+='<section class="place-detail-group"><h4>Zajímavosti</h4><ul>'+o.highlights.map(item=>'<li>'+esc(item)+'</li>').join('')+'</ul></section>';if(o.scenery)h+='<section class="place-detail-group"><h4>Scenerie</h4><p>'+esc(o.scenery)+'</p></section>';if(o.atmosphere)h+='<section class="place-detail-group"><h4>Místní charakter</h4><p>'+esc(o.atmosphere)+'</p></section>';if(o.nearby?.length)h+='<section class="place-detail-group"><h4>V okolí</h4><ul class="nearby-list">'+o.nearby.map(n=>'<li><button type="button" class="nearby-place" data-zoom-id="'+esc(n.id)+'">'+esc(n.name_cs)+'</button><span>'+esc(n.direction_cs)+' · '+(n.distance_km<1?Math.round(n.distance_km*100)*10+' m':Number(n.distance_km).toLocaleString('cs-CZ',{maximumFractionDigits:1})+' km')+'</span></li>').join('')+'</ul></section>';if(o.planCoordinates)h+='<p class="place-coordinate">Souřadnice v plánu: '+esc(o.planCoordinates)+'</p>';h+='<p><button class="small" data-zoom-id="'+esc(o.id)+'">Zobrazit na mapě</button></p>';box.innerHTML=h}
-document.getElementById('info').addEventListener('click',e=>{const b=e.target.closest('[data-zoom-id]');if(b&&BYID[b.dataset.zoomId]){const next=BYID[b.dataset.zoomId];zoomTo(next);show(next.id)}});
+document.getElementById('info').addEventListener('click',e=>{const b=e.target.closest('[data-zoom-id]');if(b&&BYID[b.dataset.zoomId])selectObject(b.dataset.zoomId)});map.addEventListener('keydown',e=>{const feature=e.target.closest?.('[data-id][tabindex="0"]');if(feature&&BYID[feature.dataset.id]&&(e.key==='Enter'||e.key===' ')){e.preventDefault();selectObject(feature.dataset.id)}});
 function addFutureDevelopment() {
         if (svg.getElementById("future-development")) return;
         const layer = document.createElementNS(
@@ -106129,7 +106190,7 @@ function addFutureDevelopment() {
 const searchable=REG.objects.filter(o=>Number.isFinite(o.u)&&Number.isFinite(o.v)),normalize=value=>String(value??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("cs-CZ").trim();let activeResult=-1,selectedId=null;
 const typeKeys=[...new Set(searchable.map(o=>o.typeKey))].sort((a,b)=>REG.typeLabels[a].localeCompare(REG.typeLabels[b],"cs"));typeKeys.forEach(key=>{const option=document.createElement("option");option.value=key;option.textContent=REG.typeLabels[key];typeFilter.appendChild(option)});
 function search(){const terms=normalize(q.value).split(/\s+/).filter(Boolean);let hits=searchable.filter(o=>!typeFilter.value||o.typeKey===typeFilter.value);if(terms.length)hits=hits.filter(o=>{const hay=normalize([o.id,o.name_cs,o.name_en,o.name_ja,o.description,o.typeLabel,o.islandLabel,o.region,...(o.searchTerms||[])].join(" "));return terms.every(term=>hay.includes(term))});hits.sort((a,b)=>{const query=normalize(q.value),score=o=>normalize(o.id)===query?0:(o.searchTerms||[]).some(term=>normalize(term)===query)?1:normalize(o.name_cs)===query?2:normalize(o.name_cs).startsWith(query)?3:4;return score(a)-score(b)||a.name_cs.localeCompare(b.name_cs,"cs")||a.id.localeCompare(b.id)});activeResult=-1;res.replaceChildren();const shown=hits.slice(0,60);count.textContent=hits.length?hits.length+" objektů"+(hits.length>shown.length?", zobrazeno prvních "+shown.length:""):"Žádný odpovídající objekt jsme nenašli.";for(const o of shown){const button=document.createElement("button");button.type="button";button.className="result-card";button.setAttribute("role","option");button.setAttribute("aria-selected",String(o.id===selectedId));button.dataset.id=o.id;button.innerHTML='<span class="result-title">'+esc(o.name_cs)+'</span><span class="result-meta">'+esc(o.description)+' · '+esc(o.region)+'</span>';res.appendChild(button)}}
-function selectResult(id){const o=BYID[id];if(!o)return;selectedId=id;search();zoomTo(o);show(id);closeSearch()}
+function selectResult(id){const o=BYID[id];if(!o)return;selectedId=id;search();selectObject(id);closeSearch()}
 function closeSearch(){document.body.classList.remove("search-open");document.getElementById("open-search").setAttribute("aria-expanded","false")}
 document.getElementById("open-search").addEventListener("click",()=>{document.body.classList.add("search-open");document.getElementById("open-search").setAttribute("aria-expanded","true");q.focus()});document.getElementById("close-search").addEventListener("click",closeSearch);
 document.getElementById("clear-filters").addEventListener("click",()=>{q.value="";typeFilter.value="";search();q.focus()});q.addEventListener("input",search);typeFilter.addEventListener("change",search);
