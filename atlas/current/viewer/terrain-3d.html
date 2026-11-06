@@ -48,7 +48,7 @@
     <section class="scene" aria-label="Otočný 3D model ostrovů">
       <canvas id="terrain" tabindex="0" aria-label="3D model reliéfu Larpidie a Paralandu; tažením otáčejte pohledem"></canvas>
       <canvas class="weather-overlay" id="weather-overlay" aria-hidden="true"></canvas>
-      <div class="compass" id="compass" role="img" aria-label="Kompas; r??ice ukazuje sever podle nato?en? pohledu"><svg class="compass-rose" id="compass-rose" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="#f8faf2" stroke="#c6d0c3"/><circle cx="32" cy="32" r="22" fill="none" stroke="#e0e5dc" stroke-width=".7"/><path d="M32 7 37 30 32 27 27 30Z" fill="#a95642"/><path d="M32 57 27 34 32 37 37 34Z" fill="#728276"/><circle cx="32" cy="32" r="2.8" fill="#fff" stroke="#647568" stroke-width="1"/><text class="north-label" x="32" y="16">N</text><text x="49" y="34.5">E</text><text x="32" y="52">S</text><text x="15" y="34.5">W</text></svg></div>
+      <div class="compass" id="compass" role="img" aria-label="Kompas: S – sever, V – východ, J – jih, Z – západ; růžice ukazuje natočení pohledu"><svg class="compass-rose" id="compass-rose" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="#f8faf2" stroke="#c6d0c3"/><circle cx="32" cy="32" r="22" fill="none" stroke="#e0e5dc" stroke-width=".7"/><path d="M32 7 37 30 32 27 27 30Z" fill="#a95642"/><path d="M32 57 27 34 32 37 37 34Z" fill="#728276"/><circle cx="32" cy="32" r="2.8" fill="#fff" stroke="#647568" stroke-width="1"/><text class="north-label" x="32" y="16">S</text><text x="49" y="34.5">V</text><text x="32" y="52">J</text><text x="15" y="34.5">Z</text></svg></div>
       <div class="scene-label">3D · měřítko 1:1</div>
       <div class="error" id="error"></div>
     </section>
@@ -61,7 +61,7 @@
     const canvas=document.getElementById('terrain'),weatherCanvas=document.getElementById('weather-overlay'),weatherCtx=weatherCanvas.getContext('2d'),error=document.getElementById('error');
     const gl=canvas.getContext('webgl',{antialias:true,alpha:false,powerPreference:'high-performance'});
     if(!data||!gl){error.style.display='grid';error.textContent=!data?'Nepodařilo se načíst data výškového modelu.':'Prohlížeč nepodporuje WebGL; otevřete atlas v aktuálním prohlížeči.';return}
-    const raw=Uint8Array.from(atob(data.packed),c=>c.charCodeAt(0)),sourceWidth=data.width,sourceHeight=data.height,meshScale=1,meshWidth=(sourceWidth-1)*meshScale+1,meshHeight=(sourceHeight-1)*meshScale+1,meshSampleM=data.sample_m/meshScale,count=meshWidth*meshHeight;
+    const raw=Uint8Array.from(atob(data.packed),c=>c.charCodeAt(0)),sourceWidth=data.width,sourceHeight=data.height,meshScale=1,meshWidth=(sourceWidth-1)*meshScale+1,meshHeight=(sourceHeight-1)*meshScale+1,meshSampleM=data.sample_m/meshScale,count=meshWidth*meshHeight,terrainRelief=1.42;
     const heights=new Float32Array(count),cover=new Uint8Array(count);let season=2,dayHour=9;
     const sampleHeight=i=>raw.length===count*3&&data.height_encoding==='u16be-normalized-to-max-elevation'?((raw[i*3]<<8)|raw[i*3+1])/65535*data.max_elevation_m:raw[i*2]/255*data.max_elevation_m,sampleCover=i=>raw.length===count*3?raw[i*3+2]:raw[i*2+1];
     for(let row=0;row<meshHeight;row++)for(let col=0;col<meshWidth;col++){const sx=col/meshScale,sy=row/meshScale,c0=Math.floor(sx),r0=Math.floor(sy),tx=sx-c0,ty=sy-r0,c1=Math.min(sourceWidth-1,c0+1),r1=Math.min(sourceHeight-1,r0+1),a=sampleHeight(r0*sourceWidth+c0),b=sampleHeight(r0*sourceWidth+c1),c=sampleHeight(r1*sourceWidth+c0),d=sampleHeight(r1*sourceWidth+c1),i=row*meshWidth+col;heights[i]=a*(1-tx)*(1-ty)+b*tx*(1-ty)+c*(1-tx)*ty+d*tx*ty;const nearestX=Math.min(sourceWidth-1,Math.round(sx)),nearestY=Math.min(sourceHeight-1,Math.round(sy));cover[i]=sampleCover(nearestY*sourceWidth+nearestX)}
@@ -97,7 +97,7 @@
     function createMesh(){
       const w=meshWidth,h=meshHeight,vertical=1/1000,dx=meshSampleM/1000,dz=dx,tileCells=254,nextTiles=[];let tileIndex=0;
       for(let row0=0;row0<h-1;row0+=tileCells)for(let col0=0;col0<w-1;col0+=tileCells){const rowEnd=Math.min(h-1,row0+tileCells),colEnd=Math.min(w-1,col0+tileCells),tileH=rowEnd-row0+1,tileW=colEnd-col0+1,packedVertices=new Float32Array(tileW*tileH*9);
-        for(let localRow=0;localRow<tileH;localRow++)for(let localCol=0;localCol<tileW;localCol++){const row=row0+localRow,col=col0+localCol,i=row*w+col,base=(localRow*tileW+localCol)*9,leftCol=Math.max(0,col-1),rightCol=Math.min(w-1,col+1),northRow=Math.max(0,row-1),southRow=Math.min(h-1,row+1),left=heights[row*w+leftCol],right=heights[row*w+rightCol],north=heights[northRow*w+col],south=heights[southRow*w+col],sx=(right-left)*vertical/(Math.max(1,rightCol-leftCol)*dx),sz=(south-north)*vertical/(Math.max(1,southRow-northRow)*dz),normal=[-sx,1,-sz],length=Math.hypot(...normal)||1;normal.forEach((v,k)=>normal[k]=v/length);const [worldX,worldZ]=atlasWorld.gridToWorld(col/meshScale,row/meshScale,data),rgb=colorForVertex(i);packedVertices[base]=worldX;packedVertices[base+1]=heights[i]*vertical;packedVertices[base+2]=worldZ;packedVertices[base+3]=rgb[0];packedVertices[base+4]=rgb[1];packedVertices[base+5]=rgb[2];packedVertices[base+6]=normal[0];packedVertices[base+7]=normal[1];packedVertices[base+8]=normal[2]}
+        for(let localRow=0;localRow<tileH;localRow++)for(let localCol=0;localCol<tileW;localCol++){const row=row0+localRow,col=col0+localCol,i=row*w+col,base=(localRow*tileW+localCol)*9,leftCol=Math.max(0,col-1),rightCol=Math.min(w-1,col+1),northRow=Math.max(0,row-1),southRow=Math.min(h-1,row+1),left=heights[row*w+leftCol],right=heights[row*w+rightCol],north=heights[northRow*w+col],south=heights[southRow*w+col],sx=(right-left)*vertical*terrainRelief/(Math.max(1,rightCol-leftCol)*dx),sz=(south-north)*vertical*terrainRelief/(Math.max(1,southRow-northRow)*dz),normal=[-sx,1,-sz],length=Math.hypot(...normal)||1;normal.forEach((v,k)=>normal[k]=v/length);const [worldX,worldZ]=atlasWorld.gridToWorld(col/meshScale,row/meshScale,data),rgb=colorForVertex(i);packedVertices[base]=worldX;packedVertices[base+1]=heights[i]*vertical*terrainRelief;packedVertices[base+2]=worldZ;packedVertices[base+3]=rgb[0];packedVertices[base+4]=rgb[1];packedVertices[base+5]=rgb[2];packedVertices[base+6]=normal[0];packedVertices[base+7]=normal[1];packedVertices[base+8]=normal[2]}
         const indices=new Uint16Array((tileW-1)*(tileH-1)*6);let k=0;for(let row=0;row<tileH-1;row++)for(let col=0;col<tileW-1;col++){const tl=row*tileW+col,tr=tl+1,bl=tl+tileW,br=bl+1;indices[k++]=tl;indices[k++]=bl;indices[k++]=tr;indices[k++]=tr;indices[k++]=bl;indices[k++]=br}
         const tile=terrainTiles[tileIndex]||{vertex:gl.createBuffer(),index:gl.createBuffer()};gl.bindBuffer(gl.ARRAY_BUFFER,tile.vertex);gl.bufferData(gl.ARRAY_BUFFER,packedVertices,gl.STATIC_DRAW);gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,tile.index);gl.bufferData(gl.ELEMENT_ARRAY_BUFFER,indices,gl.STATIC_DRAW);nextTiles.push({...tile,count:indices.length});tileIndex++;
       }
@@ -106,7 +106,7 @@
     function terrainElevation(x,z){
       const [atlasX,atlasY]=atlasWorld.toAtlas(x,z),cellKm=meshSampleM/1000,gx=Math.max(0,Math.min(meshWidth-1,(atlasX-data.origin_xy_km[0])/cellKm)),gy=Math.max(0,Math.min(meshHeight-1,(atlasY-data.origin_xy_km[1])/cellKm)),c0=Math.min(meshWidth-2,Math.floor(gx)),r0=Math.min(meshHeight-2,Math.floor(gy)),tx=gx-c0,ty=gy-r0;
       const a=heights[r0*meshWidth+c0],b=heights[r0*meshWidth+c0+1],c=heights[(r0+1)*meshWidth+c0],d=heights[(r0+1)*meshWidth+c0+1];
-      return ty<=1-tx?a*(1-tx-ty)+b*tx+c*ty:b*(1-ty)+d*(tx+ty-1)+c*(1-tx);
+      return (ty<=1-tx?a*(1-tx-ty)+b*tx+c*ty:b*(1-ty)+d*(tx+ty-1)+c*(1-tx))*terrainRelief;
     }
     const surfaceHeight=(x,z)=>terrainElevation(x,z)/1000;
     function localToWorld(p){return atlasWorld.toWorld(p[0],p[1])}
@@ -133,7 +133,7 @@
       const out=[];
       for(const feature of data.water_features||[]){
         if(feature.kind==='lake'){
-          const points=feature.points.slice(0,-1).map(localToWorld),waterY=Number(feature.level_m)/1000+.00002;
+          const points=feature.points.slice(0,-1).map(localToWorld),waterY=Number(feature.level_m)*terrainRelief/1000+.00002;
           for(const tri of triangulate2D(points)){const p=tri.map(i=>[points[i][0],waterY,points[i][1]]);roadTriangle(out,p[0],p[1],p[2],seasonRiverHex[season][2])}
           continue;
         }
