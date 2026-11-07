@@ -101,7 +101,7 @@
       #map.drag {
         cursor: grabbing;
       }
-      #map svg {
+      #map > svg {
         width: 100%;
         height: 100%;
         display: block;
@@ -105748,7 +105748,7 @@
 
     <script>
 (async()=>{
-const svg = document.querySelector("#map svg");
+const svg = document.querySelector("#map > svg");
       const REG = await (await fetch('cp_objects.public.json')).json();
       const BYID = Object.fromEntries(REG.objects.map((o) => [o.id, o]));
       svg.querySelectorAll("[data-id]").forEach((el) => {
