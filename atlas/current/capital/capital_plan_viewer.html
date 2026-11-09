@@ -101,7 +101,7 @@
       #map.drag {
         cursor: grabbing;
       }
-      #map > svg {
+      #map svg {
         width: 100%;
         height: 100%;
         display: block;
@@ -112,7 +112,8 @@
       }
       #map svg [data-id]:hover {
         filter: drop-shadow(0 0 7px rgba(255, 177, 71, 0.95));
-      }label.row {
+      }
+      label.row {
         display: flex;
         gap: 10px;
         align-items: center;
@@ -275,7 +276,7 @@
 
  .city-search-panel{box-sizing:border-box;overflow:auto}.city-search-panel label{display:block;margin:.55rem 0 .2rem;color:var(--soft);font-size:.86rem;font-weight:650}.city-search-panel select,.city-search-panel input[type=search]{box-sizing:border-box;width:100%;min-height:2.5rem;padding:.45rem .6rem;border:1px solid var(--line,#d4d1c7);border-radius:7px;background:var(--card,#fff);color:var(--ink,#242a27);font:inherit}.city-search-panel input[type=checkbox]{accent-color:#326653}.search-actions{display:flex;gap:.45rem;margin:.55rem 0}.result-card{display:block;width:100%;margin:.35rem 0;padding:.65rem .7rem;border:1px solid var(--line,#d4d1c7);border-radius:8px;background:var(--card,#fff);color:var(--ink,#242a27);text-align:left;cursor:pointer}.result-card:hover,.result-card[aria-selected=true]{border-color:#326653;background:#edf3ef}.result-title,.result-meta{display:block}.result-title{font-weight:700}.result-meta{margin-top:.2rem;color:var(--soft,#65716a);font-size:.85rem}.language-settings,.map-settings{border-top:1px solid var(--line,#d4d1c7);padding-top:.7rem;margin-top:.8rem}.language-settings summary,.map-settings summary{cursor:pointer;font-weight:700;padding:.3rem 0}.detail-section #info{line-height:1.55}.detail-section #info h3{font:600 1.65rem/1.13 Georgia,serif;margin:.2rem 0 .25rem}.detail-section #info p{margin:.45rem 0}.place-kicker{margin:0!important;color:var(--soft,#65716a);font-size:.74rem;font-weight:750;letter-spacing:.06em;text-transform:uppercase}.place-translations{margin:.2rem 0 .7rem!important;color:var(--soft,#65716a);font-size:.85rem}.place-lead{font-size:.94rem;line-height:1.6}.place-detail-group{margin:.8rem 0;padding-top:.6rem;border-top:1px solid var(--line,#d4d1c7)}.place-detail-group h4{margin:0 0 .35rem;font-size:.83rem}.place-detail-group p,.place-detail-group ul{margin:.25rem 0!important;font-size:.86rem}.place-detail-group ul{padding-left:1.1rem}.nearby-list{list-style:none;padding:0!important}.nearby-list li{display:flex;justify-content:space-between;align-items:center;gap:.4rem;margin:.25rem 0}.nearby-list li>span{color:var(--soft,#65716a);font-size:.76rem;white-space:nowrap}.nearby-place{padding:0;border:0;background:none;color:#326653;font:inherit;font-weight:700;text-align:left;cursor:pointer}.place-coordinate{color:var(--soft,#65716a);font-size:.79rem;font-variant-numeric:tabular-nums}.mobile-search-trigger{display:none}.mobile-close{display:none}
 @media(max-width:1000px){body{grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(48vh,1fr) auto auto}header{grid-row:1}#map{grid-column:1;grid-row:2;min-height:48vh}aside.r{grid-column:1;grid-row:3;max-height:30vh;overflow:auto}body>footer{grid-column:1;grid-row:4}.city-search-panel{position:fixed;z-index:60;inset:0 auto 0 0;width:min(88vw,360px);height:100dvh;max-height:100dvh;transform:translateX(-105%);transition:transform .22s ease;box-shadow:0 0 28px #0005}body.search-open .city-search-panel{transform:translateX(0)}.mobile-search-trigger{display:inline-flex;position:absolute;z-index:20;top:12px;left:12px;padding:.6rem .8rem;border:1px solid var(--line,#d4d1c7);border-radius:8px;background:var(--card,#fff);color:var(--ink,#242a27);font:inherit;font-weight:700}.mobile-close{display:inline-flex}}
-@media(max-width:620px){header{display:grid;grid-template-columns:36px minmax(0,1fr);gap:3px 8px;padding:8px 12px}header>.site-brand-home{grid-column:1;grid-row:1/3;margin:0}header>h1{grid-column:2;grid-row:1;margin:0;font-size:1.05rem}header>span{grid-column:2;grid-row:2;font-size:.78rem}header>.city3d-link{grid-column:2;grid-row:3;justify-self:start;white-space:nowrap;font-size:.82rem}}.map-compass{position:absolute;z-index:15;top:14px;right:15px;width:58px;height:58px;display:grid;place-items:center;border:1px solid #b8c5b9;border-radius:50%;background:#f8faf2ed;box-shadow:0 5px 18px #1f393a2b;backdrop-filter:blur(5px);pointer-events:none}.map-compass svg{width:100%;height:100%}.map-compass text{font:700 7px/1 sans-serif;fill:#53665a;text-anchor:middle}.map-compass text:first-of-type{font-size:8px;font-weight:800}</style>
+@media(max-width:620px){header{display:grid;grid-template-columns:36px minmax(0,1fr);gap:3px 8px;padding:8px 12px}header>.site-brand-home{grid-column:1;grid-row:1/3;margin:0}header>h1{grid-column:2;grid-row:1;margin:0;font-size:1.05rem}header>span{grid-column:2;grid-row:2;font-size:.78rem}header>.city3d-link{grid-column:2;grid-row:3;justify-self:start;white-space:nowrap;font-size:.82rem}}</style>
   <link rel="stylesheet" href="../../../site-brand.css">
 </head>
   <body>
@@ -287,7 +288,7 @@
 <details class="language-settings" open><summary>Jazyk popisků</summary><div class="seg"><button data-lang="cs" aria-pressed="true">Čeština</button><button data-lang="ja" aria-pressed="false">Japonština</button><button data-lang="en" aria-pressed="false">Angličtina</button></div></details>
 <details class="map-settings" id="layer-settings" open><summary>Vrstvy a nastavení mapy</summary><label class="row"><input type="checkbox" id="house-numbers-toggle"> Čísla domů při přiblížení</label><button class="small" id="reset" type="button">Zobrazit celý plán</button><div id="layers"></div></details>
 </aside>
-    <div id="map"><div class="map-compass" role="img" aria-label="Kompas: S – sever, V – východ, J – jih, Z – západ"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="#f8faf2" stroke="#c6d0c3"/><circle cx="32" cy="32" r="22" fill="none" stroke="#e0e5dc" stroke-width=".7"/><path d="M32 7 37 30 32 27 27 30Z" fill="#a95642"/><path d="M32 57 27 34 32 37 37 34Z" fill="#728276"/><circle cx="32" cy="32" r="2.8" fill="#fff" stroke="#647568" stroke-width="1"/><text x="32" y="16" fill="#a95642">S</text><text x="49" y="34.5">V</text><text x="32" y="52">J</text><text x="15" y="34.5">Z</text></svg></div><button id="open-search" class="mobile-search-trigger" type="button" aria-expanded="false" aria-controls="search-panel">Hledat místa</button>
+    <div id="map"><button id="open-search" class="mobile-search-trigger" type="button" aria-expanded="false" aria-controls="search-panel">Hledat místa</button>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -102646,9 +102647,7 @@
             letter-spacing="8"
             opacity="0.30"
             data-id="C-03"
-          >
-            Chalupecká čtvrť
-          </text>
+          ></text>
           <text
             x="2875.9"
             y="1036.0"
@@ -102660,9 +102659,7 @@
             letter-spacing="8"
             opacity="0.30"
             data-id="C-04"
-          >
-            Kynčlova čtvrť
-          </text>
+          ></text>
           <text
             x="4076.6"
             y="1867.0"
@@ -102674,9 +102671,7 @@
             letter-spacing="8"
             opacity="0.30"
             data-id="C-05"
-          >
-            Klimečkova čtvrť
-          </text>
+          ></text>
           <text
             x="3125.5"
             y="2927.7"
@@ -102688,9 +102683,7 @@
             letter-spacing="8"
             opacity="0.30"
             data-id="C-06"
-          >
-            Žemličkova čtvrť
-          </text>
+          ></text>
           <text
             x="3038.2"
             y="1724.0"
@@ -105748,7 +105741,7 @@
 
     <script>
 (async()=>{
-const svg = document.querySelector("#map > svg");
+const svg = document.querySelector("#map svg");
       const REG = await (await fetch('cp_objects.public.json')).json();
       const BYID = Object.fromEntries(REG.objects.map((o) => [o.id, o]));
       svg.querySelectorAll("[data-id]").forEach((el) => {
@@ -105906,7 +105899,7 @@ const svg = document.querySelector("#map > svg");
         );
       }
       function show(id){const o=BYID[id],box=document.getElementById('info');if(!o){box.textContent='Objekt se nepodařilo najít.';return}highlight(id);document.getElementById('layer-settings').open=false;svg.querySelectorAll('text[data-id="'+CSS.escape(o.id)+'"]').forEach(el=>el.textContent=o.name_cs);let h='<p class="place-kicker">'+esc(o.subheading)+'</p><h3>'+esc(o.name_cs)+'</h3>';const translations=[o.name_en?'Anglicky: '+o.name_en:'',o.name_ja?'Japonsky: '+o.name_ja:''].filter(Boolean);if(translations.length)h+='<p class="place-translations">'+esc(translations.join(' · '))+'</p>';h+='<p class="place-lead">'+esc(o.description)+'</p>';if(o.highlights?.length)h+='<section class="place-detail-group"><h4>Zajímavosti</h4><ul>'+o.highlights.map(item=>'<li>'+esc(item)+'</li>').join('')+'</ul></section>';if(o.scenery)h+='<section class="place-detail-group"><h4>Scenerie</h4><p>'+esc(o.scenery)+'</p></section>';if(o.atmosphere)h+='<section class="place-detail-group"><h4>Místní charakter</h4><p>'+esc(o.atmosphere)+'</p></section>';if(o.nearby?.length)h+='<section class="place-detail-group"><h4>V okolí</h4><ul class="nearby-list">'+o.nearby.map(n=>'<li><button type="button" class="nearby-place" data-zoom-id="'+esc(n.id)+'">'+esc(n.name_cs)+'</button><span>'+esc(n.direction_cs)+' · '+(n.distance_km<1?Math.round(n.distance_km*100)*10+' m':Number(n.distance_km).toLocaleString('cs-CZ',{maximumFractionDigits:1})+' km')+'</span></li>').join('')+'</ul></section>';if(o.planCoordinates)h+='<p class="place-coordinate">Souřadnice v plánu: '+esc(o.planCoordinates)+'</p>';h+='<p><button class="small" data-zoom-id="'+esc(o.id)+'">Zobrazit na mapě</button></p>';box.innerHTML=h}
-document.getElementById('info').addEventListener('click',e=>{const b=e.target.closest('[data-zoom-id]');if(b&&BYID[b.dataset.zoomId])selectObject(b.dataset.zoomId)});map.addEventListener('keydown',e=>{const feature=e.target.closest?.('[data-id][tabindex="0"]');if(feature&&BYID[feature.dataset.id]&&(e.key==='Enter'||e.key===' ')){e.preventDefault();selectObject(feature.dataset.id)}});
+document.getElementById('info').addEventListener('click',e=>{const b=e.target.closest('[data-zoom-id]');if(b&&BYID[b.dataset.zoomId])selectObject(b.dataset.zoomId)});
 function addFutureDevelopment() {
         if (svg.getElementById("future-development")) return;
         const layer = document.createElementNS(

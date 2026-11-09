@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "mode": "demo",
+  "rounds": [
+    { "id": "DEMO_01", "publicNumber": 1, "targetPlaceId": "SP-01", "photoExternal": true },
+    { "id": "DEMO_02", "publicNumber": 2, "targetPlaceId": "DAM-N04", "photoExternal": true },
+    { "id": "DEMO_03", "publicNumber": 3, "targetPlaceId": "T-01", "photoExternal": true },
+    { "id": "DEMO_04", "publicNumber": 4, "targetPlaceId": "PL-01", "photoExternal": true }
+  ]
+}

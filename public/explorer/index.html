@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#173b31" />
+    <meta name="description" content="Čtyřkolová místní geografická expedice po Larpidii. Hrajte přímo ve skutečném atlasu." />
+    <title>Larpidia Explorer</title>
+    <link rel="stylesheet" href="../site-brand.css" />
+    <link rel="stylesheet" href="explorer.css" />
+    <script src="scoring.js" defer></script>
+    <script src="explorer.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">L</span><span>Larpidie <small>Explorer</small></span></a>
+      <nav aria-label="Odkazy"><a href="../atlas/current/viewer/atlas.html" target="_blank" rel="noreferrer">Otevřít běžný atlas ↗</a><a href="../index.html">Zpět na web</a></nav>
+    </header>
+
+    <main>
+      <section class="panel intro" id="intro-panel" aria-labelledby="intro-title">
+        <p class="eyebrow">Čtyři kola · jedno souostroví</p>
+        <h1 id="intro-title">Larpidia Explorer</h1>
+        <p class="lead">Vydejte se po stopách ostrovů a zkuste najít místa z fotografií na tabuli.</p>
+        <p class="demo-flag" id="mode-label">Zkušební expedice · ukázkové cíle z veřejného atlasu</p>
+        <div class="instructions">
+          <h2>Jak hrát</h2>
+          <p>Sledujte fotografie na tabuli. Najděte místo v atlasu, označte odhad a potvrďte odpověď. Čekají vás čtyři kola.</p>
+          <p>Fotografie zůstávají na projektoru. Čas na odpověď není omezený; můžete hledat i po změně snímku.</p>
+          <p>Každé kolo přináší až 5&nbsp;000 bodů. Skóre a jméno týmu se ukládají pouze v tomto zařízení a nikam se neodesílají.</p>
+        </div>
+        <label class="team-field" for="team-name">Název týmu <span>nepovinné, jen pro toto zařízení</span><input id="team-name" maxlength="32" autocomplete="off" placeholder="Náš tým" /></label>
+        <button class="primary" id="start-button" type="button">Začít expedici</button>
+        <p class="privacy-note">4 kola · až 20&nbsp;000 bodů · odpovědi zůstávají jen na vašem zařízení</p>
+        <div id="storage-warning" class="notice" role="status" hidden></div>
+      </section>
+
+      <section class="game" id="game-panel" hidden aria-labelledby="round-heading">
+        <div class="game-heading">
+          <div><p class="eyebrow" id="round-kicker">Expedice</p><h1 id="round-heading">Kolo 1/4</h1></div>
+          <div class="score-chip"><span>Průběžně</span><strong id="live-score">0 / 20 000</strong></div>
+        </div>
+        <div class="callout"><span class="callout-dot" aria-hidden="true"></span><div><strong id="round-prompt">Podívejte se na tabuli</strong><span>Fotografie je na projektoru. V této hře se žádný snímek nezobrazuje.</span></div></div>
+        <div class="map-shell">
+          <div class="map-toolbar" aria-label="Ovládání mapy">
+            <button type="button" id="zoom-in" aria-label="Přiblížit mapu">+</button>
+            <button type="button" id="zoom-out" aria-label="Oddálit mapu">−</button>
+            <button type="button" id="reset-view">Celé souostroví</button>
+            <span class="map-hint" id="map-hint">Klepnutím vložte tip · tažením posouvejte · dvojitým klepnutím přibližte</span>
+          </div>
+          <div id="map-viewport" class="map-viewport" tabindex="0" role="application" aria-label="Interaktivní mapa Larpidie a Paralandu. Klepnutím umístíte tip, šipkami posunete kurzor a Enterem jej vložíte.">
+            <div class="map-loading" id="map-loading">Načítám veřejný atlas…</div>
+          </div>
+          <div class="map-legend" id="map-legend" hidden><span class="legend-guess">Váš odhad</span><span class="legend-target">Správné místo</span></div>
+        </div>
+        <div class="round-result" id="round-result" hidden aria-live="polite">
+          <div class="result-numbers"><div><span>Váš odhad</span><strong id="result-guess">—</strong></div><div><span>Správné místo</span><a id="result-place" class="result-place-link" target="_blank" rel="noopener">—</a><small id="result-description"></small></div></div>
+          <div class="result-score"><div><span>Vzdálenost</span><strong id="result-distance">—</strong></div><div><span>Body za kolo</span><strong id="result-points">—</strong></div></div>
+        </div>
+        <div class="action-bar" id="action-bar">
+          <span id="pin-status" role="status">Tip zatím není označen</span>
+          <div class="actions"><button class="skip-button" id="skip-button" type="button">Přeskočit kolo (0 bodů)</button><button class="primary" id="confirm-button" type="button" disabled>Potvrdit odpověď</button></div>
+        </div>
+        <div class="action-bar result-actions" id="result-actions" hidden><span id="round-total-label">Body za kolo</span><button class="primary" id="next-button" type="button">Další kolo</button></div>
+      </section>
+
+      <section class="panel summary" id="summary-panel" hidden aria-labelledby="summary-title">
+        <p class="eyebrow">Výprava dokončena</p><h1 id="summary-title">Výsledky expedice</h1>
+        <p class="team-result" id="team-result"></p>
+        <p class="big-score"><strong id="final-score">0</strong><span>/ 20&nbsp;000 bodů</span></p>
+        <p class="summary-copy">Skvělé objevování! Až se vás přednášející zeptají, můžete svůj výsledek ukázat nebo říct nahlas. Nikam se automaticky neodesílá.</p>
+        <div class="breakdown" id="breakdown"></div>
+        <div class="summary-actions"><button class="primary" id="new-game-button" type="button">Nová expedice</button><a class="secondary" href="../index.html">Zpět na web</a><a class="secondary" href="../atlas/current/viewer/atlas.html" target="_blank" rel="noreferrer">Otevřít atlas</a></div>
+        <div id="summary-storage-warning" class="notice" role="status" hidden></div>
+      </section>
+
+      <section class="score-scene" id="score-scene" role="dialog" aria-modal="true" aria-labelledby="score-scene-title" hidden>
+        <div class="score-scene__stage" id="score-scene-stage">
+          <div class="score-scene__character" id="score-fox" aria-hidden="true">
+            <svg class="pixel-art" viewBox="0 0 160 160" role="img" aria-label="Pixelová liška pirát">
+              <path fill="#701d1b" d="M24 48 8 12l40 16 28-16 26 16 42-14-16 46v48H28V62Z"/>
+              <path fill="#c84c32" d="M32 46 22 25l27 13 26-15 23 15 31-12-12 31v50H36V57Z"/>
+              <path fill="#f1c190" d="M42 61h18v-9h30v9h19v25H96v18H54V91H42Z"/>
+              <path fill="#fff4df" d="M52 49h18v18H52Z"/><path fill="#17191b" d="M57 53h9v10h-9Z"/>
+              <path fill="#19191b" d="M82 47h28v28H82Z"/><path fill="#33363a" d="M88 52h17v18H88Z"/>
+              <path fill="#f1c190" d="M107 69h26v17h-26Z"/><path fill="#291d1b" d="M121 76h6v4h-6Z"/>
+              <path fill="#7f281f" d="M49 104h57v17H49Z"/><path fill="#d3a15d" d="M45 121h13v22H45Zm53 0h13v22H98Z"/>
+              <path fill="#bfc6c4" d="M108 113h13v8h-7v20h-8v-22Z"/><path fill="#492b24" d="M39 139h25v9H39Zm54 0h25v9H93Z"/>
+              <path fill="#f5d6a6" d="M68 83h9v5h-9Z"/>
+            </svg>
+          </div>
+          <div class="score-scene__character" id="score-flower" aria-hidden="true" hidden>
+            <svg class="sunflower-art" viewBox="0 0 160 180" role="img" aria-label="Usměvavá slunečnice">
+              <path fill="#3f9b48" d="M76 97h10v68H76Z"/><path fill="#58b84c" d="M78 132c-29-2-38-17-39-34 20 0 35 9 42 25Zm7-17c9-22 25-29 43-26-5 19-18 30-39 34Z"/>
+              <g fill="#ffd43b"><ellipse cx="81" cy="35" rx="14" ry="24"/><ellipse cx="81" cy="91" rx="14" ry="24"/><ellipse cx="53" cy="63" rx="24" ry="14"/><ellipse cx="109" cy="63" rx="24" ry="14"/><ellipse cx="61" cy="43" rx="14" ry="22" transform="rotate(-45 61 43)"/><ellipse cx="101" cy="43" rx="14" ry="22" transform="rotate(45 101 43)"/><ellipse cx="61" cy="83" rx="14" ry="22" transform="rotate(45 61 83)"/><ellipse cx="101" cy="83" rx="14" ry="22" transform="rotate(-45 101 83)"/></g>
+              <circle cx="81" cy="63" r="29" fill="#8d4b27"/><circle cx="70" cy="59" r="4" fill="#fff7d0"/><circle cx="92" cy="59" r="4" fill="#fff7d0"/><path d="M69 72q12 13 24 0" fill="none" stroke="#fff1bd" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h2 id="score-scene-title">You didn't even try, did you?</h2>
+          <p id="score-scene-copy" class="score-scene__copy">Tahle expedice skončila s méně než 3&nbsp;000 body.</p>
+          <div class="score-scene__actions" id="score-scene-actions">
+            <button class="primary" id="score-did" type="button">I did</button>
+            <button class="secondary" id="score-no" type="button">No...</button>
+          </div>
+          <button class="primary" id="score-return" type="button" hidden>Zpět k výsledkům</button>
+        </div>
+      </section>
+    </main>
+    <footer><span>Fiktivní země, skutečný atlasový podklad.</span><button type="button" id="reset-game" class="quiet">Nová expedice</button></footer>
+  </body>
+</html>

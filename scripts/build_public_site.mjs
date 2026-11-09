@@ -156,15 +156,9 @@ function publicSvg(svg) {
     }
     return match;
   });
-  const settlementFabric = '<defs><pattern id="settlement-fabric" width="520" height="440" patternUnits="userSpaceOnUse"><g fill="#ad876f" opacity=".8"><rect x="23" y="25" width="56" height="25" rx="2"/><rect x="91" y="20" width="46" height="22" rx="2"/><rect x="33" y="61" width="48" height="21" rx="2"/><rect x="221" y="37" width="58" height="25" rx="2"/><rect x="290" y="31" width="48" height="22" rx="2"/><rect x="232" y="72" width="51" height="22" rx="2"/><rect x="383" y="25" width="55" height="24" rx="2"/><rect x="400" y="60" width="48" height="21" rx="2"/><rect x="42" y="171" width="57" height="24" rx="2"/><rect x="112" y="166" width="46" height="21" rx="2"/><rect x="52" y="205" width="50" height="22" rx="2"/><rect x="254" y="183" width="58" height="25" rx="2"/><rect x="324" y="177" width="47" height="22" rx="2"/><rect x="264" y="218" width="51" height="22" rx="2"/><rect x="389" y="178" width="57" height="24" rx="2"/><rect x="400" y="212" width="48" height="21" rx="2"/><rect x="114" y="334" width="56" height="24" rx="2"/><rect x="182" y="329" width="47" height="21" rx="2"/><rect x="124" y="368" width="50" height="22" rx="2"/><rect x="319" y="327" width="56" height="24" rx="2"/><rect x="387" y="322" width="47" height="21" rx="2"/><rect x="329" y="361" width="50" height="22" rx="2"/></g></pattern></defs>';
-  if (result.includes('id="settlements"') && !result.includes('id="settlement-fabric"')) {
-    result = result.replace("</clipPath></defs>", `</clipPath></defs>${settlementFabric}`);
-    result = result.replace(/<path\b[^>]*>/g, (tag) => {
-      const id = tag.match(/\bdata-id="([^"]+)"/)?.[1] || "";
-      return /^(?:C-01|T-0[1-6]|PL-0[135]|HM-0[1-6])$/.test(id)
-        ? tag.replace(/\bfill="[^"]*"/, 'fill="url(#settlement-fabric)"').replace(/\bstroke="[^"]*"/, 'stroke="none"')
-        : tag;
-    });
+  if (result.includes('id="settlements"')) {
+    const urbanAreaStyle = '<style id="urban-area-style">#settlements .pg{fill:#c9aa88!important;fill-opacity:.24!important;stroke:#927554!important;stroke-width:12!important;stroke-opacity:.72!important;stroke-linejoin:round!important;stroke-linecap:round!important}#settlements .pg[data-id="C-01"]{fill:#bc9871!important;fill-opacity:.27!important;stroke:#795d42!important;stroke-width:16!important}#settlements .pg[data-id^="T-"],#settlements .pg[data-id^="PL-"],#settlements .pg[data-id^="HM-"]{fill:#d2b995!important;fill-opacity:.23!important}#settlements .pg[data-id^="I-"]{fill:#c5b28d!important;fill-opacity:.19!important;stroke:#967b58!important}</style>';
+    result = result.replace("</svg>", `${urbanAreaStyle}</svg>`);
   }
   return result;
 }
@@ -430,6 +424,7 @@ if (fs.existsSync(output)) {
 }
 fs.mkdirSync(output, { recursive: true });
 for (const relative of ["index.html", "site.js", "site.css", "site-brand.css", "site-brand.js", "gallery.js", "encyclopedia.js", "project-meta.js", "project-metadata.json", "Larpidie logo.png"]) copy(relative);
+for (const relative of ["explorer/index.html", "explorer/explorer.css", "explorer/explorer.js", "explorer/scoring.js", "explorer/rounds.json"]) copy(relative);
 let publicHome = read("index.html")
   .replace(/\s*<script src="scripts\/dev_media_status\.js" defer><\/script>/, "")
   .replace(/<button\b(?=[^>]*\bclass=["'][^"']*\bmedia-status-trigger\b)[^>]*>[\s\S]*?<\/button\s*>/i, "")
