@@ -8,7 +8,10 @@
     <title>Larpidia Explorer</title>
     <link rel="stylesheet" href="../site-brand.css" />
     <link rel="stylesheet" href="explorer.css" />
+    <link rel="stylesheet" href="access.css" />
     <script src="scoring.js" defer></script>
+    <script src="coordinates.js" defer></script>
+    <script src="access.js" defer></script>
     <script src="explorer.js" defer></script>
   </head>
   <body>
@@ -18,9 +21,45 @@
     </header>
 
     <main>
+      <section class="access-panel" id="access-panel" aria-labelledby="access-title">
+        <div class="access-art" aria-hidden="true">
+          <span class="access-stamp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4M12 14v3"/></svg>Vstup pro týmy</span>
+          <svg class="access-compass" viewBox="0 0 200 200" fill="none">
+            <circle cx="100" cy="100" r="88" stroke="currentColor" opacity=".35"/>
+            <circle cx="100" cy="100" r="73" stroke="currentColor" stroke-dasharray="1 8" stroke-width="3"/>
+            <path d="M100 2v18M100 180v18M2 100h18M180 100h18M38 38l12 12M150 150l12 12M38 162l12-12M150 50l12-12" stroke="currentColor"/>
+            <path d="m100 32 18 68-18 68-18-68Z" fill="#e5c68e" fill-opacity=".18" stroke="currentColor"/>
+            <path d="m100 32 18 68h-18Z" fill="#e5c68e"/>
+            <path d="m100 168-18-68h18Z" fill="#e5c68e" fill-opacity=".5"/>
+            <path d="m56 100 44-12 44 12-44 12Z" stroke="currentColor" opacity=".55"/>
+            <circle cx="100" cy="100" r="5" fill="#173b31" stroke="currentColor"/>
+          </svg>
+          <div class="access-story"><h2>Za každým místem je příběh.</h2><p>Ostrovy, skryté detaily a čtyři místa,<br>která čekají na objevení.</p></div>
+        </div>
+        <div class="access-entry">
+          <p class="eyebrow">Vaše výprava začíná tady</p>
+          <h1 id="access-title">Larpidia Explorer</h1>
+          <p class="access-copy">Připravte svůj tým. Zadejte společné heslo z tabule a vydejte se objevovat Larpidii.</p>
+          <form class="access-form" id="access-form">
+            <label for="access-password">Heslo z tabule</label>
+            <div class="access-password-wrap">
+              <input id="access-password" type="password" autocomplete="current-password" autocapitalize="characters" spellcheck="false" maxlength="128" required placeholder="Zadejte heslo k expedici" aria-describedby="access-hint access-status" />
+              <button class="access-toggle" id="access-toggle" type="button" aria-controls="access-password" aria-pressed="false">Zobrazit</button>
+            </div>
+            <p class="access-hint" id="access-hint">Heslo vám ukážou přednášející na tabuli. Píše se velkými písmeny, ale projde i napsané malými.</p>
+            <p class="access-error" id="access-status" role="alert" hidden></p>
+            <button class="primary access-submit" id="access-submit" type="submit" disabled>Odemknout expedici →</button>
+          </form>
+          <noscript><p class="notice">Pro ověření hesla a hraní Exploreru zapněte JavaScript.</p></noscript>
+          <div class="access-meta"><span>4 kola</span><span>1 souostroví</span><span>Váš tým</span></div>
+          <p class="access-session-note">Odemknutí si zapamatujeme jen v této kartě. Heslo se nikam neodesílá.</p>
+        </div>
+      </section>
+      <p class="notice access-storage-warning" id="access-storage-warning" role="status" hidden></p>
+      <div id="explorer-content" hidden>
       <section class="panel intro" id="intro-panel" aria-labelledby="intro-title">
         <p class="eyebrow">Čtyři kola · jedno souostroví</p>
-        <h1 id="intro-title">Larpidia Explorer</h1>
+        <h1 id="intro-title" tabindex="-1">Larpidia Explorer</h1>
         <p class="lead">Vydejte se po stopách ostrovů a zkuste najít místa z fotografií na tabuli.</p>
         <p class="demo-flag" id="mode-label">Zkušební expedice · ukázkové cíle z veřejného atlasu</p>
         <div class="instructions">
@@ -30,7 +69,7 @@
           <p>Každé kolo přináší až 5&nbsp;000 bodů. Skóre a jméno týmu se ukládají pouze v tomto zařízení a nikam se neodesílají.</p>
         </div>
         <label class="team-field" for="team-name">Název týmu <span>nepovinné, jen pro toto zařízení</span><input id="team-name" maxlength="32" autocomplete="off" placeholder="Náš tým" /></label>
-        <button class="primary" id="start-button" type="button">Začít expedici</button>
+        <button class="primary" id="start-button" type="button" disabled>Začít expedici</button>
         <p class="privacy-note">4 kola · až 20&nbsp;000 bodů · odpovědi zůstávají jen na vašem zařízení</p>
         <div id="storage-warning" class="notice" role="status" hidden></div>
       </section>
@@ -105,7 +144,8 @@
           <button class="primary" id="score-return" type="button" hidden>Zpět k výsledkům</button>
         </div>
       </section>
+      </div>
     </main>
-    <footer><span>Fiktivní země, skutečný atlasový podklad.</span><button type="button" id="reset-game" class="quiet">Nová expedice</button></footer>
+    <footer><span>Fiktivní země, skutečný atlasový podklad.</span><button type="button" id="reset-game" class="quiet" hidden disabled>Nová expedice</button></footer>
   </body>
 </html>

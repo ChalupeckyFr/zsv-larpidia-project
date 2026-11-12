@@ -166,15 +166,15 @@
     "description": "only the first-person right hand and wrist are visible (no face, no body)"
   },
   "photo_style": {
-    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-    "grade": "serene blue-hour grade: indigo to soft pink and a thin orange line at the horizon, low contrast, gentle grain",
-    "imperfections": "slightly soft focus on the far shore, a faint reflection on the cup"
+    "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+    "grade": "Natural iPhone low-light processing: soft contrast, true indigo-to-pink sky without exaggerated saturation, slight noise in the dark sea and rocks, gentle highlights on the harbour lights, no filter, no added grain or vignette, no fake bokeh.",
+    "imperfections": "Natural hand anatomy (five fingers, realistic knuckles and nails, slight redness from the cold), a few drops of coffee on the cup rim, fine scratches on the watch glass, condensation from the breath barely visible, a little sea spray on the railing, slight unevenness of the horizon from handheld framing."
   },
   "canon_notes_cs": [
     "Registr: V-04 Vyhlídka na hrotu poloostrova (bezpečná, s oplocením); Paraland je vidět: PL-05 143° / 2,7 km, H-02 136° / 1,9 km, hrad PL-02 114° / 3,0 km (DEM: LOS ověřeno).",
     "Svítání vpravo od severu (ESE) je realistické pro zimní období (slunce vychází na jihovýchodě)."
   ],
-  "avoid": "no face, no full body, no other people, no phone visible, no brand logos or text on the watch or cup, no boats in the foreground",
+  "avoid": "no face, no full body, no other people, no phone visible, no brand logos or text on the watch or cup, no boats in the foreground, no snow on the ground, no sun disc above the horizon, no castle on the right side",
   "files": {
     "map": "02_MAP_PINS/PHOTO_16_COASTAL_DAWN_HAND_VIEW_map.jpg",
     "prompt": "03_PHOTO_PROMPTS/PHOTO_16_COASTAL_DAWN_HAND_VIEW_prompt.txt",

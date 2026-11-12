@@ -79,16 +79,16 @@
     "description": ""
   },
   "photo_style": {
-    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-    "grade": "warm Lightroom-mobile look: slightly lowered exposure, pulled highlights, subtle golden highlights and cooler blue-grey shadows, moderate grain",
-    "imperfections": "mild vignetting from the phone lens, a tiny lean in the vertical lines"
+    "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+    "grade": "Standard iPhone Smart HDR processing: restrained natural contrast, slightly cool shadows and warm sunlit stone, believable dynamic range (the bright sky above the roofs may clip slightly), fine luminance noise on the shaded side, no filter, no added grain or vignette; a tiny natural lean in the vertical lines from the wide lens.",
+    "imperfections": "Lived-in details: slightly uneven roof and window lines, repaired brickwork with mismatched bricks, a cast-iron drain grate, a few fallen lime leaves stuck to the wet setts, a closed wheelie bin tucked into a side passage, a bicycle leaning against a railing, cracks and small weeds in the pavement joints, condensation on a ground-floor window."
   },
   "canon_notes_cs": [
     "Kánon (approved): anglické a velšské cihlové a kamenné domy, mechem porostlé stěny, zahrady, kostely, romantická náměstí.",
     "Plán CP-01: Tržní ulice (8 m) vede z východu na Kostelní náměstí; kostel CP-B07 je 67 m daleko, domy 2–3 podlaží (modelově 7–10 m).",
     "Viditelnost kostela z bodu ověřena v modelu města (terén + výška domů)."
   ],
-  "avoid": "no people, no cars, no modern shop signs, no neon, no readable text, no skyscrapers, no Mediterranean or Asian architecture",
+  "avoid": "no people, no cars, no modern shop signs or neon, no satellite dishes, no skyscrapers, no Mediterranean, Japanese or theme-park architecture, no spotless surfaces",
   "files": {
     "map": "02_MAP_PINS/PHOTO_03_OLD_LARPINGTON_map.jpg",
     "prompt": "03_PHOTO_PROMPTS/PHOTO_03_OLD_LARPINGTON_prompt.txt",

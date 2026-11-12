@@ -29,9 +29,9 @@ Soubor `content/larpidia/media/assets.json` je společný registr článkových 
 | PHOTO_19 · Terasa s výhledem na moře | `story-photo-19` | `PL-03` · Jižní letovisko Paralandu | chybí: `PHOTO_19.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_19_MANOR_TERRACE_SEA_VIEW_map.jpg) | [prompt](PHOTO_19_MANOR_TERRACE_SEA_VIEW_prompt.txt) | fotografie chybí |
 | PHOTO_20 · Historická ulice za zlaté hodinky | `story-photo-20` | `CP-B08` · Tržní hala | chybí: `PHOTO_20.jpg` | [mapový bod](../02_MAP_PINS/PHOTO_20_HERITAGE_STREET_ELEGANCE_map.jpg) | [prompt](PHOTO_20_HERITAGE_STREET_ELEGANCE_prompt.txt) | fotografie chybí |
 
-Mapový náhled každé scény vede na evidovaný bod kamery; původní prompt zachovává směr záběru, viditelné orientační body, roční dobu a prostorové měřítko podle podkladů. Soubory mapových bodů a pracovní souřadnice jsou neveřejné produkční podklady. Fotografie se považuje za hotovou jen tehdy, když existuje soubor na ověřené cestě v manifestu.
+Mapový náhled každé scény vede na evidovaný bod kamery; prompt zachovává směr záběru, viditelné orientační body, roční dobu a prostorové měřítko podle podkladů. Soubory mapových bodů a pracovní souřadnice jsou neveřejné produkční podklady. Fotografie se považuje za hotovou jen tehdy, když existuje soubor na ověřené cestě v manifestu.
 
-Mapové náhledy scén jsou rovněž evidované v `viewpoint_path`. Jejich zdrojové obrázky obsahují pracovní ID, navržené body kamery a interní souřadnice, proto se do veřejné galerie nekopírují. Původní prompty a metadata níže zůstávají beze změny.
+Mapové náhledy scén jsou rovněž evidované v `viewpoint_path`. Jejich zdrojové obrázky obsahují pracovní ID, navržené body kamery a interní souřadnice, proto se do veřejné galerie nekopírují. Revize realismu: prompty PHOTO 03, 04, 06–11, 13 a 16–20 jsou přepsané tak, aby výsledek vypadal co nejvíce jako skutečná neupravená fotka z iPhonu; PHOTO 07 a 11 jsou nově bez lidí. Prompty PHOTO 01, 02, 05, 12, 14 a 15 zůstávají beze změny.
 
 - [PHOTO 01 · SNOW ABOVE THE PACIFIC](#photo_01) (9:16; M-01)
 - [PHOTO 02 · WATERFALL EXPRESS](#photo_02) (16:9; N-03, ST-L1-03)
@@ -116,21 +116,23 @@ Aspect ratio 16:9.
 ```
 Scene name (for reference only, never to be written in the image): OLD LARPINGTON. Format 16:9.
 
-Create a horizontal 16:9 widescreen smartphone photo. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+Create a horizontal 16:9 widescreen smartphone photo. It must be indistinguishable from a real, unedited photo that an ordinary person took on an Apple iPhone 15 with the main camera (1x, 26 mm-equivalent, f/1.6), standard Apple Photos processing, straight out of camera, with natural human perspective and slightly imperfect everyday framing. Not CGI, not a 3D render, not an illustration, not concept art, not a stock or advertising photo, not a drone shot and not filtered.
 
-SCENE: A narrow, quiet historic lane in the old harbour town of a small island capital with English and Welsh character: two- and three-storey brick houses with slate and terracotta roofs, honey-coloured stone door frames and window sills, white sash windows, moss on the walls and roof ridges, climbing roses and flower boxes, tiny front gardens behind low stone walls, uneven granite-sett paving slightly darker from recent rain. A very small corner café with two wooden chairs and a round table outside and a folded cream awning (no lettering). At the far end of the lane the tower of a historic brick-and-stone parish church with a pitched roof rises over the rooftops in soft morning haze.
+SCENE: An early-morning view straight down a quiet old-town street, about 8 m wide, in the historic harbour quarter of a small island capital founded by English and Welsh settlers around 1600. Both sides are lined with terraced two- and three-storey houses of weathered red-brown brick and honey-coloured sandstone: uneven slate and faded terracotta roofs with lichen and moss on the ridges, white-painted timber sash windows with slightly peeling paint, stone sills and lintels, black cast-iron gutters and downpipes with rust streaks, a few front doors painted muted green and navy. Narrow pavements of worn sandstone flags; the carriageway is uneven grey granite setts with darker damp joints and small shallow puddles from a drizzle that has just stopped. Window boxes and hanging baskets with geraniums, hydrangeas and agapanthus; a young lime tree in a cast-iron tree grille. On the right, a tiny corner café, still closed: two folding wooden chairs leaning against a small round table and a rolled-up cream canvas awning with no lettering. About 70 m ahead the street opens onto a square, and on the right above the rooftops rises the short square tower of the old parish church: brick with sandstone corner stones, a weathered stone parapet and a pitched slate roof, softened by morning haze.
 
-COMPOSITION: Eye-level, one-point perspective down the lane (5 to 8 m wide), slightly off-centre and handheld; the church tower small but clearly readable in the distance; no cars.
+CAMERA AND COMPOSITION: Handheld at standing eye level in the middle of the street, looking west along its axis. One-point perspective, slightly off-centre to the left; the houses converge naturally toward the square; the church tower sits in the upper right part of the frame, small but clearly readable at about 70 m. No cars.
 
-LIGHT AND ATMOSPHERE: Soft early-morning light after a light drizzle: gentle warm glow on the upper facades, cooler shade in the lane, damp stone reflecting the sky.
+LIGHT AND WEATHER: Early summer, about 30 minutes after sunrise, right after a light drizzle. The low sun is behind the camera, over the photographer's right shoulder, filtered by thin haze: it lights the east face of the church tower and catches a few chimneys and upper windows, while the street itself is still in cool blue shade. The wet setts reflect the pale sky; damp air with slight haze in the distance.
 
-PHOTO LOOK: warm Lightroom-mobile look: slightly lowered exposure, pulled highlights, subtle golden highlights and cooler blue-grey shadows, moderate grain. Subtle authentic imperfections (only a few, not all at once): mild vignetting from the phone lens, a tiny lean in the vertical lines.
+REALISM DETAILS: Lived-in details: slightly uneven roof and window lines, repaired brickwork with mismatched bricks, a cast-iron drain grate, a few fallen lime leaves stuck to the wet setts, a closed wheelie bin tucked into a side passage, a bicycle leaning against a railing, cracks and small weeds in the pavement joints, condensation on a ground-floor window.
 
-PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+PHOTO PROCESSING: Standard iPhone Smart HDR processing: restrained natural contrast, slightly cool shadows and warm sunlit stone, believable dynamic range (the bright sky above the roofs may clip slightly), fine luminance noise on the shaded side, no filter, no added grain or vignette; a tiny natural lean in the vertical lines from the wide lens.
 
-PLACE AND SCALE: Old Larpington, fictional: a settlement founded by British settlers around 1600 with harbours, churches and market squares; mossy brick and stone, garden-like, houses of two to three floors, narrow lanes.
+PEOPLE: No people anywhere in the frame: no figures, faces, silhouettes, shadows or reflections of people, not even tiny distant ones, and no animals.
 
-AVOID: no people, no cars, no modern shop signs, no neon, no readable text, no skyscrapers, no Mediterranean or Asian architecture. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+PLACE AND SCALE: Old Larpington, the historic core of the fictional island capital of Larpidie in the north-west Pacific, south of Japan: a British-built harbour town that looks comparable to the old towns of Cornwall or the Channel Islands, with mossy brick and stone, gardens, churches and market squares; houses of two to three storeys, narrow streets, nothing taller than the church tower.
+
+AVOID: no people, no cars, no modern shop signs or neon, no satellite dishes, no skyscrapers, no Mediterranean, Japanese or theme-park architecture, no spotless surfaces. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs, number plates or lettering, interface overlays, borders or frames. Avoid typical AI-image tells: waxy or plastic textures, over-smoothed surfaces, warped or melting architecture, inconsistent perspective, impossible scale, duplicated objects, malformed hands, HDR halos, oversaturated colours, glowing skies, cinematic colour grading, fake bokeh or tilt-shift blur, heavy vignette and gibberish lettering.
 
 Aspect ratio 16:9.
 ```
@@ -143,21 +145,23 @@ Aspect ratio 16:9.
 ```
 Scene name (for reference only, never to be written in the image): LARPINGTON OLD HARBOUR. Format 16:9.
 
-Create a horizontal 16:9 widescreen smartphone photo. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+Create a horizontal 16:9 widescreen smartphone photo. It must be indistinguishable from a real, unedited photo that an ordinary person took on an Apple iPhone 15 with the main camera (1x, 26 mm-equivalent, f/1.6), standard Apple Photos processing, straight out of camera, with natural human perspective and slightly imperfect everyday framing. Not CGI, not a 3D render, not an illustration, not concept art, not a stock or advertising photo, not a drone shot and not filtered.
 
-SCENE: The old working harbour of a small island capital, now elegant and calm: a weathered stone quay and a wide cream-stone promenade lined with former brick-and-stone harbour warehouses and a customs house converted into cafés (large arched doors and windows, black-painted ironwork, hanging lanterns, no readable signage). Small wooden fishing boats and two white sailing dinghies are moored in the green-blue harbour basin; iron bollards, coiled ropes, a stack of wooden crates. Behind the quay the old town rises with terracotta roofs and a church spire, and a long stone breakwater closes the harbour in the far distance.
+SCENE: The historic inner harbour of a small island capital on a late-summer afternoon. A wide promenade of worn cream sandstone slabs runs along a granite quay wall. On the left, a continuous row of old brick-and-stone harbour warehouses and a dignified two-storey customs house of pale stone, now cafés and small shops: tall round-arched ground-floor openings with dark green timber frames, black-painted iron canopies, hanging lanterns, folded parasols and stacked bistro chairs, no readable signage. On the right, the calm green-grey harbour basin with about a dozen small boats: wooden and fibreglass fishing boats with blue and white hulls and two small white sailing dinghies, old tyres used as fenders, mooring ropes running to cast-iron bollards. Ahead, the promenade leads to a short stone pier and a low ferry terminal building; beyond the basin lies the long dark line of a granite breakwater with a small white harbour light at its end, and the open bay hazy behind it. Behind the warehouses, terracotta and slate roofs of the old town climb gently, with one slender church spire.
 
-COMPOSITION: Eye-level from the quay, looking east along the promenade with the water on the right and the old town on the left; the quay edge as a leading line; boats in the mid-ground; harbour entrance and breakwater small in the distance.
+CAMERA AND COMPOSITION: Handheld at eye level near the quay edge, looking east-north-east along the promenade. The quay edge forms a strong leading line from the lower right corner; the warehouses fill the left third, the water the right third; the pier, ferry terminal and breakwater are small in the distance near the centre.
 
-LIGHT AND ATMOSPHERE: Warm afternoon sun from the right, raking light on the stone, soft long shadows, light haze over the water.
+LIGHT AND WEATHER: Late summer, about 3:30 in the afternoon, clear sky with light haze over the bay. The sun is behind the photographer, so the facades are evenly front-lit in warm light and the short shadows of bollards and lamp posts point away from the camera; the water has small ripples with soft reflections of the boats.
 
-PHOTO LOOK: warm natural, slightly lifted shadows, gentle contrast, teal-green water, a restrained Apple Photos 'vivid warm' feel. Subtle authentic imperfections (only a few, not all at once): a tiny lens flare from the sun side, slightly crooked horizon.
+REALISM DETAILS: Salt stains and a band of green algae along the waterline of the quay wall, rusty iron mooring rings set into the stone, coiled ropes, a few lobster pots and a stack of weathered plastic fish crates, bird droppings on a bollard, slightly uneven paving, an orange life ring on a post (no lettering), patched render on one warehouse, a little floating seaweed.
 
-PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+PHOTO PROCESSING: Standard iPhone Smart HDR: natural and slightly warm, true-to-life teal-green water, moderate contrast, a believable pale-blue hazy sky (not artificially deep blue), no filter; slight chromatic fringing on high-contrast edges near the frame corners.
 
-PLACE AND SCALE: Larpington Old Harbour, fictional: a historic harbour protected by two stone breakwaters, a basin with small boats, a promenade with boutiques and cafés; English-style brick and stone.
+PEOPLE: No people anywhere in the frame: no figures, faces, silhouettes, shadows or reflections of people, not even tiny distant ones, and no animals.
 
-AVOID: no people, no large ships, no cranes or containers (this is the historic harbour, not the cargo port), no readable text, no superyacht luxury. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+PLACE AND SCALE: Larpington Old Harbour, fictional: the historic harbour of the capital of Larpidie (north-west Pacific, south of Japan), protected by two stone breakwaters against southern typhoon swell; a basin for small boats and a promenade with cafés and small shops in English-style brick and stone. The large cargo port is elsewhere and not in view.
+
+AVOID: no people, no large ships, no cranes, containers or industrial port, no superyachts, no readable boat names or signs, no tropical palm-beach look. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs, number plates or lettering, interface overlays, borders or frames. Avoid typical AI-image tells: waxy or plastic textures, over-smoothed surfaces, warped or melting architecture, inconsistent perspective, impossible scale, duplicated objects, malformed hands, HDR halos, oversaturated colours, glowing skies, cinematic colour grading, fake bokeh or tilt-shift blur, heavy vignette and gibberish lettering.
 
 Aspect ratio 16:9.
 ```
@@ -197,21 +201,23 @@ Aspect ratio 9:16.
 ```
 Scene name (for reference only, never to be written in the image): PARALAND MARINA. Format 16:9.
 
-Create a horizontal 16:9 widescreen smartphone photo. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+Create a horizontal 16:9 widescreen smartphone photo. It must be indistinguishable from a real, unedited photo that an ordinary person took on an Apple iPhone 15 with the main camera (1x, 26 mm-equivalent, f/1.6), standard Apple Photos processing, straight out of camera, with natural human perspective and slightly imperfect everyday framing. Not CGI, not a 3D render, not an illustration, not concept art, not a stock or advertising photo, not a drone shot and not filtered.
 
-SCENE: A small summer marina on a resort island seen from the end of a wooden pier: white and wooden pleasure boats and small sailing yachts moored along floating pontoons on both sides, clear turquoise-green water with visible sandy bottom and seagrass; ahead a stone-and-timber promenade with a row of low whitewashed and pastel two-storey houses and restaurants with empty terrace tables and furled parasols, a small ferry terminal building, a short rock breakwater on the left; behind the village low green hills with the faint silhouette of a stone castle on a hilltop in the haze.
+SCENE: A small leisure marina on a quiet resort island in midsummer, seen from the outer end of the middle of three wooden pontoons. About fifteen modest boats are moored on both sides: small white sailing yachts of 7 to 10 m with furled sails and blue sail covers, a few open motor boats and wooden day boats, fenders squeezed against the pontoon, mooring lines slack on the cleats. The water is clear and calm: turquoise over a pale sandy bottom with patches of dark seagrass. Toward the shore, a low promenade of stone and timber with a row of whitewashed and soft pastel two-storey houses with terracotta roofs, a small single-storey ferry terminal with a canopy at one end, restaurant terraces with empty tables and closed cream parasols, potted oleanders. A short breakwater of rough grey boulders closes the marina on the left. Behind the village rise low, rounded green hills with scrub and pines, and on a hill slightly right of centre, about 1.4 km away, stands a small pale stone castle, softened by haze.
 
-COMPOSITION: Eye-level on the pier looking back toward the shore, the converging pier boards as a leading line, boats in the foreground, village and hills layered behind.
+CAMERA AND COMPOSITION: Handheld at standing height on the pontoon, looking east-north-east back toward the shore. The converging pontoon boards and cleats lead from the bottom edge to the promenade; boats frame both sides; the village and hills are layered behind, the castle small and slightly right of centre.
 
-LIGHT AND ATMOSPHERE: Bright sunny midday summer light, a few small cumulus clouds, crisp shadows, natural saturated water; slight haze over the hills.
+LIGHT AND WEATHER: Bright midsummer midday: high sun from the right, short hard shadows, sparkling highlights on the water, a few small cumulus clouds over the hills, light haze softening the hills.
 
-PHOTO LOOK: bright natural smartphone HDR, clean blues and teal, slightly lifted shadows, light grain, not oversaturated. Subtle authentic imperfections (only a few, not all at once): gentle sun glare on the water and a faint halo around the brightest highlights.
+REALISM DETAILS: Weathered silver-grey pontoon boards with nail heads and salt stains, a water-and-power pedestal on the pontoon with a coiled hose, frayed rope ends, algae on the pontoon floats, small scuffs and waterline stains on the hulls, uneven pastel paint with damp patches at the base of the houses, a few floating leaves.
 
-PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+PHOTO PROCESSING: Bright natural iPhone HDR: clean whites without halos, realistic turquoise water (not neon), slightly lifted shadows, no filter; a little specular glare on the water and a mild flare from the brightest reflections.
 
-PLACE AND SCALE: Paraland, a small fictional tourist island of Larpidie: a leisure marina with two breakwaters and three piers, low houses, a hilltop castle in the background.
+PEOPLE: No people anywhere in the frame: no figures, faces, silhouettes, shadows or reflections of people, not even tiny distant ones, and no animals.
 
-AVOID: no people, no large yachts or superyachts, no signage text, no high-rise buildings. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+PLACE AND SCALE: Paraland, a small fictional resort island of Larpidie in the north-west Pacific: a leisure marina with three pontoons and two breakwaters, a harbour village of low houses and a small terminal for the passenger boat to the capital; a small castle stands on a hill about 1.4 km to the east. Everything is small-scale and quiet.
+
+AVOID: no people, no superyachts or cruise ships, no high-rise hotels, no readable boat names or signs, no Caribbean palm-lined resort look, no neon-turquoise water. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs, number plates or lettering, interface overlays, borders or frames. Avoid typical AI-image tells: waxy or plastic textures, over-smoothed surfaces, warped or melting architecture, inconsistent perspective, impossible scale, duplicated objects, malformed hands, HDR halos, oversaturated colours, glowing skies, cinematic colour grading, fake bokeh or tilt-shift blur, heavy vignette and gibberish lettering.
 
 Aspect ratio 16:9.
 ```
@@ -224,21 +230,23 @@ Aspect ratio 16:9.
 ```
 Scene name (for reference only, never to be written in the image): PARALAND CASTLE RUINS. Format 9:16.
 
-Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must be indistinguishable from a real, unedited photo that an ordinary person took on an Apple iPhone 15 with the main camera (1x, 26 mm-equivalent, f/1.6), standard Apple Photos processing, straight out of camera, with natural human perspective and slightly imperfect everyday framing. Not CGI, not a 3D render, not an illustration, not concept art, not a stock or advertising photo, not a drone shot and not filtered.
 
-SCENE: A vertical photo of exactly one person standing on a safe, stone-edged gravel path in front of an old ruined medieval stone castle on a hillside: a broken round tower missing the top third, crumbling curtain walls with empty arched window openings, moss and ivy on the stones, long grass with small white and yellow wildflowers, a few wind-bent pines. The person is small in the frame (about one tenth of the image height).
+SCENE: An empty heritage footpath through low pine and scrub woodland opens onto a grassy hilltop, with an old ruined stone castle about 160 m ahead. The ruin: the lower two thirds of a round keep built of rough grey-brown local stone and lime mortar, its top broken off unevenly; fragments of curtain walls 3 to 6 m high with empty arched window openings and a collapsed gateway; ivy and moss on the shaded faces, small ferns and wallflowers growing from the joints, a few fallen blocks lying in the grass. In the foreground: a narrow path of compacted gravel and exposed bedrock edged with loose stones, worn in the middle, crossed by pine roots; long fresh spring grass with small white and yellow wildflowers (daisies, buttercups); a few wind-bent pines on both sides. To the right of the ruin, a thin strip of grey-blue sea is visible on the horizon between the trees.
 
-COMPOSITION: Portrait; the path leads from the bottom edge into the middle distance, the person on the left third, the ruined tower dominating the upper right, a patch of sky above; no fences or barriers in view.
+CAMERA AND COMPOSITION: Handheld at standing eye level on the path, looking east. Portrait; the path enters from the bottom edge and leads up toward the ruin; the keep stands in the upper middle right of the frame, the pines frame both sides, a patch of bright grey sky above.
 
-LIGHT AND ATMOSPHERE: Soft spring overcast with a bright break in the clouds, gentle shadows; quiet, slightly melancholic mood.
+LIGHT AND WEATHER: Spring midday under a bright, high overcast with a thinner, brighter patch in the clouds: soft, even light with faint shadows, the stone matte and slightly damp; a quiet, slightly melancholic mood.
 
-PHOTO LOOK: muted, slightly cool, soft contrast, desaturated stone against fresh green grass, light grain. Subtle authentic imperfections (only a few, not all at once): slightly soft corners, a tiny horizon tilt.
+REALISM DETAILS: Stones of irregular size and colour, mortar washed out of the joints, patches of grey and yellow lichen, dry pine needles and a few cones on the path, a small puddle in a rut, grass trampled short near the walls, reddish-brown soil showing at the path edges.
 
-PEOPLE: Exactly one person in the frame: one adult in a light-coloured rain jacket, dark trousers and a small daypack, seen from behind or three-quarter back, face not visible, looking up at the ruin. Natural anatomy, natural clothing, correct proportions and cast shadows. No other persons anywhere, not even tiny distant figures.
+PHOTO PROCESSING: Natural iPhone processing: soft contrast, muted slightly cool colours, real fresh spring green (not neon), a plain bright grey sky without invented detail, fine noise in the shaded pines, no filter, no added vignette; slightly soft corners.
 
-PLACE AND SCALE: Paraland, a small fictional island: the ruin of an old stone castle above the historic old town; low hills, scrub and pines (the hill is only about 55 m high).
+PEOPLE: No people anywhere in the frame: the path is empty; no figures, faces, silhouettes, shadows or reflections of people, not even tiny distant ones, and no animals.
 
-AVOID: no signs, no tourists, no fences, no readable text, no fantasy castle, no dragons. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+PLACE AND SCALE: Paraland, a small fictional island of Larpidie: the ruin of an old stone castle on a low hill (only about 55 m above the sea) above the island's historic old town, on the heritage trail from the old town past the ruin to the newer castle. Modest scale: a small medieval-style ruin, not a huge fortress.
+
+AVOID: no people, no tourists, no signs or information boards, no fences, no fantasy or fairy-tale castle, no dramatic cliffs, no flags, no dragons. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs, number plates or lettering, interface overlays, borders or frames. Avoid typical AI-image tells: waxy or plastic textures, over-smoothed surfaces, warped or melting architecture, inconsistent perspective, impossible scale, duplicated objects, malformed hands, HDR halos, oversaturated colours, glowing skies, cinematic colour grading, fake bokeh or tilt-shift blur, heavy vignette and gibberish lettering.
 
 Aspect ratio 9:16.
 ```
@@ -251,21 +259,23 @@ Aspect ratio 9:16.
 ```
 Scene name (for reference only, never to be written in the image): MIDNIGHT JESKO. Format 9:16.
 
-Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must be indistinguishable from a real, unedited photo that an ordinary person took on an Apple iPhone 15 with the main camera (1x, 26 mm-equivalent, f/1.6), standard Apple Photos processing, straight out of camera, with natural human perspective and slightly imperfect everyday framing. Not CGI, not a 3D render, not an illustration, not concept art, not a stock or advertising photo, not a drone shot and not filtered.
 
-SCENE: A black Koenigsegg Jesko hypercar with subtle gold accents (gold wheels and thin gold trim), parked, stationary and switched off, on an empty paved lay-by of a mountain viewpoint at night, seen from a low three-quarter front angle; the glossy black bodywork carries soft reflections of distant city lights. Beyond a low stone parapet the valley falls away and, about 4 km away across the plain and along the coast, the warm lights of a harbour city glitter, with a few red and white ship lights at sea under a deep navy sky.
+SCENE: A black Koenigsegg Jesko hypercar with subtle gold-coloured wheels and a thin gold pinstripe, parked, stationary and switched off with no lights on, on an empty asphalt lay-by beside a quiet hill road near a reservoir dam at night. Authentic Jesko proportions seen from a low front three-quarter angle: a very low, wide mid-engine body, teardrop glass canopy, closed doors, a large front splitter with small canards, deep side air intakes and a long tail with the huge swan-neck rear wing on two pylons. The glossy black paint carries soft, slightly distorted reflections of the city lights and the dark sky; a thin film of dew on the windscreen. Behind the car, beyond a galvanised steel crash barrier and a strip of dark farmland, the land falls gently to a wide coastal plain: about 4 km away the warm sodium-orange and white lights of a low-rise harbour city spread across the plain in a glittering band, with brighter clusters at the harbour on the right, a dark bay beyond it, and a few tiny red and green navigation lights at sea. Clear deep-navy sky with a faint orange-grey city glow at the horizon and a few stars.
 
-COMPOSITION: Portrait; camera low (about 1 m); the car fills the lower two thirds slightly left of centre, the city lights form a soft glittering band in the upper third; the long tail and large rear wing are visible; the licence plate is blank or not visible.
+CAMERA AND COMPOSITION: Handheld in Night mode with the camera low, about 80 cm above the ground, looking east-south-east. Portrait; the car fills the lower half slightly left of centre; the city lights form a band across the upper third; the number-plate area is blank or out of view.
 
-LIGHT AND ATMOSPHERE: Night: only ambient city glow and a faint sky glow on the horizon, a hint of rim light on the car's edges; deep shadows are allowed.
+LIGHT AND WEATHER: Late summer, about two hours after sunset, clear and dry with light haze near the horizon. The car is lit only by the ambient glow of the city, the sky and one distant warm street lamp from the left; deep shadows are allowed; no flash, no studio light.
 
-PHOTO LOOK: dark and moody, slightly underexposed, visible fine night-mode noise, bokeh on distant lights, teal-black shadows with warm gold highlights. Subtle authentic imperfections (only a few, not all at once): faint bloom around the brightest lights, soft detail in the deep shadows.
+REALISM DETAILS: Real night-photo behaviour: fine colour noise in the shadows, slight smearing from Night-mode processing in the darkest areas, a small flare ghost from the street lamp, slightly blown highlights in the brightest city lights, coarse asphalt texture with a worn white edge line, dry grass tufts at the foot of the crash barrier, a little road dust and a few water spots on the lower bodywork.
 
-PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+PHOTO PROCESSING: Dark and moody but true-to-life iPhone Night-mode photo: slightly underexposed, neutral-to-cool shadows, warm sodium-orange city lights, the gold accents catching only small highlights, no teal-and-orange grade, no light trails.
 
-PLACE AND SCALE: Larpidie, fictional island nation: a safe viewpoint with a stone parapet in the western hills, about 80 m above the plain, looking toward the harbour city of Larpington.
+PEOPLE: No people anywhere in the frame: no figures, faces, silhouettes, shadows or reflections of people, not even tiny distant ones, and no animals.
 
-AVOID: no people, no driving or motion blur, no other cars, no readable text, no logos other than the car's own shape; keep authentic Jesko proportions (low wide body, huge rear wing, long tail). No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+PLACE AND SCALE: Larpidie, fictional island nation in the north-west Pacific: a safe lay-by next to the viewpoint at a reservoir dam in the western hills, about 80 m above the coastal plain, looking at the small capital Larpington and its bay 4 to 6 km away; the city is low-rise with no skyscrapers.
+
+AVOID: no people, no driving, no motion blur or light trails, no other cars, no headlights or tail lights on, no badges or logos other than the car's own shape, no readable number plate, no skyscrapers, no distorted car proportions. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs, number plates or lettering, interface overlays, borders or frames. Avoid typical AI-image tells: waxy or plastic textures, over-smoothed surfaces, warped or melting architecture, inconsistent perspective, impossible scale, duplicated objects, malformed hands, HDR halos, oversaturated colours, glowing skies, cinematic colour grading, fake bokeh or tilt-shift blur, heavy vignette and gibberish lettering.
 
 Aspect ratio 9:16.
 ```
@@ -278,21 +288,23 @@ Aspect ratio 9:16.
 ```
 Scene name (for reference only, never to be written in the image): GOLDEN HOUR SUMMIT REST. Format 9:16.
 
-Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must be indistinguishable from a real, unedited photo that an ordinary person took on an Apple iPhone 15 with the main camera (1x, 26 mm-equivalent, f/1.6), standard Apple Photos processing, straight out of camera, with natural human perspective and slightly imperfect everyday framing. Not CGI, not a 3D render, not an illustration, not concept art, not a stock or advertising photo, not a drone shot and not filtered.
 
-SCENE: Exactly two young hikers in dark technical outdoor clothing (dark shell jackets, black trousers, dark beanies, small backpacks lying beside them) sit close together on a safe flat rocky outcrop on a grassy mountain shoulder, seen from behind and slightly from the side, looking out over a dark mountain valley in deep shadow with thin mist; far ridges layered in cool blue-grey; the last orange sunlight rakes across the rocks and rim-lights the edges of their jackets and hair.
+SCENE: Two young hikers in dark outdoor clothing (dark shell jackets, black trousers, dark beanies) sit close together on a flat grey rock outcrop on a grassy mountain shoulder, seen from behind and slightly from the side, looking out over a wide valley toward the main mountain range. Two small backpacks and a metal water bottle lie on the rock beside them. In the foreground: tussocky autumn grass turned straw-gold and rust, low bracken gone copper-brown, lichen-covered rocks, a narrow worn footpath. Below, the valley is already in cool blue shadow with thin mist lying along the stream; the forested slopes are a warm-temperate mix of dark cedar and cypress, pines and deciduous trees in autumn colour (orange, yellow, wine red). About 3.3 km away rises a broad, rounded forested mountain of only about 510 m, the second-highest summit of the range; a narrow cleared grassy strip runs down its upper slope like a small ski run (no snow, no lifts visible), and its top is lit warm orange by the last sun.
 
-COMPOSITION: Portrait; the hikers sit in the lower third slightly right of centre, valley and ridges above them; foreground rocks sharp, far ridges soft.
+CAMERA AND COMPOSITION: Handheld, standing a few metres behind the hikers, slightly above them, looking east-north-east. Portrait; the hikers sit in the lower third slightly right of centre, the valley and the lit summit fill the middle, sky in the upper quarter; the foreground rocks are sharp, the distant mountain slightly soft from haze.
 
-LIGHT AND ATMOSPHERE: Golden-hour sunset with the low sun behind and to the left: orange light only on the rocks and the tops of the ridges; the valley below dark; high contrast.
+LIGHT AND WEATHER: Autumn golden hour, about 25 minutes before sunset, clear sky with a few thin high clouds. The low sun is directly behind the camera: the hikers' backs and the rocks are warmly lit, their long shadows stretch forward down the slope toward the valley, and the sunlit tops of the far ridges glow orange while the valley floor lies in shadow; the eastern sky ahead is soft blue fading to pale pink near the horizon. No backlight, no rim light, no sun in the frame.
 
-PHOTO LOOK: intimate, darker sunset look: deep shadows, warm orange highlights, cool blue-grey valley shadows, slightly lowered exposure, mild grain. Subtle authentic imperfections (only a few, not all at once): a trace of lens flare at the top-left edge; backlit people stay dark without perfect detail.
+REALISM DETAILS: Natural, slightly slumped sitting posture, creased jackets, a little mud on the boots, wisps of hair under a beanie, fine dust and lichen on the rock, individual grass blades lit from behind the camera, uneven mist, a power line or small farm track barely visible in the valley.
 
-PEOPLE: Exactly two people in the frame: two young hikers in dark technical outdoor clothing sitting close together, seen from behind and slightly from the side. Natural anatomy, natural clothing, correct proportions and cast shadows. No other persons anywhere, not even tiny distant figures.
+PHOTO PROCESSING: Natural iPhone golden-hour photo: warm but not orange-soaked, believable contrast, slightly cool shadows, clean blue sky, a little noise in the shadowed valley, no filter, no added grain, no vignette.
 
-PLACE AND SCALE: Western mountains of Larpidie, fictional: low forested mountains (the highest peak is about 560 m), grassy shoulders and rock outcrops; modest scale, no giant Alpine or Himalayan peaks.
+PEOPLE: Exactly two people in the frame: two young hikers sitting close together, seen from behind and slightly from the side, faces not visible. Natural anatomy and proportions, real clothing folds, shadows consistent with the sun behind the camera. No other people anywhere, not even tiny distant figures.
 
-AVOID: no extra people, no sharp faces, no logos on clothing, no dramatic Himalayan scale, no tent or camp. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+PLACE AND SCALE: The western mountains of Larpidie, a fictional island nation in the north-west Pacific, south of Japan, with warm summers, distinct seasons and occasional winter snow: low, forested, rounded mountains of 300 to 560 m with grassy shoulders and rock outcrops; modest scale.
+
+AVOID: no extra people, no visible faces, no logos on clothing, no tent or camp, no Alpine or Himalayan scale, no snow-covered peaks, no glaciers, no rim light or backlit silhouettes, no sun in the frame. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs, number plates or lettering, interface overlays, borders or frames. Avoid typical AI-image tells: waxy or plastic textures, over-smoothed surfaces, warped or melting architecture, inconsistent perspective, impossible scale, duplicated objects, malformed hands, HDR halos, oversaturated colours, glowing skies, cinematic colour grading, fake bokeh or tilt-shift blur, heavy vignette and gibberish lettering.
 
 Aspect ratio 9:16.
 ```
@@ -305,21 +317,23 @@ Aspect ratio 9:16.
 ```
 Scene name (for reference only, never to be written in the image): SWISS-INSPIRED MOUNTAIN MEADOW. Format 9:16.
 
-Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must be indistinguishable from a real, unedited photo that an ordinary person took on an Apple iPhone 15 with the main camera (1x, 26 mm-equivalent, f/1.6), standard Apple Photos processing, straight out of camera, with natural human perspective and slightly imperfect everyday framing. Not CGI, not a 3D render, not an illustration, not concept art, not a stock or advertising photo, not a drone shot and not filtered.
 
-SCENE: A narrow footpath winds across a steep green-gold hay meadow dotted with wildflowers in the low mountains; one larger dark-timber mountain chalet with a wide low-pitched roof, wooden balconies and a stone base stands at the meadow edge, with two or three smaller timber barns and sheds nearby; wooden post-and-rail fences follow the slope; dark spruce and fir trees at the edge of the meadow; behind them a rocky grey ridge under a mix of cloud and blue sky.
+SCENE: A sloping early-summer hay meadow in low green mountains. A narrow footpath of trampled grass and bare earth winds from the bottom of the frame up across the meadow, full of wildflowers: white ox-eye daisies, yellow buttercups, purple clover and knapweed, tall grasses with seed heads. Along the path runs a weathered post-and-rail fence of grey timber, partly leaning. About 120 m away at the upper edge of the meadow stands a mountain chalet of dark weathered timber on a rough stone base, with a wide low-pitched roof of grey slate, a wooden balcony with simple carved rails, small windows with white frames and a stack of firewood under the eaves; next to it one or two small timber barns. A small clear brook runs through the meadow in the middle distance in a shallow channel of stones and ferns. Around the meadow grow tall dark Japanese cedars and cypresses mixed with a few broadleaf trees. About 1 km behind rises a rounded grassy summit of about 440 m with a few rocky outcrops, partly covered by a soft cloud shadow.
 
-COMPOSITION: Portrait; the path as an S-curve from the bottom edge toward the chalet in the middle ground, the ridge in the upper third; slightly low camera.
+CAMERA AND COMPOSITION: Handheld at standing eye level on the path, looking north-east. Portrait; the path leads diagonally from the bottom left corner toward the chalet, which sits slightly right of centre in the middle third; the rounded summit and sky fill the top third.
 
-LIGHT AND ATMOSPHERE: Mid-morning summer light with a few breaks of sun and cloud shadows moving across the meadow; clear crisp air.
+LIGHT AND WEATHER: Early summer, mid-morning, mixed sun and fluffy cumulus clouds. The sun is high from the right, lighting the meadow and the chalet's right side, with soft-edged cloud shadows moving across the slope; humid, slightly hazy air in the distance.
 
-PHOTO LOOK: fresh Swiss-style Instagram look: slightly increased contrast, muted greens, warm sunlit grass, cooler shadows. Subtle authentic imperfections (only a few, not all at once): slight haze at the ridge, a faint vignette.
+REALISM DETAILS: Grass moving slightly in the breeze (a little motion softness in the tallest stems), dew still on the shaded grass, moss on the fence posts, a rusty wire on one post, uneven timber on the chalet with darker weathering under the eaves, small mud patches on the path.
 
-PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+PHOTO PROCESSING: Natural iPhone daylight processing: true-to-life greens (not neon), soft highlights on the clouds, moderate contrast, light atmospheric haze on the summit, no filter, no added grain or vignette.
 
-PLACE AND SCALE: Western meadows of Larpidie, fictional: Swiss-inspired mood on a low-mountain scale (hills of 300 to 500 m); no glaciers, no giant peaks.
+PEOPLE: No people anywhere in the frame: no figures, faces, silhouettes, shadows or reflections of people, not even tiny distant ones, and no animals.
 
-AVOID: no people, no cars, no animals, no readable text, no ski lifts. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+PLACE AND SCALE: The western meadows of Larpidie, a fictional island nation in the north-west Pacific with warm, humid summers and distinct seasons: hill pastures and small chalets on a low-mountain scale (300 to 500 m), with Japanese cedar and cypress forest; mood reminiscent of Swiss pastures, but warm-temperate vegetation and modest scale.
+
+AVOID: no people, no cars, no animals, no readable text, no ski lifts, no snow, no glaciers, no giant Alpine peaks, no spruce-only Alpine forest, no perfectly manicured lawn. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs, number plates or lettering, interface overlays, borders or frames. Avoid typical AI-image tells: waxy or plastic textures, over-smoothed surfaces, warped or melting architecture, inconsistent perspective, impossible scale, duplicated objects, malformed hands, HDR halos, oversaturated colours, glowing skies, cinematic colour grading, fake bokeh or tilt-shift blur, heavy vignette and gibberish lettering.
 
 Aspect ratio 9:16.
 ```
@@ -332,21 +346,23 @@ Aspect ratio 9:16.
 ```
 Scene name (for reference only, never to be written in the image): ALPINE-INSPIRED LAKE POSE. Format 9:16.
 
-Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must be indistinguishable from a real, unedited photo that an ordinary person took on an Apple iPhone 15 with the main camera (1x, 26 mm-equivalent, f/1.6), standard Apple Photos processing, straight out of camera, with natural human perspective and slightly imperfect everyday framing. Not CGI, not a 3D render, not an illustration, not concept art, not a stock or advertising photo, not a drone shot and not filtered.
 
-SCENE: Exactly one young man stands on a safe pebbly shore of a calm mountain reservoir in a natural, relaxed pose (one hand in a jacket pocket, the other on a backpack strap), seen in three-quarter side view as he looks across the water. The water is clear and blue-green with soft ripples; across the lake rocky ridges, forested slopes and grassy meadows rise in layers (low mountains of a few hundred metres), hazy in the distance.
+SCENE: An empty pebbly shore of a calm mountain reservoir in summer. In the foreground: rounded grey and ochre pebbles of mixed size, some still wet at the water's edge, a bleached silver-grey piece of driftwood lying diagonally, dry grass tufts and a few small reeds. The water is clear and blue-green, transparent near the shore so that the pebbles on the bottom are visible, then darker further out, with gentle ripples. Along the opposite shore runs a pale band of bare stony bank a few metres high where the water level has dropped, then steep slopes of dense green forest: dark Japanese cedar and cypress, pines and broadleaf trees. At the far left on the shore, the small roofs of a hamlet among trees. In the background, 6 to 8 km away and softened by blue haze, rise the highest mountains of the island, only about 500 to 560 m high, rounded and forested, the higher one on the right.
 
-COMPOSITION: Portrait; the man in the lower-left third at medium distance (about one third of the frame height), pebbles in the foreground, lake and ridges behind.
+CAMERA AND COMPOSITION: Handheld at standing eye level just above the water's edge, looking west-north-west across the lake. Portrait; the pebbles and driftwood fill the lower third, the water the middle, the forested slopes and the hazy mountains the upper part; the horizon slightly above the middle.
 
-LIGHT AND ATMOSPHERE: Clear early-afternoon summer light, soft haze, gentle shadows; the water shows blue-green gradients.
+LIGHT AND WEATHER: Summer, early afternoon, clear sky with a few fair-weather clouds above the mountains. The sun is high from the left, giving bright sparkles on the ripples and crisp short shadows behind the pebbles; the distant mountains are paler in the summer haze.
 
-PHOTO LOOK: alpine-lake-inspired travel look: crisp natural contrast, saturated but realistic blue-green water, slightly cooler shadows. Subtle authentic imperfections (only a few, not all at once): a very slight horizon tilt, mild edge softness.
+REALISM DETAILS: Small algae film on the stones at the waterline, a thin line of dried foam and twigs along the edge, a faint mark of the previous water level on the rocks, uneven tree heights on the slopes, a single dead tree among the green ones.
 
-PEOPLE: Exactly one person in the frame: one young man in a dark technical jacket, grey trail trousers and a small backpack, three-quarter side view, relaxed natural pose. Natural anatomy, natural clothing, correct proportions and cast shadows. No other persons anywhere, not even tiny distant figures.
+PHOTO PROCESSING: Natural iPhone daylight processing: clear but not oversaturated water, realistic greens, a little haze on the distant mountains, believable contrast, no filter, no added grain or vignette; a slight specular glare on the water.
 
-PLACE AND SCALE: Larp Reservoir in Larpidie, fictional: a drinking-water reservoir with a recreational shore, surrounded by low forested hills; alpine-inspired mood but modest scale, no glaciers.
+PEOPLE: No people anywhere in the frame: the shore is empty; no figures, faces, silhouettes, shadows or reflections of people, not even tiny distant ones, and no animals.
 
-AVOID: no other people, no boats, no buildings, no dam wall, no logos, no glaciers, no giant peaks. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+PLACE AND SCALE: Larp Reservoir in Larpidie, a fictional island nation in the north-west Pacific south of Japan: a drinking-water reservoir in low forested hills, with a recreational pebbly shore on its east side; lake and hills of modest, low-mountain scale.
+
+AVOID: no people, no boats, no dam wall, no logos, no glaciers, no snow, no giant Alpine peaks, no turquoise glacier-lake colour, no jetty, no buildings in the foreground. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs, number plates or lettering, interface overlays, borders or frames. Avoid typical AI-image tells: waxy or plastic textures, over-smoothed surfaces, warped or melting architecture, inconsistent perspective, impossible scale, duplicated objects, malformed hands, HDR halos, oversaturated colours, glowing skies, cinematic colour grading, fake bokeh or tilt-shift blur, heavy vignette and gibberish lettering.
 
 Aspect ratio 9:16.
 ```
@@ -386,21 +402,23 @@ Aspect ratio 16:9.
 ```
 Scene name (for reference only, never to be written in the image): THE HIDDEN RIDGE. Format 9:16.
 
-Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must be indistinguishable from a real, unedited photo that an ordinary person took on an Apple iPhone 15 with the main camera (1x, 26 mm-equivalent, f/1.6), standard Apple Photos processing, straight out of camera, with natural human perspective and slightly imperfect everyday framing. Not CGI, not a 3D render, not an illustration, not concept art, not a stock or advertising photo, not a drone shot and not filtered.
 
-SCENE: A view from a safe lookout on a grassy and rocky ridge, looking steeply down to a dark, still reservoir cradled by steep green forested and stony slopes. In the foreground the ridge crest with tussocky grass, grey rocks and a faint footpath; a low, simple timber safety rail at the very edge of the frame; thin mist on the water, a break of pale light across the far slope.
+SCENE: A view from a small natural terrace of rock and grass about 20 m above a dark, still reservoir, looking down and across the water. In the foreground: tussocky autumn grass in olive and straw tones, grey lichen-covered rocks, a faint footpath and, at the very right edge of the frame, a simple weathered timber safety rail with two posts. Below, the steep rocky banks drop at 30 to 45 degrees into the lake: grey stone slabs, scree and clinging shrubs. The water is dark slate-grey and almost mirror-still, with thin bands of mist lying on it. The opposite slopes are covered in dense forest: dark Japanese cedar and cypress, pines and patches of broadleaf trees in muted autumn rust and yellow. Along the far shore, the grey roofs of a tiny hamlet are half hidden in the mist. Higher up on the far slope, one pale break of light where the clouds thin a little.
 
-COMPOSITION: Portrait; a strong diagonal of the ridge from the bottom-left, the lake in the middle, far slopes and cloud at the top; foreground rocks sharp, far slopes soft.
+CAMERA AND COMPOSITION: Handheld at standing eye level at the edge of the terrace, tilted slightly downward, looking west across the lake. Portrait; the foreground rocks and grass fill the lower quarter, the dark water and mist the middle, the far forested slope and the low cloud the upper part.
 
-LIGHT AND ATMOSPHERE: Moody overcast autumn morning with a thin break of pale light; cool tones.
+LIGHT AND WEATHER: Autumn, early morning, fully overcast with low cloud touching the higher ridges. Soft, flat, cool light without shadows; mist on the water and in the folds of the far slope; one faint brighter patch on the far slope where the light breaks through; quiet, moody atmosphere.
 
-PHOTO LOOK: dark muted greens, deep blue-black water, desaturated, lifted blacks, soft grain. Subtle authentic imperfections (only a few, not all at once): a little noise in the shadows, soft haze over the far slope.
+REALISM DETAILS: Dew drops on the grass blades, wet dark rock surfaces, a few fallen leaves caught between the rocks, cracked and grey timber on the rail with a rusty bolt, uneven mist that is thicker in some places than others, small ripples from a fish or a breath of wind in one spot.
 
-PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+PHOTO PROCESSING: Natural iPhone processing on an overcast morning: low contrast, muted cool greens and greys, true dark tones without crushed blacks, a plain grey sky without invented detail, fine noise in the dark water, no filter, no added grain or vignette.
 
-PLACE AND SCALE: Larp Reservoir in the hills of western-central Larpidie, fictional: a dark water-supply lake in a valley of low forested hills with steep banks.
+PEOPLE: No people anywhere in the frame: no figures, faces, silhouettes, shadows or reflections of people, not even tiny distant ones, and no animals.
 
-AVOID: no people, no buildings, no boats, no dam wall, no bright blue tourist water, no text. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+PLACE AND SCALE: Larp Reservoir in the hills of western-central Larpidie, a fictional island nation in the north-west Pacific with distinct seasons: a dark water-supply lake in a valley of low forested hills with steep rocky banks; terrace about 85 m above sea level; modest, low-mountain scale.
+
+AVOID: no people, no boats, no dam wall, no buildings in the foreground, no dramatic fjord or Alpine scale, no sunshine or golden light, no fantasy fog effects. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs, number plates or lettering, interface overlays, borders or frames. Avoid typical AI-image tells: waxy or plastic textures, over-smoothed surfaces, warped or melting architecture, inconsistent perspective, impossible scale, duplicated objects, malformed hands, HDR halos, oversaturated colours, glowing skies, cinematic colour grading, fake bokeh or tilt-shift blur, heavy vignette and gibberish lettering.
 
 Aspect ratio 9:16.
 ```
@@ -467,21 +485,23 @@ Aspect ratio 9:16.
 ```
 Scene name (for reference only, never to be written in the image): COASTAL DAWN HAND VIEW. Format 9:16.
 
-Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must be indistinguishable from a real, unedited photo that an ordinary person took on an Apple iPhone 15 with the main camera (1x, 26 mm-equivalent, f/1.6), standard Apple Photos processing, straight out of camera, with natural human perspective and slightly imperfect everyday framing. Not CGI, not a 3D render, not an illustration, not concept art, not a stock or advertising photo, not a drone shot and not filtered.
 
-SCENE: A first-person view from a coastal lookout: only the photographer's right hand and wrist are visible, extended naturally toward the coast, holding a small white ceramic cup of coffee with a wisp of steam; an elegant stainless-steel wristwatch with a plain dark dial (no brand, no text) sits on the wrist. Beyond a simple lookout railing: calm sea, a low coastal town with a few lights still on and a green hill with a small stone castle silhouette on the far shore; the sky shows a blue-hour to sunrise gradient from indigo to soft pink with a thin orange line at the horizon.
+SCENE: A first-person view from a low coastal lookout at the very tip of a peninsula, just above the sea, on a cold winter morning. Only the photographer's right hand and wrist are visible in the lower foreground, extended naturally toward the sea, holding a small plain white ceramic coffee cup; a thin wisp of steam rises from the coffee in the cold air. On the wrist a simple stainless-steel wristwatch with a plain dark dial and no brand or text, partly under the cuff of a navy wool coat sleeve. Just beyond the hand runs a simple galvanised steel railing with a little rust at the joints, and below it dark wet rocks with small waves breaking white. Across a calm strait about 2 to 3 km wide lies the low, dark coast of a small island: on its left part, on a gentle hill, the dark silhouette of a small castle; on its right part, a cluster of warm yellow lights of a small harbour village and marina reflected in the water. Above the island, the sky glows in the pre-sunrise gradient from deep indigo above to soft pink and a thin orange band exactly where the sun is about to rise behind the island.
 
-COMPOSITION: Portrait; hand and cup sharp in the lower foreground (about a third of the frame), the horizon on the upper third line, the far shore soft; a very personal, calm composition.
+CAMERA AND COMPOSITION: Handheld with the left hand, at standing eye level, looking east-south-east straight toward the sunrise point. Portrait; the hand and cup sharp in the lower third, the railing just above them, the horizon on the upper-third line; the island coast soft and small; the focus on the cup with the far shore slightly soft.
 
-LIGHT AND ATMOSPHERE: Pre-sunrise blue hour turning to first light in the east-south-east; the sea reflects the pastel sky.
+LIGHT AND WEATHER: Winter blue hour, about 15 minutes before sunrise, cold, clear and calm. The only light comes from the glowing horizon straight ahead and the soft blue sky: the back of the hand and the cup are lit softly from the front and above, with a faint warm reflection on the cup rim; the harbour lights on the island are still on.
 
-PHOTO LOOK: serene blue-hour grade: indigo to soft pink and a thin orange line at the horizon, low contrast, gentle grain. Subtle authentic imperfections (only a few, not all at once): slightly soft focus on the far shore, a faint reflection on the cup.
+REALISM DETAILS: Natural hand anatomy (five fingers, realistic knuckles and nails, slight redness from the cold), a few drops of coffee on the cup rim, fine scratches on the watch glass, condensation from the breath barely visible, a little sea spray on the railing, slight unevenness of the horizon from handheld framing.
 
-PEOPLE: No person is visible except only the first-person right hand and wrist are visible (no face, no body). No faces, no other people anywhere, not even tiny distant figures.
+PHOTO PROCESSING: Natural iPhone low-light processing: soft contrast, true indigo-to-pink sky without exaggerated saturation, slight noise in the dark sea and rocks, gentle highlights on the harbour lights, no filter, no added grain or vignette, no fake bokeh.
 
-PLACE AND SCALE: Tip of the south-eastern peninsula of Larpidie, fictional, looking across a 2-km strait toward the low coast of the small island Paraland with its hilltop castle.
+PEOPLE: No person is visible except the photographer's own right hand and wrist in first-person view (no face, no body, no other people anywhere, not even tiny distant figures).
 
-AVOID: no face, no full body, no other people, no phone visible, no brand logos or text on the watch or cup, no boats in the foreground. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+PLACE AND SCALE: The tip of the south-eastern peninsula of Larpidie, a fictional island nation in the north-west Pacific with distinct seasons and occasional winter snow, looking across a 2-km strait toward the small island of Paraland with its hilltop castle on the left and its harbour village on the right.
+
+AVOID: no face, no full body, no other people, no phone visible, no brand logos or text on the watch or cup, no boats in the foreground, no snow on the ground, no sun disc above the horizon, no castle on the right side. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs, number plates or lettering, interface overlays, borders or frames. Avoid typical AI-image tells: waxy or plastic textures, over-smoothed surfaces, warped or melting architecture, inconsistent perspective, impossible scale, duplicated objects, malformed hands, HDR halos, oversaturated colours, glowing skies, cinematic colour grading, fake bokeh or tilt-shift blur, heavy vignette and gibberish lettering.
 
 Aspect ratio 9:16.
 ```
@@ -494,21 +514,23 @@ Aspect ratio 9:16.
 ```
 Scene name (for reference only, never to be written in the image): OLD MONEY CASTLE MORNING. Format 16:9.
 
-Create a horizontal 16:9 widescreen smartphone photo. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+Create a horizontal 16:9 widescreen smartphone photo. It must be indistinguishable from a real, unedited photo that an ordinary person took on an Apple iPhone 15 with the main camera (1x, 26 mm-equivalent, f/1.6), standard Apple Photos processing, straight out of camera, with natural human perspective and slightly imperfect everyday framing. Not CGI, not a 3D render, not an illustration, not concept art, not a stock or advertising photo, not a drone shot and not filtered.
 
-SCENE: A calm morning photo of the forecourt of a small historic castle-château on a hill: pale limestone facade with tall arched windows, a modest but grand stone staircase with worn steps leading to an arched oak door, a formal garden with clipped boxwood hedges and a raked gravel path in the foreground, a low stone parapet with the sea as a faint blue line beyond.
+SCENE: A calm early-morning view across the forecourt of a small historic château-like castle on a hill. The castle: a two-storey main block of pale cream limestone with weathered, slightly stained ashlar, tall arched windows with small-paned white frames, a steep grey slate roof with small dormers and two tall stone chimneys, and one short round corner tower with a conical slate roof. A modest but dignified stone staircase with worn steps leads to an arched oak door with iron studs. In the foreground: a formal garden with clipped boxwood hedges, a raked pale gravel path leading toward the stairs, two large terracotta pots with lemon trees, a few climbing roses on the wall. On the left a low stone parapet, and beyond it the hazy sea and, far away, the low dark coast of the main island.
 
-COMPOSITION: Wide landscape; the gravel path leads the eye to the staircase, the facade slightly right of centre, symmetrical but handheld, a little sky; no flags with text.
+CAMERA AND COMPOSITION: Handheld at standing eye level on the gravel path, looking north-west toward the castle. Wide landscape framing; the gravel path leads from the bottom edge to the stairs; the castle fills the centre right; the parapet and sea view open on the left third; the verticals lean very slightly inward from the wide lens.
 
-LIGHT AND ATMOSPHERE: Soft morning light from the left low sun, light mist in the garden, gentle long shadows.
+LIGHT AND WEATHER: Early summer, early morning, clear sky with light haze over the sea. The low sun is from the right and slightly behind the camera, lighting the facade warmly at a glancing angle, so that every stone and window frame has soft shadows on its left; long shadows of the hedges fall to the left; the sea on the left is pale and hazy.
 
-PHOTO LOOK: quiet old-money look: soft contrast, warm pale highlights, slightly cool shadows, gentle grain. Subtle authentic imperfections (only a few, not all at once): a little lens softness at the corners, a subtle warm glow near the sun side.
+REALISM DETAILS: Lichen and dark weather streaks on the limestone below the windowsills, a few missing slates, moss in the stair joints, footprints and rake marks in the gravel, a garden hose coiled at the base of a wall, dew on the boxwood, a slightly uneven hedge top, a simple iron lantern above the door.
 
-PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+PHOTO PROCESSING: Natural iPhone morning processing: warm but true limestone colours, pale-blue hazy sky, restrained contrast, the sea and far coast soft in the haze, no filter, no added grain or vignette.
 
-PLACE AND SCALE: Paraland Castle on the hill of the small island Paraland, fictional: a small château-like castle in pale stone with a formal garden; quiet European old-money mood.
+PEOPLE: No people anywhere in the frame: no figures, faces, silhouettes, shadows or reflections of people, not even tiny distant ones, and no animals.
 
-AVOID: no people, no cars, no flags with text, no theme-park castle, no tourists, no scaffolding. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+PLACE AND SCALE: Paraland Castle on its hill on the small island of Paraland, part of the fictional island nation Larpidie in the north-west Pacific: a small château-style castle of pale limestone with a formal garden, about 1.4 km from the island's harbour; quiet European old-money mood.
+
+AVOID: no people, no cars, no flags with text, no theme-park or fairy-tale castle, no tourists, no scaffolding, no huge palace, no sun in the frame, no direct backlight. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs, number plates or lettering, interface overlays, borders or frames. Avoid typical AI-image tells: waxy or plastic textures, over-smoothed surfaces, warped or melting architecture, inconsistent perspective, impossible scale, duplicated objects, malformed hands, HDR halos, oversaturated colours, glowing skies, cinematic colour grading, fake bokeh or tilt-shift blur, heavy vignette and gibberish lettering.
 
 Aspect ratio 16:9.
 ```
@@ -521,21 +543,23 @@ Aspect ratio 16:9.
 ```
 Scene name (for reference only, never to be written in the image): OLD MONEY CHURCH COURTYARD. Format 9:16.
 
-Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must be indistinguishable from a real, unedited photo that an ordinary person took on an Apple iPhone 15 with the main camera (1x, 26 mm-equivalent, f/1.6), standard Apple Photos processing, straight out of camera, with natural human perspective and slightly imperfect everyday framing. Not CGI, not a 3D render, not an illustration, not concept art, not a stock or advertising photo, not a drone shot and not filtered.
 
-SCENE: A quiet side courtyard of an old brick-and-stone church: moss-covered stone walls with ivy, a small arched side door at the top of three worn stone steps, a wrought-iron gate slightly ajar, a gravel and cobbled courtyard, one old linden tree; dappled light through the leaves on the stone.
+SCENE: A quiet corner of a small church square beside an old English-style parish church in late spring. The south wall of the nave runs diagonally through the frame: red-brown brick with honey sandstone quoins, buttresses and window surrounds, tall pointed-arch windows with leaded clear glass, moss and ivy climbing at the base. About 35 m away, a small pointed-arch side door of dark oak with black iron hinges sits at the top of three worn stone steps. In the foreground: the edge of the square with old granite setts and a narrow strip of gravel, a low moss-covered stone wall with a wrought-iron gate standing slightly ajar, and the trunk and lower branches of a large old linden tree in fresh pale-green leaf. A few weathered gravestones lean in the grass along the wall. A simple wooden bench with no plaque stands under the tree.
 
-COMPOSITION: Portrait; the side door in the centre-right, the iron gate in the left foreground, the steps leading up; vertical lines slightly converging from the phone's wide lens.
+CAMERA AND COMPOSITION: Handheld at standing eye level from the south-west corner of the square, looking east-north-east along the church wall. Portrait; the iron gate and linden trunk frame the left foreground, the church wall leads diagonally to the side door slightly right of centre; the church roof and a patch of sky at the top; vertical lines converge slightly from the phone's wide lens.
 
-LIGHT AND ATMOSPHERE: Soft diffuse afternoon light filtered by the linden leaves, subtle cool shadows, a calm luxurious silence.
+LIGHT AND WEATHER: Late spring, mid-afternoon, mostly clear. The sun is behind the camera and filtered through the linden leaves, scattering dappled patches of warm light on the setts, the steps and the brick wall; the rest is in soft, cool shade; calm, quiet atmosphere.
 
-PHOTO LOOK: quiet luxurious look: soft contrast, gently lifted shadows, restrained warm tones, fine grain. Subtle authentic imperfections (only a few, not all at once): very slight lens softness, faint dappled flare spots through the leaves.
+REALISM DETAILS: Uneven, slightly sunken setts with moss in the joints, worn hollows in the middle of the stone steps, faded and patched mortar, ivy tendrils on the gate, linden seeds and a few fallen blossoms on the ground, lichen on the gravestones (no readable inscriptions), a slight rust bloom on the gate.
 
-PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+PHOTO PROCESSING: Natural iPhone daylight processing: soft but true contrast between dappled sun and shade, restrained warm brick tones, natural spring greens, no filter, no added grain or vignette; a few small bright highlights in the leaves may clip.
 
-PLACE AND SCALE: Old Larpington, fictional: an English-style parish church of brick and stone with moss, founded by the first British settlers around 1600; European, understated.
+PEOPLE: No people anywhere in the frame: no figures, faces, silhouettes, shadows or reflections of people, not even tiny distant ones, and no animals.
 
-AVOID: no people, no cars, no text on plaques or gates, no modern lighting, no flashy luxury. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+PLACE AND SCALE: Old Larpington, the historic core of the fictional island capital of Larpidie in the north-west Pacific: an English-style parish church of brick and sandstone on the church square, built by the first British settlers around 1600; quiet, European, understated.
+
+AVOID: no people, no cars, no readable text on plaques, gates or gravestones, no modern lighting, no flashy luxury, no Gothic cathedral scale, no flowers in unnatural colours. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs, number plates or lettering, interface overlays, borders or frames. Avoid typical AI-image tells: waxy or plastic textures, over-smoothed surfaces, warped or melting architecture, inconsistent perspective, impossible scale, duplicated objects, malformed hands, HDR halos, oversaturated colours, glowing skies, cinematic colour grading, fake bokeh or tilt-shift blur, heavy vignette and gibberish lettering.
 
 Aspect ratio 9:16.
 ```
@@ -548,21 +572,23 @@ Aspect ratio 9:16.
 ```
 Scene name (for reference only, never to be written in the image): MANOR TERRACE SEA VIEW. Format 9:16.
 
-Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must be indistinguishable from a real, unedited photo that an ordinary person took on an Apple iPhone 15 with the main camera (1x, 26 mm-equivalent, f/1.6), standard Apple Photos processing, straight out of camera, with natural human perspective and slightly imperfect everyday framing. Not CGI, not a 3D render, not an illustration, not concept art, not a stock or advertising photo, not a drone shot and not filtered.
 
-SCENE: A terrace of a historic seaside manor hotel in the soft morning light: in the foreground a stone balustrade with a large terracotta pot of lavender, a corner of a small white-linen table with a glass of water and a cup of coffee, a rattan chair; beyond the balustrade a coastline with a small curving bay, a soft turquoise sea and a distant headland in haze.
+SCENE: The sea-view terrace of a small historic seaside manor hotel early in the morning. In the foreground: a weathered pale stone balustrade with turned balusters and a wide top rail; a large terracotta pot of lavender standing on the terrace; the corner of a small round table with a white linen cloth, a clear glass of water and a white cup of coffee on a saucer; the back of a rattan chair at the left edge. Beyond the balustrade, the land falls about 14 m to a low wooded shoreline of pines and shrubs, and about 600 m away curves a small sandy bay with clear, soft turquoise water, darker blue further out. On the right, a low green headland with pines and grey rocks runs into the sea, softened by morning haze. A few small whitewashed villas with terracotta roofs are scattered among the trees along the bay.
 
-COMPOSITION: Portrait; balustrade and table in the lower third, the bay and headland in the middle, sky above; shallow but natural phone depth, no heavy blur.
+CAMERA AND COMPOSITION: Handheld at seated-to-standing height beside the table, looking south-south-west over the balustrade. Portrait; balustrade, lavender and table in the lower third, the bay and headland in the middle, sky above; natural depth of field from a phone, everything readable.
 
-LIGHT AND ATMOSPHERE: Soft early-morning sunlight, a gentle glow on the stone, a thin haze over the sea.
+LIGHT AND WEATHER: Late summer, early morning, clear sky with a thin haze over the sea. The low sun comes from the left, lighting the lavender, the cup and the balustrade warmly from the side and casting long soft shadows of the balusters to the right across the terrace; the sea has a gentle shimmer on the left.
 
-PHOTO LOOK: soft quiet-elegance grade: gently lifted blacks, creamy highlights, muted turquoise, fine grain. Subtle authentic imperfections (only a few, not all at once): a slight glare on the glass, soft focus on the far headland.
+REALISM DETAILS: Lichen and small cracks in the stone balustrade, a few fallen lavender flowers on the tiles, slight creases in the linen, a faint ring of water under the glass, condensation on the glass, a slightly uneven horizon from handheld framing.
 
-PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+PHOTO PROCESSING: Natural iPhone morning processing: soft warm light, realistic turquoise water (not neon), restrained contrast, slight haze on the headland, no filter, no added grain or vignette; a small reflection glare on the glass.
 
-PLACE AND SCALE: South coast of Paraland, a small fictional tourist island of Larpidie: low resort hotels and villas above a sandy bay; understated European island luxury, not flashy.
+PEOPLE: No people anywhere in the frame: no figures, faces, silhouettes, shadows or reflections of people, not even tiny distant ones, and no animals.
 
-AVOID: no people, no pool parties, no gold or marble excess, no yachts in the foreground, no readable text. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+PLACE AND SCALE: The south coast of Paraland, a small fictional resort island of Larpidie in the north-west Pacific: low historic hotels and villas above a sandy bay, warm-temperate pines and shrubs; understated European island elegance, not flashy.
+
+AVOID: no people, no pool parties, no gold or marble excess, no yachts in the foreground, no readable text, no high-rise hotels, no tropical palm-beach look, no fake tilt-shift blur. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs, number plates or lettering, interface overlays, borders or frames. Avoid typical AI-image tells: waxy or plastic textures, over-smoothed surfaces, warped or melting architecture, inconsistent perspective, impossible scale, duplicated objects, malformed hands, HDR halos, oversaturated colours, glowing skies, cinematic colour grading, fake bokeh or tilt-shift blur, heavy vignette and gibberish lettering.
 
 Aspect ratio 9:16.
 ```
@@ -575,21 +601,23 @@ Aspect ratio 9:16.
 ```
 Scene name (for reference only, never to be written in the image): HERITAGE STREET ELEGANCE. Format 16:9.
 
-Create a horizontal 16:9 widescreen smartphone photo. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+Create a horizontal 16:9 widescreen smartphone photo. It must be indistinguishable from a real, unedited photo that an ordinary person took on an Apple iPhone 15 with the main camera (1x, 26 mm-equivalent, f/1.6), standard Apple Photos processing, straight out of camera, with natural human perspective and slightly imperfect everyday framing. Not CGI, not a 3D render, not an illustration, not concept art, not a stock or advertising photo, not a drone shot and not filtered.
 
-SCENE: An elegant street opening onto a small square in a historic island town at golden hour: well-kept historic facades of brick and honey stone with white sash windows and dark green shutters, a discreet boutique with a quiet window display (no readable lettering), an old stone market hall with a clock-less gable in the background, a classic cream saloon car parked discreetly at the side of the street (not the focus, no readable plate), cast-iron lamp posts, planters, granite setts.
+SCENE: A historic market street about 75 m before it opens onto a large market square, in autumn. Both sides are lined with well-kept two- and three-storey facades of red-brown brick and honey-coloured sandstone, white timber sash windows, a few dark green shutters, slate roofs and chimneys; at street level small shops with dark painted wooden shopfronts and quiet window displays, without readable lettering. The street is paved with grey granite setts and edged with sandstone pavements, with black cast-iron lamp posts and a few planters with late flowers. At the end of the street, on the far side of the square, stands the old stone market hall: a long two-storey building of pale sandstone, about 10 m high, with a row of tall round arches on the ground floor, a slate roof and a small lantern turret, but no clock. On the left side of the street, a 1960s cream British saloon car is parked at the kerb, clean and slightly faded, with no badges and no number plate visible. A few young lime trees along the square have turned yellow.
 
-COMPOSITION: Wide landscape; the street curves gently toward the square, the car small at the left edge, the stone hall as the visual anchor in the background.
+CAMERA AND COMPOSITION: Handheld at standing eye level slightly right of the centre of the street, looking east-north-east toward the square. Wide landscape framing; one-point perspective with the market hall small and centred at the end of the street; the parked car in the left foreground but not the main subject.
 
-LIGHT AND ATMOSPHERE: Warm low sun along the street, long soft shadows, golden glow on the upper facades, quiet shade below.
+LIGHT AND WEATHER: Autumn golden hour, about 40 minutes before sunset, clear sky. The low sun is directly behind the camera: it lights the market hall and the facades at the end of the street in warm gold, while the near part of the street is partly in shade from the houses; long shadows stretch forward along the setts; the sky ahead is pale blue.
 
-PHOTO LOOK: old-money city-walk look: warm golden highlights, soft shadows, slightly lowered exposure, restrained saturation, fine grain. Subtle authentic imperfections (only a few, not all at once): faint lens flare from low sun, slightly soft frame corners.
+REALISM DETAILS: Fallen yellow lime leaves along the kerb, worn and slightly uneven setts with moss in the joints, a small repair patch of asphalt, chewing-gum spots on the pavement, slight dust on the car, a few dark rust streaks under the gutters, a closed café umbrella, slightly misaligned window frames.
 
-PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+PHOTO PROCESSING: Natural iPhone golden-hour processing: warm but true honey-stone colours, believable contrast between sunlit and shaded parts, clean pale-blue sky, no filter, no added grain or vignette; no lens flare, since the sun is behind the camera.
 
-PLACE AND SCALE: Larpington old town, fictional: a market street near the market square and a stone market hall, English-style brick and stone of two to three floors.
+PEOPLE: No people anywhere in the frame: no figures, faces, silhouettes, shadows or reflections of people, not even tiny distant ones, and no animals.
 
-AVOID: no people, no modern signage, no neon, no readable text, no flashy supercars, no busy traffic. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+PLACE AND SCALE: Old Larpington, the historic core of the fictional island capital of Larpidie in the north-west Pacific: a market street leading to the market square (about 100 by 66 m) with the stone market hall; English-style brick and stone of two to three storeys; a calm, elegant small-town atmosphere.
+
+AVOID: no people, no modern signage, no neon, no readable text, no supercars, no busy traffic, no number plates, no car badges, no clock on the market hall, no lens flare or sun in the frame. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs, number plates or lettering, interface overlays, borders or frames. Avoid typical AI-image tells: waxy or plastic textures, over-smoothed surfaces, warped or melting architecture, inconsistent perspective, impossible scale, duplicated objects, malformed hands, HDR halos, oversaturated colours, glowing skies, cinematic colour grading, fake bokeh or tilt-shift blur, heavy vignette and gibberish lettering.
 
 Aspect ratio 16:9.
 ```

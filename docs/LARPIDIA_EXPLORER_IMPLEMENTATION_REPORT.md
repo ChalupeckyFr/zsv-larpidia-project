@@ -3,6 +3,7 @@
 ## Hotovo
 
 - Samostatná stránka hry je dostupná na `explorer/index.html`; domovská stránka ji odkazuje v navigaci i na úvodní obrazovce. Běžný atlas a návrat na web zůstávají dostupné.
+- Vstupní obrazovka vyžaduje společné heslo z tabule. Odemknutí se pamatuje v aktuální kartě; herní data a mapa se načítají až po vstupu. Jde o klientskou bránu pro výuku, nikoli serverovou ochranu statických souborů; podmínky a postup změny hesla jsou v návodu k nastavení kol.
 - Herní mapa načítá skutečné SVG přímo z běžného atlasu a veřejný registr 159 míst. Klepnutí se přes SVG transformační matici převádí na atlasové metry; zoom, posun, přetažení i gesto dvěma prsty zachovávají geografické ukotvení tipu.
 - Čtyři demo cíle jsou existující místa `SP-01`, `DAM-N04`, `T-01` a `PL-01`. Hra je kontroluje proti veřejnému registru. Finální fotografie ani jejich stanoviště zatím nebyly zvoleny.
 - Čtyři kola bodují v prohlížeči vzorcem ze specifikace, zobrazují tip, cíl, popis, vzdálenost a body až po potvrzení. Přeskočení vyžaduje potvrzení a dává nula bodů. Neexistuje odpočet ani časová penalizace.
@@ -13,7 +14,7 @@
 ## Ověření
 
 - `node explorer/scoring.test.cjs` — přesná shoda, všechny rohy čtverce 3 × 3 m, bod těsně za hranicí, vzdálenosti 100 m / 1 km / 5 km / 15 km / nad 15 km, přeskočené kolo a strop 20 000 bodů.
-- `node explorer/validate-rounds.mjs` — čtyři různé cíle existují ve veřejném registru a leží v atlasovém viewBoxu; ověřena hlavní ostrovní místa i Paraland. Souřadnice registru v kilometrech se násobí tisícem a odpovídají jednotkám SVG v metrech.
+- `node explorer/validate-rounds.mjs` — čtyři různé cíle existují ve veřejném registru a leží v atlasovém viewBoxu; ověřena hlavní ostrovní místa i Paraland. Převod souřadnic zohledňuje počátek atlasu `(-0,2 km, -1 km)` a má samostatné regresní testy v `node explorer/coordinates.test.cjs`.
 - `node scripts/build_public_site.mjs` — sestavení exportu proběhlo úspěšně a ohlásilo `159 atlas places, 662 Larpington objects`.
 - `node scripts/capture_explorer_screenshots.mjs` — skutečný průchod v headless Microsoft Edge: vstupní obrazovka, umístění tipu, obnovení stránky, nezobrazení cíle před potvrzením, odhalení, všechna čtyři kola, konečný součet a samostatné načtení `public/`.
 - Prošel také test přetažení mapy bez vložení tipu a opakované umístění stejného atlasového bodu před a po zoomu; rozdíl byl pod 0,01 m.

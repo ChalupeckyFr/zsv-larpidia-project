@@ -424,7 +424,7 @@ if (fs.existsSync(output)) {
 }
 fs.mkdirSync(output, { recursive: true });
 for (const relative of ["index.html", "site.js", "site.css", "site-brand.css", "site-brand.js", "gallery.js", "encyclopedia.js", "project-meta.js", "project-metadata.json", "Larpidie logo.png"]) copy(relative);
-for (const relative of ["explorer/index.html", "explorer/explorer.css", "explorer/explorer.js", "explorer/scoring.js", "explorer/rounds.json"]) copy(relative);
+for (const relative of ["explorer/index.html", "explorer/explorer.css", "explorer/access.css", "explorer/explorer.js", "explorer/scoring.js", "explorer/coordinates.js", "explorer/access.js", "explorer/rounds.json"]) copy(relative);
 let publicHome = read("index.html")
   .replace(/\s*<script src="scripts\/dev_media_status\.js" defer><\/script>/, "")
   .replace(/<button\b(?=[^>]*\bclass=["'][^"']*\bmedia-status-trigger\b)[^>]*>[\s\S]*?<\/button\s*>/i, "")

@@ -1,0 +1,45 @@
+.access-panel{display:grid;grid-template-columns:.85fr 1fr;width:min(100%,980px);min-height:560px;margin:clamp(12px,5vh,48px) auto 20px;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:var(--paper);box-shadow:0 24px 70px #173b3112}
+.access-art{position:relative;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;padding:38px;color:#f4f0e6;background:radial-gradient(ellipse at 80% 25%,#326554,transparent 65%),var(--forest)}
+.access-art:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#e5c68e0b 1px,transparent 1px),linear-gradient(90deg,#e5c68e0b 1px,transparent 1px);background-size:48px 48px}
+.access-art:after{content:"";position:absolute;inset:15px;border:1px solid #e5c68e30;border-radius:9px;pointer-events:none}
+.access-stamp{position:relative;display:flex;align-items:center;gap:9px;color:#e5c68e;font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
+.access-stamp svg{width:17px;height:17px;flex:none}
+.access-compass{position:relative;align-self:center;width:200px;max-width:85%;margin:25px 0;color:#d9bb80;filter:drop-shadow(0 8px 18px #09251c40)}
+.access-story{position:relative}
+.access-story h2{max-width:300px;margin:0;color:var(--paper);font:400 clamp(28px,3vw,37px)/1.15 Georgia,serif;letter-spacing:-.025em}
+.access-story p{margin:14px 0 0;color:#d1dcd2;font-size:13px;line-height:1.7}
+.access-entry{display:flex;flex-direction:column;justify-content:center;min-width:0;padding:clamp(28px,4vw,50px)}
+.access-entry h1{font-size:clamp(35px,4vw,47px)}
+.access-copy{margin:18px 0 28px;color:#526059;font-size:15px;line-height:1.7}
+.access-form label{display:block;margin-bottom:9px;color:var(--forest);font-size:13px;font-weight:750}
+.access-password-wrap{display:flex;align-items:center;gap:3px;min-width:0;border:1px solid #bdbbab;border-radius:10px;background:#fff;transition:border-color .15s,box-shadow .15s}
+.access-password-wrap:focus-within{border-color:var(--forest-2);box-shadow:0 0 0 3px #24544620}
+.access-password-wrap input{width:100%;min-width:0;height:54px;padding:0 14px;border:0;border-radius:10px;background:transparent;color:var(--ink);outline:none;font-size:16px;text-transform:uppercase;letter-spacing:.08em}
+.access-password-wrap input::placeholder{color:#858c80;font-size:14px;text-transform:none;letter-spacing:normal}
+.access-password-wrap:has([aria-invalid="true"]){border-color:var(--danger)}
+.access-toggle{min-height:44px;flex:none;margin:0 5px;padding:0 10px;border:0;border-radius:6px;background:transparent;color:var(--forest-2);font-size:12px;font-weight:700}
+.access-toggle:hover{background:#eef1e9}
+.access-hint{margin:9px 0 19px;color:var(--muted);font-size:12px;line-height:1.5}
+.access-submit{width:100%;min-height:52px;gap:12px}
+.access-error{margin:0 0 16px;padding:11px 13px;border:1px solid #d9aaa0;border-radius:8px;background:#fbefeb;color:var(--danger);font-size:13px;line-height:1.5}
+.access-meta{display:flex;flex-wrap:wrap;gap:8px 17px;margin-top:27px;padding-top:19px;border-top:1px solid var(--line);color:var(--muted);font-size:11px}
+.access-meta span+span:before{content:"";display:inline-block;width:3px;height:3px;margin-right:17px;border-radius:50%;background:var(--gold);vertical-align:3px}
+.access-session-note{margin:16px 0 0;color:var(--muted);font-size:11px;line-height:1.6}
+.access-storage-warning{width:min(100%,980px);margin:0 auto 16px}
+.access-form :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.access-form input:focus-visible{outline:0}
+@media(max-width:700px){
+  .access-panel{grid-template-columns:1fr;min-height:0;max-width:480px;margin:0 auto 12px;border-radius:16px}
+  .access-art{min-height:160px;padding:25px 28px;justify-content:center;gap:16px}
+  .access-art:after{inset:10px}
+  .access-compass{position:absolute;right:-10px;top:-23px;width:185px;margin:0;opacity:.23}
+  .access-stamp{font-size:9px}
+  .access-story h2{max-width:230px;font-size:28px}
+  .access-story p{display:none}
+  .access-entry{padding:29px 25px}
+  .access-entry h1{font-size:35px}
+  .access-copy{margin:14px 0 23px;font-size:14px}
+  .access-meta{gap:8px 12px}
+  .access-meta span+span:before{margin-right:12px}
+}
+@media(prefers-reduced-motion:reduce){.access-password-wrap{transition:none}}

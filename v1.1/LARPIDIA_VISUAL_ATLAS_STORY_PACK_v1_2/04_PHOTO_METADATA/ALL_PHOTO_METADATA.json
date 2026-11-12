@@ -360,16 +360,16 @@
       "description": ""
     },
     "photo_style": {
-      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-      "grade": "warm Lightroom-mobile look: slightly lowered exposure, pulled highlights, subtle golden highlights and cooler blue-grey shadows, moderate grain",
-      "imperfections": "mild vignetting from the phone lens, a tiny lean in the vertical lines"
+      "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+      "grade": "Standard iPhone Smart HDR processing: restrained natural contrast, slightly cool shadows and warm sunlit stone, believable dynamic range (the bright sky above the roofs may clip slightly), fine luminance noise on the shaded side, no filter, no added grain or vignette; a tiny natural lean in the vertical lines from the wide lens.",
+      "imperfections": "Lived-in details: slightly uneven roof and window lines, repaired brickwork with mismatched bricks, a cast-iron drain grate, a few fallen lime leaves stuck to the wet setts, a closed wheelie bin tucked into a side passage, a bicycle leaning against a railing, cracks and small weeds in the pavement joints, condensation on a ground-floor window."
     },
     "canon_notes_cs": [
       "Kánon (approved): anglické a velšské cihlové a kamenné domy, mechem porostlé stěny, zahrady, kostely, romantická náměstí.",
       "Plán CP-01: Tržní ulice (8 m) vede z východu na Kostelní náměstí; kostel CP-B07 je 67 m daleko, domy 2–3 podlaží (modelově 7–10 m).",
       "Viditelnost kostela z bodu ověřena v modelu města (terén + výška domů)."
     ],
-    "avoid": "no people, no cars, no modern shop signs, no neon, no readable text, no skyscrapers, no Mediterranean or Asian architecture",
+    "avoid": "no people, no cars, no modern shop signs or neon, no satellite dishes, no skyscrapers, no Mediterranean, Japanese or theme-park architecture, no spotless surfaces",
     "files": {
       "map": "02_MAP_PINS/PHOTO_03_OLD_LARPINGTON_map.jpg",
       "prompt": "03_PHOTO_PROMPTS/PHOTO_03_OLD_LARPINGTON_prompt.txt",
@@ -485,15 +485,15 @@
       "description": ""
     },
     "photo_style": {
-      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-      "grade": "warm natural, slightly lifted shadows, gentle contrast, teal-green water, a restrained Apple Photos 'vivid warm' feel",
-      "imperfections": "a tiny lens flare from the sun side, slightly crooked horizon"
+      "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+      "grade": "Standard iPhone Smart HDR: natural and slightly warm, true-to-life teal-green water, moderate contrast, a believable pale-blue hazy sky (not artificially deep blue), no filter; slight chromatic fringing on high-contrast edges near the frame corners.",
+      "imperfections": "Salt stains and a band of green algae along the waterline of the quay wall, rusty iron mooring rings set into the stone, coiled ropes, a few lobster pots and a stack of weathered plastic fish crates, bird droppings on a bollard, slightly uneven paving, an orange life ring on a post (no lettering), patched render on one warehouse, a little floating seaweed."
     },
     "canon_notes_cs": [
       "Atlas: C-02 historický přístav (nábřeží, butiky, promenády, vlnolam proti tajfunům z jihu). Plán CP-01: Přístavní promenáda, Přístavní úřad a celnice (CP-B10), terminál lodní linky CP-B11.",
       "Nákladní přístav je jinde (I-03); v záběru nesmí být kontejnery ani jeřáby."
     ],
-    "avoid": "no people, no large ships, no cranes or containers (this is the historic harbour, not the cargo port), no readable text, no superyacht luxury",
+    "avoid": "no people, no large ships, no cranes, containers or industrial port, no superyachts, no readable boat names or signs, no tropical palm-beach look",
     "files": {
       "map": "02_MAP_PINS/PHOTO_04_LARPINGTON_OLD_HARBOUR_map.jpg",
       "prompt": "03_PHOTO_PROMPTS/PHOTO_04_LARPINGTON_OLD_HARBOUR_prompt.txt",
@@ -753,15 +753,15 @@
       "description": ""
     },
     "photo_style": {
-      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-      "grade": "bright natural smartphone HDR, clean blues and teal, slightly lifted shadows, light grain, not oversaturated",
-      "imperfections": "gentle sun glare on the water and a faint halo around the brightest highlights"
+      "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+      "grade": "Bright natural iPhone HDR: clean whites without halos, realistic turquoise water (not neon), slightly lifted shadows, no filter; a little specular glare on the water and a mild flare from the brightest reflections.",
+      "imperfections": "Weathered silver-grey pontoon boards with nail heads and salt stains, a water-and-power pedestal on the pontoon with a coiled hose, frayed rope ends, algae on the pontoon floats, small scuffs and waterline stains on the hulls, uneven pastel paint with damp patches at the base of the houses, a few floating leaves."
     },
     "canon_notes_cs": [
       "Atlas: H-02 Marina Paraland (3 mola a 2 vlnolamy), PL-05 přístavní vesnice, ST-L3-07 terminál L3; hrad PL-02 stojí na kopci ≈ 1,4 km východně.",
       "Lodní linka C-02 ↔ Paraland (FERRY-1) je volitelná, bez autopřevozu."
     ],
-    "avoid": "no people, no large yachts or superyachts, no signage text, no high-rise buildings",
+    "avoid": "no people, no superyachts or cruise ships, no high-rise hotels, no readable boat names or signs, no Caribbean palm-lined resort look, no neon-turquoise water",
     "files": {
       "map": "02_MAP_PINS/PHOTO_06_PARALAND_MARINA_map.jpg",
       "prompt": "03_PHOTO_PROMPTS/PHOTO_06_PARALAND_MARINA_prompt.txt",
@@ -795,11 +795,11 @@
     "region": "Paraland",
     "tags": [
       "ruin",
-      "one person",
+      "no people",
       "heritage",
       "spring"
     ],
-    "description_cs": "Jedna osoba stojí na bezpečné cestě před starou kamennou zříceninou: mech, tráva, rozpadlá věž a staré zdi. Přesně jedna osoba.",
+    "description_cs": "Prázdná památková stezka mezi borovicemi vede ke staré kamenné zřícenině na nízkém kopci: rozpadlá okrouhlá věž, hradby s prázdnými okny, mech a jarní tráva; vpravo mezi stromy proužek moře. Bez lidí.",
     "registered_location": {
       "registry_id": "PL-06",
       "name_en": "Ruin above the Old Town",
@@ -896,19 +896,19 @@
       "weather": "soft overcast with a bright break"
     },
     "people": {
-      "count": 1,
-      "description": "one adult in a light-coloured rain jacket, dark trousers and a small daypack, seen from behind or three-quarter back, face not visible, looking up at the ruin"
+      "count": 0,
+      "description": ""
     },
     "photo_style": {
-      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-      "grade": "muted, slightly cool, soft contrast, desaturated stone against fresh green grass, light grain",
-      "imperfections": "slightly soft corners, a tiny horizon tilt"
+      "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+      "grade": "Natural iPhone processing: soft contrast, muted slightly cool colours, real fresh spring green (not neon), a plain bright grey sky without invented detail, fine noise in the shaded pines, no filter, no added vignette; slightly soft corners.",
+      "imperfections": "Stones of irregular size and colour, mortar washed out of the joints, patches of grey and yellow lichen, dry pine needles and a few cones on the path, a small puddle in a rut, grass trampled short near the walls, reddish-brown soil showing at the path edges."
     },
     "canon_notes_cs": [
       "Atlas: PL-06 zřícenina (55 m n. m., model) nad starým městečkem PL-01; památková stezka TR-PL2 (staré městečko – zřícenina – hrad).",
-      "Přesně jedna osoba v záběru."
+      "Bez lidí v záběru."
     ],
-    "avoid": "no signs, no tourists, no fences, no readable text, no fantasy castle, no dragons",
+    "avoid": "no people, no tourists, no signs or information boards, no fences, no fantasy or fairy-tale castle, no dramatic cliffs, no flags, no dragons",
     "files": {
       "map": "02_MAP_PINS/PHOTO_07_PARALAND_CASTLE_RUINS_map.jpg",
       "prompt": "03_PHOTO_PROMPTS/PHOTO_07_PARALAND_CASTLE_RUINS_prompt.txt",
@@ -1130,15 +1130,15 @@
       "description": ""
     },
     "photo_style": {
-      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-      "grade": "dark and moody, slightly underexposed, visible fine night-mode noise, bokeh on distant lights, teal-black shadows with warm gold highlights",
-      "imperfections": "faint bloom around the brightest lights, soft detail in the deep shadows"
+      "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+      "grade": "Dark and moody but true-to-life iPhone Night-mode photo: slightly underexposed, neutral-to-cool shadows, warm sodium-orange city lights, the gold accents catching only small highlights, no teal-and-orange grade, no light trails.",
+      "imperfections": "Real night-photo behaviour: fine colour noise in the shadows, slight smearing from Night-mode processing in the darkest areas, a small flare ghost from the street lamp, slightly blown highlights in the brightest city lights, coarse asphalt texture with a worn white edge line, dry grass tufts at the foot of the crash barrier, a little road dust and a few water spots on the lower bodywork."
     },
     "canon_notes_cs": [
       "Registr: V-07 Vyhlídka na hrázi přehrady (78,9 m, bezpečná, s oplocením); přímý výhled na Larpington je až z bodu ≈ 70 m severovýchodně (DEM: LOS ověřeno).",
       "Vozidlo je skutečný model zadaný v zadání; v promptu držíme jeho autentické proporce."
     ],
-    "avoid": "no people, no driving or motion blur, no other cars, no readable text, no logos other than the car's own shape; keep authentic Jesko proportions (low wide body, huge rear wing, long tail)",
+    "avoid": "no people, no driving, no motion blur or light trails, no other cars, no headlights or tail lights on, no badges or logos other than the car's own shape, no readable number plate, no skyscrapers, no distorted car proportions",
     "files": {
       "map": "02_MAP_PINS/PHOTO_08_MIDNIGHT_JESKO_map.jpg",
       "prompt": "03_PHOTO_PROMPTS/PHOTO_08_MIDNIGHT_JESKO_prompt.txt",
@@ -1285,15 +1285,15 @@
       "description": "two young hikers in dark technical outdoor clothing sitting close together, seen from behind and slightly from the side"
     },
     "photo_style": {
-      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-      "grade": "intimate, darker sunset look: deep shadows, warm orange highlights, cool blue-grey valley shadows, slightly lowered exposure, mild grain",
-      "imperfections": "a trace of lens flare at the top-left edge; backlit people stay dark without perfect detail"
+      "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+      "grade": "Natural iPhone golden-hour photo: warm but not orange-soaked, believable contrast, slightly cool shadows, clean blue sky, a little noise in the shadowed valley, no filter, no added grain, no vignette.",
+      "imperfections": "Natural, slightly slumped sitting posture, creased jackets, a little mud on the boots, wisps of hair under a beanie, fine dust and lichen on the rock, individual grass blades lit from behind the camera, uneven mist, a power line or small farm track barely visible in the valley."
     },
     "canon_notes_cs": [
       "Atlas: TR-03 hřebenovka M-03 – M-01; SP-05 studánka na hřebenovce (247 m); M-02 Winter Peak 3,3 km ENE (DEM: viditelný).",
       "Přesně dva lidé; bezpečná vyhlídka = plochý skalní výběžek bez srázu."
     ],
-    "avoid": "no extra people, no sharp faces, no logos on clothing, no dramatic Himalayan scale, no tent or camp",
+    "avoid": "no extra people, no visible faces, no logos on clothing, no tent or camp, no Alpine or Himalayan scale, no snow-covered peaks, no glaciers, no rim light or backlit silhouettes, no sun in the frame",
     "files": {
       "map": "02_MAP_PINS/PHOTO_09_GOLDEN_HOUR_SUMMIT_REST_map.jpg",
       "prompt": "03_PHOTO_PROMPTS/PHOTO_09_GOLDEN_HOUR_SUMMIT_REST_prompt.txt",
@@ -1452,15 +1452,15 @@
       "description": ""
     },
     "photo_style": {
-      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-      "grade": "fresh Swiss-style Instagram look: slightly increased contrast, muted greens, warm sunlit grass, cooler shadows",
-      "imperfections": "slight haze at the ridge, a faint vignette"
+      "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+      "grade": "Natural iPhone daylight processing: true-to-life greens (not neon), soft highlights on the clouds, moderate contrast, light atmospheric haze on the summit, no filter, no added grain or vignette.",
+      "imperfections": "Grass moving slightly in the breeze (a little motion softness in the tallest stems), dew still on the shaded grass, moss on the fence posts, a rusty wire on one post, uneven timber on the chalet with darker weathering under the eaves, small mud patches on the path."
     },
     "canon_notes_cs": [
       "Atlas: M-03 Round Hill (zaoblený vrch, louky, značené trasy, 440 m) a stezka TR-02 vedou přes skutečné luční pokryvy (DEM/pokryv: meadow).",
       "Chata a hospodářské stavby jsou ilustrativní prvky scény (nejsou v registru); jedinou registrovanou horskou chatou je HV-03 u sjezdovky M-02 (les)."
     ],
-    "avoid": "no people, no cars, no animals, no readable text, no ski lifts",
+    "avoid": "no people, no cars, no animals, no readable text, no ski lifts, no snow, no glaciers, no giant Alpine peaks, no spruce-only Alpine forest, no perfectly manicured lawn",
     "files": {
       "map": "02_MAP_PINS/PHOTO_10_SWISS_INSPIRED_MOUNTAIN_MEADOW_map.jpg",
       "prompt": "03_PHOTO_PROMPTS/PHOTO_10_SWISS_INSPIRED_MOUNTAIN_MEADOW_prompt.txt",
@@ -1494,11 +1494,11 @@
     "region": "Mountains – centre-west",
     "tags": [
       "lake",
-      "one person",
+      "no people",
       "mountains",
       "summer"
     ],
-    "description_cs": "Jeden mladý muž stojí na bezpečném břehu jezera v přirozené póze, sportovní oblečení a malý batoh; modrozelená hladina a hřebeny s loukami v pozadí. Přesně jedna osoba.",
+    "description_cs": "Opuštěný oblázkový břeh přehradního jezera: naplavené dřevo, čistá modrozelená voda, světlý pruh obnaženého břehu a lesnaté svahy; v dálce v oparu nejvyšší hory ostrova. Bez lidí.",
     "registered_location": {
       "registry_id": "N-04",
       "name_en": "Larp Reservoir",
@@ -1664,19 +1664,19 @@
       "weather": "clear, light haze on the far ridges"
     },
     "people": {
-      "count": 1,
-      "description": "one young man in a dark technical jacket, grey trail trousers and a small backpack, three-quarter side view, relaxed natural pose"
+      "count": 0,
+      "description": ""
     },
     "photo_style": {
-      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-      "grade": "alpine-lake-inspired travel look: crisp natural contrast, saturated but realistic blue-green water, slightly cooler shadows",
-      "imperfections": "a very slight horizon tilt, mild edge softness"
+      "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+      "grade": "Natural iPhone daylight processing: clear but not oversaturated water, realistic greens, a little haze on the distant mountains, believable contrast, no filter, no added grain or vignette; a slight specular glare on the water.",
+      "imperfections": "Small algae film on the stones at the waterline, a thin line of dried foam and twigs along the edge, a faint mark of the previous water level on the rocks, uneven tree heights on the slopes, a single dead tree among the green ones."
     },
     "canon_notes_cs": [
       "Atlas: N-04 Larp Reservoir (0,6 km², vodárenské dílo a rekreační pobřeží s ochranou zdroje vody); zastávka L1 ST-L1-02 Přehrada.",
-      "„Skalní hřebeny“ v pozadí jsou stylizace – okolní terén je nízký (110–200 m), horský masiv M-01/M-02 je 6–8 km daleko (v dálce v mlze)."
+      "Pozadí odpovídá terénu: okolní kopce jsou nízké (110–200 m), horský masiv M-01/M-02 je 6–8 km daleko (v dálce v oparu). Bez lidí v záběru."
     ],
-    "avoid": "no other people, no boats, no buildings, no dam wall, no logos, no glaciers, no giant peaks",
+    "avoid": "no people, no boats, no dam wall, no logos, no glaciers, no snow, no giant Alpine peaks, no turquoise glacier-lake colour, no jetty, no buildings in the foreground",
     "files": {
       "map": "02_MAP_PINS/PHOTO_11_ALPINE_INSPIRED_LAKE_POSE_map.jpg",
       "prompt": "03_PHOTO_PROMPTS/PHOTO_11_ALPINE_INSPIRED_LAKE_POSE_prompt.txt",
@@ -1979,15 +1979,15 @@
       "description": ""
     },
     "photo_style": {
-      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-      "grade": "dark muted greens, deep blue-black water, desaturated, lifted blacks, soft grain",
-      "imperfections": "a little noise in the shadows, soft haze over the far slope"
+      "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+      "grade": "Natural iPhone processing on an overcast morning: low contrast, muted cool greens and greys, true dark tones without crushed blacks, a plain grey sky without invented detail, fine noise in the dark water, no filter, no added grain or vignette.",
+      "imperfections": "Dew drops on the grass blades, wet dark rock surfaces, a few fallen leaves caught between the rocks, cracked and grey timber on the rail with a rusty bolt, uneven mist that is thicker in some places than others, small ripples from a fish or a breath of wind in one spot."
     },
     "canon_notes_cs": [
       "Atlas: jezero N-04 je údolní nádrž se strmými kamenitými břehy (sklony 30–45° u hladiny, pokryv rock, DEM); TR-06 vede východním břehem v 85 m n. m.",
       "Stanoviště není registrovaná vyhlídka (V-07 je u hráze a hledí na jezero z jihu) → PROPOSED CAMERA POINT na stezce."
     ],
-    "avoid": "no people, no buildings, no boats, no dam wall, no bright blue tourist water, no text",
+    "avoid": "no people, no boats, no dam wall, no buildings in the foreground, no dramatic fjord or Alpine scale, no sunshine or golden light, no fantasy fog effects",
     "files": {
       "map": "02_MAP_PINS/PHOTO_13_THE_HIDDEN_RIDGE_map.jpg",
       "prompt": "03_PHOTO_PROMPTS/PHOTO_13_THE_HIDDEN_RIDGE_prompt.txt",
@@ -2423,15 +2423,15 @@
       "description": "only the first-person right hand and wrist are visible (no face, no body)"
     },
     "photo_style": {
-      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-      "grade": "serene blue-hour grade: indigo to soft pink and a thin orange line at the horizon, low contrast, gentle grain",
-      "imperfections": "slightly soft focus on the far shore, a faint reflection on the cup"
+      "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+      "grade": "Natural iPhone low-light processing: soft contrast, true indigo-to-pink sky without exaggerated saturation, slight noise in the dark sea and rocks, gentle highlights on the harbour lights, no filter, no added grain or vignette, no fake bokeh.",
+      "imperfections": "Natural hand anatomy (five fingers, realistic knuckles and nails, slight redness from the cold), a few drops of coffee on the cup rim, fine scratches on the watch glass, condensation from the breath barely visible, a little sea spray on the railing, slight unevenness of the horizon from handheld framing."
     },
     "canon_notes_cs": [
       "Registr: V-04 Vyhlídka na hrotu poloostrova (bezpečná, s oplocením); Paraland je vidět: PL-05 143° / 2,7 km, H-02 136° / 1,9 km, hrad PL-02 114° / 3,0 km (DEM: LOS ověřeno).",
       "Svítání vpravo od severu (ESE) je realistické pro zimní období (slunce vychází na jihovýchodě)."
     ],
-    "avoid": "no face, no full body, no other people, no phone visible, no brand logos or text on the watch or cup, no boats in the foreground",
+    "avoid": "no face, no full body, no other people, no phone visible, no brand logos or text on the watch or cup, no boats in the foreground, no snow on the ground, no sun disc above the horizon, no castle on the right side",
     "files": {
       "map": "02_MAP_PINS/PHOTO_16_COASTAL_DAWN_HAND_VIEW_map.jpg",
       "prompt": "03_PHOTO_PROMPTS/PHOTO_16_COASTAL_DAWN_HAND_VIEW_prompt.txt",
@@ -2627,15 +2627,15 @@
       "description": ""
     },
     "photo_style": {
-      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-      "grade": "quiet old-money look: soft contrast, warm pale highlights, slightly cool shadows, gentle grain",
-      "imperfections": "a little lens softness at the corners, a subtle warm glow near the sun side"
+      "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+      "grade": "Natural iPhone morning processing: warm but true limestone colours, pale-blue hazy sky, restrained contrast, the sea and far coast soft in the haze, no filter, no added grain or vignette.",
+      "imperfections": "Lichen and dark weather streaks on the limestone below the windowsills, a few missing slates, moss in the stair joints, footprints and rake marks in the gravel, a garden hose coiled at the base of a wall, dew on the boxwood, a slightly uneven hedge top, a simple iron lantern above the door."
     },
     "canon_notes_cs": [
       "Atlas: PL-02 Paraland Castle (66,8 m, kánon: hrad/zámeček); přístupová silnice RD-PL2 končí 60 m od hradu.",
       "Vzhled je ilustrativní (atlas nemá půdorys hradu)."
     ],
-    "avoid": "no people, no cars, no flags with text, no theme-park castle, no tourists, no scaffolding",
+    "avoid": "no people, no cars, no flags with text, no theme-park or fairy-tale castle, no tourists, no scaffolding, no huge palace, no sun in the frame, no direct backlight",
     "files": {
       "map": "02_MAP_PINS/PHOTO_17_OLD_MONEY_CASTLE_MORNING_map.jpg",
       "prompt": "03_PHOTO_PROMPTS/PHOTO_17_OLD_MONEY_CASTLE_MORNING_prompt.txt",
@@ -2740,15 +2740,15 @@
       "description": ""
     },
     "photo_style": {
-      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-      "grade": "quiet luxurious look: soft contrast, gently lifted shadows, restrained warm tones, fine grain",
-      "imperfections": "very slight lens softness, faint dappled flare spots through the leaves"
+      "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+      "grade": "Natural iPhone daylight processing: soft but true contrast between dappled sun and shade, restrained warm brick tones, natural spring greens, no filter, no added grain or vignette; a few small bright highlights in the leaves may clip.",
+      "imperfections": "Uneven, slightly sunken setts with moss in the joints, worn hollows in the middle of the stone steps, faded and patched mortar, ivy tendrils on the gate, linden seeds and a few fallen blossoms on the ground, lichen on the gravestones (no readable inscriptions), a slight rust bloom on the gate."
     },
     "canon_notes_cs": [
       "Plán CP-01: kostel CP-B07 (cihla a kámen, mechem porostlý; loď 40 × 15 m s příčnou lodí 14 × 28 m) stojí na Kostelním náměstí CP-SQ04 (74 × 60 m); lipové aleje podél ulic.",
       "„Dvůr“ není v plánu zakreslen – je to předprostor u jižní strany lodi, fotografická interpretace."
     ],
-    "avoid": "no people, no cars, no text on plaques or gates, no modern lighting, no flashy luxury",
+    "avoid": "no people, no cars, no readable text on plaques, gates or gravestones, no modern lighting, no flashy luxury, no Gothic cathedral scale, no flowers in unnatural colours",
     "files": {
       "map": "02_MAP_PINS/PHOTO_18_OLD_MONEY_CHURCH_COURTYARD_map.jpg",
       "prompt": "03_PHOTO_PROMPTS/PHOTO_18_OLD_MONEY_CHURCH_COURTYARD_prompt.txt",
@@ -2871,15 +2871,15 @@
       "description": ""
     },
     "photo_style": {
-      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-      "grade": "soft quiet-elegance grade: gently lifted blacks, creamy highlights, muted turquoise, fine grain",
-      "imperfections": "a slight glare on the glass, soft focus on the far headland"
+      "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+      "grade": "Natural iPhone morning processing: soft warm light, realistic turquoise water (not neon), restrained contrast, slight haze on the headland, no filter, no added grain or vignette; a small reflection glare on the glass.",
+      "imperfections": "Lichen and small cracks in the stone balustrade, a few fallen lavender flowers on the tiles, slight creases in the linen, a faint ring of water under the glass, condensation on the glass, a slightly uneven horizon from handheld framing."
     },
     "canon_notes_cs": [
       "Atlas: PL-03 Resorty jih (14 m n. m., 300 obyvatel modelově), pláž B-05 a aquapark PL-04 poblíž; kánon: kapacitní rezervace, ochrana místních.",
       "Hotel/vila jsou ilustrativní (v registru je jen oblast resortů)."
     ],
-    "avoid": "no people, no pool parties, no gold or marble excess, no yachts in the foreground, no readable text",
+    "avoid": "no people, no pool parties, no gold or marble excess, no yachts in the foreground, no readable text, no high-rise hotels, no tropical palm-beach look, no fake tilt-shift blur",
     "files": {
       "map": "02_MAP_PINS/PHOTO_19_MANOR_TERRACE_SEA_VIEW_map.jpg",
       "prompt": "03_PHOTO_PROMPTS/PHOTO_19_MANOR_TERRACE_SEA_VIEW_prompt.txt",
@@ -3004,15 +3004,15 @@
       "description": ""
     },
     "photo_style": {
-      "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-      "grade": "old-money city-walk look: warm golden highlights, soft shadows, slightly lowered exposure, restrained saturation, fine grain",
-      "imperfections": "faint lens flare from low sun, slightly soft frame corners"
+      "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+      "grade": "Natural iPhone golden-hour processing: warm but true honey-stone colours, believable contrast between sunlit and shaded parts, clean pale-blue sky, no filter, no added grain or vignette; no lens flare, since the sun is behind the camera.",
+      "imperfections": "Fallen yellow lime leaves along the kerb, worn and slightly uneven setts with moss in the joints, a small repair patch of asphalt, chewing-gum spots on the pavement, slight dust on the car, a few dark rust streaks under the gutters, a closed café umbrella, slightly misaligned window frames."
     },
     "canon_notes_cs": [
       "Plán CP-01: Tržní náměstí CP-SQ03 (100 × 66 m) a Tržní hala CP-B08 (54 × 22 m, 10 m); Tržní ulice (8 m) vede z Přístavního náměstí k tržišti.",
       "Klasické auto je jen doplněk, ne hlavní prvek."
     ],
-    "avoid": "no people, no modern signage, no neon, no readable text, no flashy supercars, no busy traffic",
+    "avoid": "no people, no modern signage, no neon, no readable text, no supercars, no busy traffic, no number plates, no car badges, no clock on the market hall, no lens flare or sun in the frame",
     "files": {
       "map": "02_MAP_PINS/PHOTO_20_HERITAGE_STREET_ELEGANCE_map.jpg",
       "prompt": "03_PHOTO_PROMPTS/PHOTO_20_HERITAGE_STREET_ELEGANCE_prompt.txt",

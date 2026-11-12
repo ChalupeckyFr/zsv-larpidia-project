@@ -1,9 +1,12 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import { createRequire } from "node:module";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const require = createRequire(import.meta.url);
+const { toSvg } = require("./coordinates.js");
 const config = JSON.parse(fs.readFileSync(path.join(root, "explorer/rounds.json"), "utf8"));
 const places = JSON.parse(fs.readFileSync(path.join(root, "atlas/current/registry/places.public.json"), "utf8"));
 const atlas = fs.readFileSync(path.join(root, "atlas/current/viewer/atlas.html"), "utf8");
@@ -20,8 +23,7 @@ for (const [index, round] of config.rounds.entries()) {
   const place = byId.get(round.targetPlaceId);
   assert.ok(place, `Cíl ${round.targetPlaceId} v kole ${index + 1} chybí ve veřejném registru.`);
   assert.ok(Number.isFinite(place.x_km) && Number.isFinite(place.y_km), `Místo ${place.id} nemá platné atlasové souřadnice.`);
-  const svgX = place.x_km * 1000;
-  const svgY = place.y_km * 1000;
+  const { x: svgX, y: svgY } = toSvg(place.x_km, place.y_km);
   assert.ok(svgX >= 0 && svgX <= 29700 && svgY >= 0 && svgY <= 21000, `Místo ${place.id} je mimo mapové viewBox.`);
   assert.ok(atlas.includes(`data-id="${place.id}"`), `Geometrie místa ${place.id} není součástí kanonického atlasu.`);
   console.log(`Kolo ${index + 1}: ${place.id} · ${place.name_cs} · SVG (${svgX}, ${svgY}) = atlasové metry.`);

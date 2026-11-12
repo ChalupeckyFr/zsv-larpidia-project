@@ -140,15 +140,15 @@
     "description": ""
   },
   "photo_style": {
-    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-    "grade": "dark muted greens, deep blue-black water, desaturated, lifted blacks, soft grain",
-    "imperfections": "a little noise in the shadows, soft haze over the far slope"
+    "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+    "grade": "Natural iPhone processing on an overcast morning: low contrast, muted cool greens and greys, true dark tones without crushed blacks, a plain grey sky without invented detail, fine noise in the dark water, no filter, no added grain or vignette.",
+    "imperfections": "Dew drops on the grass blades, wet dark rock surfaces, a few fallen leaves caught between the rocks, cracked and grey timber on the rail with a rusty bolt, uneven mist that is thicker in some places than others, small ripples from a fish or a breath of wind in one spot."
   },
   "canon_notes_cs": [
     "Atlas: jezero N-04 je údolní nádrž se strmými kamenitými břehy (sklony 30–45° u hladiny, pokryv rock, DEM); TR-06 vede východním břehem v 85 m n. m.",
     "Stanoviště není registrovaná vyhlídka (V-07 je u hráze a hledí na jezero z jihu) → PROPOSED CAMERA POINT na stezce."
   ],
-  "avoid": "no people, no buildings, no boats, no dam wall, no bright blue tourist water, no text",
+  "avoid": "no people, no boats, no dam wall, no buildings in the foreground, no dramatic fjord or Alpine scale, no sunshine or golden light, no fantasy fog effects",
   "files": {
     "map": "02_MAP_PINS/PHOTO_13_THE_HIDDEN_RIDGE_map.jpg",
     "prompt": "03_PHOTO_PROMPTS/PHOTO_13_THE_HIDDEN_RIDGE_prompt.txt",

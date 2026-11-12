@@ -90,15 +90,15 @@
     "description": ""
   },
   "photo_style": {
-    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-    "grade": "warm natural, slightly lifted shadows, gentle contrast, teal-green water, a restrained Apple Photos 'vivid warm' feel",
-    "imperfections": "a tiny lens flare from the sun side, slightly crooked horizon"
+    "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+    "grade": "Standard iPhone Smart HDR: natural and slightly warm, true-to-life teal-green water, moderate contrast, a believable pale-blue hazy sky (not artificially deep blue), no filter; slight chromatic fringing on high-contrast edges near the frame corners.",
+    "imperfections": "Salt stains and a band of green algae along the waterline of the quay wall, rusty iron mooring rings set into the stone, coiled ropes, a few lobster pots and a stack of weathered plastic fish crates, bird droppings on a bollard, slightly uneven paving, an orange life ring on a post (no lettering), patched render on one warehouse, a little floating seaweed."
   },
   "canon_notes_cs": [
     "Atlas: C-02 historický přístav (nábřeží, butiky, promenády, vlnolam proti tajfunům z jihu). Plán CP-01: Přístavní promenáda, Přístavní úřad a celnice (CP-B10), terminál lodní linky CP-B11.",
     "Nákladní přístav je jinde (I-03); v záběru nesmí být kontejnery ani jeřáby."
   ],
-  "avoid": "no people, no large ships, no cranes or containers (this is the historic harbour, not the cargo port), no readable text, no superyacht luxury",
+  "avoid": "no people, no large ships, no cranes, containers or industrial port, no superyachts, no readable boat names or signs, no tropical palm-beach look",
   "files": {
     "map": "02_MAP_PINS/PHOTO_04_LARPINGTON_OLD_HARBOUR_map.jpg",
     "prompt": "03_PHOTO_PROMPTS/PHOTO_04_LARPINGTON_OLD_HARBOUR_prompt.txt",

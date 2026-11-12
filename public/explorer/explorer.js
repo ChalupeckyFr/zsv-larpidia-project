@@ -203,7 +203,7 @@
     if (!state.guess || currentResult() || state.currentRound >= 4) return;
     const round = config.rounds[state.currentRound];
     const targetPlace = placeById.get(round.targetPlaceId);
-    const target = { x: targetPlace.x_km * 1000, y: targetPlace.y_km * 1000 };
+    const target = window.LarpidiaExplorerCoordinates.toSvg(targetPlace.x_km, targetPlace.y_km);
     const score = window.LarpidiaScoring.scoreRound(state.guess, target);
     state.rounds[state.currentRound] = { guess: { ...state.guess }, targetConfigId: round.id, target, targetPlaceId: targetPlace.id, errorMeters: score.distanceMeters, points: score.points, skipped: false };
     state.guess = null; save(); revealResult();
@@ -457,6 +457,8 @@
       load();
       if (state.started && state.currentRound < 4) ui.viewport.focus({ preventScroll: true });
       await loadMap();
+      ui.start.disabled = !mapReady;
+      $("#reset-game").disabled = !mapReady;
       render();
     } catch (error) {
       $("#mode-label").textContent = "Hru se nepodařilo připravit";
@@ -466,5 +468,5 @@
       console.error("Larpidia Explorer configuration error:", error);
     }
   }
-  init();
+  window.LarpidiaExplorerAccess.ready.then(init);
 })();

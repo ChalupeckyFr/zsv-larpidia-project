@@ -196,15 +196,15 @@
     "description": ""
   },
   "photo_style": {
-    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-    "grade": "dark and moody, slightly underexposed, visible fine night-mode noise, bokeh on distant lights, teal-black shadows with warm gold highlights",
-    "imperfections": "faint bloom around the brightest lights, soft detail in the deep shadows"
+    "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+    "grade": "Dark and moody but true-to-life iPhone Night-mode photo: slightly underexposed, neutral-to-cool shadows, warm sodium-orange city lights, the gold accents catching only small highlights, no teal-and-orange grade, no light trails.",
+    "imperfections": "Real night-photo behaviour: fine colour noise in the shadows, slight smearing from Night-mode processing in the darkest areas, a small flare ghost from the street lamp, slightly blown highlights in the brightest city lights, coarse asphalt texture with a worn white edge line, dry grass tufts at the foot of the crash barrier, a little road dust and a few water spots on the lower bodywork."
   },
   "canon_notes_cs": [
     "Registr: V-07 Vyhlídka na hrázi přehrady (78,9 m, bezpečná, s oplocením); přímý výhled na Larpington je až z bodu ≈ 70 m severovýchodně (DEM: LOS ověřeno).",
     "Vozidlo je skutečný model zadaný v zadání; v promptu držíme jeho autentické proporce."
   ],
-  "avoid": "no people, no driving or motion blur, no other cars, no readable text, no logos other than the car's own shape; keep authentic Jesko proportions (low wide body, huge rear wing, long tail)",
+  "avoid": "no people, no driving, no motion blur or light trails, no other cars, no headlights or tail lights on, no badges or logos other than the car's own shape, no readable number plate, no skyscrapers, no distorted car proportions",
   "files": {
     "map": "02_MAP_PINS/PHOTO_08_MIDNIGHT_JESKO_map.jpg",
     "prompt": "03_PHOTO_PROMPTS/PHOTO_08_MIDNIGHT_JESKO_prompt.txt",

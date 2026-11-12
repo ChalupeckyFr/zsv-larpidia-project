@@ -103,15 +103,15 @@
     "description": ""
   },
   "photo_style": {
-    "device": "Apple iPhone 15, main camera 1x, realistic smartphone HDR",
-    "grade": "bright natural smartphone HDR, clean blues and teal, slightly lifted shadows, light grain, not oversaturated",
-    "imperfections": "gentle sun glare on the water and a faint halo around the brightest highlights"
+    "device": "Apple iPhone 15, main camera 1x (26 mm equiv., f/1.6), standard Apple Photos processing, straight out of camera",
+    "grade": "Bright natural iPhone HDR: clean whites without halos, realistic turquoise water (not neon), slightly lifted shadows, no filter; a little specular glare on the water and a mild flare from the brightest reflections.",
+    "imperfections": "Weathered silver-grey pontoon boards with nail heads and salt stains, a water-and-power pedestal on the pontoon with a coiled hose, frayed rope ends, algae on the pontoon floats, small scuffs and waterline stains on the hulls, uneven pastel paint with damp patches at the base of the houses, a few floating leaves."
   },
   "canon_notes_cs": [
     "Atlas: H-02 Marina Paraland (3 mola a 2 vlnolamy), PL-05 přístavní vesnice, ST-L3-07 terminál L3; hrad PL-02 stojí na kopci ≈ 1,4 km východně.",
     "Lodní linka C-02 ↔ Paraland (FERRY-1) je volitelná, bez autopřevozu."
   ],
-  "avoid": "no people, no large yachts or superyachts, no signage text, no high-rise buildings",
+  "avoid": "no people, no superyachts or cruise ships, no high-rise hotels, no readable boat names or signs, no Caribbean palm-lined resort look, no neon-turquoise water",
   "files": {
     "map": "02_MAP_PINS/PHOTO_06_PARALAND_MARINA_map.jpg",
     "prompt": "03_PHOTO_PROMPTS/PHOTO_06_PARALAND_MARINA_prompt.txt",

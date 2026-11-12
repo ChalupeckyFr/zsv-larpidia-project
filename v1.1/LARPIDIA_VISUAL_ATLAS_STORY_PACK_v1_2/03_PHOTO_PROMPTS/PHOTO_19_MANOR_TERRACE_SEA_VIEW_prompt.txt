@@ -1,19 +1,21 @@
 Scene name (for reference only, never to be written in the image): MANOR TERRACE SEA VIEW. Format 9:16.
 
-Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must look like a genuine photo taken by a person on an Apple iPhone 15 (main camera, 1x, realistic smartphone HDR, natural human eye-level perspective, slightly imperfect everyday framing), not CGI, not a 3D render, not an illustration, not an advertising visualisation and not a drone shot.
+Create a vertical 9:16 portrait smartphone photo, like a full-screen phone story. It must be indistinguishable from a real, unedited photo that an ordinary person took on an Apple iPhone 15 with the main camera (1x, 26 mm-equivalent, f/1.6), standard Apple Photos processing, straight out of camera, with natural human perspective and slightly imperfect everyday framing. Not CGI, not a 3D render, not an illustration, not concept art, not a stock or advertising photo, not a drone shot and not filtered.
 
-SCENE: A terrace of a historic seaside manor hotel in the soft morning light: in the foreground a stone balustrade with a large terracotta pot of lavender, a corner of a small white-linen table with a glass of water and a cup of coffee, a rattan chair; beyond the balustrade a coastline with a small curving bay, a soft turquoise sea and a distant headland in haze.
+SCENE: The sea-view terrace of a small historic seaside manor hotel early in the morning. In the foreground: a weathered pale stone balustrade with turned balusters and a wide top rail; a large terracotta pot of lavender standing on the terrace; the corner of a small round table with a white linen cloth, a clear glass of water and a white cup of coffee on a saucer; the back of a rattan chair at the left edge. Beyond the balustrade, the land falls about 14 m to a low wooded shoreline of pines and shrubs, and about 600 m away curves a small sandy bay with clear, soft turquoise water, darker blue further out. On the right, a low green headland with pines and grey rocks runs into the sea, softened by morning haze. A few small whitewashed villas with terracotta roofs are scattered among the trees along the bay.
 
-COMPOSITION: Portrait; balustrade and table in the lower third, the bay and headland in the middle, sky above; shallow but natural phone depth, no heavy blur.
+CAMERA AND COMPOSITION: Handheld at seated-to-standing height beside the table, looking south-south-west over the balustrade. Portrait; balustrade, lavender and table in the lower third, the bay and headland in the middle, sky above; natural depth of field from a phone, everything readable.
 
-LIGHT AND ATMOSPHERE: Soft early-morning sunlight, a gentle glow on the stone, a thin haze over the sea.
+LIGHT AND WEATHER: Late summer, early morning, clear sky with a thin haze over the sea. The low sun comes from the left, lighting the lavender, the cup and the balustrade warmly from the side and casting long soft shadows of the balusters to the right across the terrace; the sea has a gentle shimmer on the left.
 
-PHOTO LOOK: soft quiet-elegance grade: gently lifted blacks, creamy highlights, muted turquoise, fine grain. Subtle authentic imperfections (only a few, not all at once): a slight glare on the glass, soft focus on the far headland.
+REALISM DETAILS: Lichen and small cracks in the stone balustrade, a few fallen lavender flowers on the tiles, slight creases in the linen, a faint ring of water under the glass, condensation on the glass, a slightly uneven horizon from handheld framing.
 
-PEOPLE: No people anywhere in the frame: no figures, faces or silhouettes, not even tiny distant ones, and no animals.
+PHOTO PROCESSING: Natural iPhone morning processing: soft warm light, realistic turquoise water (not neon), restrained contrast, slight haze on the headland, no filter, no added grain or vignette; a small reflection glare on the glass.
 
-PLACE AND SCALE: South coast of Paraland, a small fictional tourist island of Larpidie: low resort hotels and villas above a sandy bay; understated European island luxury, not flashy.
+PEOPLE: No people anywhere in the frame: no figures, faces, silhouettes, shadows or reflections of people, not even tiny distant ones, and no animals.
 
-AVOID: no people, no pool parties, no gold or marble excess, no yachts in the foreground, no readable text. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs or lettering, interface overlays, borders or frames. Avoid a CGI or video-game look, oversaturated HDR halos, fake glowing skies, heavy vignette, plastic textures, warped architecture, impossible scale and AI text artefacts.
+PLACE AND SCALE: The south coast of Paraland, a small fictional resort island of Larpidie in the north-west Pacific: low historic hotels and villas above a sandy bay, warm-temperate pines and shrubs; understated European island elegance, not flashy.
+
+AVOID: no people, no pool parties, no gold or marble excess, no yachts in the foreground, no readable text, no high-rise hotels, no tropical palm-beach look, no fake tilt-shift blur. No text of any kind anywhere in the image: no captions, titles, watermarks, logos, readable signs, number plates or lettering, interface overlays, borders or frames. Avoid typical AI-image tells: waxy or plastic textures, over-smoothed surfaces, warped or melting architecture, inconsistent perspective, impossible scale, duplicated objects, malformed hands, HDR halos, oversaturated colours, glowing skies, cinematic colour grading, fake bokeh or tilt-shift blur, heavy vignette and gibberish lettering.
 
 Aspect ratio 9:16.
