@@ -8,7 +8,7 @@ Složka není součástí veřejného webu. [`scripts/build_public_site.mjs`](..
 
 1. Otevřete soubor `.txt` daného kola a vložte do generátoru **celý text**. Prompty jsou v angličtině, protože s ní generátory pracují spolehlivěji.
 2. Generujte ve formátu **16:9**, který se hodí pro projekci na tabuli.
-3. Zkontrolujte výsledek podle sloupce „Musí být vidět“. Pokud klíčová indicie chybí nebo je na obrázku jakýkoli text či název, vygenerujte obrázek znovu.
+3. Zkontrolujte výsledek podle sloupce „Musí být vidět“. Pokud klíčová indicie chybí nebo je na obrázku jakýkoli text či název, vygenerujte obrázek znovu. Výjimkou je 3. kolo: značka konce obce s přeškrtnutým slovem „Praha“ tam být musí a slovo musí být správně napsané.
 4. Hotové fotky vložte do prezentace přednášejících. Hra fotky nezobrazuje (viz [`docs/LARPIDIA_EXPLORER_ROUND_SETUP.md`](../../docs/LARPIDIA_EXPLORER_ROUND_SETUP.md)).
 
 ## Přehled kol
@@ -17,10 +17,10 @@ Složka není součástí veřejného webu. [`scripts/build_public_site.mjs`](..
 |---|---|---|---|---|
 | 1 | Pramen řeky Larp (`SP-01`) | [01_SP-01_pramen_reky_Larp_prompt.txt](01_SP-01_pramen_reky_Larp_prompt.txt) | u pramene ve 279 m n. m., pohled na JJV (≈160°), 1×, začátek června, pozdní odpoledne | voda vyvěrající mezi balvany, horské chaty a stanice horské dráhy pod pramenem vpravo, daleko vlevo Larpington se starým přístavem, celý obzor tvoří moře |
 | 2 | Hráz přehrady (`DAM-N04`) | [02_DAM-N04_hraz_prehrady_prompt.txt](02_DAM-N04_hraz_prehrady_prompt.txt) | koruna hráze asi 200 m severně od bodu, pohled na SZ (≈310°) přes nádrž, 1×, polovina listopadu, dopoledne | betonová hráz, odběrná věž a bóje, úzká nádrž v lesích, na obzoru Kulatý vrch (vlevo), Larpova hora (uprostřed) a Zimní hora se sjezdovkou (vpravo) |
-| 3 | Praha (`T-01`) | [03_T-01_praha_prompt.txt](03_T-01_praha_prompt.txt) | západní okraj města u železničního přejezdu trati L2, pohled na Z (≈280°), 2×, konec února, ráno | cihlové a kamenné městečko na rovině, přejezd, pole, hory 8–11 km daleko s bílou zasněženou sjezdovkou na Zimní hoře, žádné moře |
+| 3 | Praha (`T-01`) | [03_T-01_praha_prompt.txt](03_T-01_praha_prompt.txt) | západní okraj města u železničního přejezdu trati L2, pohled na Z (≈280°), 2×, konec února, ráno | cihlové a kamenné městečko na rovině, přejezd a těsně za ním vpravo bílá značka konce obce s přeškrtnutým slovem „Praha“ (jediný text v obrázku), pole, hory 8–11 km daleko s bílou zasněženou sjezdovkou na Zimní hoře, žádné moře |
 | 4 | Staré městečko Paralandu (`PL-01`) | [04_PL-01_stare_mestecko_Paralandu_prompt.txt](04_PL-01_stare_mestecko_Paralandu_prompt.txt) | ulička ve starém městečku, pohled na JV (≈145°) do kopce, 2×, začátek října, pozdní odpoledne | kamenné domky, zřícenina hradu na zalesněném kopci asi 0,5 km nad městečkem, přímořské detaily (skleněné plováky, palmy), moře není vidět, protože je za zády |
 
-Názvy míst do promptů záměrně nepíšeme. Generátor by je mohl vypsat do obrázku a třeba u Prahy by kreslil skutečnou Prahu.
+Názvy míst do promptů záměrně nepíšeme. Generátor by je mohl vypsat do obrázku a třeba u Prahy by kreslil skutečnou Prahu. Jedinou výjimkou je 3. kolo: bez nápisu by městečko na rovině nikdo nepoznal, proto prompt požaduje bílou značku konce obce se slovem „Praha“ přeškrtnutým červeným pruhem a zároveň zakazuje cokoli, co by vypadalo česky nebo jako skutečná Praha. Pokud je slovo na značce špatně napsané či chybí, nebo generátor nakreslí skutečnou Prahu, vygenerujte obrázek znovu.
 
 ## Jak byly indicie ověřeny
 
