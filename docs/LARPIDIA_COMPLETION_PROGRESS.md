@@ -95,5 +95,5 @@ Soubor 'references/LARPIDIA_USTAVNI_KANON_PRACOVNI_v2.6.md' nebyl upraven. Nebyl
 ## Zbývající omezení
 
 - 18 plánovaných fotografií zatím nemá soubor; jejich přesný seznam je v 'LARPIDIA_MEDIA_MANIFEST_REPORT.md'. Galerie zobrazuje všechny aktuálně dostupné skutečné fotografie a nevkládá prázdné náhražky.
-- 591 názvů je redakční návrh podle typu prvku, regionu, sousedů a uliční geometrie. Jsou dohledatelné v interním přehledu a zůstávají oddělené od kanonických rozhodnutí.
+- 590 názvů bylo schváleno autorem 2026-11-19 a v redakční vrstvě je označeno jako author_approved. T-04 je veden jako název převzatý ze zdroje, protože jeho romanizace je schválená a japonský zápis je samostatně evidovaný.
 - Testy používají skutečný kořen projektu přes lokální server a Edge, nikoli živou instanci rozšíření VS Code Live Server. Kořen, relativní cesty a navigační tok jsou stejné.

@@ -18,7 +18,9 @@ Jde o **klientskou bránu pro třídní fair play, nikoli zabezpečení hostingu
 
 1. Vyberte fotografované místo v kanonickém atlasu Larpidie.
 2. Zvolte jeho ID z veřejného registru `atlas/current/registry/places.public.json`. Pokud je potřeba přesná poloha stanoviště fotoaparátu, použijte ověřené atlasové souřadnice v metrech a upravte validační schéma i cíl kola společně.
-3. V `explorer/rounds.json` změňte `targetPlaceId` u příslušného kola. Cíl musí existovat ve veřejném registru a mít platné souřadnice. Kód uživatelského rozhraní se kvůli výměně cílů neupravuje.
+3. V `explorer/rounds.json` změňte `targetPlaceId` u příslušného kola. Cíl musí existovat ve veřejném registru a mít platné souřadnice. Pokud fotografie ukazuje přesný bod odlišný od středu atlasového záznamu, nastavte navíc `targetCoordinatesKm` s `x_km` a `y_km`; souřadnice jsou v kilometrech v rámci atlasu. Po změně cílů zvyšte `revision`, aby se uložený postup automaticky obnovil jako nová expedice. Kód uživatelského rozhraní se kvůli výměně cílů neupravuje.
+
+V aktuálním demo režimu má kolo s hrází cíl posunutý o 100 m na sever (`x=12.18`, `y=10.55`). Kolo s Prahou míří na železniční přejezd na západním okraji města (`x=16.78835`, `y=7.97`) místo na střed sídla.
 4. Plné fotografie ponechte ve snímcích přednášejících. Hra zobrazuje pouze mapu a po potvrzení název správného místa.
 5. Spusťte `node explorer/validate-rounds.mjs` a `node explorer/scoring.test.cjs`; poté projděte všechna čtyři kola v prohlížeči.
 6. Přepněte `mode` na `production` až po potvrzení všech čtyř fotografovaných míst a jejich odpovídajících bodů.

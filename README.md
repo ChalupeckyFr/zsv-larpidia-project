@@ -61,4 +61,4 @@ node scripts/check_public_export.mjs
 node scripts/serve_static.mjs
 ```
 
-Náhledový server zpřístupňuje výhradně `public/` (výchozí port 4173; vlastní port lze zadat jako argument). Pro kontrolu HTTP cest a nepřístupnosti interních souborů spusťte také `node scripts/check_encyclopedia_http.mjs`. Nasazujte sestavenou složku `public/`, nikdy kořen pracovního projektu. V repozitáři není nastavení hostingu, proto samotný veřejný hosting těmito lokálními kontrolami ověřen není.
+Náhledový server zpřístupňuje výhradně `public/` (výchozí port 4173; vlastní port lze zadat jako argument). Pro kontrolu HTTP cest a nepřístupnosti interních souborů spusťte také `node scripts/check_encyclopedia_http.mjs`. Nasazení běží přes GitHub Pages podle autorského potvrzení; lokální kontrola sama neověřuje aktuální vzdálený běh. Nasazujte sestavenou složku `public/`, nikdy kořen pracovního projektu.

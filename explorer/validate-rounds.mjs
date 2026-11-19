@@ -11,6 +11,7 @@ const config = JSON.parse(fs.readFileSync(path.join(root, "explorer/rounds.json"
 const places = JSON.parse(fs.readFileSync(path.join(root, "atlas/current/registry/places.public.json"), "utf8"));
 const atlas = fs.readFileSync(path.join(root, "atlas/current/viewer/atlas.html"), "utf8");
 assert.equal(config.schemaVersion, 1, "Nepodporované schemaVersion konfigurace.");
+assert.ok(config.revision === undefined || Number.isInteger(config.revision), "Neplatná revize konfigurace.");
 assert.ok(["demo", "production"].includes(config.mode), "Neplatný režim konfigurace.");
 assert.equal(config.rounds.length, 4, "Hra musí mít přesně čtyři kola.");
 assert.equal(places.objects.length, 159, "Veřejný atlas musí mít 159 míst.");
@@ -23,7 +24,10 @@ for (const [index, round] of config.rounds.entries()) {
   const place = byId.get(round.targetPlaceId);
   assert.ok(place, `Cíl ${round.targetPlaceId} v kole ${index + 1} chybí ve veřejném registru.`);
   assert.ok(Number.isFinite(place.x_km) && Number.isFinite(place.y_km), `Místo ${place.id} nemá platné atlasové souřadnice.`);
-  const { x: svgX, y: svgY } = toSvg(place.x_km, place.y_km);
+  const targetCoordinates = round.targetCoordinatesKm || place;
+  assert.ok(Number.isFinite(targetCoordinates.x_km) && Number.isFinite(targetCoordinates.y_km), `Kolo ${index + 1} nemá platné cílové souřadnice.`);
+  assert.ok(targetCoordinates.x_km >= 0 && targetCoordinates.x_km <= 29.7 && targetCoordinates.y_km >= 0 && targetCoordinates.y_km <= 21, `Cíl kola ${index + 1} je mimo atlasový rozsah.`);
+  const { x: svgX, y: svgY } = toSvg(targetCoordinates.x_km, targetCoordinates.y_km);
   assert.ok(svgX >= 0 && svgX <= 29700 && svgY >= 0 && svgY <= 21000, `Místo ${place.id} je mimo mapové viewBox.`);
   assert.ok(atlas.includes(`data-id="${place.id}"`), `Geometrie místa ${place.id} není součástí kanonického atlasu.`);
   console.log(`Kolo ${index + 1}: ${place.id} · ${place.name_cs} · SVG (${svgX}, ${svgY}) = atlasové metry.`);

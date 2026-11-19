@@ -1,6 +1,6 @@
 # Oprava veřejného atlasu, plánu města a galerie
 
-Opravy jsou sestavené do lokálního exportu `public/`. Ověření proběhlo na tomto exportu, nikoli na nasazeném hostingu.
+Opravy jsou sestavené do lokálního exportu `public/`. Autor potvrzuje, že veřejné nasazení běží přes GitHub Pages; tato zpráva ověřila lokální export.
 
 ## Provedené změny
 
@@ -43,4 +43,4 @@ node scripts/check_public_render.mjs
 - Automatický Edge běh používá `--disable-gpu`, proto **samotný obraz WebGL 3D scén nebyl vizuálně ověřen**. Veřejné 3D HTML a odkazy jsou přítomné a všechny čtyři geometrické datové JS soubory jsou bajt po bajtu totožné se zdrojem; kontrola tedy potvrzuje zachování dat, nikoli vizuální shodu vykresleného snímku.
 - Galerie záměrně obsahuje čtyři dostupné obrazy; dalších 18 plánovaných fotografií není vytvořeno a zůstává pouze v interním inventáři.
 - U scén `PHOTO_01` a `PHOTO_06` inventář uvádí skutečnou cestu k souboru `.png` a současně plánovanou cestu `.jpg`. Použité PNG existují a fungují; sjednocení očekávané přípony je ponecháno v rozhodovacím přehledu.
-- Nebyl ověřen žádný veřejný hosting ani nasazení. Ověřený náhled spusťte přes `node scripts/serve_static.mjs`; server zpřístupňuje výhradně `public/` na `http://localhost:4173/`.
+- Veřejné nasazení běží přes GitHub Pages podle autora; aktuální vzdálenou URL tato zpráva samostatně neotevírala. Ověřený lokální náhled spusťte přes `node scripts/serve_static.mjs`; server zpřístupňuje výhradně `public/` na `http://localhost:4173/`.

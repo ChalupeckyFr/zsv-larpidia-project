@@ -1,10 +1,11 @@
 {
   "schemaVersion": 1,
+  "revision": 2,
   "mode": "demo",
   "rounds": [
     { "id": "DEMO_01", "publicNumber": 1, "targetPlaceId": "SP-01", "photoExternal": true },
-    { "id": "DEMO_02", "publicNumber": 2, "targetPlaceId": "DAM-N04", "photoExternal": true },
-    { "id": "DEMO_03", "publicNumber": 3, "targetPlaceId": "T-01", "photoExternal": true },
+    { "id": "DEMO_02", "publicNumber": 2, "targetPlaceId": "DAM-N04", "targetCoordinatesKm": { "x_km": 12.18, "y_km": 10.55 }, "photoExternal": true },
+    { "id": "DEMO_03", "publicNumber": 3, "targetPlaceId": "T-01", "targetCoordinatesKm": { "x_km": 16.78835, "y_km": 7.97 }, "photoExternal": true },
     { "id": "DEMO_04", "publicNumber": 4, "targetPlaceId": "PL-01", "photoExternal": true }
   ]
 }

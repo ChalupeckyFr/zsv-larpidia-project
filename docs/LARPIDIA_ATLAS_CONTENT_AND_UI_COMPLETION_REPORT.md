@@ -8,7 +8,7 @@ Kořenový web byl otevřen přes místní HTTP server s kořenem v projektu a n
 
 Zůstalo zachováno všech **159 míst atlasu** a **662 objektů plánu**. Každý má veřejný český název a popis, v redakční vrstvě není žádný prázdný ani kratší než 75 znaků dlouhý popis. V atlasu ani plánu nezůstaly duplicitní veřejné názvy ani obecné názvy typu „Bod zájmu“ či „Objekt“. T-02 se veřejně jmenuje přesně **Cimprlichovo Hradiště**; dřívější pravopis zůstává pouze jako interní vyhledávací alias. Identifikátory, stavová metadata a zdrojové poznámky zůstaly ve zdrojových registrech a ve veřejném rozhraní se nevykreslují.
 
-Nově vzniklé názvy jsou označené jako redakční návrhy, ne jako změna ústavního kánonu. Soubor kánonu v2.6 zůstal beze změny. Úplný převod názvů a důvody jsou v [redakčním přehledu](LARPIDIA_EDITORIAL_PLACE_NAMES_REVIEW.md).
+Nově vzniklé názvy zůstávají součástí redakční vrstvy; autor 2026-11-19 schválil 590 návrhů a T-04 je veden jako převzatý ze schváleného zdroje, protože jeho romanizace souhlasí a japonský zápis je samostatně evidovaný. Soubor kánonu v2.6 zůstal beze změny. Úplný převod názvů a důvody jsou v [redakčním přehledu](LARPIDIA_EDITORIAL_PLACE_NAMES_REVIEW.md).
 
 ## Bodové ověření obsahu
 
@@ -88,4 +88,4 @@ Další snímky skutečného kořenového webu v [docs/debug-screenshots](debug-
 
 Strukturní porovnání zdrojových registrů s výchozím stavem potvrdilo shodná ID a data; 361 cest v atlasovém SVG a 5 954 cest v plánu Larpingtonu mají shodné atributy geometrie. Výšková data, geometrická data 3D scén a oba zdrojové 3D prohlížeče zůstaly beze změny; porovnání SHA-256 exportu také prošlo.
 
-Ve fotoarchivu jsou skutečné dva snímky a 18 plánovaných scén bez souboru. Galerie ukazuje pouze dostupné fotografie bez prázdných karet; chybějící scény jsou uvedené v interním archivu a mediálním přehledu. Nových redakčních názvů je 591; jejich místní odvození a stav schválení jsou přehledně označené, ale jejich případné budoucí povýšení na kanonické názvy vyžaduje redakční rozhodnutí.
+Ve fotoarchivu jsou skutečné dva snímky a 18 plánovaných scén bez souboru. Galerie ukazuje pouze dostupné fotografie bez prázdných karet; chybějící scény jsou uvedené v interním archivu a mediálním přehledu. Z 591 nově vytvořených redakčních názvů autor schválil 590 dne 2026-11-19; T-04 je veden jako převzatý ze schváleného zdroje.
