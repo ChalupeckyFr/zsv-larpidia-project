@@ -159,7 +159,10 @@
       dialogTitle.textContent = button.dataset.mapTitle || "Mapa Larpidie";
       dialogImage.src = imagePath;
       dialogImage.alt = button.dataset.mapTitle || "Mapa Larpidie";
+      dialog.setAttribute("aria-label", "Zvětšená mapa");
       originalLink.href = imagePath;
+      originalLink.textContent = "Otevřít mapu v plné velikosti ↗";
+      dialog.querySelector(".dialog-close").setAttribute("aria-label", "Zavřít mapu");
       if (typeof dialog.showModal === "function") dialog.showModal();
       else window.open(imagePath, "_blank", "noopener");
     });

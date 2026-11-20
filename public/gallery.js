@@ -14,18 +14,37 @@
 
     const figure = document.createElement("figure");
     figure.dataset.assetId = asset.id;
-    figure.innerHTML = `<img src="${escapeHtml(imageUrl.href)}" alt="${escapeHtml(asset.alt)}" width="1200" height="900" decoding="async"><figcaption><strong>${escapeHtml(asset.title)}</strong><span>${escapeHtml(asset.caption)}</span></figcaption>`;
+    figure.innerHTML = `<button class="gallery-image-button" type="button" aria-label="Zvětšit fotografii: ${escapeHtml(asset.title)}"><img src="${escapeHtml(imageUrl.href)}" alt="${escapeHtml(asset.alt)}" width="1200" height="900" decoding="async"></button><figcaption><strong>${escapeHtml(asset.title)}</strong><span>${escapeHtml(asset.caption)}</span></figcaption>`;
     const image = figure.querySelector("img");
     image.addEventListener("error", () => removeUnavailable(figure), { once: true });
     image.addEventListener("load", () => {
       if (!image.naturalWidth) removeUnavailable(figure);
     }, { once: true });
+    figure.querySelector(".gallery-image-button").addEventListener("click", () => {
+      const dialog = document.querySelector(".map-dialog");
+      if (!dialog || typeof dialog.showModal !== "function") {
+        window.open(imageUrl.href, "_blank", "noopener");
+        return;
+      }
+      const dialogImage = dialog.querySelector("img");
+      const title = document.getElementById("dialog-map-title");
+      const original = dialog.querySelector(".dialog-original");
+      title.textContent = asset.title;
+      dialogImage.src = imageUrl.href;
+      dialogImage.alt = asset.alt;
+      dialog.setAttribute("aria-label", "Zvětšená fotografie");
+      original.href = imageUrl.href;
+      original.textContent = "Otevřít fotografii v plné velikosti ↗";
+      dialog.querySelector(".dialog-close").setAttribute("aria-label", "Zavřít fotografii");
+      dialog.showModal();
+    });
     grid.appendChild(figure);
   };
 
   const loadGallery = async () => {
     const manifestUrl = new URL(grid.dataset.galleryManifestSrc || "content/larpidia/media/assets.json", document.baseURI);
-    const response = await fetch(manifestUrl);
+    manifestUrl.searchParams.set("v", "20261120-2");
+    const response = await fetch(manifestUrl, { cache: "no-store" });
     if (!response.ok) throw new Error(`Galerie HTTP ${response.status}`);
     const manifest = await response.json();
     const assets = grid.dataset.galleryMode === "public"

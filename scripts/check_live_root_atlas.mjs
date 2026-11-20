@@ -255,6 +255,10 @@ try {
   assert.equal(gallery.length, 20, `The gallery should show all locally available story photographs; received ${gallery.length}.`);
   assert.ok(gallery.every((image) => image.width > 0 && image.height > 0 && image.rect.width > 0 && image.rect.height > 0), "Gallery images must have decoded pixels and nonzero rendered size.");
   assert.ok(gallery.some((image) => image.src.endsWith("PHOTO_01.png")) && gallery.some((image) => image.src.endsWith("PHOTO_20.png")), "The root gallery should show the first and last verified scenes.");
+  await evaluate(`document.querySelector('.gallery-image-button').click()`);
+  const enlargedPhoto = await evaluate(`(()=>{const dialog=document.querySelector('.map-dialog');return {open:dialog.open,title:document.querySelector('#dialog-map-title').textContent,loaded:dialog.querySelector('img').naturalWidth>0}})()`);
+  assert.ok(enlargedPhoto.open && enlargedPhoto.loaded && enlargedPhoto.title === "Zimní horská krajina", "Gallery photos must open in the enlarged preview.");
+  await evaluate(`document.querySelector('.map-dialog .dialog-close').click()`);
   await evaluate(`document.querySelector('nav [data-nav="encyklopedie"]').click()`);
   await waitFor(`(()=>!!document.querySelector('#view-encyklopedie [data-encyclopedia-app] a[href="#encyklopedie/geografie/priroda"]'))()`, "the root encyclopedia article navigation");
   await evaluate(`document.querySelector('#view-encyklopedie [data-encyclopedia-app] a[href="#encyklopedie/geografie/priroda"]').click()`);

@@ -335,6 +335,10 @@ try {
     await navigate(`${base}/index.html#galerie`);
     const state = await evaluate(`new Promise(resolve=>{const check=()=>{const imgs=[...document.querySelectorAll('[data-gallery-grid] img')];if(imgs.length>=2&&imgs.every(i=>i.complete))resolve({count:imgs.length,loaded:imgs.filter(i=>i.naturalWidth>0).length,images:imgs.map(i=>({src:i.getAttribute('src'),w:i.naturalWidth,alt:i.alt})),brand:[...document.querySelectorAll('.site-brand-logo')].map(i=>({src:i.currentSrc,alt:i.alt,w:i.naturalWidth}))});else setTimeout(check,100)};check()})`);
     assert.equal(state.count, 20); assert.equal(state.loaded, 20); assert.ok(state.brand.length >= 1 && state.brand.every((item) => item.w > 0 && item.alt === "Larpidie"));
+    await evaluate(`document.querySelector('.gallery-image-button').click()`);
+    const openedPhoto = await evaluate(`(()=>{const dialog=document.querySelector('.map-dialog'),image=dialog.querySelector('img');return {open:dialog.open,title:document.querySelector('#dialog-map-title').textContent,source:image.currentSrc,loaded:image.complete&&image.naturalWidth>0,label:dialog.getAttribute('aria-label')}})()`);
+    assert.ok(openedPhoto.open && openedPhoto.loaded); assert.equal(openedPhoto.label, "Zvětšená fotografie"); assert.equal(openedPhoto.title, "Zimní horská krajina"); assert.match(openedPhoto.source, /mountain\.png/);
+    await evaluate(`document.querySelector('.map-dialog .dialog-close').click()`);
     assert.equal(await evaluate(`!!document.querySelector('[data-media-status-open],#media-status-dialog')`), false);
     await screenshot("gallery-desktop"); screenshotsForReport.push(path.join(screenshots, "gallery-desktop.png"));
     await navigate(`${base}/index.html#encyklopedie/zakladni-informace/prehled`);
