@@ -334,7 +334,7 @@ try {
   await check("gallery visibly loads all local media, with no broken image cards", async () => {
     await navigate(`${base}/index.html#galerie`);
     const state = await evaluate(`new Promise(resolve=>{const check=()=>{const imgs=[...document.querySelectorAll('[data-gallery-grid] img')];if(imgs.length>=2&&imgs.every(i=>i.complete))resolve({count:imgs.length,loaded:imgs.filter(i=>i.naturalWidth>0).length,images:imgs.map(i=>({src:i.getAttribute('src'),w:i.naturalWidth,alt:i.alt})),brand:[...document.querySelectorAll('.site-brand-logo')].map(i=>({src:i.currentSrc,alt:i.alt,w:i.naturalWidth}))});else setTimeout(check,100)};check()})`);
-    assert.equal(state.count, 2); assert.equal(state.loaded, 2); assert.ok(state.brand.length >= 1 && state.brand.every((item) => item.w > 0 && item.alt === "Larpidie"));
+    assert.equal(state.count, 20); assert.equal(state.loaded, 20); assert.ok(state.brand.length >= 1 && state.brand.every((item) => item.w > 0 && item.alt === "Larpidie"));
     assert.equal(await evaluate(`!!document.querySelector('[data-media-status-open],#media-status-dialog')`), false);
     await screenshot("gallery-desktop"); screenshotsForReport.push(path.join(screenshots, "gallery-desktop.png"));
     await navigate(`${base}/index.html#encyklopedie/zakladni-informace/prehled`);
@@ -346,7 +346,7 @@ try {
   await check("author-only image status dialog computes available photos and missing scenes", async () => {
     await navigate(`${base}/index.html#galerie`);
     const status = await evaluate(`(async()=>{document.querySelector('#view-galerie footer')?.insertAdjacentHTML('beforeend',${JSON.stringify(devStatusMarkup)});const manifest=${JSON.stringify(devMediaManifest)},paths=new Set(${JSON.stringify(devMediaAvailablePaths)}),originalFetch=window.fetch.bind(window);window.fetch=(input,options={})=>{const href=input instanceof URL?input.href:typeof input==='string'?input:input.url;const url=new URL(href,location.href);if(url.pathname.endsWith('/content/larpidia/media/assets.json'))return Promise.resolve({ok:true,json:()=>Promise.resolve(manifest)});if(String(options.method||'GET').toUpperCase()==='HEAD')return Promise.resolve({ok:paths.has(decodeURIComponent(url.pathname.replace(/^\\/+/,'')))});return originalFetch(input,options)};(0,eval)(${JSON.stringify(devStatusScript)});const button=document.querySelector('[data-media-status-open]'),dialog=document.querySelector('#media-status-dialog');button.focus();button.click();for(let i=0;i<150&&!dialog.open;i++)await new Promise(resolve=>setTimeout(resolve,20));return {opened:dialog.open,photos:dialog.querySelector('[data-media-photo-count]').textContent,missing:dialog.querySelector('[data-media-missing-count]').textContent,availableCount:dialog.querySelector('[data-media-available]').children.length,availableTitles:[...dialog.querySelector('[data-media-available]').children].map(item=>item.textContent),missingItems:dialog.querySelector('[data-media-missing]').children.length,focusOnClose:document.activeElement===dialog.querySelector('[data-media-status-close]')}})()`);
-    assert.equal(status.opened, true, `Modal did not open: ${JSON.stringify(status)}`); assert.equal(status.photos, "2"); assert.equal(status.missing, "18"); assert.equal(status.availableCount, 2); assert.equal(status.availableTitles.length, 2); assert.equal(status.missingItems, 18); assert.equal(status.focusOnClose, true, `Close button did not receive focus: ${JSON.stringify(status)}`);
+    assert.equal(status.opened, true, `Modal did not open: ${JSON.stringify(status)}`); assert.equal(status.photos, "20"); assert.equal(status.missing, "0"); assert.equal(status.availableCount, 20); assert.equal(status.availableTitles.length, 20); assert.equal(status.missingItems, 0); assert.equal(status.focusOnClose, true, `Close button did not receive focus: ${JSON.stringify(status)}`);
     await screenshot("dev-media-status-desktop"); screenshotsForReport.push(path.join(screenshots, "dev-media-status-desktop.png"));
     await evaluate(`document.querySelector('[data-media-status-close]').click()`);
     await new Promise((resolve) => setTimeout(resolve, 50));
@@ -387,7 +387,7 @@ try {
     await screenshot("capital-mobile-selected"); screenshotsForReport.push(path.join(screenshots, "capital-mobile-selected.png"));
     await navigate(`${base}/index.html#galerie`);
     const gallery = await evaluate(`new Promise(resolve=>{const check=()=>{const imgs=[...document.querySelectorAll('[data-gallery-grid] img')];if(imgs.length>=2&&imgs.every(i=>i.complete))resolve({width:innerWidth,scroll:document.documentElement.scrollWidth,loaded:imgs.filter(i=>i.naturalWidth).length,columns:getComputedStyle(document.querySelector('[data-gallery-grid]')).gridTemplateColumns});else setTimeout(check,100)};check()})`);
-    assert.ok(gallery.scroll <= gallery.width + 2); assert.equal(gallery.loaded, 2);
+    assert.ok(gallery.scroll <= gallery.width + 2); assert.equal(gallery.loaded, 20);
     await screenshot("gallery-mobile"); screenshotsForReport.push(path.join(screenshots, "gallery-mobile.png"));
   });
 

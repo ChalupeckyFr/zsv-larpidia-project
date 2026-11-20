@@ -252,9 +252,9 @@ try {
   await evaluate(`document.querySelector('nav [data-nav="galerie"]').click()`);
   await waitFor(`(()=>{const g=document.querySelector('[data-gallery-grid]'),images=[...(g?.querySelectorAll('img')||[])];return !!(g&&images.length>=1&&images.every(image=>image.complete&&image.naturalWidth>0))})()`, "gallery image decoding from the root website");
   const gallery = await evaluate(`(()=>[...document.querySelectorAll('[data-gallery-grid] img')].map(i=>({src:i.currentSrc,alt:i.alt,width:i.naturalWidth,height:i.naturalHeight,rect:i.getBoundingClientRect().toJSON()})))()`);
-  assert.equal(gallery.length, 2, `The gallery should show the two verified locally available story photographs; received ${gallery.length}.`);
+  assert.equal(gallery.length, 20, `The gallery should show all locally available story photographs; received ${gallery.length}.`);
   assert.ok(gallery.every((image) => image.width > 0 && image.height > 0 && image.rect.width > 0 && image.rect.height > 0), "Gallery images must have decoded pixels and nonzero rendered size.");
-  assert.ok(gallery.some((image) => image.src.endsWith("PHOTO_01.png")) && gallery.some((image) => image.src.endsWith("PHOTO_06.png")), "The public gallery should show the verified mountain and Paraland scenes.");
+  assert.ok(gallery.some((image) => image.src.endsWith("PHOTO_01.png")) && gallery.some((image) => image.src.endsWith("PHOTO_20.png")), "The root gallery should show the first and last verified scenes.");
   await evaluate(`document.querySelector('nav [data-nav="encyklopedie"]').click()`);
   await waitFor(`(()=>!!document.querySelector('#view-encyklopedie [data-encyclopedia-app] a[href="#encyklopedie/geografie/priroda"]'))()`, "the root encyclopedia article navigation");
   await evaluate(`document.querySelector('#view-encyklopedie [data-encyclopedia-app] a[href="#encyklopedie/geografie/priroda"]').click()`);
@@ -262,7 +262,7 @@ try {
   const articlePhoto = await evaluate(`(()=>{const i=document.querySelector('#view-encyklopedie .ency-prose img');return {alt:i.alt,src:i.currentSrc,width:i.naturalWidth,height:i.naturalHeight}})()`);
   assert.ok(articlePhoto.width > 0 && articlePhoto.height > 0 && articlePhoto.src.endsWith("PHOTO_01.png"), `The encyclopedia should use the verified winter mountain image: ${JSON.stringify(articlePhoto)}`);
   await evaluate(`document.querySelector('nav [data-nav="galerie"]').click()`);
-  await waitFor(`(()=>document.querySelectorAll('[data-gallery-grid] img').length===2)()`, "returning to the root gallery");
+  await waitFor(`(()=>document.querySelectorAll('[data-gallery-grid] img').length===20)()`, "returning to the root gallery");
   await command("Emulation.setDeviceMetricsOverride", { width: 390, height: 844, deviceScaleFactor: 1, mobile: true });
   await evaluate("window.scrollTo(0,0)");
   await captureEvidence("gallery-live-mobile.png");

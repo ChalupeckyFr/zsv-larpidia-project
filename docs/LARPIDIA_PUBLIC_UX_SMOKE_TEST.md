@@ -39,7 +39,7 @@ Pomocný stav médií je určen jen pro autorský náhled. Pokud je v prostřed�
 py -m http.server 8000 --bind 127.0.0.1
 ```
 
-Na `http://127.0.0.1:8000/index.html#galerie` klikněte na **Obrazový archiv**. Kontrolní hodnoty jsou `Hotové fotografie: 2` a `Chybějící scény: 18`; zavření tlačítkem i klávesou Escape má vrátit fokus na ovládací prvek.
+Na `http://127.0.0.1:8000/index.html#galerie` klikněte na **Obrazový archiv**. Kontrolní hodnoty jsou `Hotové fotografie: 20` a `Chybějící scény: 0`; zavření tlačítkem i klávesou Escape má vrátit fokus na ovládací prvek.
 
 - [ ] Veřejný export nesmí obsahovat tlačítko/stavový dialog, interní seznam scén ani prompty.
 - [ ] V náhledu exportu ověřte, že tyto cesty vracejí 404: `/references/LARPIDIA_USTAVNI_KANON_PRACOVNI_v2.6.md`, `/docs/LARPIDIA_PUBLIC_ATLAS_GALLERY_REPAIR_REPORT.md`, `/v1.1/LARPIDIA_VISUAL_ATLAS_STORY_PACK_v1_2/03_PHOTO_PROMPTS/ALL_PHOTO_PROMPTS.md`, `/atlas/current/registry/places.json` a `/atlas/current/capital/cp_objects.json`.
